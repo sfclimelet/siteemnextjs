@@ -1,0 +1,23 @@
+/* Colors -  LIGHT */
+$bg-gradient-lhg1: #f6f9fc;
+$bg-gradient-lhg2: #e3f2ff;
+$txt-lhg: #1a1a1a;
+/* Colors - DARK */
+$bg-gradient-dkr1: #08192c;
+$bg-gradient-dkr2: #0b0b1a;
+$txt-dkr: #f0f0f0;
+
+@mixin ThemeGlobal($thm1, $thm2){
+  #{$thm1}{
+    background: linear-gradient(90deg, $bg-gradient-lhg1 0%, $bg-gradient-lhg2 100%);
+    color: $txt-lhg;
+  }
+  #{$thm2}{
+    background: linear-gradient(90deg, $bg-gradient-dkr1 0%, $bg-gradient-dkr2 100%);
+    color: $txt-dkr;
+  }
+  body, h1, h2{
+    transition: all 0.3s ease, color 0.3s ease, background-color 0.4s ease;
+  }
+}
+@include ThemeGlobal('.theme-light', '.theme-dark');

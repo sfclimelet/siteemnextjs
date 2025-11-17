@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Colors */
+$bg-Nb-home1: #00111a;
+$bg-Nb-home2: #000;
+$txt-color: #fff;
+
+@mixin ConfNavbar($IDandclass){
+    #{$IDandclass}{
+        background: radial-gradient(circle at top, $bg-Nb-home1, $bg-Nb-home2);
+        color: $txt-color;
+        margin-bottom: 40px;
+    }
+}
+@include ConfNavbar('#nbHome');
+
+@mixin LogoNavbarHome($id) {
+  #{$id} {
+    width: 70px;
+    height: 65px !important;
+    transition: all 0.4s ease;
+    margin-left: 20px !important;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+@include LogoNavbarHome('.logoNavbar');
+
+@mixin NavToggler($cls1, $cls2){
+    $color-border: #ffffff7a;
+    $bx-shadow: #ffffff99;
+    $bd-color: #ffffff99;
+    #{$cls1}{
+        background-image: none !important;
+    }
+    #{$cls2}{
+        border: 0.2px solid $color-border !important;
+        background: url("../../public/menu.svg") center/50% no-repeat !important;
+        background-size: 24px 24px;
+        &:focus{
+            box-shadow: 0 0 0 0.25rem $bx-shadow !important;
+            border-color: $bd-color !important;
+        }
+    }
+}
+@include NavToggler('.navbar-toggler-icon', '.navbar-toggler');
+
+@mixin SubMenus($item){
+    $cor-borderSubMn: #797979;
+    #{$item}{
+        background: radial-gradient(circle at top, $bg-Nb-home1, $bg-Nb-home2);
+        border: 1px solid $cor-borderSubMn !important;
+    }
+    #{$item} .dropdown-item{
+        color: #fff;
+    }
+}
+@include SubMenus('.dropdown-menu');
+
+
+
+@mixin IconsNavItem($IdHomeNavbar){
+    $cor-dos-icons: #56adff;
+    $cor-dos-icons2: #0cbaff;
+    #{$IdHomeNavbar} #Services, #Qmsm, #Ajsu, #PortCert{
+        background: $cor-dos-icons;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 12px $cor-dos-icons;
+        transition: all 0.4s ease, transform 0.4s ease;
+
+        &:hover{
+            text-shadow: 0 0 20px $cor-dos-icons2;
+            transform: translateX(2px);
+        }
+    }
+}
+@include IconsNavItem('#nbHome');
+
+@mixin navbarIconsMobile($pai, $move, $filhos...){
+  // Mobile
+  @media (max-width: 768px) {
+    #{$pai}{
+      @each $percorrer in $filhos {
+        #{$percorrer}{
+          margin-left: $move !important;
+        }
+      }
+    }
+  }
+
+  // Acima do Mobile
+  @media (min-width: 576px){
+    #{$pai}{
+      @each $per in $filhos {
+        #{$per}{
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+@include navbarIconsMobile('#navbarHome', 20px,'#Services' ,'#Qmsm' ,'#Ajsu' ,'#PortCert');

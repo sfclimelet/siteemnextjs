@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@mixin Footr($Ft){
+    $cor-bg-ft1: #00111a;
+    $cor-bg-ft2: #000;
+    $cor-txt-ft: #fff;
+    #{$Ft}{
+        background: radial-gradient(circle at top, $cor-bg-ft1, $cor-bg-ft2);
+        color: $cor-txt-ft;
+    }
+}
+@include Footr('.bg-rodape');
+
+@mixin ImgFooterLogo($passID, $w, $m-w){
+    #{$passID}{
+        width: $w;
+        max-width: $m-w;
+        transition: all 0.4s ease;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+}
+@include ImgFooterLogo('#logoFt', 17%, 20%);
+
+// Cores para icons
+$color-lk: #ccc;
+$color-lk-Hv: #00d4ff;
+$face-cl: #1877f2;
+$insta-c1: #fdf497;
+$insta-c2: #fd5949;
+$insta-c3: #d6249f;
+$insta-c4: #285AEB;
+$insta-txt-sdw: #d6249f99; 
+$google-c1: #db4437;
+$google-txt-sdw: #db4437b3;
+@mixin IconsFooter($clsFT){
+    #{$clsFT}{
+        color: $color-lk;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+            color: $color-lk-Hv;
+            transform: scale(1.01);
+        }
+    }
+}
+@include IconsFooter('.footer-link');
+
+@mixin SocialIconsRDP($psclss, $G, $icons...){
+    #{$psclss}{
+        display: flex;
+        justify-content: center;
+        gap: $G;
+    }
+    #{$psclss} .social-icon{
+        font-size: 1.1rem;
+        color: $color-lk;
+        transition: all 0.4s ease;
+    }
+    // Facebook
+    #{$psclss} .social-icon-face{
+        &:hover{
+            color: $face-cl;
+            text-shadow: 0 0 10px $face-cl;
+        }
+    }
+    // Instagram
+    #{$psclss} .social-icon-insta{
+        &:hover{
+            background: radial-gradient(circle at 30% 107%, $insta-c1 0%, $insta-c1 5%, $insta-c2 45%, $insta-c3 60%, $insta-c4 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 12px $insta-txt-sdw;
+        }
+    }
+    // Google
+    #{$psclss} .social-icon-google{
+        &:hover{
+            color: $google-c1;
+            text-shadow: $google-txt-sdw;
+        }
+    }
+
+    // Animação Scale Icons
+    #{$psclss}{
+        @each $Icns in $icons {
+            #{$Icns}{
+                transition: transform 0.5s ease, scale 0.4s ease,color 0.5s ease, background 0.5s ease;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+}
+@include SocialIconsRDP('.social-icons-rdp', 18px, '.social-icon-insta', '.social-icon-face', '.social-icon-google');
+
+@mixin TxtandTitles($clsT, $bg-txt-Gr1, $bg-txt-Gr2, $Pits...){
+    #{$clsT}{
+        @each $size in $Pits {
+            #{$size}{
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .text-gradiente{
+        background: linear-gradient(90deg, $bg-txt-Gr1, $bg-txt-Gr2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@include TxtandTitles('.bg-rodape', #00d4ff, #007bff, '.titulo-redes', '.titulo-links');

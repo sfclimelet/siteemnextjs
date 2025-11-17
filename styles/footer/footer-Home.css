@@ -1,0 +1,90 @@
+.bg-rodape {
+  background: radial-gradient(circle at top, #00111a, #000);
+  color: #fff;
+}
+
+#logoFt {
+  width: 17%;
+  max-width: 20%;
+  transition: all 0.4s ease;
+}
+#logoFt:hover {
+  transform: scale(1.03);
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #00d4ff;
+  transform: scale(1.01);
+}
+
+.social-icons-rdp {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons-rdp .social-icon {
+  font-size: 1.1rem;
+  color: #ccc;
+  transition: all 0.4s ease;
+}
+
+.social-icons-rdp .social-icon-face:hover {
+  color: #1877f2;
+  text-shadow: 0 0 10px #1877f2;
+}
+
+.social-icons-rdp .social-icon-insta:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(214, 36, 159, 0.6);
+}
+
+.social-icons-rdp .social-icon-google:hover {
+  color: #db4437;
+  text-shadow: rgba(219, 68, 55, 0.7019607843);
+}
+
+.social-icons-rdp .social-icon-insta {
+  transition: transform 0.5s ease, scale 0.4s ease, color 0.5s ease, background 0.5s ease;
+}
+.social-icons-rdp .social-icon-insta:hover {
+  transform: scale(1.05);
+}
+.social-icons-rdp .social-icon-face {
+  transition: transform 0.5s ease, scale 0.4s ease, color 0.5s ease, background 0.5s ease;
+}
+.social-icons-rdp .social-icon-face:hover {
+  transform: scale(1.05);
+}
+.social-icons-rdp .social-icon-google {
+  transition: transform 0.5s ease, scale 0.4s ease, color 0.5s ease, background 0.5s ease;
+}
+.social-icons-rdp .social-icon-google:hover {
+  transform: scale(1.05);
+}
+
+.bg-rodape .titulo-redes {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.bg-rodape .titulo-links {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-gradiente {
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=footer-Home.css.map */
