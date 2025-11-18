@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 #nbHome {
   background: radial-gradient(circle at top, #00111a, #000);
@@ -77,5 +78,172 @@
   }
   #navbarHome #PortCert {
     margin-left: 0 !important;
+  }
+}
+/* --- GLASSMORPHISM NA NAVBAR --- */
+#nbHome {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.55) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s ease;
+}
+
+/* Ao rolar um pouco a página (opcional, melhora MUITO a navbar) */
+#nbHome.scrolled {
+  background: rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.55);
+}
+
+/* --- DROPDOWN MODERNO --- */
+.dropdown-menu {
+  border-radius: 12px !important;
+  padding: 6px 0 !important;
+  animation: fadeMenu 0.25s ease forwards;
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 18px rgba(0, 128, 255, 0.2);
+}
+
+/* Animação de fade suave */
+@keyframes fadeMenu {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Dropdown Items refinados */
+.dropdown-item {
+  padding: 10px 16px !important;
+  transition: background 0.25s ease, transform 0.25s ease;
+  border-radius: 8px !important;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateX(4px);
+}
+
+/* --- ÍCONES REFINADOS — Mantendo seu estilo atual --- */
+#nbHome #Services,
+#nbHome #Qmsm,
+#nbHome #Ajsu,
+#nbHome #PortCert {
+  text-shadow: 0 0 10px rgba(0, 155, 255, 0.6);
+}
+
+#nbHome #Services:hover,
+#nbHome #Qmsm:hover,
+#nbHome #Ajsu:hover,
+#nbHome #PortCert:hover {
+  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
+}
+
+/* ============================================================
+   NAVBAR – AJUSTES DOS ÍCONES AZUIS (Tamanho + Hover moderno)
+   ============================================================ */
+#nbHome {
+  /* ÍCONES – aparência padrão */
+}
+#nbHome #Services,
+#nbHome #Qmsm,
+#nbHome #Ajsu,
+#nbHome #PortCert {
+  font-size: 15px;
+  padding: 6px 10px;
+  transition: transform 0.35s ease, text-shadow 0.35s ease;
+  /* Removendo o scale e substituindo por translate */
+}
+#nbHome #Services:hover,
+#nbHome #Qmsm:hover,
+#nbHome #Ajsu:hover,
+#nbHome #PortCert:hover {
+  transform: translateX(1px);
+  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
+}
+
+/* Mobile (caso queira ajustar ainda mais no celular) */
+@media (max-width: 768px) {
+  #nbHome #Services,
+  #nbHome #Qmsm,
+  #nbHome #Ajsu,
+  #nbHome #PortCert {
+    font-size: 15px;
+    padding: 6px 8px;
+  }
+}
+/* ============================================================
+   DROPDOWN – AJUSTES DE TAMANHO (+ animação suave)
+   ============================================================ */
+/* --- CONFIGURAÇÕES GERAIS --- */
+/* --- CONTAINER DO DROPDOWN (menor e mais elegante) --- */
+.dropdown-menu {
+  padding: 8px !important;
+  border-radius: 14px !important;
+  min-width: 180px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* --- ITENS DO DROPDOWN (reduzidos + elegantes) --- */
+.dropdown-item {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  padding: 6px 12px !important;
+  transition: transform 0.25s ease, background 0.25s ease;
+  border-radius: 8px !important;
+  /* HOVER — deslizar suave para direita */
+}
+.dropdown-item i {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  transform: translateX(4px);
+}
+
+/* --- MOBILE (ajuste opcional para ainda mais compactado) --- */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: 160px;
+  }
+  .dropdown-item {
+    font-size: 0.88rem;
+    padding: 6px 10px !important;
+  }
+  .dropdown-item i {
+    font-size: 0.9rem;
+  }
+}
+/* ============================================================
+   MOBILE – Ajuste do tamanho do CONTAINER do dropdown
+   ============================================================ */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: 85vw !important;
+    min-width: 0 !important;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px !important;
+    padding: 6px !important;
+  }
+  /* Ajuste opcional dos itens para manter elegância */
+  .dropdown-item {
+    font-size: 0.9rem;
+    padding: 6px 10px !important;
+  }
+  .dropdown-item i {
+    font-size: 0.95rem;
   }
 }/*# sourceMappingURL=navbar-Home.css.map */

@@ -45,7 +45,7 @@ export default function Home() {
               <a href="/about" className="btn btn-outline-primary mt-5 mx-auto" >About <i className="bi bi-box-arrow-in-right"></i> </a>
             </section>
         </main>
-      <FooterHome />
+      
     </>
   );
 }

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { navbarAnimated } from "./navbar-Animated";
 
 import logo from "../../public/logo-sef.png";
 
@@ -9,6 +10,7 @@ import logo from "../../public/logo-sef.png";
 import "../../styles/navbar/navbar-Home.scss";
 
 export default function NavbarHome() {
+  navbarAnimated();
   return (
     <nav id="nbHome" className="navbar navbar-expand-sm sticky-top z-2">
       <div className="container-fluid">

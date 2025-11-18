@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/styles/theme-btn-toggle.module.scss"],"sourcesContent":["/* Colors */\n$c1: #0078ff;\n$c2: #00c6ff;\n$c3-box-shadow: #00c8ff66;\n$icon-color: #222;\n\n@mixin BtnToogleTheme($tgANDclss, $distTOP, $Z-idx){\n  #{$tgANDclss}{\n    position: fixed;\n    top: $distTOP;\n    right: 0;\n    z-index: $Z-idx !important;\n\n    /* Aparência */\n    background: linear-gradient(135deg, $c1 0%, $c2 100%);\n    box-shadow: 0 0 10px $c3-box-shadow;\n    color: $icon-color;\n    border: none;\n    border-top-left-radius: 25px;\n    border-bottom-left-radius: 25px;\n    padding: 0.8rem 1.1rem;\n    font-size: 0.9rem;\n    cursor: pointer;\n    transition: all 0.5s ease;\n    &:hover{\n      transform: translateX(-2px);\n    }\n  }\n}\n@include BtnToogleTheme('.toggle', 150px, 999);"],"names":[],"mappings":"AAOI;;;;;;;;;;;;;;;;;AAiBA"}}]
+}
