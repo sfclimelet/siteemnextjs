@@ -1,8 +1,152 @@
 /* [project]/styles/navbar/navbar-Home.scss.css [app-client] (css) */
 #nbHome {
-  color: #fff;
-  background: radial-gradient(circle at top, #00111a, #000);
-  margin-bottom: 40px;
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid #ffffff14;
+  margin-bottom: 30px;
+  transition: all .35s;
+  box-shadow: 0 4px 20px #00000073;
+  background: #0000008c !important;
+}
+
+#nbHome .scrolled {
+  box-shadow: 0 6px 30px #0000008c;
+  background: #000000bf !important;
+}
+
+@media (max-width: 768px) {
+  #navbarHome #SearchBtn, #navbarHome #Services, #navbarHome #Qmsm, #navbarHome #Ajsu, #navbarHome #PortCert {
+    margin-left: 20px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  #navbarHome #SearchBtn, #navbarHome #Services, #navbarHome #Qmsm, #navbarHome #Ajsu, #navbarHome #PortCert {
+    margin-left: 0 !important;
+  }
+}
+
+#navbarHome #SearchBtn {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #56adff;
+  background: #56adff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all .4s, transform .4s;
+}
+
+#navbarHome #SearchBtn:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #Services {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #56adff;
+  background: #56adff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all .4s, transform .4s;
+}
+
+#navbarHome #Services:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #Qmsm {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #56adff;
+  background: #56adff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all .4s, transform .4s;
+}
+
+#navbarHome #Qmsm:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #Ajsu {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #56adff;
+  background: #56adff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all .4s, transform .4s;
+}
+
+#navbarHome #Ajsu:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #PortCert {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #56adff;
+  background: #56adff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all .4s, transform .4s;
+}
+
+#navbarHome #PortCert:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+.search-dropdown {
+  border-radius: 13px !important;
+  min-width: 220px !important;
+  padding: 8px 0 !important;
+}
+
+.search-input {
+  color: #fff !important;
+  background: #ffffff1f !important;
+  border: 1px solid #fff3 !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+}
+
+.search-input::placeholder {
+  letter-spacing: .5px;
+  color: #ffffffb3 !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.search-input::-webkit-input-placeholder {
+  letter-spacing: .5px;
+  color: #ffffffb3 !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.search-input::-moz-placeholder {
+  letter-spacing: .5px;
+  color: #ffffffb3 !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.search-input:-ms-placeholder-shown {
+  letter-spacing: .5px;
+  color: #ffffffb3 !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.search-input::-moz-placeholder {
+  letter-spacing: .5px;
+  color: #ffffffb3 !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.search-input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #0af6 !important;
 }
 
 .logoNavbar {
@@ -31,64 +175,6 @@
   box-shadow: 0 0 0 .25rem #fff9 !important;
 }
 
-.dropdown-menu {
-  background: radial-gradient(circle at top, #00111a, #000);
-  border: 1px solid #797979 !important;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #fff;
-}
-
-#nbHome #Services, #Qmsm, #Ajsu, #PortCert {
-  -webkit-text-fill-color: #0000;
-  text-shadow: 0 0 12px #56adff;
-  background: #56adff;
-  -webkit-background-clip: text;
-  background-clip: text;
-  transition: all .4s, transform .4s;
-}
-
-#nbHome #Services:hover, #Qmsm:hover, #Ajsu:hover, #PortCert:hover {
-  text-shadow: 0 0 20px #0cbaff;
-  transform: translateX(2px);
-}
-
-@media (max-width: 768px) {
-  #navbarHome #Services, #navbarHome #Qmsm, #navbarHome #Ajsu, #navbarHome #PortCert {
-    margin-left: 20px !important;
-  }
-}
-
-@media (min-width: 576px) {
-  #navbarHome #Services, #navbarHome #Qmsm, #navbarHome #Ajsu, #navbarHome #PortCert {
-    margin-left: 0 !important;
-  }
-}
-
-#nbHome {
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid #ffffff14;
-  transition: all .35s;
-  box-shadow: 0 4px 20px #00000073;
-  background: #0000008c !important;
-}
-
-#nbHome.scrolled {
-  box-shadow: 0 6px 30px #0000008c;
-  background: #000000bf !important;
-}
-
-.dropdown-menu {
-  -webkit-backdrop-filter: blur(12px);
-  animation: .25s forwards fadeMenu;
-  box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
-  background: #000000bf !important;
-  border: 1px solid #ffffff1f !important;
-  border-radius: 12px !important;
-  padding: 6px 0 !important;
-}
-
 @keyframes fadeMenu {
   from {
     opacity: 0;
@@ -101,88 +187,47 @@
   }
 }
 
-.dropdown-item {
-  transition: background .25s, transform .25s;
-  border-radius: 8px !important;
-  padding: 10px 16px !important;
-}
-
-#nbHome #Services, #nbHome #Qmsm, #nbHome #Ajsu, #nbHome #PortCert {
-  text-shadow: 0 0 10px #009bff99;
-}
-
-#nbHome #Services:hover, #nbHome #Qmsm:hover, #nbHome #Ajsu:hover, #nbHome #PortCert:hover {
-  text-shadow: 0 0 18px #00c8ffcc;
-}
-
-#nbHome #Services, #nbHome #Qmsm, #nbHome #Ajsu, #nbHome #PortCert {
-  padding: 6px 10px;
-  font-size: 15px;
-  transition: transform .35s, text-shadow .35s;
-}
-
-#nbHome #Services:hover, #nbHome #Qmsm:hover, #nbHome #Ajsu:hover, #nbHome #PortCert:hover {
-  text-shadow: 0 0 18px #00c8ffcc;
-  transform: translateX(1px);
-}
-
-@media (max-width: 768px) {
-  #nbHome #Services, #nbHome #Qmsm, #nbHome #Ajsu, #nbHome #PortCert {
-    padding: 6px 8px;
-    font-size: 15px;
-  }
-}
-
 .dropdown-menu {
-  -webkit-backdrop-filter: blur(14px);
-  min-width: 180px;
-  border-radius: 14px !important;
-  padding: 8px !important;
-}
-
-.dropdown-item {
-  align-items: center;
-  gap: 8px;
-  font-size: .92rem;
-  transition: transform .25s, background .25s;
-  border-radius: 8px !important;
-  padding: 6px 12px !important;
-  display: flex !important;
-}
-
-.dropdown-item i {
-  opacity: .85;
-  font-size: 1rem;
-}
-
-.dropdown-item:hover {
-  transform: translateX(4px);
-  background: #ffffff14 !important;
+  -webkit-backdrop-filter: blur(12px);
+  animation: .25s forwards fadeMenu;
+  box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
+  background: #000000bf !important;
+  border: 1px solid #797979 !important;
+  border-radius: 12px !important;
+  padding: 6px 0 !important;
 }
 
 @media (max-width: 768px) {
   .dropdown-menu {
     min-width: 160px;
-  }
-
-  .dropdown-menu {
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px !important;
+    border-left: 3px solid #fff !important;
     width: 85vw !important;
-    min-width: 0 !important;
+    max-width: 200px !important;
+    margin-left: 50% !important;
     padding: 6px !important;
+    transform: translateX(-50%) !important;
   }
 
-  .dropdown-item {
-    font-size: .9rem;
+  .dropdown-menu .dropdown-item {
+    font-size: .88rem;
     padding: 6px 10px !important;
   }
 
-  .dropdown-item i {
-    font-size: .95rem;
+  .dropdown-menu .dropdown-item i {
+    font-size: .9rem;
   }
+}
+
+.dropdown-item {
+  transition: background .25s, transform .25s;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: 10px 16px !important;
+}
+
+.dropdown-item:hover {
+  transform: translateX(4px);
+  background: #ffffff1a !important;
 }
 
 /*# sourceMappingURL=styles_navbar_navbar-Home_scss_css_bad6b30c._.single.css.map*/

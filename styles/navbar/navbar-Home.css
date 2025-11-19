@@ -1,9 +1,138 @@
 @charset "UTF-8";
-/* Colors */
+/* NAVBAR - Configurações Gerais*/
 #nbHome {
-  background: radial-gradient(circle at top, #00111a, #000);
-  color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  /* Background da Navbar e Submenus */
+  background: rgba(0, 0, 0, 0.549) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.078);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.451);
+  transition: all 0.35s ease;
+}
+
+#nbHome .scrolled {
+  background: rgba(0, 0, 0, 0.7490196078) !important;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
+}
+
+@media (max-width: 768px) {
+  #navbarHome #SearchBtn {
+    margin-left: 20px !important;
+  }
+  #navbarHome #Services {
+    margin-left: 20px !important;
+  }
+  #navbarHome #Qmsm {
+    margin-left: 20px !important;
+  }
+  #navbarHome #Ajsu {
+    margin-left: 20px !important;
+  }
+  #navbarHome #PortCert {
+    margin-left: 20px !important;
+  }
+}
+@media (min-width: 576px) {
+  #navbarHome #SearchBtn {
+    margin-left: 0 !important;
+  }
+  #navbarHome #Services {
+    margin-left: 0 !important;
+  }
+  #navbarHome #Qmsm {
+    margin-left: 0 !important;
+  }
+  #navbarHome #Ajsu {
+    margin-left: 0 !important;
+  }
+  #navbarHome #PortCert {
+    margin-left: 0 !important;
+  }
+}
+#navbarHome #SearchBtn {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+#navbarHome #SearchBtn:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Services {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+#navbarHome #Services:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Qmsm {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+#navbarHome #Qmsm:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Ajsu {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+#navbarHome #Ajsu:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #PortCert {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+#navbarHome #PortCert:hover {
+  text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+.search-dropdown {
+  min-width: 220px !important;
+  border-radius: 13px !important;
+  padding: 8px 0 !important;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.1215686275) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+}
+.search-input::placeholder, .search-input::-webkit-input-placeholder, .search-input::-moz-placeholder, .search-input:-ms-input-placeholder, .search-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7019607843) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+  opacity: 1 !important;
+}
+.search-input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.4) !important;
 }
 
 .logoNavbar {
@@ -30,85 +159,6 @@
   border-color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.dropdown-menu {
-  background: radial-gradient(circle at top, #00111a, #000);
-  border: 1px solid #797979 !important;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #fff;
-}
-
-#nbHome #Services, #Qmsm, #Ajsu, #PortCert {
-  background: #56adff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 12px #56adff;
-  transition: all 0.4s ease, transform 0.4s ease;
-}
-#nbHome #Services:hover, #Qmsm:hover, #Ajsu:hover, #PortCert:hover {
-  text-shadow: 0 0 20px #0cbaff;
-  transform: translateX(2px);
-}
-
-@media (max-width: 768px) {
-  #navbarHome #Services {
-    margin-left: 20px !important;
-  }
-  #navbarHome #Qmsm {
-    margin-left: 20px !important;
-  }
-  #navbarHome #Ajsu {
-    margin-left: 20px !important;
-  }
-  #navbarHome #PortCert {
-    margin-left: 20px !important;
-  }
-}
-@media (min-width: 576px) {
-  #navbarHome #Services {
-    margin-left: 0 !important;
-  }
-  #navbarHome #Qmsm {
-    margin-left: 0 !important;
-  }
-  #navbarHome #Ajsu {
-    margin-left: 0 !important;
-  }
-  #navbarHome #PortCert {
-    margin-left: 0 !important;
-  }
-}
-/* --- GLASSMORPHISM NA NAVBAR --- */
-#nbHome {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  background: rgba(0, 0, 0, 0.55) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
-  transition: all 0.35s ease;
-}
-
-/* Ao rolar um pouco a página (opcional, melhora MUITO a navbar) */
-#nbHome.scrolled {
-  background: rgba(0, 0, 0, 0.75) !important;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.55);
-}
-
-/* --- DROPDOWN MODERNO --- */
-.dropdown-menu {
-  border-radius: 12px !important;
-  padding: 6px 0 !important;
-  animation: fadeMenu 0.25s ease forwards;
-  background: rgba(0, 0, 0, 0.75) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 18px rgba(0, 128, 255, 0.2);
-}
-
-/* Animação de fade suave */
 @keyframes fadeMenu {
   from {
     opacity: 0;
@@ -119,131 +169,43 @@
     transform: translateY(0);
   }
 }
-/* Dropdown Items refinados */
+.dropdown-menu {
+  border: 1px solid #797979 !important;
+  border-radius: 12px !important;
+  padding: 6px 0 !important;
+  animation: fadeMenu 0.25s ease forwards;
+  background: rgba(0, 0, 0, 0.7490196078) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5490196078), 0 0 18px rgba(0, 128, 255, 0.2);
+  /* Resolução Mobile */
+}
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: 160px;
+    width: 85vw !important;
+    padding: 6px !important;
+    max-width: 200px !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-left: 3px solid #fff !important;
+  }
+  .dropdown-menu .dropdown-item {
+    font-size: 0.88rem;
+    padding: 6px 10px !important;
+  }
+  .dropdown-menu .dropdown-item i {
+    font-size: 0.9rem;
+  }
+}
+
 .dropdown-item {
   padding: 10px 16px !important;
   transition: background 0.25s ease, transform 0.25s ease;
   border-radius: 8px !important;
-}
-
-.dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  transform: translateX(4px);
-}
-
-/* --- ÍCONES REFINADOS — Mantendo seu estilo atual --- */
-#nbHome #Services,
-#nbHome #Qmsm,
-#nbHome #Ajsu,
-#nbHome #PortCert {
-  text-shadow: 0 0 10px rgba(0, 155, 255, 0.6);
-}
-
-#nbHome #Services:hover,
-#nbHome #Qmsm:hover,
-#nbHome #Ajsu:hover,
-#nbHome #PortCert:hover {
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
-}
-
-/* ============================================================
-   NAVBAR – AJUSTES DOS ÍCONES AZUIS (Tamanho + Hover moderno)
-   ============================================================ */
-#nbHome {
-  /* ÍCONES – aparência padrão */
-}
-#nbHome #Services,
-#nbHome #Qmsm,
-#nbHome #Ajsu,
-#nbHome #PortCert {
-  font-size: 15px;
-  padding: 6px 10px;
-  transition: transform 0.35s ease, text-shadow 0.35s ease;
-  /* Removendo o scale e substituindo por translate */
-}
-#nbHome #Services:hover,
-#nbHome #Qmsm:hover,
-#nbHome #Ajsu:hover,
-#nbHome #PortCert:hover {
-  transform: translateX(1px);
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
-}
-
-/* Mobile (caso queira ajustar ainda mais no celular) */
-@media (max-width: 768px) {
-  #nbHome #Services,
-  #nbHome #Qmsm,
-  #nbHome #Ajsu,
-  #nbHome #PortCert {
-    font-size: 15px;
-    padding: 6px 8px;
-  }
-}
-/* ============================================================
-   DROPDOWN – AJUSTES DE TAMANHO (+ animação suave)
-   ============================================================ */
-/* --- CONFIGURAÇÕES GERAIS --- */
-/* --- CONTAINER DO DROPDOWN (menor e mais elegante) --- */
-.dropdown-menu {
-  padding: 8px !important;
-  border-radius: 14px !important;
-  min-width: 180px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-/* --- ITENS DO DROPDOWN (reduzidos + elegantes) --- */
-.dropdown-item {
-  display: flex !important;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.92rem;
-  padding: 6px 12px !important;
-  transition: transform 0.25s ease, background 0.25s ease;
-  border-radius: 8px !important;
-  /* HOVER — deslizar suave para direita */
-}
-.dropdown-item i {
-  font-size: 1rem;
-  opacity: 0.85;
+  color: #fff !important;
 }
 .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: rgba(255, 255, 255, 0.1019607843) !important;
   transform: translateX(4px);
-}
-
-/* --- MOBILE (ajuste opcional para ainda mais compactado) --- */
-@media (max-width: 768px) {
-  .dropdown-menu {
-    min-width: 160px;
-  }
-  .dropdown-item {
-    font-size: 0.88rem;
-    padding: 6px 10px !important;
-  }
-  .dropdown-item i {
-    font-size: 0.9rem;
-  }
-}
-/* ============================================================
-   MOBILE – Ajuste do tamanho do CONTAINER do dropdown
-   ============================================================ */
-@media (max-width: 768px) {
-  .dropdown-menu {
-    width: 85vw !important;
-    min-width: 0 !important;
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px !important;
-    padding: 6px !important;
-  }
-  /* Ajuste opcional dos itens para manter elegância */
-  .dropdown-item {
-    font-size: 0.9rem;
-    padding: 6px 10px !important;
-  }
-  .dropdown-item i {
-    font-size: 0.95rem;
-  }
 }/*# sourceMappingURL=navbar-Home.css.map */

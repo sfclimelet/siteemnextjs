@@ -37,6 +37,19 @@ export default function NavbarHome() {
         <div className="collapse navbar-collapse justify-content-end me-0" id="navbarHome">
           <ul className="navbar-nav">
 
+            <li className="nav-item dropdown">
+              <button id="SearchBtn" className="nav-link nav-icon" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Buscar" title="Buscar">
+                <span className="iconMove">
+                  <i className="bi bi-search"></i>
+                </span>
+              </button>
+              <ul className="dropdown-menu dropdown-menu-end search-dropdown">
+                <li className="px-3 py-2">
+                  <input className="form-control search-input" placeholder="Buscar..." type="search" />
+                </li>
+              </ul>
+            </li>
+
             {/* Serviços */}
             <li className="nav-item dropdown">
               <button
