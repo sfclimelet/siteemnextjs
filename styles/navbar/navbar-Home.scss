@@ -55,7 +55,10 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   #{$pai}{
     $cor-dos-icons: #56adff;
     $cor-dos-icons2: #0cbaff;
+
     @each $icns in $filhos {
+
+      /* estilo atual — continua */
       #{$icns}{
         background: $cor-dos-icons;
         background-clip: text;
@@ -63,9 +66,25 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 12px $cor-dos-icons;
         transition: all 0.4s ease, transform 0.4s ease;
+
         &:hover{
-            text-shadow: 0 0 20px $cor-dos-icons2;
-            transform: translateX(2px);
+          text-shadow: 0 0 20px $cor-dos-icons2;
+          transform: translateX(2px);
+        }
+
+        /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+        svg {
+          width: 18px;
+          height: 18px;
+          stroke: $cor-dos-icons;
+          filter: drop-shadow(0 0 10px $cor-dos-icons);
+          transition: all 0.35s ease;
+        }
+
+        &:hover svg {
+          stroke: $cor-dos-icons2;
+          filter: drop-shadow(0 0 16px $cor-dos-icons2);
+          transform: translateX(2px);
         }
       }
     }

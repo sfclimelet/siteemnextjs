@@ -50,6 +50,13 @@
     margin-left: 0 !important;
   }
 }
+#navbarHome {
+  /* estilo atual — continua */
+  /* estilo atual — continua */
+  /* estilo atual — continua */
+  /* estilo atual — continua */
+  /* estilo atual — continua */
+}
 #navbarHome #SearchBtn {
   background: #56adff;
   background-clip: text;
@@ -57,9 +64,22 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
+  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
 }
 #navbarHome #SearchBtn:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #SearchBtn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #SearchBtn:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 #navbarHome #Services {
@@ -69,9 +89,22 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
+  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
 }
 #navbarHome #Services:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Services svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #Services:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 #navbarHome #Qmsm {
@@ -81,9 +114,22 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
+  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
 }
 #navbarHome #Qmsm:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Qmsm svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #Qmsm:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 #navbarHome #Ajsu {
@@ -93,9 +139,22 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
+  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
 }
 #navbarHome #Ajsu:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #Ajsu svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #Ajsu:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 #navbarHome #PortCert {
@@ -105,9 +164,22 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
+  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
 }
 #navbarHome #PortCert:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+#navbarHome #PortCert svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #PortCert:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 

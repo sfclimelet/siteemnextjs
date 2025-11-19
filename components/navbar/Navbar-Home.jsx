@@ -9,6 +9,9 @@ import logo from "../../public/logo-sef.png";
 // Import CSS
 import "../../styles/navbar/navbar-Home.scss";
 
+// Icones
+import { Layers, Search, Handshake, Send, Briefcase } from "lucide-react";
+
 export default function NavbarHome() {
   navbarAnimated();
   return (
@@ -40,7 +43,7 @@ export default function NavbarHome() {
             <li className="nav-item dropdown">
               <button id="SearchBtn" className="nav-link nav-icon" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Buscar" title="Buscar">
                 <span className="iconMove">
-                  <i className="bi bi-search"></i>
+                  <Search />
                 </span>
               </button>
               <ul className="dropdown-menu dropdown-menu-end search-dropdown">
@@ -61,7 +64,7 @@ export default function NavbarHome() {
                 aria-label="Serviços"
                 title="Serviços"
               >
-                <i className="bi bi-stack"></i>
+                <Layers />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
@@ -109,7 +112,7 @@ export default function NavbarHome() {
                 aria-label="Quem Somos"
                 title="Quem Somos"
               >
-                <i className="bi bi-people-fill"></i>
+                <Handshake />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
@@ -147,7 +150,7 @@ export default function NavbarHome() {
                 aria-label="Ajuda e Suporte"
                 title="Ajuda e Suporte"
               >
-                <i className="bi bi-chat-dots-fill"></i>
+                <Send />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
@@ -179,16 +182,16 @@ export default function NavbarHome() {
               </ul>
             </li>
 
-            {/* Portfólio */}
+            {/* Portfólio e Certificações */}
             <li className="nav-item dropdown">
               <button
                 id="PortCert"
                 className="nav-link"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+                aria-expanded="false" aria-label="Portifólio e Certificações" title="Portifólio e Certificações"
               >
-                <i className="bi bi-award-fill"></i>
+                <Briefcase />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">

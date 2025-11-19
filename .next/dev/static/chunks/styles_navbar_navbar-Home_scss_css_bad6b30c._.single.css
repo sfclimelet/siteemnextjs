@@ -39,6 +39,20 @@
   transform: translateX(2px);
 }
 
+#navbarHome #SearchBtn svg {
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  width: 18px;
+  height: 18px;
+  transition: all .35s;
+}
+
+#navbarHome #SearchBtn:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: translateX(2px);
+}
+
 #navbarHome #Services {
   -webkit-text-fill-color: #0000;
   text-shadow: 0 0 12px #56adff;
@@ -50,6 +64,20 @@
 
 #navbarHome #Services:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #Services svg {
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  width: 18px;
+  height: 18px;
+  transition: all .35s;
+}
+
+#navbarHome #Services:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 
@@ -67,6 +95,20 @@
   transform: translateX(2px);
 }
 
+#navbarHome #Qmsm svg {
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  width: 18px;
+  height: 18px;
+  transition: all .35s;
+}
+
+#navbarHome #Qmsm:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: translateX(2px);
+}
+
 #navbarHome #Ajsu {
   -webkit-text-fill-color: #0000;
   text-shadow: 0 0 12px #56adff;
@@ -81,6 +123,20 @@
   transform: translateX(2px);
 }
 
+#navbarHome #Ajsu svg {
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  width: 18px;
+  height: 18px;
+  transition: all .35s;
+}
+
+#navbarHome #Ajsu:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: translateX(2px);
+}
+
 #navbarHome #PortCert {
   -webkit-text-fill-color: #0000;
   text-shadow: 0 0 12px #56adff;
@@ -92,6 +148,20 @@
 
 #navbarHome #PortCert:hover {
   text-shadow: 0 0 20px #0cbaff;
+  transform: translateX(2px);
+}
+
+#navbarHome #PortCert svg {
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  width: 18px;
+  height: 18px;
+  transition: all .35s;
+}
+
+#navbarHome #PortCert:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
 }
 
