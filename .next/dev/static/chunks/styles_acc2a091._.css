@@ -165,6 +165,61 @@
   transform: translateX(2px);
 }
 
+.theme-light #navbarHome #SearchBtn svg {
+  transition: all .3s, filter .4s;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px #00dcffb3) !important;
+}
+
+.theme-light #navbarHome #SearchBtn svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
+.theme-light #navbarHome #Services svg {
+  transition: all .3s, filter .4s;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px #00dcffb3) !important;
+}
+
+.theme-light #navbarHome #Services svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
+.theme-light #navbarHome #Qmsm svg {
+  transition: all .3s, filter .4s;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px #00dcffb3) !important;
+}
+
+.theme-light #navbarHome #Qmsm svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
+.theme-light #navbarHome #Ajsu svg {
+  transition: all .3s, filter .4s;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px #00dcffb3) !important;
+}
+
+.theme-light #navbarHome #Ajsu svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
+.theme-light #navbarHome #PortCert svg {
+  transition: all .3s, filter .4s;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px #00dcffb3) !important;
+}
+
+.theme-light #navbarHome #PortCert svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
 .search-dropdown {
   border-radius: 13px !important;
   min-width: 220px !important;

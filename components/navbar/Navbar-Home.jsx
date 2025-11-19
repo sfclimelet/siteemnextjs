@@ -9,7 +9,7 @@ import logo from "../../public/logo-sef.png";
 // Import CSS
 import "../../styles/navbar/navbar-Home.scss";
 
-// Icones
+// Icones 
 import { Layers, Search, Handshake, Send, Briefcase } from "lucide-react";
 
 export default function NavbarHome() {

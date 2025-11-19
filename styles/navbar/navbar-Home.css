@@ -51,11 +51,11 @@
   }
 }
 #navbarHome {
-  /* estilo atual — continua */
-  /* estilo atual — continua */
-  /* estilo atual — continua */
-  /* estilo atual — continua */
-  /* estilo atual — continua */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
 }
 #navbarHome #SearchBtn {
   background: #56adff;
@@ -64,7 +64,7 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
-  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+  /* Para Icons SVG LUCIDE */
 }
 #navbarHome #SearchBtn:hover {
   text-shadow: 0 0 20px #0cbaff;
@@ -89,7 +89,7 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
-  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+  /* Para Icons SVG LUCIDE */
 }
 #navbarHome #Services:hover {
   text-shadow: 0 0 20px #0cbaff;
@@ -114,7 +114,7 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
-  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+  /* Para Icons SVG LUCIDE */
 }
 #navbarHome #Qmsm:hover {
   text-shadow: 0 0 20px #0cbaff;
@@ -139,7 +139,7 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
-  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+  /* Para Icons SVG LUCIDE */
 }
 #navbarHome #Ajsu:hover {
   text-shadow: 0 0 20px #0cbaff;
@@ -164,7 +164,7 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 12px #56adff;
   transition: all 0.4s ease, transform 0.4s ease;
-  /* 🔥 ADICIONADO — suporte a LUCIDE SVG */
+  /* Para Icons SVG LUCIDE */
 }
 #navbarHome #PortCert:hover {
   text-shadow: 0 0 20px #0cbaff;
@@ -181,6 +181,52 @@
   stroke: #0cbaff;
   filter: drop-shadow(0 0 16px #0cbaff);
   transform: translateX(2px);
+}
+
+.theme-light #navbarHome #SearchBtn svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #SearchBtn svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #Services svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Services svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #Qmsm svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Qmsm svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #Ajsu svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Ajsu svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #PortCert svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #PortCert svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
 }
 
 .search-dropdown {
