@@ -16,6 +16,15 @@
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }
 
+@media (max-width: 575px) {
+  #nbHome .container-fluid {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+}
+
 @media (max-width: 768px) {
   #navbarHome #SearchBtn {
     margin-left: 20px !important;
@@ -257,7 +266,6 @@
   width: 70px;
   height: 65px !important;
   transition: all 0.4s ease;
-  margin-left: 20px !important;
 }
 .logoNavbar:hover {
   transform: scale(1.03);
@@ -268,6 +276,7 @@
 }
 
 .navbar-toggler {
+  margin-left: 20px !important;
   border: 0.2px solid rgba(255, 255, 255, 0.4784313725) !important;
   background: url("../../public/menu.svg") center/50% no-repeat !important;
   background-size: 24px 24px;
@@ -299,40 +308,6 @@
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5490196078), 0 0 18px rgba(0, 128, 255, 0.2);
   position: relative;
-  /* ---------------- MOBILE ---------------- */
-}
-@media (max-width: 768px) {
-  .dropdown-menu {
-    min-width: 160px;
-    width: 85vw !important;
-    padding: 6px !important;
-    max-width: 200px !important;
-    margin-left: 50% !important;
-    transform: translateX(-50%) !important;
-    border-left: none !important;
-    /* ------------- BARRA NEON LATERAL ------------- */
-    /* ------------- TEXTO / ÍCONES INTERNOS ------------- */
-  }
-  .dropdown-menu::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 4px;
-    height: calc(100% - 12px);
-    background: linear-gradient(#56adff, #0cbaff);
-    border-radius: 12px;
-    filter: drop-shadow(0 0 6px #56adff);
-    opacity: 0.9;
-    transition: all 0.3s ease;
-  }
-  .dropdown-menu .dropdown-item {
-    font-size: 0.88rem;
-    padding: 6px 10px !important;
-  }
-  .dropdown-menu .dropdown-item i {
-    font-size: 0.9rem;
-  }
 }
 
 /* -------------------- ITENS DO DROPDOWN -------------------- */
@@ -341,6 +316,14 @@
   transition: background 0.25s ease, transform 0.25s ease;
   border-radius: 8px !important;
   color: #fff !important;
+  display: flex; /* mantém alinhamento correto */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px; /* ajusta espaço ícone/texto */
+}
+.dropdown-item i,
+.dropdown-item svg {
+  margin: 0;
 }
 .dropdown-item:hover {
   background: rgba(255, 255, 255, 0.1019607843) !important;
@@ -348,65 +331,93 @@
 }
 
 /* -----------------------------------------------------------
-  MOBILE — ÍCONE FANTASMA (GHOST ICON)
+    MOBILE — TOP ICON (aparece acima do dropdown)
 ----------------------------------------------------------- */
-@media (max-width: 768px) {
-  /* O <li> É O CONTÊINER REAL → precisa ser relative */
-  .nav-item.dropdown {
-    position: relative !important;
+@media (max-width: 575px) {
+  .dropdown-menu {
+    min-width: 160px;
+    width: 85vw !important;
+    max-width: 200px !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 6px !important;
   }
-  /* estilo base do ghost */
-  .ghost-icon {
-    display: none;
+  .dropdown-menu > ul,
+  .dropdown-menu {
+    padding-top: 40px !important; /* aumenta espaço entre o topo e o primeiro link */
+  }
+  .dropdown-item {
+    font-size: 0.88rem;
+    padding: 6px 10px !important;
+  }
+  .dropdown-item i {
+    font-size: 0.9rem;
+  }
+  /* Ícone que aparece acima do menu */
+  .dropdown-top-icon {
     position: absolute;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 26px;
-    height: 26px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
+    top: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8666666667);
+    border: 3px solid #56adff;
+    box-shadow: 0 0 14px #56adff, 0 0 22px #56adff inset;
+    display: none;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    z-index: 9999;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 99999;
+    opacity: 0;
+    transform: translate(-50%, -6px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
   }
-  /* quando o JS ativa o ghost */
-  .ghost-icon.show-ghost {
-    display: block !important;
-    animation: ghostIn 0.22s ease forwards;
+  /* Ícone dentro do topo */
+  .dropdown-top-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #56adff !important;
+    transition: all 0.22s ease;
   }
-  @keyframes ghostIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50%) scale(0.92);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(-50%) scale(1);
-    }
+  /* animações */
+  .dropdown-top-icon.visible {
+    display: flex !important;
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
-  /* botão fica opaco quando ativo */
-  .nav-link.is-active {
-    opacity: 0.35 !important;
+  .dropdown-top-icon:hover {
+    border-color: #0cbaff;
+    box-shadow: 0 0 18px #0cbaff, 0 0 28px #0cbaff inset;
+    transform: translate(-50%, 0) scale(1.07);
   }
-  /* -----------------------------------------------------------
-     ÍCONES SVG (ajuste o path se precisar)
-     ----------------------------------------------------------- */
-  .ghost-Search {
-    background-image: url("iconSearch.svg");
+  .dropdown-top-icon:hover svg {
+    color: #0cbaff !important;
   }
-  .ghost-Services {
-    background-image: url("iconLayer.svg");
+  .dropdown-top-icon:active {
+    transform: translate(-50%, 0) scale(0.92);
   }
-  .ghost-Qmsm {
-    background-image: url("iconHandshake.svg");
+  /* botão original some quando ativo */
+  #nbHome .nav-link.is-active {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.18s ease;
   }
-  .ghost-Ajsu {
-    background-image: url("iconSend.svg");
+  /* THEME LIGHT — deixa o ícone do topo da mesma cor dos botões */
+  body.theme-light .dropdown-top-icon {
+    border-color: #0cbaff;
+    box-shadow: 0 0 14px #0cbaff, 0 0 22px #0cbaff inset;
   }
-  .ghost-PortCert {
-    background-image: url("iconBriefcase.svg");
+  body.theme-light .dropdown-top-icon svg {
+    color: #0cbaff !important;
+  }
+}
+@media (min-width: 576px) {
+  .dropdown-top-icon,
+  .dropdown-top-icon.visible {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 }/*# sourceMappingURL=navbar-Home.css.map */
