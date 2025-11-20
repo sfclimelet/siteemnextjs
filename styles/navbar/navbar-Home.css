@@ -25,6 +25,31 @@
   }
 }
 
+#nbHome .logoNavbar {
+  width: 70px !important;
+  height: 65px !important;
+  transition: all 0.4s ease;
+}
+#nbHome .logoNavbar:hover {
+  transform: scale(1.03);
+}
+@media (min-width: 576px) {
+  #nbHome .logoNavbar {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 870px) {
+  #nbHome .logoNavbar {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 576px) {
+  #nbHome #navbarHome {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   #navbarHome #SearchBtn {
     margin-left: 20px !important;
@@ -43,6 +68,9 @@
   }
 }
 @media (min-width: 576px) {
+  #navbarHome {
+    margin-right: 40px !important;
+  }
   #navbarHome #SearchBtn {
     margin-left: 0 !important;
   }
@@ -260,15 +288,6 @@
 .search-input:focus {
   outline: none !important;
   box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.4) !important;
-}
-
-.logoNavbar {
-  width: 70px;
-  height: 65px !important;
-  transition: all 0.4s ease;
-}
-.logoNavbar:hover {
-  transform: scale(1.03);
 }
 
 .navbar-toggler-icon {

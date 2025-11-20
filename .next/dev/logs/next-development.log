@@ -7706,3 +7706,2074 @@ Import traces:
     ./components/navbar/Navbar-Home.jsx [Client Component SSR]
     ./app/page.jsx [Client Component SSR]
     ./app/page.jsx [Server Component]
+[05:24:22.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:24:24.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:26:34.372] Server  LOG      ✓ Compiled in 70ms
+[05:26:35.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+38 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:11  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+38 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:11  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:26:37.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+38 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:12  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+38 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:26:39.289] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+38 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:13  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+38 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[05:26:40.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+38 │     @media (min)
+   │                 ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:17  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+38 │     @media (min)
+   │                 ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:17  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[05:26:43.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+38 │     @media (min-width)
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:23  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+38 │     @media (min-width)
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:23  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[05:26:46.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+38 │     @media (min-width:  )
+   │                         ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:25  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+38 │     @media (min-width:  )
+   │                         ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:25  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123374:35)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+[05:26:47.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+38 │     @media (min-width: )
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:24  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+38 │     @media (min-width: )
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 38:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123374:35)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+[05:28:36.499] Server  LOG      ✓ Compiled in 130ms
+[05:28:36.602] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+161 │     @media
+    │           ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:11  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+161 │     @media
+    │           ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:11  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:28:38.654] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+161 │     @media 
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:12  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+161 │     @media 
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:28:41.236] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+161 │     @media (){
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:13  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+161 │     @media (){
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[05:28:50.241] Server  LOG      ✓ Compiled in 136ms
+[05:28:50.343] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+161 │     @media (min-width: ){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:24  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+161 │     @media (min-width: ){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 161:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123374:35)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+[05:29:03.092] Server  LOG      ✓ Compiled in 107ms
+[05:29:03.195] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+162 │       margin
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 162:13  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+162 │       margin
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 162:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[05:29:08.595] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+162 │       margin-left: ;
+    │                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 162:20  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+162 │       margin-left: ;
+    │                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 162:20  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:29:21.749] Server  LOG      ✓ Compiled in 164ms
+[05:30:12.887] Server  LOG      ✓ Compiled in 112ms
+[05:33:54.815] Server  LOG      ✓ Compiled in 82ms
+[05:33:55.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+45 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 45:13  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 154:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+45 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 45:13  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 154:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116508:12)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+    [at Object.SelectorList_SelectorList$parse0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:29214:109)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88423:34]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+[05:34:12.186] Server  LOG      ✓ Compiled in 93ms
+[05:34:13.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+56 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 56:13  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 154:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+56 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 56:13  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 154:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116508:12)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+    [at Object.SelectorList_SelectorList$parse0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:29214:109)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88423:34]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+[05:34:18.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+56 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 56:20  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+56 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 56:20  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[05:34:34.340] Server  LOG      ✓ Compiled in 135ms
+[05:34:35.971] Server  LOG      ✓ Compiled in 82ms
+[05:34:39.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:34:59.580] Server  LOG      ✓ Compiled in 89ms
+[05:38:17.869] Server  LOG      ✓ Compiled in 69ms
+[05:38:21.336] Server  LOG      ✓ Compiled in 69ms
+[05:38:22.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:38:37.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+155 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+155 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:38:40.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+157 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 157:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+157 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 157:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:38:52.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116508:12)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+    [at Object.SelectorList_SelectorList$parse0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:29214:109)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88423:34]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+[05:38:53.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116508:12)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+    [at Object.SelectorList_SelectorList$parse0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:29214:109)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88423:34]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+[05:38:56.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+55 │   // Acima do Mobile
+   │                     ^
+   ╵
+  styles/navbar/navbar-Home.scss 55:21  navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116508:12)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+    [at Object.SelectorList_SelectorList$parse0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:29214:109)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88423:34]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+[05:38:57.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+   ╷
+51 │   }
+   │    ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:4   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: expected selector.
+   ╷
+51 │   }
+   │    ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:4   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser0._selector$_complexSelector$1$lineBreak (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116258:12)]
+    [at SelectorParser0._selector$_complexSelector$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116263:19)]
+    [at SelectorParser0._selector$_selectorList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116173:45)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116505:23)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+[05:38:59.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+157 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 157:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+157 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 157:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:39:02.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87119:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitDeclaration$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87181:16)]
+    [at _EvaluateVisitor2.visitDeclaration$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87105:19)]
+    [at Declaration0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99942:22)]
+    [at Declaration0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99945:19)]
+    [at _EvaluateVisitor__applyMixin____closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:93432:29)]
+[05:39:04.394] Server  ERROR    ⨯ ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87119:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitDeclaration$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87181:16)]
+    [at _EvaluateVisitor2.visitDeclaration$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87105:19)]
+    [at Declaration0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99942:22)]
+    [at Declaration0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99945:19)]
+    [at _EvaluateVisitor__applyMixin____closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:93432:29)]
+
+
+[05:39:04.499] Browser ERROR   uncaughtError: Error: ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87119:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitDeclaration$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87181:16)]
+    [at _EvaluateVisitor2.visitDeclaration$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87105:19)]
+    [at Declaration0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99942:22)]
+    [at Declaration0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99945:19)]
+    [at _EvaluateVisitor__applyMixin____closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:93432:29)]
+
+
+[05:39:04.655] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87119:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitDeclaration$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87181:16)]
+    [at _EvaluateVisitor2.visitDeclaration$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87105:19)]
+    [at Declaration0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99942:22)]
+    [at Declaration0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99945:19)]
+    [at _EvaluateVisitor__applyMixin____closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:93432:29)]
+[05:39:04.655] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Declarations may only be used within style rules.
+   ╷
+54 │       width: 70px;
+   │       ^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 54:7   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87119:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitDeclaration$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87181:16)]
+    [at _EvaluateVisitor2.visitDeclaration$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87105:19)]
+    [at Declaration0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99942:22)]
+    [at Declaration0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:99945:19)]
+    [at _EvaluateVisitor__applyMixin____closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:93432:29)]
+[05:39:34.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:39:39.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+155 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+155 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 155:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:39:46.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+Caused by: Error: Undefined mixin.
+    ╷
+156 │ @include LogoNavbarHome('.logoNavbar');
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 156:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[05:39:50.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:11:16.151] Server  LOG      ✓ Compiled in 120ms
+[06:11:39.228] Server  LOG      ✓ Compiled in 79ms
+[06:11:40.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:11:56.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:11:58.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:15.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:20.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:26.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:44.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:45.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:48.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:55.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:12:58.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:13:00.667] Server  ERROR    ⨯ ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+
+
+[06:13:00.778] Browser ERROR   uncaughtError: Error: ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+
+
+[06:13:00.945] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:13:00.945] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:13:16.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+42 │   @mixin LogoNavbarHome($id) {
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 42:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:13:17.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+   ╷
+53 │ @include LogoNavbarHome('');
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 53:1   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+Caused by: Error: Undefined mixin.
+   ╷
+53 │ @include LogoNavbarHome('');
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 53:1   navbarIconsMobile()
+  styles/navbar/navbar-Home.scss 166:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[06:13:29.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:13:50.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:14:29.258] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:14:32.012] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:14:49.814] Server  LOG      ✓ Compiled in 67ms
+[06:14:51.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:16:43.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:17:35.255] Server  LOG      ✓ Compiled in 63ms
+[06:17:52.788] Server  LOG      ✓ Compiled in 86ms
+[06:17:53.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:17:59.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:18:04.926] Server  ERROR    ⨯ ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+
+
+[06:18:05.038] Browser ERROR   uncaughtError: Error: ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+
+
+[06:18:05.200] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:18:05.200] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+40 │   #{$pai} .logoNavbar{
+   │     ^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 40:5  NavHome()
+  styles/navbar/navbar-Home.scss 49:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:18:13.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+40 │   #{$} .logoNavbar{
+   │      ^
+   ╵
+  styles/navbar/navbar-Home.scss 40:6  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+40 │   #{$} .logoNavbar{
+   │      ^
+   ╵
+  styles/navbar/navbar-Home.scss 40:6  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0.variableName$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114154:19)]
+    [at ScssParser0._stylesheet0$_variable$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122168:23)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121794:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+[06:18:14.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:19:02.113] Server  LOG      ✓ Compiled in 77ms
+[06:19:02.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+50 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:12  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+50 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:19:06.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+50 │     @media (){
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:13  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+50 │     @media (){
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[06:19:18.863] Server  LOG      ✓ Compiled in 98ms
+[06:19:19.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+50 │     @media (min-width: ){
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:24  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+50 │     @media (min-width: ){
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123374:35)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+[06:20:15.430] Server  LOG      ✓ Compiled in 55ms
+[06:20:16.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+51 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:13  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+51 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:20:22.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+51 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:20  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+51 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 51:20  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:22:03.906] Server  LOG      ✓ Compiled in 101ms
+[06:22:04.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+52 │       .
+   │        ^
+   ╵
+  styles/navbar/navbar-Home.scss 52:8  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+52 │       .
+   │        ^
+   ╵
+  styles/navbar/navbar-Home.scss 52:8  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:22:07.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+52 │       .logoNavbar
+   │                  ^
+   ╵
+  styles/navbar/navbar-Home.scss 52:18  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+52 │       .logoNavbar
+   │                  ^
+   ╵
+  styles/navbar/navbar-Home.scss 52:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:22:13.231] Server  LOG      ✓ Compiled in 113ms
+[06:22:14.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+53 │         mar
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:12  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+53 │         mar
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:22:16.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+53 │         margin
+   │               ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:15  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+53 │         margin
+   │               ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:15  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:22:17.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+53 │         margin-right: 
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:23  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+53 │         margin-right: 
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 53:23  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:22:33.268] Server  LOG      ✓ Compiled in 122ms
+[06:22:59.302] Server  LOG      ✓ Compiled in 76ms
+[06:23:10.636] Server  LOG      ✓ Compiled in 80ms
+[06:23:43.541] Server  LOG      ✓ Compiled in 123ms
+[06:23:47.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:24:11.058] Server  LOG      ✓ Compiled in 70ms
+[06:24:29.240] Server  LOG      ✓ Compiled in 61ms
+[06:24:57.650] Server  LOG      ✓ Compiled in 56ms
+[06:25:24.315] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:26:07.187] Server  LOG      ✓ Compiled in 55ms
+[06:26:22.355] Server  LOG      ✓ Compiled in 57ms
+[06:27:08.034] Server  LOG      ✓ Compiled in 61ms
+[06:27:08.282] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+47 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:11  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+47 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:11  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:27:10.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+47 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:12  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+47 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:27:12.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+47 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:13  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+47 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[06:27:13.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+47 │     @media (){
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:13  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+47 │     @media (){
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 47:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[06:27:35.692] Server  LOG      ✓ Compiled in 117ms
+[06:27:40.170] Server  LOG      ✓ Compiled in 76ms
+[06:27:40.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Mixins may not contain mixin declarations.
+   ╷
+63 │ @mixin navbarIconsMobile($pai, $Search, $Search-Inp,$move, $filhos...){
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 63:1  root stylesheet
+Caused by: Error: Mixins may not contain mixin declarations.
+   ╷
+63 │ @mixin navbarIconsMobile($pai, $Search, $Search-Inp,$move, $filhos...){
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/navbar/navbar-Home.scss 63:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121178:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:27:45.024] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:27:55.932] Server  LOG      ✓ Compiled in 116ms
+[06:28:03.305] Server  LOG      ✓ Compiled in 84ms
+[06:28:18.621] Server  LOG      ✓ Compiled in 82ms
+[06:28:22.244] Server  LOG      ✓ Compiled in 66ms
+[06:30:13.419] Server  LOG      ✓ Compiled in 68ms
+[06:30:14.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+50 │     @
+   │      ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:6  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+50 │     @
+   │      ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:6  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120492:21)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115780:33)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+[06:30:16.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+50 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:11  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+50 │     @media
+   │           ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:11  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:30:17.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+50 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:12  root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+50 │     @media 
+   │            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123281:27)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:30:18.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+50 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:13  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+50 │     @media ()
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$2$consumeNewlines$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121754:19)]
+    [at ScssParser0._stylesheet0$_expressionUntilComparison$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123419:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123366:34)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+[06:30:28.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+50 │     @media (min)
+   │                 ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:17  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+50 │     @media (min)
+   │                 ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:17  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[06:30:32.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+50 │     @media (min-width)
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:23  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+50 │     @media (min-width)
+   │                       ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:23  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[06:30:36.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+50 │     @media (min-width: )
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:24  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+50 │     @media (min-width: )
+   │                        ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0._stylesheet0$_mediaInParens$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123374:35)]
+    [at ScssParser0._stylesheet0$_mediaQuery$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123268:15)]
+    [at ScssParser0._stylesheet0$_mediaQueryList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123254:15)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:141)]
+[06:30:46.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+50 │     @media (min-width: 576)
+   │                            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:28  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+50 │     @media (min-width: 576)
+   │                            ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:28  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[06:30:47.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+50 │     @media (min-width: 576px)
+   │                              ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:30  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+50 │     @media (min-width: 576px)
+   │                              ^
+   ╵
+  styles/navbar/navbar-Home.scss 50:30  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0.mediaRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121157:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120536:24)]
+[06:31:13.996] Server  LOG      ✓ Compiled in 78ms
+[06:31:14.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+48 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 48:13  root stylesheet
+Caused by: Error: expected "{".
+   ╷
+48 │       margin
+   │             ^
+   ╵
+  styles/navbar/navbar-Home.scss 48:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:31:17.280] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+48 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 48:20  root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+48 │       margin-left: ;
+   │                    ^
+   ╵
+  styles/navbar/navbar-Home.scss 48:20  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]

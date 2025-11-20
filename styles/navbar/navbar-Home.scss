@@ -27,19 +27,41 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   }
   #{$Nid}{
     @media (max-width: 575px){
-    .container-fluid{
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-  }
+      .container-fluid{
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }
     }
   }
+
+  // Logo da Navbar e os Icones dos Menus
+  #{$Nid} .logoNavbar{
+    width: 70px !important;
+    height: 65px !important;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
+    @media (min-width: 576px){
+      margin-left: 30px;
+    }
+    @media (min-width: 870px){
+      margin-left: 80px;
+    }
+  }
+  #{$Nid} #navbarHome{
+    @media (min-width: 576px){
+      margin-left: 30px;
+    }
+  }
+
 }
 @include NavHome('#nbHome');
 
 @mixin navbarIconsMobile($pai, $Search, $Search-Inp,$move, $filhos...){
-  // Resoluções
+  // Resoluções 
   @media (max-width: 768px) {
     #{$pai}{
       @each $percorrer in $filhos {
@@ -53,6 +75,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   // Acima do Mobile
   @media (min-width: 576px){
     #{$pai}{
+      margin-right: 40px !important;
       @each $per in $filhos {
         #{$per}{
           margin-left: 0 !important;
@@ -151,19 +174,6 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   }
 }
 @include navbarIconsMobile('#navbarHome', '.search-dropdown','.search-input',20px, '#SearchBtn','#Services' ,'#Qmsm' ,'#Ajsu' ,'#PortCert');
-
-@mixin LogoNavbarHome($id) {
-  #{$id} {
-    width: 70px;
-    height: 65px !important;
-    transition: all 0.4s ease;
-
-    &:hover {
-      transform: scale(1.03);
-    }
-  }
-}
-@include LogoNavbarHome('.logoNavbar');
 
 @mixin NavToggler($cls1, $cls2){
     $color-border: #ffffff7a;
