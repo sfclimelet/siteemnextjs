@@ -177,6 +177,10 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
 @mixin DropdownMn($pScls, $pScls2){
   $cor-borderSubMn: #797979;
+  $neon1: #56adff;
+  $neon2: #0cbaff;
+
+  /* animação de entrada */
   @keyframes fadeMenu {
     from {
       opacity: 0;
@@ -187,6 +191,8 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       transform: translateY(0);
     }
   }
+
+  /* -------------------- DROPDOWN BASE -------------------- */
   #{$pScls}{
     border: 1px solid $cor-borderSubMn !important;
     border-radius: 12px !important;
@@ -196,8 +202,9 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
+    position: relative;
 
-    /* Resolução Mobile */
+    /* ---------------- MOBILE ---------------- */
     @media (max-width: 768px){
       min-width: 160px;
       width: 85vw !important;
@@ -205,25 +212,101 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       max-width: 200px !important;
       margin-left: 50% !important;
       transform: translateX(-50%) !important;
-      border-left: 3px solid #fff !important;
+      border-left: none !important;
+
+      /* ------------- BARRA NEON LATERAL ------------- */
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 4px;
+        height: calc(100% - 12px);
+        background: linear-gradient($neon1, $neon2);
+        border-radius: 12px;
+        filter: drop-shadow(0 0 6px $neon1);
+        opacity: 0.9;
+        transition: all 0.3s ease;
+      }
+
+      /* ------------- TEXTO / ÍCONES INTERNOS ------------- */
       #{$pScls2}{
-          font-size: 0.88rem;
-          padding: 6px 10px !important;
+        font-size: 0.88rem;
+        padding: 6px 10px !important;
+
         i {
           font-size: 0.9rem;
         }
       }
     }
   }
+
+  /* -------------------- ITENS DO DROPDOWN -------------------- */
   #{$pScls2}{
     padding: 10px 16px !important;
     transition: background 0.25s ease, transform 0.25s ease;
     border-radius: 8px !important;
     color: #fff !important;
+
     &:hover{
       background: #ffffff1a !important;
       transform: translateX(4px);
     }
   }
-} 
+
+  /* -----------------------------------------------------------
+    MOBILE — ÍCONE FANTASMA (GHOST ICON)
+  ----------------------------------------------------------- */
+  @media (max-width: 768px){
+
+    /* O <li> É O CONTÊINER REAL → precisa ser relative */
+    .nav-item.dropdown {
+      position: relative !important;
+    }
+
+    /* estilo base do ghost */
+    .ghost-icon {
+      display: none;
+      position: absolute;
+      left: -42px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 1;
+      cursor: pointer;
+      z-index: 9999;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    /* quando o JS ativa o ghost */
+    .ghost-icon.show-ghost {
+      display: block !important;
+      animation: ghostIn 0.22s ease forwards;
+    }
+
+    @keyframes ghostIn {
+      from { opacity: 0; transform: translateY(-50%) scale(0.92); }
+      to   { opacity: 1; transform: translateY(-50%) scale(1); }
+    }
+
+    /* botão fica opaco quando ativo */
+    .nav-link.is-active {
+      opacity: 0.35 !important;
+    }
+
+    /* -----------------------------------------------------------
+       ÍCONES SVG (ajuste o path se precisar)
+       ----------------------------------------------------------- */
+    .ghost-Search    { background-image: url('iconSearch.svg'); }
+    .ghost-Services  { background-image: url('iconLayer.svg'); }
+    .ghost-Qmsm      { background-image: url('iconHandshake.svg'); }
+    .ghost-Ajsu      { background-image: url('iconSend.svg'); }
+    .ghost-PortCert  { background-image: url('iconBriefcase.svg'); }
+  }
+
+}
 @include DropdownMn('.dropdown-menu', '.dropdown-item');

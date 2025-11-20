@@ -315,6 +315,7 @@
 .dropdown-menu {
   -webkit-backdrop-filter: blur(12px);
   animation: .25s forwards fadeMenu;
+  position: relative;
   box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
   background: #000000bf !important;
   border: 1px solid #797979 !important;
@@ -325,12 +326,26 @@
 @media (max-width: 768px) {
   .dropdown-menu {
     min-width: 160px;
-    border-left: 3px solid #fff !important;
+    border-left: none !important;
     width: 85vw !important;
     max-width: 200px !important;
     margin-left: 50% !important;
     padding: 6px !important;
     transform: translateX(-50%) !important;
+  }
+
+  .dropdown-menu:before {
+    content: "";
+    filter: drop-shadow(0 0 6px #56adff);
+    opacity: .9;
+    background: linear-gradient(#56adff, #0cbaff);
+    border-radius: 12px;
+    width: 4px;
+    height: calc(100% - 12px);
+    transition: all .3s;
+    position: absolute;
+    top: 6px;
+    left: 0;
   }
 
   .dropdown-menu .dropdown-item {
@@ -353,6 +368,70 @@
 .dropdown-item:hover {
   transform: translateX(4px);
   background: #ffffff1a !important;
+}
+
+@media (max-width: 768px) {
+  .nav-item.dropdown {
+    position: relative !important;
+  }
+
+  .ghost-icon {
+    opacity: 1;
+    cursor: pointer;
+    z-index: 9999;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    transition: opacity .2s, transform .2s;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -42px;
+    transform: translateY(-50%);
+  }
+
+  .ghost-icon.show-ghost {
+    animation: .22s forwards ghostIn;
+    display: block !important;
+  }
+
+  @keyframes ghostIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50%)scale(.92);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(-50%)scale(1);
+    }
+  }
+
+  .nav-link.is-active {
+    opacity: .35 !important;
+  }
+
+  .ghost-Search {
+    background-image: url("../media/iconSearch.34afb76d.svg");
+  }
+
+  .ghost-Services {
+    background-image: url("../media/iconLayer.fced95c3.svg");
+  }
+
+  .ghost-Qmsm {
+    background-image: url("../media/iconHandshake.1df59aa5.svg");
+  }
+
+  .ghost-Ajsu {
+    background-image: url("../media/iconSend.cc5cc859.svg");
+  }
+
+  .ghost-PortCert {
+    background-image: url("../media/iconBriefcase.493d5b9a.svg");
+  }
 }
 
 /*# sourceMappingURL=styles_navbar_navbar-Home_scss_css_bad6b30c._.single.css.map*/

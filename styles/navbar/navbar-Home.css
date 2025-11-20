@@ -277,6 +277,7 @@
   border-color: rgba(255, 255, 255, 0.6) !important;
 }
 
+/* animação de entrada */
 @keyframes fadeMenu {
   from {
     opacity: 0;
@@ -287,6 +288,7 @@
     transform: translateY(0);
   }
 }
+/* -------------------- DROPDOWN BASE -------------------- */
 .dropdown-menu {
   border: 1px solid #797979 !important;
   border-radius: 12px !important;
@@ -296,7 +298,8 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5490196078), 0 0 18px rgba(0, 128, 255, 0.2);
-  /* Resolução Mobile */
+  position: relative;
+  /* ---------------- MOBILE ---------------- */
 }
 @media (max-width: 768px) {
   .dropdown-menu {
@@ -306,7 +309,22 @@
     max-width: 200px !important;
     margin-left: 50% !important;
     transform: translateX(-50%) !important;
-    border-left: 3px solid #fff !important;
+    border-left: none !important;
+    /* ------------- BARRA NEON LATERAL ------------- */
+    /* ------------- TEXTO / ÍCONES INTERNOS ------------- */
+  }
+  .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: calc(100% - 12px);
+    background: linear-gradient(#56adff, #0cbaff);
+    border-radius: 12px;
+    filter: drop-shadow(0 0 6px #56adff);
+    opacity: 0.9;
+    transition: all 0.3s ease;
   }
   .dropdown-menu .dropdown-item {
     font-size: 0.88rem;
@@ -317,6 +335,7 @@
   }
 }
 
+/* -------------------- ITENS DO DROPDOWN -------------------- */
 .dropdown-item {
   padding: 10px 16px !important;
   transition: background 0.25s ease, transform 0.25s ease;
@@ -326,4 +345,68 @@
 .dropdown-item:hover {
   background: rgba(255, 255, 255, 0.1019607843) !important;
   transform: translateX(4px);
+}
+
+/* -----------------------------------------------------------
+  MOBILE — ÍCONE FANTASMA (GHOST ICON)
+----------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* O <li> É O CONTÊINER REAL → precisa ser relative */
+  .nav-item.dropdown {
+    position: relative !important;
+  }
+  /* estilo base do ghost */
+  .ghost-icon {
+    display: none;
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 9999;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  /* quando o JS ativa o ghost */
+  .ghost-icon.show-ghost {
+    display: block !important;
+    animation: ghostIn 0.22s ease forwards;
+  }
+  @keyframes ghostIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50%) scale(0.92);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
+    }
+  }
+  /* botão fica opaco quando ativo */
+  .nav-link.is-active {
+    opacity: 0.35 !important;
+  }
+  /* -----------------------------------------------------------
+     ÍCONES SVG (ajuste o path se precisar)
+     ----------------------------------------------------------- */
+  .ghost-Search {
+    background-image: url("iconSearch.svg");
+  }
+  .ghost-Services {
+    background-image: url("iconLayer.svg");
+  }
+  .ghost-Qmsm {
+    background-image: url("iconHandshake.svg");
+  }
+  .ghost-Ajsu {
+    background-image: url("iconSend.svg");
+  }
+  .ghost-PortCert {
+    background-image: url("iconBriefcase.svg");
+  }
 }/*# sourceMappingURL=navbar-Home.css.map */

@@ -1,17 +1,4 @@
 module.exports = [
-"[project]/components/navbar/navbar-Animated.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "navbarAnimated",
-    ()=>navbarAnimated
-]);
-"use client";
-function navbarAnimated() {
-    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
-    ;
-}
-}),
 "[project]/public/logo-sef.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
 
 __turbopack_context__.v("/_next/static/media/logo-sef.f397d488.png");}),
@@ -43,15 +30,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2f$navbar$2d$Animated$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/navbar/navbar-Animated.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2d$sef$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$logo$2d$sef$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/logo-sef.png.mjs { IMAGE => "[project]/public/logo-sef.png (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
-// Icones 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layers.js [app-ssr] (ecmascript) <export default as Layers>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-ssr] (ecmascript) <export default as Search>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$handshake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Handshake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/handshake.js [app-ssr] (ecmascript) <export default as Handshake>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-ssr] (ecmascript) <export default as Send>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-ssr] (ecmascript) <export default as Briefcase>");
 "use client";
 ;
 ;
@@ -59,44 +39,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-;
-;
 function NavbarHome() {
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2f$navbar$2d$Animated$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbarAnimated"])();
+    const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    // Fecha qualquer menu quando clicar fora
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if ("TURBOPACK compile-time truthy", 1) return;
-        //TURBOPACK unreachable
-        ;
-        const dropdownItems = undefined;
-        // Fecha tudo (usa o click no botão pra garantir a lógica do bootstrap)
-        function closeAll() {
-            dropdownItems.forEach((li)=>{
-                const btn = li.querySelector('.nav-link[data-bs-toggle="dropdown"]');
-                const ghost = li.querySelector('.ghost-icon');
-                // se estiver aberto, dispara o clique pra fechar
-                if (li.classList.contains('show')) {
-                    if (btn) btn.click();
-                }
-                // limpa classes de estado (fallback)
-                btn?.classList.remove('is-active');
-                ghost?.classList.remove('show-ghost');
-            });
-        }
-        // Handler para o ghost — dispara o click do botão (fecha o menu)
-        function onGhostClick(e) {
-            const ghost = e.currentTarget;
-            const li = ghost.closest('.nav-item.dropdown');
-            const btn = li?.querySelector('.nav-link[data-bs-toggle="dropdown"]');
-            if (btn) {
-                btn.click();
-            }
-        }
-        // Para cada dropdown (li) registramos os eventos do bootstrap
-        const handlers = undefined;
+        const closeAll = ()=>setActiveMenu(null);
+        document.addEventListener("click", closeAll);
+        return ()=>document.removeEventListener("click", closeAll);
     }, []);
+    // Evita que o clique interno feche tudo
+    const stopPropagation = (e)=>e.stopPropagation();
+    // Ativa / desativa o menu e o ghost-icon
+    const toggleMenu = (menuId)=>{
+        setActiveMenu((prev)=>prev === menuId ? null : menuId);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         id: "nbHome",
         className: "navbar navbar-expand-sm sticky-top z-2",
+        onClick: stopPropagation,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container-fluid",
             children: [
@@ -110,12 +70,12 @@ function NavbarHome() {
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                        lineNumber: 97,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                    lineNumber: 96,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -125,17 +85,16 @@ function NavbarHome() {
                     "data-bs-target": "#navbarHome",
                     "aria-controls": "navbarHome",
                     "aria-expanded": "false",
-                    "aria-label": "Toggle navigation",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "navbar-toggler-icon"
                     }, void 0, false, {
                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                        lineNumber: 110,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                    lineNumber: 101,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -145,39 +104,46 @@ function NavbarHome() {
                         className: "navbar-nav",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item dropdown",
+                                className: "nav-item dropdown mobile-ghost-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         id: "SearchBtn",
-                                        className: "nav-link nav-icon",
-                                        role: "button",
-                                        "data-bs-toggle": "dropdown",
-                                        "aria-expanded": "false",
-                                        "aria-label": "Buscar",
-                                        title: "Buscar",
+                                        className: `nav-link nav-icon mobile-ghost-btn ${activeMenu === "SearchBtn" ? "active" : ""}`,
+                                        onClick: ()=>toggleMenu("SearchBtn"),
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "iconMove",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {}, void 0, false, {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/icons/search.svg",
+                                                alt: "Buscar"
+                                            }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 121,
+                                                lineNumber: 63,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 120,
+                                            lineNumber: 62,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 119,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ghost-icon ghost-Search"
+                                    activeMenu === "SearchBtn" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "ghost-indicator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/search.svg",
+                                            alt: "Buscar"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/navbar/Navbar-Home.jsx",
+                                            lineNumber: 70,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 124,
-                                        columnNumber: 15
+                                        lineNumber: 69,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "dropdown-menu dropdown-menu-end search-dropdown",
@@ -189,52 +155,59 @@ function NavbarHome() {
                                                 type: "search"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 127,
+                                                lineNumber: 76,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 126,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 125,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                lineNumber: 118,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item dropdown",
+                                className: "nav-item dropdown mobile-ghost-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         id: "Services",
-                                        className: "nav-link",
-                                        role: "button",
-                                        "data-bs-toggle": "dropdown",
-                                        "aria-expanded": "false",
-                                        "aria-label": "Serviços",
-                                        title: "Serviços",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"], {}, void 0, false, {
+                                        className: `nav-link mobile-ghost-btn ${activeMenu === "Services" ? "active" : ""}`,
+                                        onClick: ()=>toggleMenu("Services"),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/layers.svg",
+                                            alt: "Serviços"
+                                        }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 143,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 134,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ghost-icon ghost-Services"
+                                    activeMenu === "Services" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "ghost-indicator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/layers.svg",
+                                            alt: "Serviços"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/navbar/Navbar-Home.jsx",
+                                            lineNumber: 93,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 147,
-                                        columnNumber: 15
+                                        lineNumber: 92,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "dropdown-menu dropdown-menu-end",
@@ -248,19 +221,19 @@ function NavbarHome() {
                                                             className: "bi bi-bag"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 152,
-                                                            columnNumber: 21
+                                                            lineNumber: 98,
+                                                            columnNumber: 66
                                                         }, this),
                                                         " Loja"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 151,
-                                                    columnNumber: 19
+                                                    lineNumber: 98,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 150,
+                                                lineNumber: 98,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -272,19 +245,19 @@ function NavbarHome() {
                                                             className: "bi bi-pencil-square"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 157,
-                                                            columnNumber: 21
+                                                            lineNumber: 99,
+                                                            columnNumber: 71
                                                         }, this),
                                                         " Orçamento"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 156,
-                                                    columnNumber: 19
+                                                    lineNumber: 99,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 155,
+                                                lineNumber: 99,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -296,19 +269,19 @@ function NavbarHome() {
                                                             className: "bi bi-code-slash"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 162,
-                                                            columnNumber: 21
+                                                            lineNumber: 100,
+                                                            columnNumber: 65
                                                         }, this),
                                                         " Desenvolvedor"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 161,
-                                                    columnNumber: 19
+                                                    lineNumber: 100,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 160,
+                                                lineNumber: 100,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -320,19 +293,19 @@ function NavbarHome() {
                                                             className: "bi bi-arrow-down-up"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 167,
-                                                            columnNumber: 21
+                                                            lineNumber: 101,
+                                                            columnNumber: 74
                                                         }, this),
                                                         " Atualizações"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 166,
-                                                    columnNumber: 19
+                                                    lineNumber: 101,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 165,
+                                                lineNumber: 101,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -344,19 +317,19 @@ function NavbarHome() {
                                                             className: "bi bi-geo-alt"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 172,
-                                                            columnNumber: 21
+                                                            lineNumber: 102,
+                                                            columnNumber: 77
                                                         }, this),
                                                         " Área de atuação"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 171,
-                                                    columnNumber: 19
+                                                    lineNumber: 102,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 170,
+                                                lineNumber: 102,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -368,60 +341,67 @@ function NavbarHome() {
                                                             className: "bi bi-file-earmark"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 177,
-                                                            columnNumber: 21
+                                                            lineNumber: 103,
+                                                            columnNumber: 68
                                                         }, this),
                                                         " Termos de Serviços"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 176,
-                                                    columnNumber: 19
+                                                    lineNumber: 103,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 175,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 149,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                lineNumber: 133,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item dropdown",
+                                className: "nav-item dropdown mobile-ghost-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         id: "Qmsm",
-                                        className: "nav-link",
-                                        role: "button",
-                                        "data-bs-toggle": "dropdown",
-                                        "aria-expanded": "false",
-                                        "aria-label": "Quem Somos",
-                                        title: "Quem Somos",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$handshake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Handshake$3e$__["Handshake"], {}, void 0, false, {
+                                        className: `nav-link mobile-ghost-btn ${activeMenu === "Qmsm" ? "active" : ""}`,
+                                        onClick: ()=>toggleMenu("Qmsm"),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/handshake.svg",
+                                            alt: "Quem Somos"
+                                        }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 194,
+                                            lineNumber: 114,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 185,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ghost-icon ghost-Qmsm"
+                                    activeMenu === "Qmsm" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "ghost-indicator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/handshake.svg",
+                                            alt: "Quem Somos"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/navbar/Navbar-Home.jsx",
+                                            lineNumber: 119,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 196,
-                                        columnNumber: 15
+                                        lineNumber: 118,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "dropdown-menu dropdown-menu-end",
@@ -435,19 +415,19 @@ function NavbarHome() {
                                                             className: "bi bi-people"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 200,
-                                                            columnNumber: 21
+                                                            lineNumber: 124,
+                                                            columnNumber: 70
                                                         }, this),
                                                         " Parceiro"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 199,
-                                                    columnNumber: 19
+                                                    lineNumber: 124,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 198,
+                                                lineNumber: 124,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -459,19 +439,19 @@ function NavbarHome() {
                                                             className: "bi bi-stars"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 205,
-                                                            columnNumber: 21
+                                                            lineNumber: 125,
+                                                            columnNumber: 73
                                                         }, this),
                                                         " Depoimentos"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 204,
-                                                    columnNumber: 19
+                                                    lineNumber: 125,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 203,
+                                                lineNumber: 125,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -483,19 +463,19 @@ function NavbarHome() {
                                                             className: "bi bi-patch-check"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 210,
-                                                            columnNumber: 21
+                                                            lineNumber: 126,
+                                                            columnNumber: 70
                                                         }, this),
                                                         " Créditos"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 209,
-                                                    columnNumber: 19
+                                                    lineNumber: 126,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 208,
+                                                lineNumber: 126,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -507,60 +487,67 @@ function NavbarHome() {
                                                             className: "bi bi-info-lg"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 215,
-                                                            columnNumber: 21
+                                                            lineNumber: 127,
+                                                            columnNumber: 67
                                                         }, this),
-                                                        " Sobre a Empresa"
+                                                        " Sobre"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 214,
-                                                    columnNumber: 19
+                                                    lineNumber: 127,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 213,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 197,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                lineNumber: 184,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item dropdown",
+                                className: "nav-item dropdown mobile-ghost-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         id: "Ajsu",
-                                        className: "nav-link",
-                                        role: "button",
-                                        "data-bs-toggle": "dropdown",
-                                        "aria-expanded": "false",
-                                        "aria-label": "Ajuda e Suporte",
-                                        title: "Ajuda e Suporte",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {}, void 0, false, {
+                                        className: `nav-link mobile-ghost-btn ${activeMenu === "Ajsu" ? "active" : ""}`,
+                                        onClick: ()=>toggleMenu("Ajsu"),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/send.svg",
+                                            alt: "Ajuda e Suporte"
+                                        }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 232,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 223,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ghost-icon ghost-Ajsu"
+                                    activeMenu === "Ajsu" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "ghost-indicator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/send.svg",
+                                            alt: "Ajuda"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/navbar/Navbar-Home.jsx",
+                                            lineNumber: 143,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 234,
-                                        columnNumber: 15
+                                        lineNumber: 142,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "dropdown-menu dropdown-menu-end",
@@ -574,19 +561,19 @@ function NavbarHome() {
                                                             className: "bi bi-lightbulb"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 238,
-                                                            columnNumber: 21
+                                                            lineNumber: 148,
+                                                            columnNumber: 67
                                                         }, this),
                                                         " Dicas"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 237,
-                                                    columnNumber: 19
+                                                    lineNumber: 148,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 236,
+                                                lineNumber: 148,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -598,19 +585,19 @@ function NavbarHome() {
                                                             className: "bi bi-person"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 243,
-                                                            columnNumber: 21
+                                                            lineNumber: 149,
+                                                            columnNumber: 69
                                                         }, this),
                                                         " Contato"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 242,
-                                                    columnNumber: 19
+                                                    lineNumber: 149,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 241,
+                                                lineNumber: 149,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -622,19 +609,19 @@ function NavbarHome() {
                                                             className: "bi bi-google"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 248,
-                                                            columnNumber: 21
+                                                            lineNumber: 150,
+                                                            columnNumber: 71
                                                         }, this),
-                                                        " Avalie no Google"
+                                                        " Google"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 247,
-                                                    columnNumber: 19
+                                                    lineNumber: 150,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 246,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -646,19 +633,19 @@ function NavbarHome() {
                                                             className: "bi bi-question-circle"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 253,
-                                                            columnNumber: 21
+                                                            lineNumber: 151,
+                                                            columnNumber: 65
                                                         }, this),
-                                                        " Dúvidas Frequentes"
+                                                        " FAQ"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 252,
-                                                    columnNumber: 19
+                                                    lineNumber: 151,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 251,
+                                                lineNumber: 151,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -670,60 +657,67 @@ function NavbarHome() {
                                                             className: "bi bi-shield-lock"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 258,
-                                                            columnNumber: 21
+                                                            lineNumber: 152,
+                                                            columnNumber: 73
                                                         }, this),
-                                                        " Política de Privacidade"
+                                                        " Privacidade"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 257,
-                                                    columnNumber: 19
+                                                    lineNumber: 152,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 256,
+                                                lineNumber: 152,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 235,
+                                        lineNumber: 147,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                lineNumber: 222,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item dropdown",
+                                className: "nav-item dropdown mobile-ghost-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         id: "PortCert",
-                                        className: "nav-link",
-                                        role: "button",
-                                        "data-bs-toggle": "dropdown",
-                                        "aria-expanded": "false",
-                                        "aria-label": "Portifólio e Certificações",
-                                        title: "Portifólio e Certificações",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {}, void 0, false, {
+                                        className: `nav-link mobile-ghost-btn ${activeMenu === "PortCert" ? "active" : ""}`,
+                                        onClick: ()=>toggleMenu("PortCert"),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/briefcase.svg",
+                                            alt: "Portfólio"
+                                        }, void 0, false, {
                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                            lineNumber: 273,
+                                            lineNumber: 163,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 266,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "ghost-icon ghost-PortCert"
+                                    activeMenu === "PortCert" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "ghost-indicator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/icons/briefcase.svg",
+                                            alt: "Portfólio"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/navbar/Navbar-Home.jsx",
+                                            lineNumber: 168,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 275,
-                                        columnNumber: 15
+                                        lineNumber: 167,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "dropdown-menu dropdown-menu-end",
@@ -737,19 +731,19 @@ function NavbarHome() {
                                                             className: "bi bi-chat-square"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 279,
-                                                            columnNumber: 21
+                                                            lineNumber: 173,
+                                                            columnNumber: 70
                                                         }, this),
                                                         " Feedback"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 278,
-                                                    columnNumber: 19
+                                                    lineNumber: 173,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 277,
+                                                lineNumber: 173,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -761,19 +755,19 @@ function NavbarHome() {
                                                             className: "bi bi-award"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 284,
-                                                            columnNumber: 21
+                                                            lineNumber: 174,
+                                                            columnNumber: 75
                                                         }, this),
                                                         " Certificações"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 283,
-                                                    columnNumber: 19
+                                                    lineNumber: 174,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 282,
+                                                lineNumber: 174,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -785,19 +779,19 @@ function NavbarHome() {
                                                             className: "bi bi-card-image"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 289,
-                                                            columnNumber: 21
+                                                            lineNumber: 175,
+                                                            columnNumber: 69
                                                         }, this),
-                                                        " Galeria de Serviços"
+                                                        " Galeria"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 288,
-                                                    columnNumber: 19
+                                                    lineNumber: 175,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 287,
+                                                lineNumber: 175,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -809,53 +803,53 @@ function NavbarHome() {
                                                             className: "bi bi-camera"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                            lineNumber: 294,
-                                                            columnNumber: 21
+                                                            lineNumber: 176,
+                                                            columnNumber: 74
                                                         }, this),
                                                         " Antes e Depois"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                    lineNumber: 293,
-                                                    columnNumber: 19
+                                                    lineNumber: 176,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                                lineNumber: 292,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                        lineNumber: 276,
+                                        lineNumber: 172,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                                lineNumber: 265,
+                                lineNumber: 157,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                        lineNumber: 115,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/navbar/Navbar-Home.jsx",
-                    lineNumber: 114,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/navbar/Navbar-Home.jsx",
-            lineNumber: 93,
+            lineNumber: 32,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/navbar/Navbar-Home.jsx",
-        lineNumber: 92,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -1510,4 +1504,4 @@ function Home() {
 }),
 ];
 
-//# sourceMappingURL=_a2a8274b._.js.map
+//# sourceMappingURL=_a09cccd1._.js.map

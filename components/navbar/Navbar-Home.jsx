@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { navbarAnimated } from "./navbar-Animated";
+import { useEffect } from "react";
 
 import logo from "../../public/logo-sef.png";
 
@@ -14,6 +15,79 @@ import { Layers, Search, Handshake, Send, Briefcase } from "lucide-react";
 
 export default function NavbarHome() {
   navbarAnimated();
+  useEffect(() => {
+  if (typeof window === "undefined") return;
+
+  const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
+
+  // Fecha tudo (usa o click no botão pra garantir a lógica do bootstrap)
+  function closeAll() {
+    dropdownItems.forEach((li) => {
+      const btn = li.querySelector('.nav-link[data-bs-toggle="dropdown"]');
+      const ghost = li.querySelector('.ghost-icon');
+      // se estiver aberto, dispara o clique pra fechar
+      if (li.classList.contains('show')) {
+        if (btn) btn.click();
+      }
+      // limpa classes de estado (fallback)
+      btn?.classList.remove('is-active');
+      ghost?.classList.remove('show-ghost');
+    });
+  }
+
+  // Handler para o ghost — dispara o click do botão (fecha o menu)
+  function onGhostClick(e) {
+    const ghost = e.currentTarget;
+    const li = ghost.closest('.nav-item.dropdown');
+    const btn = li?.querySelector('.nav-link[data-bs-toggle="dropdown"]');
+    if (btn) {
+      btn.click();
+    }
+  }
+
+  // Para cada dropdown (li) registramos os eventos do bootstrap
+  const handlers = [];
+
+  dropdownItems.forEach((li) => {
+    const btn = li.querySelector('.nav-link[data-bs-toggle="dropdown"]');
+    const ghost = li.querySelector('.ghost-icon');
+
+    // se tiver ghost, liga o clique do ghost
+    if (ghost) {
+      ghost.addEventListener('click', onGhostClick);
+    }
+
+    // show.bs.dropdown -> quando o bootstrap abre o menu
+    const onShow = () => {
+      // fecha outros
+      closeAll();
+      // ativa estado visual
+      btn?.classList.add('is-active');
+      ghost?.classList.add('show-ghost');
+    };
+
+    // hide.bs.dropdown -> quando o bootstrap fecha o menu
+    const onHide = () => {
+      btn?.classList.remove('is-active');
+      ghost?.classList.remove('show-ghost');
+    };
+
+    // Note: bootstrap em client-side dispara eventos CustomEvent 'show.bs.dropdown'/'hide.bs.dropdown'
+    li.addEventListener('show.bs.dropdown', onShow);
+    li.addEventListener('hide.bs.dropdown', onHide);
+
+    handlers.push({ li, onShow, onHide, ghost });
+  });
+
+  // cleanup
+  return () => {
+    handlers.forEach(({ li, onShow, onHide, ghost }) => {
+      li.removeEventListener('show.bs.dropdown', onShow);
+      li.removeEventListener('hide.bs.dropdown', onHide);
+      if (ghost) ghost.removeEventListener('click', onGhostClick);
+    });
+  };
+}, []);
   return (
     <nav id="nbHome" className="navbar navbar-expand-sm sticky-top z-2">
       <div className="container-fluid">
@@ -40,12 +114,14 @@ export default function NavbarHome() {
         <div className="collapse navbar-collapse justify-content-end me-0" id="navbarHome">
           <ul className="navbar-nav">
 
+            {/* Search */}
             <li className="nav-item dropdown">
               <button id="SearchBtn" className="nav-link nav-icon" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Buscar" title="Buscar">
                 <span className="iconMove">
                   <Search />
                 </span>
               </button>
+              <div className="ghost-icon ghost-Search"></div>
               <ul className="dropdown-menu dropdown-menu-end search-dropdown">
                 <li className="px-3 py-2">
                   <input className="form-control search-input" placeholder="Buscar..." type="search" />
@@ -66,6 +142,9 @@ export default function NavbarHome() {
               >
                 <Layers />
               </button>
+
+              {/*Icon Fantasma */}
+              <div className="ghost-icon ghost-Services"></div>
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
@@ -114,7 +193,7 @@ export default function NavbarHome() {
               >
                 <Handshake />
               </button>
-
+              <div className="ghost-icon ghost-Qmsm"></div>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/parceiro">
@@ -152,7 +231,7 @@ export default function NavbarHome() {
               >
                 <Send />
               </button>
-
+              <div className="ghost-icon ghost-Ajsu"></div>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/dicas">
@@ -193,7 +272,7 @@ export default function NavbarHome() {
               >
                 <Briefcase />
               </button>
-
+              <div className="ghost-icon ghost-PortCert"></div>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/feedback">
