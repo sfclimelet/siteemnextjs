@@ -5676,3 +5676,2033 @@ Import traces:
 [04:16:38.777] Server  LOG      ✓ Compiled in 8ms
 [04:16:40.733] Server  LOG      ✓ Compiled in 8ms
 [04:16:44.359] Server  LOG      ✓ Compiled in 9ms
+[04:20:27.014] Server  LOG      ✓ Compiled in 9ms
+[04:20:31.156] Server  LOG      ✓ Compiled in 8ms
+[04:20:35.794] Server  LOG      ✓ Compiled in 9ms
+[04:20:37.420] Server  LOG      ✓ Compiled in 8ms
+[04:20:38.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:13:3
+Parsing ecmascript source code failed
+  11 | import {
+  12 |   Layers, Search, Handshake, Send, Briefcase,
+> 13 |   {}
+     |   ^
+  14 | } from "lucide-react";
+  15 |
+  16 | export default function NavbarHome() {
+
+Unexpected token `{`. Expected identifier or string
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:20:39.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:13:3
+Parsing ecmascript source code failed
+  11 | import {
+  12 |   Layers, Search, Handshake, Send, Briefcase,
+> 13 |   {//}
+     |   ^
+  14 | } from "lucide-react";
+  15 |
+  16 | export default function NavbarHome() {
+
+Unexpected token `{`. Expected identifier or string
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:20:43.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:13:3
+Parsing ecmascript source code failed
+  11 | import {
+  12 |   Layers, Search, Handshake, Send, Briefcase,
+> 13 |   {/**/}
+     |   ^
+  14 | } from "lucide-react";
+  15 |
+  16 | export default function NavbarHome() {
+
+Unexpected token `{`. Expected identifier or string
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:20:46.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:13:3
+Parsing ecmascript source code failed
+  11 | import {
+  12 |   Layers, Search, Handshake, Send, Briefcase,
+> 13 |   {/*  */}
+     |   ^
+  14 | } from "lucide-react";
+  15 |
+  16 | export default function NavbarHome() {
+
+Unexpected token `{`. Expected identifier or string
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:21:11.030] Server  LOG      ✓ Compiled in 12ms
+[04:21:11.332] Server  ERROR    ⨯ ReferenceError: Handbag is not defined
+[04:21:11.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:21:12.281] Browser ERROR   uncaughtError: ReferenceError: Handbag is not defined
+[04:21:13.125] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:21:13.125] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./components/navbar/Navbar-Home.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[04:21:13.125] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:21:13.199] Server  LOG      ✓ Compiled in 13ms
+[04:21:13.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:21:47.215] Server  LOG      ✓ Compiled in 11ms
+[04:21:48.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:138:19
+Parsing ecmascript source code failed
+  136 |                   <Link className="dropdown-item" href="/loja">
+  137 |                       <Handbag Loja
+> 138 |                   </Link>
+      |                   ^
+  139 |                 </li>
+  140 |                 <li>
+  141 |                   <Link className="dropdown-item" href="/orcamento">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:21:48.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:138:20
+Parsing ecmascript source code failed
+  136 |                   <Link className="dropdown-item" href="/loja">
+  137 |                       <Handbag Loja
+> 138 |                   </Link>
+      |                    ^^^^^^
+  139 |                 </li>
+  140 |                 <li>
+  141 |                   <Link className="dropdown-item" href="/orcamento">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:22:49.080] Server  LOG      ✓ Compiled in 74ms
+[04:22:49.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+233 │       width: ;
+    │              ^
+    ╵
+  styles/navbar/navbar-Home.scss 233:14  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+233 │       width: ;
+    │              ^
+    ╵
+  styles/navbar/navbar-Home.scss 233:14  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[04:23:04.464] Server  LOG      ✓ Compiled in 123ms
+[04:23:11.096] Server  LOG      ✓ Compiled in 86ms
+[04:23:27.135] Server  LOG      ✓ Compiled in 83ms
+[04:23:56.836] Server  LOG      ✓ Compiled in 70ms
+[04:23:57.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+234 │       height: ;
+    │               ^
+    ╵
+  styles/navbar/navbar-Home.scss 234:15  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+234 │       height: ;
+    │               ^
+    ╵
+  styles/navbar/navbar-Home.scss 234:15  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[04:24:47.631] Server  LOG      ✓ Compiled in 12ms
+[04:24:52.235] Server  LOG      ✓ Compiled in 9ms
+[04:24:53.281] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true d d true d
+[04:24:54.004] Server  LOG      ✓ Compiled in 25ms
+[04:24:54.280] Browser ERROR   The `aria` attribute is reserved for future use in React. Pass individual `aria-` attributes instead.
+[04:24:57.763] Server  LOG      ✓ Compiled in 7ms
+[04:25:01.172] Server  LOG      ✓ Compiled in 7ms
+[04:25:06.318] Server  LOG      ✓ Compiled in 13ms
+[04:26:22.647] Server  LOG      ✓ Compiled in 12ms
+[04:26:23.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:13:12
+Parsing ecmascript source code failed
+  11 | import {
+  12 |   Layers, Search, Handshake, Send, Briefcase,
+> 13 |   Handbag, <NotebookPen />
+     |            ^
+  14 | } from "lucide-react";
+  15 |
+  16 | export default function NavbarHome() {
+
+Unexpected token `<`. Expected identifier or string
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:26:45.432] Server  LOG      ✓ Compiled in 38ms
+[04:29:50.188] Server  LOG      ✓ Compiled in 13ms
+[04:29:51.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:148:19
+Parsing ecmascript source code failed
+  146 |                   <Link className="dropdown-item" href="/dev">
+  147 |                     < Desenvolvedor
+> 148 |                   </Link>
+      |                   ^
+  149 |                 </li>
+  150 |                 <li>
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:29:51.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:148:20
+Parsing ecmascript source code failed
+  146 |                   <Link className="dropdown-item" href="/dev">
+  147 |                     < Desenvolvedor
+> 148 |                   </Link>
+      |                    ^^^^^^
+  149 |                 </li>
+  150 |                 <li>
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:29:54.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:148:19
+Parsing ecmascript source code failed
+  146 |                   <Link className="dropdown-item" href="/dev">
+  147 |                     <Code Desenvolvedor
+> 148 |                   </Link>
+      |                   ^
+  149 |                 </li>
+  150 |                 <li>
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:29:54.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:148:20
+Parsing ecmascript source code failed
+  146 |                   <Link className="dropdown-item" href="/dev">
+  147 |                     <Code Desenvolvedor
+> 148 |                   </Link>
+      |                    ^^^^^^
+  149 |                 </li>
+  150 |                 <li>
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:31:25.366] Server  LOG      ✓ Compiled in 13ms
+[04:31:26.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:153:19
+Parsing ecmascript source code failed
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+  152 |                       <Rer Atualizações
+> 153 |                   </Link>
+      |                   ^
+  154 |                 </li>
+  155 |                 <li>
+  156 |                   <Link className="dropdown-item" href="/area-de-atuacao">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:31:26.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:153:20
+Parsing ecmascript source code failed
+  151 |                   <Link className="dropdown-item" href="/atualizacoes">
+  152 |                       <Rer Atualizações
+> 153 |                   </Link>
+      |                    ^^^^^^
+  154 |                 </li>
+  155 |                 <li>
+  156 |                   <Link className="dropdown-item" href="/area-de-atuacao">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:31:57.272] Server  LOG      ✓ Compiled in 107ms
+[04:31:58.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+233 │       width: 18px;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 233:18  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+233 │       width: 18px;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 233:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[04:32:03.281] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+232 │       margin-right: ;
+    │                     ^
+    ╵
+  styles/navbar/navbar-Home.scss 232:21  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+232 │       margin-right: ;
+    │                     ^
+    ╵
+  styles/navbar/navbar-Home.scss 232:21  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[04:33:46.373] Server  LOG      ✓ Compiled in 15ms
+[04:33:47.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:158:19
+Parsing ecmascript source code failed
+  156 |                   <Link className="dropdown-item" href="/area-de-atuacao">
+  157 |                     <Map Área de atuação
+> 158 |                   </Link>
+      |                   ^
+  159 |                 </li>
+  160 |                 <li>
+  161 |                   <Link className="dropdown-item" href="/termos">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:33:47.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:158:20
+Parsing ecmascript source code failed
+  156 |                   <Link className="dropdown-item" href="/area-de-atuacao">
+  157 |                     <Map Área de atuação
+> 158 |                   </Link>
+      |                    ^^^^^^
+  159 |                 </li>
+  160 |                 <li>
+  161 |                   <Link className="dropdown-item" href="/termos">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:04.869] Server  LOG      ✓ Compiled in 12ms
+[04:42:27.792] Server  LOG      ✓ Compiled in 13ms
+[04:42:28.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:19
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     <Termos de Serviços
+> 164 |                   </Link>
+      |                   ^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:28.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:20
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     <Termos de Serviços
+> 164 |                   </Link>
+      |                    ^^^^^^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:29.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:19
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     < Termos de Serviços
+> 164 |                   </Link>
+      |                   ^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:29.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:20
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     < Termos de Serviços
+> 164 |                   </Link>
+      |                    ^^^^^^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:32.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:19
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     <Note Termos de Serviços
+> 164 |                   </Link>
+      |                   ^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:42:32.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:164:20
+Parsing ecmascript source code failed
+  162 |                   <Link className="dropdown-item" href="/termos">
+  163 |                     <Note Termos de Serviços
+> 164 |                   </Link>
+      |                    ^^^^^^
+  165 |                 </li>
+  166 |               </ul>
+  167 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:44:27.644] Server  LOG      ✓ Compiled in 13ms
+[04:44:30.820] Server  LOG      ✓ Compiled in 7ms
+[04:44:35.605] Server  LOG      ✓ Compiled in 7ms
+[04:44:38.003] Server  LOG      ✓ Compiled in 8ms
+[04:44:41.523] Server  LOG      ✓ Compiled in 13ms
+[04:44:45.004] Server  LOG      ✓ Compiled in 10ms
+[04:45:02.613] Server  LOG      ✓ Compiled in 15ms
+[04:45:02.669] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true aris aris true aris
+[04:45:06.471] Server  LOG      ✓ Compiled in 8ms
+[04:45:10.453] Server  LOG      ✓ Compiled in 8ms
+[04:45:14.301] Server  LOG      ✓ Compiled in 13ms
+[04:45:18.097] Server  LOG      ✓ Compiled in 7ms
+[04:46:34.956] Server  LOG      ✓ Compiled in 13ms
+[04:46:35.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:179:19
+Parsing ecmascript source code failed
+  177 |                   <Link className="dropdown-item" href="/parceiro">
+  178 |                     <User Parceiro
+> 179 |                   </Link>
+      |                   ^
+  180 |                 </li>
+  181 |                 <li>
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:46:35.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:179:20
+Parsing ecmascript source code failed
+  177 |                   <Link className="dropdown-item" href="/parceiro">
+  178 |                     <User Parceiro
+> 179 |                   </Link>
+      |                    ^^^^^^
+  180 |                 </li>
+  181 |                 <li>
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:46:38.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:179:19
+Parsing ecmascript source code failed
+  177 |                   <Link className="dropdown-item" href="/parceiro">
+  178 |                     <Users  Parceiro
+> 179 |                   </Link>
+      |                   ^
+  180 |                 </li>
+  181 |                 <li>
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:46:38.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:179:20
+Parsing ecmascript source code failed
+  177 |                   <Link className="dropdown-item" href="/parceiro">
+  178 |                     <Users  Parceiro
+> 179 |                   </Link>
+      |                    ^^^^^^
+  180 |                 </li>
+  181 |                 <li>
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:48:32.545] Server  LOG      ✓ Compiled in 11ms
+[04:48:33.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:184:19
+Parsing ecmascript source code failed
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+  183 |                     <Sparkles Depoimentos
+> 184 |                   </Link>
+      |                   ^
+  185 |                 </li>
+  186 |                 <li>
+  187 |                   <Link className="dropdown-item" href="/creditos">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:48:33.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:184:20
+Parsing ecmascript source code failed
+  182 |                   <Link className="dropdown-item" href="/depoimentos">
+  183 |                     <Sparkles Depoimentos
+> 184 |                   </Link>
+      |                    ^^^^^^
+  185 |                 </li>
+  186 |                 <li>
+  187 |                   <Link className="dropdown-item" href="/creditos">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:50:07.050] Server  LOG      ✓ Compiled in 34ms
+[04:53:15.809] Server  LOG      ✓ Compiled in 13ms
+[04:53:16.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:19
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <Ba Sobre a Empresa
+> 194 |                   </Link>
+      |                   ^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:53:16.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:20
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <Ba Sobre a Empresa
+> 194 |                   </Link>
+      |                    ^^^^^^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:53:18.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:19
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <BadgeInfo Sobre a Empresa
+> 194 |                   </Link>
+      |                   ^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:53:18.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:20
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <BadgeInfo Sobre a Empresa
+> 194 |                   </Link>
+      |                    ^^^^^^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:53:19.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:19
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <BadgeInfo  Sobre a Empresa
+> 194 |                   </Link>
+      |                   ^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:53:19.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:194:20
+Parsing ecmascript source code failed
+  192 |                   <Link className="dropdown-item" href="/sobre">
+  193 |                       <BadgeInfo  Sobre a Empresa
+> 194 |                   </Link>
+      |                    ^^^^^^
+  195 |                 </li>
+  196 |               </ul>
+  197 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:56:43.711] Server  LOG      ✓ Compiled in 11ms
+[04:57:02.467] Server  LOG      ✓ Compiled in 14ms
+[04:57:05.084] Server  LOG      ✓ Compiled in 6ms
+[04:57:09.881] Server  LOG      ✓ Compiled in 9ms
+[04:57:12.423] Server  LOG      ✓ Compiled in 17ms
+[04:57:13.281] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. T t
+[04:57:14.937] Server  LOG      ✓ Compiled in 8ms
+[04:57:21.059] Server  LOG      ✓ Compiled in 8ms
+[04:57:30.737] Server  LOG      ✓ Compiled in 12ms
+[04:57:31.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:210:19
+Parsing ecmascript source code failed
+  208 |                   <Link className="dropdown-item" href="/dicas">
+  209 |                     <Lightbulb Dicas
+> 210 |                   </Link>
+      |                   ^
+  211 |                 </li>
+  212 |                 <li>
+  213 |                   <Link className="dropdown-item" href="/contato">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:57:31.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:210:20
+Parsing ecmascript source code failed
+  208 |                   <Link className="dropdown-item" href="/dicas">
+  209 |                     <Lightbulb Dicas
+> 210 |                   </Link>
+      |                    ^^^^^^
+  211 |                 </li>
+  212 |                 <li>
+  213 |                   <Link className="dropdown-item" href="/contato">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:59:57.045] Server  LOG      ✓ Compiled in 14ms
+[04:59:57.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:215:19
+Parsing ecmascript source code failed
+  213 |                   <Link className="dropdown-item" href="/contato">
+  214 |                     <UserPenContato
+> 215 |                   </Link>
+      |                   ^
+  216 |                 </li>
+  217 |                 <li>
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[04:59:57.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:215:20
+Parsing ecmascript source code failed
+  213 |                   <Link className="dropdown-item" href="/contato">
+  214 |                     <UserPenContato
+> 215 |                   </Link>
+      |                    ^^^^^^
+  216 |                 </li>
+  217 |                 <li>
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:04:05.108] Server  LOG      ✓ Compiled in 15ms
+[05:04:05.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:220:19
+Parsing ecmascript source code failed
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+  219 |                     <Star Avalie
+> 220 |                   </Link>
+      |                   ^
+  221 |                 </li>
+  222 |
+  223 |                 <li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:04:05.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:220:20
+Parsing ecmascript source code failed
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+  219 |                     <Star Avalie
+> 220 |                   </Link>
+      |                    ^^^^^^
+  221 |                 </li>
+  222 |
+  223 |                 <li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:04:06.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:220:19
+Parsing ecmascript source code failed
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+  219 |                     <StarHalf Avalie
+> 220 |                   </Link>
+      |                   ^
+  221 |                 </li>
+  222 |
+  223 |                 <li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:04:06.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:220:20
+Parsing ecmascript source code failed
+  218 |                   <Link className="dropdown-item" href="/avaliacao">
+  219 |                     <StarHalf Avalie
+> 220 |                   </Link>
+      |                    ^^^^^^
+  221 |                 </li>
+  222 |
+  223 |                 <li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:04:38.283] Server  LOG      ✓ Compiled in 25ms
+[05:04:39.280] Browser ERROR   uncaughtError: ReferenceError: Star is not defined
+[05:04:48.779] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:04:48.876] Server  LOG      ✓ Compiled in 40ms
+[05:04:49.061] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:05:33.793] Server  LOG      ✓ Compiled in 121ms
+[05:07:46.260] Server  LOG      ✓ Compiled in 13ms
+[05:07:47.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:226:19
+Parsing ecmascript source code failed
+  224 |                   <Link className="dropdown-item" href="/faq">
+  225 |                     <Baeg FAQ
+> 226 |                   </Link>
+      |                   ^
+  227 |                 </li>
+  228 |                 <li>
+  229 |                   <Link className="dropdown-item" href="/privacidade">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:07:47.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:226:20
+Parsing ecmascript source code failed
+  224 |                   <Link className="dropdown-item" href="/faq">
+  225 |                     <Baeg FAQ
+> 226 |                   </Link>
+      |                    ^^^^^^
+  227 |                 </li>
+  228 |                 <li>
+  229 |                   <Link className="dropdown-item" href="/privacidade">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:07:48.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:226:19
+Parsing ecmascript source code failed
+  224 |                   <Link className="dropdown-item" href="/faq">
+  225 |                     <Ba FAQ
+> 226 |                   </Link>
+      |                   ^
+  227 |                 </li>
+  228 |                 <li>
+  229 |                   <Link className="dropdown-item" href="/privacidade">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:07:48.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:226:20
+Parsing ecmascript source code failed
+  224 |                   <Link className="dropdown-item" href="/faq">
+  225 |                     <Ba FAQ
+> 226 |                   </Link>
+      |                    ^^^^^^
+  227 |                 </li>
+  228 |                 <li>
+  229 |                   <Link className="dropdown-item" href="/privacidade">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:10:05.459] Server  LOG      ✓ Compiled in 48ms
+[05:11:27.422] Server  LOG      ✓ Compiled in 15ms
+[05:11:27.673] Server  ERROR    ⨯ ReferenceError: MessageSquareQuote is not defined
+[05:11:27.778] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:28.282] Browser ERROR   uncaughtError: ReferenceError: MessageSquareQuote is not defined
+[05:11:30.692] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:11:30.692] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./components/navbar/Navbar-Home.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[05:11:30.692] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:11:30.784] Server  LOG      ✓ Compiled in 13ms
+[05:11:30.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:10.260] Server  LOG      ✓ Compiled in 12ms
+[05:12:11.624] Server  LOG      ✓ Compiled in 35ms
+[05:12:26.270] Server  LOG      ✓ Compiled in 15ms
+[05:12:27.281] Browser ERROR   The `aria` attribute is reserved for future use in React. Pass individual `aria-` attributes instead.
+[05:12:29.326] Server  LOG      ✓ Compiled in 14ms
+[05:12:30.281] Browser ERROR   Invalid aria prop %s on <%s> tag. For details, see https://react.dev/link/invalid-aria-props `aria-la` button
+[05:12:30.418] Server  LOG      ✓ Compiled in 8ms
+[05:12:33.182] Server  LOG      ✓ Compiled in 7ms
+[05:12:38.442] Server  LOG      ✓ Compiled in 9ms
+[05:12:44.443] Server  LOG      ✓ Compiled in 15ms
+[05:12:45.280] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true tit tit true tit
+[05:12:45.801] Server  LOG      ✓ Compiled in 8ms
+[05:12:48.014] Server  LOG      ✓ Compiled in 7ms
+[05:12:54.666] Server  LOG      ✓ Compiled in 8ms
+[05:13:49.096] Server  LOG      ✓ Compiled in 11ms
+[05:14:06.122] Server  LOG      ✓ Compiled in 38ms
+[05:15:10.972] Server  LOG      ✓ Compiled in 37ms
+[05:15:11.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:15.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:26.441] Server  LOG      ✓ Compiled in 13ms
+[05:15:27.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:256:30
+Parsing ecmascript source code failed
+  254 |                 <li>
+  255 |                   <Link className="dropdown-item" href="/galeria">
+> 256 |                     <Image / Galeria
+      |                              ^^^^^^^
+  257 |                   </Link>
+  258 |                 </li>
+  259 |                 <li>
+
+Expected '</', got 'Galeria'
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:27.918] Server  LOG      ✓ Compiled in 18ms
+[05:15:28.250] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:29.980] Server  ERROR    ⨯ ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:15:30.107] Browser ERROR   uncaughtError: Error: ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:15:30.270] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:30.270] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:49.812] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:51.151] Server  ERROR    ⨯ ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:15:51.234] Browser ERROR   uncaughtError: Error: ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:15:51.370] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:15:51.370] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:16:14.204] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:16:18.767] Server  LOG      ✓ Compiled in 15ms
+[05:16:22.899] Server  LOG      ✓ Compiled in 16ms
+[05:17:12.190] Server  LOG      ✓ Compiled in 32ms
+[05:17:13.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:17.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:22.902] Server  LOG      ✓ Compiled in 15ms
+[05:17:23.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | cont 
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:25.296] Server  LOG      ✓ Compiled in 12ms
+[05:17:26.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:20:1
+Parsing ecmascript source code failed
+  18 |
+  19 | const 
+> 20 | export default function NavbarHome() {
+     | ^^^^^^
+  21 |
+  22 |   // NAVBAR
+  23 |   useEffect(() => {
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:28.300] Server  LOG      ✓ Compiled in 11ms
+[05:17:29.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:19:7
+Parsing ecmascript source code failed
+  17 | } from "lucide-react";
+  18 |
+> 19 | const Ima
+     |       ^^^
+  20 | export default function NavbarHome() {
+  21 |
+  22 |   // NAVBAR
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:33.995] Server  LOG      ✓ Compiled in 7ms
+[05:17:34.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:20:1
+Parsing ecmascript source code failed
+  18 |
+  19 | const Imagem = 
+> 20 | export default function NavbarHome() {
+     | ^^^^^^
+  21 |
+  22 |   // NAVBAR
+  23 |   useEffect(() => {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:36.144] Server  LOG      ✓ Compiled in 17ms
+[05:17:36.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = Image
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:40.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = Image
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:45.478] Server  LOG      ✓ Compiled in 12ms
+[05:17:46.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:20:35
+Parsing ecmascript source code failed
+  18 |
+  19 | const Imagem = <Image
+> 20 | export default function NavbarHome() {
+     |                                   ^
+  21 |
+  22 |   // NAVBAR
+  23 |   useEffect(() => {
+
+Unexpected token `(`. Expected jsx identifier
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:49.400] Server  LOG      ✓ Compiled in 14ms
+[05:17:50.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = <Image />
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:53.460] Server  ERROR    ⨯ ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = <Image />
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:17:53.577] Browser ERROR   uncaughtError: Error: ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = <Image />
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[05:17:53.751] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = <Image />
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:17:53.751] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = <Image />
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:18:08.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | const Imagem = ""
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:18:11.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:30
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image
+     |                              ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:13.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:17:1
+Parsing ecmascript source code failed
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+  16 |   MessageSquareQuote, Medal, Image as 
+> 17 | } from "lucide-react";
+     | ^
+  18 |
+  19 | export default function NavbarHome() {
+  20 |
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:15.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:16:39
+Ecmascript file had an error
+  14 |   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  15 |   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+> 16 |   MessageSquareQuote, Medal, Image as Image
+     |                                       ^^^^^
+  17 | } from "lucide-react";
+  18 |
+  19 | export default function NavbarHome() {
+
+the name `Image` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:19.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:20:42.904] Server  LOG      ✓ Compiled in 14ms
+[05:20:43.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:257:19
+Parsing ecmascript source code failed
+  255 |                   <Link className="dropdown-item" href="/galeria">
+  256 |                      < Galeria
+> 257 |                   </Link>
+      |                   ^
+  258 |                 </li>
+  259 |                 <li>
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:43.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:257:20
+Parsing ecmascript source code failed
+  255 |                   <Link className="dropdown-item" href="/galeria">
+  256 |                      < Galeria
+> 257 |                   </Link>
+      |                    ^^^^^^
+  258 |                 </li>
+  259 |                 <li>
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:46.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:257:19
+Parsing ecmascript source code failed
+  255 |                   <Link className="dropdown-item" href="/galeria">
+  256 |                      <Image Galeria
+> 257 |                   </Link>
+      |                   ^
+  258 |                 </li>
+  259 |                 <li>
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:20:46.280] Browser ERROR   ./components/navbar/Navbar-Home.jsx:257:20
+Parsing ecmascript source code failed
+  255 |                   <Link className="dropdown-item" href="/galeria">
+  256 |                      <Image Galeria
+> 257 |                   </Link>
+      |                    ^^^^^^
+  258 |                 </li>
+  259 |                 <li>
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:21:55.366] Server  LOG      ✓ Compiled in 14ms
+[05:21:56.281] Browser ERROR   ./components/navbar/Navbar-Home.jsx:262:19
+Parsing ecmascript source code failed
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+  261 |                     <Camera Antes e Depois
+> 262 |                   </Link>
+      |                   ^
+  263 |                 </li>
+  264 |               </ul>
+  265 |             </li>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[05:21:56.282] Browser ERROR   ./components/navbar/Navbar-Home.jsx:262:20
+Parsing ecmascript source code failed
+  260 |                   <Link className="dropdown-item" href="/antes-depois">
+  261 |                     <Camera Antes e Depois
+> 262 |                   </Link>
+      |                    ^^^^^^
+  263 |                 </li>
+  264 |               </ul>
+  265 |             </li>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar/Navbar-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar/Navbar-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]

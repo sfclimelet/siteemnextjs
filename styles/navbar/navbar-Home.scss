@@ -204,7 +204,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
   /* -------------------- DROPDOWN BASE -------------------- */
   #{$pScls}{
-    border: 1px solid $cor-borderSubMn !important;
+    border: 2px solid $cor-borderSubMn !important;
     border-radius: 12px !important;
     padding: 6px 0 !important;
     animation: fadeMenu 0.25s ease forwards;
@@ -229,7 +229,9 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
     i,
     svg {
-      margin: 0;
+      margin-right: 4px;
+      width: 18px;
+      height: 18px;
     }
 
     &:hover{

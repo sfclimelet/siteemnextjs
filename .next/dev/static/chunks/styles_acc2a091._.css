@@ -327,7 +327,7 @@
   position: relative;
   box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
   background: #000000bf !important;
-  border: 1px solid #797979 !important;
+  border: 2px solid #797979 !important;
   border-radius: 12px !important;
   padding: 6px 0 !important;
 }
@@ -344,7 +344,9 @@
 }
 
 .dropdown-item i, .dropdown-item svg {
-  margin: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
 }
 
 .dropdown-item:hover {

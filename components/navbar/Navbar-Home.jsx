@@ -8,7 +8,13 @@ import logo from "../../public/logo-sef.png";
 import "../../styles/navbar/navbar-Home.scss";
 
 // Ícones Lucide
-import { Layers, Search, Handshake, Send, Briefcase } from "lucide-react";
+import {
+  Layers, Search, Handshake, Send, Briefcase,
+  Handbag, NotebookPen, Code, RefreshCcw, MapPinned,
+  NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
+  Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
+  MessageSquareQuote, Medal, Image as ImageIcon, Camera
+} from "lucide-react";
 
 export default function NavbarHome() {
 
@@ -111,7 +117,7 @@ export default function NavbarHome() {
 
             {/* Search */}
             <li className="nav-item dropdown">
-              <button id="SearchBtn" className="nav-link nav-icon" data-bs-toggle="dropdown">
+              <button id="SearchBtn" className="nav-link nav-icon" data-bs-toggle="dropdown" aria-label="Buscar" title="Buscar">
                 <Search />
               </button>
 
@@ -124,39 +130,39 @@ export default function NavbarHome() {
 
             {/* Serviços */}
             <li className="nav-item dropdown">
-              <button id="Services" className="nav-link" data-bs-toggle="dropdown">
+              <button id="Services" className="nav-link" data-bs-toggle="dropdown" aria-label="Serviços" title="Serviços">
                 <Layers />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/loja">
-                      <i className="bi bi-bag"></i> Loja
+                      <Handbag /> Loja
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/orcamento">
-                    <i className="bi bi-pencil-square"></i> Orçamento
+                    <NotebookPen /> Orçamento
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/dev">
-                    <i className="bi bi-code-slash"></i> Desenvolvedor
+                    <Code /> Desenvolvedor
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/atualizacoes">
-                      <i className="bi bi-arrow-down-up"></i> Atualizações
+                      <RefreshCcw /> Atualizações
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/area-de-atuacao">
-                    <i className="bi bi-geo-alt"></i> Área de atuação
+                    <MapPinned /> Área de atuação
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/termos">
-                    <i className="bi bi-file-earmark"></i> Termos de Serviços
+                    <NotepadText /> Termos de Serviços
                   </Link>
                 </li>
               </ul>
@@ -164,29 +170,29 @@ export default function NavbarHome() {
 
             {/* Quem somos */}
             <li className="nav-item dropdown">
-              <button id="Qmsm" className="nav-link" data-bs-toggle="dropdown">
+              <button id="Qmsm" className="nav-link" data-bs-toggle="dropdown" aria-label="Quem Somos" title="Quem Somos">
                 <Handshake />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/parceiro">
-                    <i className="bi bi-people"></i> Parceiro
+                    <Users /> Parceiro
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/depoimentos">
-                    <i className="bi bi-stars"></i> Depoimentos
+                    <Sparkles /> Depoimentos
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/creditos">
-                    <i className="bi bi-patch-check"></i> Créditos
+                    <CircleCheck /> Créditos
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/sobre">
-                      <i className="bi bi-info-lg"></i> Sobre a Empresa
+                      <BadgeInfo /> Sobre a Empresa
                   </Link>
                 </li>
               </ul>
@@ -194,35 +200,35 @@ export default function NavbarHome() {
 
             {/* Ajuda e Suporte */}
             <li className="nav-item dropdown">
-              <button id="Ajsu" className="nav-link" data-bs-toggle="dropdown">
+              <button id="Ajsu" className="nav-link" data-bs-toggle="dropdown" aria-label="Ajuda e Suporte" title="Ajuda e Suporte">
                 <Send />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/dicas">
-                    <i className="bi bi-lightbulb"></i> Dicas
+                    <Lightbulb /> Dicas
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/contato">
-                    <i className="bi bi-person"></i> Contato
+                    <UserPen /> Contato
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/avaliacao">
-                    <i className="bi bi-google"></i> Avalie
+                    <Star /> Avalie
                   </Link>
                 </li>
 
                 <li>
                   <Link className="dropdown-item" href="/faq">
-                    <i className="bi bi-question-circle"></i> FAQ
+                    <BadgeQuestionMark /> FAQ
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/privacidade">
-                    <i className="bi bi-shield-lock"></i> Privacidade
+                    <Shield /> Privacidade
                   </Link>
                 </li>
               </ul>
@@ -230,29 +236,29 @@ export default function NavbarHome() {
 
             {/* Portfólio e Certificações */}
             <li className="nav-item dropdown">
-              <button id="PortCert" className="nav-link" data-bs-toggle="dropdown">
+              <button id="PortCert" className="nav-link" data-bs-toggle="dropdown" aria-label="Portifólio e Certificações" title="Portifólio e Certificações">
                 <Briefcase />
               </button>
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" href="/feedback">
-                    <i className="bi bi-chat-square"></i> Feedback
+                    <MessageSquareQuote /> Feedback
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/certificacoes">
-                    <i className="bi bi-award"></i> Certificações
+                    <Medal /> Certificações
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/galeria">
-                    <i className="bi bi-card-image"></i> Galeria
+                     <ImageIcon /> Galeria
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" href="/antes-depois">
-                    <i className="bi bi-camera"></i> Antes e Depois
+                    <Camera /> Antes e Depois
                   </Link>
                 </li>
               </ul>
