@@ -170,12 +170,16 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       transform: translateX(2px);
     }
   }
-
-  /* ===== DROPDOWN PRINCIPAL ===== */
-  #{$SearchDROPW} {
-    width: 300px;
-    border-radius: 12px;
-    padding: 16px !important;
+  .theme-light{
+    #{$idBtnSearchICON} svg{
+            stroke: #00d4ff !important;
+            filter: drop-shadow(0 0 6px #00dcffb3) !important;
+            transition: all 0.3s ease, filter 0.4s ease;
+            :hover svg{
+              stroke: #37e1ff !important;
+              filter: drop-shadow(0 0 10px #00f0ff) !important;
+            }
+    }
   }
 
   /* ===== CONTAINER DO INPUT + BUTTON ===== */
@@ -183,6 +187,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 16px;      // padding real agora vem daqui
     gap: 0;
 
     #{$SearchINPUT} {
@@ -232,14 +237,11 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     }
   }
 
-  /* ===== MOBILE (até 576px) ===== */
-  @media (max-width: 576px) {
-    #{$SearchDROPW} {
-      width: 240px !important;
-      height: 90px;
-      padding: 12px !important;
+  /* ===== MOBILE (até 575px) ===== */
+  @media (max-width: 575px) {
+    #{$SearchBOX} {
+      padding: 12px;
     }
-
 
     #{$SearchBOX} #{$SearchINPUT} {
       height: 40px;
@@ -258,13 +260,15 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   }
 
   /* ===== TABLET (577px a 992px) ===== */
-  @media (min-width: 577px) and (max-width: 992px) {
+  @media (min-width: 576px) and (max-width: 992px) {
     #{$SearchDROPW} {
       min-height: 90px;
       width: 280px !important;
-      padding: 14px !important;
     }
-    
+
+    #{$SearchBOX} {
+      padding: 14px;
+    }
 
     #{$SearchBOX} #{$SearchINPUT} {
       height: 44px;
@@ -286,7 +290,11 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   @media (min-width: 993px) {
     #{$SearchDROPW} {
       width: 320px !important;
-      min-height: 120px;
+      min-height: 90px;
+    }
+
+    #{$SearchBOX} {
+      padding: 16px;
     }
 
     #{$SearchBOX} #{$SearchINPUT} {
@@ -305,7 +313,6 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     }
   }
 }
-
 @include SearchDropdown(
   "#SearchBtn",
   ".search-dropdown",

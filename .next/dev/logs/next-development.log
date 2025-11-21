@@ -11181,3 +11181,550 @@ Caused by: Error: Expected "important".
     [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
     [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
     [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+[06:21:39.695] Server  LOG      ✓ Compiled in 124ms
+[06:23:14.918] Server  LOG      ✓ Compiled in 97ms
+[06:23:26.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:25:42.587] Server  LOG      ✓ Compiled in 208ms
+[06:27:26.668] Server  LOG      ✓ Compiled in 104ms
+[06:33:33.215] Server  LOG      ✓ Compiled in 89ms
+[06:33:33.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+238 │       padding: 12px;
+    │                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 238:20  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+238 │       padding: 12px;
+    │                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 238:20  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:33:35.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+237 │       overflow: ;
+    │                 ^
+    ╵
+  styles/navbar/navbar-Home.scss 237:17  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+237 │       overflow: ;
+    │                 ^
+    ╵
+  styles/navbar/navbar-Home.scss 237:17  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[06:38:53.271] Server  LOG      ✓ Compiled in 148ms
+[06:39:05.462] Server  LOG      ✓ Compiled in 98ms
+[06:39:08.876] Server  LOG      ✓ Compiled in 98ms
+[06:40:01.830] Server  LOG      ✓ Compiled in 90ms
+[06:44:09.567] Server  LOG      ✓ Compiled in 112ms
+[06:44:09.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 325:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 325:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:26.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:32.771] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:35.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:37.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 326:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:39.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 328:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 328:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:44:54.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+192 │     #
+    │      ^
+    ╵
+  styles/navbar/navbar-Home.scss 192:6  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+192 │     #
+    │      ^
+    ╵
+  styles/navbar/navbar-Home.scss 192:6  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[06:44:55.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+192 │     #{}
+    │     ^^
+    ╵
+  styles/navbar/navbar-Home.scss 192:5  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+192 │     #{}
+    │     ^^
+    ╵
+  styles/navbar/navbar-Home.scss 192:5  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0._stylesheet0$_variableDeclarationOrInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120382:22)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120279:98)]
+[06:44:56.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+192 │     #{}{
+    │     ^^
+    ╵
+  styles/navbar/navbar-Home.scss 192:5  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+192 │     #{}{
+    │     ^^
+    ╵
+  styles/navbar/navbar-Home.scss 192:5  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0._stylesheet0$_variableDeclarationOrInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120382:22)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120279:98)]
+[06:44:59.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+192 │     #{$}{
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 192:8  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+192 │     #{$}{
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 192:8  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0.variableName$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114154:19)]
+    [at ScssParser0._stylesheet0$_variable$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122168:23)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121794:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+[06:45:00.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:03.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:05.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:07.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:11.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:12.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:28.771] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:35.771] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 324:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 324:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:45:38.772] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+Caused by: Error: Undefined variable.
+    ╷
+175 │     #{$pai}{
+    │       ^^^^
+    ╵
+  styles/navbar/navbar-Home.scss 175:7  SearchDropdown()
+  styles/navbar/navbar-Home.scss 330:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
+[06:47:16.830] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:47:18.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
