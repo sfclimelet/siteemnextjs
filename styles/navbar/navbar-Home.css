@@ -305,7 +305,7 @@
   border-color: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* animação de entrada */
+/* Animação de Entrada */
 @keyframes fadeMenu {
   from {
     opacity: 0;
@@ -316,20 +316,35 @@
     transform: translateY(0);
   }
 }
-/* -------------------- DROPDOWN BASE -------------------- */
+/* DROPDOWN - SUBMENUS */
 .dropdown-menu {
-  border: 2px solid #797979 !important;
   border-radius: 12px !important;
   padding: 6px 0 !important;
   animation: fadeMenu 0.25s ease forwards;
-  background: rgba(0, 0, 0, 0.7490196078) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5490196078), 0 0 18px rgba(0, 128, 255, 0.2);
   position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* -------------------- ITENS DO DROPDOWN -------------------- */
+.dropdown-menu {
+  background: radial-gradient(circle at top, #00111a, #000);
+  border: 2px solid rgba(0, 180, 255, 0.7019607843);
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.7019607843), 0 0 25px rgba(0, 180, 255, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.dropdown-menu .dropdown-menu .show:hover {
+  border-color: #00dcff;
+  box-shadow: 0 0 22px rgba(0, 220, 255, 0.6), 0 0 35px rgba(0, 220, 255, 0.6);
+}
+
+.theme-light .dropdown-menu {
+  border: 1px solid #0cbaff;
+  box-shadow: 0 0 20px #0cbaff, 0 0 35px #0cbaff, inset 0 0 10px #0cbaff;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+/* LINKS DO DROPDOWN - SUBMENUS */
 .dropdown-item {
   padding: 10px 16px !important;
   transition: background 0.25s ease, transform 0.25s ease;
@@ -351,9 +366,6 @@
   transform: translateX(4px);
 }
 
-/* -----------------------------------------------------------
-    MOBILE — TOP ICON (aparece acima do dropdown)
------------------------------------------------------------ */
 @media (max-width: 575px) {
   .dropdown-menu {
     min-width: 160px;
@@ -365,7 +377,7 @@
   }
   .dropdown-menu > ul,
   .dropdown-menu {
-    padding-top: 40px !important; /* aumenta espaço entre o topo e o primeiro link */
+    padding-top: 40px !important;
   }
   .dropdown-item {
     font-size: 0.88rem;
@@ -374,14 +386,14 @@
   .dropdown-item i {
     font-size: 0.9rem;
   }
-  /* Ícone que aparece acima do menu */
+  /* ICON - CARD */
   .dropdown-top-icon {
     position: absolute;
-    top: -34px;
+    top: -24px;
     left: 50%;
     transform: translateX(-50%);
-    width: 54px;
-    height: 54px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.8666666667);
     border: 3px solid #56adff;
@@ -395,10 +407,10 @@
     transform: translate(-50%, -6px);
     transition: opacity 0.22s ease, transform 0.22s ease;
   }
-  /* Ícone dentro do topo */
+  /* ICON DENTRO DO TOPO (CIRCULO) */
   .dropdown-top-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     color: #56adff !important;
     transition: all 0.22s ease;
   }
@@ -411,7 +423,7 @@
   .dropdown-top-icon:hover {
     border-color: #0cbaff;
     box-shadow: 0 0 18px #0cbaff, 0 0 28px #0cbaff inset;
-    transform: translate(-50%, 0) scale(1.07);
+    transform: translate(-50%, 0) scale(1.03);
   }
   .dropdown-top-icon:hover svg {
     color: #0cbaff !important;

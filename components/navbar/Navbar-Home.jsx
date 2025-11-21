@@ -5,6 +5,9 @@ import Image from "next/image";
 import { useEffect } from "react";
 import logo from "../../public/logo-sef.png";
 
+import ClickAnimation from "./ClickAnimation";
+
+// SCSS
 import "../../styles/navbar/navbar-Home.scss";
 
 // Ícones Lucide
@@ -134,68 +137,72 @@ export default function NavbarHome() {
                 <Layers />
               </button>
 
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <Link className="dropdown-item" href="/loja">
-                      <Handbag /> Loja
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/orcamento">
-                    <NotebookPen /> Orçamento
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/dev">
-                    <Code /> Desenvolvedor
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/atualizacoes">
-                      <RefreshCcw /> Atualizações
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/area-de-atuacao">
-                    <MapPinned /> Área de atuação
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/termos">
-                    <NotepadText /> Termos de Serviços
-                  </Link>
-                </li>
-              </ul>
+              <ClickAnimation>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <Link className="dropdown-item" href="/loja">
+                        <Handbag /> Loja
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/orcamento">
+                      <NotebookPen /> Orçamento
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/dev">
+                      <Code /> Desenvolvedor
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/atualizacoes">
+                        <RefreshCcw /> Atualizações
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/area-de-atuacao">
+                      <MapPinned /> Área de atuação
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/termos">
+                      <NotepadText /> Termos de Serviços
+                    </Link>
+                  </li>
+                </ul>
+              </ClickAnimation>
             </li>
+
 
             {/* Quem somos */}
             <li className="nav-item dropdown">
               <button id="Qmsm" className="nav-link" data-bs-toggle="dropdown" aria-label="Quem Somos" title="Quem Somos">
                 <Handshake />
               </button>
-
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <Link className="dropdown-item" href="/parceiro">
-                    <Users /> Parceiro
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/depoimentos">
-                    <Sparkles /> Depoimentos
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/creditos">
-                    <CircleCheck /> Créditos
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/sobre">
-                      <BadgeInfo /> Sobre a Empresa
-                  </Link>
-                </li>
-              </ul>
+              <ClickAnimation>
+                  <ul className="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <Link className="dropdown-item" href="/parceiro">
+                        <Users /> Parceiro
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="/depoimentos">
+                        <Sparkles /> Depoimentos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="/creditos">
+                        <CircleCheck /> Créditos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="/sobre">
+                          <BadgeInfo /> Sobre a Empresa
+                      </Link>
+                    </li>
+                  </ul>
+              </ClickAnimation>
             </li>
 
             {/* Ajuda e Suporte */}
@@ -203,35 +210,37 @@ export default function NavbarHome() {
               <button id="Ajsu" className="nav-link" data-bs-toggle="dropdown" aria-label="Ajuda e Suporte" title="Ajuda e Suporte">
                 <Send />
               </button>
+              
+              <ClickAnimation>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <Link className="dropdown-item" href="/dicas">
+                      <Lightbulb /> Dicas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/contato">
+                      <UserPen /> Contato
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/avaliacao">
+                      <Star /> Avalie
+                    </Link>
+                  </li>
 
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <Link className="dropdown-item" href="/dicas">
-                    <Lightbulb /> Dicas
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/contato">
-                    <UserPen /> Contato
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/avaliacao">
-                    <Star /> Avalie
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="dropdown-item" href="/faq">
-                    <BadgeQuestionMark /> FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/privacidade">
-                    <Shield /> Privacidade
-                  </Link>
-                </li>
-              </ul>
+                  <li>
+                    <Link className="dropdown-item" href="/faq">
+                      <BadgeQuestionMark /> FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/privacidade">
+                      <Shield /> Privacidade
+                    </Link>
+                  </li>
+                </ul>
+              </ClickAnimation>
             </li>
 
             {/* Portfólio e Certificações */}
@@ -240,28 +249,30 @@ export default function NavbarHome() {
                 <Briefcase />
               </button>
 
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <Link className="dropdown-item" href="/feedback">
-                    <MessageSquareQuote /> Feedback
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/certificacoes">
-                    <Medal /> Certificações
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/galeria">
-                     <ImageIcon /> Galeria
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" href="/antes-depois">
-                    <Camera /> Antes e Depois
-                  </Link>
-                </li>
-              </ul>
+              <ClickAnimation>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <Link className="dropdown-item" href="/feedback">
+                      <MessageSquareQuote /> Feedback
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/certificacoes">
+                      <Medal /> Certificações
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/galeria">
+                      <ImageIcon /> Galeria
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="/antes-depois">
+                      <Camera /> Antes e Depois
+                    </Link>
+                  </li>
+                </ul>
+              </ClickAnimation>
             </li>
           </ul>
         </div>

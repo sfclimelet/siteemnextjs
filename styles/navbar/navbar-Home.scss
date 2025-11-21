@@ -156,7 +156,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     padding: 8px 10px !important;
     border-radius: 8px !important;
 
-    // PLACEHOLDER — corrigido
+    // PLACEHOLDER
     &::placeholder,
     &::-webkit-input-placeholder,
     &::-moz-placeholder,
@@ -196,11 +196,10 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 @include NavToggler('.navbar-toggler-icon', '.navbar-toggler');
 
 @mixin DropdownMn($pScls, $pScls2){
-  $cor-borderSubMn: #797979;
   $neon1: #56adff;
   $neon2: #0cbaff;
 
-  /* animação de entrada */
+  /* Animação de Entrada */
   @keyframes fadeMenu {
     from {
       opacity: 0;
@@ -212,20 +211,41 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     }
   }
 
-  /* -------------------- DROPDOWN BASE -------------------- */
+  /* DROPDOWN - SUBMENUS */
   #{$pScls}{
-    border: 2px solid $cor-borderSubMn !important;
     border-radius: 12px !important;
     padding: 6px 0 !important;
     animation: fadeMenu 0.25s ease forwards;
-    background: #000000bf !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 24px #0000008c, 0 0 18px #0080ff33;
     position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* -------------------- ITENS DO DROPDOWN -------------------- */
+  // Animação da BORDA - DROPDOWN SUBMENUS
+  #{$pScls}{
+    background: radial-gradient(circle at top, #00111a, #000);
+    border: 2px solid #00b4ffb3;
+    box-shadow: 0 0 15px #00b4ffb3,
+    0 0 25px #00b4ff66;
+    backdrop-filter: blur(4px);
+    #{$pScls} .show:hover{
+      border-color: #00dcff;
+      box-shadow: 0 0 22px #00dcff99,
+      0 0 35px #00dcff99;
+    }
+  }
+  // Animação da BORDA - DROPDOWN SUBMENUS - THEME LIGHT
+  .theme-light{
+    $color-p-Light: #0cbaff;
+    #{$pScls}{
+      border: 1px solid $color-p-Light;      // cor mais forte
+      box-shadow: 0 0 20px $color-p-Light, 
+                  0 0 35px $color-p-Light,
+                  inset 0 0 10px $color-p-Light;
+      backdrop-filter: blur(6px);
+    }
+  }
+
+  /* LINKS DO DROPDOWN - SUBMENUS */
   #{$pScls2}{
     padding: 10px 16px !important;
     transition: background 0.25s ease, transform 0.25s ease;
@@ -250,9 +270,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     }
   }
 
-  /* -----------------------------------------------------------
-      MOBILE — TOP ICON (aparece acima do dropdown)
-  ----------------------------------------------------------- */
+  // DROPDOWN MOBILE
   @media (max-width: 575px){
 
     #{$pScls} {
@@ -263,9 +281,10 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       transform: translateX(-50%) !important;
       padding: 6px !important;
     }
+    // Espaçamento Links e Icone do TOPO
     #{$pScls} > ul,
     #{$pScls} {
-      padding-top: 40px !important;  /* aumenta espaço entre o topo e o primeiro link */
+      padding-top: 40px !important;
     }
 
     #{$pScls2}{
@@ -277,15 +296,15 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       }
     }
 
-    /* Ícone que aparece acima do menu */
+    /* ICON - CARD */
     .dropdown-top-icon {
       position: absolute;
-      top: -34px;  
+      top: -24px;
       left: 50%;
       transform: translateX(-50%);
 
-      width: 54px;
-      height: 54px;
+      width: 40px;
+      height: 40px;
 
       border-radius: 50%;
       background: #000000dd;
@@ -306,10 +325,10 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       transition: opacity 0.22s ease, transform 0.22s ease;
     }
 
-    /* Ícone dentro do topo */
+    /* ICON DENTRO DO TOPO (CIRCULO) */
     .dropdown-top-icon svg {
-      width: 24px;
-      height: 24px;
+      width: 18px;
+      height: 18px;
       color: $neon1 !important;
       transition: all 0.22s ease;
     }
@@ -326,7 +345,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       box-shadow:
         0 0 18px $neon2,
         0 0 28px $neon2 inset;
-      transform: translate(-50%, 0) scale(1.07);
+      transform: translate(-50%, 0) scale(1.03);
     }
 
     .dropdown-top-icon:hover svg {
