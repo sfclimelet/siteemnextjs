@@ -120,13 +120,25 @@ export default function NavbarHome() {
 
             {/* Search */}
             <li className="nav-item dropdown">
-              <button id="SearchBtn" className="nav-link nav-icon" data-bs-toggle="dropdown" aria-label="Buscar" title="Buscar">
+              <button
+                id="SearchBtn"
+                className="nav-link nav-icon"
+                data-bs-toggle="dropdown"
+              >
                 <Search />
               </button>
 
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li className="px-3 py-2">
-                  <input className="form-control search-input" placeholder="Buscar..." />
+              <ul className="dropdown-menu dropdown-menu-end search-dropdown">
+                <li>
+                  <div className="dropdown-search-box">
+                    <input
+                      className="form-control search-input"
+                      placeholder="Buscar..."
+                    />
+                    <button className="search-btn">
+                      <Search />
+                    </button>
+                  </div>
                 </li>
               </ul>
             </li>
