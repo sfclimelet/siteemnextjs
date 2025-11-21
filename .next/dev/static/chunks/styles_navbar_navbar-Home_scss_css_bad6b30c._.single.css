@@ -372,22 +372,27 @@
   justify-content: flex-start;
   align-items: center;
   gap: 6px;
-  transition: background .25s, transform .25s;
+  transition: stroke .25s, transform .25s;
   display: flex;
   color: #fff !important;
   border-radius: 8px !important;
-  padding: 10px 16px !important;
 }
 
 .dropdown-item i, .dropdown-item svg {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #0cbaff;
+  -webkit-background-clip: text;
+  background-clip: text;
   width: 18px;
   height: 18px;
-  margin-right: 4px;
+  margin-right: 5px;
+  transition: all .4s, transform .4s;
+  stroke: #56adff !important;
 }
 
 .dropdown-item:hover {
   transform: translateX(4px);
-  background: #ffffff1a !important;
+  background: #90f0f71a !important;
 }
 
 @media (max-width: 575px) {

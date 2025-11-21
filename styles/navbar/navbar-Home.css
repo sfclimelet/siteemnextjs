@@ -346,23 +346,28 @@
 
 /* LINKS DO DROPDOWN - SUBMENUS */
 .dropdown-item {
-  padding: 10px 16px !important;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition: stroke 0.25s ease, transform 0.25s ease;
   border-radius: 8px !important;
   color: #fff !important;
-  display: flex; /* mantém alinhamento correto */
+  display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 6px; /* ajusta espaço ícone/texto */
+  gap: 6px;
 }
 .dropdown-item i,
 .dropdown-item svg {
-  margin-right: 4px;
+  margin-right: 5px;
   width: 18px;
   height: 18px;
+  stroke: #56adff !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease, transform 0.4s ease;
+  text-shadow: 0 0 12px #0cbaff;
 }
 .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.1019607843) !important;
+  background: rgba(144, 240, 247, 0.1019607843) !important;
   transform: translateX(4px);
 }
 

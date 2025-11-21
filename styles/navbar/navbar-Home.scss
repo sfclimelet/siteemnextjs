@@ -247,25 +247,33 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
   /* LINKS DO DROPDOWN - SUBMENUS */
   #{$pScls2}{
-    padding: 10px 16px !important;
-    transition: background 0.25s ease, transform 0.25s ease;
+    $I-sbmn1: #56adff;
+    $I-sbmn2: #0cbaff;
+
+    transition: stroke 0.25s ease, transform 0.25s ease;
     border-radius: 8px !important;
     color: #fff !important;
 
-    display: flex;               /* mantém alinhamento correto */
+    display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 6px;                    /* ajusta espaço ícone/texto */
+    gap: 6px;
 
     i,
     svg {
-      margin-right: 4px;
+      margin-right: 5px;
       width: 18px;
       height: 18px;
+      stroke: $I-sbmn1 !important;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.4s ease, transform 0.4s ease;
+      text-shadow: 0 0 12px $I-sbmn2;
     }
 
     &:hover{
-      background: #ffffff1a !important;
+      background: #90f0f71a !important;
       transform: translateX(4px);
     }
   }
