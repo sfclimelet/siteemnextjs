@@ -1,0 +1,18 @@
+/* [project]/styles/layout.css [app-client] (css) */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/*# sourceMappingURL=styles_layout_css_bad6b30c._.single.css.map*/
