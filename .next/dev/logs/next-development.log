@@ -3472,3 +3472,992 @@ Caused by: Error: expected ";".
 [02:34:01.259] Server  LOG      ✓ Compiled in 140ms
 [02:34:57.846] Server  LOG      ✓ Compiled in 95ms
 [02:35:00.103] Server  LOG      ✓ Compiled in 105ms
+[02:37:09.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:38:46.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:38:48.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:42:03.557] Server  LOG      ✓ Compiled in 73ms
+[02:42:53.810] Server  LOG      ✓ Compiled in 71ms
+[02:42:54.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+319 │ @mixin 
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:8  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+319 │ @mixin 
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:8  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121166:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+[02:42:59.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+319 │ @mixin Logo
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:12  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+319 │ @mixin Logo
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121183:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+[02:43:03.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+319 │ @mixin LogoNavbar
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:18  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+319 │ @mixin LogoNavbar
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121183:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+[02:43:07.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+319 │ @mixin LogoNavbarHOME
+    │                      ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:22  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+319 │ @mixin LogoNavbarHOME
+    │                      ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:22  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121183:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+[02:43:17.410] Server  LOG      ✓ Compiled in 90ms
+[02:43:18.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+319 │ @mixin LogoNavbarHOME($){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:24  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+319 │ @mixin LogoNavbarHOME($){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0._stylesheet0$_parameterList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121388:23)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121171:28)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+[02:43:23.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+319 │ @mixin LogoNavbarHOME($){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:24  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+319 │ @mixin LogoNavbarHOME($){
+    │                        ^
+    ╵
+  styles/navbar/navbar-Home.scss 319:24  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0._stylesheet0$_parameterList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121388:23)]
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121171:28)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+[02:44:04.565] Server  LOG      ✓ Compiled in 61ms
+[02:44:05.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+320 │   #{}
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 320:3  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+320 │   #{}
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 320:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0._stylesheet0$_variableDeclarationOrInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120382:22)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120279:98)]
+[02:44:07.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+320 │   #{}{
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 320:3  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+320 │   #{}{
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 320:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0._stylesheet0$_variableDeclarationOrInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120382:22)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120279:98)]
+[02:44:36.219] Server  LOG      ✓ Compiled in 128ms
+[02:44:47.949] Server  LOG      ✓ Compiled in 100ms
+[02:44:54.531] Server  LOG      ✓ Compiled in 95ms
+[02:44:57.805] Server  LOG      ✓ Compiled in 89ms
+[02:45:06.643] Server  LOG      ✓ Compiled in 69ms
+[02:45:09.425] Server  LOG      ✓ Compiled in 67ms
+[02:45:12.889] Server  LOG      ✓ Compiled in 68ms
+[02:45:42.052] Server  LOG      ✓ Compiled in 79ms
+[02:45:42.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+321 │     animation: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 321:16  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+321 │     animation: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 321:16  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:46:05.168] Server  LOG      ✓ Compiled in 63ms
+[02:46:05.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+322 │     cursor: ;
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 322:13  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+322 │     cursor: ;
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 322:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:46:15.937] Server  LOG      ✓ Compiled in 100ms
+[02:46:16.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+323 │     trans
+    │          ^
+    ╵
+  styles/navbar/navbar-Home.scss 323:10  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+323 │     trans
+    │          ^
+    ╵
+  styles/navbar/navbar-Home.scss 323:10  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:46:18.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+323 │     transition: ;
+    │                 ^
+    ╵
+  styles/navbar/navbar-Home.scss 323:17  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+323 │     transition: ;
+    │                 ^
+    ╵
+  styles/navbar/navbar-Home.scss 323:17  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:46:59.291] Server  LOG      ✓ Compiled in 56ms
+[02:46:59.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+326 │     0%
+    │       ^
+    ╵
+  styles/navbar/navbar-Home.scss 326:7  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+326 │     0%
+    │       ^
+    ╵
+  styles/navbar/navbar-Home.scss 326:7  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:47:05.322] Server  LOG      ✓ Compiled in 89ms
+[02:47:05.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+327 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 327:16  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+327 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 327:16  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:47:09.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected digit.
+    ╷
+327 │       opacity: 0.;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 327:18  root stylesheet
+Caused by: Error: Expected digit.
+    ╷
+327 │       opacity: 0.;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 327:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0._stylesheet0$_tryDecimal$1$allowTrailingDot (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122096:12)]
+    [at ScssParser0._stylesheet0$_number$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122060:13)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121656:44)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+[02:47:13.319] Server  LOG      ✓ Compiled in 90ms
+[02:47:13.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+328 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 328:18  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+328 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 328:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:47:28.463] Server  LOG      ✓ Compiled in 71ms
+[02:47:29.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+330 │     50%
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 330:8  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+330 │     50%
+    │        ^
+    ╵
+  styles/navbar/navbar-Home.scss 330:8  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:47:39.075] Server  LOG      ✓ Compiled in 104ms
+[02:47:39.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+331 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 331:16  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+331 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 331:16  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:47:44.137] Server  LOG      ✓ Compiled in 88ms
+[02:47:44.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+332 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 332:18  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+332 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 332:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:47:53.917] Server  LOG      ✓ Compiled in 76ms
+[02:47:54.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+334 │     100%
+    │         ^
+    ╵
+  styles/navbar/navbar-Home.scss 334:9  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+334 │     100%
+    │         ^
+    ╵
+  styles/navbar/navbar-Home.scss 334:9  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:48:20.507] Server  LOG      ✓ Compiled in 110ms
+[02:48:21.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+335 │       opaci
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 335:12  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+335 │       opaci
+    │            ^
+    ╵
+  styles/navbar/navbar-Home.scss 335:12  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:48:22.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+335 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 335:16  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+335 │       opacity: ;
+    │                ^
+    ╵
+  styles/navbar/navbar-Home.scss 335:16  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:48:30.466] Server  LOG      ✓ Compiled in 87ms
+[02:48:31.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+336 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 336:18  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+336 │       transform: ;
+    │                  ^
+    ╵
+  styles/navbar/navbar-Home.scss 336:18  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:48:49.404] Server  LOG      ✓ Compiled in 70ms
+[02:48:50.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+340 │   #
+    │    ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:4  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+340 │   #
+    │    ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:4  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:48:54.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+340 │   #{}
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 340:3  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+340 │   #{}
+    │   ^^
+    ╵
+  styles/navbar/navbar-Home.scss 340:3  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0._stylesheet0$_variableDeclarationOrInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120382:22)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120279:98)]
+[02:48:55.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+340 │   #{$}
+    │      ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:6  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+340 │   #{$}
+    │      ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:6  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0.variableName$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114154:19)]
+    [at ScssParser0._stylesheet0$_variable$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122168:23)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121794:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+[02:48:56.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+340 │   #{$ID}
+    │         ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:9  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+340 │   #{$ID}
+    │         ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:9  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:48:59.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+340 │   #{$IDouCLSS}
+    │               ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:15  root stylesheet
+Caused by: Error: expected "{".
+    ╷
+340 │   #{$IDouCLSS}
+    │               ^
+    ╵
+  styles/navbar/navbar-Home.scss 340:15  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:49:16.985] Server  LOG      ✓ Compiled in 56ms
+[02:49:17.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected expression.
+    ╷
+341 │     filter: ;
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:13  root stylesheet
+Caused by: Error: Expected expression.
+    ╷
+341 │     filter: ;
+    │             ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:13  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:49:28.700] Server  LOG      ✓ Compiled in 95ms
+[02:49:29.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+341 │     filter: drop-shadow(0 0 14px, #);
+    │                                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:36  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+341 │     filter: drop-shadow(0 0 14px, #);
+    │                                    ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:36  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121928:26)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$3$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121742:19)]
+    [at ScssParser0.expressionUntilComma$1$singleEquals (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121757:19)]
+    [at ScssParser0._stylesheet0$_argumentInvocation$2$allowEmptySecondArg$mixin (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121427:28)]
+[02:49:32.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected hex digit.
+    ╷
+341 │     filter: drop-shadow(0 0 14px, #00);
+    │                                      ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:38  root stylesheet
+Caused by: Error: Expected hex digit.
+    ╷
+341 │     filter: drop-shadow(0 0 14px, #00);
+    │                                      ^
+    ╵
+  styles/navbar/navbar-Home.scss 341:38  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_hexDigit$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121997:59)]
+    [at ScssParser0._stylesheet0$_hexColorContents$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121944:24)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121926:45)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$3$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121742:19)]
+    [at ScssParser0.expressionUntilComma$1$singleEquals (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121757:19)]
+[02:49:53.676] Server  LOG      ✓ Compiled in 101ms
+[02:49:54.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+344 │ @
+    │  ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:2  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+344 │ @
+    │  ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:2  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122885:12)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120492:21)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[02:49:57.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+    ╷
+344 │ @include 
+    │          ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:10  root stylesheet
+Caused by: Error: Expected identifier.
+    ╷
+344 │ @include 
+    │          ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:10  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
+    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121110:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+[02:50:00.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected ";".
+    ╷
+344 │ @include L
+    │           ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:11  root stylesheet
+Caused by: Error: expected ";".
+    ╷
+344 │ @include L
+    │           ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:11  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115717:10)]
+    [at ScssParser0.expectStatementSeparator$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115720:19)]
+    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121146:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+[02:50:01.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected ";".
+    ╷
+344 │ @include LogoNavbarHOME()
+    │                          ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:26  root stylesheet
+Caused by: Error: expected ";".
+    ╷
+344 │ @include LogoNavbarHOME()
+    │                          ^
+    ╵
+  styles/navbar/navbar-Home.scss 344:26  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115717:10)]
+    [at ScssParser0.expectStatementSeparator$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115720:19)]
+    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121146:15)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+[02:50:03.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Missing argument $IDouCLSS.
+    ╷
+319 │ @mixin LogoNavbarHOME($IDouCLSS){
+    │        ━━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+... │
+344 │ @include LogoNavbarHOME();
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+    ╵
+  styles/navbar/navbar-Home.scss 344:1  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+Caused by: Error: Missing argument $IDouCLSS.
+    ╷
+319 │ @mixin LogoNavbarHOME($IDouCLSS){
+    │        ━━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+... │
+344 │ @include LogoNavbarHOME();
+    │ ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+    ╵
+  styles/navbar/navbar-Home.scss 344:1  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__verifyArguments_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94712:30)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at _EvaluateVisitor2._async_evaluate0$_verifyArguments$4 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90598:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94472:18]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+[02:50:06.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: expected selector.
+  ┌──> styles/navbar/navbar-Home.scss
+320│   #{$IDouCLSS}{
+  │     ^^^^^^^^^ 
+  ╵
+  ╷
+1 │ 
+  │ ━ error in interpolated output
+  ╵
+  styles/navbar/navbar-Home.scss 320:5  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+Caused by: Error: expected selector.
+  ┌──> styles/navbar/navbar-Home.scss
+320│   #{$IDouCLSS}{
+  │     ^^^^^^^^^ 
+  ╵
+  ╷
+1 │ 
+  │ ━ error in interpolated output
+  ╵
+  styles/navbar/navbar-Home.scss 320:5  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser0._selector$_complexSelector$1$lineBreak (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116258:12)]
+    [at SelectorParser0._selector$_complexSelector$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116263:19)]
+    [at SelectorParser0._selector$_selectorList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116173:45)]
+    [at SelectorParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116505:23)]
+    [at SelectorParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+    [at SelectorParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
+    [at SelectorParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116162:19)]
+[02:50:11.503] Browser ERROR   ./styles/navbar/navbar-Home.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+  ┌──> styles/navbar/navbar-Home.scss
+320│   #{$IDouCLSS}{
+  │     ^^^^^^^^^ 
+  ╵
+  ╷
+1 │ .
+  │  ━ error in interpolated output
+  ╵
+  styles/navbar/navbar-Home.scss 320:5  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+Caused by: Error: Expected identifier.
+  ┌──> styles/navbar/navbar-Home.scss
+320│   #{$IDouCLSS}{
+  │     ^^^^^^^^^ 
+  ╵
+  ╷
+1 │ .
+  │  ━ error in interpolated output
+  ╵
+  styles/navbar/navbar-Home.scss 320:5  LogoNavbarHOME()
+  styles/navbar/navbar-Home.scss 344:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at SelectorParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113881:14)]
+    [at SelectorParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
+    [at SelectorParser0._selector$_simpleSelector$1$allowParent (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116286:45)]
+    [at SelectorParser0._selector$_simpleSelector$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116324:19)]
+    [at SelectorParser0._selector$_compoundSelector$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116269:45)]
+    [at SelectorParser0._selector$_complexSelector$1$lineBreak (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116241:32)]
+    [at SelectorParser0._selector$_complexSelector$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:116263:19)]
+[02:50:22.557] Server  LOG      ✓ Compiled in 149ms
+[02:50:31.030] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:50:34.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:50:35.254] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:51:48.070] Server  LOG      ✓ Compiled in 9ms
+[02:51:50.382] Server  LOG      ✓ Compiled in 9ms
+[02:51:52.168] Server  LOG      ✓ Compiled in 9ms
+[02:51:53.332] Server  LOG      ✓ Compiled in 8ms
+[02:51:57.257] Server  LOG      ✓ Compiled in 12ms
+[02:51:58.606] Server  LOG      ✓ Compiled in 8ms
+[02:52:01.798] Server  LOG      ✓ Compiled in 138ms
+[02:52:50.382] Server  LOG      ✓ Compiled in 98ms
+[02:52:59.327] Server  LOG      ✓ Compiled in 90ms
+[02:53:18.452] Server  LOG      ✓ Compiled in 72ms
+[02:54:26.445] Server  LOG      ✓ Compiled in 69ms
+[02:54:44.949] Server  LOG      ✓ Compiled in 140ms
+[02:54:48.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:57:25.047] Server  LOG      ✓ Compiled in 83ms
+[02:57:35.650] Server  LOG      ✓ Compiled in 67ms

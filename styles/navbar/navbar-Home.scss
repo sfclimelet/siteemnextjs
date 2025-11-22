@@ -35,22 +35,6 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
       }
     }
   }
-
-  // Logo da Navbar e os Icones dos Menus
-  #{$Nid} .logoNavbar{
-    width: 70px !important;
-    height: 65px !important;
-    transition: all 0.4s ease;
-    &:hover {
-      transform: scale(1.03);
-    }
-    @media (min-width: 576px){
-      margin-left: 30px;
-    }
-    @media (min-width: 870px){
-      margin-left: 80px;
-    }
-  }
   #{$Nid} #navbarHome{
     @media (min-width: 576px){
       margin-left: 30px;
@@ -319,6 +303,43 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   ".search-input",
   ".search-btn"
 );
+
+@mixin LogoNavbarHOME($IDouCLSS){
+  #{$IDouCLSS}{
+    width: 50px !important;
+    height: 50px !important;
+    animation: breathe 4s ease-in-out infinite;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    // RESOLUÇÃO
+    @media (min-width: 576px){
+      margin-left: 30px;
+    }
+    @media (min-width: 870px){
+      margin-left: 80px;
+    }
+  }
+  @keyframes breathe {
+    0%{
+      opacity: 0.75;
+      transform: scale(1);
+    }
+    50%{
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    100%{
+      opacity: 0.75;
+      transform: scale(1);
+    }
+  }
+
+  #{$IDouCLSS}:hover{
+    filter: drop-shadow(0 0 14px, #00bfff);
+  }
+}
+@include LogoNavbarHOME('#logoNavbar');
 
 @mixin MenuHambuguer($ID-MenuHmaburger, $class-TogglerICON, $L-Hamburger, $class-ACTIVE) {
 

@@ -25,25 +25,6 @@
   }
 }
 
-#nbHome .logoNavbar {
-  width: 70px !important;
-  height: 65px !important;
-  transition: all 0.4s ease;
-}
-#nbHome .logoNavbar:hover {
-  transform: scale(1.03);
-}
-@media (min-width: 576px) {
-  #nbHome .logoNavbar {
-    margin-left: 30px;
-  }
-}
-@media (min-width: 870px) {
-  #nbHome .logoNavbar {
-    margin-left: 80px;
-  }
-}
-
 @media (min-width: 576px) {
   #nbHome #navbarHome {
     margin-left: 30px;
@@ -359,6 +340,42 @@
     height: 24px;
   }
 }
+#logoNavbar {
+  width: 50px !important;
+  height: 50px !important;
+  animation: breathe 4s ease-in-out infinite;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media (min-width: 576px) {
+  #logoNavbar {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 870px) {
+  #logoNavbar {
+    margin-left: 80px;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+}
+#logoNavbar:hover {
+  filter: drop-shadow(0 0 14px, #00bfff);
+}
+
 /* ===== APENAS MOBILE ===== */
 @media (max-width: 992px) {
   #MenuHamburger {

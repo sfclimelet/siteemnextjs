@@ -104,7 +104,7 @@ export default function NavbarHome() {
 
         {/* Logo */}
         <Link href="/" className="navbar-brand">
-          <Image className="img-fluid logoNavbar" src={logo} alt="Logo" priority />
+          <Image id="logoNavbar" className="img-fluid" src={logo} alt="Logo" priority />
         </Link>
 
         {/* Botão mobile */}
