@@ -102,7 +102,6 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
         &:hover{
           text-shadow: 0 0 20px $cor-dos-icons2;
-          transform: translateX(2px);
         }
 
         /* Para Icons SVG LUCIDE */
@@ -117,7 +116,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
         &:hover svg {
           stroke: $cor-dos-icons2;
           filter: drop-shadow(0 0 16px $cor-dos-icons2);
-          transform: translateX(2px);
+          transform: scale(1.04);
         }
       }
     }
@@ -167,7 +166,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     &:hover {
       stroke: $cor-I-Search2;
       filter: drop-shadow(0 0 10px $cor-I-Search2);
-      transform: translateX(2px);
+      transform: scale(1.04);
     }
   }
   .theme-light{

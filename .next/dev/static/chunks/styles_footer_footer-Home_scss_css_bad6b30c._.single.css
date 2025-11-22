@@ -1,0 +1,95 @@
+/* [project]/styles/footer/footer-Home.scss.css [app-client] (css) */
+.bg-rodape {
+  color: #fff;
+  background: radial-gradient(circle at top, #00111a, #000);
+}
+
+#logoFt {
+  width: 17%;
+  max-width: 20%;
+  transition: all .4s;
+}
+
+#logoFt:hover {
+  transform: scale(1.03);
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer-link:hover {
+  color: #00d4ff;
+  transform: scale(1.01);
+}
+
+.social-icons-rdp {
+  justify-content: center;
+  gap: 18px;
+  display: flex;
+}
+
+.social-icons-rdp .social-icon {
+  color: #ccc;
+  font-size: 1.1rem;
+  transition: all .4s;
+}
+
+.social-icons-rdp .social-icon-face:hover {
+  color: #1877f2;
+  text-shadow: 0 0 10px #1877f2;
+}
+
+.social-icons-rdp .social-icon-insta:hover {
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 12px #d6249f99;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0% 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.social-icons-rdp .social-icon-google:hover {
+  color: #db4437;
+  text-shadow: #db4437b3;
+}
+
+.social-icons-rdp .social-icon-insta {
+  transition: transform .5s, scale .4s, color .5s, background .5s;
+}
+
+.social-icons-rdp .social-icon-insta:hover {
+  transform: scale(1.05);
+}
+
+.social-icons-rdp .social-icon-face {
+  transition: transform .5s, scale .4s, color .5s, background .5s;
+}
+
+.social-icons-rdp .social-icon-face:hover {
+  transform: scale(1.05);
+}
+
+.social-icons-rdp .social-icon-google {
+  transition: transform .5s, scale .4s, color .5s, background .5s;
+}
+
+.social-icons-rdp .social-icon-google:hover {
+  transform: scale(1.05);
+}
+
+.bg-rodape .titulo-redes, .bg-rodape .titulo-links {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.text-gradiente {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*# sourceMappingURL=styles_footer_footer-Home_scss_css_bad6b30c._.single.css.map*/
