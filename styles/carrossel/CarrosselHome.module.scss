@@ -1,0 +1,243 @@
+/* ---------------------------
+   MIXIN DE RESPONSIVIDADE
+----------------------------*/
+@mixin RESPONSIVIDADE(
+  $Wdt,
+  $flex-DIRECTION,
+  $Hht,
+  $Gap,
+  $D-play,
+  $T-ransform,
+  $T-xtalign
+) {
+  width: $Wdt;
+  flex-direction: $flex-DIRECTION;
+  height: $Hht;
+  gap: $Gap;
+  display: $D-play;
+  transform: $T-ransform;
+  text-align: $T-xtalign;
+}
+
+/* ---------------------------
+   MIXIN DO CARROSSEL COMPLETO
+----------------------------*/
+@mixin CarrosselHome(
+  $WRAPPER,
+  $NAVBTN,
+  $CARROSSEL,
+  $CARD,
+  $ACTIVE,
+  $LEFT,
+  $RIGHT,
+  $TXTCONTENT,
+  $BTN,
+  $ImgAREA,
+  $CardIMAGE
+) {
+
+  /* WRAPPER */
+  #{$WRAPPER} {
+    @include RESPONSIVIDADE(100%, column, auto, 0, flex, none, left);
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  /* ÁREA DO CARROSSEL */
+  #{$CARROSSEL} {
+    width: 100%;
+    max-width: 1450px;
+    height: 270px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* CARD */
+  #{$CARD} {
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    @include RESPONSIVIDADE(100%, row, 270px, 0, flex, translateX(-50%) scale(0.75), left);
+
+    max-width: 1450px;
+    border-radius: 18px;
+    align-items: center;
+    transition: 0.6s ease;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  /* CARD ATIVO */
+  #{$ACTIVE} {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 4;
+  }
+
+  /* LADO ESQUERDO */
+  #{$LEFT} {
+    transform: translateX(calc(-50% - 95%)) scale(0.68);
+    opacity: 0.35;
+    z-index: 1;
+  }
+
+  /* LADO DIREITO */
+  #{$RIGHT} {
+    transform: translateX(calc(-50% + 95%)) scale(0.68);
+    opacity: 0.35;
+    z-index: 1;
+  }
+
+  /* TEXTO */
+  #{$TXTCONTENT} {
+    width: 55%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+  }
+
+  #{$TXTCONTENT} h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  #{$TXTCONTENT} p {
+    font-size: 15px;
+    line-height: 1.45;
+    opacity: 0.9;
+  }
+
+  /* BOTÃO */
+  #{$BTN} {
+    background: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* ÁREA DA IMAGEM */
+  #{$ImgAREA} {
+    width: 45%;
+    height: 100%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+
+    /* GRADIENTE DA IMAGEM PARA A COR */
+    &::before {
+      content: "";
+      position: absolute;
+      left: -140px;
+      top: 0;
+      width: 140px;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+
+  /* BOTÕES */
+  #{$NAVBTN} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.45);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 20;
+
+    &:hover {
+      background: rgba(0,0,0,0.6);
+    }
+  }
+
+  .prevBtn { left: 10px; }
+  .nextBtn { right: 10px; }
+
+
+  /* ---------------------------
+        TABLET
+  ----------------------------*/
+  @media (max-width: 1024px) {
+    #{$CARROSSEL} {
+      height: 300px;
+    }
+
+    #{$CARD} {
+      height: 300px;
+      transform: translateX(-50%) scale(0.85);
+    }
+
+    #{$ImgAREA} { width: 50%; }
+
+    #{$TXTCONTENT} h2 { font-size: 22px; }
+  }
+
+  /* ---------------------------
+        MOBILE
+  ----------------------------*/
+  @media (max-width: 768px) {
+    #{$CARROSSEL} { height: auto; }
+
+    #{$CARD} {
+      position: relative;
+      transform: translateX(-50%) scale(1);
+      max-width: 95%;
+      height: auto;
+      flex-direction: column;
+      opacity: 1;
+    }
+
+    #{$LEFT}, #{$RIGHT} { display: none; }
+
+    #{$TXTCONTENT} {
+      width: 100%;
+      padding: 20px;
+    }
+
+    #{$ImgAREA} {
+      width: 100%;
+      height: 200px;
+
+      &::before { display: none; }
+    }
+  }
+}
+
+
+/* ---------------------------
+   CHAMADA DO MIXIN
+----------------------------*/
+
+@include CarrosselHome(
+  ".wrapper",
+  ".navBtn",
+  ".carrosselArea",
+  ".card",
+  ".active",
+  ".left",
+  ".right",
+  ".txtContent",
+  ".btnAction",
+  ".imageArea",
+  ".cardImage"
+);
