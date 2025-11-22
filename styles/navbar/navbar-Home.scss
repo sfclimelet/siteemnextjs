@@ -1,85 +1,51 @@
 @charset "UTF-8";
 
-/* Colors */
-$bg-Nb-home1: #00111a;
-$bg-Nb-home2: #000;
-$txt-color: #fff;
+$nav-Home-bg: rgba(0, 0, 0, 0.549);
+$nav-Home-bb: rgba(255, 255, 255, 0.078);
+$nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
-@mixin ConfNavbar($IDandclass){
-    #{$IDandclass}{
-        background: radial-gradient(circle at top, $bg-Nb-home1, $bg-Nb-home2);
-        color: $txt-color;
-        margin-bottom: 40px;
-    }
-}
-@include ConfNavbar('#nbHome');
+/* NAVBAR - Configurações Gerais*/
+@mixin NavHome($Nid){
+  $bck-F: 14px;
+  $brd-B: 1px;
+  $bx-n1: 0; $bx-n2: 4px; $bx-n3: 20px; 
+  #{$Nid} {
+    margin-bottom: 30px;
+    backdrop-filter: blur($bck-F);
+    -webkit-backdrop-filter: blur($bck-F);
 
-@mixin LogoNavbarHome($id) {
-  #{$id} {
-    width: 70px;
-    height: 65px !important;
-    transition: all 0.4s ease;
-    margin-left: 20px !important;
+    /* Background da Navbar e Submenus */
+    background: $nav-Home-bg !important;
+    border-bottom: $brd-B solid $nav-Home-bb;
+    box-shadow: $bx-n1 $bx-n2 $bx-n3 $nav-Home-bxs;
+    transition: all 0.35s ease;
 
-    &:hover {
-      transform: scale(1.03);
+  }
+  #{$Nid} .scrolled{
+    background: #000000bf !important;
+    box-shadow: 0 6px 30px #0000008c;
+  }
+  #{$Nid}{
+    @media (max-width: 575px){
+      .container-fluid{
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }
     }
   }
-}
-@include LogoNavbarHome('.logoNavbar');
+  #{$Nid} #navbarHome{
+    @media (min-width: 576px){
+      margin-left: 30px;
+    }
+  }
 
-@mixin NavToggler($cls1, $cls2){
-    $color-border: #ffffff7a;
-    $bx-shadow: #ffffff99;
-    $bd-color: #ffffff99;
-    #{$cls1}{
-        background-image: none !important;
-    }
-    #{$cls2}{
-        border: 0.2px solid $color-border !important;
-        background: url("../../public/menu.svg") center/50% no-repeat !important;
-        background-size: 24px 24px;
-        &:focus{
-            box-shadow: 0 0 0 0.25rem $bx-shadow !important;
-            border-color: $bd-color !important;
-        }
-    }
 }
-@include NavToggler('.navbar-toggler-icon', '.navbar-toggler');
-
-@mixin SubMenus($item){
-    $cor-borderSubMn: #797979;
-    #{$item}{
-        background: radial-gradient(circle at top, $bg-Nb-home1, $bg-Nb-home2);
-        border: 1px solid $cor-borderSubMn !important;
-    }
-    #{$item} .dropdown-item{
-        color: #fff;
-    }
-}
-@include SubMenus('.dropdown-menu');
-
-@mixin IconsNavItem($IdHomeNavbar){
-    $cor-dos-icons: #56adff;
-    $cor-dos-icons2: #0cbaff;
-    #{$IdHomeNavbar} #Services, #Qmsm, #Ajsu, #PortCert{
-        background: $cor-dos-icons;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 12px $cor-dos-icons;
-        transition: all 0.4s ease, transform 0.4s ease;
-
-        &:hover{
-            text-shadow: 0 0 20px $cor-dos-icons2;
-            transform: translateX(2px);
-        }
-    }
-}
-@include IconsNavItem('#nbHome');
+@include NavHome('#nbHome');
 
 @mixin navbarIconsMobile($pai, $move, $filhos...){
-  // Mobile
+  // Resoluções 
   @media (max-width: 768px) {
     #{$pai}{
       @each $percorrer in $filhos {
@@ -93,6 +59,7 @@ $txt-color: #fff;
   // Acima do Mobile
   @media (min-width: 576px){
     #{$pai}{
+      margin-right: 40px !important;
       @each $per in $filhos {
         #{$per}{
           margin-left: 0 !important;
@@ -100,201 +67,556 @@ $txt-color: #fff;
       }
     }
   }
+
+  // Configurações dos Icones - Padrão - Menu
+  #{$pai}{
+    $cor-dos-icons: #56adff;
+    $cor-dos-icons2: #0cbaff;
+
+    @each $icns in $filhos {
+
+      /* Estilo para icons - Bootstrap */
+      #{$icns}{
+        background: $cor-dos-icons;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 12px $cor-dos-icons;
+        transition: all 0.4s ease, transform 0.4s ease;
+
+        &:hover{
+          text-shadow: 0 0 20px $cor-dos-icons2;
+        }
+
+        /* Para Icons SVG LUCIDE */
+        svg {
+          width: 18px;
+          height: 18px;
+          stroke: $cor-dos-icons;
+          filter: drop-shadow(0 0 10px $cor-dos-icons);
+          transition: all 0.35s ease;
+        }
+
+        &:hover svg {
+          stroke: $cor-dos-icons2;
+          filter: drop-shadow(0 0 16px $cor-dos-icons2);
+          transform: scale(1.04);
+        }
+      }
+    }
+  }
+
+  // Icons Menu no Tema Light
+  .theme-light{
+    #{$pai}{
+      @each $IcnsNoLight in $filhos {
+        #{$IcnsNoLight}{
+          svg{
+            stroke: #00d4ff !important;
+            filter: drop-shadow(0 0 6px #00dcffb3) !important;
+            transition: all 0.3s ease, filter 0.4s ease;
+            :hover svg{
+              stroke: #37e1ff !important;
+              filter: drop-shadow(0 0 10px #00f0ff) !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include navbarIconsMobile('#navbarHome', 20px,'#Services' ,'#Qmsm' ,'#Ajsu' ,'#PortCert');
 
-/* --- GLASSMORPHISM NA NAVBAR --- */
-#nbHome {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  background: rgba(0, 0, 0, 0.55) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
-  transition: all 0.35s ease;
-}
+@mixin SearchDropdown(
+  $idBtnSearchICON,
+  $SearchDROPW,
+  $SearchBOX,
+  $SearchINPUT,
+  $SearchBTN
+) {
 
-/* Ao rolar um pouco a página (opcional, melhora MUITO a navbar) */
-#nbHome.scrolled {
-  background: rgba(0, 0, 0, 0.75) !important;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.55);
-}
+  /* ===== ÍCONE DO BOTÃO SEARCH ===== */
+  $cor-I-Search1: #56adff;
+  $cor-I-Search2: #0cbaff;
 
-/* --- DROPDOWN MODERNO --- */
-.dropdown-menu {
-  border-radius: 12px !important;
-  padding: 6px 0 !important;
-  animation: fadeMenu 0.25s ease forwards;
-  background: rgba(0, 0, 0, 0.75) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.55),
-    0 0 18px rgba(0, 128, 255, 0.2);
-}
+  #{$idBtnSearchICON} svg {
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    stroke: $cor-I-Search1;
+    filter: drop-shadow(0 0 10px $cor-I-Search1);
+    transition: all 0.35s ease;
 
-/* Animação de fade suave */
-@keyframes fadeMenu {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Dropdown Items refinados */
-.dropdown-item {
-  padding: 10px 16px !important;
-  transition: background 0.25s ease, transform 0.25s ease;
-  border-radius: 8px !important;
-}
-
-.dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.10) !important;
-  transform: translateX(4px);
-}
-
-/* --- ÍCONES REFINADOS — Mantendo seu estilo atual --- */
-#nbHome #Services,
-#nbHome #Qmsm,
-#nbHome #Ajsu,
-#nbHome #PortCert {
-  text-shadow: 0 0 10px rgba(0, 155, 255, 0.6);
-}
-
-#nbHome #Services:hover,
-#nbHome #Qmsm:hover,
-#nbHome #Ajsu:hover,
-#nbHome #PortCert:hover {
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
-}
-
-/* ============================================================
-   NAVBAR – AJUSTES DOS ÍCONES AZUIS (Tamanho + Hover moderno)
-   ============================================================ */
-
-$nav-icon-size: 15px; // tamanho do ícone
-$nav-icon-padding: 6px 10px; // padding do botão
-$nav-icon-hover-move: 1px;  // movimento ao lado
-
-#nbHome {
-  /* ÍCONES – aparência padrão */
-  #Services,
-  #Qmsm,
-  #Ajsu,
-  #PortCert {
-    font-size: $nav-icon-size;
-    padding: $nav-icon-padding;
-    transition: transform 0.35s ease, text-shadow 0.35s ease;
-
-    /* Removendo o scale e substituindo por translate */
     &:hover {
-      transform: translateX($nav-icon-hover-move);
-      text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
+      stroke: $cor-I-Search2;
+      filter: drop-shadow(0 0 10px $cor-I-Search2);
+      transform: scale(1.04);
+    }
+  }
+  .theme-light{
+    #{$idBtnSearchICON} svg{
+            stroke: #00d4ff !important;
+            filter: drop-shadow(0 0 6px #00dcffb3) !important;
+            transition: all 0.3s ease, filter 0.4s ease;
+            :hover svg{
+              stroke: #37e1ff !important;
+              filter: drop-shadow(0 0 10px #00f0ff) !important;
+            }
+    }
+  }
+
+  /* ===== CONTAINER DO INPUT + BUTTON ===== */
+  #{$SearchBOX} {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;      // padding real agora vem daqui
+    gap: 0;
+
+    #{$SearchINPUT} {
+      flex: 1;
+      height: 46px;
+      background: #0d1b27;
+      border: 1px solid #0aa8ff;
+      border-radius: 10px 0 0 10px;
+      color: #fff;
+
+      &::placeholder {
+        color: #9ac5ff;
+      }
+
+      &:focus {
+        border-color: #21c7ff;
+        box-shadow: 0 0 8px #00caff;
+      }
+    }
+
+    #{$SearchBTN} {
+      border: none;
+      width: 50px;
+      height: 46px;
+      border-radius: 0 10px 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: linear-gradient(45deg, #00aaff, #006eff);
+      transition: all 0.25s ease;
+
+      svg {
+        width: 22px;
+        height: 22px;
+        stroke: #fff;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #008cff;
+      }
+
+      &:active {
+        transform: scale(0.96);
+      }
+    }
+  }
+
+  /* ===== MOBILE (até 575px) ===== */
+  @media (max-width: 575px) {
+    #{$SearchBOX} {
+      padding: 12px;
+    }
+
+    #{$SearchBOX} #{$SearchINPUT} {
+      height: 40px;
+      font-size: 14px;
+    }
+
+    #{$SearchBOX} #{$SearchBTN} {
+      width: 44px;
+      height: 40px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  /* ===== TABLET (577px a 992px) ===== */
+  @media (min-width: 576px) and (max-width: 992px) {
+    #{$SearchDROPW} {
+      min-height: 90px;
+      width: 280px !important;
+    }
+
+    #{$SearchBOX} {
+      padding: 14px;
+    }
+
+    #{$SearchBOX} #{$SearchINPUT} {
+      height: 44px;
+      font-size: 15px;
+    }
+
+    #{$SearchBOX} #{$SearchBTN} {
+      width: 48px;
+      height: 44px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  /* ===== DESKTOP (maior que 992px) ===== */
+  @media (min-width: 993px) {
+    #{$SearchDROPW} {
+      width: 320px !important;
+      min-height: 90px;
+    }
+
+    #{$SearchBOX} {
+      padding: 16px;
+    }
+
+    #{$SearchBOX} #{$SearchINPUT} {
+      height: 50px;
+      font-size: 16px;
+    }
+
+    #{$SearchBOX} #{$SearchBTN} {
+      width: 55px;
+      height: 50px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
+@include SearchDropdown(
+  "#SearchBtn",
+  ".search-dropdown",
+  ".dropdown-search-box",
+  ".search-input",
+  ".search-btn"
+);
 
-/* Mobile (caso queira ajustar ainda mais no celular) */
-@media (max-width: 768px) {
-  #nbHome {
-    #Services,
-    #Qmsm,
-    #Ajsu,
-    #PortCert {
-      font-size: $nav-icon-size;
-      padding: 6px 8px;
+@mixin LogoNavbarHOME($IDouCLSS){
+  #{$IDouCLSS}{
+    width: 50px !important;
+    height: 50px !important;
+    animation: breathe 4s ease-in-out infinite;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    // RESOLUÇÃO
+    @media (min-width: 576px){
+      margin-left: 30px;
+    }
+    @media (min-width: 870px){
+      margin-left: 80px;
+    }
+  }
+  @keyframes breathe {
+    0%{
+      opacity: 0.75;
+      transform: scale(1);
+    }
+    50%{
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    100%{
+      opacity: 0.75;
+      transform: scale(1);
+    }
+  }
+
+  #{$IDouCLSS}:hover{
+    filter: drop-shadow(0 0 14px, #00bfff);
+  }
+}
+@include LogoNavbarHOME('#logoNavbar');
+
+@mixin MenuHambuguer($ID-MenuHmaburger, $class-TogglerICON, $L-Hamburger, $class-ACTIVE) {
+
+  /* ===== APENAS MOBILE ===== */
+  @media (max-width: 992px) {
+
+    #{$ID-MenuHmaburger} {
+      padding: 0 !important;
+      margin: 0;
+      margin-left: 20px;
+      width: 38px;
+      height: 32px;
+
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      /* Remove o ícone padrão do Bootstrap */
+      #{$class-TogglerICON} {
+        display: none !important;
+      }
+
+      /* === Linhas === */
+      #{$L-Hamburger} {
+        width: 26px;
+        height: 3px;
+        background: #56adff;
+        border-radius: 4px;
+        transition: 0.35s ease;
+        box-shadow: 0 0 6px #56adff;
+      }
+
+      #{$L-Hamburger} + #{$L-Hamburger} {
+        margin-top: 6px;
+      }
+
+      /* === Tema claro === */
+      .theme-light & {
+        #{$L-Hamburger} {
+          background: #0cbaff;
+          box-shadow: 0 0 6px #0cbaff;
+        }
+      }
+
+      /* ==== ANIMAÇÃO PARA X (quando o botão recebe .active) === */
+      &.#{$class-ACTIVE} {
+
+        #{$L-Hamburger}:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        #{$L-Hamburger}:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+
+        #{$L-Hamburger}:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  /* ===== DESKTOP — ESCONDE O HAMBURGER ===== */
+  @media (min-width: 576px) {
+    #{$ID-MenuHmaburger} {
+      display: none !important;
     }
   }
 }
+@include MenuHambuguer('#MenuHamburger', '.navbar-toggler-icon', '.line', 'active');
 
-/* ============================================================
-   DROPDOWN – AJUSTES DE TAMANHO (+ animação suave)
-   ============================================================ */
+@mixin DropdownMn($pScls, $pScls2){
+  $neon1: #56adff;
+  $neon2: #0cbaff;
 
-/* --- CONFIGURAÇÕES GERAIS --- */
-$dropdown-radius: 14px;
-$dropdown-padding: 8px;         // espaço interno
-$dropdown-item-font: 0.92rem;   // tamanho da fonte
-$dropdown-item-icon: 1rem;      // tamanho dos ícones
-$dropdown-item-padding: 6px 12px;
-$dropdown-hover-move: 4px;      // deslizar ao lado
-
-/* --- CONTAINER DO DROPDOWN (menor e mais elegante) --- */
-.dropdown-menu {
-  padding: $dropdown-padding !important;
-  border-radius: $dropdown-radius !important;
-  min-width: 180px;
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-/* --- ITENS DO DROPDOWN (reduzidos + elegantes) --- */
-.dropdown-item {
-  display: flex !important;
-  align-items: center;
-  gap: 8px;
-
-  font-size: $dropdown-item-font;
-  padding: $dropdown-item-padding !important;
-
-  transition: transform 0.25s ease, background 0.25s ease;
-  border-radius: 8px !important;
-
-  i {
-    font-size: $dropdown-item-icon;
-    opacity: 0.85;
-  }
-
-  /* HOVER — deslizar suave para direita */
-  &:hover {
-    background: rgba(255, 255, 255, 0.08) !important;
-    transform: translateX($dropdown-hover-move);
-  }
-}
-
-/* --- MOBILE (ajuste opcional para ainda mais compactado) --- */
-@media (max-width: 768px) {
-  .dropdown-menu {
-    min-width: 160px;
-  }
-
-  .dropdown-item {
-    font-size: 0.88rem;
-    padding: 6px 10px !important;
-
-    i {
-      font-size: 0.9rem;
+  /* Animação de Entrada */
+  @keyframes fadeMenu {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-}
 
-/* ============================================================
-   MOBILE – Ajuste do tamanho do CONTAINER do dropdown
-   ============================================================ */
-@media (max-width: 768px) {
-
-  .dropdown-menu {
-    width: 85vw !important;       // deixa menor e proporcional à tela
-    min-width: 0 !important;      // remove largura mínima padrão
-    max-width: 360px;             // mantém limite elegante
-    margin-left: auto;            // centraliza
-    margin-right: auto;           // centraliza
+  /* DROPDOWN - SUBMENUS */
+  #{$pScls}{
     border-radius: 12px !important;
-    padding: 6px !important;
+    padding: 6px 0 !important;
+    animation: fadeMenu 0.25s ease forwards;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* Ajuste opcional dos itens para manter elegância */
-  .dropdown-item {
-    font-size: 0.90rem;
-    padding: 6px 10px !important;
-
-    i {
-      font-size: 0.95rem;
+  // Animação da BORDA - DROPDOWN SUBMENUS
+  #{$pScls}{
+    background: radial-gradient(circle at top, #00111a, #000);
+    border: 2px solid #00b4ffb3;
+    box-shadow: 0 0 15px #00b4ffb3,
+    0 0 25px #00b4ff66;
+    backdrop-filter: blur(4px);
+    #{$pScls} .show:hover{
+      border-color: #00dcff;
+      box-shadow: 0 0 22px #00dcff99,
+      0 0 35px #00dcff99;
     }
   }
+  // Animação da BORDA - DROPDOWN SUBMENUS - THEME LIGHT
+  .theme-light{
+    $color-p-Light: #0cbaff;
+    #{$pScls}{
+      border: 1px solid $color-p-Light;      // cor mais forte
+      box-shadow: 0 0 20px $color-p-Light, 
+                  0 0 35px $color-p-Light,
+                  inset 0 0 10px $color-p-Light;
+      backdrop-filter: blur(6px);
+    }
+  }
+
+  /* LINKS DO DROPDOWN - SUBMENUS */
+  #{$pScls2}{
+    $I-sbmn1: #56adff;
+    $I-sbmn2: #0cbaff;
+
+    transition: stroke 0.25s ease, transform 0.25s ease;
+    border-radius: 8px !important;
+    color: #fff !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+
+    i,
+    svg {
+      margin-right: 5px;
+      width: 18px;
+      height: 18px;
+      stroke: $I-sbmn1 !important;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.4s ease, transform 0.4s ease;
+      text-shadow: 0 0 12px $I-sbmn2;
+    }
+
+    &:hover{
+      background: #90f0f71a !important;
+      transform: translateX(4px);
+    }
+  }
+
+  // DROPDOWN MOBILE
+  @media (max-width: 575px){
+
+    #{$pScls} {
+      min-width: 160px;
+      width: 85vw !important;
+      max-width: 200px !important;
+      margin-left: 50% !important;
+      transform: translateX(-50%) !important;
+      padding: 6px !important;
+    }
+    // Espaçamento Links e Icone do TOPO
+    #{$pScls} > ul,
+    #{$pScls} {
+      padding-top: 40px !important;
+    }
+
+    #{$pScls2}{
+      font-size: 0.88rem;
+      padding: 6px 10px !important;
+
+      i {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ICON - CARD */
+    .dropdown-top-icon {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+      background: #000000dd;
+      border: 3px solid $neon1;
+
+      box-shadow:
+        0 0 14px $neon1,
+        0 0 22px $neon1 inset;
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 99999;
+
+      opacity: 0;
+      transform: translate(-50%, -6px);
+      transition: opacity 0.22s ease, transform 0.22s ease;
+    }
+
+    /* ICON DENTRO DO TOPO (CIRCULO) */
+    .dropdown-top-icon svg {
+      width: 18px;
+      height: 18px;
+      color: $neon1 !important;
+      transition: all 0.22s ease;
+    }
+
+    /* animações */
+    .dropdown-top-icon.visible {
+      display: flex !important;
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .dropdown-top-icon:hover {
+      border-color: $neon2;
+      box-shadow:
+        0 0 18px $neon2,
+        0 0 28px $neon2 inset;
+      transform: translate(-50%, 0) scale(1.03);
+    }
+
+    .dropdown-top-icon:hover svg {
+      color: $neon2 !important;
+    }
+
+    .dropdown-top-icon:active {
+      transform: translate(-50%, 0) scale(0.92);
+    }
+
+    /* botão original some quando ativo */
+    #nbHome .nav-link.is-active {
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transition: opacity 0.18s ease;
+    }
+
+
+    /* THEME LIGHT — deixa o ícone do topo da mesma cor dos botões */
+    body.theme-light .dropdown-top-icon {
+      border-color: #0cbaff;
+      box-shadow:
+        0 0 14px #0cbaff,
+        0 0 22px #0cbaff inset;
+    }
+
+    body.theme-light .dropdown-top-icon svg {
+      color: #0cbaff !important;
+    }
+  }
+  @media (min-width: 576px) {
+    .dropdown-top-icon,
+    .dropdown-top-icon.visible {
+      display: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  }
+
 }
+@include DropdownMn('.dropdown-menu', '.dropdown-item');

@@ -1,55 +1,34 @@
 @charset "UTF-8";
-/* Colors */
+/* NAVBAR - Configurações Gerais*/
 #nbHome {
-  background: radial-gradient(circle at top, #00111a, #000);
-  color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  /* Background da Navbar e Submenus */
+  background: rgba(0, 0, 0, 0.549) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.078);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.451);
+  transition: all 0.35s ease;
 }
 
-.logoNavbar {
-  width: 70px;
-  height: 65px !important;
-  transition: all 0.4s ease;
-  margin-left: 20px !important;
-}
-.logoNavbar:hover {
-  transform: scale(1.03);
+#nbHome .scrolled {
+  background: rgba(0, 0, 0, 0.7490196078) !important;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }
 
-.navbar-toggler-icon {
-  background-image: none !important;
+@media (max-width: 575px) {
+  #nbHome .container-fluid {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
 }
 
-.navbar-toggler {
-  border: 0.2px solid rgba(255, 255, 255, 0.4784313725) !important;
-  background: url("../../public/menu.svg") center/50% no-repeat !important;
-  background-size: 24px 24px;
-}
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.6) !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
-}
-
-.dropdown-menu {
-  background: radial-gradient(circle at top, #00111a, #000);
-  border: 1px solid #797979 !important;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #fff;
-}
-
-#nbHome #Services, #Qmsm, #Ajsu, #PortCert {
-  background: #56adff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 12px #56adff;
-  transition: all 0.4s ease, transform 0.4s ease;
-}
-#nbHome #Services:hover, #Qmsm:hover, #Ajsu:hover, #PortCert:hover {
-  text-shadow: 0 0 20px #0cbaff;
-  transform: translateX(2px);
+@media (min-width: 576px) {
+  #nbHome #navbarHome {
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -67,6 +46,9 @@
   }
 }
 @media (min-width: 576px) {
+  #navbarHome {
+    margin-right: 40px !important;
+  }
   #navbarHome #Services {
     margin-left: 0 !important;
   }
@@ -80,35 +62,378 @@
     margin-left: 0 !important;
   }
 }
-/* --- GLASSMORPHISM NA NAVBAR --- */
-#nbHome {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  background: rgba(0, 0, 0, 0.55) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+#navbarHome {
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+  /* Estilo para icons - Bootstrap */
+}
+#navbarHome #Services {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+  /* Para Icons SVG LUCIDE */
+}
+#navbarHome #Services:hover {
+  text-shadow: 0 0 20px #0cbaff;
+}
+#navbarHome #Services svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
   transition: all 0.35s ease;
 }
-
-/* Ao rolar um pouco a página (opcional, melhora MUITO a navbar) */
-#nbHome.scrolled {
-  background: rgba(0, 0, 0, 0.75) !important;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.55);
+#navbarHome #Services:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#navbarHome #Qmsm {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+  /* Para Icons SVG LUCIDE */
+}
+#navbarHome #Qmsm:hover {
+  text-shadow: 0 0 20px #0cbaff;
+}
+#navbarHome #Qmsm svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #Qmsm:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#navbarHome #Ajsu {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+  /* Para Icons SVG LUCIDE */
+}
+#navbarHome #Ajsu:hover {
+  text-shadow: 0 0 20px #0cbaff;
+}
+#navbarHome #Ajsu svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #Ajsu:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#navbarHome #PortCert {
+  background: #56adff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease;
+  /* Para Icons SVG LUCIDE */
+}
+#navbarHome #PortCert:hover {
+  text-shadow: 0 0 20px #0cbaff;
+}
+#navbarHome #PortCert svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#navbarHome #PortCert:hover svg {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
 }
 
-/* --- DROPDOWN MODERNO --- */
-.dropdown-menu {
-  border-radius: 12px !important;
-  padding: 6px 0 !important;
-  animation: fadeMenu 0.25s ease forwards;
-  background: rgba(0, 0, 0, 0.75) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 18px rgba(0, 128, 255, 0.2);
+.theme-light #navbarHome #Services svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Services svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #Qmsm svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Qmsm svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #Ajsu svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #Ajsu svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+.theme-light #navbarHome #PortCert svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #navbarHome #PortCert svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
 }
 
-/* Animação de fade suave */
+/* ===== ÍCONE DO BOTÃO SEARCH ===== */
+#SearchBtn svg {
+  margin-left: 20px;
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  filter: drop-shadow(0 0 10px #56adff);
+  transition: all 0.35s ease;
+}
+#SearchBtn svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 10px #0cbaff);
+  transform: scale(1.04);
+}
+
+.theme-light #SearchBtn svg {
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #SearchBtn svg :hover svg {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+}
+
+/* ===== CONTAINER DO INPUT + BUTTON ===== */
+.dropdown-search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  gap: 0;
+}
+.dropdown-search-box .search-input {
+  flex: 1;
+  height: 46px;
+  background: #0d1b27;
+  border: 1px solid #0aa8ff;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+}
+.dropdown-search-box .search-input::-moz-placeholder {
+  color: #9ac5ff;
+}
+.dropdown-search-box .search-input::placeholder {
+  color: #9ac5ff;
+}
+.dropdown-search-box .search-input:focus {
+  border-color: #21c7ff;
+  box-shadow: 0 0 8px #00caff;
+}
+.dropdown-search-box .search-btn {
+  border: none;
+  width: 50px;
+  height: 46px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00aaff, #006eff);
+  transition: all 0.25s ease;
+}
+.dropdown-search-box .search-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: #fff;
+}
+.dropdown-search-box .search-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #008cff;
+}
+.dropdown-search-box .search-btn:active {
+  transform: scale(0.96);
+}
+
+/* ===== MOBILE (até 575px) ===== */
+@media (max-width: 575px) {
+  .dropdown-search-box {
+    padding: 12px;
+  }
+  .dropdown-search-box .search-input {
+    height: 40px;
+    font-size: 14px;
+  }
+  .dropdown-search-box .search-btn {
+    width: 44px;
+    height: 40px;
+  }
+  .dropdown-search-box .search-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* ===== TABLET (577px a 992px) ===== */
+@media (min-width: 576px) and (max-width: 992px) {
+  .search-dropdown {
+    min-height: 90px;
+    width: 280px !important;
+  }
+  .dropdown-search-box {
+    padding: 14px;
+  }
+  .dropdown-search-box .search-input {
+    height: 44px;
+    font-size: 15px;
+  }
+  .dropdown-search-box .search-btn {
+    width: 48px;
+    height: 44px;
+  }
+  .dropdown-search-box .search-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* ===== DESKTOP (maior que 992px) ===== */
+@media (min-width: 993px) {
+  .search-dropdown {
+    width: 320px !important;
+    min-height: 90px;
+  }
+  .dropdown-search-box {
+    padding: 16px;
+  }
+  .dropdown-search-box .search-input {
+    height: 50px;
+    font-size: 16px;
+  }
+  .dropdown-search-box .search-btn {
+    width: 55px;
+    height: 50px;
+  }
+  .dropdown-search-box .search-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+#logoNavbar {
+  width: 50px !important;
+  height: 50px !important;
+  animation: breathe 4s ease-in-out infinite;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media (min-width: 576px) {
+  #logoNavbar {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 870px) {
+  #logoNavbar {
+    margin-left: 80px;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+}
+#logoNavbar:hover {
+  filter: drop-shadow(0 0 14px, #00bfff);
+}
+
+/* ===== APENAS MOBILE ===== */
+@media (max-width: 992px) {
+  #MenuHamburger {
+    padding: 0 !important;
+    margin: 0;
+    margin-left: 20px;
+    width: 38px;
+    height: 32px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Remove o ícone padrão do Bootstrap */
+    /* === Linhas === */
+    /* === Tema claro === */
+    /* ==== ANIMAÇÃO PARA X (quando o botão recebe .active) === */
+  }
+  #MenuHamburger .navbar-toggler-icon {
+    display: none !important;
+  }
+  #MenuHamburger .line {
+    width: 26px;
+    height: 3px;
+    background: #56adff;
+    border-radius: 4px;
+    transition: 0.35s ease;
+    box-shadow: 0 0 6px #56adff;
+  }
+  #MenuHamburger .line + .line {
+    margin-top: 6px;
+  }
+  .theme-light #MenuHamburger .line {
+    background: #0cbaff;
+    box-shadow: 0 0 6px #0cbaff;
+  }
+  #MenuHamburger.active .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #MenuHamburger.active .line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  #MenuHamburger.active .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+/* ===== DESKTOP — ESCONDE O HAMBURGER ===== */
+@media (min-width: 576px) {
+  #MenuHamburger {
+    display: none !important;
+  }
+}
+/* Animação de Entrada */
 @keyframes fadeMenu {
   from {
     opacity: 0;
@@ -119,103 +444,73 @@
     transform: translateY(0);
   }
 }
-/* Dropdown Items refinados */
-.dropdown-item {
-  padding: 10px 16px !important;
-  transition: background 0.25s ease, transform 0.25s ease;
-  border-radius: 8px !important;
-}
-
-.dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  transform: translateX(4px);
-}
-
-/* --- ÍCONES REFINADOS — Mantendo seu estilo atual --- */
-#nbHome #Services,
-#nbHome #Qmsm,
-#nbHome #Ajsu,
-#nbHome #PortCert {
-  text-shadow: 0 0 10px rgba(0, 155, 255, 0.6);
-}
-
-#nbHome #Services:hover,
-#nbHome #Qmsm:hover,
-#nbHome #Ajsu:hover,
-#nbHome #PortCert:hover {
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
-}
-
-/* ============================================================
-   NAVBAR – AJUSTES DOS ÍCONES AZUIS (Tamanho + Hover moderno)
-   ============================================================ */
-#nbHome {
-  /* ÍCONES – aparência padrão */
-}
-#nbHome #Services,
-#nbHome #Qmsm,
-#nbHome #Ajsu,
-#nbHome #PortCert {
-  font-size: 15px;
-  padding: 6px 10px;
-  transition: transform 0.35s ease, text-shadow 0.35s ease;
-  /* Removendo o scale e substituindo por translate */
-}
-#nbHome #Services:hover,
-#nbHome #Qmsm:hover,
-#nbHome #Ajsu:hover,
-#nbHome #PortCert:hover {
-  transform: translateX(1px);
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.8);
-}
-
-/* Mobile (caso queira ajustar ainda mais no celular) */
-@media (max-width: 768px) {
-  #nbHome #Services,
-  #nbHome #Qmsm,
-  #nbHome #Ajsu,
-  #nbHome #PortCert {
-    font-size: 15px;
-    padding: 6px 8px;
-  }
-}
-/* ============================================================
-   DROPDOWN – AJUSTES DE TAMANHO (+ animação suave)
-   ============================================================ */
-/* --- CONFIGURAÇÕES GERAIS --- */
-/* --- CONTAINER DO DROPDOWN (menor e mais elegante) --- */
+/* DROPDOWN - SUBMENUS */
 .dropdown-menu {
-  padding: 8px !important;
-  border-radius: 14px !important;
-  min-width: 180px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  border-radius: 12px !important;
+  padding: 6px 0 !important;
+  animation: fadeMenu 0.25s ease forwards;
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* --- ITENS DO DROPDOWN (reduzidos + elegantes) --- */
-.dropdown-item {
-  display: flex !important;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.92rem;
-  padding: 6px 12px !important;
-  transition: transform 0.25s ease, background 0.25s ease;
-  border-radius: 8px !important;
-  /* HOVER — deslizar suave para direita */
+.dropdown-menu {
+  background: radial-gradient(circle at top, #00111a, #000);
+  border: 2px solid rgba(0, 180, 255, 0.7019607843);
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.7019607843), 0 0 25px rgba(0, 180, 255, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
-.dropdown-item i {
-  font-size: 1rem;
-  opacity: 0.85;
+.dropdown-menu .dropdown-menu .show:hover {
+  border-color: #00dcff;
+  box-shadow: 0 0 22px rgba(0, 220, 255, 0.6), 0 0 35px rgba(0, 220, 255, 0.6);
+}
+
+.theme-light .dropdown-menu {
+  border: 1px solid #0cbaff;
+  box-shadow: 0 0 20px #0cbaff, 0 0 35px #0cbaff, inset 0 0 10px #0cbaff;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+/* LINKS DO DROPDOWN - SUBMENUS */
+.dropdown-item {
+  transition: stroke 0.25s ease, transform 0.25s ease;
+  border-radius: 8px !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.dropdown-item i,
+.dropdown-item svg {
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  stroke: #56adff !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease, transform 0.4s ease;
+  text-shadow: 0 0 12px #0cbaff;
 }
 .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: rgba(144, 240, 247, 0.1019607843) !important;
   transform: translateX(4px);
 }
 
-/* --- MOBILE (ajuste opcional para ainda mais compactado) --- */
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .dropdown-menu {
     min-width: 160px;
+    width: 85vw !important;
+    max-width: 200px !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 6px !important;
+  }
+  .dropdown-menu > ul,
+  .dropdown-menu {
+    padding-top: 40px !important;
   }
   .dropdown-item {
     font-size: 0.88rem;
@@ -224,26 +519,71 @@
   .dropdown-item i {
     font-size: 0.9rem;
   }
+  /* ICON - CARD */
+  .dropdown-top-icon {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8666666667);
+    border: 3px solid #56adff;
+    box-shadow: 0 0 14px #56adff, 0 0 22px #56adff inset;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
+    opacity: 0;
+    transform: translate(-50%, -6px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+  }
+  /* ICON DENTRO DO TOPO (CIRCULO) */
+  .dropdown-top-icon svg {
+    width: 18px;
+    height: 18px;
+    color: #56adff !important;
+    transition: all 0.22s ease;
+  }
+  /* animações */
+  .dropdown-top-icon.visible {
+    display: flex !important;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .dropdown-top-icon:hover {
+    border-color: #0cbaff;
+    box-shadow: 0 0 18px #0cbaff, 0 0 28px #0cbaff inset;
+    transform: translate(-50%, 0) scale(1.03);
+  }
+  .dropdown-top-icon:hover svg {
+    color: #0cbaff !important;
+  }
+  .dropdown-top-icon:active {
+    transform: translate(-50%, 0) scale(0.92);
+  }
+  /* botão original some quando ativo */
+  #nbHome .nav-link.is-active {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.18s ease;
+  }
+  /* THEME LIGHT — deixa o ícone do topo da mesma cor dos botões */
+  body.theme-light .dropdown-top-icon {
+    border-color: #0cbaff;
+    box-shadow: 0 0 14px #0cbaff, 0 0 22px #0cbaff inset;
+  }
+  body.theme-light .dropdown-top-icon svg {
+    color: #0cbaff !important;
+  }
 }
-/* ============================================================
-   MOBILE – Ajuste do tamanho do CONTAINER do dropdown
-   ============================================================ */
-@media (max-width: 768px) {
-  .dropdown-menu {
-    width: 85vw !important;
-    min-width: 0 !important;
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px !important;
-    padding: 6px !important;
-  }
-  /* Ajuste opcional dos itens para manter elegância */
-  .dropdown-item {
-    font-size: 0.9rem;
-    padding: 6px 10px !important;
-  }
-  .dropdown-item i {
-    font-size: 0.95rem;
+@media (min-width: 576px) {
+  .dropdown-top-icon,
+  .dropdown-top-icon.visible {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 }/*# sourceMappingURL=navbar-Home.css.map */
