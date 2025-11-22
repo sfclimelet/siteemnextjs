@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import logo from "../../public/logo-sef.png";
 
 import ClickAnimation from "./ClickAnimation";
+import { initHamburgerMenu } from "./buttonMenu";
 
 // SCSS
 import "../../styles/navbar/navbar-Home.scss";
@@ -23,6 +24,8 @@ export default function NavbarHome() {
 
   // NAVBAR
   useEffect(() => {
+
+    const cleanupHamburger = initHamburgerMenu();
     if (typeof window === "undefined") return;
 
     const dropdownParents = document.querySelectorAll(".nav-item.dropdown");
@@ -89,7 +92,10 @@ export default function NavbarHome() {
         });
         parent.__navListeners = [];
       });
+
+      cleanupHamburger && cleanupHamburger();
     };
+
   }, []);
 
   return (
@@ -102,7 +108,7 @@ export default function NavbarHome() {
         </Link>
 
         {/* Botão mobile */}
-        <button
+        <button id="MenuHamburger"
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -111,7 +117,9 @@ export default function NavbarHome() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="line"></span>
+          <span className="line"></span>
+          <span className="line"></span>
         </button>
 
         {/* Menus */}

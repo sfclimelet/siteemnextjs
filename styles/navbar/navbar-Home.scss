@@ -320,25 +320,84 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
   ".search-btn"
 );
 
-@mixin NavToggler($cls1, $cls2){
-    $color-border: #ffffff7a;
-    $bx-shadow: #ffffff99;
-    $bd-color: #ffffff99;
-    #{$cls1}{
-        background-image: none !important;
-    }
-    #{$cls2}{
-      margin-left: 20px !important;
-        border: 0.2px solid $color-border !important;
-        background: url("../../public/menu.svg") center/50% no-repeat !important;
-        background-size: 24px 24px;
-        &:focus{
-            box-shadow: 0 0 0 0.25rem $bx-shadow !important;
-            border-color: $bd-color !important;
+@mixin MenuHambuguer($ID-MenuHmaburger, $class-TogglerICON, $L-Hamburger, $class-ACTIVE) {
+
+  /* ===== APENAS MOBILE ===== */
+  @media (max-width: 992px) {
+
+    #{$ID-MenuHmaburger} {
+      padding: 0 !important;
+      margin: 0;
+      margin-left: 20px;
+      width: 38px;
+      height: 32px;
+
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      /* Remove o ícone padrão do Bootstrap */
+      #{$class-TogglerICON} {
+        display: none !important;
+      }
+
+      /* === Linhas === */
+      #{$L-Hamburger} {
+        width: 26px;
+        height: 3px;
+        background: #56adff;
+        border-radius: 4px;
+        transition: 0.35s ease;
+        box-shadow: 0 0 6px #56adff;
+      }
+
+      #{$L-Hamburger} + #{$L-Hamburger} {
+        margin-top: 6px;
+      }
+
+      /* === Tema claro === */
+      .theme-light & {
+        #{$L-Hamburger} {
+          background: #0cbaff;
+          box-shadow: 0 0 6px #0cbaff;
         }
+      }
+
+      /* ==== ANIMAÇÃO PARA X (quando o botão recebe .active) === */
+      &.#{$class-ACTIVE} {
+
+        #{$L-Hamburger}:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        #{$L-Hamburger}:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+
+        #{$L-Hamburger}:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+      }
     }
+  }
+
+  /* ===== DESKTOP — ESCONDE O HAMBURGER ===== */
+  @media (min-width: 576px) {
+    #{$ID-MenuHmaburger} {
+      display: none !important;
+    }
+  }
 }
-@include NavToggler('.navbar-toggler-icon', '.navbar-toggler');
+@include MenuHambuguer('#MenuHamburger', '.navbar-toggler-icon', '.line', 'active');
 
 @mixin DropdownMn($pScls, $pScls2){
   $neon1: #56adff;
