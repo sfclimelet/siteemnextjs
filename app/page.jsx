@@ -8,6 +8,7 @@ import FooterHome from "../components/footer/Footer-Home";
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
 import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../components/ThemeProvider";
+import CarrosselHome from "../components/carrossel/CarrosselHome";
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -39,6 +40,8 @@ export default function Home() {
             <div className="text-center">
               <h1>Nossos Serviços <i className="bi bi-tools"></i></h1>
             </div>
+
+            <CarrosselHome />
 
             <section id="teste" className="text-center">
               <h2>Clique no Botão Abaixo: </h2>
