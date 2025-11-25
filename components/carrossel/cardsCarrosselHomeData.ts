@@ -1,11 +1,6 @@
 import React from "react";
 import type { ComponentType } from "react";
 
-import imgClim from "../../public/ar-condicionado.jpg";
-import imgEletrica from "../../public/eletrica.jpg";
-import imgEletronica from "../../public/eletronica.jpeg";
-import imgRefrigeracao from "../../public/refrigeracao.jpg";
-
 // ICONS
 import { Fan, Zap, Cpu, Snowflake } from "lucide-react";
 
@@ -18,7 +13,6 @@ export interface CarrosselItem {
   image: string;
 
   color?: string;
-  gradientFrom?: string;
   gradientTo?: string;
 
   rota?: string;
@@ -37,7 +31,6 @@ export const carrosselHomeData: CarrosselItem[] = [
     image: "/ar-condicionado.jpg",
 
     color: "#003087",
-    gradientFrom: "rgba(0,0,0,0.6)",
     gradientTo: "rgba(0,0,0,0.1)",
 
     rota: "/services/climatizacao",
@@ -54,7 +47,6 @@ export const carrosselHomeData: CarrosselItem[] = [
     image: "/eletrica.jpg",
 
     color: "#E0B300",
-    gradientFrom: "rgba(0,0,0,0.6)",
     gradientTo: "rgba(0,0,0,0.1)",
 
     rota: "/services/eletrica",
@@ -68,10 +60,9 @@ export const carrosselHomeData: CarrosselItem[] = [
     desc: "Manutenção e diagnóstico de placas e sistemas eletrônicos.",
     buttonLabel: "Explorar",
 
-    image: "/eletronica.jpeg",
+    image: "/eletronica.jpg",
 
     color: "#16A34A",
-    gradientFrom: "rgba(0,0,0,0.6)",
     gradientTo: "rgba(0,0,0,0.1)",
 
     rota: "",
@@ -88,7 +79,6 @@ export const carrosselHomeData: CarrosselItem[] = [
     image: "/refrigeracao.jpg",
 
     color: "#0EA5E9",
-    gradientFrom: "rgba(0,0,0,0.6)",
     gradientTo: "rgba(0,0,0,0.1)",
 
     rota: "",

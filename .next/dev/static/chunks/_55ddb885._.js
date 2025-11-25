@@ -1683,7 +1683,6 @@ const carrosselHomeData = [
         buttonLabel: "Explorar",
         image: "/ar-condicionado.jpg",
         color: "#003087",
-        gradientFrom: "rgba(0,0,0,0.6)",
         gradientTo: "rgba(0,0,0,0.1)",
         rota: "/services/climatizacao",
         indisponivel: false,
@@ -1696,7 +1695,6 @@ const carrosselHomeData = [
         buttonLabel: "Explorar",
         image: "/eletrica.jpg",
         color: "#E0B300",
-        gradientFrom: "rgba(0,0,0,0.6)",
         gradientTo: "rgba(0,0,0,0.1)",
         rota: "/services/eletrica",
         indisponivel: false,
@@ -1707,9 +1705,8 @@ const carrosselHomeData = [
         title: "Eletrônica",
         desc: "Manutenção e diagnóstico de placas e sistemas eletrônicos.",
         buttonLabel: "Explorar",
-        image: "/eletronica.jpeg",
+        image: "/eletronica.jpg",
         color: "#16A34A",
-        gradientFrom: "rgba(0,0,0,0.6)",
         gradientTo: "rgba(0,0,0,0.1)",
         rota: "",
         indisponivel: true,
@@ -1722,7 +1719,6 @@ const carrosselHomeData = [
         buttonLabel: "Explorar",
         image: "/refrigeracao.jpg",
         color: "#0EA5E9",
-        gradientFrom: "rgba(0,0,0,0.6)",
         gradientTo: "rgba(0,0,0,0.1)",
         rota: "",
         indisponivel: true,
@@ -1839,9 +1835,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-// IMPORTA O DATA COMPLETO
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$carrossel$2f$cardsCarrosselHomeData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/carrossel/cardsCarrosselHomeData.ts [app-client] (ecmascript)");
-// COMPONENTE DE AVISO
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$aviso$2f$Aviso$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/aviso/Aviso.jsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -1852,16 +1846,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
 function CarrosselHome() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    // CONTROLE DE AVISO
     const [mostraAviso, setMostrarAviso] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const handlerClick = (item)=>{
-        const Icon = item.icon;
         if (item.indisponivel) {
-            // Aqui colocando false não mostra o AVISO nas páginas
             setMostrarAviso(true);
             return;
         }
@@ -1869,24 +1859,25 @@ function CarrosselHome() {
             router.push(item.rota);
             return;
         }
-        console.warn("Slide sem rota definida:", item);
+        console.warn(`Slide "${item.title}" sem rota definida.`);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$aviso$2f$Aviso$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 mostrar: mostraAviso,
-                mensagem: "Está página não está disponivel!",
+                mensagem: "Esta página não está disponível!",
                 fechar: ()=>setMostrarAviso(false)
             }, void 0, false, {
                 fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                lineNumber: 40,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "CarrosselHome",
+                className: "CarrosselHome container px-3",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     id: "carouselHome",
                     className: "carousel slide",
+                    "data-bs-ride": "carousel",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "carousel-indicators",
@@ -1897,12 +1888,12 @@ function CarrosselHome() {
                                     className: index === 0 ? "active" : ""
                                 }, index, false, {
                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1911,37 +1902,35 @@ function CarrosselHome() {
                                     className: `carousel-item ${index === 0 ? "active" : ""}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            id: "IMGFUNDO",
                                             src: item.image,
-                                            className: "carousel-bg",
+                                            className: "d-block",
                                             alt: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                            lineNumber: 66,
+                                            lineNumber: 68,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "overlay-gradient",
-                                            style: {
-                                                background: `linear-gradient(to top, ${item.gradientFrom}, ${item.gradientTo})`
-                                            }
+                                            className: "overlay-gradient"
                                         }, void 0, false, {
                                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                            lineNumber: 69,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "carousel-caption custom-caption",
+                                            className: "carousel-caption text-center",
                                             children: [
-                                                item.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                    src: item.icon,
-                                                    alt: "icon",
-                                                    className: "caption-icon"
+                                                item.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
+                                                    size: 45,
+                                                    className: "mb-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
                                                     lineNumber: 81,
                                                     columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                    className: "fs-4 fw-bold",
                                                     style: {
                                                         color: item.color
                                                     },
@@ -1951,14 +1940,8 @@ function CarrosselHome() {
                                                     lineNumber: 84,
                                                     columnNumber: 19
                                                 }, this),
-                                                item.subtitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    children: item.subtitle
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                                    lineNumber: 86,
-                                                    columnNumber: 37
-                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "fs-6 w-75 mx-auto",
                                                     children: item.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
@@ -1966,29 +1949,29 @@ function CarrosselHome() {
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "btn-explorar",
+                                                    className: "btn btn-light mt-2 px-4 py-2",
                                                     onClick: ()=>handlerClick(item),
                                                     children: item.buttonLabel
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                                    lineNumber: 91,
+                                                    lineNumber: 90,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                            lineNumber: 77,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, item.id, true, {
                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1997,15 +1980,15 @@ function CarrosselHome() {
                             "data-bs-target": "#carouselHome",
                             "data-bs-slide": "prev",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "carousel-control-prev-icon custom-arrow"
+                                className: "carousel-control-prev-icon"
                             }, void 0, false, {
                                 fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                lineNumber: 109,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                            lineNumber: 103,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2014,26 +1997,26 @@ function CarrosselHome() {
                             "data-bs-target": "#carouselHome",
                             "data-bs-slide": "next",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "carousel-control-next-icon custom-arrow"
+                                className: "carousel-control-next-icon"
                             }, void 0, false, {
                                 fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                                lineNumber: 119,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                            lineNumber: 113,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                    lineNumber: 43,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/carrossel/CarrosselHome.jsx",
-                lineNumber: 42,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]

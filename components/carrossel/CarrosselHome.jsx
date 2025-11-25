@@ -4,24 +4,16 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "./CarrosselHome.scss";
 
-// IMPORTA O DATA COMPLETO
 import { carrosselHomeData } from "./cardsCarrosselHomeData";
-
-// COMPONENTE DE AVISO
 import Aviso from "../aviso/Aviso";
-import "../aviso/Aviso";
 import "../aviso/aviso.scss";
 
 export default function CarrosselHome() {
   const router = useRouter();
-
-  // CONTROLE DE AVISO
   const [mostraAviso, setMostrarAviso] = useState(false);
 
   const handlerClick = (item) => {
-    const Icon = item.icon;
     if (item.indisponivel) {
-      // Aqui colocando false não mostra o AVISO nas páginas
       setMostrarAviso(true);
       return;
     }
@@ -31,16 +23,26 @@ export default function CarrosselHome() {
       return;
     }
 
-    console.warn("Slide sem rota definida:", item);
+    console.warn(`Slide "${item.title}" sem rota definida.`);
   };
 
   return (
     <>
-      {/* AVISO */}
-      <Aviso mostrar={mostraAviso} mensagem="Está página não está disponivel!" fechar={() => setMostrarAviso(false)} />
+      <Aviso
+        mostrar={mostraAviso}
+        mensagem="Esta página não está disponível!"
+        fechar={() => setMostrarAviso(false)}
+      />
 
-      <div className="CarrosselHome">
-        <div id="carouselHome" className="carousel slide">
+      {/* CONTAINER CENTRALIZADO */}
+      <div className="CarrosselHome container px-3">
+
+        {/* CARROSSEL */}
+        <div
+          id="carouselHome"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
 
           {/* INDICADORES */}
           <div className="carousel-indicators">
@@ -63,33 +65,30 @@ export default function CarrosselHome() {
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
               >
                 {/* IMAGEM */}
-                <img src={item.image} className="carousel-bg" alt={item.title} />
+                <img id="IMGFUNDO"
+                  src={item.image}
+                  className="d-block"
+                  alt={item.title}
+                />
 
                 {/* GRADIENTE */}
-                <div
-                  className="overlay-gradient"
-                  style={{
-                    background: `linear-gradient(to top, ${item.gradientFrom}, ${item.gradientTo})`,
-                  }}
-                ></div>
+                <div className="overlay-gradient"></div>
 
-                {/* CAPTION */}
-                <div className="carousel-caption custom-caption">
+                {/* CAPTION CENTRALIZADO */}
+                <div className="carousel-caption text-center">
 
-                  {/* Icones Lucide */}
                   {item.icon && (
-                    <img src={item.icon} alt="icon" className="caption-icon" />
+                    <item.icon size={45} className="mb-2" />
                   )}
 
-                  <h3 style={{ color: item.color }}>{item.title}</h3>
+                  <h2 className="fs-4 fw-bold" style={{ color: item.color }}>
+                    {item.title}
+                  </h2>
 
-                  {item.subtitle && <h4>{item.subtitle}</h4>}
+                  <p className="fs-6 w-75 mx-auto">{item.desc}</p>
 
-                  <p>{item.desc}</p>
-
-                  {/* BOTÃO */}
                   <button
-                    className="btn-explorar"
+                    className="btn btn-light mt-2 px-4 py-2"
                     onClick={() => handlerClick(item)}
                   >
                     {item.buttonLabel}
@@ -99,24 +98,23 @@ export default function CarrosselHome() {
             ))}
           </div>
 
-          {/* CONTROLE ANTERIOR */}
+          {/* CONTROLES */}
           <button
             className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselHome"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon custom-arrow"></span>
+            <span className="carousel-control-prev-icon"></span>
           </button>
 
-          {/* CONTROLE PRÓXIMO */}
           <button
             className="carousel-control-next"
             type="button"
             data-bs-target="#carouselHome"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon custom-arrow"></span>
+            <span className="carousel-control-next-icon"></span>
           </button>
         </div>
       </div>

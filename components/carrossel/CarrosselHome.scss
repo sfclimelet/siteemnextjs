@@ -1,95 +1,40 @@
-.CarrosselHome {
-  width: 100%;
-  margin-top: 20px;
-
-  .carousel {
-    position: relative;
-  }
-
-  .carousel-item {
-    position: relative;
-    height: 320px; // mobile first
-    overflow: hidden;
-
-    .carousel-bg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.85);
-    }
-
-    .overlay-gradient {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 20%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-    }
-
-    .custom-caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-
-      h3 {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-      }
-
-      p {
-        font-size: 0.9rem;
-        margin-bottom: 12px;
-      }
-
-      .btn-explorar {
-        padding: 6px 18px;
-        border: 1px solid #fff;
-        background: transparent;
-        color: #fff;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        transition: 0.3s;
-
-        &:hover {
-          background: #fff;
-          color: #000;
-        }
-      }
+@mixin mobile-Carrossel(
+  $carrossel,
+  $inner,
+  $bg,
+  $overlay,
+  $caption,
+  $icon,
+  $btn,
+  $indicators,
+  $prev,
+  $next,
+  $arrow
+) {
+  #{$carrossel}{
+    /* Imagem de Fundo */
+    #IMGFUNDO{
+      width: 90%;
+      border-radius: 15px;
+      margin: 0 auto;
+      filter: brightness(0.45);
     }
   }
 
-  // CONTROLES CUSTOMIZADOS
-  .custom-arrow {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    padding: 15px;
-    background-size: 50%;
-  }
+}
 
-  // --------- RESPONSIVIDADE -----------
-  @media (min-width: 768px) {
-    .carousel-item {
-      height: 420px;
-
-      .custom-caption {
-        h3 {
-          font-size: 2rem;
-        }
-        p {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .carousel-item {
-      height: 500px;
-    }
-  }
+@media (max-width: 575px) {
+  @include mobile-Carrossel(
+    ".CarrosselHome",
+    ".carousel-inner",
+    ".carousel-bg",
+    ".overlay-gradient",
+    ".custom-caption",
+    ".icone-slide",
+    ".btn-explorar",
+    ".carousel-indicators",
+    ".carousel-control-prev",
+    ".carousel-control-next",
+    ".custom-arrow"
+  );
 }
