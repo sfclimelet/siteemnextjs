@@ -1535,48 +1535,44 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 const carrosselHomeData = [
     {
         id: 1,
-        title: "Climatização",
-        desc: "Instalação e manutenção de ar-condicionado com qualidade e segurança.",
+        tema: "climatizacao",
+        title: "Climatização Residencial e Comercial",
+        desc: "Instalação e manutenção de ar-condicionado split e inverter, com foco em eficiência energética e durabilidade dos equipamentos.",
         buttonLabel: "Explorar",
         image: "/ar-condicionado.jpg",
-        color: "#003087",
-        gradientTo: "rgba(0,0,0,0.1)",
         rota: "/services/climatizacao",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$fan$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Fan$3e$__["Fan"]
     },
     {
         id: 2,
-        title: "Serviços Elétricos",
-        desc: "Instalações, reparos, quadros elétricos e muito mais.",
+        tema: "eletrica",
+        title: "Instalações e Reparos Elétricos",
+        desc: "Montagem de quadros, troca de disjuntores, reparos emergenciais e projetos completos para imóveis novos ou reformas.",
         buttonLabel: "Explorar",
         image: "/eletrica.jpg",
-        color: "#E0B300",
-        gradientTo: "rgba(0,0,0,0.1)",
         rota: "/services/eletrica",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
     },
     {
         id: 3,
+        tema: "eletronica",
         title: "Eletrônica",
-        desc: "Manutenção e diagnóstico de placas e sistemas eletrônicos.",
-        buttonLabel: "Explorar",
+        desc: "Serviços de eletrônica para reparos, manutenção e diagnóstico de placas, fontes, controladores e sistemas eletrônicos diversos.",
+        buttonLabel: "Saiba mais",
         image: "/eletronica.jpg",
-        color: "#16A34A",
-        gradientTo: "rgba(0,0,0,0.1)",
         rota: "",
         indisponivel: true,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__["Cpu"]
     },
     {
         id: 4,
+        tema: "refrigeracao",
         title: "Refrigeração",
-        desc: "Serviços de refrigeração com foco em eficiência energética.",
-        buttonLabel: "Explorar",
+        desc: "Instalação e manutenção e sistemas de refrigeração residencial, comercial e industrial. Câmaras frias, balcões refrigerados e equipamentos com eficiência energética.",
+        buttonLabel: "Saiba mais",
         image: "/refrigeracao.jpg",
-        color: "#0EA5E9",
-        gradientTo: "rgba(0,0,0,0.1)",
         rota: "",
         indisponivel: true,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$snowflake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Snowflake$3e$__["Snowflake"]
@@ -1756,11 +1752,10 @@ function CarrosselHome() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "carousel-caption text-center",
+                                            className: `carousel-caption custom-caption tema-${item.tema}`,
                                             children: [
                                                 item.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
-                                                    size: 45,
-                                                    className: "mb-2"
+                                                    className: "icone-slide"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
                                                     lineNumber: 81,
@@ -1768,31 +1763,28 @@ function CarrosselHome() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "fs-4 fw-bold",
-                                                    style: {
-                                                        color: item.color
-                                                    },
                                                     children: item.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
                                                     lineNumber: 84,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "fs-6 w-75 mx-auto",
+                                                    className: "fs-6 w-75 mx-auto lead",
                                                     children: item.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
                                                     lineNumber: 88,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "btn btn-light mt-2 px-4 py-2",
+                                                    className: "btn btn-light mt-2 px-4 py-2 mb-2",
                                                     onClick: ()=>handlerClick(item),
                                                     children: item.buttonLabel
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/carrossel/CarrosselHome.jsx",
                                                     lineNumber: 90,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {

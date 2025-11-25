@@ -739,11 +739,25 @@
 
 /* [project]/components/carrossel/CarrosselHome.scss.css [app-client] (css) */
 @media (max-width: 575px) {
-  .CarrosselHome #IMGFUNDO {
-    filter: brightness(.45);
-    border-radius: 15px;
+  .CarrosselHome {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #IMGFUNDO {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .carousel-caption .icone-slide {
+    stroke-width: 1.7px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  #IMGFUNDO {
+    filter: brightness(.3);
+    border-radius: 15px;
   }
 }
 

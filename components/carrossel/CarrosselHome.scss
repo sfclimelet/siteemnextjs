@@ -1,40 +1,41 @@
-@mixin mobile-Carrossel(
-  $carrossel,
-  $inner,
-  $bg,
-  $overlay,
-  $caption,
-  $icon,
-  $btn,
-  $indicators,
-  $prev,
-  $next,
-  $arrow
-) {
-  #{$carrossel}{
-    /* Imagem de Fundo */
-    #IMGFUNDO{
-      width: 90%;
-      border-radius: 15px;
-      margin: 0 auto;
-      filter: brightness(0.45);
+@mixin CONFIGURACAO-CARROSSEL($class-CARROSSEL){
+  #{$class-CARROSSEL}{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+@mixin CONFIGURACOES-ITENS-CARR($CONTAINER-PAI, $IMGFUNDO, $ICON) {
+  #{$IMGFUNDO}{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #{$CONTAINER-PAI}{
+    #{$ICON}{
+      width: 40px !important;
+      height: 40px !important;
+      stroke-width: 1.7;
     }
   }
+}
 
+@mixin Styles-Carrossel($idclass-IMGFUNDO){
+  #{$idclass-IMGFUNDO}{
+    border-radius: 15px;
+    filter: brightness(0.30);
+  }
 }
 
 @media (max-width: 575px) {
-  @include mobile-Carrossel(
-    ".CarrosselHome",
-    ".carousel-inner",
-    ".carousel-bg",
-    ".overlay-gradient",
-    ".custom-caption",
-    ".icone-slide",
-    ".btn-explorar",
-    ".carousel-indicators",
-    ".carousel-control-prev",
-    ".carousel-control-next",
-    ".custom-arrow"
+  @include CONFIGURACAO-CARROSSEL('.CarrosselHome');
+
+  @include CONFIGURACOES-ITENS-CARR(
+    '.carousel-caption',
+    '#IMGFUNDO',
+    '.icone-slide'
+  );
+
+  @include Styles-Carrossel(
+    '#IMGFUNDO'
   );
 }

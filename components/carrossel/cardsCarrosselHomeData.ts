@@ -6,33 +6,24 @@ import { Fan, Zap, Cpu, Snowflake } from "lucide-react";
 
 export interface CarrosselItem {
   id: number;
+  tema: string;
   title: string;
   desc: string;
   buttonLabel: string;
-
   image: string;
-
-  color?: string;
-  gradientTo?: string;
-
   rota?: string;
   indisponivel?: boolean;
-
   icon?: ComponentType<any>;
 }
  
 export const carrosselHomeData: CarrosselItem[] = [
   {
     id: 1,
-    title: "Climatização",
-    desc: "Instalação e manutenção de ar-condicionado com qualidade e segurança.",
+    tema: "climatizacao",
+    title: "Climatização Residencial e Comercial",
+    desc: "Instalação e manutenção de ar-condicionado split e inverter, com foco em eficiência energética e durabilidade dos equipamentos.",
     buttonLabel: "Explorar",
-
     image: "/ar-condicionado.jpg",
-
-    color: "#003087",
-    gradientTo: "rgba(0,0,0,0.1)",
-
     rota: "/services/climatizacao",
     indisponivel: false,
     icon: Fan,
@@ -40,15 +31,11 @@ export const carrosselHomeData: CarrosselItem[] = [
 
   {
     id: 2,
-    title: "Serviços Elétricos",
-    desc: "Instalações, reparos, quadros elétricos e muito mais.",
+    tema: "eletrica",
+    title: "Instalações e Reparos Elétricos",
+    desc: "Montagem de quadros, troca de disjuntores, reparos emergenciais e projetos completos para imóveis novos ou reformas.",
     buttonLabel: "Explorar",
-
     image: "/eletrica.jpg",
-
-    color: "#E0B300",
-    gradientTo: "rgba(0,0,0,0.1)",
-
     rota: "/services/eletrica",
     indisponivel: false,
     icon: Zap,
@@ -56,15 +43,11 @@ export const carrosselHomeData: CarrosselItem[] = [
 
   {
     id: 3,
+    tema: "eletronica",
     title: "Eletrônica",
-    desc: "Manutenção e diagnóstico de placas e sistemas eletrônicos.",
-    buttonLabel: "Explorar",
-
+    desc: "Serviços de eletrônica para reparos, manutenção e diagnóstico de placas, fontes, controladores e sistemas eletrônicos diversos.",
+    buttonLabel: "Saiba mais",
     image: "/eletronica.jpg",
-
-    color: "#16A34A",
-    gradientTo: "rgba(0,0,0,0.1)",
-
     rota: "",
     indisponivel: true,
     icon: Cpu,
@@ -72,15 +55,11 @@ export const carrosselHomeData: CarrosselItem[] = [
 
   {
     id: 4,
+    tema: "refrigeracao",
     title: "Refrigeração",
-    desc: "Serviços de refrigeração com foco em eficiência energética.",
-    buttonLabel: "Explorar",
-
+    desc: "Instalação e manutenção e sistemas de refrigeração residencial, comercial e industrial. Câmaras frias, balcões refrigerados e equipamentos com eficiência energética.",
+    buttonLabel: "Saiba mais",
     image: "/refrigeracao.jpg",
-
-    color: "#0EA5E9",
-    gradientTo: "rgba(0,0,0,0.1)",
-
     rota: "",
     indisponivel: true,
     icon: Snowflake,

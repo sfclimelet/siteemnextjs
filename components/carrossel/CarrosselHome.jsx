@@ -75,24 +75,24 @@ export default function CarrosselHome() {
                 <div className="overlay-gradient"></div>
 
                 {/* CAPTION CENTRALIZADO */}
-                <div className="carousel-caption text-center">
+                <div className={`carousel-caption custom-caption tema-${item.tema}`}>
 
                   {item.icon && (
-                    <item.icon size={45} className="mb-2" />
+                    <item.icon className="icone-slide" />
                   )}
 
-                  <h2 className="fs-4 fw-bold" style={{ color: item.color }}>
-                    {item.title}
-                  </h2>
+                    <h2 className="fs-4 fw-bold">
+                      {item.title}
+                    </h2>
 
-                  <p className="fs-6 w-75 mx-auto">{item.desc}</p>
+                    <p className="fs-6 w-75 mx-auto lead">{item.desc}</p>
 
-                  <button
-                    className="btn btn-light mt-2 px-4 py-2"
-                    onClick={() => handlerClick(item)}
-                  >
-                    {item.buttonLabel}
-                  </button>
+                    <button
+                      className="btn btn-light mt-2 px-4 py-2 mb-2"
+                      onClick={() => handlerClick(item)}
+                    >
+                      {item.buttonLabel}
+                    </button>
                 </div>
               </div>
             ))}

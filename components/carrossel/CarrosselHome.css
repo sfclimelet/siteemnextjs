@@ -1,11 +1,19 @@
 @media (max-width: 575px) {
   .CarrosselHome {
-    /* Imagem de Fundo */
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
-  .CarrosselHome #IMGFUNDO {
+  #IMGFUNDO {
     width: 90%;
-    border-radius: 15px;
     margin: 0 auto;
-    filter: brightness(0.45);
+  }
+  .carousel-caption .icone-slide {
+    width: 40px !important;
+    height: 40px !important;
+    stroke-width: 1.7;
+  }
+  #IMGFUNDO {
+    border-radius: 15px;
+    filter: brightness(0.3);
   }
 }/*# sourceMappingURL=CarrosselHome.css.map */
