@@ -81,14 +81,14 @@ export default function CarrosselHome() {
                     <item.icon className="icone-slide" />
                   )}
 
-                    <h2 className="fs-4 fw-bold">
+                    <h2 className="Title">
                       {item.title}
                     </h2>
 
-                    <p className="fs-6 w-75 mx-auto lead">{item.desc}</p>
+                    <p className="Descricao">{item.desc}</p>
 
                     <button
-                      className="btn btn-light mt-2 px-4 py-2 mb-2"
+                      className="btn botao-saiba-mais mt-2 "
                       onClick={() => handlerClick(item)}
                     >
                       {item.buttonLabel}

@@ -16,9 +16,139 @@
     height: 40px !important;
   }
 
-  #IMGFUNDO {
-    filter: brightness(.3);
+  .carousel-caption .botao-saiba-mais {
+    margin-top: .5rem;
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .25s;
+    padding: .5rem 1.5rem !important;
+  }
+
+  .CarrosselHome #IMGFUNDO {
+    filter: brightness(.25);
     border-radius: 15px;
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .icone-slide {
+    --glow-color: #3a89ff;
+    animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+    stroke: #3a89ff !important;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      filter: drop-shadow(0 0 4px var(--glow-color));
+    }
+
+    50% {
+      filter: drop-shadow(0 0 12px var(--glow-color));
+    }
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .Title {
+    color: #3a89ff;
+    text-shadow: 0 0 10px #3a89ff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .Descricao {
+    color: #f0f0f0;
+    opacity: .85;
+    text-shadow: 0 0 6px #ffffffe6;
+    width: 80%;
+    margin: 8px auto 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais {
+    --bg: #217aff26;
+    --bord: #217aff;
+    --bx-shadow: #217aff;
+    --hv-bg: #217aff40;
+    --hv-bx-shadow: #217aff;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletrica .icone-slide {
+    --glow-color: #ffe603;
+    animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+    stroke: #ffe603 !important;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletrica .Title {
+    color: #ffe603;
+    text-shadow: 0 0 10px #ffe603;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletrica .Descricao {
+    color: #f0f0f0;
+    opacity: .85;
+    text-shadow: 0 0 6px #ffffffe6;
+    width: 80%;
+    margin: 8px auto 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletronica .icone-slide {
+    stroke: #08a115;
+    --glow-color: #08a115;
+    animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletronica .Title {
+    color: #08a115;
+    text-shadow: 0 0 10px #08a115;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletronica .Descricao {
+    color: #f0f0f0;
+    opacity: .85;
+    text-shadow: 0 0 6px #ffffffe6;
+    width: 80%;
+    margin: 8px auto 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .CarrosselHome .carousel-inner .tema-refrigeracao .icone-slide {
+    stroke: #04e2ff;
+    --glow-color: #04e2ff;
+    animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+  }
+
+  .CarrosselHome .carousel-inner .tema-refrigeracao .Title {
+    color: #04e2ff;
+    text-shadow: 0 0 10px #04e2ff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao {
+    color: #f0f0f0;
+    opacity: .85;
+    text-shadow: 0 0 6px #ffffffe6;
+    width: 80%;
+    margin: 8px auto 0;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import type { ComponentType } from "react";
 
 // ICONS
-import { Fan, Zap, Cpu, Snowflake } from "lucide-react";
+import { ThermometerSnowflake, Zap, Cpu, Snowflake } from "lucide-react";
 
 export interface CarrosselItem {
   id: number;
@@ -26,7 +26,7 @@ export const carrosselHomeData: CarrosselItem[] = [
     image: "/ar-condicionado.jpg",
     rota: "/services/climatizacao",
     indisponivel: false,
-    icon: Fan,
+    icon: ThermometerSnowflake,
   },
 
   {

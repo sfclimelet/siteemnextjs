@@ -5,7 +5,7 @@
   }
 }
 
-@mixin CONFIGURACOES-ITENS-CARR($CONTAINER-PAI, $IMGFUNDO, $ICON) {
+@mixin CONFIGURACOES-ITENS-CARR($CONTAINER-PAI, $IMGFUNDO, $ICON, $BUTTONS) {
   #{$IMGFUNDO}{
     width: 90%;
     margin: 0 auto;
@@ -16,14 +16,164 @@
       height: 40px !important;
       stroke-width: 1.7;
     }
+    #{$BUTTONS}{
+      margin-top: 0.5rem;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding: 8px 22px;
+      transition: 0.25s ease;
+      font-weight: 600;
+      font-size: 1rem;
+    }
   }
 }
 
-@mixin Styles-Carrossel($idclass-IMGFUNDO){
-  #{$idclass-IMGFUNDO}{
-    border-radius: 15px;
-    filter: brightness(0.30);
+@mixin Animation-ICONS($corCurrentColor){
+  animation: float 3s ease-in-out infinite,
+  glow 2.4s infinite ease-in-out ;
+
+  --glow-color: #{$corCurrentColor};
+
+  @keyframes float {
+    0%, 100%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-6px);
+    }
   }
+
+  @keyframes glow {
+    0%, 100%{
+      filter: drop-shadow(0 0 4px var(--glow-color));
+    }
+    50%{
+      filter: drop-shadow(0 0 12px var(--glow-color));
+    }
+  }
+}
+
+@mixin ButtonsAnimations($pass-BACKGROUND, $pass-BORDER, $pass-BX-SHADOW, $pass-BACKGROUND-HOVER, $pass-BX-SHADOW-HOVER){
+  --bg: #{$pass-BACKGROUND};
+  --bord: #{$pass-BORDER};
+  --bx-shadow: #{$pass-BX-SHADOW};
+  --hv-bg: #{$pass-BACKGROUND-HOVER};
+  --hv-bx-shadow: #{$pass-BX-SHADOW-HOVER};
+
+  background: var(--bg);
+  border: 1px solid var(--bord);
+  box-shadow: 0 0 8px var(--bx-shadow);
+  color: #fff;
+
+  &:hover{
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
+
+}
+
+@mixin Styles-Carrossel($class-PAI ,$class-PAI2 ,$idclass-IMGFUNDO, $cls-CLIMATIZACAO, $cls-ELETRICA, $cls-ELETRONICA, $cls-REFRIGERACAO, $cls-ICON-SLIDE, $cls-TITLE, $cls-DESCRICAO, $cls-BOTAO){
+  #{$class-PAI}{
+    
+    #{$idclass-IMGFUNDO}{
+      border-radius: 15px;
+      filter: brightness(0.25);
+    }
+    #{$class-PAI2}{
+      $color-CLIM: #3a89ff;
+      $color-ELETRIC: #ffe603;
+      $color-ELETRONICA: #08a115;
+      $color-REFRIGERACAO: #04e2ff;
+      $color-txt-SHADOW: #ffffffe6;
+
+      #{$cls-CLIMATIZACAO}{
+        #{$cls-ICON-SLIDE}{
+          stroke: $color-CLIM !important;
+          @include Animation-ICONS($color-CLIM);
+        }
+        #{$cls-TITLE}{
+          color: $color-CLIM;
+          text-shadow: 0 0 10px $color-CLIM;
+        }
+        #{$cls-DESCRICAO}{
+          font-size: 1rem;
+          width: 80%;
+          margin: 8px auto 0 auto;
+          line-height: 1.4;
+          color: #f0f0f0;
+          opacity: 0.85;
+          text-shadow: 0 0 6px $color-txt-SHADOW;
+        }
+        #{$cls-BOTAO}{
+          @include ButtonsAnimations(#217aff26, #217aff, #217aff, rgba(33, 122, 255, 0.25), #217aff);
+        }
+      }
+
+      #{$cls-ELETRICA}{
+        #{$cls-ICON-SLIDE}{
+          stroke: $color-ELETRIC !important;
+          @include Animation-ICONS($color-ELETRIC);
+        }
+        #{$cls-TITLE}{
+          color: $color-ELETRIC;
+          text-shadow: 0 0 10px $color-ELETRIC;
+        }
+        #{$cls-DESCRICAO}{
+          font-size: 1rem;
+          width: 80%;
+          margin: 8px auto 0 auto;
+          line-height: 1.4;
+          color: #f0f0f0;
+          opacity: 0.85;
+          text-shadow: 0 0 6px $color-txt-SHADOW;
+        }
+      }
+
+      #{$cls-ELETRONICA}{
+        #{$cls-ICON-SLIDE}{
+          stroke: $color-ELETRONICA;
+          @include Animation-ICONS($color-ELETRONICA);
+        }
+        #{$cls-TITLE}{
+          color: $color-ELETRONICA;
+          text-shadow: 0 0 10px $color-ELETRONICA;
+        }
+        #{$cls-DESCRICAO}{
+          font-size: 1rem;
+          width: 80%;
+          margin: 8px auto 0 auto;
+          line-height: 1.4;
+          color: #f0f0f0;
+          opacity: 0.85;
+          text-shadow: 0 0 6px $color-txt-SHADOW;
+        }
+      }
+
+      #{$cls-REFRIGERACAO}{
+        #{$cls-ICON-SLIDE}{
+          stroke: $color-REFRIGERACAO;
+          @include Animation-ICONS($color-REFRIGERACAO);
+        }
+        #{$cls-TITLE}{
+          color: $color-REFRIGERACAO;
+          text-shadow: 0 0 10px $color-REFRIGERACAO;
+        }
+        #{$cls-DESCRICAO}{
+          font-size: 1rem;
+          width: 80%;
+          margin: 8px auto 0 auto;
+          line-height: 1.4;
+          color: #f0f0f0;
+          opacity: 0.85;
+          text-shadow: 0 0 6px $color-txt-SHADOW;
+        }
+      }
+
+    }
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -32,10 +182,21 @@
   @include CONFIGURACOES-ITENS-CARR(
     '.carousel-caption',
     '#IMGFUNDO',
-    '.icone-slide'
+    '.icone-slide',
+    '.botao-saiba-mais'
   );
 
   @include Styles-Carrossel(
-    '#IMGFUNDO'
+    '.CarrosselHome',
+    '.carousel-inner',
+    '#IMGFUNDO',
+    '.tema-climatizacao',
+    '.tema-eletrica',
+    '.tema-eletronica',
+    '.tema-refrigeracao',
+    '.icone-slide',
+    '.Title',
+    '.Descricao',
+    '.botao-saiba-mais'
   );
 }
