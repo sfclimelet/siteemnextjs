@@ -107,7 +107,10 @@
           text-shadow: 0 0 6px $color-txt-SHADOW;
         }
         #{$cls-BOTAO}{
-          @include ButtonsAnimations(#217aff26, #217aff, #217aff, rgba(33, 122, 255, 0.25), #217aff);
+          $color-B-CLIM: rgba(33, 122, 255, 0.15);
+          $color-B-CLIM1: #217aff;
+          $color-B-CLIM2: rgb(33, 122, 255, 0.25);
+          @include ButtonsAnimations($color-B-CLIM, $color-B-CLIM1, $color-B-CLIM1, $color-B-CLIM2, $color-B-CLIM1);
         }
       }
 
@@ -129,6 +132,12 @@
           opacity: 0.85;
           text-shadow: 0 0 6px $color-txt-SHADOW;
         }
+        #{$cls-BOTAO}{
+          $color-B-ELETRIC: rgba(255, 230, 3, 0.18);
+          $color-B-ELETRIC2: #ffe603;
+          $color-B-ELETRIC3: rgba(255, 230, 3, 0.28);
+          @include ButtonsAnimations($color-B-ELETRIC, $color-B-ELETRIC2, $color-B-ELETRIC2, $color-B-ELETRIC3, $color-B-ELETRIC2);
+        }
       }
 
       #{$cls-ELETRONICA}{
@@ -149,6 +158,12 @@
           opacity: 0.85;
           text-shadow: 0 0 6px $color-txt-SHADOW;
         }
+        #{$cls-BOTAO}{
+          $color-B-ELETRONICA: rgba(8, 161, 21, 0.18);
+          $color-B-ELETRONICA1: #08a115;
+          $color-B-ELETRONICA2: rgba(8, 161,21, 0.28);
+          @include ButtonsAnimations($color-B-ELETRONICA, $color-B-ELETRONICA1, $color-B-ELETRONICA1, $color-B-ELETRONICA2, $color-B-ELETRONICA1);
+        }
       }
 
       #{$cls-REFRIGERACAO}{
@@ -168,6 +183,12 @@
           color: #f0f0f0;
           opacity: 0.85;
           text-shadow: 0 0 6px $color-txt-SHADOW;
+        }
+        #{$cls-BOTAO}{
+          $color-B-REFRIGERACAO: rgba(4, 226, 255, 0.20);
+          $color-B-REFRIGERACAO1: #04e2ff;
+          $color-B-REFRIGERACAO2: rgba(4, 226,255, 0.30);
+          @include ButtonsAnimations($color-B-REFRIGERACAO, $color-B-REFRIGERACAO1, $color-B-REFRIGERACAO1, $color-B-REFRIGERACAO2, $color-B-REFRIGERACAO1);
         }
       }
 

@@ -62,7 +62,7 @@
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.9019607843);
   }
   .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais {
-    --bg: rgba(33, 122, 255, 0.1490196078);
+    --bg: rgba(33, 122, 255, 0.15);
     --bord: #217aff;
     --bx-shadow: #217aff;
     --hv-bg: rgba(33, 122, 255, 0.25);
@@ -110,6 +110,21 @@
     opacity: 0.85;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.9019607843);
   }
+  .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais {
+    --bg: rgba(255, 230, 3, 0.18);
+    --bord: #ffe603;
+    --bx-shadow: #ffe603;
+    --hv-bg: rgba(255, 230, 3, 0.28);
+    --hv-bx-shadow: #ffe603;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+  .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
   .CarrosselHome .carousel-inner .tema-eletronica .icone-slide {
     stroke: #08a115;
     animation: float 3s ease-in-out infinite, glow 2.4s infinite ease-in-out;
@@ -144,6 +159,21 @@
     opacity: 0.85;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.9019607843);
   }
+  .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais {
+    --bg: rgba(8, 161, 21, 0.18);
+    --bord: #08a115;
+    --bx-shadow: #08a115;
+    --hv-bg: rgba(8, 161, 21, 0.28);
+    --hv-bx-shadow: #08a115;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+  .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
   .CarrosselHome .carousel-inner .tema-refrigeracao .icone-slide {
     stroke: #04e2ff;
     animation: float 3s ease-in-out infinite, glow 2.4s infinite ease-in-out;
@@ -177,5 +207,20 @@
     color: #f0f0f0;
     opacity: 0.85;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.9019607843);
+  }
+  .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais {
+    --bg: rgba(4, 226, 255, 0.2);
+    --bord: #04e2ff;
+    --bx-shadow: #04e2ff;
+    --hv-bg: rgba(4, 226, 255, 0.3);
+    --hv-bx-shadow: #04e2ff;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+  .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
   }
 }/*# sourceMappingURL=CarrosselHome.css.map */

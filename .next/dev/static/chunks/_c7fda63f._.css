@@ -848,6 +848,23 @@
     line-height: 1.4;
   }
 
+  .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais {
+    --bg: #ffe6032e;
+    --bord: #ffe603;
+    --bx-shadow: #ffe603;
+    --hv-bg: #ffe60347;
+    --hv-bx-shadow: #ffe603;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
+
   .CarrosselHome .carousel-inner .tema-eletronica .icone-slide {
     stroke: #08a115;
     --glow-color: #08a115;
@@ -869,6 +886,23 @@
     line-height: 1.4;
   }
 
+  .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais {
+    --bg: #08a1152e;
+    --bord: #08a115;
+    --bx-shadow: #08a115;
+    --hv-bg: #08a11547;
+    --hv-bx-shadow: #08a115;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  }
+
   .CarrosselHome .carousel-inner .tema-refrigeracao .icone-slide {
     stroke: #04e2ff;
     --glow-color: #04e2ff;
@@ -888,6 +922,23 @@
     margin: 8px auto 0;
     font-size: 1rem;
     line-height: 1.4;
+  }
+
+  .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais {
+    --bg: #04e2ff33;
+    --bord: #04e2ff;
+    --bx-shadow: #04e2ff;
+    --hv-bg: #04e2ff4d;
+    --hv-bx-shadow: #04e2ff;
+    background: var(--bg);
+    border: 1px solid var(--bord);
+    box-shadow: 0 0 8px var(--bx-shadow);
+    color: #fff;
+  }
+
+  .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais:hover {
+    background: var(--hv-bg);
+    box-shadow: 0 0 14px var(--hv-bx-shadow);
   }
 }
 
