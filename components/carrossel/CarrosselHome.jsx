@@ -66,8 +66,6 @@ export default function CarrosselHome() {
                   alt={item.title}
                 />
 
-                <div className="overlay-gradient"></div>
-
                 {/* CAPTION */}
                 <div className="carousel-caption custom-caption">
 

@@ -1,18 +1,16 @@
 /* =========================================================
    MIXINS — CONFIGURAÇÕES GERAIS DO CARROSSEL
    ========================================================= */
+$ICON-PREV: '.carousel-control-prev-icon';
+$ICON-NEXT: '.carousel-control-next-icon';
 
-@mixin Carousel-Base($CARROSSEL, $C-INDICATORS) {
+#{$ICON-PREV}, #{$ICON-NEXT}{
+  width: 15%;
+}
+
+@mixin Carousel-Base($CARROSSEL, $C-INDICATORS, $I-CONTROL-PREV, $I-CONTROL-NEXT) {
   #{$CARROSSEL} {
     padding-inline: 1rem !important;
-  }
-  #{$C-INDICATORS} button{
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    border: none !important;
-    background: #ffffff55 !important;
-    transition: .25s ease !important;
   }
 }
 
@@ -315,6 +313,8 @@
 }
 
 @media (max-width: 375px) {
+  /* PREV E NEXT */
+
   @include Carousel-Mobile(
     '.carousel-caption',
     '.carousel-indicators',
@@ -329,7 +329,7 @@
    ========================================================= */
 
 @media (max-width: 575px) {
-  @include Carousel-Base('.CarrosselHome', '.carousel-indicators');
+  @include Carousel-Base('.CarrosselHome', '.carousel-indicators', $ICON-PREV, $ICON-NEXT);
 
   @include Carousel-Items(
     '.carousel-caption',

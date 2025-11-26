@@ -738,6 +738,10 @@
 }
 
 /* [project]/components/carrossel/CarrosselHome.scss.css [app-client] (css) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 15%;
+}
+
 @media (max-width: 375px) {
   #IMGFUNDO {
     height: 230px !important;
@@ -795,15 +799,6 @@
 @media (max-width: 575px) {
   .CarrosselHome {
     padding-inline: 1rem !important;
-  }
-
-  .carousel-indicators button {
-    background: #fff5 !important;
-    border: none !important;
-    border-radius: 50% !important;
-    width: 10px !important;
-    height: 10px !important;
-    transition: all .25s !important;
   }
 
   #IMGFUNDO {

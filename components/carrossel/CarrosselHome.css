@@ -2,6 +2,10 @@
 /* =========================================================
    MIXINS — CONFIGURAÇÕES GERAIS DO CARROSSEL
    ========================================================= */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 15%;
+}
+
 /* =========================================================
    MIXINS — ANIMAÇÃO GLOBAL PARA ÍCONES
    ========================================================= */
@@ -15,6 +19,7 @@
    MOBILE (≤ 375px)
    ========================================================= */
 @media (max-width: 375px) {
+  /* PREV E NEXT */
   #IMGFUNDO {
     height: 230px !important;
   }
@@ -65,14 +70,6 @@
 @media (max-width: 575px) {
   .CarrosselHome {
     padding-inline: 1rem !important;
-  }
-  .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    border: none !important;
-    background: rgba(255, 255, 255, 0.3333333333) !important;
-    transition: 0.25s ease !important;
   }
   #IMGFUNDO {
     width: 90%;
