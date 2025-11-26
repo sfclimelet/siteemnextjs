@@ -1,216 +1,348 @@
-@mixin CONFIGURACAO-CARROSSEL($class-CARROSSEL){
-  #{$class-CARROSSEL}{
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+/* =========================================================
+   MIXINS — CONFIGURAÇÕES GERAIS DO CARROSSEL
+   ========================================================= */
+
+@mixin Carousel-Base($CARROSSEL, $C-INDICATORS) {
+  #{$CARROSSEL} {
+    padding-inline: 1rem !important;
+  }
+  #{$C-INDICATORS} button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background: #ffffff55 !important;
+    transition: .25s ease !important;
   }
 }
 
-@mixin CONFIGURACOES-ITENS-CARR($CONTAINER-PAI, $IMGFUNDO, $ICON, $BUTTONS) {
-  #{$IMGFUNDO}{
+@mixin Carousel-Items($CAPTION, $IMG, $ICON, $BTN) {
+  #{$IMG} {
     width: 90%;
     margin: 0 auto;
   }
-  #{$CONTAINER-PAI}{
-    #{$ICON}{
-      width: 40px !important;
-      height: 40px !important;
+
+  #{$CAPTION} {
+    #{$ICON} {
+      width: 40px;
+      height: 40px;
       stroke-width: 1.7;
     }
-    #{$BUTTONS}{
+
+    #{$BTN} {
       margin-top: 0.5rem;
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
-      padding-right: 1.5rem !important;
-      padding-left: 1.5rem !important;
-      padding: 8px 22px;
-      transition: 0.25s ease;
+      padding: 8px 22px !important;
       font-weight: 600;
       font-size: 1rem;
+      transition: 0.25s ease;
+      border-radius: 30px;
     }
   }
 }
 
-@mixin Animation-ICONS($corCurrentColor){
-  animation: float 3s ease-in-out infinite,
-  glow 2.4s infinite ease-in-out ;
+/* =========================================================
+   MIXINS — ANIMAÇÃO GLOBAL PARA ÍCONES
+   ========================================================= */
 
-  --glow-color: #{$corCurrentColor};
+@mixin Icon-Animation($color) {
+  --glow-color: #{$color};
+
+  animation: float 3s ease-in-out infinite,
+             glow 2.4s infinite ease-in-out;
 
   @keyframes float {
-    0%, 100%{
-      transform: translateY(0);
-    }
-    50%{
-      transform: translateY(-6px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
   }
 
   @keyframes glow {
-    0%, 100%{
-      filter: drop-shadow(0 0 4px var(--glow-color));
-    }
-    50%{
-      filter: drop-shadow(0 0 12px var(--glow-color));
-    }
+    0%, 100% { filter: drop-shadow(0 0 4px var(--glow-color)); }
+    50% { filter: drop-shadow(0 0 12px var(--glow-color)); }
   }
 }
 
-@mixin ButtonsAnimations($pass-BACKGROUND, $pass-BORDER, $pass-BX-SHADOW, $pass-BACKGROUND-HOVER, $pass-BX-SHADOW-HOVER){
-  --bg: #{$pass-BACKGROUND};
-  --bord: #{$pass-BORDER};
-  --bx-shadow: #{$pass-BX-SHADOW};
-  --hv-bg: #{$pass-BACKGROUND-HOVER};
-  --hv-bx-shadow: #{$pass-BX-SHADOW-HOVER};
+
+/* =========================================================
+   MIXINS — ANIMAÇÃO E ESTILO DE BOTÕES
+   ========================================================= */
+
+@mixin Fancy-Button(
+  $bg, $border, $shadow,
+  $hover-bg, $hover-shadow
+) {
+  --bg: #{$bg};
+  --bord: #{$border};
+  --shadow: #{$shadow};
+  --hover-bg: #{$hover-bg};
+  --hover-shadow: #{$hover-shadow};
 
   background: var(--bg);
   border: 1px solid var(--bord);
-  box-shadow: 0 0 8px var(--bx-shadow);
+  box-shadow: 0 0 8px var(--shadow);
   color: #fff;
 
-  &:hover{
-    background: var(--hv-bg);
-    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  &:hover {
+    background: var(--hover-bg);
+    box-shadow: 0 0 14px var(--hover-shadow);
   }
-
 }
 
-@mixin Styles-Carrossel($class-PAI ,$class-PAI2 ,$idclass-IMGFUNDO, $cls-CLIMATIZACAO, $cls-ELETRICA, $cls-ELETRONICA, $cls-REFRIGERACAO, $cls-ICON-SLIDE, $cls-TITLE, $cls-DESCRICAO, $cls-BOTAO){
-  #{$class-PAI}{
-    
-    #{$idclass-IMGFUNDO}{
+/* =========================================================
+   MIXIN — TEMAS DO CARROSSEL
+   ========================================================= */
+
+@mixin Carousel-Themes(
+  $ROOT, $INNER, $IMG, $INDICATORS,
+  $CLIM, $ELETRICA, $ELETRONICA, $REFRIG,
+  $ICON, $TITLE, $DESC, $BTN
+) {
+  #{$ROOT} {
+
+    #{$IMG} {
       border-radius: 15px;
       filter: brightness(0.25);
     }
-    #{$class-PAI2}{
-      $color-CLIM: #3a89ff;
-      $color-ELETRIC: #ffe603;
-      $color-ELETRONICA: #08a115;
-      $color-REFRIGERACAO: #04e2ff;
-      $color-txt-SHADOW: #ffffffe6;
 
-      #{$cls-CLIMATIZACAO}{
-        #{$cls-ICON-SLIDE}{
-          stroke: $color-CLIM !important;
-          @include Animation-ICONS($color-CLIM);
+    /* INDICATOR - CLIMATIZAÇÃO */
+    #{$INDICATORS} button{
+      $c-Indicator-CLIM: #3a89ff;
+      &:nth-child(1).active {
+      background-color: $c-Indicator-CLIM!important;
+      box-shadow: 0 0 6px $c-Indicator-CLIM !important;
+      }
+    }
+
+    /* INDICATOR - ELÉTRICA */
+    #{$INDICATORS} button{
+      $c-Indicator-ELETRIC: #ffe603;
+      &:nth-child(2).active{
+        background-color: $c-Indicator-ELETRIC !important;
+        box-shadow: 0 0 6px $c-Indicator-ELETRIC !important;
+      }
+    }
+
+    /* INDICATOR - ELETRÔNICA */
+    #{$INDICATORS} button{
+      $c-Indicator-ELETRONICA: #08a115;
+      &:nth-child(3).active{
+        background-color: $c-Indicator-ELETRONICA !important;
+        box-shadow: 0 0 6px $c-Indicator-ELETRONICA !important;
+      }
+    }
+
+    /* INDICATOR - REFRIGERAÇÃO */
+    #{$INDICATORS} button{
+      $c-Indicator-REFRIGERCAO: #04e2ff;
+      &:nth-child(4).active{
+        background-color: $c-Indicator-REFRIGERCAO !important;
+        box-shadow: 0 0 6px $c-Indicator-REFRIGERCAO !important;
+      } 
+    }
+
+    /* ---- TEMA INTERNOS DO SLIDE ---- */
+    #{$INNER} {
+      $CLIM-COLOR: #3a89ff;
+      $ELETRIC-COLOR: #ffe603;
+      $ELETRONIC-COLOR: #08a115;
+      $REFRIG-COLOR: #04e2ff;
+      $TXT-SHADOW: #ffffffe6;
+
+      /* ===== CLIMATIZAÇÃO ===== */
+      #{$CLIM} {
+        #{$ICON} {
+          stroke: $CLIM-COLOR !important;
+          @include Icon-Animation($CLIM-COLOR);
         }
-        #{$cls-TITLE}{
-          color: $color-CLIM;
-          text-shadow: 0 0 10px $color-CLIM;
+        #{$TITLE} {
+          color: $CLIM-COLOR;
+          text-shadow: 0 0 10px $CLIM-COLOR;
         }
-        #{$cls-DESCRICAO}{
+        #{$DESC} {
           font-size: 1rem;
           width: 80%;
           margin: 8px auto 0 auto;
           line-height: 1.4;
           color: #f0f0f0;
           opacity: 0.85;
-          text-shadow: 0 0 6px $color-txt-SHADOW;
+          text-shadow: 0 0 6px $TXT-SHADOW;
         }
-        #{$cls-BOTAO}{
-          $color-B-CLIM: rgba(33, 122, 255, 0.15);
-          $color-B-CLIM1: #217aff;
-          $color-B-CLIM2: rgb(33, 122, 255, 0.25);
-          @include ButtonsAnimations($color-B-CLIM, $color-B-CLIM1, $color-B-CLIM1, $color-B-CLIM2, $color-B-CLIM1);
+        #{$BTN} {
+          @include Fancy-Button(
+            rgba(33, 122, 255, 0.15),
+            #217aff,
+            #217aff,
+            rgba(33, 122, 255, 0.25),
+            #217aff
+          );
         }
       }
 
-      #{$cls-ELETRICA}{
-        #{$cls-ICON-SLIDE}{
-          stroke: $color-ELETRIC !important;
-          @include Animation-ICONS($color-ELETRIC);
+      /* ===== ELÉTRICA ===== */
+      #{$ELETRICA} {
+        #{$ICON} {
+          stroke: $ELETRIC-COLOR !important;
+          @include Icon-Animation($ELETRIC-COLOR);
         }
-        #{$cls-TITLE}{
-          color: $color-ELETRIC;
-          text-shadow: 0 0 10px $color-ELETRIC;
+        #{$TITLE} {
+          color: $ELETRIC-COLOR;
+          text-shadow: 0 0 10px $ELETRIC-COLOR;
         }
-        #{$cls-DESCRICAO}{
+        #{$DESC} {
           font-size: 1rem;
           width: 80%;
           margin: 8px auto 0 auto;
           line-height: 1.4;
-          color: #f0f0f0;
           opacity: 0.85;
-          text-shadow: 0 0 6px $color-txt-SHADOW;
+          color: #f0f0f0;
+          text-shadow: 0 0 6px $TXT-SHADOW;
         }
-        #{$cls-BOTAO}{
-          $color-B-ELETRIC: rgba(255, 230, 3, 0.18);
-          $color-B-ELETRIC2: #ffe603;
-          $color-B-ELETRIC3: rgba(255, 230, 3, 0.28);
-          @include ButtonsAnimations($color-B-ELETRIC, $color-B-ELETRIC2, $color-B-ELETRIC2, $color-B-ELETRIC3, $color-B-ELETRIC2);
+        #{$BTN} {
+          @include Fancy-Button(
+            rgba(255, 230, 3, 0.18),
+            #ffe603,
+            #ffe603,
+            rgba(255, 230, 3, 0.28),
+            #ffe603
+          );
         }
       }
 
-      #{$cls-ELETRONICA}{
-        #{$cls-ICON-SLIDE}{
-          stroke: $color-ELETRONICA;
-          @include Animation-ICONS($color-ELETRONICA);
+      /* ===== ELETRÔNICA ===== */
+      #{$ELETRONICA} {
+        #{$ICON} {
+          stroke: $ELETRONIC-COLOR !important;
+          @include Icon-Animation($ELETRONIC-COLOR);
         }
-        #{$cls-TITLE}{
-          color: $color-ELETRONICA;
-          text-shadow: 0 0 10px $color-ELETRONICA;
+        #{$TITLE} {
+          color: $ELETRONIC-COLOR;
+          text-shadow: 0 0 10px $ELETRONIC-COLOR;
         }
-        #{$cls-DESCRICAO}{
-          font-size: 1rem;
-          width: 80%;
-          margin: 8px auto 0 auto;
-          line-height: 1.4;
-          color: #f0f0f0;
-          opacity: 0.85;
-          text-shadow: 0 0 6px $color-txt-SHADOW;
+        #{$DESC} {
+          @extend #{ $CLIM }, #{$DESC}; // mantive igual aos outros
         }
-        #{$cls-BOTAO}{
-          $color-B-ELETRONICA: rgba(8, 161, 21, 0.18);
-          $color-B-ELETRONICA1: #08a115;
-          $color-B-ELETRONICA2: rgba(8, 161,21, 0.28);
-          @include ButtonsAnimations($color-B-ELETRONICA, $color-B-ELETRONICA1, $color-B-ELETRONICA1, $color-B-ELETRONICA2, $color-B-ELETRONICA1);
+        #{$BTN} {
+          @include Fancy-Button(
+            rgba(8, 161, 21, 0.18),
+            #08a115,
+            #08a115,
+            rgba(8, 161, 21, 0.28),
+            #08a115
+          );
         }
       }
 
-      #{$cls-REFRIGERACAO}{
-        #{$cls-ICON-SLIDE}{
-          stroke: $color-REFRIGERACAO;
-          @include Animation-ICONS($color-REFRIGERACAO);
+      /* ===== REFRIGERAÇÃO ===== */
+      #{$REFRIG} {
+        #{$ICON} {
+          stroke: $REFRIG-COLOR !important;
+          @include Icon-Animation($REFRIG-COLOR);
         }
-        #{$cls-TITLE}{
-          color: $color-REFRIGERACAO;
-          text-shadow: 0 0 10px $color-REFRIGERACAO;
+        #{$TITLE} {
+          color: $REFRIG-COLOR;
+          text-shadow: 0 0 10px $REFRIG-COLOR;
         }
-        #{$cls-DESCRICAO}{
-          font-size: 1rem;
-          width: 80%;
-          margin: 8px auto 0 auto;
-          line-height: 1.4;
-          color: #f0f0f0;
-          opacity: 0.85;
-          text-shadow: 0 0 6px $color-txt-SHADOW;
+        #{$DESC} {
+          @extend #{ $CLIM }, #{$DESC};
         }
-        #{$cls-BOTAO}{
-          $color-B-REFRIGERACAO: rgba(4, 226, 255, 0.20);
-          $color-B-REFRIGERACAO1: #04e2ff;
-          $color-B-REFRIGERACAO2: rgba(4, 226,255, 0.30);
-          @include ButtonsAnimations($color-B-REFRIGERACAO, $color-B-REFRIGERACAO1, $color-B-REFRIGERACAO1, $color-B-REFRIGERACAO2, $color-B-REFRIGERACAO1);
+        #{$BTN} {
+          @include Fancy-Button(
+            rgba(4, 226, 255, 0.20),
+            #04e2ff,
+            #04e2ff,
+            rgba(4, 226, 255, 0.30),
+            #04e2ff
+          );
         }
       }
+    }
+  }
+}
 
+/* =========================================================
+   MOBILE (≤ 375px)
+   ========================================================= */
+
+@mixin Carousel-Mobile($CAPTION, $INDICATORS, $IMG, $ICON, $BTN) {
+  #{$IMG} { height: 230px !important; }
+
+  #{$INDICATORS} {
+    display: flex !important;
+    justify-content: center;
+    gap: 8px !important;
+
+    [data-bs-target] { background-image: none; }
+
+    button {
+      width: 10px !important;
+      height: 10px !important;
+      border: none !important;
+      border-radius: 50% !important;
+      background-color: rgba(255, 255, 255, 0.45) !important;
+      transition: .25s ease;
+    }
+
+    button.active {
+      width: 12px !important;
+      height: 12px !important;
+      background-color: white !important;
     }
   }
 
+  #{$CAPTION} {
+    #{$ICON} {
+      width: 27px !important;
+      height: 27px !important;
+      stroke-width: 1.7 !important;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      font-size: 1.1rem !important;
+      line-height: 1.2rem !important;
+    }
+
+    p {
+      font-size: 0.85rem !important;
+      width: 90%;
+      margin: 0 auto 8px auto;
+    }
+
+    #{$BTN} {
+      font-size: 0.80rem !important;
+      padding: 6px 14px !important;
+    }
+  }
 }
 
-@media (max-width: 575px) {
-  @include CONFIGURACAO-CARROSSEL('.CarrosselHome');
+@media (max-width: 375px) {
+  @include Carousel-Mobile(
+    '.carousel-caption',
+    '.carousel-indicators',
+    '#IMGFUNDO',
+    '.icone-slide',
+    '.botao-saiba-mais'
+  );
+}
 
-  @include CONFIGURACOES-ITENS-CARR(
+/* =========================================================
+   MOBILE (≤ 575px)
+   ========================================================= */
+
+@media (max-width: 575px) {
+  @include Carousel-Base('.CarrosselHome', '.carousel-indicators');
+
+  @include Carousel-Items(
     '.carousel-caption',
     '#IMGFUNDO',
     '.icone-slide',
     '.botao-saiba-mais'
   );
 
-  @include Styles-Carrossel(
+  @include Carousel-Themes(
     '.CarrosselHome',
     '.carousel-inner',
     '#IMGFUNDO',
+    '.carousel-indicators',
     '.tema-climatizacao',
     '.tema-eletrica',
     '.tema-eletronica',

@@ -37,12 +37,7 @@ export default function CarrosselHome() {
       {/* CONTAINER CENTRALIZADO */}
       <div className="CarrosselHome container px-3">
 
-        {/* CARROSSEL */}
-        <div
-          id="carouselHome"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
 
           {/* INDICADORES */}
           <div className="carousel-indicators">
@@ -62,37 +57,33 @@ export default function CarrosselHome() {
             {carrosselHomeData.map((item, index) => (
               <div
                 key={item.id}
-                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                className={`carousel-item tema-${item.tema} ${index === 0 ? "active" : ""}`}
               >
-                {/* IMAGEM */}
-                <img id="IMGFUNDO"
+                <img
+                  id="IMGFUNDO"
                   src={item.image}
                   className="d-block"
                   alt={item.title}
                 />
 
-                {/* GRADIENTE */}
                 <div className="overlay-gradient"></div>
 
-                {/* CAPTION CENTRALIZADO */}
-                <div className={`carousel-caption custom-caption tema-${item.tema}`}>
+                {/* CAPTION */}
+                <div className="carousel-caption custom-caption">
 
-                  {item.icon && (
-                    <item.icon className="icone-slide" />
-                  )}
+                  {item.icon && <item.icon className="icone-slide" />}
 
-                    <h2 className="Title">
-                      {item.title}
-                    </h2>
+                  <h2 className="Title">{item.title}</h2>
 
-                    <p className="Descricao">{item.desc}</p>
+                  <p className="Descricao">{item.desc}</p>
 
-                    <button
-                      className="btn botao-saiba-mais mt-2 "
-                      onClick={() => handlerClick(item)}
-                    >
-                      {item.buttonLabel}
-                    </button>
+                  <button
+                    className="botao-saiba-mais"
+                    onClick={() => handlerClick(item)}
+                  >
+                    {item.buttonLabel}
+                  </button>
+
                 </div>
               </div>
             ))}
@@ -116,6 +107,7 @@ export default function CarrosselHome() {
           >
             <span className="carousel-control-next-icon"></span>
           </button>
+
         </div>
       </div>
     </>

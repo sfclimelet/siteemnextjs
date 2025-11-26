@@ -738,10 +738,72 @@
 }
 
 /* [project]/components/carrossel/CarrosselHome.scss.css [app-client] (css) */
+@media (max-width: 375px) {
+  #IMGFUNDO {
+    height: 230px !important;
+  }
+
+  .carousel-indicators {
+    justify-content: center;
+    gap: 8px !important;
+    display: flex !important;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-image: none;
+  }
+
+  .carousel-indicators button {
+    transition: all .25s;
+    background-color: #ffffff73 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .carousel-indicators button.active {
+    background-color: #fff !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .carousel-caption .icone-slide {
+    margin-bottom: 4px;
+    stroke-width: 1.7px !important;
+    width: 27px !important;
+    height: 27px !important;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.1rem !important;
+    line-height: 1.2rem !important;
+  }
+
+  .carousel-caption p {
+    width: 90%;
+    margin: 0 auto 8px;
+    font-size: .85rem !important;
+  }
+
+  .carousel-caption .botao-saiba-mais {
+    padding: 6px 14px !important;
+    font-size: .8rem !important;
+  }
+}
+
 @media (max-width: 575px) {
   .CarrosselHome {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-inline: 1rem !important;
+  }
+
+  .carousel-indicators button {
+    background: #fff5 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    transition: all .25s !important;
   }
 
   #IMGFUNDO {
@@ -751,17 +813,17 @@
 
   .carousel-caption .icone-slide {
     stroke-width: 1.7px;
-    width: 40px !important;
-    height: 40px !important;
+    width: 40px;
+    height: 40px;
   }
 
   .carousel-caption .botao-saiba-mais {
+    border-radius: 30px;
     margin-top: .5rem;
-    padding: 8px 22px;
     font-size: 1rem;
     font-weight: 600;
     transition: all .25s;
-    padding: .5rem 1.5rem !important;
+    padding: 8px 22px !important;
   }
 
   .CarrosselHome #IMGFUNDO {
@@ -769,7 +831,27 @@
     border-radius: 15px;
   }
 
-  .CarrosselHome .carousel-inner .tema-climatizacao .icone-slide {
+  .CarrosselHome .carousel-indicators button:first-child.active {
+    background-color: #3a89ff !important;
+    box-shadow: 0 0 6px #3a89ff !important;
+  }
+
+  .CarrosselHome .carousel-indicators button:nth-child(2).active {
+    background-color: #ffe603 !important;
+    box-shadow: 0 0 6px #ffe603 !important;
+  }
+
+  .CarrosselHome .carousel-indicators button:nth-child(3).active {
+    background-color: #08a115 !important;
+    box-shadow: 0 0 6px #08a115 !important;
+  }
+
+  .CarrosselHome .carousel-indicators button:nth-child(4).active {
+    background-color: #04e2ff !important;
+    box-shadow: 0 0 6px #04e2ff !important;
+  }
+
+  .CarrosselHome .carousel-inner .tema-climatizacao .icone-slide, .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao .icone-slide, .CarrosselHome .carousel-inner .tema-eletronica .Descricao .icone-slide {
     --glow-color: #3a89ff;
     animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
     stroke: #3a89ff !important;
@@ -795,12 +877,12 @@
     }
   }
 
-  .CarrosselHome .carousel-inner .tema-climatizacao .Title {
+  .CarrosselHome .carousel-inner .tema-climatizacao .Title, .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao .Title, .CarrosselHome .carousel-inner .tema-eletronica .Descricao .Title {
     color: #3a89ff;
     text-shadow: 0 0 10px #3a89ff;
   }
 
-  .CarrosselHome .carousel-inner .tema-climatizacao .Descricao {
+  .CarrosselHome .carousel-inner .tema-climatizacao .Descricao, .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao .Descricao, .CarrosselHome .carousel-inner .tema-eletronica .Descricao .Descricao {
     color: #f0f0f0;
     opacity: .85;
     text-shadow: 0 0 6px #ffffffe6;
@@ -810,21 +892,21 @@
     line-height: 1.4;
   }
 
-  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais {
+  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais, .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao .botao-saiba-mais, .CarrosselHome .carousel-inner .tema-eletronica .Descricao .botao-saiba-mais {
     --bg: #217aff26;
     --bord: #217aff;
-    --bx-shadow: #217aff;
-    --hv-bg: #217aff40;
-    --hv-bx-shadow: #217aff;
+    --shadow: #217aff;
+    --hover-bg: #217aff40;
+    --hover-shadow: #217aff;
     background: var(--bg);
     border: 1px solid var(--bord);
-    box-shadow: 0 0 8px var(--bx-shadow);
+    box-shadow: 0 0 8px var(--shadow);
     color: #fff;
   }
 
-  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais:hover {
-    background: var(--hv-bg);
-    box-shadow: 0 0 14px var(--hv-bx-shadow);
+  .CarrosselHome .carousel-inner .tema-climatizacao .botao-saiba-mais:hover, .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao .botao-saiba-mais:hover, .CarrosselHome .carousel-inner .tema-eletronica .Descricao .botao-saiba-mais:hover {
+    background: var(--hover-bg);
+    box-shadow: 0 0 14px var(--hover-shadow);
   }
 
   .CarrosselHome .carousel-inner .tema-eletrica .icone-slide {
@@ -839,8 +921,8 @@
   }
 
   .CarrosselHome .carousel-inner .tema-eletrica .Descricao {
-    color: #f0f0f0;
     opacity: .85;
+    color: #f0f0f0;
     text-shadow: 0 0 6px #ffffffe6;
     width: 80%;
     margin: 8px auto 0;
@@ -851,24 +933,24 @@
   .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais {
     --bg: #ffe6032e;
     --bord: #ffe603;
-    --bx-shadow: #ffe603;
-    --hv-bg: #ffe60347;
-    --hv-bx-shadow: #ffe603;
+    --shadow: #ffe603;
+    --hover-bg: #ffe60347;
+    --hover-shadow: #ffe603;
     background: var(--bg);
     border: 1px solid var(--bord);
-    box-shadow: 0 0 8px var(--bx-shadow);
+    box-shadow: 0 0 8px var(--shadow);
     color: #fff;
   }
 
   .CarrosselHome .carousel-inner .tema-eletrica .botao-saiba-mais:hover {
-    background: var(--hv-bg);
-    box-shadow: 0 0 14px var(--hv-bx-shadow);
+    background: var(--hover-bg);
+    box-shadow: 0 0 14px var(--hover-shadow);
   }
 
   .CarrosselHome .carousel-inner .tema-eletronica .icone-slide {
-    stroke: #08a115;
     --glow-color: #08a115;
     animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+    stroke: #08a115 !important;
   }
 
   .CarrosselHome .carousel-inner .tema-eletronica .Title {
@@ -876,37 +958,27 @@
     text-shadow: 0 0 10px #08a115;
   }
 
-  .CarrosselHome .carousel-inner .tema-eletronica .Descricao {
-    color: #f0f0f0;
-    opacity: .85;
-    text-shadow: 0 0 6px #ffffffe6;
-    width: 80%;
-    margin: 8px auto 0;
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
   .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais {
     --bg: #08a1152e;
     --bord: #08a115;
-    --bx-shadow: #08a115;
-    --hv-bg: #08a11547;
-    --hv-bx-shadow: #08a115;
+    --shadow: #08a115;
+    --hover-bg: #08a11547;
+    --hover-shadow: #08a115;
     background: var(--bg);
     border: 1px solid var(--bord);
-    box-shadow: 0 0 8px var(--bx-shadow);
+    box-shadow: 0 0 8px var(--shadow);
     color: #fff;
   }
 
   .CarrosselHome .carousel-inner .tema-eletronica .botao-saiba-mais:hover {
-    background: var(--hv-bg);
-    box-shadow: 0 0 14px var(--hv-bx-shadow);
+    background: var(--hover-bg);
+    box-shadow: 0 0 14px var(--hover-shadow);
   }
 
   .CarrosselHome .carousel-inner .tema-refrigeracao .icone-slide {
-    stroke: #04e2ff;
     --glow-color: #04e2ff;
     animation: 3s ease-in-out infinite float, 2.4s ease-in-out infinite glow;
+    stroke: #04e2ff !important;
   }
 
   .CarrosselHome .carousel-inner .tema-refrigeracao .Title {
@@ -914,31 +986,21 @@
     text-shadow: 0 0 10px #04e2ff;
   }
 
-  .CarrosselHome .carousel-inner .tema-refrigeracao .Descricao {
-    color: #f0f0f0;
-    opacity: .85;
-    text-shadow: 0 0 6px #ffffffe6;
-    width: 80%;
-    margin: 8px auto 0;
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
   .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais {
     --bg: #04e2ff33;
     --bord: #04e2ff;
-    --bx-shadow: #04e2ff;
-    --hv-bg: #04e2ff4d;
-    --hv-bx-shadow: #04e2ff;
+    --shadow: #04e2ff;
+    --hover-bg: #04e2ff4d;
+    --hover-shadow: #04e2ff;
     background: var(--bg);
     border: 1px solid var(--bord);
-    box-shadow: 0 0 8px var(--bx-shadow);
+    box-shadow: 0 0 8px var(--shadow);
     color: #fff;
   }
 
   .CarrosselHome .carousel-inner .tema-refrigeracao .botao-saiba-mais:hover {
-    background: var(--hv-bg);
-    box-shadow: 0 0 14px var(--hv-bx-shadow);
+    background: var(--hover-bg);
+    box-shadow: 0 0 14px var(--hover-shadow);
   }
 }
 
