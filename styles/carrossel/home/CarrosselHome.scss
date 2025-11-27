@@ -1,3 +1,23 @@
+/* VARS E CORES */
+@import "./vars.scss";
+@import "./colors.scss";
+
+/* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+@import "./conf-geral-carrosselHome.scss";
+
+/* TEMAS */
+@import "./themes-carrosselHome.scss";
+
+/* MOBILES */
+@import "./carrossel-Home-mobile.scss";
+
+/* TABLETS */
+@import "./carrossel-Home-tablets.scss";
+
+/* DESKTOPS */
+@import "./carrossel-Home-desktops.scss";
+
+
 /* =========================================================
    MIXINS — CONFIGURAÇÕES GERAIS DO CARROSSEL
    ========================================================= */

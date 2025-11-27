@@ -2,11 +2,14 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import "./CarrosselHome.scss";
+
+// Importe SCSS 
+import "../../styles/carrossel/home/CarrosselHome.scss";
+import "../aviso/aviso.scss";
 
 import { carrosselHomeData } from "./cardsCarrosselHomeData";
 import Aviso from "../aviso/Aviso";
-import "../aviso/aviso.scss";
+
 
 export default function CarrosselHome() {
   const router = useRouter();
