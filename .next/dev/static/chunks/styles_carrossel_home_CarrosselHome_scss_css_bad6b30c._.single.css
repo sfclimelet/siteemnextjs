@@ -100,55 +100,83 @@
 }
 
 .tema-climatizacao .carousel-control-prev, .tema-climatizacao .carousel-control-next {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: #3a89ff2e;
+  border: 1px solid #3a89ff73;
+  border-radius: 50%;
   transition: all .25s;
-  background: #3a89ff26 !important;
-  border-color: #3a89ff73 !important;
-  box-shadow: 0 0 10px #3a89ff59 !important;
+  box-shadow: 0 0 12px #3a89ff59;
 }
 
 .tema-climatizacao .carousel-control-prev:hover, .tema-climatizacao .carousel-control-next:hover {
-  background: #3a89ff40 !important;
-  transform: scale(1.07) !important;
-  box-shadow: 0 0 16px #3a89ff8c !important;
+  background: #3a89ff47;
+  transform: scale(1.08);
+  box-shadow: 0 0 18px #3a89ff8c;
+}
+
+.tema-climatizacao .carousel-control-prev .carousel-control-prev-icon, .tema-climatizacao .carousel-control-next .carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px #3a89ffbf);
 }
 
 .tema-eletrica .carousel-control-prev, .tema-eletrica .carousel-control-next {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: #ffe6032e;
+  border: 1px solid #ffe60373;
+  border-radius: 50%;
   transition: all .25s;
-  background: #ffe60326 !important;
-  border-color: #ffe60373 !important;
-  box-shadow: 0 0 10px #ffe60359 !important;
+  box-shadow: 0 0 12px #ffe60359;
 }
 
 .tema-eletrica .carousel-control-prev:hover, .tema-eletrica .carousel-control-next:hover {
-  background: #ffe60340 !important;
-  transform: scale(1.07) !important;
-  box-shadow: 0 0 16px #ffe6038c !important;
+  background: #ffe60347;
+  transform: scale(1.08);
+  box-shadow: 0 0 18px #ffe6038c;
+}
+
+.tema-eletrica .carousel-control-prev .carousel-control-prev-icon, .tema-eletrica .carousel-control-next .carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px #ffe603bf);
 }
 
 .tema-eletronica .carousel-control-prev, .tema-eletronica .carousel-control-next {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: #08a1152e;
+  border: 1px solid #08a11573;
+  border-radius: 50%;
   transition: all .25s;
-  background: #08a11526 !important;
-  border-color: #08a11573 !important;
-  box-shadow: 0 0 10px #08a11559 !important;
+  box-shadow: 0 0 12px #08a11559;
 }
 
 .tema-eletronica .carousel-control-prev:hover, .tema-eletronica .carousel-control-next:hover {
-  background: #08a11540 !important;
-  transform: scale(1.07) !important;
-  box-shadow: 0 0 16px #08a1158c !important;
+  background: #08a11547;
+  transform: scale(1.08);
+  box-shadow: 0 0 18px #08a1158c;
+}
+
+.tema-eletronica .carousel-control-prev .carousel-control-prev-icon, .tema-eletronica .carousel-control-next .carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px #08a115bf);
 }
 
 .tema-refrigeracao .carousel-control-prev, .tema-refrigeracao .carousel-control-next {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: #04e2ff2e;
+  border: 1px solid #04e2ff73;
+  border-radius: 50%;
   transition: all .25s;
-  background: #04e2ff26 !important;
-  border-color: #04e2ff73 !important;
-  box-shadow: 0 0 10px #04e2ff59 !important;
+  box-shadow: 0 0 12px #04e2ff59;
 }
 
 .tema-refrigeracao .carousel-control-prev:hover, .tema-refrigeracao .carousel-control-next:hover {
-  background: #04e2ff40 !important;
-  transform: scale(1.07) !important;
-  box-shadow: 0 0 16px #04e2ff8c !important;
+  background: #04e2ff47;
+  transform: scale(1.08);
+  box-shadow: 0 0 18px #04e2ff8c;
+}
+
+.tema-refrigeracao .carousel-control-prev .carousel-control-prev-icon, .tema-refrigeracao .carousel-control-next .carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px #04e2ffbf);
 }
 
 /*# sourceMappingURL=styles_carrossel_home_CarrosselHome_scss_css_bad6b30c._.single.css.map*/

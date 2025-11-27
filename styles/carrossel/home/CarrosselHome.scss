@@ -1,18 +1,18 @@
 /* VARS E CORES */
-@import "./vars.scss";
-@import "./colors.scss";
+@use "vars" as *;
+@use "colors" as *;
 
 /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
-@import "./conf-geral-carrosselHome.scss";
+@import "conf-geral-carrosselHome.scss";
 
 /* TEMAS */
-@import "./themes-carrosselHome.scss";
+@import "themes-carrosselHome.scss";
 
 /* MOBILES */
-@import "./carrossel-Home-mobile.scss";
+@import "carrossel-Home-mobile.scss";
 
 /* TABLETS */
-@import "./carrossel-Home-tablets.scss";
+@import "carrossel-Home-tablets.scss";
 
 /* DESKTOPS */
-@import "./carrossel-Home-desktops.scss";
+@import "carrossel-Home-desktops.scss";

@@ -1,492 +1,966 @@
-[00:00:00.570] Server  LOG      ✓ Ready in 368ms
-[00:00:08.521] Server  ERROR    ⨯ ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-
-
-[00:00:08.523] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:00:08.523] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:00:08.524] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:00:08.524] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:00:08.524] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:00:09.306] Server  WARN     ⚠ Cross origin request detected from 192.168.18.64 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:00.578] Server  LOG      ✓ Ready in 374ms
+[00:00:05.298] Server  WARN     ⚠ Cross origin request detected from 192.168.18.64 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:09.308] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:00:07.573] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+
+[00:00:07.574] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-1 | @import "./vars.scss";
+1 | @import "vars.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
 
 
 
-[00:00:09.308] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:00:07.574] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-11 | @import "./carrossel-Home-mobile.scss";
+11 | @import "carrossel-Home-mobile.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
 
 
 
-[00:00:09.308] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:00:07.574] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-2 | @import "./colors.scss";
+2 | @import "colors.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
 
 
 
-[00:00:09.308] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:00:07.575] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-5 | @import "./conf-geral-carrosselHome.scss";
+5 | @import "conf-geral-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
 
 
 
-[00:00:09.308] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:00:07.575] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-8 | @import "./themes-carrosselHome.scss";
+8 | @import "themes-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
 
 
 
-[00:00:09.312] Browser ERROR   uncaughtError: Error: ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
+[00:00:08.001] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: 2 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
 
 
-[00:00:09.481] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+[00:00:08.001] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "vars.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
+
+
+
+[00:00:08.002] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:00:08.002] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "colors.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
+
+
+
+[00:00:08.002] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:00:08.002] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:00:08.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:10.965] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 10, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:10:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+10 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 11:9  root stylesheet
+
+
+
+[00:09:10.965] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 13, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:13:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+13 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 14:9  root stylesheet
+
+
+
+[00:09:10.966] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 16, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:16:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+16 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 17:9  root stylesheet
+
+
+
+[00:09:10.967] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 4, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:4:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+4 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 5:9  root stylesheet
+
+
+
+[00:09:10.967] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 7, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:7:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+7 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 8:9  root stylesheet
+
+
+
+[00:09:12.990] Server  LOG      ✓ Compiled in 34ms
+[00:09:14.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+Error: Expected string.
+  ╷
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
+Caused by: Error: Expected string.
+  ╷
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:00:09.887] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0.string$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113967:12)]
+    [at ScssParser0._stylesheet0$_urlString$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123731:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120550:23)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+[00:09:15.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-26 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 26:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+Error: Expected string.
+  ╷
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
+Caused by: Error: Expected string.
+  ╷
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:00:18.793] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0.string$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113967:12)]
+    [at ScssParser0._stylesheet0$_urlString$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123731:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120550:23)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+[00:09:18.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
+2 │ ┌ @use ''
+3 │ │ 
+4 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
+2 │ ┌ @use ''
+3 │ │ 
+4 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:00:19.880] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:19.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
+Error: Expected string.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
+Caused by: Error: Expected string.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
+4 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/CarrosselHome.scss 4:40  root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:00:25.434] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0.string$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113967:12)]
+    [at ScssParser0._stylesheet0$_urlString$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123731:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120550:23)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+[00:09:21.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+2 │ ┌ @use ""
+3 │ │ 
+4 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+2 │ ┌ @use ""
+3 │ │ 
+4 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:24.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+2 │ @use "";
+  │ ^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+2 │ @use "";
+  │ ^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:29.504] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 10, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:10:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+10 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 11:9  root stylesheet
+
+
+
+[00:09:29.505] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 13, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:13:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+13 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 14:9  root stylesheet
+
+
+
+[00:09:29.505] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 16, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:16:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+16 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 17:9  root stylesheet
+
+
+
+[00:09:29.505] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 4, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:4:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+4 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 5:9  root stylesheet
+
+
+
+[00:09:29.506] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 7, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:7:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+7 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 8:9  root stylesheet
+
+
+
+[00:09:32.808] Server  LOG      ✓ Compiled in 60ms
+[00:09:33.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
 Error: Expected identifier.
-   ╷
-27 │     @include 
-   │              ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 27:14  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
+  ╷
+2 │ @use "vars" as ;
+  │                ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:16  root stylesheet
 Caused by: Error: Expected identifier.
-   ╷
-27 │     @include 
-   │              ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 27:14  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
+  ╷
+2 │ @use "vars" as ;
+  │                ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 2:16  root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
     [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
     [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
     [at ScssParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
-    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121110:21)]
-    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
-    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
-    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
-    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
-[00:00:28.355] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:00:32.487] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:00:35.196] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:00:39.426] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:01:47.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected identifier.
-  ╷
-1 │ @mixin BTN-PREV-NEXT($){
-  │                       ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 1:23  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected identifier.
-  ╷
-1 │ @mixin BTN-PREV-NEXT($){
-  │                       ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 1:23  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
-    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
-    [at ScssParser0._stylesheet0$_parameterList$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121388:23)]
-    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121171:28)]
-    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121264:60)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
     [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
     [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
-[00:01:49.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+[00:09:35.161] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 10, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:10:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+10 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 11:9  root stylesheet
+
+
+
+[00:09:35.161] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 13, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:13:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+13 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 14:9  root stylesheet
+
+
+
+[00:09:35.161] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 16, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:16:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+16 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 17:9  root stylesheet
+
+
+
+[00:09:35.162] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 4, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:4:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+4 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 5:9  root stylesheet
+
+
+
+[00:09:35.162] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 7, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:7:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+7 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 8:9  root stylesheet
+
+
+
+[00:09:35.871] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:09:35.871] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+14 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
+
+
+
+[00:09:35.871] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:09:35.872] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:09:35.872] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:09:39.876] Server  LOG      ✓ Compiled in 42ms
+[00:09:40.036] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ ┌ @use ""
+4 │ │ 
+5 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ ┌ @use ""
+4 │ │ 
+5 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:43.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected ";".
+  ╷
+5 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 5:40  root stylesheet
+Caused by: Error: expected ";".
+  ╷
+5 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 5:40  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115717:10)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120559:17)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+[00:09:45.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected ";".
+  ╷
+5 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 5:40  root stylesheet
+Caused by: Error: expected ";".
+  ╷
+5 │ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  │                                        ^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 5:40  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115717:10)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120559:17)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+[00:09:48.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "colors as *" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ ┌ @use "colors as *"
+4 │ │ 
+5 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+Caused by: Error: The default namespace "colors as *" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ ┌ @use "colors as *"
+4 │ │ 
+5 │ └ /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:50.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "colors as *" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ @use "colors as *";
+  │ ^^^^^^^^^^^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+Caused by: Error: The default namespace "colors as *" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+3 │ @use "colors as *";
+  │ ^^^^^^^^^^^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 3:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:09:54.903] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:09:54.903] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+14 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
+
+
+
+[00:09:54.903] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:09:54.904] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:09:54.904] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:13:42.319] Server  LOG      ✓ Compiled in 40ms
+[00:13:43.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected ":".
+  ╷
+1 │ $temas
+  │       ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:7  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+Caused by: Error: expected ":".
+  ╷
+1 │ $temas
+  │       ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:7  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120197:10)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120230:19)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115790:35)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[00:13:45.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+1 │ $temas: 
+  │         ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:9  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+1 │ $temas: 
+  │         ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:9  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121776:14)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120199:21)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120230:19)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115790:35)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+[00:13:49.971] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:13:49.971] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+14 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
+
+
+
+[00:13:49.971] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:13:49.971] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:13:49.971] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:13:58.692] Server  LOG      ✓ Compiled in 52ms
+[00:13:59.036] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
 Error: Undefined variable.
   ╷
-3 │         border-color: rgba($corP-N, .45);
-  │                            ^^^^^^^
+2 │   $TEMA
+  │   ^^^^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 3:28  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
 Caused by: Error: Undefined variable.
   ╷
-3 │         border-color: rgba($corP-N, .45);
-  │                            ^^^^^^^
+2 │   $TEMA
+  │   ^^^^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 3:28  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
     [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
@@ -496,483 +970,388 @@ Caused by: Error: Undefined variable.
     [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
     [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
     [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:01:57.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at _EvaluateVisitor2.visitParenthesizedExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89255:246)]
+[00:14:06.471] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:14:06.471] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+14 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
+
+
+
+[00:14:06.472] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:14:06.472] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:14:06.472] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:14:07.848] Server  LOG      ✓ Compiled in 40ms
+[00:14:08.036] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Undefined variable.
+Error: Expected expression.
   ╷
-4 │         background: rgba($corP-N, .15);
-  │                          ^^^^^^^
+2 │   #{}
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 4:26  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+Caused by: Error: Expected expression.
   ╷
-4 │         background: rgba($corP-N, .15);
-  │                          ^^^^^^^
+2 │   #{}
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 4:26  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:02.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0.identifierLike$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122288:28)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121917:22)]
+[00:14:11.036] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Undefined variable.
+Error: Expected expression.
   ╷
-5 │         box-shadow: 0 0 10px rgba($corP-N, .35);
-  │                                   ^^^^^^^
+2 │   #{}: 
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 5:35  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+Caused by: Error: Expected expression.
   ╷
-5 │         box-shadow: 0 0 10px rgba($corP-N, .35);
-  │                                   ^^^^^^^
+2 │   #{}: 
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 5:35  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:09.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0.identifierLike$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122288:28)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121917:22)]
+[00:14:13.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Undefined variable.
+Error: Expected expression.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
+2 │   #{}: ,
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
+Caused by: Error: Expected expression.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
+2 │   #{}: ,
+  │   ^^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+  styles/carrossel/home/themes-carrosselHome.scss 2:3  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:15.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
+    [at ScssParser0.identifierLike$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122288:28)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121917:22)]
+[00:14:17.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
-Error: Undefined variable.
+Error: Expected expression.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
+2 │   #{$TE}: ,
+  │           ^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
+  styles/carrossel/home/themes-carrosselHome.scss 2:11  @import
   styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
+Caused by: Error: Expected expression.
   ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
+2 │   #{$TE}: ,
+  │           ^
   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:20.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                      ^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:22  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:27.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($color);
-  │                 ^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($color);
-  │                 ^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:02:51.515] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-  ╷
-3 │         border-color: rgba($corP-N, .45);
-  │                            ^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 3:28  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
-  ╷
-3 │         border-color: rgba($corP-N, .45);
-  │                            ^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 3:28  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:02:53.129] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
-  ╷
-8 │         stroke: rgba($corP-N);
-  │                 ^^^^^^^^^^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
-    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
-    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
-[00:02:58.706] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected identifier.
-  ╷
-8 │         stroke: $;
-  │                  ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:18  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected identifier.
-  ╷
-8 │         stroke: $;
-  │                  ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:18  @import
+  styles/carrossel/home/themes-carrosselHome.scss 2:11  @import
   styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
     [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
-    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
-    [at ScssParser0.variableName$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114154:19)]
-    [at ScssParser0._stylesheet0$_variable$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122168:23)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121794:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121496:23)]
+    [at ScssParser0._stylesheet0$_expression$3$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121742:19)]
+    [at ScssParser0.expressionUntilComma$1$singleEquals (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121757:19)]
+    [at ScssParser0.expressionUntilComma$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121760:19)]
+    [at ScssParser0._stylesheet0$_map$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121899:63)]
+    [at ScssParser0.parentheses$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121870:22)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121778:22)]
+[00:14:21.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+2 │   #{$TEMA}: ,
+  │             ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:13  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+2 │   #{$TEMA}: ,
+  │             ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:13  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121496:23)]
+    [at ScssParser0._stylesheet0$_expression$3$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121742:19)]
+    [at ScssParser0.expressionUntilComma$1$singleEquals (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121757:19)]
+    [at ScssParser0.expressionUntilComma$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121760:19)]
+    [at ScssParser0._stylesheet0$_map$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121899:63)]
+    [at ScssParser0.parentheses$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121870:22)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121778:22)]
+[00:14:50.159] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+11 | @import "carrossel-Home-mobile.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
+
+
+
+[00:14:50.159] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+14 | @import "carrossel-Home-tablets.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
+
+
+
+[00:14:50.159] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:14:50.159] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5 | @import "conf-geral-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
+
+
+
+[00:14:50.160] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "themes-carrosselHome.scss";
+
+
+styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
+
+
+
+[00:15:08.361] Server  LOG      ✓ Compiled in 35ms
+[00:15:09.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+2 │   $TEMA-CLIMATIZACAO: 
+  │                       ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:23  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+2 │   $TEMA-CLIMATIZACAO: 
+  │                       ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:23  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
     [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
-[00:03:01.207] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-  ╷
-8 │         stroke: $ci;
-  │                 ^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
-  ╷
-8 │         stroke: $ci;
-  │                 ^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87138:41]
-[00:03:03.150] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-  ╷
-8 │         stroke: $cor;
-  │                 ^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
-  ╷
-8 │         stroke: $cor;
-  │                 ^^^^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 8:17  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 20:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:87138:41]
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+    [at ScssParser0._stylesheet0$_expression$3$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121742:19)]
+    [at ScssParser0.expressionUntilComma$1$singleEquals (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121757:19)]
+    [at ScssParser0.expressionUntilComma$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121760:19)]
+    [at ScssParser0._stylesheet0$_map$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121899:63)]
+    [at ScssParser0.parentheses$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121870:22)]
+[00:15:10.479] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-11 | @import "./carrossel-Home-mobile.scss";
+11 | @import "carrossel-Home-mobile.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
 
 
 
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:15:10.479] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-2 | @import "./colors.scss";
+14 | @import "carrossel-Home-tablets.scss";
 
 
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
 
 
 
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:15:10.479] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:15:10.480] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-5 | @import "./conf-geral-carrosselHome.scss";
+5 | @import "conf-geral-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
 
 
 
-[00:03:04.552] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:15:10.480] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-8 | @import "./themes-carrosselHome.scss";
+8 | @import "themes-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
 
 
 
-[00:03:05.054] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:03:05.054] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:03:05.055] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:03:05.055] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:03:05.055] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:03:05.055] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:03:05.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:08.261] Server  LOG      ✓ Compiled in 55ms
-[00:03:41.383] Server  LOG      ✓ Compiled in 42ms
-[00:03:41.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+[00:16:59.973] Server  LOG      ✓ Compiled in 37ms
+[00:17:01.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
 Error: expected "{".
-   ╷
-28 │ #
-   │  ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:2  @import
+  ╷
+2 │ @mixin name
+  │            ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:12  @import
   styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
 Caused by: Error: expected "{".
-   ╷
-28 │ #
-   │  ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:2  @import
+  ╷
+2 │ @mixin name
+  │            ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 2:12  @import
   styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
@@ -982,819 +1361,171 @@ Caused by: Error: expected "{".
     [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
     [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
     [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
-    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
-    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
-[00:03:44.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-28 │ #{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-28 │ #{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:03:46.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-28 │ #{}{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-28 │ #{}{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:04:00.495] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-28 │ #{}{$TEMA}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-28 │ #{}{$TEMA}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:04:05.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-28 │ #{}{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-28 │ #{}{}
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:04:07.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Expected expression.
-   ╷
-28 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Expected expression.
-   ╷
-28 │ #{}{
-   │ ^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
-    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
-    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
-    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
-    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
-    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122881:24)]
-    [at ScssParser0.almostAnyValue$1$omitComments (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122549:45)]
-    [at ScssParser0.almostAnyValue$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122618:19)]
-[00:04:10.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-   ╷
-28 │ #{$TE}{
-   │   ^^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:3  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Undefined variable.
-   ╷
-28 │ #{$TE}{
-   │   ^^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 28:3  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91285:42]
-[00:04:11.257] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:04:11.257] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:04:11.257] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+    [at ScssParser0._stylesheet0$_mixinRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121183:20)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120538:24)]
+[00:17:05.909] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-11 | @import "./carrossel-Home-mobile.scss";
+11 | @import "carrossel-Home-mobile.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
 
 
 
-[00:04:11.257] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:05.909] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-2 | @import "./colors.scss";
+14 | @import "carrossel-Home-tablets.scss";
 
 
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
 
 
 
-[00:04:11.258] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:05.909] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:17:05.909] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-5 | @import "./conf-geral-carrosselHome.scss";
+5 | @import "conf-geral-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
 
 
 
-[00:04:11.258] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:05.909] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-8 | @import "./themes-carrosselHome.scss";
+8 | @import "themes-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
 
 
 
-[00:04:16.966] Server  LOG      ✓ Compiled in 33ms
-[00:04:17.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+[00:17:08.465] Server  LOG      ✓ Compiled in 33ms
+[00:17:09.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
 Error evaluating Node.js code
 Error: Expected identifier.
-   ╷
-29 │     @include 
-   │              ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:14  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
+  ╷
+1 │ $
+  │  ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:2  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
 Caused by: Error: Expected identifier.
-   ╷
-29 │     @include 
-   │              ^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:14  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
+  ╷
+1 │ $
+  │  ^
+  ╵
+  styles/carrossel/home/themes-carrosselHome.scss 1:2  @import
+  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
     [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
     [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
     [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
     [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
-    [at ScssParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
-    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121110:21)]
-    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
-    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
-    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
-    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
-[00:04:27.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Missing argument $corP-N.
-    ╷
-1   │ @mixin BTN-PREV-NEXT($corP-N){
-    │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
-... │
-29  │     @include BTN-PREV-NEXT()
-    │     ^^^^^^^^^^^^^^^^^^^^^^^^ invocation
-    ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:5  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 29:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-Caused by: Error: Missing argument $corP-N.
-    ╷
-1   │ @mixin BTN-PREV-NEXT($corP-N){
-    │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
-... │
-29  │     @include BTN-PREV-NEXT()
-    │     ^^^^^^^^^^^^^^^^^^^^^^^^ invocation
-    ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:5  BTN-PREV-NEXT()
-  styles/carrossel/home/themes-carrosselHome.scss 29:5  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9          root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
-    [at _EvaluateVisitor__verifyArguments_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94712:30)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
-    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
-    [at _EvaluateVisitor2._async_evaluate0$_verifyArguments$4 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90598:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94472:18]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-[00:04:29.494] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: Undefined variable.
-   ╷
-29 │     @include BTN-PREV-NEXT($CO)
-   │                            ^^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:28  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
-Caused by: Error: Undefined variable.
-   ╷
-29 │     @include BTN-PREV-NEXT($CO)
-   │                            ^^^
-   ╵
-  styles/carrossel/home/themes-carrosselHome.scss 29:28  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9           root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
-    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
-    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
-    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
-    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
-    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
-    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
-    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90397:31]
-[00:04:30.488] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:04:30.488] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:04:30.489] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:04:30.489] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:04:30.489] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:04:30.490] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:06:23.338] Server  LOG      ✓ Compiled in 39ms
-[00:13:07.142] Server  LOG      ✓ Compiled in 43ms
-[00:13:18.448] Server  LOG      ✓ Compiled in 39ms
-[00:13:32.429] Server  LOG      ✓ Compiled in 42ms
-[00:13:32.531] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
-Error evaluating Node.js code
-Error: unmatched "}".
-  ╷
-2 │ }
-  │ ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 2:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
-Caused by: Error: unmatched "}".
-  ╷
-2 │ }
-  │ ^
-  ╵
-  styles/carrossel/home/themes-carrosselHome.scss 2:1  @import
-  styles/carrossel/home/CarrosselHome.scss 9:9         root stylesheet
-    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
-    [at SpanScanner.error$2$length (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85052:19)]
-    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120174:12)]
-    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
-    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at ScssParser0.identifier$1$normalize (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113905:19)]
+    [at ScssParser0.variableName$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114154:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120189:21)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120230:19)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115790:35)]
     [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
-    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
-    [at ScssParser0.wrapSpanFormatException$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114470:19)]
-    [at ScssParser0.parse$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120139:19)]
-[00:13:35.097] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:13:35.098] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:13:35.098] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:11.757] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-11 | @import "./carrossel-Home-mobile.scss";
+11 | @import "carrossel-Home-mobile.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
 
 
 
-[00:13:35.098] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:11.758] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
+SassWarning: Deprecation Warning on line 14, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:14:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-2 | @import "./colors.scss";
+14 | @import "carrossel-Home-tablets.scss";
 
 
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
+styles/carrossel/home/CarrosselHome.scss 15:9  root stylesheet
 
 
 
-[00:13:35.098] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:11.758] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 17, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:17:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+17 | @import "carrossel-Home-desktops.scss";
+
+styles/carrossel/home/CarrosselHome.scss 18:9  root stylesheet
+
+
+
+[00:17:11.758] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-5 | @import "./conf-geral-carrosselHome.scss";
+5 | @import "conf-geral-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
 
 
 
-[00:13:35.099] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+[00:17:11.758] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
 Issue while running loader
 SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
 
-8 | @import "./themes-carrosselHome.scss";
+8 | @import "themes-carrosselHome.scss";
 
 
 styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
 
 
 
-[00:13:44.344] Server  LOG      ✓ Compiled in 63ms
-[00:14:08.650] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:14:08.650] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:14:08.650] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:14:08.651] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:14:08.651] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:14:08.651] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:14:08.821] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:14:08.840] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:29.284] Server  LOG      ✓ Compiled in 36ms
-[00:15:33.337] Server  LOG      ✓ Compiled in 38ms
-[00:15:36.963] Server  LOG      ✓ Compiled in 36ms
-[00:17:09.444] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:17:09.444] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:17:09.444] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:17:09.444] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:17:09.444] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:17:09.445] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: 2 repetitive deprecation warnings omitted.
-Run in verbose mode to see all warnings.
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "./vars.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 2:9  root stylesheet
-
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 11, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:11:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-11 | @import "./carrossel-Home-mobile.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 12:9  root stylesheet
-
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "./colors.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 3:9  root stylesheet
-
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:5:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5 | @import "./conf-geral-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 6:9  root stylesheet
-
-
-
-[00:17:09.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 8, column 8 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/CarrosselHome.scss:8:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-8 | @import "./themes-carrosselHome.scss";
-
-
-styles/carrossel/home/CarrosselHome.scss 9:9  root stylesheet
-
-
-
-[00:17:09.587] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:59.330] Server  LOG      ✓ Compiled in 29ms
-[00:19:03.388] Server  LOG      ✓ Compiled in 34ms
-[00:19:07.650] Server  LOG      ✓ Compiled in 56ms
+[00:18:13.208] Server  LOG      ✓ Compiled in 54ms
