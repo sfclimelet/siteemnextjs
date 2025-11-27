@@ -1,0 +1,154 @@
+/* [project]/styles/carrossel/home/CarrosselHome.scss.css [app-client] (css) */
+.CarrosselHome {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.CarrosselHome .carousel-inner {
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+#IMGFUNDO {
+  object-fit: cover;
+  filter: brightness(.35);
+  width: 100%;
+  height: 320px;
+  transition: filter .3s;
+}
+
+.CarrosselHome .carousel-item.active #IMGFUNDO {
+  filter: brightness(.45);
+}
+
+.overlay-gradient {
+  z-index: 2;
+  background: linear-gradient(#0000001a, #0000008c);
+  position: absolute;
+  inset: 0;
+}
+
+.CarrosselHome .carousel-caption.custom-caption {
+  z-index: 3;
+  text-align: center;
+  padding: 0 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CarrosselHome .Title {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.CarrosselHome .Descricao {
+  color: #eaeaea;
+  opacity: .95;
+  width: 80%;
+  margin: .25rem auto 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.CarrosselHome .carousel-indicators {
+  gap: 8px;
+  margin-bottom: -.5rem;
+}
+
+.CarrosselHome .carousel-indicators [data-bs-target] {
+  background-color: #fff6;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: all .25s;
+}
+
+.CarrosselHome .carousel-indicators .active {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 8px #fff;
+}
+
+.CarrosselHome .carousel-control-prev, .CarrosselHome .carousel-control-next {
+  width: 50px;
+  transition: opacity .25s;
+}
+
+.CarrosselHome .carousel-control-prev-icon, .CarrosselHome .carousel-control-next-icon {
+  filter: drop-shadow(0 0 5px #000000b3);
+  background-size: 85%;
+}
+
+.CarrosselHome .carousel-control-prev:hover, .CarrosselHome .carousel-control-next:hover {
+  opacity: .9;
+}
+
+.CarrosselHome .carousel-control-prev, .CarrosselHome .carousel-control-next {
+  background: none !important;
+}
+
+.CarrosselHome .carousel-control-prev:focus, .CarrosselHome .carousel-control-next:focus {
+  box-shadow: none !important;
+}
+
+.tema-climatizacao .carousel-control-prev, .tema-climatizacao .carousel-control-next {
+  transition: all .25s;
+  background: #3a89ff26 !important;
+  border-color: #3a89ff73 !important;
+  box-shadow: 0 0 10px #3a89ff59 !important;
+}
+
+.tema-climatizacao .carousel-control-prev:hover, .tema-climatizacao .carousel-control-next:hover {
+  background: #3a89ff40 !important;
+  transform: scale(1.07) !important;
+  box-shadow: 0 0 16px #3a89ff8c !important;
+}
+
+.tema-eletrica .carousel-control-prev, .tema-eletrica .carousel-control-next {
+  transition: all .25s;
+  background: #ffe60326 !important;
+  border-color: #ffe60373 !important;
+  box-shadow: 0 0 10px #ffe60359 !important;
+}
+
+.tema-eletrica .carousel-control-prev:hover, .tema-eletrica .carousel-control-next:hover {
+  background: #ffe60340 !important;
+  transform: scale(1.07) !important;
+  box-shadow: 0 0 16px #ffe6038c !important;
+}
+
+.tema-eletronica .carousel-control-prev, .tema-eletronica .carousel-control-next {
+  transition: all .25s;
+  background: #08a11526 !important;
+  border-color: #08a11573 !important;
+  box-shadow: 0 0 10px #08a11559 !important;
+}
+
+.tema-eletronica .carousel-control-prev:hover, .tema-eletronica .carousel-control-next:hover {
+  background: #08a11540 !important;
+  transform: scale(1.07) !important;
+  box-shadow: 0 0 16px #08a1158c !important;
+}
+
+.tema-refrigeracao .carousel-control-prev, .tema-refrigeracao .carousel-control-next {
+  transition: all .25s;
+  background: #04e2ff26 !important;
+  border-color: #04e2ff73 !important;
+  box-shadow: 0 0 10px #04e2ff59 !important;
+}
+
+.tema-refrigeracao .carousel-control-prev:hover, .tema-refrigeracao .carousel-control-next:hover {
+  background: #04e2ff40 !important;
+  transform: scale(1.07) !important;
+  box-shadow: 0 0 16px #04e2ff8c !important;
+}
+
+/*# sourceMappingURL=styles_carrossel_home_CarrosselHome_scss_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,28 @@
+@mixin BTN-PREV-NEXT($cor) {
+  #{$CRRSL-BTN-PREV},
+  #{$CRRSL-BTN-NEXT} {
+    border-color: rgba($cor, .45) !important;
+    background: rgba($cor, .15) !important;
+    box-shadow: 0 0 10px rgba($cor, .35) !important;
+    transition: .25s ease;
+
+    &:hover {
+      background: rgba($cor, .25) !important;
+      box-shadow: 0 0 16px rgba($cor, .55) !important;
+      transform: scale(1.07) !important;
+    }
+  }
+}
+
+$TEMAS-CARROSSEL: (
+  $TEMA-CLIMATIZACAO: $COR-CLIM,
+  $TEMA-ELETRICA: $COR-ELETRIC,
+  $TEMA-ELETRONICA: $COR-ELETRONICA,
+  $TEMA-REFRIGERACAO: $COR-REFRI
+);
+
+@each $tema, $cor in $TEMAS-CARROSSEL {
+  #{$tema} {
+    @include BTN-PREV-NEXT($cor);
+  }
+}

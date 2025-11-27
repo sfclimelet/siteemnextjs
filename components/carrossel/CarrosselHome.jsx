@@ -92,7 +92,7 @@ export default function CarrosselHome() {
 
           {/* CONTROLES */}
           <button
-            className="carousel-control-prev"
+            className="carousel-control-prev tema-${item.tema}"
             type="button"
             data-bs-target="#carouselHome"
             data-bs-slide="prev"
@@ -101,7 +101,7 @@ export default function CarrosselHome() {
           </button>
 
           <button
-            className="carousel-control-next"
+            className="carousel-control-next tema-${item.tema}"
             type="button"
             data-bs-target="#carouselHome"
             data-bs-slide="next"
