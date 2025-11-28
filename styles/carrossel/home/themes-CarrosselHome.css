@@ -213,4 +213,97 @@
   100% {
     text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
   }
+}
+
+/* BOTOES - (explorar e saiba mais) */
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais {
+  background-color: rgba(58, 137, 255, 0.32);
+  border: 1px solid rgba(58, 137, 255, 0.55);
+  color: #fff;
+  animation: botaoPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(58, 137, 255, 0.55) 0 0 12px rgba(58, 137, 255, 0.35) 0 0 18px rgba(58, 137, 255, 0.25);
+}
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px rgba(58, 137, 255, 0.8) 0 0 12px rgba(58, 137, 255, 0.6) 0 0 18px rgba(58, 137, 255, 0.48);
+}
+@keyframes botaoPulse {
+  0% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 12px currentColor, 0 0 22px currentColor, 0 0 32px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+}
+
+#carouselHome[data-tema=eletrica] .botao-saiba-mais {
+  background-color: rgba(255, 230, 3, 0.32);
+  border: 1px solid rgba(255, 230, 3, 0.55);
+  color: #fff;
+  animation: botaoPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.55) 0 0 12px rgba(255, 230, 3, 0.35) 0 0 18px rgba(255, 230, 3, 0.25);
+}
+#carouselHome[data-tema=eletrica] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.8) 0 0 12px rgba(255, 230, 3, 0.6) 0 0 18px rgba(255, 230, 3, 0.48);
+}
+@keyframes botaoPulse {
+  0% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 12px currentColor, 0 0 22px currentColor, 0 0 32px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+}
+
+#carouselHome[data-tema=eletronica] .botao-saiba-mais {
+  background-color: rgba(8, 161, 21, 0.32);
+  border: 1px solid rgba(8, 161, 21, 0.55);
+  color: #fff;
+  animation: botaoPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(8, 161, 21, 0.55) 0 0 12px rgba(8, 161, 21, 0.35) 0 0 18px rgba(8, 161, 21, 0.25);
+}
+#carouselHome[data-tema=eletronica] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px rgba(8, 161, 21, 0.8) 0 0 12px rgba(8, 161, 21, 0.6) 0 0 18px rgba(8, 161, 21, 0.48);
+}
+@keyframes botaoPulse {
+  0% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 12px currentColor, 0 0 22px currentColor, 0 0 32px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
+  background-color: rgba(4, 226, 255, 0.32);
+  border: 1px solid rgba(4, 226, 255, 0.55);
+  color: #fff;
+  animation: botaoPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(4, 226, 255, 0.55) 0 0 12px rgba(4, 226, 255, 0.35) 0 0 18px rgba(4, 226, 255, 0.25);
+}
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px rgba(4, 226, 255, 0.8) 0 0 12px rgba(4, 226, 255, 0.6) 0 0 18px rgba(4, 226, 255, 0.48);
+}
+@keyframes botaoPulse {
+  0% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 12px currentColor, 0 0 22px currentColor, 0 0 32px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px rgba(255, 255, 255, 0.25);
+  }
 }/*# sourceMappingURL=themes-CarrosselHome.css.map */

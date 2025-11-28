@@ -59,6 +59,16 @@
         color: #eaeaea;
         opacity: .95;
     }
+    #{$CAPT-BTN}{
+      padding: 10px 28px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: all .25s ease;
+      color: $COR-WHITE;
+      cursor: pointer;
+    }
   }
 }
 @include CONTEUDO-SLIDE();

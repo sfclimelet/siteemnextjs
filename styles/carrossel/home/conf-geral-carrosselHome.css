@@ -48,6 +48,16 @@
   color: #eaeaea;
   opacity: 0.95;
 }
+.CarrosselHome .botao-saiba-mais {
+  padding: 10px 28px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.25s ease;
+  color: #fff;
+  cursor: pointer;
+}
 
 .CarrosselHome .carousel-indicators [data-bs-target] {
   cursor: pointer;

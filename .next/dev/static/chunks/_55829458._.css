@@ -791,6 +791,17 @@
   line-height: 1.45;
 }
 
+.CarrosselHome .botao-saiba-mais {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 28px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all .25s;
+}
+
 .CarrosselHome .carousel-indicators [data-bs-target] {
   cursor: pointer;
   background-color: #fff6;
@@ -929,6 +940,72 @@
   color: #04e2ff;
   text-shadow: 0 0 6px #04e2ff8c 0 0 12px #04e2ff59 0 0 18px #04e2ff40;
   animation: 2.6s ease-in-out infinite textPulse;
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
+  color: #fff;
+  box-shadow: 0 0 6px #3a89ff8c 0 0 12px #3a89ff59 0 0 18px #3a89ff40;
+  background-color: #3a89ff52;
+  border: 1px solid #3a89ff8c;
+  animation: 2s ease-in-out infinite botaoPulse;
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais:hover {
+  box-shadow: 0 0 6px #3a89ffcc 0 0 12px #3a89ff99 0 0 18px #3a89ff7a;
+  transform: scale(1.04);
+}
+
+@keyframes botaoPulse {
+  0% {
+    box-shadow: 0 0 6px, 0 0 12px, 0 0 18px #ffffff40;
+  }
+
+  50% {
+    box-shadow: 0 0 12px, 0 0 22px, 0 0 32px #ffffff59;
+  }
+
+  100% {
+    box-shadow: 0 0 6px, 0 0 12px, 0 0 18px #ffffff40;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais {
+  color: #fff;
+  box-shadow: 0 0 6px #ffe6038c 0 0 12px #ffe60359 0 0 18px #ffe60340;
+  background-color: #ffe60352;
+  border: 1px solid #ffe6038c;
+  animation: 2s ease-in-out infinite botaoPulse;
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais:hover {
+  box-shadow: 0 0 6px #ffe603cc 0 0 12px #ffe60399 0 0 18px #ffe6037a;
+  transform: scale(1.04);
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais {
+  color: #fff;
+  box-shadow: 0 0 6px #08a1158c 0 0 12px #08a11559 0 0 18px #08a11540;
+  background-color: #08a11552;
+  border: 1px solid #08a1158c;
+  animation: 2s ease-in-out infinite botaoPulse;
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais:hover {
+  box-shadow: 0 0 6px #08a115cc 0 0 12px #08a11599 0 0 18px #08a1157a;
+  transform: scale(1.04);
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
+  color: #fff;
+  box-shadow: 0 0 6px #04e2ff8c 0 0 12px #04e2ff59 0 0 18px #04e2ff40;
+  background-color: #04e2ff52;
+  border: 1px solid #04e2ff8c;
+  animation: 2s ease-in-out infinite botaoPulse;
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:hover {
+  box-shadow: 0 0 6px #04e2ffcc 0 0 12px #04e2ff99 0 0 18px #04e2ff7a;
+  transform: scale(1.04);
 }
 
 /* [project]/components/aviso/aviso.scss.css [app-client] (css) */
