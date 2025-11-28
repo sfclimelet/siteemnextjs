@@ -752,13 +752,11 @@
 
 #IMGFUNDO {
   object-fit: cover;
-  filter: brightness(.45);
   width: 100%;
   height: 320px;
-  transition: filter .3s;
 }
 
-.CarrosselHome .carousel-caption.custom-caption {
+.CarrosselHome .carousel-caption {
   z-index: 3;
   text-align: center;
   padding: 0 1rem;
@@ -784,12 +782,8 @@
   line-height: 1.45;
 }
 
-.CarrosselHome .carousel-indicators {
-  gap: 8px;
-  margin-bottom: -.5rem;
-}
-
 .CarrosselHome .carousel-indicators [data-bs-target] {
+  cursor: pointer;
   background-color: #fff6;
   border: none;
   border-radius: 50%;

@@ -4,26 +4,20 @@
   width: 100%;
   padding: 1rem 0;
 }
-
-/* --- Área interna do Bootstrap --- */
 .CarrosselHome .carousel-inner {
   border-radius: 18px;
   overflow: hidden;
   position: relative;
 }
 
-/* --- Imagem base --- */
 #IMGFUNDO {
   width: 100%;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: filter 0.3s ease;
-  filter: brightness(0.45);
 }
 
-/* --- Caption (conteúdo do slide) --- */
-.CarrosselHome .carousel-caption.custom-caption {
+.CarrosselHome .carousel-caption {
   z-index: 3;
   position: absolute;
   top: 50%;
@@ -33,14 +27,11 @@
   padding: 0 1rem;
 }
 
-/* --- Títulos do slide --- */
 .CarrosselHome .Title {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
-/* --- Descrição --- */
 .CarrosselHome .Descricao {
   width: 80%;
   margin: 0.25rem auto 1rem auto;
@@ -54,12 +45,17 @@
 /* ================================
    INDICATORS (bolinhas)
    ================================ */
-.CarrosselHome .carousel-indicators {
-  margin-bottom: -0.5rem;
-  gap: 8px;
+.CarrosselHome .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.25s ease;
 }
 
 .CarrosselHome .carousel-indicators [data-bs-target] {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0.4);

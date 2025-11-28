@@ -6,38 +6,20 @@
   width: 100%;
   padding: 1rem 0;
 }
-
-/* --- Área interna do Bootstrap --- */
 .CarrosselHome .carousel-inner {
   border-radius: 18px;
   overflow: hidden;
   position: relative;
 }
 
-/* --- Imagem base --- */
 #IMGFUNDO {
   width: 100%;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.35);
-  transition: filter 0.3s ease;
 }
 
-.CarrosselHome .carousel-item.active #IMGFUNDO {
-  filter: brightness(0.45);
-}
-
-/* --- Gradiente (se existir) --- */
-.overlay-gradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55));
-  z-index: 2;
-}
-
-/* --- Caption (conteúdo do slide) --- */
-.CarrosselHome .carousel-caption.custom-caption {
+.CarrosselHome .carousel-caption {
   z-index: 3;
   position: absolute;
   top: 50%;
@@ -47,14 +29,11 @@
   padding: 0 1rem;
 }
 
-/* --- Títulos do slide --- */
 .CarrosselHome .Title {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
-/* --- Descrição --- */
 .CarrosselHome .Descricao {
   width: 80%;
   margin: 0.25rem auto 1rem auto;
@@ -68,11 +47,6 @@
 /* ================================
    INDICATORS (bolinhas)
    ================================ */
-.CarrosselHome .carousel-indicators {
-  margin-bottom: -0.5rem;
-  gap: 8px;
-}
-
 .CarrosselHome .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
@@ -123,87 +97,35 @@
 }
 
 /* TEMAS */
-/* MAPA DE TEMAS DINÂMICO */
-/* MIXIN — GLOW EM FORMATO DE BOLINHA ATRÁS DO ÍCONE */
-/* APLICAÇÃO DOS TEMAS */
-#carouselHome[data-tema=climatizacao] {
-  /* ÍCONES DE NAVEGAÇÃO */
-}
+/* === CORES POR TEMA === */
+/* === MIXIN DO GLOW INTENSO APENAS NO ÍCONE === */
+/* === APLICA AO ÍCONE PREV/NEXT DE ACORDO COM O TEMA === */
 #carouselHome[data-tema=climatizacao] .icon-prev,
 #carouselHome[data-tema=climatizacao] .icon-next {
-  position: relative;
-  color: #3a89ff;
-  stroke: #3a89ff;
-}
-#carouselHome[data-tema=climatizacao] .icon-prev::before,
-#carouselHome[data-tema=climatizacao] .icon-next::before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  background: rgba(58, 137, 255, 0.7);
-  border-radius: 50%;
-  filter: blur(12px);
-  z-index: -1;
+  stroke: #3a89ff; /* cor da seta */
+  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px rgba(58, 137, 255, 0.9)) drop-shadow(0 0 12px rgba(58, 137, 255, 0.85)) drop-shadow(0 0 18px rgba(58, 137, 255, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=eletrica] {
-  /* ÍCONES DE NAVEGAÇÃO */
-}
 #carouselHome[data-tema=eletrica] .icon-prev,
 #carouselHome[data-tema=eletrica] .icon-next {
-  position: relative;
-  color: #ffe603;
-  stroke: #ffe603;
-}
-#carouselHome[data-tema=eletrica] .icon-prev::before,
-#carouselHome[data-tema=eletrica] .icon-next::before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  background: rgba(255, 230, 3, 0.7);
-  border-radius: 50%;
-  filter: blur(12px);
-  z-index: -1;
+  stroke: #ffe603; /* cor da seta */
+  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px rgba(255, 230, 3, 0.9)) drop-shadow(0 0 12px rgba(255, 230, 3, 0.85)) drop-shadow(0 0 18px rgba(255, 230, 3, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=eletronica] {
-  /* ÍCONES DE NAVEGAÇÃO */
-}
 #carouselHome[data-tema=eletronica] .icon-prev,
 #carouselHome[data-tema=eletronica] .icon-next {
-  position: relative;
-  color: #08a115;
-  stroke: #08a115;
-}
-#carouselHome[data-tema=eletronica] .icon-prev::before,
-#carouselHome[data-tema=eletronica] .icon-next::before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  background: rgba(8, 161, 21, 0.7);
-  border-radius: 50%;
-  filter: blur(12px);
-  z-index: -1;
+  stroke: #08a115; /* cor da seta */
+  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px rgba(8, 161, 21, 0.9)) drop-shadow(0 0 12px rgba(8, 161, 21, 0.85)) drop-shadow(0 0 18px rgba(8, 161, 21, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=refrigeracao] {
-  /* ÍCONES DE NAVEGAÇÃO */
-}
 #carouselHome[data-tema=refrigeracao] .icon-prev,
 #carouselHome[data-tema=refrigeracao] .icon-next {
-  position: relative;
-  color: #04e2ff;
-  stroke: #04e2ff;
-}
-#carouselHome[data-tema=refrigeracao] .icon-prev::before,
-#carouselHome[data-tema=refrigeracao] .icon-next::before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  background: rgba(4, 226, 255, 0.7);
-  border-radius: 50%;
-  filter: blur(12px);
-  z-index: -1;
+  stroke: #04e2ff; /* cor da seta */
+  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px rgba(4, 226, 255, 0.9)) drop-shadow(0 0 12px rgba(4, 226, 255, 0.85)) drop-shadow(0 0 18px rgba(4, 226, 255, 0.8));
+  /* glow intenso */
 }
 
 /* MOBILES */

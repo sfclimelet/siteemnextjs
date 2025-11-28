@@ -53,7 +53,7 @@ export default function CarrosselHome() {
         fechar={() => setMostrarAviso(false)}
       />
 
-      <div className="CarrosselHome container px-3">
+      <div className="CarrosselHome container">
         <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
 
           {/* INDICADORES */}
