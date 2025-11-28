@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* VARS E CORES */
+/* VARS E CORES - dentro do arquivo Globals */
 /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
 .CarrosselHome {
   position: relative;
@@ -123,6 +123,30 @@
 }
 
 /* TEMAS */
+#carouselHome[data-tema=climatizacao] .carousel-control-prev-icon,
+#carouselHome[data-tema=climatizacao] .carousel-control-next-icon {
+  filter: drop-shadow(0 0 8px #3a89ff) drop-shadow(0 0 16px #3a89ff);
+  opacity: 1;
+}
+
+#carouselHome[data-tema=eletrica] .carousel-control-prev-icon,
+#carouselHome[data-tema=eletrica] .carousel-control-next-icon {
+  filter: drop-shadow(0 0 8px #ffe603) drop-shadow(0 0 16px #ffe603);
+  opacity: 1;
+}
+
+#carouselHome[data-tema=eletronica] .carousel-control-prev-icon,
+#carouselHome[data-tema=eletronica] .carousel-control-next-icon {
+  filter: drop-shadow(0 0 8px #08a115) drop-shadow(0 0 16px #08a115);
+  opacity: 1;
+}
+
+#carouselHome[data-tema=refrigeracao] .carousel-control-prev-icon,
+#carouselHome[data-tema=refrigeracao] .carousel-control-next-icon {
+  filter: drop-shadow(0 0 8px #04e2ff) drop-shadow(0 0 16px #04e2ff);
+  opacity: 1;
+}
+
 /* MOBILES */
 /* TABLETS */
 /* DESKTOPS *//*# sourceMappingURL=CarrosselHome.css.map */

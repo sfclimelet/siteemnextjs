@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-// Importe SCSS 
 import "../../styles/carrossel/home/CarrosselHome.scss";
 import "../aviso/aviso.scss";
 
 import { carrosselHomeData } from "./cardsCarrosselHomeData";
 import Aviso from "../aviso/Aviso";
-
 
 export default function CarrosselHome() {
   const router = useRouter();
@@ -23,11 +21,27 @@ export default function CarrosselHome() {
 
     if (item.rota) {
       router.push(item.rota);
-      return;
     }
-
-    console.warn(`Slide "${item.title}" sem rota definida.`);
   };
+
+  /* === ATUALIZA TEMA DO CARROSSEL PARA O SCSS PEGAR === */
+  useEffect(() => {
+    const carrossel = document.getElementById("carouselHome");
+
+    const updateTheme = () => {
+      const ativo = carrossel.querySelector(".carousel-item.active");
+      const tema = ativo?.dataset.tema ?? "climatizacao";
+      carrossel.setAttribute("data-tema", tema);
+    };
+
+    updateTheme();
+
+    carrossel.addEventListener("slid.bs.carousel", updateTheme);
+
+    return () => {
+      carrossel.removeEventListener("slid.bs.carousel", updateTheme);
+    };
+  }, []);
 
   return (
     <>
@@ -37,9 +51,7 @@ export default function CarrosselHome() {
         fechar={() => setMostrarAviso(false)}
       />
 
-      {/* CONTAINER CENTRALIZADO */}
       <div className="CarrosselHome container px-3">
-
         <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
 
           {/* INDICADORES */}
@@ -60,52 +72,31 @@ export default function CarrosselHome() {
             {carrosselHomeData.map((item, index) => (
               <div
                 key={item.id}
+                data-tema={item.tema}
                 className={`carousel-item tema-${item.tema} ${index === 0 ? "active" : ""}`}
               >
-                <img
-                  id="IMGFUNDO"
-                  src={item.image}
-                  className="d-block"
-                  alt={item.title}
-                />
+                <img id="IMGFUNDO" src={item.image} className="d-block" alt={item.title} />
 
-                {/* CAPTION */}
                 <div className="carousel-caption custom-caption">
-
                   {item.icon && <item.icon className="icone-slide" />}
 
                   <h2 className="Title">{item.title}</h2>
-
                   <p className="Descricao">{item.desc}</p>
 
-                  <button
-                    className="botao-saiba-mais"
-                    onClick={() => handlerClick(item)}
-                  >
+                  <button className="botao-saiba-mais" onClick={() => handlerClick(item)}>
                     {item.buttonLabel}
                   </button>
-
                 </div>
               </div>
             ))}
           </div>
 
           {/* CONTROLES */}
-          <button
-            className="carousel-control-prev tema-${item.tema}"
-            type="button"
-            data-bs-target="#carouselHome"
-            data-bs-slide="prev"
-          >
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
             <span className="carousel-control-prev-icon"></span>
           </button>
 
-          <button
-            className="carousel-control-next tema-${item.tema}"
-            type="button"
-            data-bs-target="#carouselHome"
-            data-bs-slide="next"
-          >
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
             <span className="carousel-control-next-icon"></span>
           </button>
 

@@ -1,0 +1,24 @@
+@use "./globals" as *;
+$temas: (
+  "climatizacao": $COR-CLIM,
+  "eletrica": $COR-ELETRIC,
+  "eletronica": $COR-ELETRONICA,
+  "refrigeracao": $COR-REFRI
+);
+
+@mixin seta-glow($cor) {
+  filter:
+    drop-shadow(0 0 4px $cor)
+    drop-shadow(0 0 10px $cor)
+    drop-shadow(0 0 12px $cor);
+  opacity: 1;
+}
+
+@each $tema, $cor in $temas {
+  #carouselHome[data-tema="#{$tema}"] {
+    #{$CTRL-PREV-I},
+    #{$CTRL-NEXT-I} {
+      @include seta-glow($cor);
+    }
+  }
+}
