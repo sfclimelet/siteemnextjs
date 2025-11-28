@@ -944,68 +944,124 @@
 
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
   color: #fff;
-  box-shadow: 0 0 6px #3a89ff8c 0 0 12px #3a89ff59 0 0 18px #3a89ff40;
   background-color: #3a89ff52;
   border: 1px solid #3a89ff8c;
   animation: 2s ease-in-out infinite botaoPulse;
+  box-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
 }
 
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais:hover {
-  box-shadow: 0 0 6px #3a89ffcc 0 0 12px #3a89ff99 0 0 18px #3a89ff7a;
   transform: scale(1.04);
+  box-shadow: 0 0 6px #3a89ffcc, 0 0 12px #3a89ff99, 0 0 18px #3a89ff7a;
 }
 
 @keyframes botaoPulse {
   0% {
-    box-shadow: 0 0 6px, 0 0 12px, 0 0 18px #ffffff40;
+    box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
   }
 
   50% {
-    box-shadow: 0 0 12px, 0 0 22px, 0 0 32px #ffffff59;
+    box-shadow: 0 0 12px #04e2ffbf, 0 0 22px #04e2ff8c, 0 0 32px #04e2ff66;
   }
 
   100% {
-    box-shadow: 0 0 6px, 0 0 12px, 0 0 18px #ffffff40;
+    box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
   }
 }
 
 #carouselHome[data-tema="eletrica"] .botao-saiba-mais {
   color: #fff;
-  box-shadow: 0 0 6px #ffe6038c 0 0 12px #ffe60359 0 0 18px #ffe60340;
   background-color: #ffe60352;
   border: 1px solid #ffe6038c;
   animation: 2s ease-in-out infinite botaoPulse;
+  box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
 }
 
 #carouselHome[data-tema="eletrica"] .botao-saiba-mais:hover {
-  box-shadow: 0 0 6px #ffe603cc 0 0 12px #ffe60399 0 0 18px #ffe6037a;
   transform: scale(1.04);
+  box-shadow: 0 0 6px #ffe603cc, 0 0 12px #ffe60399, 0 0 18px #ffe6037a;
 }
 
 #carouselHome[data-tema="eletronica"] .botao-saiba-mais {
   color: #fff;
-  box-shadow: 0 0 6px #08a1158c 0 0 12px #08a11559 0 0 18px #08a11540;
   background-color: #08a11552;
   border: 1px solid #08a1158c;
   animation: 2s ease-in-out infinite botaoPulse;
+  box-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
 }
 
 #carouselHome[data-tema="eletronica"] .botao-saiba-mais:hover {
-  box-shadow: 0 0 6px #08a115cc 0 0 12px #08a11599 0 0 18px #08a1157a;
   transform: scale(1.04);
+  box-shadow: 0 0 6px #08a115cc, 0 0 12px #08a11599, 0 0 18px #08a1157a;
 }
 
 #carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
   color: #fff;
-  box-shadow: 0 0 6px #04e2ff8c 0 0 12px #04e2ff59 0 0 18px #04e2ff40;
   background-color: #04e2ff52;
   border: 1px solid #04e2ff8c;
   animation: 2s ease-in-out infinite botaoPulse;
+  box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
 }
 
 #carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:hover {
-  box-shadow: 0 0 6px #04e2ffcc 0 0 12px #04e2ff99 0 0 18px #04e2ff7a;
   transform: scale(1.04);
+  box-shadow: 0 0 6px #04e2ffcc, 0 0 12px #04e2ff99, 0 0 18px #04e2ff7a;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button {
+  background-color: #3a89ff47;
+  border: 1px solid #3a89ff73;
+  transition: all .4s;
+  box-shadow: 0 0 6px #3a89ff80;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
+  background-color: #3a89ff;
+  border-color: #3a89ff;
+  transform: scale(1.18);
+  box-shadow: 0 0 12px #3a89ffe6, 0 0 20px #3a89ff99;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button {
+  background-color: #ffe60347;
+  border: 1px solid #ffe60373;
+  transition: all .4s;
+  box-shadow: 0 0 6px #ffe60380;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active {
+  background-color: #ffe603;
+  border-color: #ffe603;
+  transform: scale(1.18);
+  box-shadow: 0 0 12px #ffe603e6, 0 0 20px #ffe60399;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button {
+  background-color: #08a11547;
+  border: 1px solid #08a11573;
+  transition: all .4s;
+  box-shadow: 0 0 6px #08a11580;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active {
+  background-color: #08a115;
+  border-color: #08a115;
+  transform: scale(1.18);
+  box-shadow: 0 0 12px #08a115e6, 0 0 20px #08a11599;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button {
+  background-color: #04e2ff47;
+  border: 1px solid #04e2ff73;
+  transition: all .4s;
+  box-shadow: 0 0 6px #04e2ff80;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
+  background-color: #04e2ff;
+  border-color: #04e2ff;
+  transform: scale(1.18);
+  box-shadow: 0 0 12px #04e2ffe6, 0 0 20px #04e2ff99;
 }
 
 /* [project]/components/aviso/aviso.scss.css [app-client] (css) */

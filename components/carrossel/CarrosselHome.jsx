@@ -85,7 +85,7 @@ export default function CarrosselHome() {
                   <h2 className="Title">{item.title}</h2>
                   <p className="Descricao">{item.desc}</p>
 
-                  <button className="botao-saiba-mais" onClick={() => handlerClick(item)}>
+                  <button type="button" className="botao-saiba-mais" onClick={() => handlerClick(item)}>
                     {item.buttonLabel}
                   </button>
                 </div>

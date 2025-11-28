@@ -51,3 +51,20 @@ $temas: (
     }
   }
 }
+
+/* INDICADORES - (bolinhas em embaixo do button explorar ou saiba mais) */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"]{
+    #{$INDICADORES} button{
+      background-color: rgba($cor, .28);
+      border: 1px solid rgba($cor, .45);
+      @include Glow-Animation-Suave($cor);
+      transition: all 0.4s ease;
+    }
+    #{$INDICADORES} button#{$CLASS-ACTIVE}{
+      background-color: $cor;
+      border-color: $cor;
+      @include Glow-Animation-S-Active($cor);
+    }
+  }
+}
