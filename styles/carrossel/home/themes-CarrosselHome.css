@@ -1,23 +1,31 @@
-#carouselHome[data-tema=climatizacao] .carousel-control-prev-icon,
-#carouselHome[data-tema=climatizacao] .carousel-control-next-icon {
-  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 10px #3a89ff) drop-shadow(0 0 12px #3a89ff);
-  opacity: 1;
+@charset "UTF-8";
+/* === CORES POR TEMA === */
+/* === MIXIN DO GLOW INTENSO APENAS NO ÍCONE === */
+/* === APLICA AO ÍCONE PREV/NEXT DE ACORDO COM O TEMA === */
+#carouselHome[data-tema=climatizacao] .icon-prev,
+#carouselHome[data-tema=climatizacao] .icon-next {
+  stroke: #3a89ff; /* cor da seta */
+  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px rgba(58, 137, 255, 0.9)) drop-shadow(0 0 12px rgba(58, 137, 255, 0.85)) drop-shadow(0 0 18px rgba(58, 137, 255, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=eletrica] .carousel-control-prev-icon,
-#carouselHome[data-tema=eletrica] .carousel-control-next-icon {
-  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 10px #ffe603) drop-shadow(0 0 12px #ffe603);
-  opacity: 1;
+#carouselHome[data-tema=eletrica] .icon-prev,
+#carouselHome[data-tema=eletrica] .icon-next {
+  stroke: #ffe603; /* cor da seta */
+  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px rgba(255, 230, 3, 0.9)) drop-shadow(0 0 12px rgba(255, 230, 3, 0.85)) drop-shadow(0 0 18px rgba(255, 230, 3, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=eletronica] .carousel-control-prev-icon,
-#carouselHome[data-tema=eletronica] .carousel-control-next-icon {
-  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 10px #08a115) drop-shadow(0 0 12px #08a115);
-  opacity: 1;
+#carouselHome[data-tema=eletronica] .icon-prev,
+#carouselHome[data-tema=eletronica] .icon-next {
+  stroke: #08a115; /* cor da seta */
+  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px rgba(8, 161, 21, 0.9)) drop-shadow(0 0 12px rgba(8, 161, 21, 0.85)) drop-shadow(0 0 18px rgba(8, 161, 21, 0.8));
+  /* glow intenso */
 }
 
-#carouselHome[data-tema=refrigeracao] .carousel-control-prev-icon,
-#carouselHome[data-tema=refrigeracao] .carousel-control-next-icon {
-  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 10px #04e2ff) drop-shadow(0 0 12px #04e2ff);
-  opacity: 1;
+#carouselHome[data-tema=refrigeracao] .icon-prev,
+#carouselHome[data-tema=refrigeracao] .icon-next {
+  stroke: #04e2ff; /* cor da seta */
+  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px rgba(4, 226, 255, 0.9)) drop-shadow(0 0 12px rgba(4, 226, 255, 0.85)) drop-shadow(0 0 18px rgba(4, 226, 255, 0.8));
+  /* glow intenso */
 }/*# sourceMappingURL=themes-CarrosselHome.css.map */

@@ -6909,3 +6909,538 @@ Caused by: Error: expected "{".
     [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
     [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
     [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:57:01.867] Server  LOG      ✓ Compiled in 6ms
+[02:57:04.665] Server  LOG      ✓ Compiled in 7ms
+[02:57:05.036] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:14:1
+Parsing ecmascript source code failed
+  12 | import 
+  13 |
+> 14 | export default function CarrosselHome() {
+     | ^^^^^^
+  15 |   const router = useRouter();
+  16 |   const [mostraAviso, setMostrarAviso] = useState(false);
+  17 |
+
+Expected 'from', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:57:10.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:14:1
+Parsing ecmascript source code failed
+  12 | import { che }
+  13 |
+> 14 | export default function CarrosselHome() {
+     | ^^^^^^
+  15 |   const router = useRouter();
+  16 |   const [mostraAviso, setMostrarAviso] = useState(false);
+  17 |
+
+Expected 'from', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:57:11.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:14:1
+Parsing ecmascript source code failed
+  12 | import {  }
+  13 |
+> 14 | export default function CarrosselHome() {
+     | ^^^^^^
+  15 |   const router = useRouter();
+  16 |   const [mostraAviso, setMostrarAviso] = useState(false);
+  17 |
+
+Expected 'from', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:57:26.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Che }
+  13 |
+> 14 | export default function CarrosselHome() {
+     | ^^^^^^
+  15 |   const router = useRouter();
+  16 |   const [mostraAviso, setMostrarAviso] = useState(false);
+  17 |
+
+Expected 'from', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:57:34.036] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Chev }
+  13 |
+> 14 | export default function CarrosselHome() {
+     | ^^^^^^
+  15 |   const router = useRouter();
+  16 |   const [mostraAviso, setMostrarAviso] = useState(false);
+  17 |
+
+Expected 'from', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:57:48.260] Server  LOG      ✓ Compiled in 8ms
+[02:57:49.036] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:12:22
+Parsing ecmascript source code failed
+  10 | import Aviso from "../aviso/Aviso";
+  11 |
+> 12 | import { ChevronLeft Che } from "lucide-react";
+     |                      ^^^
+  13 |
+  14 | export default function CarrosselHome() {
+  15 |   const router = useRouter();
+
+Expected ',', got 'Che'
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:58:48.104] Server  LOG      ✓ Compiled in 8ms
+[02:58:49.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:99:11
+Parsing ecmascript source code failed
+   97 |           <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+   98 |             <Che
+>  99 |           </button>
+      |           ^
+  100 |
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <span className="carousel-control-next-icon"></span>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:58:49.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:99:12
+Parsing ecmascript source code failed
+   97 |           <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+   98 |             <Che
+>  99 |           </button>
+      |            ^^^^^^^^
+  100 |
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <span className="carousel-control-next-icon"></span>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:58:50.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:99:11
+Parsing ecmascript source code failed
+   97 |           <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+   98 |             <ChevronLeft
+>  99 |           </button>
+      |           ^
+  100 |
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <span className="carousel-control-next-icon"></span>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:58:50.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:99:12
+Parsing ecmascript source code failed
+   97 |           <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+   98 |             <ChevronLeft
+>  99 |           </button>
+      |            ^^^^^^^^
+  100 |
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <span className="carousel-control-next-icon"></span>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:58:58.773] Server  LOG      ✓ Compiled in 5ms
+[02:58:59.035] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. C c
+[02:59:01.531] Server  LOG      ✓ Compiled in 5ms
+[02:59:06.252] Server  LOG      ✓ Compiled in 5ms
+[02:59:10.271] Server  LOG      ✓ Compiled in 5ms
+[02:59:13.537] Server  LOG      ✓ Compiled in 4ms
+[02:59:22.748] Server  LOG      ✓ Compiled in 9ms
+[02:59:23.036] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:103:11
+Parsing ecmascript source code failed
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <Chec
+> 103 |           </button>
+      |           ^
+  104 |
+  105 |         </div>
+  106 |       </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:59:23.036] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:103:12
+Parsing ecmascript source code failed
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <Chec
+> 103 |           </button>
+      |            ^^^^^^^^
+  104 |
+  105 |         </div>
+  106 |       </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:59:31.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:103:11
+Parsing ecmascript source code failed
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <Chevron
+> 103 |           </button>
+      |           ^
+  104 |
+  105 |         </div>
+  106 |       </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:59:31.035] Browser ERROR   ./components/carrossel/CarrosselHome.jsx:103:12
+Parsing ecmascript source code failed
+  101 |           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+  102 |             <Chevron
+> 103 |           </button>
+      |            ^^^^^^^^
+  104 |
+  105 |         </div>
+  106 |       </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/carrossel/CarrosselHome.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/carrossel/CarrosselHome.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[02:59:37.285] Server  LOG      ✓ Compiled in 5ms
+[02:59:41.716] Server  LOG      ✓ Compiled in 5ms
+[02:59:43.400] Server  LOG      ✓ Compiled in 6ms
+[02:59:45.503] Server  LOG      ✓ Compiled in 5ms
+[03:02:37.503] Server  LOG      ✓ Compiled in 33ms
+[03:05:09.034] Server  LOG      ✓ Compiled in 28ms
+[03:05:12.645] Server  LOG      ✓ Compiled in 27ms
+[03:05:16.337] Server  LOG      ✓ Compiled in 30ms
+[03:05:25.872] Server  LOG      ✓ Compiled in 34ms
+[03:05:42.062] Server  LOG      ✓ Compiled in 34ms
+[03:05:43.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+17 │           drop-shadow(0 0 36px rgba($cor, .85));
+   │                                                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 17:48  @use
+  styles/carrossel/home/CarrosselHome.scss 8:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+17 │           drop-shadow(0 0 36px rgba($cor, .85));
+   │                                                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 17:48  @use
+  styles/carrossel/home/CarrosselHome.scss 8:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[03:05:58.077] Server  LOG      ✓ Compiled in 51ms
+[03:06:41.457] Server  LOG      ✓ Compiled in 31ms
+[03:06:44.678] Server  LOG      ✓ Compiled in 28ms
+[03:06:47.186] Server  LOG      ✓ Compiled in 29ms
+[03:06:50.289] Server  LOG      ✓ Compiled in 27ms
+[03:07:40.039] Server  LOG      ✓ Compiled in 29ms
+[03:07:59.730] Server  LOG      ✓ Compiled in 29ms
+[03:08:11.262] Server  LOG      ✓ Compiled in 26ms
+[03:08:18.944] Server  LOG      ✓ Compiled in 28ms
+[03:08:24.933] Server  LOG      ✓ Compiled in 31ms
+[03:08:29.895] Server  LOG      ✓ Compiled in 30ms
+[03:08:38.944] Server  LOG      ✓ Compiled in 24ms
+[03:08:40.548] Server  LOG      ✓ Compiled in 27ms
+[03:08:46.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:12:08.423] Server  LOG      ✓ Compiled in 28ms
+[03:12:14.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:12:29.311] Server  LOG      ✓ Compiled in 37ms
+[03:17:35.331] Server  LOG      ✓ Compiled in 23ms
+[03:17:48.189] Server  LOG      ✓ Compiled in 31ms
+[03:28:13.405] Server  LOG      ✓ Compiled in 25ms
+[03:28:24.328] Server  LOG      ✓ Compiled in 24ms
+[03:28:26.153] Server  LOG      ✓ Compiled in 34ms
+[03:28:27.772] Server  LOG      ✓ Compiled in 24ms
+[03:30:26.498] Server  LOG      ✓ Compiled in 25ms
+[03:30:35.239] Server  LOG      ✓ Compiled in 30ms
+[03:30:40.113] Server  LOG      ✓ Compiled in 27ms
+[03:34:47.898] Server  LOG      ✓ Compiled in 22ms
+[03:36:10.850] Server  LOG      ✓ Compiled in 21ms
+[03:36:20.518] Server  LOG      ✓ Compiled in 21ms
+[03:36:29.495] Server  LOG      ✓ Compiled in 20ms
+[03:36:36.145] Server  LOG      ✓ Compiled in 24ms
+[03:36:42.863] Server  LOG      ✓ Compiled in 26ms
+[03:36:50.717] Server  LOG      ✓ Compiled in 25ms
+[03:37:01.945] Server  LOG      ✓ Compiled in 33ms
+[03:38:14.224] Server  LOG      ✓ Compiled in 25ms
+[03:38:25.361] Server  LOG      ✓ Compiled in 21ms
+[03:38:35.445] Server  LOG      ✓ Compiled in 21ms
+[03:38:44.362] Server  LOG      ✓ Compiled in 35ms
+[03:39:53.451] Server  LOG      ✓ Compiled in 29ms
+[03:40:13.880] Server  LOG      ✓ Compiled in 19ms
+[03:40:21.796] Server  LOG      ✓ Compiled in 26ms
+[03:40:23.505] Server  LOG      ✓ Compiled in 50ms
+[03:43:55.605] Server  LOG      ✓ Compiled in 33ms
+[03:43:56.035] Browser ERROR   uncaughtError: ReferenceError: ChevronLeft is not defined
+[03:43:57.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:43:57.908] Server  LOG      ✓ Compiled in 22ms
+[03:43:58.007] Server  ERROR    ⨯ ReferenceError: ChevronLeft is not defined
+[03:43:58.129] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:43:59.036] Browser ERROR   uncaughtError: ReferenceError: ChevronLeft is not defined
+[03:44:05.332] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:44:05.407] Server  LOG      ✓ Compiled in 29ms
+[03:44:05.480] Server  ERROR    ⨯ ReferenceError: ChevronLeft is not defined
+[03:44:05.575] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:06.035] Browser ERROR   uncaughtError: ReferenceError: ChevronLeft is not defined
+[03:44:07.808] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:44:07.887] Server  LOG      ✓ Compiled in 29ms
+[03:44:08.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:51:35.388] Server  LOG      ✓ Compiled in 30ms
+[03:51:36.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+21 │   transition: filter .3s ease;
+   │                              ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 21:30  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+Caused by: Error: expected "{".
+   ╷
+21 │   transition: filter .3s ease;
+   │                              ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 21:30  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[03:51:38.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+21 │   transition: filter .3s ease;
+   │                              ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 21:30  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+Caused by: Error: expected "{".
+   ╷
+21 │   transition: filter .3s ease;
+   │                              ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 21:30  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[03:51:40.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+20 │   background: ;
+   │               ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 20:15  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+20 │   background: ;
+   │               ^
+   ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 20:15  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[03:52:28.194] Server  LOG      ✓ Compiled in 37ms
+[03:52:29.035] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Missing argument $channels.
+  ┌──> styles/carrossel/home/conf-geral-carrosselHome.scss
+20│   background: rgba();
+  │               ^^^^^^ invocation
+  ╵
+  ╷
+1 │ @function rgba($channels) {
+  │           ━━━━━━━━━━━━━━━ declaration
+  ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 20:15  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+Caused by: Error: Missing argument $channels.
+  ┌──> styles/carrossel/home/conf-geral-carrosselHome.scss
+20│   background: rgba();
+  │               ^^^^^^ invocation
+  ╵
+  ╷
+1 │ @function rgba($channels) {
+  │           ━━━━━━━━━━━━━━━ declaration
+  ╵
+  styles/carrossel/home/conf-geral-carrosselHome.scss 20:15  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1               root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__runBuiltInCallable_closure8.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94625:35)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90250:27]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at _awaitOnObject_closure.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38159:32)]
+    [at Object._rootRunUnary (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:5402:18)]
+[03:52:38.491] Server  LOG      ✓ Compiled in 37ms
+[03:52:46.503] Server  LOG      ✓ Compiled in 45ms
+[03:53:26.498] Server  LOG      ✓ Compiled in 26ms
+[03:53:30.587] Server  LOG      ✓ Compiled in 31ms
+[03:53:39.479] Server  LOG      ✓ Compiled in 34ms
+[03:53:45.444] Server  LOG      ✓ Compiled in 38ms
+[03:53:56.553] Server  LOG      ✓ Compiled in 34ms
+[03:54:05.039] Server  LOG      ✓ Compiled in 42ms
+[03:54:09.424] Server  LOG      ✓ Compiled in 49ms

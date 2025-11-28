@@ -9,6 +9,8 @@ import "../aviso/aviso.scss";
 import { carrosselHomeData } from "./cardsCarrosselHomeData";
 import Aviso from "../aviso/Aviso";
 
+import { ChevronsLeft, ChevronsRight } from "lucide-react";
+
 export default function CarrosselHome() {
   const router = useRouter();
   const [mostraAviso, setMostrarAviso] = useState(false);
@@ -93,11 +95,11 @@ export default function CarrosselHome() {
 
           {/* CONTROLES */}
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon"></span>
+            <ChevronsLeft className="icon-prev" />
           </button>
 
           <button className="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-            <span className="carousel-control-next-icon"></span>
+            <ChevronsRight className="icon-next" />
           </button>
 
         </div>
