@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* VARS E CORES - dentro do arquivo Globals */
+/* MIXINS ANIMATIONS */
 /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
 .CarrosselHome {
   position: relative;
@@ -17,6 +18,7 @@
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(0.2);
 }
 
 .CarrosselHome .carousel-caption {
@@ -29,10 +31,17 @@
   padding: 0 1rem;
 }
 
+.CarrosselHome .icone-slide {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 12px;
+  color: var(--tema-cor);
+}
 .CarrosselHome .Title {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 .CarrosselHome .Descricao {
   width: 80%;
@@ -44,10 +53,8 @@
   opacity: 0.95;
 }
 
-/* ================================
-   INDICATORS (bolinhas)
-   ================================ */
 .CarrosselHome .carousel-indicators [data-bs-target] {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -63,69 +70,230 @@
   box-shadow: 0 0 8px #fff;
 }
 
-/* ================================
-   CONTROLES (prev / next)
-   ================================ */
-.CarrosselHome .carousel-control-prev,
-.CarrosselHome .carousel-control-next {
-  width: 50px;
-  transition: opacity 0.25s ease;
-}
-
-.CarrosselHome .carousel-control-prev-icon,
-.CarrosselHome .carousel-control-next-icon {
-  background-size: 85%;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
-}
-
-/* Hover leve */
-.CarrosselHome .carousel-control-prev:hover,
-.CarrosselHome .carousel-control-next:hover {
-  opacity: 0.9;
-}
-
-/* Remove backplate escuro do Bootstrap */
-.CarrosselHome .carousel-control-prev,
-.CarrosselHome .carousel-control-next {
+.CarrosselHome .carousel-control-prev .carousel-control-next {
   background: none !important;
+  width: 50px;
+  transition: opacity 0.3s ease;
 }
-
-/* Remove outline padrão */
-.CarrosselHome .carousel-control-prev:focus,
-.CarrosselHome .carousel-control-next:focus {
+.CarrosselHome .carousel-control-prev .carousel-control-next:focus {
   box-shadow: none !important;
 }
 
 /* TEMAS */
-/* === CORES POR TEMA === */
-/* === MIXIN DO GLOW INTENSO APENAS NO ÍCONE === */
-/* === APLICA AO ÍCONE PREV/NEXT DE ACORDO COM O TEMA === */
-#carouselHome[data-tema=climatizacao] .icon-prev,
-#carouselHome[data-tema=climatizacao] .icon-next {
-  stroke: #3a89ff; /* cor da seta */
-  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px rgba(58, 137, 255, 0.9)) drop-shadow(0 0 12px rgba(58, 137, 255, 0.85)) drop-shadow(0 0 18px rgba(58, 137, 255, 0.8));
-  /* glow intenso */
+/* COLORS POR TEMAS */
+/* ICONES - PREV E NEXT (proximo e anterior) */
+#carouselHome[data-tema=climatizacao] .icon-prev, #carouselHome[data-tema=climatizacao] .icon-next {
+  stroke: #3a89ff;
+  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px rgba(58, 137, 255, 0.9)) drop-shadow(0 0 12px rgba(58, 137, 255, 0.85)) drop-shadow(0 0 4px rgba(58, 137, 255, 0.8));
 }
 
-#carouselHome[data-tema=eletrica] .icon-prev,
-#carouselHome[data-tema=eletrica] .icon-next {
-  stroke: #ffe603; /* cor da seta */
-  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px rgba(255, 230, 3, 0.9)) drop-shadow(0 0 12px rgba(255, 230, 3, 0.85)) drop-shadow(0 0 18px rgba(255, 230, 3, 0.8));
-  /* glow intenso */
+#carouselHome[data-tema=eletrica] .icon-prev, #carouselHome[data-tema=eletrica] .icon-next {
+  stroke: #ffe603;
+  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px rgba(255, 230, 3, 0.9)) drop-shadow(0 0 12px rgba(255, 230, 3, 0.85)) drop-shadow(0 0 4px rgba(255, 230, 3, 0.8));
 }
 
-#carouselHome[data-tema=eletronica] .icon-prev,
-#carouselHome[data-tema=eletronica] .icon-next {
-  stroke: #08a115; /* cor da seta */
-  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px rgba(8, 161, 21, 0.9)) drop-shadow(0 0 12px rgba(8, 161, 21, 0.85)) drop-shadow(0 0 18px rgba(8, 161, 21, 0.8));
-  /* glow intenso */
+#carouselHome[data-tema=eletronica] .icon-prev, #carouselHome[data-tema=eletronica] .icon-next {
+  stroke: #08a115;
+  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px rgba(8, 161, 21, 0.9)) drop-shadow(0 0 12px rgba(8, 161, 21, 0.85)) drop-shadow(0 0 4px rgba(8, 161, 21, 0.8));
 }
 
-#carouselHome[data-tema=refrigeracao] .icon-prev,
-#carouselHome[data-tema=refrigeracao] .icon-next {
-  stroke: #04e2ff; /* cor da seta */
-  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px rgba(4, 226, 255, 0.9)) drop-shadow(0 0 12px rgba(4, 226, 255, 0.85)) drop-shadow(0 0 18px rgba(4, 226, 255, 0.8));
-  /* glow intenso */
+#carouselHome[data-tema=refrigeracao] .icon-prev, #carouselHome[data-tema=refrigeracao] .icon-next {
+  stroke: #04e2ff;
+  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px rgba(4, 226, 255, 0.9)) drop-shadow(0 0 12px rgba(4, 226, 255, 0.85)) drop-shadow(0 0 4px rgba(4, 226, 255, 0.8));
+}
+
+/* ICONES SLIDE - (icones que estão encima do titulo) */
+#carouselHome[data-tema=climatizacao] .icone-slide {
+  color: #3a89ff;
+  animation: float 3.2s ease-in-out infinite, glow-pulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #3a89ff) drop-shadow(0 0 10px #3a89ff);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px currentColor);
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+}
+
+#carouselHome[data-tema=eletrica] .icone-slide {
+  color: #ffe603;
+  animation: float 3.2s ease-in-out infinite, glow-pulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #ffe603) drop-shadow(0 0 10px #ffe603);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px currentColor);
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+}
+
+#carouselHome[data-tema=eletronica] .icone-slide {
+  color: #08a115;
+  animation: float 3.2s ease-in-out infinite, glow-pulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #08a115) drop-shadow(0 0 10px #08a115);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px currentColor);
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .icone-slide {
+  color: #04e2ff;
+  animation: float 3.2s ease-in-out infinite, glow-pulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #04e2ff) drop-shadow(0 0 10px #04e2ff);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px currentColor);
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 4px currentColor);
+    opacity: 0.8;
+  }
+}
+
+/* TITULOS */
+#carouselHome[data-tema=climatizacao] .Title {
+  color: #3a89ff;
+  animation: textPulse 2.6s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(58, 137, 255, 0.55) 0 0 12px rgba(58, 137, 255, 0.35) 0 0 18px rgba(58, 137, 255, 0.25);
+}
+@keyframes textPulse {
+  0% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+}
+
+#carouselHome[data-tema=eletrica] .Title {
+  color: #ffe603;
+  animation: textPulse 2.6s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(255, 230, 3, 0.55) 0 0 12px rgba(255, 230, 3, 0.35) 0 0 18px rgba(255, 230, 3, 0.25);
+}
+@keyframes textPulse {
+  0% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+}
+
+#carouselHome[data-tema=eletronica] .Title {
+  color: #08a115;
+  animation: textPulse 2.6s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(8, 161, 21, 0.55) 0 0 12px rgba(8, 161, 21, 0.35) 0 0 18px rgba(8, 161, 21, 0.25);
+}
+@keyframes textPulse {
+  0% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .Title {
+  color: #04e2ff;
+  animation: textPulse 2.6s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(4, 226, 255, 0.55) 0 0 12px rgba(4, 226, 255, 0.35) 0 0 18px rgba(4, 226, 255, 0.25);
+}
+@keyframes textPulse {
+  0% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+  }
 }
 
 /* MOBILES */

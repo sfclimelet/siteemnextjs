@@ -1,6 +1,9 @@
 /* VARS E CORES - dentro do arquivo Globals */
 @use "./globals" as *;
 
+/* MIXINS ANIMATIONS */
+@use "./mixins-animations";
+
 /* CONFIGURAÇÕES GERAIS DO CARROSSEL */
 @use "./conf-geral-carrosselHome.scss";
 

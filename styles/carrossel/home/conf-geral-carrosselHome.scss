@@ -1,4 +1,5 @@
 @use "./globals" as *;
+@use "./colors" as *;
 
 @mixin CONTAINER-CARROSSEL(){
   #{$C-C-HOME1}{
@@ -21,6 +22,7 @@
     width: 100%;
     height: 320px;
     object-fit: cover;
+    filter: brightness(0.20);
   }
 }
 @include IMAGEM-FUNDO();
@@ -36,10 +38,17 @@
     padding: 0 1rem;
   }
   #{$C-C-HOME1}{
+    #{$CAPT-ICON}{
+      width: 35px;
+      height: 35px;
+      margin-bottom: 12px;
+      color: var(--tema-cor);
+    }
     #{$CAPT-TITLE}{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         font-weight: 700;
-        margin-bottom: .5rem;
+        margin-bottom: 10px;
+        color: $COR-WHITE;
     }
     #{$CAPT-DESCRI}{
         width: 80%;
@@ -53,19 +62,6 @@
   }
 }
 @include CONTEUDO-SLIDE();
-
-/* ================================
-   INDICATORS (bolinhas)
-   ================================ */
-
-.CarrosselHome .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255,255,255,.4);
-  border-radius: 50%;
-  border: none;
-  transition: all .25s ease;
-}
 
 @mixin INDICATORS(){
   #{$C-C-HOME1} #{$INDICADORES} [data-bs-target]{
@@ -87,36 +83,16 @@
 @include INDICATORS();
 
 
-/* ================================
-   CONTROLES (prev / next)
-   ================================ */
-
-.CarrosselHome .carousel-control-prev,
-.CarrosselHome .carousel-control-next {
-  width: 50px;
-  transition: opacity .25s ease;
+@mixin PREV-NEXT(){
+  #{$C-C-HOME1}{
+    #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
+      background: none !important;
+      width: 50px;
+      transition: opacity 0.3s ease;
+      &:focus{
+        box-shadow: none !important;
+      }
+    }
+  }
 }
-
-.CarrosselHome .carousel-control-prev-icon,
-.CarrosselHome .carousel-control-next-icon {
-  background-size: 85%;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
-}
-
-/* Hover leve */
-.CarrosselHome .carousel-control-prev:hover,
-.CarrosselHome .carousel-control-next:hover {
-  opacity: 0.9;
-}
-
-/* Remove backplate escuro do Bootstrap */
-.CarrosselHome .carousel-control-prev,
-.CarrosselHome .carousel-control-next {
-  background: none !important;
-}
-
-/* Remove outline padrão */
-.CarrosselHome .carousel-control-prev:focus,
-.CarrosselHome .carousel-control-next:focus {
-  box-shadow: none !important;
-}
+@include PREV-NEXT();

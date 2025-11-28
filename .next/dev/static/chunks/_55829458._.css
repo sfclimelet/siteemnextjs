@@ -752,6 +752,7 @@
 
 #IMGFUNDO {
   object-fit: cover;
+  filter: brightness(.2);
   width: 100%;
   height: 320px;
 }
@@ -766,9 +767,17 @@
   transform: translate(-50%, -50%);
 }
 
+.CarrosselHome .icone-slide {
+  width: 35px;
+  height: 35px;
+  color: var(--tema-cor);
+  margin-bottom: 12px;
+}
+
 .CarrosselHome .Title {
-  margin-bottom: .5rem;
-  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -799,46 +808,127 @@
   box-shadow: 0 0 8px #fff;
 }
 
-.CarrosselHome .carousel-control-prev, .CarrosselHome .carousel-control-next {
+.CarrosselHome .carousel-control-prev .carousel-control-next {
   width: 50px;
-  transition: opacity .25s;
-}
-
-.CarrosselHome .carousel-control-prev-icon, .CarrosselHome .carousel-control-next-icon {
-  filter: drop-shadow(0 0 5px #000000b3);
-  background-size: 85%;
-}
-
-.CarrosselHome .carousel-control-prev:hover, .CarrosselHome .carousel-control-next:hover {
-  opacity: .9;
-}
-
-.CarrosselHome .carousel-control-prev, .CarrosselHome .carousel-control-next {
+  transition: opacity .3s;
   background: none !important;
 }
 
-.CarrosselHome .carousel-control-prev:focus, .CarrosselHome .carousel-control-next:focus {
+.CarrosselHome .carousel-control-prev .carousel-control-next:focus {
   box-shadow: none !important;
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev, #carouselHome[data-tema="climatizacao"] .icon-next {
   stroke: #3a89ff;
-  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px #3a89ffe6) drop-shadow(0 0 12px #3a89ffd9) drop-shadow(0 0 18px #3a89ffcc);
+  filter: drop-shadow(0 0 4px #3a89ff) drop-shadow(0 0 8px #3a89ffe6) drop-shadow(0 0 12px #3a89ffd9) drop-shadow(0 0 4px #3a89ffcc);
 }
 
 #carouselHome[data-tema="eletrica"] .icon-prev, #carouselHome[data-tema="eletrica"] .icon-next {
   stroke: #ffe603;
-  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px #ffe603e6) drop-shadow(0 0 12px #ffe603d9) drop-shadow(0 0 18px #ffe603cc);
+  filter: drop-shadow(0 0 4px #ffe603) drop-shadow(0 0 8px #ffe603e6) drop-shadow(0 0 12px #ffe603d9) drop-shadow(0 0 4px #ffe603cc);
 }
 
 #carouselHome[data-tema="eletronica"] .icon-prev, #carouselHome[data-tema="eletronica"] .icon-next {
   stroke: #08a115;
-  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px #08a115e6) drop-shadow(0 0 12px #08a115d9) drop-shadow(0 0 18px #08a115cc);
+  filter: drop-shadow(0 0 4px #08a115) drop-shadow(0 0 8px #08a115e6) drop-shadow(0 0 12px #08a115d9) drop-shadow(0 0 4px #08a115cc);
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev, #carouselHome[data-tema="refrigeracao"] .icon-next {
   stroke: #04e2ff;
-  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px #04e2ffe6) drop-shadow(0 0 12px #04e2ffd9) drop-shadow(0 0 18px #04e2ffcc);
+  filter: drop-shadow(0 0 4px #04e2ff) drop-shadow(0 0 8px #04e2ffe6) drop-shadow(0 0 12px #04e2ffd9) drop-shadow(0 0 4px #04e2ffcc);
+}
+
+#carouselHome[data-tema="climatizacao"] .icone-slide {
+  color: #3a89ff;
+  filter: drop-shadow(0 0 6px #3a89ff) drop-shadow(0 0 10px #3a89ff);
+  animation: 3.2s ease-in-out infinite float, 2.8s ease-in-out infinite glow-pulse;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px);
+    opacity: .8;
+  }
+
+  50% {
+    filter: drop-shadow(0 0 12px);
+    opacity: 1;
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px);
+    opacity: .8;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .icone-slide {
+  color: #ffe603;
+  filter: drop-shadow(0 0 6px #ffe603) drop-shadow(0 0 10px #ffe603);
+  animation: 3.2s ease-in-out infinite float, 2.8s ease-in-out infinite glow-pulse;
+}
+
+#carouselHome[data-tema="eletronica"] .icone-slide {
+  color: #08a115;
+  filter: drop-shadow(0 0 6px #08a115) drop-shadow(0 0 10px #08a115);
+  animation: 3.2s ease-in-out infinite float, 2.8s ease-in-out infinite glow-pulse;
+}
+
+#carouselHome[data-tema="refrigeracao"] .icone-slide {
+  color: #04e2ff;
+  filter: drop-shadow(0 0 6px #04e2ff) drop-shadow(0 0 10px #04e2ff);
+  animation: 3.2s ease-in-out infinite float, 2.8s ease-in-out infinite glow-pulse;
+}
+
+#carouselHome[data-tema="climatizacao"] .Title {
+  color: #3a89ff;
+  text-shadow: 0 0 6px #3a89ff8c 0 0 12px #3a89ff59 0 0 18px #3a89ff40;
+  animation: 2.6s ease-in-out infinite textPulse;
+}
+
+@keyframes textPulse {
+  0% {
+    text-shadow: 0 0 4px, 0 0 10px, 0 0 14px #fff3;
+  }
+
+  50% {
+    text-shadow: 0 0 10px, 0 0 16px, 0 0 22px #ffffff59;
+  }
+
+  100% {
+    text-shadow: 0 0 4px, 0 0 10px, 0 0 14px #fff3;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .Title {
+  color: #ffe603;
+  text-shadow: 0 0 6px #ffe6038c 0 0 12px #ffe60359 0 0 18px #ffe60340;
+  animation: 2.6s ease-in-out infinite textPulse;
+}
+
+#carouselHome[data-tema="eletronica"] .Title {
+  color: #08a115;
+  text-shadow: 0 0 6px #08a1158c 0 0 12px #08a11559 0 0 18px #08a11540;
+  animation: 2.6s ease-in-out infinite textPulse;
+}
+
+#carouselHome[data-tema="refrigeracao"] .Title {
+  color: #04e2ff;
+  text-shadow: 0 0 6px #04e2ff8c 0 0 12px #04e2ff59 0 0 18px #04e2ff40;
+  animation: 2.6s ease-in-out infinite textPulse;
 }
 
 /* [project]/components/aviso/aviso.scss.css [app-client] (css) */
