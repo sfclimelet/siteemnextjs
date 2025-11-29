@@ -2,6 +2,7 @@
 
 @mixin RESOLUTION-375px(){
     #{$C-C-HOME2}{
+        margin: 12px 12px;
         #{$CARR-INNER}{
             #{$IMG-FUNDO}{
                 height: 260px;
@@ -47,7 +48,7 @@
 
 @mixin RESOLUTION-575px(){
     #{$C-C-HOME2}{
-        margin: 12px 12px;
+        margin: 15px 15px;
         #{$CARR-INNER}{
             #{$IMG-FUNDO}{
                 height: 360px;

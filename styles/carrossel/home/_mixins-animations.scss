@@ -35,32 +35,34 @@
     }
 }
 
-@mixin Text-Glow($cor){
-    animation: textPulse 2.6s ease-in-out infinite;
-    text-shadow:
-        0 0 6px rgba($cor, .55)
-        0 0 12px rgba($cor, .35)
-        0 0 18px rgba($cor, .25);
-    @keyframes textPulse {
-        0%{
-            text-shadow:
-                0 0 4px currentColor,
-                0 0 10px currentColor,
-                0 0 14px rgba(255,255, 255, .2);
-        }
-        50%{
-            text-shadow:
-                0 0 10px currentColor,
-                0 0 16px currentColor,
-                0 0 22px rgba(255,255, 255, .35);
-        }
-        100%{
-            text-shadow:
-                0 0 4px currentColor,
-                0 0 10px currentColor,
-                0 0 14px rgba(255,255, 255, .2);
-        }
+@mixin Text-Glow($cor, $tema) {
+  animation: txtGlow-#{$tema} 2.5s ease-in-out infinite;
+
+  text-shadow:
+    0 0 4px rgba($cor, .6),
+    0 0 8px rgba($cor, .45),
+    0 0 12px rgba($cor, .30);
+
+  @keyframes txtGlow-#{$tema} {
+    0% {
+      text-shadow:
+        0 0 4px rgba($cor, .55),
+        0 0 10px rgba($cor, .40),
+        0 0 16px rgba($cor, .25);
     }
+    50% {
+      text-shadow:
+        0 0 8px rgba($cor, .85),
+        0 0 16px rgba($cor, .65),
+        0 0 26px rgba($cor, .45);
+    }
+    100% {
+      text-shadow:
+        0 0 4px rgba($cor, .55),
+        0 0 10px rgba($cor, .40),
+        0 0 16px rgba($cor, .25);
+    }
+  }
 }
 
 @mixin Botao-Pulse($cor, $tema) {

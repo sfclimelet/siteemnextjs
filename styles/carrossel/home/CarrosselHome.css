@@ -7,48 +7,68 @@
   width: 100%;
   padding: 1rem 0;
 }
-.CarrosselHome .carousel-inner {
+.CarrosselHome #carouselHome .carousel-indicators {
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.25s ease;
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 8px #fff;
+}
+.CarrosselHome #carouselHome .carousel-inner {
   border-radius: 18px;
   overflow: hidden;
   position: relative;
 }
-
-#IMGFUNDO {
+.CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
   width: 100%;
   height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* Se der b.o tire o contain e coloque cover */
+  -o-object-fit: contain;
+     object-fit: contain;
   filter: brightness(0.2);
 }
-
-.CarrosselHome .carousel-caption {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption {
   z-index: 3;
   text-align: center;
   padding: 0 1rem;
+  pointer-events: none !important;
 }
-
-.CarrosselHome .icone-slide {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption * {
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
   width: 35px;
   height: 35px;
   margin-bottom: 12px;
-  color: var(--tema-cor);
 }
-.CarrosselHome .Title {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
 }
-.CarrosselHome .Descricao {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
   width: 100%;
   margin: 0.25rem auto 1rem auto;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
-  color: #eaeaea;
+  color: #fff;
   opacity: 0.95;
 }
-.CarrosselHome .botao-saiba-mais {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
   padding: 10px 28px;
   border-radius: 12px;
   border: none;
@@ -56,32 +76,13 @@
   font-size: 1.05rem;
   transition: all 0.25s ease;
   color: #fff;
-  cursor: pointer;
 }
-
-.CarrosselHome .carousel-indicators [data-bs-target] {
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  border: none;
-  transition: all 0.25s ease;
-}
-
-.CarrosselHome .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  box-shadow: 0 0 8px #fff;
-}
-
-.CarrosselHome .carousel-control-prev .carousel-control-next {
-  background: none !important;
+.CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next {
+  background-color: none !important;
   width: 50px;
   transition: opacity 0.3s ease;
 }
-.CarrosselHome .carousel-control-prev .carousel-control-next:focus {
+.CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next:focus {
   box-shadow: none !important;
 }
 
@@ -235,143 +236,155 @@
 
 /* TITULOS */
 #carouselHome[data-tema=climatizacao] .Title {
-  color: #3a89ff;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(58, 137, 255, 0.55) 0 0 12px rgba(58, 137, 255, 0.35) 0 0 18px rgba(58, 137, 255, 0.25);
+  color: #3a89ff !important;
+  animation: txtGlow-climatizacao 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(58, 137, 255, 0.6), 0 0 8px rgba(58, 137, 255, 0.45), 0 0 12px rgba(58, 137, 255, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-climatizacao {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(58, 137, 255, 0.55), 0 0 10px rgba(58, 137, 255, 0.4), 0 0 16px rgba(58, 137, 255, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(58, 137, 255, 0.85), 0 0 16px rgba(58, 137, 255, 0.65), 0 0 26px rgba(58, 137, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(58, 137, 255, 0.55), 0 0 10px rgba(58, 137, 255, 0.4), 0 0 16px rgba(58, 137, 255, 0.25);
   }
 }
 
 #carouselHome[data-tema=eletrica] .Title {
-  color: #ffe603;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(255, 230, 3, 0.55) 0 0 12px rgba(255, 230, 3, 0.35) 0 0 18px rgba(255, 230, 3, 0.25);
+  color: #ffe603 !important;
+  animation: txtGlow-eletrica 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(255, 230, 3, 0.6), 0 0 8px rgba(255, 230, 3, 0.45), 0 0 12px rgba(255, 230, 3, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-eletrica {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.55), 0 0 10px rgba(255, 230, 3, 0.4), 0 0 16px rgba(255, 230, 3, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(255, 230, 3, 0.85), 0 0 16px rgba(255, 230, 3, 0.65), 0 0 26px rgba(255, 230, 3, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.55), 0 0 10px rgba(255, 230, 3, 0.4), 0 0 16px rgba(255, 230, 3, 0.25);
   }
 }
 
 #carouselHome[data-tema=eletronica] .Title {
-  color: #08a115;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(8, 161, 21, 0.55) 0 0 12px rgba(8, 161, 21, 0.35) 0 0 18px rgba(8, 161, 21, 0.25);
+  color: #08a115 !important;
+  animation: txtGlow-eletronica 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(8, 161, 21, 0.6), 0 0 8px rgba(8, 161, 21, 0.45), 0 0 12px rgba(8, 161, 21, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-eletronica {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(8, 161, 21, 0.55), 0 0 10px rgba(8, 161, 21, 0.4), 0 0 16px rgba(8, 161, 21, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(8, 161, 21, 0.85), 0 0 16px rgba(8, 161, 21, 0.65), 0 0 26px rgba(8, 161, 21, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(8, 161, 21, 0.55), 0 0 10px rgba(8, 161, 21, 0.4), 0 0 16px rgba(8, 161, 21, 0.25);
   }
 }
 
 #carouselHome[data-tema=refrigeracao] .Title {
-  color: #04e2ff;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(4, 226, 255, 0.55) 0 0 12px rgba(4, 226, 255, 0.35) 0 0 18px rgba(4, 226, 255, 0.25);
+  color: #04e2ff !important;
+  animation: txtGlow-refrigeracao 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(4, 226, 255, 0.6), 0 0 8px rgba(4, 226, 255, 0.45), 0 0 12px rgba(4, 226, 255, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-refrigeracao {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(4, 226, 255, 0.55), 0 0 10px rgba(4, 226, 255, 0.4), 0 0 16px rgba(4, 226, 255, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(4, 226, 255, 0.85), 0 0 16px rgba(4, 226, 255, 0.65), 0 0 26px rgba(4, 226, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(4, 226, 255, 0.55), 0 0 10px rgba(4, 226, 255, 0.4), 0 0 16px rgba(4, 226, 255, 0.25);
   }
 }
 
 /* DESCRIÇÃO */
 #carouselHome[data-tema=climatizacao] .Descricao {
-  color: rgba(58, 137, 255, 0.85);
+  color: #3a89ff !important;
   color: #3a89ff;
-  animation: DescriptGlow 2s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(58, 137, 255, 0.65), 0 0 12px rgba(58, 137, 255, 0.45), 0 0 18px rgba(58, 137, 255, 0.35);
+  animation: descPulse-climatizacao 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(58, 137, 255, 0.55), 0 0 12px rgba(58, 137, 255, 0.35), 0 0 18px rgba(58, 137, 255, 0.25);
 }
-@keyframes DescriptGlow {
+#carouselHome[data-tema=climatizacao] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(58, 137, 255, 0.85), 0 0 18px rgba(58, 137, 255, 0.6), 0 0 28px rgba(58, 137, 255, 0.45);
+}
+@keyframes descPulse-climatizacao {
   0% {
-    text-shadow: 0 0 6px rgba(58, 137, 255, 0.65), 0 0 12px rgba(58, 137, 255, 0.45), 0 0 18px rgba(58, 137, 255, 0.35);
+    text-shadow: 0 0 6px rgba(58, 137, 255, 0.45), 0 0 14px rgba(58, 137, 255, 0.35), 0 0 22px rgba(58, 137, 255, 0.2);
   }
   50% {
-    text-shadow: 0 0 6px rgba(58, 137, 255, 0.95), 0 0 12px rgba(58, 137, 255, 0.75), 0 0 18px rgba(58, 137, 255, 0.55);
+    text-shadow: 0 0 12px rgba(58, 137, 255, 0.85), 0 0 24px rgba(58, 137, 255, 0.65), 0 0 34px rgba(58, 137, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 6px rgba(58, 137, 255, 0.65), 0 0 12px rgba(58, 137, 255, 0.45), 0 0 18px rgba(58, 137, 255, 0.35);
+    text-shadow: 0 0 6px rgba(58, 137, 255, 0.45), 0 0 14px rgba(58, 137, 255, 0.35), 0 0 22px rgba(58, 137, 255, 0.2);
   }
 }
 
 #carouselHome[data-tema=eletrica] .Descricao {
-  color: rgba(255, 230, 3, 0.85);
+  color: #ffe603 !important;
   color: #ffe603;
-  animation: DescriptGlow 2s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(255, 230, 3, 0.65), 0 0 12px rgba(255, 230, 3, 0.45), 0 0 18px rgba(255, 230, 3, 0.35);
+  animation: descPulse-eletrica 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.35), 0 0 18px rgba(255, 230, 3, 0.25);
 }
-@keyframes DescriptGlow {
+#carouselHome[data-tema=eletrica] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(255, 230, 3, 0.85), 0 0 18px rgba(255, 230, 3, 0.6), 0 0 28px rgba(255, 230, 3, 0.45);
+}
+@keyframes descPulse-eletrica {
   0% {
-    text-shadow: 0 0 6px rgba(255, 230, 3, 0.65), 0 0 12px rgba(255, 230, 3, 0.45), 0 0 18px rgba(255, 230, 3, 0.35);
+    text-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35), 0 0 22px rgba(255, 230, 3, 0.2);
   }
   50% {
-    text-shadow: 0 0 6px rgba(255, 230, 3, 0.95), 0 0 12px rgba(255, 230, 3, 0.75), 0 0 18px rgba(255, 230, 3, 0.55);
+    text-shadow: 0 0 12px rgba(255, 230, 3, 0.85), 0 0 24px rgba(255, 230, 3, 0.65), 0 0 34px rgba(255, 230, 3, 0.45);
   }
   100% {
-    text-shadow: 0 0 6px rgba(255, 230, 3, 0.65), 0 0 12px rgba(255, 230, 3, 0.45), 0 0 18px rgba(255, 230, 3, 0.35);
+    text-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35), 0 0 22px rgba(255, 230, 3, 0.2);
   }
 }
 
 #carouselHome[data-tema=eletronica] .Descricao {
-  color: rgba(8, 161, 21, 0.85);
+  color: #08a115 !important;
   color: #08a115;
-  animation: DescriptGlow 2s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(8, 161, 21, 0.65), 0 0 12px rgba(8, 161, 21, 0.45), 0 0 18px rgba(8, 161, 21, 0.35);
+  animation: descPulse-eletronica 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(8, 161, 21, 0.55), 0 0 12px rgba(8, 161, 21, 0.35), 0 0 18px rgba(8, 161, 21, 0.25);
 }
-@keyframes DescriptGlow {
+#carouselHome[data-tema=eletronica] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(8, 161, 21, 0.85), 0 0 18px rgba(8, 161, 21, 0.6), 0 0 28px rgba(8, 161, 21, 0.45);
+}
+@keyframes descPulse-eletronica {
   0% {
-    text-shadow: 0 0 6px rgba(8, 161, 21, 0.65), 0 0 12px rgba(8, 161, 21, 0.45), 0 0 18px rgba(8, 161, 21, 0.35);
+    text-shadow: 0 0 6px rgba(8, 161, 21, 0.45), 0 0 14px rgba(8, 161, 21, 0.35), 0 0 22px rgba(8, 161, 21, 0.2);
   }
   50% {
-    text-shadow: 0 0 6px rgba(8, 161, 21, 0.95), 0 0 12px rgba(8, 161, 21, 0.75), 0 0 18px rgba(8, 161, 21, 0.55);
+    text-shadow: 0 0 12px rgba(8, 161, 21, 0.85), 0 0 24px rgba(8, 161, 21, 0.65), 0 0 34px rgba(8, 161, 21, 0.45);
   }
   100% {
-    text-shadow: 0 0 6px rgba(8, 161, 21, 0.65), 0 0 12px rgba(8, 161, 21, 0.45), 0 0 18px rgba(8, 161, 21, 0.35);
+    text-shadow: 0 0 6px rgba(8, 161, 21, 0.45), 0 0 14px rgba(8, 161, 21, 0.35), 0 0 22px rgba(8, 161, 21, 0.2);
   }
 }
 
 #carouselHome[data-tema=refrigeracao] .Descricao {
-  color: rgba(4, 226, 255, 0.85);
+  color: #04e2ff !important;
   color: #04e2ff;
-  animation: DescriptGlow 2s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(4, 226, 255, 0.65), 0 0 12px rgba(4, 226, 255, 0.45), 0 0 18px rgba(4, 226, 255, 0.35);
+  animation: descPulse-refrigeracao 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(4, 226, 255, 0.55), 0 0 12px rgba(4, 226, 255, 0.35), 0 0 18px rgba(4, 226, 255, 0.25);
 }
-@keyframes DescriptGlow {
+#carouselHome[data-tema=refrigeracao] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(4, 226, 255, 0.85), 0 0 18px rgba(4, 226, 255, 0.6), 0 0 28px rgba(4, 226, 255, 0.45);
+}
+@keyframes descPulse-refrigeracao {
   0% {
-    text-shadow: 0 0 6px rgba(4, 226, 255, 0.65), 0 0 12px rgba(4, 226, 255, 0.45), 0 0 18px rgba(4, 226, 255, 0.35);
+    text-shadow: 0 0 6px rgba(4, 226, 255, 0.45), 0 0 14px rgba(4, 226, 255, 0.35), 0 0 22px rgba(4, 226, 255, 0.2);
   }
   50% {
-    text-shadow: 0 0 6px rgba(4, 226, 255, 0.95), 0 0 12px rgba(4, 226, 255, 0.75), 0 0 18px rgba(4, 226, 255, 0.55);
+    text-shadow: 0 0 12px rgba(4, 226, 255, 0.85), 0 0 24px rgba(4, 226, 255, 0.65), 0 0 34px rgba(4, 226, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 6px rgba(4, 226, 255, 0.65), 0 0 12px rgba(4, 226, 255, 0.45), 0 0 18px rgba(4, 226, 255, 0.35);
+    text-shadow: 0 0 6px rgba(4, 226, 255, 0.45), 0 0 14px rgba(4, 226, 255, 0.35), 0 0 22px rgba(4, 226, 255, 0.2);
   }
 }
 
@@ -523,6 +536,9 @@
 
 /* MOBILES */
 @media (max-width: 375px) {
+  #carouselHome {
+    margin: 12px 12px;
+  }
   #carouselHome .carousel-inner #IMGFUNDO {
     height: 260px;
   }
@@ -562,7 +578,7 @@
 }
 @media (max-width: 575px) {
   #carouselHome {
-    margin: 12px 12px;
+    margin: 15px 15px;
   }
   #carouselHome .carousel-inner #IMGFUNDO {
     height: 360px;

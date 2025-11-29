@@ -1,4 +1,7 @@
 @media (max-width: 375px) {
+  #carouselHome {
+    margin: 12px 12px;
+  }
   #carouselHome .carousel-inner #IMGFUNDO {
     height: 260px;
   }
@@ -38,7 +41,7 @@
 }
 @media (max-width: 575px) {
   #carouselHome {
-    margin: 12px 12px;
+    margin: 15px 15px;
   }
   #carouselHome .carousel-inner #IMGFUNDO {
     height: 360px;

@@ -34,8 +34,8 @@ $temas: (
 @each $tema, $cor in $temas{
   #{$C-C-HOME2}[data-tema="#{$tema}"]{
     #{$CAPT-TITLE}{
-      color: #{$cor};
-      @include Text-Glow($cor);
+      color: rgba($cor, 1) !important;
+      @include Text-Glow($cor, $tema);
     }
   }
 }
@@ -44,6 +44,7 @@ $temas: (
 @each $tema, $cor in $temas {
   #{$C-C-HOME2}[data-tema="#{$tema}"]{
     #{$CAPT-DESCRI}{
+      color: rgba($cor, 1) !important;
       @include Description-Glow($cor, $tema);
     }
   }

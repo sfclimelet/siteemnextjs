@@ -2939,3 +2939,1237 @@ styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
 
 
 
+[01:01:04.039] Server  LOG      ✓ Compiled in 113ms
+[01:01:05.561] Server  LOG      ✓ Compiled in 60ms
+[01:01:05.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+5 │         pointer-events: ;
+  │                         ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+5 │         pointer-events: ;
+  │                         ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[01:01:14.623] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:01:25.102] Server  LOG      ✓ Compiled in 109ms
+[01:03:02.787] Server  LOG      ✓ Compiled in 63ms
+[01:03:03.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+5 │         pointer-events: ;
+  │                         ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+5 │         pointer-events: ;
+  │                         ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[01:03:05.569] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:03:24.263] Server  LOG      ✓ Compiled in 113ms
+[01:03:41.685] Server  LOG      ✓ Compiled in 66ms
+[01:03:42.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+96 │     pointer-events: ;
+   │                     ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:21  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+96 │     pointer-events: ;
+   │                     ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:21  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[01:03:43.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+96 │     pointer-events: none;
+   │                         ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+96 │     pointer-events: none;
+   │                         ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[01:03:45.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+96 │     pointer-events: non;
+   │                        ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:24  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+96 │     pointer-events: non;
+   │                        ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:24  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[01:03:50.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+96 │     pointer-events: ;
+   │                     ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:21  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+96 │     pointer-events: ;
+   │                     ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:21  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[01:03:52.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+96 │     pointer-events: auto;
+   │                         ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+96 │     pointer-events: auto;
+   │                         ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 96:25  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[01:04:00.723] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:04:48.879] Server  LOG      ✓ Compiled in 75ms
+[01:04:49.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+50 │         margin: ;
+   │                 ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 50:17  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+50 │         margin: ;
+   │                 ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 50:17  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[01:04:54.397] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:05:06.444] Server  LOG      ✓ Compiled in 119ms
+[01:05:13.745] Server  LOG      ✓ Compiled in 72ms
+[01:05:14.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+  ╷
+5 │         margin: ;
+  │                 ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:17  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+Caused by: Error: Expected expression.
+  ╷
+5 │         margin: ;
+  │                 ^
+  ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 5:17  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[01:05:17.053] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:52:15.973] Server  LOG      ✓ Compiled in 145ms
+[01:52:16.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use ".";
+  │ ^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use ".";
+  │ ^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[01:52:20.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use "";
+  │ ^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use "";
+  │ ^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[01:52:49.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use "./";
+  │ ^^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+Caused by: Error: The default namespace "" is not a valid Sass identifier.
+
+Recommendation: add an "as" clause to define an explicit namespace.
+  ╷
+8 │ @use "./";
+  │ ^^^^^^^^^
+  ╵
+  styles/carrossel/home/CarrosselHome.scss 8:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ScssParser0.error$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114382:17)]
+    [at ScssParser0.error$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114387:19)]
+    [at ScssParser0._stylesheet0$_useNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121275:17)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120552:29)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at StylesheetParser_parse__closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123790:17)]
+    [at ScssParser0.statements$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115813:30)]
+    [at StylesheetParser_parse_closure0.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123776:23)]
+    [at ScssParser0.wrapSpanFormatException$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:114413:25)]
+[01:52:53.422] Server  LOG      ✓ Compiled in 773ms
+[01:52:53.428] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:55:06.415] Server  LOG      ✓ Compiled in 161ms
+[01:56:16.957] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:56:17.278] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:56:17.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:23.730] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[01:57:31.301] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 118, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:118:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+118 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 119:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:01:04.727] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 94, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:94:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+94 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 95:15   Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:01:07.258] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 93, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:93:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+93 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 94:15   Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:01:08.683] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 94, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:94:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+94 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 95:15   Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:01:13.753] Server  LOG      ✓ Compiled in 26ms
+[02:01:14.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+39 │     animation:  ;
+   │                 ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:17  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+39 │     animation:  ;
+   │                 ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:17  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:01:15.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+39 │     animation: ;
+   │                ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:16  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+39 │     animation: ;
+   │                ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:16  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:01:16.916] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 94, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:94:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+94 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 95:15   Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:01:18.631] Server  LOG      ✓ Compiled in 86ms
+[02:01:19.766] Server  LOG      ✓ Compiled in 91ms
+[02:01:26.806] Server  LOG      ✓ Compiled in 36ms
+[02:01:27.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+39 │     animation: textGlow-#{};
+   │                         ^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:25  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+39 │     animation: textGlow-#{};
+   │                         ^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:25  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$1$consumeNewlines (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121748:19)]
+    [at ScssParser0.singleInterpolation$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122935:24)]
+    [at ScssParser0._stylesheet0$_interpolatedIdentifierBodyHelper$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122920:23)]
+    [at ScssParser0.interpolatedIdentifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122887:13)]
+    [at ScssParser0.identifierLike$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122288:28)]
+[02:01:31.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema};
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema};
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:34.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} ;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} ;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:36.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected digit.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.;
+   │                                    ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:36  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+Caused by: Error: Expected digit.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.;
+   │                                    ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:36  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0._stylesheet0$_tryDecimal$1$allowTrailingDot (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122096:12)]
+    [at ScssParser0._stylesheet0$_number$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122060:13)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121656:44)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+[02:01:38.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:40.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:41.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:48.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out infinite;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out infinite;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:01:51.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+41 │     text
+   │         ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 41:9  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1        root stylesheet
+Caused by: Error: expected "{".
+   ╷
+41 │     text
+   │         ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 41:9  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1        root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[02:01:53.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+41 │     text-shadow: ;
+   │                  ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 41:18  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+41 │     text-shadow: ;
+   │                  ^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 41:18  @use
+  styles/carrossel/home/CarrosselHome.scss 5:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:02:13.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out infinite;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+39 │     animation: textGlow-#{$tema} 2.5s ease-in-out infinite;
+   │                           ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 39:27   Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89077:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89083:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:89057:19)]
+    [at VariableExpression0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125418:22)]
+    [at VariableExpression0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:125421:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90664:42]
+[02:02:45.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Undefined mixin.
+   ╷
+38 │       @include Text-Glow($cor);
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Undefined mixin.
+   ╷
+38 │       @include Text-Glow($cor);
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88050:25]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._applyMixin$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88108:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_applyMixin$5 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88036:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:88128:48]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+[02:03:30.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected identifier.
+   ╷
+38 │       @include 
+   │                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:16  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+Caused by: Error: Expected identifier.
+   ╷
+38 │       @include 
+   │                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:16  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0.identifier$2$normalize$unit (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113895:12)]
+    [at ScssParser0.identifier$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113902:19)]
+    [at ScssParser0._stylesheet0$_includeRule$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121110:21)]
+    [at ScssParser0.atRule$2$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120534:24)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120155:22)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+    [at tear_off.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2669:45)]
+[02:03:33.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Missing argument $cor.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+38 │       @include Text-Glow()
+   │       ^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+38 │ @mixin Text-Glow($cor, $tema) {
+   │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Missing argument $cor.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+38 │       @include Text-Glow()
+   │       ^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+38 │ @mixin Text-Glow($cor, $tema) {
+   │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__verifyArguments_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94712:30)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at _EvaluateVisitor2._async_evaluate0$_verifyArguments$4 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90598:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94472:18]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+[02:03:50.736] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Missing argument $cor.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+38 │       @include Text-Glow();
+   │       ^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+38 │ @mixin Text-Glow($cor, $tema) {
+   │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Missing argument $cor.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+38 │       @include Text-Glow();
+   │       ^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+38 │ @mixin Text-Glow($cor, $tema) {
+   │        ━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  Text-Glow()
+  styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__verifyArguments_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94712:30)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at _EvaluateVisitor2._async_evaluate0$_verifyArguments$4 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90598:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94472:18]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+[02:03:57.555] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 120, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:120:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+120 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 121:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:04:17.143] Server  LOG      ✓ Compiled in 56ms
+[02:04:17.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+37 │       color: 
+   │              ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+37 │       color: 
+   │              ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[02:04:19.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected ";".
+   ╷
+37 │       color: rgba($color: #000000, $alpha: 1.0)
+   │                                                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:48  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+Caused by: Error: expected ";".
+   ╷
+37 │       color: rgba($color: #000000, $alpha: 1.0)
+   │                                                ^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:48  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115717:10)]
+    [at ScssParser0.expectStatementSeparator$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115720:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120354:17)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+[02:04:21.961] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 120, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:120:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+120 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 121:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:04:26.150] Server  LOG      ✓ Compiled in 46ms
+[02:04:26.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Missing argument $channels.
+  ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+37│       color: rgba();
+  │              ^^^^^^ invocation
+  ╵
+  ╷
+1 │ @function rgba($channels) {
+  │           ━━━━━━━━━━━━━━━ declaration
+  ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+Caused by: Error: Missing argument $channels.
+  ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+37│       color: rgba();
+  │              ^^^^^^ invocation
+  ╵
+  ╷
+1 │ @function rgba($channels) {
+  │           ━━━━━━━━━━━━━━━ declaration
+  ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__runBuiltInCallable_closure8.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94625:35)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90250:27]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at _awaitOnObject_closure.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38159:32)]
+    [at Object._rootRunUnary (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:5402:18)]
+[02:04:28.737] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: $channels: Expected red channel to be a number, was #3a89ff.
+   ╷
+37 │       color: rgba($cor);
+   │              ^^^^^^^^^^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+Caused by: Error: $channels: Expected red channel to be a number, was #3a89ff.
+   ╷
+37 │       color: rgba($cor);
+   │              ^^^^^^^^^^
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 37:14  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1          root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at Object._parseChannels0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:24040:23)]
+    [at global_closure54.call$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:96870:16)]
+    [at _EvaluateVisitor__runBuiltInCallable_closure9.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94631:35)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91652:29]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2._addExceptionSpanAsync$body$_EvaluateVisitor0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91696:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpanAsync$1$3$addStackFrame (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91633:19)]
+[02:04:31.517] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 120, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:120:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+120 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 121:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 47:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:04:42.065] Server  LOG      ✓ Compiled in 134ms
+[02:05:18.272] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 120, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:120:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+120 |   $anim-name: unquote("descPulse-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 121:15  Description-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 48:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[02:05:43.647] Server  LOG      ✓ Compiled in 84ms
+[02:06:12.767] Server  LOG      ✓ Compiled in 93ms

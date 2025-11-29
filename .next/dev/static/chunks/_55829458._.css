@@ -744,41 +744,67 @@
   position: relative;
 }
 
-.CarrosselHome .carousel-inner {
+.CarrosselHome #carouselHome .carousel-indicators {
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-indicators [data-bs-target] {
+  background-color: #fff6;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: all .25s;
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-indicators .active {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 8px #fff;
+}
+
+.CarrosselHome #carouselHome .carousel-inner {
   border-radius: 18px;
   position: relative;
   overflow: hidden;
 }
 
-#IMGFUNDO {
-  object-fit: cover;
+.CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+  object-fit: contain;
   filter: brightness(.2);
   width: 100%;
   height: 320px;
 }
 
-.CarrosselHome .carousel-caption {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption {
   z-index: 3;
   text-align: center;
   padding: 0 1rem;
+  pointer-events: none !important;
 }
 
-.CarrosselHome .icone-slide {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption * {
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
   width: 35px;
   height: 35px;
-  color: var(--tema-cor);
   margin-bottom: 12px;
 }
 
-.CarrosselHome .Title {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
   color: #fff;
   margin-bottom: 10px;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
-.CarrosselHome .Descricao {
-  color: #eaeaea;
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+  color: #fff;
   opacity: .95;
   width: 100%;
   margin: .25rem auto 1rem;
@@ -787,9 +813,8 @@
   line-height: 1.45;
 }
 
-.CarrosselHome .botao-saiba-mais {
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
   color: #fff;
-  cursor: pointer;
   border: none;
   border-radius: 12px;
   padding: 10px 28px;
@@ -798,30 +823,13 @@
   transition: all .25s;
 }
 
-.CarrosselHome .carousel-indicators [data-bs-target] {
-  cursor: pointer;
-  background-color: #fff6;
-  border: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  transition: all .25s;
-}
-
-.CarrosselHome .carousel-indicators .active {
-  background-color: #fff;
-  width: 12px;
-  height: 12px;
-  box-shadow: 0 0 8px #fff;
-}
-
-.CarrosselHome .carousel-control-prev .carousel-control-next {
+.CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next {
   width: 50px;
   transition: opacity .3s;
-  background: none !important;
+  background-color: none !important;
 }
 
-.CarrosselHome .carousel-control-prev .carousel-control-next:focus {
+.CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next:focus {
   box-shadow: none !important;
 }
 
@@ -901,47 +909,90 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .Title {
-  color: #3a89ff;
-  text-shadow: 0 0 6px #3a89ff8c 0 0 12px #3a89ff59 0 0 18px #3a89ff40;
-  animation: 2.6s ease-in-out infinite textPulse;
+  text-shadow: 0 0 4px #3a89ff99, 0 0 8px #3a89ff73, 0 0 12px #3a89ff4d;
+  animation: 2.5s ease-in-out infinite txtGlow-climatizacao;
+  color: #3a89ff !important;
 }
 
-@keyframes textPulse {
+@keyframes txtGlow-climatizacao {
   0% {
-    text-shadow: 0 0 4px, 0 0 10px, 0 0 14px #fff3;
+    text-shadow: 0 0 4px #3a89ff8c, 0 0 10px #3a89ff66, 0 0 16px #3a89ff40;
   }
 
   50% {
-    text-shadow: 0 0 10px, 0 0 16px, 0 0 22px #ffffff59;
+    text-shadow: 0 0 8px #3a89ffd9, 0 0 16px #3a89ffa6, 0 0 26px #3a89ff73;
   }
 
   100% {
-    text-shadow: 0 0 4px, 0 0 10px, 0 0 14px #fff3;
+    text-shadow: 0 0 4px #3a89ff8c, 0 0 10px #3a89ff66, 0 0 16px #3a89ff40;
   }
 }
 
 #carouselHome[data-tema="eletrica"] .Title {
-  color: #ffe603;
-  text-shadow: 0 0 6px #ffe6038c 0 0 12px #ffe60359 0 0 18px #ffe60340;
-  animation: 2.6s ease-in-out infinite textPulse;
+  text-shadow: 0 0 4px #ffe60399, 0 0 8px #ffe60373, 0 0 12px #ffe6034d;
+  animation: 2.5s ease-in-out infinite txtGlow-eletrica;
+  color: #ffe603 !important;
+}
+
+@keyframes txtGlow-eletrica {
+  0% {
+    text-shadow: 0 0 4px #ffe6038c, 0 0 10px #ffe60366, 0 0 16px #ffe60340;
+  }
+
+  50% {
+    text-shadow: 0 0 8px #ffe603d9, 0 0 16px #ffe603a6, 0 0 26px #ffe60373;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #ffe6038c, 0 0 10px #ffe60366, 0 0 16px #ffe60340;
+  }
 }
 
 #carouselHome[data-tema="eletronica"] .Title {
-  color: #08a115;
-  text-shadow: 0 0 6px #08a1158c 0 0 12px #08a11559 0 0 18px #08a11540;
-  animation: 2.6s ease-in-out infinite textPulse;
+  text-shadow: 0 0 4px #08a11599, 0 0 8px #08a11573, 0 0 12px #08a1154d;
+  animation: 2.5s ease-in-out infinite txtGlow-eletronica;
+  color: #08a115 !important;
+}
+
+@keyframes txtGlow-eletronica {
+  0% {
+    text-shadow: 0 0 4px #08a1158c, 0 0 10px #08a11566, 0 0 16px #08a11540;
+  }
+
+  50% {
+    text-shadow: 0 0 8px #08a115d9, 0 0 16px #08a115a6, 0 0 26px #08a11573;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #08a1158c, 0 0 10px #08a11566, 0 0 16px #08a11540;
+  }
 }
 
 #carouselHome[data-tema="refrigeracao"] .Title {
-  color: #04e2ff;
-  text-shadow: 0 0 6px #04e2ff8c 0 0 12px #04e2ff59 0 0 18px #04e2ff40;
-  animation: 2.6s ease-in-out infinite textPulse;
+  text-shadow: 0 0 4px #04e2ff99, 0 0 8px #04e2ff73, 0 0 12px #04e2ff4d;
+  animation: 2.5s ease-in-out infinite txtGlow-refrigeracao;
+  color: #04e2ff !important;
+}
+
+@keyframes txtGlow-refrigeracao {
+  0% {
+    text-shadow: 0 0 4px #04e2ff8c, 0 0 10px #04e2ff66, 0 0 16px #04e2ff40;
+  }
+
+  50% {
+    text-shadow: 0 0 8px #04e2ffd9, 0 0 16px #04e2ffa6, 0 0 26px #04e2ff73;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #04e2ff8c, 0 0 10px #04e2ff66, 0 0 16px #04e2ff40;
+  }
 }
 
 #carouselHome[data-tema="climatizacao"] .Descricao {
   color: #3a89ff;
   text-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
   animation: 2s ease-in-out infinite descPulse-climatizacao;
+  color: #3a89ff !important;
 }
 
 #carouselHome[data-tema="climatizacao"] .Descricao:hover {
@@ -966,6 +1017,7 @@
   color: #ffe603;
   text-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
   animation: 2s ease-in-out infinite descPulse-eletrica;
+  color: #ffe603 !important;
 }
 
 #carouselHome[data-tema="eletrica"] .Descricao:hover {
@@ -990,6 +1042,7 @@
   color: #08a115;
   text-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
   animation: 2s ease-in-out infinite descPulse-eletronica;
+  color: #08a115 !important;
 }
 
 #carouselHome[data-tema="eletronica"] .Descricao:hover {
@@ -1014,6 +1067,7 @@
   color: #04e2ff;
   text-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
   animation: 2s ease-in-out infinite descPulse-refrigeracao;
+  color: #04e2ff !important;
 }
 
 #carouselHome[data-tema="refrigeracao"] .Descricao:hover {
@@ -1199,6 +1253,10 @@
 }
 
 @media (max-width: 375px) {
+  #carouselHome {
+    margin: 12px;
+  }
+
   #carouselHome .carousel-inner #IMGFUNDO {
     height: 260px;
   }
@@ -1247,7 +1305,7 @@
 
 @media (max-width: 575px) {
   #carouselHome {
-    margin: 12px;
+    margin: 15px;
   }
 
   #carouselHome .carousel-inner #IMGFUNDO {

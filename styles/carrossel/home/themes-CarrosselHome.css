@@ -148,75 +148,76 @@
 
 /* TITULOS */
 #carouselHome[data-tema=climatizacao] .Title {
-  color: #3a89ff;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(58, 137, 255, 0.55) 0 0 12px rgba(58, 137, 255, 0.35) 0 0 18px rgba(58, 137, 255, 0.25);
+  color: #3a89ff !important;
+  animation: txtGlow-climatizacao 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(58, 137, 255, 0.6), 0 0 8px rgba(58, 137, 255, 0.45), 0 0 12px rgba(58, 137, 255, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-climatizacao {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(58, 137, 255, 0.55), 0 0 10px rgba(58, 137, 255, 0.4), 0 0 16px rgba(58, 137, 255, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(58, 137, 255, 0.85), 0 0 16px rgba(58, 137, 255, 0.65), 0 0 26px rgba(58, 137, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(58, 137, 255, 0.55), 0 0 10px rgba(58, 137, 255, 0.4), 0 0 16px rgba(58, 137, 255, 0.25);
   }
 }
 
 #carouselHome[data-tema=eletrica] .Title {
-  color: #ffe603;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(255, 230, 3, 0.55) 0 0 12px rgba(255, 230, 3, 0.35) 0 0 18px rgba(255, 230, 3, 0.25);
+  color: #ffe603 !important;
+  animation: txtGlow-eletrica 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(255, 230, 3, 0.6), 0 0 8px rgba(255, 230, 3, 0.45), 0 0 12px rgba(255, 230, 3, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-eletrica {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.55), 0 0 10px rgba(255, 230, 3, 0.4), 0 0 16px rgba(255, 230, 3, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(255, 230, 3, 0.85), 0 0 16px rgba(255, 230, 3, 0.65), 0 0 26px rgba(255, 230, 3, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.55), 0 0 10px rgba(255, 230, 3, 0.4), 0 0 16px rgba(255, 230, 3, 0.25);
   }
 }
 
 #carouselHome[data-tema=eletronica] .Title {
-  color: #08a115;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(8, 161, 21, 0.55) 0 0 12px rgba(8, 161, 21, 0.35) 0 0 18px rgba(8, 161, 21, 0.25);
+  color: #08a115 !important;
+  animation: txtGlow-eletronica 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(8, 161, 21, 0.6), 0 0 8px rgba(8, 161, 21, 0.45), 0 0 12px rgba(8, 161, 21, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-eletronica {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(8, 161, 21, 0.55), 0 0 10px rgba(8, 161, 21, 0.4), 0 0 16px rgba(8, 161, 21, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(8, 161, 21, 0.85), 0 0 16px rgba(8, 161, 21, 0.65), 0 0 26px rgba(8, 161, 21, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(8, 161, 21, 0.55), 0 0 10px rgba(8, 161, 21, 0.4), 0 0 16px rgba(8, 161, 21, 0.25);
   }
 }
 
 #carouselHome[data-tema=refrigeracao] .Title {
-  color: #04e2ff;
-  animation: textPulse 2.6s ease-in-out infinite;
-  text-shadow: 0 0 6px rgba(4, 226, 255, 0.55) 0 0 12px rgba(4, 226, 255, 0.35) 0 0 18px rgba(4, 226, 255, 0.25);
+  color: #04e2ff !important;
+  animation: txtGlow-refrigeracao 2.5s ease-in-out infinite;
+  text-shadow: 0 0 4px rgba(4, 226, 255, 0.6), 0 0 8px rgba(4, 226, 255, 0.45), 0 0 12px rgba(4, 226, 255, 0.3);
 }
-@keyframes textPulse {
+@keyframes txtGlow-refrigeracao {
   0% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(4, 226, 255, 0.55), 0 0 10px rgba(4, 226, 255, 0.4), 0 0 16px rgba(4, 226, 255, 0.25);
   }
   50% {
-    text-shadow: 0 0 10px currentColor, 0 0 16px currentColor, 0 0 22px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px rgba(4, 226, 255, 0.85), 0 0 16px rgba(4, 226, 255, 0.65), 0 0 26px rgba(4, 226, 255, 0.45);
   }
   100% {
-    text-shadow: 0 0 4px currentColor, 0 0 10px currentColor, 0 0 14px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 4px rgba(4, 226, 255, 0.55), 0 0 10px rgba(4, 226, 255, 0.4), 0 0 16px rgba(4, 226, 255, 0.25);
   }
 }
 
 /* DESCRIÇÃO */
 #carouselHome[data-tema=climatizacao] .Descricao {
+  color: #3a89ff !important;
   color: #3a89ff;
   animation: descPulse-climatizacao 2s ease-in-out infinite;
   text-shadow: 0 0 6px rgba(58, 137, 255, 0.55), 0 0 12px rgba(58, 137, 255, 0.35), 0 0 18px rgba(58, 137, 255, 0.25);
@@ -237,6 +238,7 @@
 }
 
 #carouselHome[data-tema=eletrica] .Descricao {
+  color: #ffe603 !important;
   color: #ffe603;
   animation: descPulse-eletrica 2s ease-in-out infinite;
   text-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.35), 0 0 18px rgba(255, 230, 3, 0.25);
@@ -257,6 +259,7 @@
 }
 
 #carouselHome[data-tema=eletronica] .Descricao {
+  color: #08a115 !important;
   color: #08a115;
   animation: descPulse-eletronica 2s ease-in-out infinite;
   text-shadow: 0 0 6px rgba(8, 161, 21, 0.55), 0 0 12px rgba(8, 161, 21, 0.35), 0 0 18px rgba(8, 161, 21, 0.25);
@@ -277,6 +280,7 @@
 }
 
 #carouselHome[data-tema=refrigeracao] .Descricao {
+  color: #04e2ff !important;
   color: #04e2ff;
   animation: descPulse-refrigeracao 2s ease-in-out infinite;
   text-shadow: 0 0 6px rgba(4, 226, 255, 0.55), 0 0 12px rgba(4, 226, 255, 0.35), 0 0 18px rgba(4, 226, 255, 0.25);
