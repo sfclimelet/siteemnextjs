@@ -1,0 +1,44 @@
+@use "./globals" as *;
+
+@mixin RESOLUTION-375px(){
+    #{$C-C-HOME2}{
+        #{$CARR-INNER}{
+            #{$IMG-FUNDO}{
+                height: 260px;
+            }
+        }
+        #{$CARR-CAPTION}{
+            padding-bottom: 10px !important;
+            #{$CAPT-ICON}{
+                width: 28px;
+                height: 28px;
+            }
+            #{$CAPT-TITLE}{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            #{$CAPT-DESCRI}{
+                width: 100%;
+                font-size: 0.9rem;
+            }
+            #{$CAPT-BTN}{
+                font-size: 0.85rem;
+                padding: 8px 20px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        #{$INDICADORES}{
+            bottom: 5px;
+            button{
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 375px){
+    @include RESOLUTION-375px();
+}

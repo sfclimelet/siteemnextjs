@@ -30,10 +30,6 @@
 @mixin CONTEUDO-SLIDE(){
   #{$C-C-HOME1} #{$CARR-CAPTION}{
     z-index: 3;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 1rem;
   }
@@ -51,7 +47,7 @@
         color: $COR-WHITE;
     }
     #{$CAPT-DESCRI}{
-        width: 80%;
+        width: 100%;
         margin: 0.25rem auto 1rem auto;
         font-size: 1rem;
         font-weight: 400;

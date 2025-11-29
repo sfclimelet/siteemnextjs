@@ -1,1 +1,33 @@
-/*# sourceMappingURL=carrossel-Home-mobile.css.map */
+@media (max-width: 375px) {
+  #carouselHome .carousel-inner #IMGFUNDO {
+    height: 260px;
+  }
+  #carouselHome .carousel-caption {
+    padding-bottom: 10px !important;
+  }
+  #carouselHome .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+  }
+  #carouselHome .carousel-caption .Title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #carouselHome .carousel-caption .Descricao {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #carouselHome .carousel-caption .botao-saiba-mais {
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #carouselHome .carousel-indicators {
+    bottom: 5px;
+  }
+  #carouselHome .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+  }
+}/*# sourceMappingURL=carrossel-Home-mobile.css.map */

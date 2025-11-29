@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"carrossel-Home-mobile.css"}
+{"version":3,"sources":["carrossel-Home-mobile.scss","carrossel-Home-mobile.css"],"names":[],"mappings":"AAyCA;EApCc;IACE,aAAA;ECHd;EDMQ;IACE,+BAAA;ECJV;EDKY;IACE,WAAA;IACA,YAAA;ECHd;EDKY;IACE,eAAA;IACA,gBAAA;ECHd;EDKY;IACE,WAAA;IACA,iBAAA;ECHd;EDKY;IACE,kBAAA;IACA,iBAAA;IACA,gBAAA;IACA,mBAAA;ECHd;EDMQ;IACE,WAAA;ECJV;EDKU;IACI,UAAA;IACA,WAAA;ECHd;AACF","file":"carrossel-Home-mobile.css"}

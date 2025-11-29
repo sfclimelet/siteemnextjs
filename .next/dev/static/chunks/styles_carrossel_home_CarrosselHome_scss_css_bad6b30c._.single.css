@@ -22,10 +22,6 @@
   z-index: 3;
   text-align: center;
   padding: 0 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .CarrosselHome .icone-slide {
@@ -45,7 +41,7 @@
 .CarrosselHome .Descricao {
   color: #eaeaea;
   opacity: .95;
-  width: 80%;
+  width: 100%;
   margin: .25rem auto 1rem;
   font-size: 1rem;
   font-weight: 400;
@@ -118,15 +114,15 @@
 
 @keyframes float {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   50% {
-    transform: translateY(-8px);
+    transform: translateX(-8px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -365,6 +361,47 @@
   border-color: #04e2ff;
   transform: scale(1.18);
   box-shadow: 0 0 12px #04e2ffe6, 0 0 20px #04e2ff99;
+}
+
+@media (max-width: 375px) {
+  #carouselHome .carousel-inner #IMGFUNDO {
+    height: 260px;
+  }
+
+  #carouselHome .carousel-caption {
+    padding-bottom: 10px !important;
+  }
+
+  #carouselHome .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+  }
+
+  #carouselHome .carousel-caption .Title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #carouselHome .carousel-caption .Descricao {
+    width: 100%;
+    font-size: .9rem;
+  }
+
+  #carouselHome .carousel-caption .botao-saiba-mais {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: .85rem;
+  }
+
+  #carouselHome .carousel-indicators {
+    bottom: 5px;
+  }
+
+  #carouselHome .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 /*# sourceMappingURL=styles_carrossel_home_CarrosselHome_scss_css_bad6b30c._.single.css.map*/
