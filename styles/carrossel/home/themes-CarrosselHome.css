@@ -220,14 +220,14 @@
   background-color: rgba(58, 137, 255, 0.32);
   border: 1px solid rgba(58, 137, 255, 0.55);
   color: #fff;
-  animation: botaoPulse 2s ease-in-out infinite;
+  animation: botaoPulse-climatizacao 2s ease-in-out infinite;
   box-shadow: 0 0 6px rgba(58, 137, 255, 0.55), 0 0 12px rgba(58, 137, 255, 0.35), 0 0 18px rgba(58, 137, 255, 0.25);
 }
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais:hover {
   transform: scale(1.04);
   box-shadow: 0 0 6px rgba(58, 137, 255, 0.8), 0 0 12px rgba(58, 137, 255, 0.6), 0 0 18px rgba(58, 137, 255, 0.48);
 }
-@keyframes botaoPulse {
+@keyframes botaoPulse-climatizacao {
   0% {
     box-shadow: 0 0 6px rgba(58, 137, 255, 0.55), 0 0 12px rgba(58, 137, 255, 0.35), 0 0 18px rgba(58, 137, 255, 0.25);
   }
@@ -243,14 +243,14 @@
   background-color: rgba(255, 230, 3, 0.32);
   border: 1px solid rgba(255, 230, 3, 0.55);
   color: #fff;
-  animation: botaoPulse 2s ease-in-out infinite;
+  animation: botaoPulse-eletrica 2s ease-in-out infinite;
   box-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.35), 0 0 18px rgba(255, 230, 3, 0.25);
 }
 #carouselHome[data-tema=eletrica] .botao-saiba-mais:hover {
   transform: scale(1.04);
   box-shadow: 0 0 6px rgba(255, 230, 3, 0.8), 0 0 12px rgba(255, 230, 3, 0.6), 0 0 18px rgba(255, 230, 3, 0.48);
 }
-@keyframes botaoPulse {
+@keyframes botaoPulse-eletrica {
   0% {
     box-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.35), 0 0 18px rgba(255, 230, 3, 0.25);
   }
@@ -266,14 +266,14 @@
   background-color: rgba(8, 161, 21, 0.32);
   border: 1px solid rgba(8, 161, 21, 0.55);
   color: #fff;
-  animation: botaoPulse 2s ease-in-out infinite;
+  animation: botaoPulse-eletronica 2s ease-in-out infinite;
   box-shadow: 0 0 6px rgba(8, 161, 21, 0.55), 0 0 12px rgba(8, 161, 21, 0.35), 0 0 18px rgba(8, 161, 21, 0.25);
 }
 #carouselHome[data-tema=eletronica] .botao-saiba-mais:hover {
   transform: scale(1.04);
   box-shadow: 0 0 6px rgba(8, 161, 21, 0.8), 0 0 12px rgba(8, 161, 21, 0.6), 0 0 18px rgba(8, 161, 21, 0.48);
 }
-@keyframes botaoPulse {
+@keyframes botaoPulse-eletronica {
   0% {
     box-shadow: 0 0 6px rgba(8, 161, 21, 0.55), 0 0 12px rgba(8, 161, 21, 0.35), 0 0 18px rgba(8, 161, 21, 0.25);
   }
@@ -289,14 +289,14 @@
   background-color: rgba(4, 226, 255, 0.32);
   border: 1px solid rgba(4, 226, 255, 0.55);
   color: #fff;
-  animation: botaoPulse 2s ease-in-out infinite;
+  animation: botaoPulse-refrigeracao 2s ease-in-out infinite;
   box-shadow: 0 0 6px rgba(4, 226, 255, 0.55), 0 0 12px rgba(4, 226, 255, 0.35), 0 0 18px rgba(4, 226, 255, 0.25);
 }
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais:hover {
   transform: scale(1.04);
   box-shadow: 0 0 6px rgba(4, 226, 255, 0.8), 0 0 12px rgba(4, 226, 255, 0.6), 0 0 18px rgba(4, 226, 255, 0.48);
 }
-@keyframes botaoPulse {
+@keyframes botaoPulse-refrigeracao {
   0% {
     box-shadow: 0 0 6px rgba(4, 226, 255, 0.55), 0 0 12px rgba(4, 226, 255, 0.35), 0 0 18px rgba(4, 226, 255, 0.25);
   }

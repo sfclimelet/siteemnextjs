@@ -207,7 +207,7 @@
   color: #fff;
   background-color: #3a89ff52;
   border: 1px solid #3a89ff8c;
-  animation: 2s ease-in-out infinite botaoPulse;
+  animation: 2s ease-in-out infinite botaoPulse-climatizacao;
   box-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
 }
 
@@ -216,7 +216,88 @@
   box-shadow: 0 0 6px #3a89ffcc, 0 0 12px #3a89ff99, 0 0 18px #3a89ff7a;
 }
 
-@keyframes botaoPulse {
+@keyframes botaoPulse-climatizacao {
+  0% {
+    box-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
+  }
+
+  50% {
+    box-shadow: 0 0 12px #3a89ffbf, 0 0 22px #3a89ff8c, 0 0 32px #3a89ff66;
+  }
+
+  100% {
+    box-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais {
+  color: #fff;
+  background-color: #ffe60352;
+  border: 1px solid #ffe6038c;
+  animation: 2s ease-in-out infinite botaoPulse-eletrica;
+  box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px #ffe603cc, 0 0 12px #ffe60399, 0 0 18px #ffe6037a;
+}
+
+@keyframes botaoPulse-eletrica {
+  0% {
+    box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
+  }
+
+  50% {
+    box-shadow: 0 0 12px #ffe603bf, 0 0 22px #ffe6038c, 0 0 32px #ffe60366;
+  }
+
+  100% {
+    box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
+  }
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais {
+  color: #fff;
+  background-color: #08a11552;
+  border: 1px solid #08a1158c;
+  animation: 2s ease-in-out infinite botaoPulse-eletronica;
+  box-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px #08a115cc, 0 0 12px #08a11599, 0 0 18px #08a1157a;
+}
+
+@keyframes botaoPulse-eletronica {
+  0% {
+    box-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
+  }
+
+  50% {
+    box-shadow: 0 0 12px #08a115bf, 0 0 22px #08a1158c, 0 0 32px #08a11566;
+  }
+
+  100% {
+    box-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
+  }
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
+  color: #fff;
+  background-color: #04e2ff52;
+  border: 1px solid #04e2ff8c;
+  animation: 2s ease-in-out infinite botaoPulse-refrigeracao;
+  box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 6px #04e2ffcc, 0 0 12px #04e2ff99, 0 0 18px #04e2ff7a;
+}
+
+@keyframes botaoPulse-refrigeracao {
   0% {
     box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
   }
@@ -228,45 +309,6 @@
   100% {
     box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
   }
-}
-
-#carouselHome[data-tema="eletrica"] .botao-saiba-mais {
-  color: #fff;
-  background-color: #ffe60352;
-  border: 1px solid #ffe6038c;
-  animation: 2s ease-in-out infinite botaoPulse;
-  box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
-}
-
-#carouselHome[data-tema="eletrica"] .botao-saiba-mais:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 6px #ffe603cc, 0 0 12px #ffe60399, 0 0 18px #ffe6037a;
-}
-
-#carouselHome[data-tema="eletronica"] .botao-saiba-mais {
-  color: #fff;
-  background-color: #08a11552;
-  border: 1px solid #08a1158c;
-  animation: 2s ease-in-out infinite botaoPulse;
-  box-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
-}
-
-#carouselHome[data-tema="eletronica"] .botao-saiba-mais:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 6px #08a115cc, 0 0 12px #08a11599, 0 0 18px #08a1157a;
-}
-
-#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
-  color: #fff;
-  background-color: #04e2ff52;
-  border: 1px solid #04e2ff8c;
-  animation: 2s ease-in-out infinite botaoPulse;
-  box-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
-}
-
-#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 6px #04e2ffcc, 0 0 12px #04e2ff99, 0 0 18px #04e2ff7a;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button {

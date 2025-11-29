@@ -1857,3 +1857,75 @@ Caused by: Error: Missing argument $cor.
 [00:49:22.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:50:23.495] Server  LOG      ✓ Compiled in 63ms
 [00:50:33.294] Server  LOG      ✓ Compiled in 52ms
+[04:01:48.649] Server  LOG      ✓ Compiled in 53ms
+[04:02:05.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:39.195] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:40.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:41.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:42.960] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:10:18.730] Server  LOG      ✓ Compiled in 86ms
+[04:10:19.085] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Missing argument $tema.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+50 │       @include Botao-Pulse($cor);
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+66 │ @mixin Botao-Pulse($cor, $tema){
+   │        ━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  Botao-Pulse()
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: Missing argument $tema.
+   ┌──> styles/carrossel/home/themes-CarrosselHome.scss
+50 │       @include Botao-Pulse($cor);
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+   ╵
+   ┌──> styles/carrossel/home/_mixins-animations.scss
+66 │ @mixin Botao-Pulse($cor, $tema){
+   │        ━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+   ╵
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  Botao-Pulse()
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at ParameterList0.verify$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:113442:21)]
+    [at _EvaluateVisitor__verifyArguments_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94712:30)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at _EvaluateVisitor2._async_evaluate0$_verifyArguments$4 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90598:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:94472:18]
+    [at _wrapJsFunctionForAsync_closure.$protected (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:38171:12)]
+    [at Object._asyncStartSync (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:4948:20)]
+[04:10:36.327] Server  LOG      ✓ Compiled in 73ms
+[04:10:37.084] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: (climatizacao: #3a89ff, eletrica: #ffe603, eletronica: #08a115, refrigeracao: #04e2ff) isn't a valid CSS value.
+   ╷
+67 │     animation: botaoPulse-#{$tema} 2s ease-in-out infinite;
+   │                             ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 67:29   Botao-Pulse()
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+Caused by: Error: (climatizacao: #3a89ff, eletrica: #ffe603, eletronica: #08a115, refrigeracao: #04e2ff) isn't a valid CSS value.
+   ╷
+67 │     animation: botaoPulse-#{$tema} 2s ease-in-out infinite;
+   │                             ^^^^^
+   ╵
+  styles/carrossel/home/_mixins-animations.scss 67:29   Botao-Pulse()
+  styles/carrossel/home/themes-CarrosselHome.scss 50:7  @use
+  styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at _SerializeVisitor0.visitMap$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:117558:17)]
+    [at SassMap0.accept$1$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:110696:22)]
+    [at SassMap0.accept$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:110699:19)]
+    [at Object.serializeValue0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:30716:13)]
+    [at _EvaluateVisitor__serialize_closure2.call$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:95119:16)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$1$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91616:23)]
+    [at _EvaluateVisitor2._async_evaluate0$_addExceptionSpan$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91630:19)]
+    [at _EvaluateVisitor2._async_evaluate0$_serialize$3$quote (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:91350:19)]
+    [at /home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:90674:34]

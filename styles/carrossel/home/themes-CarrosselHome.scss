@@ -47,7 +47,7 @@ $temas: (
       background-color: rgba($cor, .32);
       border: 1px solid rgba($cor, .55);
       color: $COR-WHITE;
-      @include Botao-Pulse($cor);
+      @include Botao-Pulse($cor, $tema);
     }
   }
 }
