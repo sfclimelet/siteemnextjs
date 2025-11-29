@@ -19,7 +19,7 @@
             }
             #{$CAPT-DESCRI}{
                 width: 100%;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             #{$CAPT-BTN}{
                 font-size: 0.85rem;
@@ -31,14 +31,71 @@
         #{$INDICADORES}{
             bottom: 5px;
             button{
-                width: 8px;
-                height: 8px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
+            #{$CTRL-NEXT-I}#{$CTRL-PREV-I} svg{
+                width: 90px;
+                height: 90px;
+                stroke: 1.9;
             }
         }
     }
 }
 
+@mixin RESOLUTION-575px(){
+    #{$C-C-HOME2}{
+        margin: 12px 12px;
+        #{$CARR-INNER}{
+            #{$IMG-FUNDO}{
+                height: 360px;
+            }
+        }
+        #{$CARR-CAPTION}{
+            padding-bottom: 50px !important;
+            #{$CAPT-ICON}{
+                width: 38px;
+                height: 38px;
+            }
+            #{$CAPT-TITLE}{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            #{$CAPT-DESCRI}{
+                width: 100%;
+                font-size: 0.9rem;
+            }
+            #{$CAPT-BTN}{
+                font-size: 0.90rem;
+                padding: 8px 20px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        #{$INDICADORES}{
+            bottom: 5px;
+            button{
+                width: 12px;
+                height: 12px;
+            }
+        }
+        #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
+            width: 90px;
+            #{$CTRL-NEXT-I}#{$CTRL-PREV-I} svg{
+                width: 90px;
+                height: 90px;
+                stroke: 1.9;
+            }
+        }
+    }
+}
 
 @media (max-width: 375px){
     @include RESOLUTION-375px();
+}
+
+@media (max-width: 575px){
+    @include RESOLUTION-575px();
 }

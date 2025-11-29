@@ -112,3 +112,51 @@
         0 0 20px rgba($cor, 0.6);
     transform: scale(1.18);
 }
+
+// Descrição com pulse/glow por tema (usa mesma lógica do Botao-Pulse)
+@mixin Description-Glow($cor, $tema) {
+  // nome único para a animação por tema
+  $anim-name: unquote("descPulse-#{$tema}");
+
+  // cor do texto
+  color: $cor;
+
+  // animação
+  animation: #{$anim-name} 2s ease-in-out infinite;
+
+  // text-shadow (camadas), vírgulas obrigatórias
+  text-shadow:
+    0 0 6px rgba($cor, .55),
+    0 0 12px rgba($cor, .35),
+    0 0 18px rgba($cor, .25);
+
+  // hover opcional (aumenta o brilho)
+  &:hover {
+    text-shadow:
+      0 0 8px rgba($cor, .85),
+      0 0 18px rgba($cor, .6),
+      0 0 28px rgba($cor, .45);
+  }
+
+  // keyframes com nome único
+  @keyframes #{$anim-name} {
+    0% {
+      text-shadow:
+        0 0 6px rgba($cor, .45),
+        0 0 14px rgba($cor, .35),
+        0 0 22px rgba($cor, .20);
+    }
+    50% {
+      text-shadow:
+        0 0 12px rgba($cor, .85),
+        0 0 24px rgba($cor, .65),
+        0 0 34px rgba($cor, .45);
+    }
+    100% {
+      text-shadow:
+        0 0 6px rgba($cor, .45),
+        0 0 14px rgba($cor, .35),
+        0 0 22px rgba($cor, .20);
+    }
+  }
+}

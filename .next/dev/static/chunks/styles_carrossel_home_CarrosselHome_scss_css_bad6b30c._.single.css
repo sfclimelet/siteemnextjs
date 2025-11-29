@@ -199,6 +199,102 @@
   animation: 2.6s ease-in-out infinite textPulse;
 }
 
+#carouselHome[data-tema="climatizacao"] .Descricao {
+  color: #3a89ff;
+  text-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff59, 0 0 18px #3a89ff40;
+  animation: 2s ease-in-out infinite descPulse-climatizacao;
+}
+
+#carouselHome[data-tema="climatizacao"] .Descricao:hover {
+  text-shadow: 0 0 8px #3a89ffd9, 0 0 18px #3a89ff99, 0 0 28px #3a89ff73;
+}
+
+@keyframes descPulse-climatizacao {
+  0% {
+    text-shadow: 0 0 6px #3a89ff73, 0 0 14px #3a89ff59, 0 0 22px #3a89ff33;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #3a89ffd9, 0 0 24px #3a89ffa6, 0 0 34px #3a89ff73;
+  }
+
+  100% {
+    text-shadow: 0 0 6px #3a89ff73, 0 0 14px #3a89ff59, 0 0 22px #3a89ff33;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .Descricao {
+  color: #ffe603;
+  text-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60359, 0 0 18px #ffe60340;
+  animation: 2s ease-in-out infinite descPulse-eletrica;
+}
+
+#carouselHome[data-tema="eletrica"] .Descricao:hover {
+  text-shadow: 0 0 8px #ffe603d9, 0 0 18px #ffe60399, 0 0 28px #ffe60373;
+}
+
+@keyframes descPulse-eletrica {
+  0% {
+    text-shadow: 0 0 6px #ffe60373, 0 0 14px #ffe60359, 0 0 22px #ffe60333;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #ffe603d9, 0 0 24px #ffe603a6, 0 0 34px #ffe60373;
+  }
+
+  100% {
+    text-shadow: 0 0 6px #ffe60373, 0 0 14px #ffe60359, 0 0 22px #ffe60333;
+  }
+}
+
+#carouselHome[data-tema="eletronica"] .Descricao {
+  color: #08a115;
+  text-shadow: 0 0 6px #08a1158c, 0 0 12px #08a11559, 0 0 18px #08a11540;
+  animation: 2s ease-in-out infinite descPulse-eletronica;
+}
+
+#carouselHome[data-tema="eletronica"] .Descricao:hover {
+  text-shadow: 0 0 8px #08a115d9, 0 0 18px #08a11599, 0 0 28px #08a11573;
+}
+
+@keyframes descPulse-eletronica {
+  0% {
+    text-shadow: 0 0 6px #08a11573, 0 0 14px #08a11559, 0 0 22px #08a11533;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #08a115d9, 0 0 24px #08a115a6, 0 0 34px #08a11573;
+  }
+
+  100% {
+    text-shadow: 0 0 6px #08a11573, 0 0 14px #08a11559, 0 0 22px #08a11533;
+  }
+}
+
+#carouselHome[data-tema="refrigeracao"] .Descricao {
+  color: #04e2ff;
+  text-shadow: 0 0 6px #04e2ff8c, 0 0 12px #04e2ff59, 0 0 18px #04e2ff40;
+  animation: 2s ease-in-out infinite descPulse-refrigeracao;
+}
+
+#carouselHome[data-tema="refrigeracao"] .Descricao:hover {
+  text-shadow: 0 0 8px #04e2ffd9, 0 0 18px #04e2ff99, 0 0 28px #04e2ff73;
+}
+
+@keyframes descPulse-refrigeracao {
+  0% {
+    text-shadow: 0 0 6px #04e2ff73, 0 0 14px #04e2ff59, 0 0 22px #04e2ff33;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #04e2ffd9, 0 0 24px #04e2ffa6, 0 0 34px #04e2ff73;
+  }
+
+  100% {
+    text-shadow: 0 0 6px #04e2ff73, 0 0 14px #04e2ff59, 0 0 22px #04e2ff33;
+  }
+}
+
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
   color: #fff;
   background-color: #3a89ff52;
@@ -384,7 +480,7 @@
 
   #carouselHome .carousel-caption .Descricao {
     width: 100%;
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   #carouselHome .carousel-caption .botao-saiba-mais {
@@ -399,8 +495,69 @@
   }
 
   #carouselHome .carousel-indicators button {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
+  }
+
+  #carouselHome .carousel-control-prev .carousel-control-next .icon-next.icon-prev svg {
+    width: 90px;
+    height: 90px;
+    stroke: 1.9;
+  }
+}
+
+@media (max-width: 575px) {
+  #carouselHome {
+    margin: 12px;
+  }
+
+  #carouselHome .carousel-inner #IMGFUNDO {
+    height: 360px;
+  }
+
+  #carouselHome .carousel-caption {
+    padding-bottom: 50px !important;
+  }
+
+  #carouselHome .carousel-caption .icone-slide {
+    width: 38px;
+    height: 38px;
+  }
+
+  #carouselHome .carousel-caption .Title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #carouselHome .carousel-caption .Descricao {
+    width: 100%;
+    font-size: .9rem;
+  }
+
+  #carouselHome .carousel-caption .botao-saiba-mais {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: .9rem;
+  }
+
+  #carouselHome .carousel-indicators {
+    bottom: 5px;
+  }
+
+  #carouselHome .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+  }
+
+  #carouselHome .carousel-control-prev .carousel-control-next {
+    width: 90px;
+  }
+
+  #carouselHome .carousel-control-prev .carousel-control-next .icon-next.icon-prev svg {
+    width: 90px;
+    height: 90px;
+    stroke: 1.9;
   }
 }
 

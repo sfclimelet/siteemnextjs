@@ -40,6 +40,15 @@ $temas: (
   }
 }
 
+/* DESCRIÇÃO */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"]{
+    #{$CAPT-DESCRI}{
+      @include Description-Glow($cor, $tema);
+    }
+  }
+}
+
 /* BOTOES - (explorar e saiba mais) */
 @each $tema, $cor in $temas {
   #{$C-C-HOME2}[data-tema="#{$tema}"]{

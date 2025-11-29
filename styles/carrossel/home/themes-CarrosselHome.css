@@ -215,6 +215,87 @@
   }
 }
 
+/* DESCRIÇÃO */
+#carouselHome[data-tema=climatizacao] .Descricao {
+  color: #3a89ff;
+  animation: descPulse-climatizacao 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(58, 137, 255, 0.55), 0 0 12px rgba(58, 137, 255, 0.35), 0 0 18px rgba(58, 137, 255, 0.25);
+}
+#carouselHome[data-tema=climatizacao] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(58, 137, 255, 0.85), 0 0 18px rgba(58, 137, 255, 0.6), 0 0 28px rgba(58, 137, 255, 0.45);
+}
+@keyframes descPulse-climatizacao {
+  0% {
+    text-shadow: 0 0 6px rgba(58, 137, 255, 0.45), 0 0 14px rgba(58, 137, 255, 0.35), 0 0 22px rgba(58, 137, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(58, 137, 255, 0.85), 0 0 24px rgba(58, 137, 255, 0.65), 0 0 34px rgba(58, 137, 255, 0.45);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(58, 137, 255, 0.45), 0 0 14px rgba(58, 137, 255, 0.35), 0 0 22px rgba(58, 137, 255, 0.2);
+  }
+}
+
+#carouselHome[data-tema=eletrica] .Descricao {
+  color: #ffe603;
+  animation: descPulse-eletrica 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.35), 0 0 18px rgba(255, 230, 3, 0.25);
+}
+#carouselHome[data-tema=eletrica] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(255, 230, 3, 0.85), 0 0 18px rgba(255, 230, 3, 0.6), 0 0 28px rgba(255, 230, 3, 0.45);
+}
+@keyframes descPulse-eletrica {
+  0% {
+    text-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35), 0 0 22px rgba(255, 230, 3, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 230, 3, 0.85), 0 0 24px rgba(255, 230, 3, 0.65), 0 0 34px rgba(255, 230, 3, 0.45);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35), 0 0 22px rgba(255, 230, 3, 0.2);
+  }
+}
+
+#carouselHome[data-tema=eletronica] .Descricao {
+  color: #08a115;
+  animation: descPulse-eletronica 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(8, 161, 21, 0.55), 0 0 12px rgba(8, 161, 21, 0.35), 0 0 18px rgba(8, 161, 21, 0.25);
+}
+#carouselHome[data-tema=eletronica] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(8, 161, 21, 0.85), 0 0 18px rgba(8, 161, 21, 0.6), 0 0 28px rgba(8, 161, 21, 0.45);
+}
+@keyframes descPulse-eletronica {
+  0% {
+    text-shadow: 0 0 6px rgba(8, 161, 21, 0.45), 0 0 14px rgba(8, 161, 21, 0.35), 0 0 22px rgba(8, 161, 21, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(8, 161, 21, 0.85), 0 0 24px rgba(8, 161, 21, 0.65), 0 0 34px rgba(8, 161, 21, 0.45);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(8, 161, 21, 0.45), 0 0 14px rgba(8, 161, 21, 0.35), 0 0 22px rgba(8, 161, 21, 0.2);
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .Descricao {
+  color: #04e2ff;
+  animation: descPulse-refrigeracao 2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(4, 226, 255, 0.55), 0 0 12px rgba(4, 226, 255, 0.35), 0 0 18px rgba(4, 226, 255, 0.25);
+}
+#carouselHome[data-tema=refrigeracao] .Descricao:hover {
+  text-shadow: 0 0 8px rgba(4, 226, 255, 0.85), 0 0 18px rgba(4, 226, 255, 0.6), 0 0 28px rgba(4, 226, 255, 0.45);
+}
+@keyframes descPulse-refrigeracao {
+  0% {
+    text-shadow: 0 0 6px rgba(4, 226, 255, 0.45), 0 0 14px rgba(4, 226, 255, 0.35), 0 0 22px rgba(4, 226, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(4, 226, 255, 0.85), 0 0 24px rgba(4, 226, 255, 0.65), 0 0 34px rgba(4, 226, 255, 0.45);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(4, 226, 255, 0.45), 0 0 14px rgba(4, 226, 255, 0.35), 0 0 22px rgba(4, 226, 255, 0.2);
+  }
+}
+
 /* BOTOES - (explorar e saiba mais) */
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais {
   background-color: rgba(58, 137, 255, 0.32);
