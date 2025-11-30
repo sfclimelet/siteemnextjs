@@ -1,42 +1,49 @@
 @media (max-width: 375px) {
-  #carouselHome {
-    margin: 12px 12px;
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.35rem;
   }
-  #carouselHome .carousel-inner #IMGFUNDO {
-    height: 260px;
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 8px;
+    height: 8px;
   }
-  #carouselHome .carousel-caption {
-    padding-bottom: 10px !important;
-  }
-  #carouselHome .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
-  }
-  #carouselHome .carousel-caption .Title {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  #carouselHome .carousel-caption .Descricao {
-    width: 100%;
-    font-size: 1rem;
-  }
-  #carouselHome .carousel-caption .botao-saiba-mais {
-    font-size: 0.85rem;
-    padding: 8px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  #carouselHome .carousel-indicators {
-    bottom: 5px;
-  }
-  #carouselHome .carousel-indicators button {
+  .CarrosselHome #carouselHome .carousel-indicators .active {
     width: 10px;
     height: 10px;
   }
-  #carouselHome .carousel-control-prev .carousel-control-next .icon-next.icon-prev svg {
-    width: 90px;
-    height: 90px;
-    stroke: 1.9;
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 280px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    margin-bottom: 1.2rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 75%;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next {
+    width: 70px !important;
+    height: 70px !important;
+    stroke-width: 2.8;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next .icon-prev .icon-next {
+    width: 28px;
+    height: 28px;
   }
 }
 @media (max-width: 575px) {
@@ -65,7 +72,6 @@
     font-size: 0.9rem;
     padding: 8px 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
   }
   #carouselHome .carousel-indicators {
     bottom: 5px;
