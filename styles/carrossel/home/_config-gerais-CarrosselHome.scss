@@ -34,7 +34,7 @@
                     width: 100%;
                     height: 320px;
                     /* Se der b.o tire o contain e coloque cover */
-                    object-fit: covern;
+                    object-fit: cover;
                     filter: brightness(0.20);
                 }
                 #{$CARR-CAPTION}{
@@ -91,6 +91,7 @@
             #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
                 background-color: none !important;
                 width: 50px;
+                height: 50px;
                 transition: opacity 0.3s ease;
                 &:focus{
                     box-shadow: none !important;

@@ -6,21 +6,22 @@
             #{$INDICADORES}{
                 margin-bottom: 0.35rem;
                 button{
-                    width: 8px;
-                    height: 8px;
-                }
-                #{$CLASS-ACTIVE}{
                     width: 10px;
                     height: 10px;
+                }
+                #{$CLASS-ACTIVE}{
+                    width: 12px;
+                    height: 12px;
                 }
             }
             #{$CARR-INNER}{
                 #{$IMG-FUNDO}{
-                    height: 280px;
+                    height: 260px;
                 }
                 #{$CARR-CAPTION}{
                     padding: 0 0.75rem;
                     margin-bottom: 1.2rem;
+                    padding-bottom: 5rem !important;
                     #{$CAPT-ICON}{
                         width: 28px;
                         height: 28px;
@@ -43,12 +44,12 @@
                 }
             }
             #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
-                width: 70px !important;
-                height: 70px !important;
-                stroke-width: 2.8;
+                width: 50px;
+                height: 50px;
                 #{$CTRL-PREV-I} #{$CTRL-NEXT-I}{
                     width: 28px;
                     height: 28px;
+                    
                 }
             }
         }
@@ -56,49 +57,57 @@
 }
 
 @mixin RESOLUTION-575px(){
-    #{$C-C-HOME2}{
-        margin: 15px 15px;
-        #{$CARR-INNER}{
-            #{$IMG-FUNDO}{
-                height: 360px;
+        #{$C-C-HOME1}{
+            #{$C-C-HOME2}{
+                #{$INDICADORES}{
+                    margin-bottom: 0.70rem;
+                    button{
+                        width: 13px;
+                        height: 13px;
+                    }
+                    #{$CLASS-ACTIVE}{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                #{$CARR-INNER}{
+                    #{$IMG-FUNDO}{
+                        height: 350px;
+                    }
+                    #{$CARR-CAPTION}{
+                        padding: 0 0.75rem;
+                        padding-bottom: 5rem;
+                        #{$CAPT-ICON}{
+                            width: 28px;
+                            height: 28px;
+                            margin-bottom: 8px;
+                        }
+                        #{$CAPT-TITLE}{
+                            font-size: 1.55rem;
+                            margin-bottom: 6px;
+                        }
+                        #{$CAPT-DESCRI}{
+                            width: 75%;
+                            font-size: 0.90rem;
+                            line-height: 1.35;
+                            margin-bottom: 0.85rem;
+                        }
+                        #{$CAPT-BTN}{
+                            padding: 8px 20px;
+                            font-size: 0.95rem;
+                        }
+                    }
+                }
+                #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
+                    width: 70px !important;
+                    height: 70px !important;
+                    stroke-width: 2.8;
+                    #{$CTRL-PREV-I} #{$CTRL-NEXT-I}{
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
             }
-        }
-        #{$CARR-CAPTION}{
-            padding-bottom: 50px !important;
-            #{$CAPT-ICON}{
-                width: 38px;
-                height: 38px;
-            }
-            #{$CAPT-TITLE}{
-                font-size: 30px;
-                font-weight: 600;
-            }
-            #{$CAPT-DESCRI}{
-                width: 100%;
-                font-size: 0.9rem;
-            }
-            #{$CAPT-BTN}{
-                font-size: 0.90rem;
-                padding: 8px 20px;
-                margin-top: 10px;
-                
-            }
-        }
-        #{$INDICADORES}{
-            bottom: 5px;
-            button{
-                width: 12px;
-                height: 12px;
-            }
-        }
-        #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
-            width: 90px;
-            #{$CTRL-NEXT-I}#{$CTRL-PREV-I} svg{
-                width: 90px;
-                height: 90px;
-                stroke: 1.9;
-            }
-        }
     }
 }
 
