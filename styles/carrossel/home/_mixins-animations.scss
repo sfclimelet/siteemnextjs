@@ -1,3 +1,5 @@
+@use "./globals" as *;
+
 @mixin Glow-Soft($cor) {
   position: relative;
   transition: box-shadow .25s ease;
