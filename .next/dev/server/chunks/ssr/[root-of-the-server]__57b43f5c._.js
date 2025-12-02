@@ -1519,6 +1519,90 @@ const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-stor
 
 module.exports = mod;
 }),
+"[project]/public/ar-condicionado.webp (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/ar-condicionado.0c0c5230.webp");}),
+"[project]/public/ar-condicionado.webp.mjs { IMAGE => \"[project]/public/ar-condicionado.webp (static in ecmascript, tag client)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/public/ar-condicionado.webp (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1910,
+    height: 1273,
+    blurWidth: 8,
+    blurHeight: 5,
+    blurDataURL: "data:image/webp;base64,UklGRuYAAABXRUJQVlA4TNoAAAAvBwABAM1VICICHgiACQMAAABpHieOCAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgADT8+xy7u8x3wAAADwQgBQGAACA8/+LF1iUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgwTCfqq/zQNBOIAAAAM6//beWAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAo1tbZF4QmGRDsaRzBAyx1CuY4if/2tqW/efP6nqbNcw2fBoT6t3Td+hQjK9I8s+l3ocCKhZuP0ek4+Dn9o03CPZQC7mCAA=="
+};
+}),
+"[project]/public/eletrica.webp (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/eletrica.ed236bb7.webp");}),
+"[project]/public/eletrica.webp.mjs { IMAGE => \"[project]/public/eletrica.webp (static in ecmascript, tag client)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletrica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/public/eletrica.webp (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletrica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1910,
+    height: 1273,
+    blurWidth: 8,
+    blurHeight: 5,
+    blurDataURL: "data:image/webp;base64,UklGRu4AAABXRUJQVlA4TOEAAAAvBwABAM1VICICHgiACQMAAABwAuDgAAKQAAAAcAAAAAAAAAAAAAAAAAAA4ECcCyFzUEIuX0bJEgAAgAcCYMIAAABw/qN5qxMYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQQAKwJDq1psHAmzDAAAAcP5v16vW5gDHcQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOHIN10kVegIH584/83b+Xdu9TWSVTdL+mO47PtLg6sjlmY/fO5Amgeb0EVI68LL9nQ+nvtaxoq9Sw6YAQkeJJI3Qv+TH1taI4VK7z3AQA"
+};
+}),
+"[project]/public/eletronica.webp (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/eletronica.68a26c7b.webp");}),
+"[project]/public/eletronica.webp.mjs { IMAGE => \"[project]/public/eletronica.webp (static in ecmascript, tag client)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletronica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/public/eletronica.webp (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletronica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1910,
+    height: 1273,
+    blurWidth: 8,
+    blurHeight: 5,
+    blurDataURL: "data:image/webp;base64,UklGRuYAAABXRUJQVlA4TNoAAAAvBwABAM1VICICHgiACQMAAID9DQIAAAAAAAAAAAAAAAAAAAAAAAAAHAAAEBIA4BIpiYjVn/LHOwAAgAcCbAIAAABw/ikFAkQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAvrX3eyAAJgwAAADnL7NWs63sSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAABCJushjzWsgVKrJluJuT+YPyH9tUXYZcwanTeEv8DXIygBEowGdzxDIeTF/o6HwCVXJqmk55I20CgR5tHY+JcbeX9mHzrrnBg=="
+};
+}),
+"[project]/public/refrigeracao.webp (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/refrigeracao.2f6abbe8.webp");}),
+"[project]/public/refrigeracao.webp.mjs { IMAGE => \"[project]/public/refrigeracao.webp (static in ecmascript, tag client)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$refrigeracao$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/public/refrigeracao.webp (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$refrigeracao$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1910,
+    height: 1273,
+    blurWidth: 8,
+    blurHeight: 5,
+    blurDataURL: "data:image/webp;base64,UklGRtwAAABXRUJQVlA4TNAAAAAvBwABAM1VICICHgiACQMAAABByJcAREEAIEE4xxEgAAAAAAAAAAAAAMABAYQAgIPXAYc8UAAOPAAAADwQYBMAAACA89+2RwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKI1DwTQBgAAAOD8a+cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD81Yq02+5e8rOAtETWZzJuf1P0XyvIxzied8lNmB8ZMzi3cA4qzpNJ2R8FClZwiYoZ8omUfbExIliLPTWpojQL"
+};
+}),
 "[project]/components/carrossel/cardsCarrosselHomeData.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1526,11 +1610,19 @@ __turbopack_context__.s([
     "carrosselHomeData",
     ()=>carrosselHomeData
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/ar-condicionado.webp.mjs { IMAGE => "[project]/public/ar-condicionado.webp (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletrica$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$eletrica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/eletrica.webp.mjs { IMAGE => "[project]/public/eletrica.webp (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletronica$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$eletronica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/eletronica.webp.mjs { IMAGE => "[project]/public/eletronica.webp (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$refrigeracao$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$refrigeracao$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/refrigeracao.webp.mjs { IMAGE => "[project]/public/refrigeracao.webp (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
 // ICONS
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$thermometer$2d$snowflake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ThermometerSnowflake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/thermometer-snowflake.js [app-ssr] (ecmascript) <export default as ThermometerSnowflake>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-ssr] (ecmascript) <export default as Zap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cpu.js [app-ssr] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$snowflake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Snowflake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/snowflake.js [app-ssr] (ecmascript) <export default as Snowflake>");
+;
+;
+;
+;
 ;
 const carrosselHomeData = [
     {
@@ -1539,7 +1631,7 @@ const carrosselHomeData = [
         title: "CLIMATIZAÇÃO",
         desc: "Instalação e manutenção de ar-condicionado com segurança e eficiência.",
         buttonLabel: "Explorar",
-        image: "/ar-condicionado.webp",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
         rota: "/services/climatizacao",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$thermometer$2d$snowflake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ThermometerSnowflake$3e$__["ThermometerSnowflake"]
@@ -1550,7 +1642,7 @@ const carrosselHomeData = [
         title: "ELÉTRICA",
         desc: "Reparos, instalações e soluções elétricas completas para sua residência ou empresa.",
         buttonLabel: "Explorar",
-        image: "/eletrica.jpg",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletrica$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$eletrica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
         rota: "/services/eletrica",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
@@ -1561,7 +1653,7 @@ const carrosselHomeData = [
         title: "ELETRÔNICA",
         desc: "Diagnóstico e reparo de placas, módulos e sistemas eletrônicos.",
         buttonLabel: "Saiba mais",
-        image: "/eletronica.jpg",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$eletronica$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$eletronica$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
         rota: "",
         indisponivel: true,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__["Cpu"]
@@ -1572,7 +1664,7 @@ const carrosselHomeData = [
         title: "REFRIGERAÇÃO",
         desc: "Manutenção e instalação de sistemas de refrigeração residencial e comercial.",
         buttonLabel: "Saiba mais",
-        image: "/refrigeracao.jpg",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$refrigeracao$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$refrigeracao$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
         rota: "",
         indisponivel: true,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$snowflake$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Snowflake$3e$__["Snowflake"]
@@ -2003,4 +2095,4 @@ function Home() {
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__f6db9458._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__57b43f5c._.js.map

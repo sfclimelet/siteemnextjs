@@ -1662,6 +1662,30 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/public/ar-condicionado.webp (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/ar-condicionado.0c0c5230.webp");}),
+"[project]/public/ar-condicionado.webp.mjs { IMAGE => \"[project]/public/ar-condicionado.webp (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/public/ar-condicionado.webp (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1910,
+    height: 1273,
+    blurWidth: 8,
+    blurHeight: 5,
+    blurDataURL: "data:image/webp;base64,UklGRuYAAABXRUJQVlA4TNoAAAAvBwABAM1VICICHgiACQMAAABpHieOCAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgADT8+xy7u8x3wAAADwQgBQGAACA8/+LF1iUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgwTCfqq/zQNBOIAAAAM6//beWAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAo1tbZF4QmGRDsaRzBAyx1CuY4if/2tqW/efP6nqbNcw2fBoT6t3Td+hQjK9I8s+l3ocCKhZuP0ek4+Dn9o03CPZQC7mCAA=="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/components/carrossel/cardsCarrosselHomeData.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1669,11 +1693,13 @@ __turbopack_context__.s([
     "carrosselHomeData",
     ()=>carrosselHomeData
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/ar-condicionado.webp.mjs { IMAGE => "[project]/public/ar-condicionado.webp (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
 // ICONS
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$thermometer$2d$snowflake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ThermometerSnowflake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/thermometer-snowflake.js [app-client] (ecmascript) <export default as ThermometerSnowflake>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cpu.js [app-client] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$snowflake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Snowflake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/snowflake.js [app-client] (ecmascript) <export default as Snowflake>");
+;
 ;
 const carrosselHomeData = [
     {
@@ -1682,7 +1708,7 @@ const carrosselHomeData = [
         title: "CLIMATIZAÇÃO",
         desc: "Instalação e manutenção de ar-condicionado com segurança e eficiência.",
         buttonLabel: "Explorar",
-        image: "/ar-condicionado.webp",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$ar$2d$condicionado$2e$webp__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
         rota: "/services/climatizacao",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$thermometer$2d$snowflake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ThermometerSnowflake$3e$__["ThermometerSnowflake"]
@@ -1693,7 +1719,7 @@ const carrosselHomeData = [
         title: "ELÉTRICA",
         desc: "Reparos, instalações e soluções elétricas completas para sua residência ou empresa.",
         buttonLabel: "Explorar",
-        image: "/eletrica.jpg",
+        image: Img,
         rota: "/services/eletrica",
         indisponivel: false,
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
@@ -2198,4 +2224,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=_55ddb885._.js.map
+//# sourceMappingURL=_36aea155._.js.map

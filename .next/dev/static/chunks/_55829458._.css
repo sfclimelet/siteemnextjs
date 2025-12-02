@@ -1708,7 +1708,7 @@
   }
 
   .CarrosselHome #carouselHome {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -1727,12 +1727,12 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
-    height: 500px;
+    height: 420px;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
     margin: 0 auto;
-    padding: 0 .75rem 7rem;
+    padding: 0 .75rem 6rem;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {

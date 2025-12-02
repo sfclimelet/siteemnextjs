@@ -1,8 +1,17 @@
 import React from "react";
 import type { ComponentType } from "react";
+import ImgArCondicionado from "../../public/ar-condicionado.webp";
+import ImgEletric from "../../public/eletrica.webp";
+import ImgEletronica from "../../public/eletronica.webp";
+import ImgRefrigeracao from "../../public/refrigeracao.webp";
 
 // ICONS
-import { ThermometerSnowflake, Zap, Cpu, Snowflake } from "lucide-react";
+import {
+  ThermometerSnowflake,
+  Zap,
+  Cpu,
+  Snowflake
+} from "lucide-react";
 
 export interface CarrosselItem {
   id: number;
@@ -23,7 +32,7 @@ export const carrosselHomeData: CarrosselItem[] = [
     title: "CLIMATIZAÇÃO",
     desc: "Instalação e manutenção de ar-condicionado com segurança e eficiência.",
     buttonLabel: "Explorar",
-    image: "/ar-condicionado.jpg",
+    image: ImgArCondicionado.src,
     rota: "/services/climatizacao",
     indisponivel: false,
     icon: ThermometerSnowflake,
@@ -35,7 +44,7 @@ export const carrosselHomeData: CarrosselItem[] = [
     title: "ELÉTRICA",
     desc: "Reparos, instalações e soluções elétricas completas para sua residência ou empresa.",
     buttonLabel: "Explorar",
-    image: "/eletrica.jpg",
+    image: ImgEletric.src,
     rota: "/services/eletrica",
     indisponivel: false,
     icon: Zap,
@@ -47,7 +56,7 @@ export const carrosselHomeData: CarrosselItem[] = [
     title: "ELETRÔNICA",
     desc: "Diagnóstico e reparo de placas, módulos e sistemas eletrônicos.",
     buttonLabel: "Saiba mais",
-    image: "/eletronica.jpg",
+    image: ImgEletronica.src,
     rota: "",
     indisponivel: true,
     icon: Cpu,
@@ -59,7 +68,7 @@ export const carrosselHomeData: CarrosselItem[] = [
     title: "REFRIGERAÇÃO",
     desc: "Manutenção e instalação de sistemas de refrigeração residencial e comercial.",
     buttonLabel: "Saiba mais",
-    image: "/refrigeracao.jpg",
+    image: ImgRefrigeracao.src,
     rota: "",
     indisponivel: true,
     icon: Snowflake,

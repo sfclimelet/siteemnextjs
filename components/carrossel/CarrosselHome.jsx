@@ -77,7 +77,7 @@ export default function CarrosselHome() {
                 data-tema={item.tema}
                 className={`carousel-item tema-${item.tema} ${index === 0 ? "active" : ""}`}
               >
-                <img id="IMGFUNDO" src={item.image} className="d-block" alt={item.title} />
+                <img id="IMGFUNDO" src={item.image} className="d-block" alt={item.title} loading="lazy" width={1910} height={1273} />
 
                 <div className="carousel-caption custom-caption">
                   {item.icon && <item.icon className="icone-slide" />}
