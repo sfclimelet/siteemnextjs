@@ -3,17 +3,17 @@
 /* ========= ICONES PREV/NEXT ========= */
 #carouselHome[data-tema=climatizacao] .icon-prev,
 #carouselHome[data-tema=climatizacao] .icon-next {
-  stroke: #00aeef;
+  stroke: #0099ff;
   position: relative;
   transition: box-shadow 0.25s ease;
-  box-shadow: 0 0 4px rgba(0, 174, 239, 0.35), 0 0 8px rgba(0, 174, 239, 0.25);
+  box-shadow: 0 0 4px rgba(0, 153, 255, 0.35), 0 0 8px rgba(0, 153, 255, 0.25);
 }
 #carouselHome[data-tema=climatizacao] .icon-prev::after,
 #carouselHome[data-tema=climatizacao] .icon-next::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, rgba(0, 174, 239, 0.55) 0%, rgba(0, 174, 239, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 153, 255, 0.55) 0%, rgba(0, 153, 255, 0) 70%);
   opacity: 0.55;
   pointer-events: none;
   transform: scale(0.95);
@@ -21,7 +21,7 @@
 }
 #carouselHome[data-tema=climatizacao] .icon-prev:hover,
 #carouselHome[data-tema=climatizacao] .icon-next:hover {
-  box-shadow: 0 0 6px rgba(0, 174, 239, 0.55), 0 0 12px rgba(0, 174, 239, 0.45);
+  box-shadow: 0 0 6px rgba(0, 153, 255, 0.55), 0 0 12px rgba(0, 153, 255, 0.45);
 }
 #carouselHome[data-tema=climatizacao] .icon-prev:hover::after,
 #carouselHome[data-tema=climatizacao] .icon-next:hover::after {
@@ -115,21 +115,21 @@
 
 /* ========= ICONES DO SLIDE ========= */
 #carouselHome[data-tema=climatizacao] .icone-slide {
-  color: #00AEEF;
+  color: #0099FF;
   animation: iconFloat-climatizacao 3s ease-in-out infinite;
 }
 @keyframes iconFloat-climatizacao {
   0% {
     transform: translateY(0);
-    filter: drop-shadow(0 0 4px rgba(0, 174, 239, 0.5));
+    filter: drop-shadow(0 0 4px rgba(0, 153, 255, 0.5));
   }
   50% {
     transform: translateY(-4px);
-    filter: drop-shadow(0 0 10px rgba(0, 174, 239, 0.7));
+    filter: drop-shadow(0 0 10px rgba(0, 153, 255, 0.7));
   }
   100% {
     transform: translateY(0);
-    filter: drop-shadow(0 0 4px rgba(0, 174, 239, 0.5));
+    filter: drop-shadow(0 0 4px rgba(0, 153, 255, 0.5));
   }
 }
 
@@ -192,19 +192,19 @@
 
 /* ========= TITULOS ========= */
 #carouselHome[data-tema=climatizacao] .Title {
-  color: #00AEEF !important;
+  color: #0099FF !important;
   position: relative;
   animation: txtGlowSoft-climatizacao 2.6s ease-in-out infinite;
 }
 @keyframes txtGlowSoft-climatizacao {
   0% {
-    text-shadow: 0 0 4px rgba(0, 174, 239, 0.35);
+    text-shadow: 0 0 4px rgba(0, 153, 255, 0.35);
   }
   50% {
-    text-shadow: 0 0 12px rgba(0, 174, 239, 0.65);
+    text-shadow: 0 0 12px rgba(0, 153, 255, 0.65);
   }
   100% {
-    text-shadow: 0 0 4px rgba(0, 174, 239, 0.35);
+    text-shadow: 0 0 4px rgba(0, 153, 255, 0.35);
   }
 }
 
@@ -261,19 +261,19 @@
 
 /* ========= DESCRIÇÃO ========= */
 #carouselHome[data-tema=climatizacao] .Descricao {
-  color: #00AEEF !important;
+  color: #0099FF !important;
   position: relative;
   animation: txtGlowSoft-climatizacao 2.6s ease-in-out infinite;
 }
 @keyframes txtGlowSoft-climatizacao {
   0% {
-    text-shadow: 0 0 4px rgba(0, 174, 239, 0.35);
+    text-shadow: 0 0 4px rgba(0, 153, 255, 0.35);
   }
   50% {
-    text-shadow: 0 0 12px rgba(0, 174, 239, 0.65);
+    text-shadow: 0 0 12px rgba(0, 153, 255, 0.65);
   }
   100% {
-    text-shadow: 0 0 4px rgba(0, 174, 239, 0.35);
+    text-shadow: 0 0 4px rgba(0, 153, 255, 0.35);
   }
 }
 
@@ -330,8 +330,8 @@
 
 /* ========= BOTÕES ========= */
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais {
-  background-color: rgba(0, 174, 239, 0.25);
-  border: 1px solid rgba(0, 174, 239, 0.55);
+  background-color: rgba(0, 153, 255, 0.5);
+  border: 1px solid rgba(0, 153, 255, 0.75);
   color: white;
   position: relative;
   overflow: hidden;
@@ -342,7 +342,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, rgba(0, 174, 239, 0.65), rgba(0, 174, 239, 0));
+  background: radial-gradient(circle, rgba(0, 153, 255, 0.65), rgba(0, 153, 255, 0));
   opacity: 0.4;
   transform: scale(0.9);
   border-radius: inherit;
@@ -368,8 +368,8 @@
 }
 
 #carouselHome[data-tema=eletrica] .botao-saiba-mais {
-  background-color: rgba(255, 230, 3, 0.25);
-  border: 1px solid rgba(255, 230, 3, 0.55);
+  background-color: rgba(255, 230, 3, 0.5);
+  border: 1px solid rgba(255, 230, 3, 0.75);
   color: white;
   position: relative;
   overflow: hidden;
@@ -406,8 +406,8 @@
 }
 
 #carouselHome[data-tema=eletronica] .botao-saiba-mais {
-  background-color: rgba(8, 161, 21, 0.25);
-  border: 1px solid rgba(8, 161, 21, 0.55);
+  background-color: rgba(8, 161, 21, 0.5);
+  border: 1px solid rgba(8, 161, 21, 0.75);
   color: white;
   position: relative;
   overflow: hidden;
@@ -444,8 +444,8 @@
 }
 
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
-  background-color: rgba(4, 226, 255, 0.25);
-  border: 1px solid rgba(4, 226, 255, 0.55);
+  background-color: rgba(4, 226, 255, 0.5);
+  border: 1px solid rgba(4, 226, 255, 0.75);
   color: white;
   position: relative;
   overflow: hidden;
@@ -483,29 +483,29 @@
 
 /* ========= INDICADORES ========= */
 #carouselHome[data-tema=climatizacao] .carousel-indicators button {
-  background-color: rgba(0, 174, 239, 0.28) !important;
-  border: 1px solid rgba(0, 174, 239, 0.45) !important;
+  background-color: rgba(0, 153, 255, 0.28) !important;
+  border: 1px solid rgba(0, 153, 255, 0.45) !important;
   transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button:not(.active) {
-  box-shadow: 0 0 4px rgba(0, 174, 239, 0.4);
+  box-shadow: 0 0 4px rgba(0, 153, 255, 0.4);
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
-  box-shadow: 0 0 10px rgba(0, 174, 239, 0.9);
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.9);
   transform: scale(1.08);
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
-  background: #00AEEF !important;
-  border-color: #00AEEF !important;
+  background: #0099FF !important;
+  border-color: #0099FF !important;
   transition: all 0.3s ease;
   transform: scale(1.25);
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active:not(.active) {
-  box-shadow: 0 0 4px rgba(0, 174, 239, 0.4);
+  box-shadow: 0 0 4px rgba(0, 153, 255, 0.4);
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active.active {
-  box-shadow: 0 0 10px rgba(0, 174, 239, 0.9);
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.9);
   transform: scale(1.08);
 }
 

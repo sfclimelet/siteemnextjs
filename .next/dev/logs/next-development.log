@@ -24751,3 +24751,1139 @@ styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
 
 
 [03:32:31.252] Server  LOG      ✓ Compiled in 125ms
+[04:32:10.392] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:32:10.392] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:32:10.392] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:33:40.606] Server  LOG      ✓ Compiled in 99ms
+[04:33:54.571] Server  LOG      ✓ Compiled in 84ms
+[04:34:49.088] Server  LOG      ✓ Compiled in 79ms
+[04:34:49.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected digit.
+   ╷
+36 │                         font-size: 1.rem;
+   │                                      ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 36:38  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: Expected digit.
+   ╷
+36 │                         font-size: 1.rem;
+   │                                      ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 36:38  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$2$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85049:19)]
+    [at ScssParser0._stylesheet0$_tryDecimal$1$allowTrailingDot (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122096:12)]
+    [at ScssParser0._stylesheet0$_number$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:122060:13)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121656:44)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+[04:34:51.454] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:34:51.454] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:34:51.454] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:35:02.869] Server  LOG      ✓ Compiled in 109ms
+[04:35:22.841] Server  LOG      ✓ Compiled in 159ms
+[04:36:44.309] Server  LOG      ✓ Compiled in 101ms
+[04:36:52.652] Server  LOG      ✓ Compiled in 73ms
+[04:36:54.150] Server  LOG      ✓ Compiled in 109ms
+[04:37:04.090] Server  LOG      ✓ Compiled in 87ms
+[04:37:16.930] Server  LOG      ✓ Compiled in 52ms
+[04:37:17.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+38 │                         line-height: 1.35;
+   │                                          ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 38:42  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+38 │                         line-height: 1.35;
+   │                                          ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 38:42  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[04:37:38.996] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:37:38.996] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:37:38.996] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.033] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.034] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.034] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.346] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.346] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.346] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:38:12.390] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:38:38.617] Server  LOG      ✓ Compiled in 164ms
+[04:38:40.027] Server  LOG      ✓ Compiled in 118ms
+[04:39:33.391] Server  LOG      ✓ Compiled in 79ms
+[04:39:33.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: expected "{".
+   ╷
+38 │                         line-height: 1.35;
+   │                                          ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 38:42  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: expected "{".
+   ╷
+38 │                         line-height: 1.35;
+   │                                          ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 38:42  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner._fail$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85182:12)]
+    [at SpanScanner.expectChar$2$name (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85124:12)]
+    [at SpanScanner.expectChar$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85127:19)]
+    [at ScssParser0.children$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:115750:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123720:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:123725:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120432:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120422:22)]
+[04:39:35.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected expression.
+   ╷
+37 │                         font-weight: ;
+   │                                      ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 37:38  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+Caused by: Error: Expected expression.
+   ╷
+37 │                         font-weight: ;
+   │                                      ^
+   ╵
+  styles/carrossel/home/carrossel-Home-mobile.scss 37:38  @use
+  styles/carrossel/home/CarrosselHome.scss 14:1           root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121846:17)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120349:23)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120259:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120175:162)]
+    [at ScssParser0._stylesheet0$_statement$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120178:19)]
+[04:39:37.452] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:39:37.453] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:39:37.454] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:39:46.547] Server  LOG      ✓ Compiled in 161ms
+[04:40:14.388] Server  LOG      ✓ Compiled in 154ms
+[04:40:32.426] Server  LOG      ✓ Compiled in 98ms
+[04:40:34.375] Server  LOG      ✓ Compiled in 102ms
+[04:40:41.121] Server  LOG      ✓ Compiled in 73ms
+[04:40:44.524] Server  LOG      ✓ Compiled in 97ms
+[04:40:55.773] Server  LOG      ✓ Compiled in 95ms
+[04:41:02.459] Server  LOG      ✓ Compiled in 70ms
+[04:41:05.408] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.408] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.409] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.502] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.503] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.503] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.775] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.775] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.775] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:05.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:41:08.363] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.363] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.363] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.586] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.586] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.587] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[04:41:08.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:41:23.346] Server  LOG      ✓ Compiled in 75ms
+[04:41:31.628] Server  LOG      ✓ Compiled in 63ms
+[04:41:49.340] Server  LOG      ✓ Compiled in 154ms
+[05:04:53.988] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:53.988] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:53.989] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.027] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.027] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.028] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.264] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.264] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.264] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:54.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:04:56.044] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.044] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.045] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.275] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.275] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.275] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:04:56.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:07:55.626] Server  LOG      ✓ Compiled in 43ms
+[05:07:55.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00;
+  │               ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:15       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00;
+  │               ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:15       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_hexDigit$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121997:59)]
+    [at ScssParser0._stylesheet0$_hexColorContents$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121944:24)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121926:45)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120199:21)]
+[05:07:57.196] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:07:57.196] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:07:57.197] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:07:59.862] Server  LOG      ✓ Compiled in 185ms
+[05:08:09.522] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.522] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.523] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.783] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.783] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.784] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[05:08:09.834] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:10:31.516] Server  LOG      ✓ Compiled in 155ms
+[05:10:41.924] Server  LOG      ✓ Compiled in 90ms
+[05:11:41.114] Server  LOG      ✓ Compiled in 91ms
