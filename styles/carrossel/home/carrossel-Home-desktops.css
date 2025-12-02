@@ -1,1 +1,54 @@
-/*# sourceMappingURL=carrossel-Home-desktops.css.map */
+@media (min-width: 992px) {
+  .CarrosselHome {
+    padding: 2rem 0;
+  }
+  .CarrosselHome #carouselHome {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 500px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    padding-bottom: 7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 45%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=carrossel-Home-desktops.css.map */

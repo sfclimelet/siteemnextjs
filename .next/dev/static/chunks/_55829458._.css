@@ -1592,6 +1592,181 @@
   }
 }
 
+@media (max-width: 756px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem;
+    padding-bottom: 5rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 1.55rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 65%;
+    margin-bottom: .85rem;
+    font-weight: 500;
+    line-height: 1.35;
+    font-size: 1.1rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem 6rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 55%;
+    margin-bottom: .85rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .CarrosselHome {
+    padding: 2rem 0;
+  }
+
+  .CarrosselHome #carouselHome {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 500px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    margin: 0 auto;
+    padding: 0 .75rem 7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 45%;
+    margin-bottom: .85rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* [project]/components/aviso/aviso.scss.css [app-client] (css) */
 .aviso-overlay {
   z-index: 99999;
