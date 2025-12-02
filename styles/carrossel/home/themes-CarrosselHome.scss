@@ -9,72 +9,78 @@ $temas: (
   refrigeracao: $COR-REFRI
 );
 
-/* ICONES - PREV E NEXT (proximo e anterior) */
+/* ========= ICONES PREV/NEXT ========= */
 @each $tema, $cor in $temas {
   #carouselHome[data-tema="#{$tema}"] {
-
-    #{$CTRL-PREV-I}, #{$CTRL-NEXT-I}{
+    #{$CTRL-PREV-I},
+    #{$CTRL-NEXT-I} {
       stroke: rgba($cor, 1);
-      @include Glow-Animation($cor);
+      @include Glow-Soft($cor);
     }
   }
 }
 
-/* ICONES SLIDE - (icones que estão encima do titulo) */
-@each $tema, $cor in $temas{
+/* ========= ICONES DO SLIDE ========= */
+@each $tema, $cor in $temas {
   #{$C-C-HOME2}[data-tema="#{$tema}"] {
-    #{$CAPT-ICON}{
-      color: #{$cor};
-      @include Float-Glow($cor);
+    #{$CAPT-ICON} {
+      color: $cor;
+      @include Icon-Glow($cor, $tema);
     }
   }
 }
 
-/* TITULOS */
-@each $tema, $cor in $temas{
-  #{$C-C-HOME2}[data-tema="#{$tema}"]{
-    #{$CAPT-TITLE}{
-      color: rgba($cor, 1) !important;
-      @include Text-Glow($cor, $tema);
-    }
-  }
-}
-
-/* DESCRIÇÃO */
+/* ========= TITULOS ========= */
 @each $tema, $cor in $temas {
-  #{$C-C-HOME2}[data-tema="#{$tema}"]{
-    #{$CAPT-DESCRI}{
-      color: rgba($cor, 1) !important;
-      @include Description-Glow($cor, $tema);
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-TITLE} {
+      color: $cor !important;
+      @include Glow-Pulse-Text($cor, $tema);
     }
   }
 }
 
-/* BOTOES - (explorar e saiba mais) */
+/* ========= DESCRIÇÃO ========= */
 @each $tema, $cor in $temas {
-  #{$C-C-HOME2}[data-tema="#{$tema}"]{
-    #{$CAPT-BTN}{
-      background-color: rgba($cor, .32);
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-DESCRI} {
+      color: #{$cor} !important;
+      @include Glow-Pulse-Text($cor, $tema);
+    }
+  }
+}
+
+/* ========= BOTÕES ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-BTN} {
+      background-color: rgba($cor, .25);
       border: 1px solid rgba($cor, .55);
-      color: $COR-WHITE;
-      @include Botao-Pulse($cor, $tema);
+      color: white;
+      @include Botao-Pulse-OTIMIZADO($cor, $tema);
     }
   }
 }
 
-/* INDICADORES - (bolinhas em embaixo do button explorar ou saiba mais) */
+/* ========= INDICADORES ========= */
 @each $tema, $cor in $temas {
-  #{$C-C-HOME2}[data-tema="#{$tema}"]{
-    #{$INDICADORES} button{
-      background-color: rgba($cor, .28);
-      border: 1px solid rgba($cor, .45);
-      @include Glow-Animation-Suave($cor);
-      transition: all 0.4s ease;
-    }
-    #{$INDICADORES} button#{$CLASS-ACTIVE}{
-      background-color: $cor;
-      border-color: $cor;
-      @include Glow-Animation-S-Active($cor);
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$INDICADORES} {
+
+      button {
+        background-color: rgba($cor, .28) !important;
+        border: 1px solid rgba($cor, .45) !important;
+        @include Indicator-Glow($cor);
+        transition: all .3s ease;
+      }
+
+      button#{$CLASS-ACTIVE} {
+        background: $cor !important;
+        border-color: $cor !important;
+        @include Indicator-Glow($cor);
+        transform: scale(1.25);
+      }
+
     }
   }
 }

@@ -88,13 +88,16 @@
                 }
 
             }
-            #{$CRRSL-BTN-PREV} #{$CRRSL-BTN-NEXT}{
+            #{$CRRSL-BTN-PREV}, #{$CRRSL-BTN-NEXT}{
                 background-color: none !important;
-                width: 50px;
-                height: 50px;
                 transition: opacity 0.3s ease;
                 &:focus{
                     box-shadow: none !important;
+                }
+                #{$CTRL-PREV-I}#{$CTRL-NEXT-I}{
+                    border-radius: 30%;
+                    width: 50px;
+                    height: 50px;
                 }
             }
         }

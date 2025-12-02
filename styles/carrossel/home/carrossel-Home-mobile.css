@@ -11,7 +11,7 @@
     height: 12px;
   }
   .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
-    height: 260px;
+    height: 280px !important;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
     padding: 0 0.75rem;
@@ -37,13 +37,10 @@
     padding: 8px 20px;
     font-size: 0.95rem;
   }
-  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next {
-    width: 50px;
-    height: 50px;
-  }
-  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next .icon-prev .icon-next {
-    width: 28px;
-    height: 28px;
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 575px) {
@@ -84,13 +81,9 @@
     padding: 8px 20px;
     font-size: 0.95rem;
   }
-  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next {
-    width: 70px !important;
-    height: 70px !important;
-    stroke-width: 2.8;
-  }
-  .CarrosselHome #carouselHome .carousel-control-prev .carousel-control-next .icon-prev .icon-next {
-    width: 28px;
-    height: 28px;
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=carrossel-Home-mobile.css.map */
