@@ -190,17 +190,17 @@
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev, #carouselHome[data-tema="refrigeracao"] .icon-next {
-  stroke: #5baedc;
+  stroke: #78cffd;
   transition: box-shadow .25s;
   position: relative;
-  box-shadow: 0 0 4px #5baedc59, 0 0 8px #5baedc40;
+  box-shadow: 0 0 4px #78cffd59, 0 0 8px #78cffd40;
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev:after, #carouselHome[data-tema="refrigeracao"] .icon-next:after {
   content: "";
   opacity: .55;
   pointer-events: none;
-  background: radial-gradient(circle, #5baedc8c 0%, #5baedc00 70%);
+  background: radial-gradient(circle, #78cffd8c 0%, #78cffd00 70%);
   transition: opacity .35s, transform .35s;
   position: absolute;
   inset: 0;
@@ -208,7 +208,7 @@
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev:hover, #carouselHome[data-tema="refrigeracao"] .icon-next:hover {
-  box-shadow: 0 0 6px #5baedc8c, 0 0 12px #5baedc73;
+  box-shadow: 0 0 6px #78cffd8c, 0 0 12px #78cffd73;
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev:hover:after, #carouselHome[data-tema="refrigeracao"] .icon-next:hover:after {
@@ -283,23 +283,23 @@
 }
 
 #carouselHome[data-tema="refrigeracao"] .icone-slide {
-  color: #5baedc;
+  color: #78cffd;
   animation: 3s ease-in-out infinite iconFloat-refrigeracao;
 }
 
 @keyframes iconFloat-refrigeracao {
   0% {
-    filter: drop-shadow(0 0 4px #5baedc80);
+    filter: drop-shadow(0 0 4px #78cffd80);
     transform: translateY(0);
   }
 
   50% {
-    filter: drop-shadow(0 0 10px #5baedcb3);
+    filter: drop-shadow(0 0 10px #78cffdb3);
     transform: translateY(-4px);
   }
 
   100% {
-    filter: drop-shadow(0 0 4px #5baedc80);
+    filter: drop-shadow(0 0 4px #78cffd80);
     transform: translateY(0);
   }
 }
@@ -367,20 +367,20 @@
 #carouselHome[data-tema="refrigeracao"] .Title {
   animation: 2.6s ease-in-out infinite txtGlowSoft-refrigeracao;
   position: relative;
-  color: #5baedc !important;
+  color: #78cffd !important;
 }
 
 @keyframes txtGlowSoft-refrigeracao {
   0% {
-    text-shadow: 0 0 4px #5baedc59;
+    text-shadow: 0 0 4px #78cffd59;
   }
 
   50% {
-    text-shadow: 0 0 12px #5baedca6;
+    text-shadow: 0 0 12px #78cffda6;
   }
 
   100% {
-    text-shadow: 0 0 4px #5baedc59;
+    text-shadow: 0 0 4px #78cffd59;
   }
 }
 
@@ -405,7 +405,7 @@
 #carouselHome[data-tema="refrigeracao"] .Descricao {
   animation: 2.6s ease-in-out infinite txtGlowSoft-refrigeracao;
   position: relative;
-  color: #5baedc !important;
+  color: #78cffd !important;
 }
 
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
@@ -549,8 +549,8 @@
 #carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
   color: #fff;
   z-index: 1;
-  background-color: #5baedcb3;
-  border: 1px solid #5baedcbf;
+  background-color: #78cffdb3;
+  border: 1px solid #78cffdbf;
   position: relative;
   overflow: hidden;
 }
@@ -559,7 +559,7 @@
   content: "";
   opacity: .4;
   border-radius: inherit;
-  background: radial-gradient(circle, #5baedca6, #5baedc00);
+  background: radial-gradient(circle, #78cffda6, #78cffd00);
   transition: transform .25s, opacity .25s;
   position: absolute;
   inset: 0;
@@ -708,17 +708,17 @@
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button {
   transition: all .3s;
-  background-color: #5baedc47 !important;
-  border: 1px solid #5baedc73 !important;
+  background-color: #78cffd47 !important;
+  border: 1px solid #78cffd73 !important;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button:not(.active) {
-  box-shadow: 0 0 4px #5baedc66;
+  box-shadow: 0 0 4px #78cffd66;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
   transform: scale(1.08);
-  box-shadow: 0 0 10px #5baedce6;
+  box-shadow: 0 0 10px #78cffde6;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button {
@@ -727,17 +727,17 @@
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
   transition: all .3s;
-  background: #5baedc !important;
-  border-color: #5baedc !important;
+  background: #78cffd !important;
+  border-color: #78cffd !important;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active:not(.active) {
-  box-shadow: 0 0 4px #5baedc66;
+  box-shadow: 0 0 4px #78cffd66;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active.active {
   transform: scale(1.08);
-  box-shadow: 0 0 10px #5baedce6;
+  box-shadow: 0 0 10px #78cffde6;
 }
 
 #carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
