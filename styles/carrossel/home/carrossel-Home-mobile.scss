@@ -16,25 +16,25 @@
             }
             #{$CARR-INNER}{
                 #{$IMG-FUNDO}{
-                    height: 280px !important;
+                    height: 350px !important;
                 }
                 #{$CARR-CAPTION}{
                     padding: 0 0.75rem;
-                    margin-bottom: 1.2rem;
-                    padding-bottom: 3rem !important;
+                    margin-bottom: 1.2rem !important;
+                    padding-bottom: 1rem !important;
                     #{$CAPT-ICON}{
                         width: 28px;
                         height: 28px;
                         margin-bottom: 8px;
                     }
                     #{$CAPT-TITLE}{
-                        font-size: 1.55rem;
+                        font-size: 1.5rem !important;
                         margin-bottom: 6px;
                     }
                     #{$CAPT-DESCRI}{
-                        width: 75%;
-                        font-size: 1rem !important;
-                        font-weight: 500;
+                        width: 75% !important;
+                        font-size: 0.80rem !important;
+                        font-weight: 500 !important;
                         line-height: 1.35;
                         margin-bottom: 0.85rem;
                     }

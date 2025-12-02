@@ -760,13 +760,13 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
-    height: 280px !important;
+    height: 350px !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
-    margin-bottom: 1.2rem;
     padding: 0 .75rem;
-    padding-bottom: 3rem !important;
+    margin-bottom: 1.2rem !important;
+    padding-bottom: 1rem !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
@@ -777,15 +777,15 @@
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
     margin-bottom: 6px;
-    font-size: 1.55rem;
+    font-size: 1.5rem !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 75%;
     margin-bottom: .85rem;
-    font-weight: 500;
     line-height: 1.35;
-    font-size: 1rem !important;
+    width: 75% !important;
+    font-size: .8rem !important;
+    font-weight: 500 !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
