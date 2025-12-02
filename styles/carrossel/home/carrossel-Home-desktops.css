@@ -26,8 +26,8 @@
     padding-bottom: 6rem;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
+    width: 45px !important;
+    height: 45px !important;
     margin-bottom: 8px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -35,7 +35,7 @@
     margin-bottom: 6px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 45%;
+    width: 50% !important;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.35;

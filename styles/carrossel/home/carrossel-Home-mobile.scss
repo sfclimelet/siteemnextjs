@@ -77,8 +77,8 @@
                         padding: 0 0.75rem;
                         padding-bottom: 5rem;
                         #{$CAPT-ICON}{
-                            width: 28px;
-                            height: 28px;
+                            width: 40px !important;
+                            height: 40px !important;
                             margin-bottom: 8px;
                         }
                         #{$CAPT-TITLE}{
@@ -86,7 +86,7 @@
                             margin-bottom: 6px;
                         }
                         #{$CAPT-DESCRI}{
-                            width: 75%;
+                            width: 70% !important;
                             font-size: 0.90rem;
                             line-height: 1.35;
                             margin-bottom: 0.85rem;
@@ -99,7 +99,7 @@
                 }
                 #{$CRRSL-BTN-PREV}, #{$CRRSL-BTN-NEXT}{
                     #{$CTRL-PREV-I}, #{$CTRL-NEXT-I}{
-                        border-radius: 30%;
+                        border-radius: 30% !important;
                         width: 40px;
                         height: 40px;
                     }

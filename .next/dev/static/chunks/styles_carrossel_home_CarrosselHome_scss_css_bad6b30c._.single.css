@@ -824,9 +824,9 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
     margin-bottom: 8px;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -835,10 +835,10 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 75%;
     margin-bottom: .85rem;
     font-size: .9rem;
     line-height: 1.35;
+    width: 70% !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
@@ -847,9 +847,9 @@
   }
 
   .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
-    border-radius: 30%;
     width: 40px;
     height: 40px;
+    border-radius: 30% !important;
   }
 }
 
@@ -878,9 +878,9 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
     margin-bottom: 8px;
+    width: 42px !important;
+    height: 42px !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -889,10 +889,10 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 65%;
     margin-bottom: .85rem;
     font-weight: 500;
     line-height: 1.35;
+    width: 70% !important;
     font-size: 1.1rem !important;
   }
 
@@ -932,9 +932,9 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
     margin-bottom: 8px;
+    width: 42px !important;
+    height: 42px !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -943,11 +943,11 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 55%;
     margin-bottom: .85rem;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.35;
+    width: 70% !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
@@ -997,9 +997,9 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
     margin-bottom: 8px;
+    width: 45px !important;
+    height: 45px !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -1008,11 +1008,11 @@
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 45%;
     margin-bottom: .85rem;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.35;
+    width: 50% !important;
   }
 
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {

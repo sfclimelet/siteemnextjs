@@ -26,8 +26,8 @@
                         padding: 0 0.75rem;
                         padding-bottom: 6rem;
                         #{$CAPT-ICON}{
-                            width: 28px;
-                            height: 28px;
+                            width: 45px !important;
+                            height: 45px !important;
                             margin-bottom: 8px;
                         }
                         #{$CAPT-TITLE}{
@@ -35,7 +35,7 @@
                             margin-bottom: 6px;
                         }
                         #{$CAPT-DESCRI}{
-                            width: 45%;
+                            width: 50% !important;
                             font-size: 1.2rem;
                             font-weight: 600;
                             line-height: 1.35;
