@@ -24560,3 +24560,194 @@ styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
 
 
 [03:26:24.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:30:46.356] Server  LOG      ✓ Compiled in 244ms
+[03:30:56.159] Server  LOG      ✓ Compiled in 171ms
+[03:32:20.524] Server  LOG      ✓ Compiled in 47ms
+[03:32:20.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #6;
+  │              ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:14       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #6;
+  │              ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:14       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_hexDigit$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121997:59)]
+    [at ScssParser0._stylesheet0$_hexColorContents$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121943:24)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121926:45)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120199:21)]
+[03:32:22.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00;
+  │               ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:15       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00;
+  │               ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:15       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_hexDigit$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121997:59)]
+    [at ScssParser0._stylesheet0$_hexColorContents$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121944:24)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121926:45)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120199:21)]
+[03:32:25.428] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:25.428] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:25.428] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:26.671] Server  LOG      ✓ Compiled in 32ms
+[03:32:26.797] Browser ERROR   ./styles/carrossel/home/CarrosselHome.scss
+Error evaluating Node.js code
+Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00AEF;
+  │                  ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:18       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+Caused by: Error: Expected hex digit.
+  ╷
+1 │ $COR-CLIM: #00AEF;
+  │                  ^
+  ╵
+  styles/carrossel/home/_colors.scss 1:18       @forward
+  styles/carrossel/home/_globals.scss 2:1       @use
+  styles/carrossel/home/CarrosselHome.scss 2:1  root stylesheet
+    [at Object.wrapException (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85043:15)]
+    [at SpanScanner.error$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:85046:19)]
+    [at ScssParser0._stylesheet0$_hexDigit$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121997:59)]
+    [at ScssParser0._stylesheet0$_hexColorContents$1 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121966:72)]
+    [at ScssParser0._stylesheet0$_hashExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121926:45)]
+    [at ScssParser0._stylesheet0$_singleExpression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121806:22)]
+    [at ScssParser0._stylesheet0$_expression$4$bracketList$consumeNewlines$singleEquals$until (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121516:40)]
+    [at ScssParser0._stylesheet0$_expression$0 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:121751:19)]
+    [at ScssParser0.variableDeclarationWithoutNamespace$2 (/home/edvandro/Documentos/Next Project site SEF/site/node_modules/sass/sass.dart.js:120199:21)]
+[03:32:29.802] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 41, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:41:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+41 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 42:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:29.802] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 73, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:73:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+73 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 74:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:29.802] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 90, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:90:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+90 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 91:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[03:32:31.252] Server  LOG      ✓ Compiled in 125ms

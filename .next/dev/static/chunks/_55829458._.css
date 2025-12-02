@@ -848,17 +848,17 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev, #carouselHome[data-tema="climatizacao"] .icon-next {
-  stroke: #3a89ff;
+  stroke: #00aeef;
   transition: box-shadow .25s;
   position: relative;
-  box-shadow: 0 0 4px #3a89ff59, 0 0 8px #3a89ff40;
+  box-shadow: 0 0 4px #00aeef59, 0 0 8px #00aeef40;
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev:after, #carouselHome[data-tema="climatizacao"] .icon-next:after {
   content: "";
   opacity: .55;
   pointer-events: none;
-  background: radial-gradient(circle, #3a89ff8c 0%, #3a89ff00 70%);
+  background: radial-gradient(circle, #00aeef8c 0%, #00aeef00 70%);
   transition: opacity .35s, transform .35s;
   position: absolute;
   inset: 0;
@@ -866,7 +866,7 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev:hover, #carouselHome[data-tema="climatizacao"] .icon-next:hover {
-  box-shadow: 0 0 6px #3a89ff8c, 0 0 12px #3a89ff73;
+  box-shadow: 0 0 6px #00aeef8c, 0 0 12px #00aeef73;
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev:hover:after, #carouselHome[data-tema="climatizacao"] .icon-next:hover:after {
@@ -956,23 +956,23 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .icone-slide {
-  color: #3a89ff;
+  color: #00aeef;
   animation: 3s ease-in-out infinite iconFloat-climatizacao;
 }
 
 @keyframes iconFloat-climatizacao {
   0% {
-    filter: drop-shadow(0 0 4px #3a89ff80);
+    filter: drop-shadow(0 0 4px #00aeef80);
     transform: translateY(0);
   }
 
   50% {
-    filter: drop-shadow(0 0 10px #3a89ffb3);
+    filter: drop-shadow(0 0 10px #00aeefb3);
     transform: translateY(-4px);
   }
 
   100% {
-    filter: drop-shadow(0 0 4px #3a89ff80);
+    filter: drop-shadow(0 0 4px #00aeef80);
     transform: translateY(0);
   }
 }
@@ -1046,20 +1046,20 @@
 #carouselHome[data-tema="climatizacao"] .Title {
   animation: 2.6s ease-in-out infinite txtGlowSoft-climatizacao;
   position: relative;
-  color: #3a89ff !important;
+  color: #00aeef !important;
 }
 
 @keyframes txtGlowSoft-climatizacao {
   0% {
-    text-shadow: 0 0 4px #3a89ff59;
+    text-shadow: 0 0 4px #00aeef59;
   }
 
   50% {
-    text-shadow: 0 0 12px #3a89ffa6;
+    text-shadow: 0 0 12px #00aeefa6;
   }
 
   100% {
-    text-shadow: 0 0 4px #3a89ff59;
+    text-shadow: 0 0 4px #00aeef59;
   }
 }
 
@@ -1126,7 +1126,7 @@
 #carouselHome[data-tema="climatizacao"] .Descricao {
   animation: 2.6s ease-in-out infinite txtGlowSoft-climatizacao;
   position: relative;
-  color: #3a89ff !important;
+  color: #00aeef !important;
 }
 
 #carouselHome[data-tema="eletrica"] .Descricao {
@@ -1150,8 +1150,8 @@
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
   color: #fff;
   z-index: 1;
-  background-color: #3a89ff40;
-  border: 1px solid #3a89ff8c;
+  background-color: #00aeef40;
+  border: 1px solid #00aeef8c;
   position: relative;
   overflow: hidden;
 }
@@ -1160,7 +1160,7 @@
   content: "";
   opacity: .4;
   border-radius: inherit;
-  background: radial-gradient(circle, #3a89ffa6, #3a89ff00);
+  background: radial-gradient(circle, #00aeefa6, #00aeef00);
   transition: transform .25s, opacity .25s;
   position: absolute;
   inset: 0;
@@ -1333,17 +1333,17 @@
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button {
   transition: all .3s;
-  background-color: #3a89ff47 !important;
-  border: 1px solid #3a89ff73 !important;
+  background-color: #00aeef47 !important;
+  border: 1px solid #00aeef73 !important;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button:not(.active) {
-  box-shadow: 0 0 4px #3a89ff66;
+  box-shadow: 0 0 4px #00aeef66;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
   transform: scale(1.08);
-  box-shadow: 0 0 10px #3a89ffe6;
+  box-shadow: 0 0 10px #00aeefe6;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button {
@@ -1352,17 +1352,17 @@
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
   transition: all .3s;
-  background: #3a89ff !important;
-  border-color: #3a89ff !important;
+  background: #00aeef !important;
+  border-color: #00aeef !important;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button.active:not(.active) {
-  box-shadow: 0 0 4px #3a89ff66;
+  box-shadow: 0 0 4px #00aeef66;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button.active.active {
   transform: scale(1.08);
-  box-shadow: 0 0 10px #3a89ffe6;
+  box-shadow: 0 0 10px #00aeefe6;
 }
 
 #carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
