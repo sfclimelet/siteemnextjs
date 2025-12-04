@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/app/about/page.tsx"],"sourcesContent":["export const metadata = {\n    title: \"Pagina About Teste\",\n    description: \"Página somente para testes\",\n};\n\nexport default function AboutPage(){\n    return (\n        <main className=\"text-center\">\n            <h1>About Page</h1>\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nemo magnam, consectetur sed soluta consequuntur. Omnis eum veniam corrupti amet.\n        </main>\n    )\n}\n"],"names":[],"mappings":";;;;;;;;AAAO,MAAM,WAAW;IACpB,OAAO;IACP,aAAa;AACjB;AAEe,SAAS;IACpB,qBACI,8OAAC;QAAK,WAAU;;0BACZ,8OAAC;0BAAG;;;;;;YAAe;;;;;;;AAI/B"}}]
-}
