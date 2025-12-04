@@ -1,0 +1,20 @@
+/* VARS E CORES - dentro do arquivo Globals */
+@use "./globals" as *;
+
+/* MIXINS ANIMATIONS */
+@use "./mixins-animations";
+
+/* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+@use "./config-gerais-CarrosselHome";
+
+/* TEMAS */
+@use "./themes-CarrosselHome.scss";
+
+/* MOBILES */
+@use "./carrossel-Home-mobile.scss";
+
+/* TABLETS */
+@use "./carrossel-Home-tablets.scss";
+
+/* DESKTOPS */
+@use "./carrossel-Home-desktops.scss";

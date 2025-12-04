@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useContext, useEffect, useState } from "react";
+import { Wrench } from "lucide-react";
 
 {/* Componentes */}
 import NavbarHome from "../components/navbar/Navbar-Home";
@@ -8,13 +9,14 @@ import FooterHome from "../components/footer/Footer-Home";
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
 import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../components/ThemeProvider";
+import CarrosselHome from "../components/carrossel/CarrosselHome";
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const target = document.getElementById("teste");
+    const target = document.getElementById("Carrossel");
     if (!target) return;
 
     const observer = new IntersectionObserver(
@@ -37,8 +39,12 @@ export default function Home() {
       <NavbarHome />
         <main className={`home-page ${theme}`}>
             <div className="text-center">
-              <h1>Nossos Serviços <i className="bi bi-tools"></i></h1>
+              <h1>Nossos Serviços <Wrench /></h1>
             </div>
+
+            <section id="Carrossel">
+              <CarrosselHome />
+            </section>
 
             <section id="teste" className="text-center">
               <h2>Clique no Botão Abaixo: </h2>

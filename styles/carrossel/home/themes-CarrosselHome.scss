@@ -1,0 +1,86 @@
+@use "./globals" as *;
+@use "./mixins-animations" as *;
+
+/* COLORS POR TEMAS */
+$temas: (
+  climatizacao: $COR-CLIM,
+  eletrica: $COR-ELETRIC,
+  eletronica: $COR-ELETRONICA,
+  refrigeracao: $COR-REFRI
+);
+
+/* ========= ICONES PREV/NEXT ========= */
+@each $tema, $cor in $temas {
+  #carouselHome[data-tema="#{$tema}"] {
+    #{$CTRL-PREV-I},
+    #{$CTRL-NEXT-I} {
+      stroke: rgba($cor, 1);
+      @include Glow-Soft($cor);
+    }
+  }
+}
+
+/* ========= ICONES DO SLIDE ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-ICON} {
+      color: $cor;
+      @include Icon-Glow($cor, $tema);
+    }
+  }
+}
+
+/* ========= TITULOS ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-TITLE} {
+      color: $cor !important;
+      @include Glow-Pulse-Text($cor, $tema);
+    }
+  }
+}
+
+/* ========= DESCRIÇÃO ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-DESCRI} {
+      color: #{$cor} !important;
+      @include Glow-Pulse-Text($cor, $tema);
+    }
+  }
+}
+
+/* ========= BOTÕES ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$CAPT-BTN} {
+      background-color: rgba($cor, .90);
+      border: 1px solid rgba($cor, .75);
+      color: #000;
+      @include Botao-Pulse-OTIMIZADO($cor, $tema);
+    }
+  }
+}
+
+/* ========= INDICADORES ========= */
+@each $tema, $cor in $temas {
+  #{$C-C-HOME2}[data-tema="#{$tema}"] {
+    #{$INDICADORES} {
+
+      button {
+        background-color: rgba($cor, .28) !important;
+        border: 1px solid rgba($cor, .45) !important;
+        @include Indicator-Glow($cor);
+        transition: all .3s ease;
+      }
+
+      button#{$CLASS-ACTIVE} {
+        background: $cor !important;
+        border-color: $cor !important;
+        @include Indicator-Glow($cor);
+        transform: scale(1.25);
+      }
+
+    }
+  }
+}

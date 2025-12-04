@@ -1,0 +1,64 @@
+@use "./globals" as *;
+
+@mixin RESOLUTION-FULL-DESKTOP(){
+        #{$C-C-HOME1}{
+            padding: 2rem 0;
+            #{$C-C-HOME2}{
+                width: 70%;
+                margin: 0 auto;
+                #{$INDICADORES}{
+                    margin-bottom: 0.70rem;
+                    button{
+                        width: 13px;
+                        height: 13px;
+                    }
+                    #{$CLASS-ACTIVE}{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                #{$CARR-INNER}{
+                    #{$IMG-FUNDO}{
+                        height: 420px;
+                    }
+                    #{$CARR-CAPTION}{
+                        margin: 0 auto;
+                        padding: 0 0.75rem;
+                        padding-bottom: 6rem;
+                        #{$CAPT-ICON}{
+                            width: 45px !important;
+                            height: 45px !important;
+                            margin-bottom: 8px;
+                        }
+                        #{$CAPT-TITLE}{
+                            font-size: 2rem;
+                            margin-bottom: 6px;
+                        }
+                        #{$CAPT-DESCRI}{
+                            width: 50% !important;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            line-height: 1.35;
+                            margin-bottom: 0.85rem;
+                        }
+                        #{$CAPT-BTN}{
+                            margin-top: 20px;
+                            padding: 8px 20px;
+                            font-size: 0.95rem;
+                        }
+                    }
+                }
+                #{$CRRSL-BTN-PREV}, #{$CRRSL-BTN-NEXT}{
+                    #{$CTRL-PREV-I}, #{$CTRL-NEXT-I}{
+                        border-radius: 30%;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+    }
+}
+
+@media (min-width: 992px) {
+    @include RESOLUTION-FULL-DESKTOP();
+}

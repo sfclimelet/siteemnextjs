@@ -1,0 +1,119 @@
+@use "./globals" as *;
+
+@mixin Glow-Soft($cor) {
+  position: relative;
+  transition: box-shadow .25s ease;
+
+  box-shadow: 
+      0 0 4px rgba($cor, .35),
+      0 0 8px rgba($cor, .25);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle,
+      rgba($cor, 0.55) 0%,
+      rgba($cor, 0.0) 70%
+    );
+    opacity: 0.55;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+
+  &:hover{
+    box-shadow:
+      0 0 6px rgba($cor, .55),
+      0 0 12px rgba($cor, .45);
+    transform: scale(1.05);
+
+    &::after{
+        opacity: 0.9;
+        transform: scale(1);
+    }
+  }
+}
+
+
+@mixin Glow-Pulse-Text($cor, $tema) {
+  position: relative;
+
+  $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+  animation: #{$anim-name} 2.6s ease-in-out infinite;
+
+  @keyframes #{$anim-name} {
+    0%   { text-shadow: 0 0 4px rgba($cor, .35); }
+    50%  { text-shadow: 0 0 12px rgba($cor, .65); }
+    100% { text-shadow: 0 0 4px rgba($cor, .35); }
+  }
+}
+
+
+@mixin Botao-Pulse-OTIMIZADO($cor, $tema) {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  box-shadow: 
+    0 0 6px rgba($cor, .45),
+    0 0 14px rgba($cor, .35);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle,
+      rgba($cor, 0.65),
+      rgba($cor, 0)
+    );
+    opacity: 0.40;
+    transform: scale(0.9);
+    border-radius: inherit;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+
+  $anim-name: unquote("btnPulseSoft-#{$tema}");
+  animation: #{$anim-name} 2.2s ease-in-out infinite;
+
+  @keyframes #{$anim-name} {
+    0%   { opacity: 1; transform: scale(1); }
+    50%  { opacity: 0.85; transform: scale(1.03); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  &:hover::after {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+
+@mixin Icon-Glow($cor, $tema) {
+  $anim-name: unquote("iconFloat-#{$tema}");
+
+  animation: #{$anim-name} 3s ease-in-out infinite;
+
+  @keyframes #{$anim-name} {
+    0%   { transform: translateY(0); filter: drop-shadow(0 0 4px rgba($cor, .5)); }
+    50%  { transform: translateY(-4px); filter: drop-shadow(0 0 10px rgba($cor, .7)); }
+    100% { transform: translateY(0); filter: drop-shadow(0 0 4px rgba($cor, .5)); }
+  }
+}
+
+
+@mixin Indicator-Glow($cor) {
+  transition: all .3s ease;
+
+  &:not(.active) {
+    box-shadow: 0 0 4px rgba($cor, .4);
+  }
+
+  &.active {
+    box-shadow: 0 0 10px rgba($cor, .9);
+    transform: scale(1.08);
+  }
+}

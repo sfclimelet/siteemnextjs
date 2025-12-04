@@ -1,0 +1,937 @@
+@charset "UTF-8";
+/* VARS E CORES - dentro do arquivo Globals */
+/* MIXINS ANIMATIONS */
+/* CONFIGURAÇÕES GERAIS DO CARROSSEL */
+.CarrosselHome {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+.CarrosselHome #carouselHome .carousel-indicators {
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.25s ease;
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 8px #fff;
+}
+.CarrosselHome #carouselHome .carousel-inner {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+.CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+  width: 100%;
+  height: 320px;
+  /* Se der b.o tire o contain e coloque cover */
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.35);
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  z-index: 3;
+  text-align: center;
+  padding: 0 1rem;
+  pointer-events: none !important;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption * {
+  pointer-events: auto !important;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 12px;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+  width: 100%;
+  margin: 0.25rem auto 1rem auto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0.95;
+}
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+  padding: 10px 28px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.25s ease;
+}
+.CarrosselHome #carouselHome .carousel-control-prev, .CarrosselHome #carouselHome .carousel-control-next {
+  background-color: none !important;
+  transition: opacity 0.3s ease;
+}
+.CarrosselHome #carouselHome .carousel-control-prev:focus, .CarrosselHome #carouselHome .carousel-control-next:focus {
+  box-shadow: none !important;
+}
+.CarrosselHome #carouselHome .carousel-control-prev .icon-prev.icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev.icon-next {
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+}
+
+/* TEMAS */
+/* COLORS POR TEMAS */
+/* ========= ICONES PREV/NEXT ========= */
+#carouselHome[data-tema=climatizacao] .icon-prev,
+#carouselHome[data-tema=climatizacao] .icon-next {
+  stroke: #00e7ff;
+  position: relative;
+  transition: box-shadow 0.25s ease;
+  box-shadow: 0 0 4px rgba(0, 231, 255, 0.35), 0 0 8px rgba(0, 231, 255, 0.25);
+}
+#carouselHome[data-tema=climatizacao] .icon-prev::after,
+#carouselHome[data-tema=climatizacao] .icon-next::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 231, 255, 0.55) 0%, rgba(0, 231, 255, 0) 70%);
+  opacity: 0.55;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+#carouselHome[data-tema=climatizacao] .icon-prev:hover,
+#carouselHome[data-tema=climatizacao] .icon-next:hover {
+  box-shadow: 0 0 6px rgba(0, 231, 255, 0.55), 0 0 12px rgba(0, 231, 255, 0.45);
+  transform: scale(1.05);
+}
+#carouselHome[data-tema=climatizacao] .icon-prev:hover::after,
+#carouselHome[data-tema=climatizacao] .icon-next:hover::after {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema=eletrica] .icon-prev,
+#carouselHome[data-tema=eletrica] .icon-next {
+  stroke: #ffe603;
+  position: relative;
+  transition: box-shadow 0.25s ease;
+  box-shadow: 0 0 4px rgba(255, 230, 3, 0.35), 0 0 8px rgba(255, 230, 3, 0.25);
+}
+#carouselHome[data-tema=eletrica] .icon-prev::after,
+#carouselHome[data-tema=eletrica] .icon-next::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 230, 3, 0.55) 0%, rgba(255, 230, 3, 0) 70%);
+  opacity: 0.55;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+#carouselHome[data-tema=eletrica] .icon-prev:hover,
+#carouselHome[data-tema=eletrica] .icon-next:hover {
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.45);
+  transform: scale(1.05);
+}
+#carouselHome[data-tema=eletrica] .icon-prev:hover::after,
+#carouselHome[data-tema=eletrica] .icon-next:hover::after {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema=eletronica] .icon-prev,
+#carouselHome[data-tema=eletronica] .icon-next {
+  stroke: #39ff14;
+  position: relative;
+  transition: box-shadow 0.25s ease;
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.35), 0 0 8px rgba(57, 255, 20, 0.25);
+}
+#carouselHome[data-tema=eletronica] .icon-prev::after,
+#carouselHome[data-tema=eletronica] .icon-next::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(57, 255, 20, 0.55) 0%, rgba(57, 255, 20, 0) 70%);
+  opacity: 0.55;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+#carouselHome[data-tema=eletronica] .icon-prev:hover,
+#carouselHome[data-tema=eletronica] .icon-next:hover {
+  box-shadow: 0 0 6px rgba(57, 255, 20, 0.55), 0 0 12px rgba(57, 255, 20, 0.45);
+  transform: scale(1.05);
+}
+#carouselHome[data-tema=eletronica] .icon-prev:hover::after,
+#carouselHome[data-tema=eletronica] .icon-next:hover::after {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema=refrigeracao] .icon-prev,
+#carouselHome[data-tema=refrigeracao] .icon-next {
+  stroke: #78cffd;
+  position: relative;
+  transition: box-shadow 0.25s ease;
+  box-shadow: 0 0 4px rgba(120, 207, 253, 0.35), 0 0 8px rgba(120, 207, 253, 0.25);
+}
+#carouselHome[data-tema=refrigeracao] .icon-prev::after,
+#carouselHome[data-tema=refrigeracao] .icon-next::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(120, 207, 253, 0.55) 0%, rgba(120, 207, 253, 0) 70%);
+  opacity: 0.55;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+#carouselHome[data-tema=refrigeracao] .icon-prev:hover,
+#carouselHome[data-tema=refrigeracao] .icon-next:hover {
+  box-shadow: 0 0 6px rgba(120, 207, 253, 0.55), 0 0 12px rgba(120, 207, 253, 0.45);
+  transform: scale(1.05);
+}
+#carouselHome[data-tema=refrigeracao] .icon-prev:hover::after,
+#carouselHome[data-tema=refrigeracao] .icon-next:hover::after {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+/* ========= ICONES DO SLIDE ========= */
+#carouselHome[data-tema=climatizacao] .icone-slide {
+  color: #00E7FF;
+  animation: iconFloat-climatizacao 3s ease-in-out infinite;
+}
+@keyframes iconFloat-climatizacao {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(0, 231, 255, 0.5));
+  }
+  50% {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 0 10px rgba(0, 231, 255, 0.7));
+  }
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(0, 231, 255, 0.5));
+  }
+}
+
+#carouselHome[data-tema=eletrica] .icone-slide {
+  color: #ffe603;
+  animation: iconFloat-eletrica 3s ease-in-out infinite;
+}
+@keyframes iconFloat-eletrica {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(255, 230, 3, 0.5));
+  }
+  50% {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 0 10px rgba(255, 230, 3, 0.7));
+  }
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(255, 230, 3, 0.5));
+  }
+}
+
+#carouselHome[data-tema=eletronica] .icone-slide {
+  color: #39FF14;
+  animation: iconFloat-eletronica 3s ease-in-out infinite;
+}
+@keyframes iconFloat-eletronica {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(57, 255, 20, 0.5));
+  }
+  50% {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.7));
+  }
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(57, 255, 20, 0.5));
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .icone-slide {
+  color: #78CFFD;
+  animation: iconFloat-refrigeracao 3s ease-in-out infinite;
+}
+@keyframes iconFloat-refrigeracao {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(120, 207, 253, 0.5));
+  }
+  50% {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 0 10px rgba(120, 207, 253, 0.7));
+  }
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px rgba(120, 207, 253, 0.5));
+  }
+}
+
+/* ========= TITULOS ========= */
+#carouselHome[data-tema=climatizacao] .Title {
+  color: #00E7FF !important;
+  position: relative;
+  animation: txtGlowSoft-climatizacao 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-climatizacao {
+  0% {
+    text-shadow: 0 0 4px rgba(0, 231, 255, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(0, 231, 255, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(0, 231, 255, 0.35);
+  }
+}
+
+#carouselHome[data-tema=eletrica] .Title {
+  color: #ffe603 !important;
+  position: relative;
+  animation: txtGlowSoft-eletrica 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-eletrica {
+  0% {
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 230, 3, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.35);
+  }
+}
+
+#carouselHome[data-tema=eletronica] .Title {
+  color: #39FF14 !important;
+  position: relative;
+  animation: txtGlowSoft-eletronica 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-eletronica {
+  0% {
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(57, 255, 20, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.35);
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .Title {
+  color: #78CFFD !important;
+  position: relative;
+  animation: txtGlowSoft-refrigeracao 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-refrigeracao {
+  0% {
+    text-shadow: 0 0 4px rgba(120, 207, 253, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(120, 207, 253, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(120, 207, 253, 0.35);
+  }
+}
+
+/* ========= DESCRIÇÃO ========= */
+#carouselHome[data-tema=climatizacao] .Descricao {
+  color: #00E7FF !important;
+  position: relative;
+  animation: txtGlowSoft-climatizacao 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-climatizacao {
+  0% {
+    text-shadow: 0 0 4px rgba(0, 231, 255, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(0, 231, 255, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(0, 231, 255, 0.35);
+  }
+}
+
+#carouselHome[data-tema=eletrica] .Descricao {
+  color: #ffe603 !important;
+  position: relative;
+  animation: txtGlowSoft-eletrica 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-eletrica {
+  0% {
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 230, 3, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(255, 230, 3, 0.35);
+  }
+}
+
+#carouselHome[data-tema=eletronica] .Descricao {
+  color: #39FF14 !important;
+  position: relative;
+  animation: txtGlowSoft-eletronica 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-eletronica {
+  0% {
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(57, 255, 20, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.35);
+  }
+}
+
+#carouselHome[data-tema=refrigeracao] .Descricao {
+  color: #78CFFD !important;
+  position: relative;
+  animation: txtGlowSoft-refrigeracao 2.6s ease-in-out infinite;
+}
+@keyframes txtGlowSoft-refrigeracao {
+  0% {
+    text-shadow: 0 0 4px rgba(120, 207, 253, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(120, 207, 253, 0.65);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(120, 207, 253, 0.35);
+  }
+}
+
+/* ========= BOTÕES ========= */
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais {
+  background-color: rgba(0, 231, 255, 0.9);
+  border: 1px solid rgba(0, 231, 255, 0.75);
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 231, 255, 0.45), 0 0 14px rgba(0, 231, 255, 0.35);
+  animation: btnPulseSoft-climatizacao 2.2s ease-in-out infinite;
+}
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 231, 255, 0.65), rgba(0, 231, 255, 0));
+  opacity: 0.4;
+  transform: scale(0.9);
+  border-radius: inherit;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+@keyframes btnPulseSoft-climatizacao {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais:hover::after {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema=eletrica] .botao-saiba-mais {
+  background-color: rgba(255, 230, 3, 0.9);
+  border: 1px solid rgba(255, 230, 3, 0.75);
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35);
+  animation: btnPulseSoft-eletrica 2.2s ease-in-out infinite;
+}
+#carouselHome[data-tema=eletrica] .botao-saiba-mais::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 230, 3, 0.65), rgba(255, 230, 3, 0));
+  opacity: 0.4;
+  transform: scale(0.9);
+  border-radius: inherit;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+@keyframes btnPulseSoft-eletrica {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#carouselHome[data-tema=eletrica] .botao-saiba-mais:hover::after {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema=eletronica] .botao-saiba-mais {
+  background-color: rgba(57, 255, 20, 0.9);
+  border: 1px solid rgba(57, 255, 20, 0.75);
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(57, 255, 20, 0.45), 0 0 14px rgba(57, 255, 20, 0.35);
+  animation: btnPulseSoft-eletronica 2.2s ease-in-out infinite;
+}
+#carouselHome[data-tema=eletronica] .botao-saiba-mais::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(57, 255, 20, 0.65), rgba(57, 255, 20, 0));
+  opacity: 0.4;
+  transform: scale(0.9);
+  border-radius: inherit;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+@keyframes btnPulseSoft-eletronica {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#carouselHome[data-tema=eletronica] .botao-saiba-mais:hover::after {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
+  background-color: rgba(120, 207, 253, 0.9);
+  border: 1px solid rgba(120, 207, 253, 0.75);
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(120, 207, 253, 0.45), 0 0 14px rgba(120, 207, 253, 0.35);
+  animation: btnPulseSoft-refrigeracao 2.2s ease-in-out infinite;
+}
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(120, 207, 253, 0.65), rgba(120, 207, 253, 0));
+  opacity: 0.4;
+  transform: scale(0.9);
+  border-radius: inherit;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+@keyframes btnPulseSoft-refrigeracao {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais:hover::after {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* ========= INDICADORES ========= */
+#carouselHome[data-tema=climatizacao] .carousel-indicators button {
+  background-color: rgba(0, 231, 255, 0.28) !important;
+  border: 1px solid rgba(0, 231, 255, 0.45) !important;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#carouselHome[data-tema=climatizacao] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px rgba(0, 231, 255, 0.4);
+}
+#carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
+  box-shadow: 0 0 10px rgba(0, 231, 255, 0.9);
+  transform: scale(1.08);
+}
+#carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
+  background: #00E7FF !important;
+  border-color: #00E7FF !important;
+  transition: all 0.3s ease;
+  transform: scale(1.25);
+}
+#carouselHome[data-tema=climatizacao] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px rgba(0, 231, 255, 0.4);
+}
+#carouselHome[data-tema=climatizacao] .carousel-indicators button.active.active {
+  box-shadow: 0 0 10px rgba(0, 231, 255, 0.9);
+  transform: scale(1.08);
+}
+
+#carouselHome[data-tema=eletrica] .carousel-indicators button {
+  background-color: rgba(255, 230, 3, 0.28) !important;
+  border: 1px solid rgba(255, 230, 3, 0.45) !important;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#carouselHome[data-tema=eletrica] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px rgba(255, 230, 3, 0.4);
+}
+#carouselHome[data-tema=eletrica] .carousel-indicators button.active {
+  box-shadow: 0 0 10px rgba(255, 230, 3, 0.9);
+  transform: scale(1.08);
+}
+#carouselHome[data-tema=eletrica] .carousel-indicators button.active {
+  background: #ffe603 !important;
+  border-color: #ffe603 !important;
+  transition: all 0.3s ease;
+  transform: scale(1.25);
+}
+#carouselHome[data-tema=eletrica] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px rgba(255, 230, 3, 0.4);
+}
+#carouselHome[data-tema=eletrica] .carousel-indicators button.active.active {
+  box-shadow: 0 0 10px rgba(255, 230, 3, 0.9);
+  transform: scale(1.08);
+}
+
+#carouselHome[data-tema=eletronica] .carousel-indicators button {
+  background-color: rgba(57, 255, 20, 0.28) !important;
+  border: 1px solid rgba(57, 255, 20, 0.45) !important;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#carouselHome[data-tema=eletronica] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.4);
+}
+#carouselHome[data-tema=eletronica] .carousel-indicators button.active {
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.9);
+  transform: scale(1.08);
+}
+#carouselHome[data-tema=eletronica] .carousel-indicators button.active {
+  background: #39FF14 !important;
+  border-color: #39FF14 !important;
+  transition: all 0.3s ease;
+  transform: scale(1.25);
+}
+#carouselHome[data-tema=eletronica] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.4);
+}
+#carouselHome[data-tema=eletronica] .carousel-indicators button.active.active {
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.9);
+  transform: scale(1.08);
+}
+
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button {
+  background-color: rgba(120, 207, 253, 0.28) !important;
+  border: 1px solid rgba(120, 207, 253, 0.45) !important;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px rgba(120, 207, 253, 0.4);
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button.active {
+  box-shadow: 0 0 10px rgba(120, 207, 253, 0.9);
+  transform: scale(1.08);
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button.active {
+  background: #78CFFD !important;
+  border-color: #78CFFD !important;
+  transition: all 0.3s ease;
+  transform: scale(1.25);
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px rgba(120, 207, 253, 0.4);
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button.active.active {
+  box-shadow: 0 0 10px rgba(120, 207, 253, 0.9);
+  transform: scale(1.08);
+}
+
+/* MOBILES */
+@media (max-width: 375px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.35rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 350px !important;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    margin-bottom: 1.2rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 1.5rem !important;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 75% !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 350px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    padding-bottom: 5rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 70% !important;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30% !important;
+    width: 40px;
+    height: 40px;
+  }
+}
+/* TABLETS */
+@media (max-width: 756px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    padding-bottom: 5rem !important;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 42px !important;
+    height: 42px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 70% !important;
+    font-size: 1.1rem !important;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    padding-bottom: 6rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 42px !important;
+    height: 42px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 70% !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+/* DESKTOPS */
+@media (min-width: 992px) {
+  .CarrosselHome {
+    padding: 2rem 0;
+  }
+  .CarrosselHome #carouselHome {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 420px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    padding-bottom: 6rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 45px !important;
+    height: 45px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 50% !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=CarrosselHome.css.map */

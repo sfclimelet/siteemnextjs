@@ -1,0 +1,1036 @@
+/* [project]/styles/carrossel/home/CarrosselHome.scss.css [app-client] (css) */
+.CarrosselHome {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.CarrosselHome #carouselHome .carousel-indicators {
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-indicators [data-bs-target] {
+  background-color: #fff6;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: all .25s;
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-indicators .active {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 8px #fff;
+}
+
+.CarrosselHome #carouselHome .carousel-inner {
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+  object-fit: cover;
+  filter: brightness(.35);
+  width: 100%;
+  height: 320px;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+  z-index: 3;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none !important;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption * {
+  pointer-events: auto !important;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 12px;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+  opacity: .95;
+  width: 100%;
+  margin: .25rem auto 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 28px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all .25s;
+}
+
+.CarrosselHome #carouselHome .carousel-control-prev, .CarrosselHome #carouselHome .carousel-control-next {
+  transition: opacity .3s;
+  background-color: none !important;
+}
+
+.CarrosselHome #carouselHome .carousel-control-prev:focus, .CarrosselHome #carouselHome .carousel-control-next:focus {
+  box-shadow: none !important;
+}
+
+.CarrosselHome #carouselHome .carousel-control-prev .icon-prev.icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev.icon-next {
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+}
+
+#carouselHome[data-tema="climatizacao"] .icon-prev, #carouselHome[data-tema="climatizacao"] .icon-next {
+  stroke: #00e7ff;
+  transition: box-shadow .25s;
+  position: relative;
+  box-shadow: 0 0 4px #00e7ff59, 0 0 8px #00e7ff40;
+}
+
+#carouselHome[data-tema="climatizacao"] .icon-prev:after, #carouselHome[data-tema="climatizacao"] .icon-next:after {
+  content: "";
+  opacity: .55;
+  pointer-events: none;
+  background: radial-gradient(circle, #00e7ff8c 0%, #00e7ff00 70%);
+  transition: opacity .35s, transform .35s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.95);
+}
+
+#carouselHome[data-tema="climatizacao"] .icon-prev:hover, #carouselHome[data-tema="climatizacao"] .icon-next:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #00e7ff8c, 0 0 12px #00e7ff73;
+}
+
+#carouselHome[data-tema="climatizacao"] .icon-prev:hover:after, #carouselHome[data-tema="climatizacao"] .icon-next:hover:after {
+  opacity: .9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema="eletrica"] .icon-prev, #carouselHome[data-tema="eletrica"] .icon-next {
+  stroke: #ffe603;
+  transition: box-shadow .25s;
+  position: relative;
+  box-shadow: 0 0 4px #ffe60359, 0 0 8px #ffe60340;
+}
+
+#carouselHome[data-tema="eletrica"] .icon-prev:after, #carouselHome[data-tema="eletrica"] .icon-next:after {
+  content: "";
+  opacity: .55;
+  pointer-events: none;
+  background: radial-gradient(circle, #ffe6038c 0%, #ffe60300 70%);
+  transition: opacity .35s, transform .35s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.95);
+}
+
+#carouselHome[data-tema="eletrica"] .icon-prev:hover, #carouselHome[data-tema="eletrica"] .icon-next:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60373;
+}
+
+#carouselHome[data-tema="eletrica"] .icon-prev:hover:after, #carouselHome[data-tema="eletrica"] .icon-next:hover:after {
+  opacity: .9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema="eletronica"] .icon-prev, #carouselHome[data-tema="eletronica"] .icon-next {
+  stroke: #39ff14;
+  transition: box-shadow .25s;
+  position: relative;
+  box-shadow: 0 0 4px #39ff1459, 0 0 8px #39ff1440;
+}
+
+#carouselHome[data-tema="eletronica"] .icon-prev:after, #carouselHome[data-tema="eletronica"] .icon-next:after {
+  content: "";
+  opacity: .55;
+  pointer-events: none;
+  background: radial-gradient(circle, #39ff148c 0%, #39ff1400 70%);
+  transition: opacity .35s, transform .35s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.95);
+}
+
+#carouselHome[data-tema="eletronica"] .icon-prev:hover, #carouselHome[data-tema="eletronica"] .icon-next:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #39ff148c, 0 0 12px #39ff1473;
+}
+
+#carouselHome[data-tema="eletronica"] .icon-prev:hover:after, #carouselHome[data-tema="eletronica"] .icon-next:hover:after {
+  opacity: .9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema="refrigeracao"] .icon-prev, #carouselHome[data-tema="refrigeracao"] .icon-next {
+  stroke: #78cffd;
+  transition: box-shadow .25s;
+  position: relative;
+  box-shadow: 0 0 4px #78cffd59, 0 0 8px #78cffd40;
+}
+
+#carouselHome[data-tema="refrigeracao"] .icon-prev:after, #carouselHome[data-tema="refrigeracao"] .icon-next:after {
+  content: "";
+  opacity: .55;
+  pointer-events: none;
+  background: radial-gradient(circle, #78cffd8c 0%, #78cffd00 70%);
+  transition: opacity .35s, transform .35s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.95);
+}
+
+#carouselHome[data-tema="refrigeracao"] .icon-prev:hover, #carouselHome[data-tema="refrigeracao"] .icon-next:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #78cffd8c, 0 0 12px #78cffd73;
+}
+
+#carouselHome[data-tema="refrigeracao"] .icon-prev:hover:after, #carouselHome[data-tema="refrigeracao"] .icon-next:hover:after {
+  opacity: .9;
+  transform: scale(1);
+}
+
+#carouselHome[data-tema="climatizacao"] .icone-slide {
+  color: #00e7ff;
+  animation: 3s ease-in-out infinite iconFloat-climatizacao;
+}
+
+@keyframes iconFloat-climatizacao {
+  0% {
+    filter: drop-shadow(0 0 4px #00e7ff80);
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #00e7ffb3);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #00e7ff80);
+    transform: translateY(0);
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .icone-slide {
+  color: #ffe603;
+  animation: 3s ease-in-out infinite iconFloat-eletrica;
+}
+
+@keyframes iconFloat-eletrica {
+  0% {
+    filter: drop-shadow(0 0 4px #ffe60380);
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #ffe603b3);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #ffe60380);
+    transform: translateY(0);
+  }
+}
+
+#carouselHome[data-tema="eletronica"] .icone-slide {
+  color: #39ff14;
+  animation: 3s ease-in-out infinite iconFloat-eletronica;
+}
+
+@keyframes iconFloat-eletronica {
+  0% {
+    filter: drop-shadow(0 0 4px #39ff1480);
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #39ff14b3);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #39ff1480);
+    transform: translateY(0);
+  }
+}
+
+#carouselHome[data-tema="refrigeracao"] .icone-slide {
+  color: #78cffd;
+  animation: 3s ease-in-out infinite iconFloat-refrigeracao;
+}
+
+@keyframes iconFloat-refrigeracao {
+  0% {
+    filter: drop-shadow(0 0 4px #78cffd80);
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #78cffdb3);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #78cffd80);
+    transform: translateY(0);
+  }
+}
+
+#carouselHome[data-tema="climatizacao"] .Title {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-climatizacao;
+  position: relative;
+  color: #00e7ff !important;
+}
+
+@keyframes txtGlowSoft-climatizacao {
+  0% {
+    text-shadow: 0 0 4px #00e7ff59;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #00e7ffa6;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #00e7ff59;
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .Title {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-eletrica;
+  position: relative;
+  color: #ffe603 !important;
+}
+
+@keyframes txtGlowSoft-eletrica {
+  0% {
+    text-shadow: 0 0 4px #ffe60359;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #ffe603a6;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #ffe60359;
+  }
+}
+
+#carouselHome[data-tema="eletronica"] .Title {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-eletronica;
+  position: relative;
+  color: #39ff14 !important;
+}
+
+@keyframes txtGlowSoft-eletronica {
+  0% {
+    text-shadow: 0 0 4px #39ff1459;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #39ff14a6;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #39ff1459;
+  }
+}
+
+#carouselHome[data-tema="refrigeracao"] .Title {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-refrigeracao;
+  position: relative;
+  color: #78cffd !important;
+}
+
+@keyframes txtGlowSoft-refrigeracao {
+  0% {
+    text-shadow: 0 0 4px #78cffd59;
+  }
+
+  50% {
+    text-shadow: 0 0 12px #78cffda6;
+  }
+
+  100% {
+    text-shadow: 0 0 4px #78cffd59;
+  }
+}
+
+#carouselHome[data-tema="climatizacao"] .Descricao {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-climatizacao;
+  position: relative;
+  color: #00e7ff !important;
+}
+
+#carouselHome[data-tema="eletrica"] .Descricao {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-eletrica;
+  position: relative;
+  color: #ffe603 !important;
+}
+
+#carouselHome[data-tema="eletronica"] .Descricao {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-eletronica;
+  position: relative;
+  color: #39ff14 !important;
+}
+
+#carouselHome[data-tema="refrigeracao"] .Descricao {
+  animation: 2.6s ease-in-out infinite txtGlowSoft-refrigeracao;
+  position: relative;
+  color: #78cffd !important;
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
+  color: #000;
+  z-index: 1;
+  background-color: #00e7ffe6;
+  border: 1px solid #00e7ffbf;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px #00e7ff73, 0 0 14px #00e7ff59;
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais:after {
+  content: "";
+  opacity: .4;
+  border-radius: inherit;
+  background: radial-gradient(circle, #00e7ffa6, #00e7ff00);
+  transition: transform .25s, opacity .25s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.9);
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
+  animation: 2.2s ease-in-out infinite btnPulseSoft-climatizacao;
+}
+
+@keyframes btnPulseSoft-climatizacao {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .85;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#carouselHome[data-tema="climatizacao"] .botao-saiba-mais:hover:after {
+  opacity: .85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais {
+  color: #000;
+  z-index: 1;
+  background-color: #ffe603e6;
+  border: 1px solid #ffe603bf;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px #ffe60373, 0 0 14px #ffe60359;
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais:after {
+  content: "";
+  opacity: .4;
+  border-radius: inherit;
+  background: radial-gradient(circle, #ffe603a6, #ffe60300);
+  transition: transform .25s, opacity .25s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.9);
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais {
+  animation: 2.2s ease-in-out infinite btnPulseSoft-eletrica;
+}
+
+@keyframes btnPulseSoft-eletrica {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .85;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#carouselHome[data-tema="eletrica"] .botao-saiba-mais:hover:after {
+  opacity: .85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais {
+  color: #000;
+  z-index: 1;
+  background-color: #39ff14e6;
+  border: 1px solid #39ff14bf;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px #39ff1473, 0 0 14px #39ff1459;
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais:after {
+  content: "";
+  opacity: .4;
+  border-radius: inherit;
+  background: radial-gradient(circle, #39ff14a6, #39ff1400);
+  transition: transform .25s, opacity .25s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.9);
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais {
+  animation: 2.2s ease-in-out infinite btnPulseSoft-eletronica;
+}
+
+@keyframes btnPulseSoft-eletronica {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .85;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#carouselHome[data-tema="eletronica"] .botao-saiba-mais:hover:after {
+  opacity: .85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
+  color: #000;
+  z-index: 1;
+  background-color: #78cffde6;
+  border: 1px solid #78cffdbf;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px #78cffd73, 0 0 14px #78cffd59;
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:after {
+  content: "";
+  opacity: .4;
+  border-radius: inherit;
+  background: radial-gradient(circle, #78cffda6, #78cffd00);
+  transition: transform .25s, opacity .25s;
+  position: absolute;
+  inset: 0;
+  transform: scale(.9);
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
+  animation: 2.2s ease-in-out infinite btnPulseSoft-refrigeracao;
+}
+
+@keyframes btnPulseSoft-refrigeracao {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .85;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:hover:after {
+  opacity: .85;
+  transform: scale(1.05);
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button {
+  transition: all .3s;
+  background-color: #00e7ff47 !important;
+  border: 1px solid #00e7ff73 !important;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px #00e7ff66;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #00e7ffe6;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button {
+  transition: all .3s;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
+  transition: all .3s;
+  background: #00e7ff !important;
+  border-color: #00e7ff !important;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px #00e7ff66;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #00e7ffe6;
+}
+
+#carouselHome[data-tema="climatizacao"] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button {
+  transition: all .3s;
+  background-color: #ffe60347 !important;
+  border: 1px solid #ffe60373 !important;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px #ffe60366;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #ffe603e6;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button {
+  transition: all .3s;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active {
+  transition: all .3s;
+  background: #ffe603 !important;
+  border-color: #ffe603 !important;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px #ffe60366;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #ffe603e6;
+}
+
+#carouselHome[data-tema="eletrica"] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button {
+  transition: all .3s;
+  background-color: #39ff1447 !important;
+  border: 1px solid #39ff1473 !important;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px #39ff1466;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #39ff14e6;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button {
+  transition: all .3s;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active {
+  transition: all .3s;
+  background: #39ff14 !important;
+  border-color: #39ff14 !important;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px #39ff1466;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #39ff14e6;
+}
+
+#carouselHome[data-tema="eletronica"] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button {
+  transition: all .3s;
+  background-color: #78cffd47 !important;
+  border: 1px solid #78cffd73 !important;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button:not(.active) {
+  box-shadow: 0 0 4px #78cffd66;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #78cffde6;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button {
+  transition: all .3s;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
+  transition: all .3s;
+  background: #78cffd !important;
+  border-color: #78cffd !important;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active:not(.active) {
+  box-shadow: 0 0 4px #78cffd66;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active.active {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #78cffde6;
+}
+
+#carouselHome[data-tema="refrigeracao"] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
+
+@media (max-width: 375px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .35rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 350px !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem;
+    margin-bottom: 1.2rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 1.5rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    margin-bottom: .85rem;
+    line-height: 1.35;
+    width: 75% !important;
+    font-size: .8rem !important;
+    font-weight: 500 !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 350px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem 5rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    margin-bottom: 8px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 1.55rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    margin-bottom: .85rem;
+    font-size: .9rem;
+    line-height: 1.35;
+    width: 70% !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 30% !important;
+  }
+}
+
+@media (max-width: 756px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem;
+    padding-bottom: 5rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    margin-bottom: 8px;
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 1.55rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    margin-bottom: .85rem;
+    font-weight: 500;
+    line-height: 1.35;
+    width: 70% !important;
+    font-size: 1.1rem !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 .75rem 6rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    margin-bottom: 8px;
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    margin-bottom: .85rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    width: 70% !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .CarrosselHome {
+    padding: 2rem 0;
+  }
+
+  .CarrosselHome #carouselHome {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: .7rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 420px;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    margin: 0 auto;
+    padding: 0 .75rem 6rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    margin-bottom: 8px;
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    margin-bottom: .85rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    width: 50% !important;
+  }
+
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: .95rem;
+  }
+
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*# sourceMappingURL=styles_carrossel_home_CarrosselHome_scss_css_bad6b30c._.single.css.map*/

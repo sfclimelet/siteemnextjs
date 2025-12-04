@@ -1,0 +1,117 @@
+@use "./globals" as *;
+
+@mixin RESOLUTION-375px(){
+    #{$C-C-HOME1}{
+        #{$C-C-HOME2}{
+            #{$INDICADORES}{
+                margin-bottom: 0.35rem;
+                button{
+                    width: 10px;
+                    height: 10px;
+                }
+                #{$CLASS-ACTIVE}{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            #{$CARR-INNER}{
+                #{$IMG-FUNDO}{
+                    height: 350px !important;
+                }
+                #{$CARR-CAPTION}{
+                    padding: 0 0.75rem;
+                    margin-bottom: 1.2rem !important;
+                    padding-bottom: 1rem !important;
+                    #{$CAPT-ICON}{
+                        width: 28px;
+                        height: 28px;
+                        margin-bottom: 8px;
+                    }
+                    #{$CAPT-TITLE}{
+                        font-size: 1.5rem !important;
+                        margin-bottom: 6px;
+                    }
+                    #{$CAPT-DESCRI}{
+                        width: 75% !important;
+                        font-size: 0.80rem !important;
+                        font-weight: 500 !important;
+                        line-height: 1.35;
+                        margin-bottom: 0.85rem;
+                    }
+                    #{$CAPT-BTN}{
+                        padding: 8px 20px;
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+            #{$CRRSL-BTN-PREV}, #{$CRRSL-BTN-NEXT}{
+                #{$CTRL-PREV-I},#{$CTRL-NEXT-I}{
+                    border-radius: 20%;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@mixin RESOLUTION-575px(){
+        #{$C-C-HOME1}{
+            #{$C-C-HOME2}{
+                #{$INDICADORES}{
+                    margin-bottom: 0.70rem;
+                    button{
+                        width: 13px;
+                        height: 13px;
+                    }
+                    #{$CLASS-ACTIVE}{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                #{$CARR-INNER}{
+                    #{$IMG-FUNDO}{
+                        height: 350px;
+                    }
+                    #{$CARR-CAPTION}{
+                        padding: 0 0.75rem;
+                        padding-bottom: 5rem;
+                        #{$CAPT-ICON}{
+                            width: 40px !important;
+                            height: 40px !important;
+                            margin-bottom: 8px;
+                        }
+                        #{$CAPT-TITLE}{
+                            font-size: 1.55rem;
+                            margin-bottom: 6px;
+                        }
+                        #{$CAPT-DESCRI}{
+                            width: 70% !important;
+                            font-size: 0.90rem;
+                            line-height: 1.35;
+                            margin-bottom: 0.85rem;
+                        }
+                        #{$CAPT-BTN}{
+                            padding: 8px 20px;
+                            font-size: 0.95rem;
+                        }
+                    }
+                }
+                #{$CRRSL-BTN-PREV}, #{$CRRSL-BTN-NEXT}{
+                    #{$CTRL-PREV-I}, #{$CTRL-NEXT-I}{
+                        border-radius: 30% !important;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 375px){
+    @include RESOLUTION-375px();
+}
+
+@media (max-width: 575px){
+    @include RESOLUTION-575px();
+}
