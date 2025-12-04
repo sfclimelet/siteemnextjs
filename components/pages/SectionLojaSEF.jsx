@@ -31,8 +31,8 @@ export default function SectionLojaSEF() {
 
                 {/* Coluna de Imagem */}
                 <div className="loja-media">
-                    <div className="loja-card-img">
-                        <img loading="lazy" src="#" alt="Loja SEF" />
+                    <div className="loja-card">
+                        <img id="img-loja" loading="lazy" src="#" alt="Loja SEF" />
                     </div>
                 </div>
 
