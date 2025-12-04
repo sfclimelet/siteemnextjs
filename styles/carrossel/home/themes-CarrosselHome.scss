@@ -54,9 +54,9 @@ $temas: (
 @each $tema, $cor in $temas {
   #{$C-C-HOME2}[data-tema="#{$tema}"] {
     #{$CAPT-BTN} {
-      background-color: rgba($cor, .70);
+      background-color: rgba($cor, .90);
       border: 1px solid rgba($cor, .75);
-      color: white;
+      color: #000;
       @include Botao-Pulse-OTIMIZADO($cor, $tema);
     }
   }

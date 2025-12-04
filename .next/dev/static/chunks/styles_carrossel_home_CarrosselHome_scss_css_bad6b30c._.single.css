@@ -67,14 +67,12 @@
 }
 
 .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
-  color: #fff;
   margin-bottom: 10px;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
 .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-  color: #fff;
   opacity: .95;
   width: 100%;
   margin: .25rem auto 1rem;
@@ -84,7 +82,6 @@
 }
 
 .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
-  color: #fff;
   border: none;
   border-radius: 12px;
   padding: 10px 28px;
@@ -127,6 +124,7 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .icon-prev:hover, #carouselHome[data-tema="climatizacao"] .icon-next:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 6px #00e7ff8c, 0 0 12px #00e7ff73;
 }
 
@@ -154,6 +152,7 @@
 }
 
 #carouselHome[data-tema="eletrica"] .icon-prev:hover, #carouselHome[data-tema="eletrica"] .icon-next:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 6px #ffe6038c, 0 0 12px #ffe60373;
 }
 
@@ -181,6 +180,7 @@
 }
 
 #carouselHome[data-tema="eletronica"] .icon-prev:hover, #carouselHome[data-tema="eletronica"] .icon-next:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 6px #39ff148c, 0 0 12px #39ff1473;
 }
 
@@ -208,6 +208,7 @@
 }
 
 #carouselHome[data-tema="refrigeracao"] .icon-prev:hover, #carouselHome[data-tema="refrigeracao"] .icon-next:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 6px #78cffd8c, 0 0 12px #78cffd73;
 }
 
@@ -409,12 +410,13 @@
 }
 
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais {
-  color: #fff;
+  color: #000;
   z-index: 1;
-  background-color: #00e7ffb3;
+  background-color: #00e7ffe6;
   border: 1px solid #00e7ffbf;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 6px #00e7ff73, 0 0 14px #00e7ff59;
 }
 
 #carouselHome[data-tema="climatizacao"] .botao-saiba-mais:after {
@@ -455,12 +457,13 @@
 }
 
 #carouselHome[data-tema="eletrica"] .botao-saiba-mais {
-  color: #fff;
+  color: #000;
   z-index: 1;
-  background-color: #ffe603b3;
+  background-color: #ffe603e6;
   border: 1px solid #ffe603bf;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 6px #ffe60373, 0 0 14px #ffe60359;
 }
 
 #carouselHome[data-tema="eletrica"] .botao-saiba-mais:after {
@@ -501,12 +504,13 @@
 }
 
 #carouselHome[data-tema="eletronica"] .botao-saiba-mais {
-  color: #fff;
+  color: #000;
   z-index: 1;
-  background-color: #39ff14b3;
+  background-color: #39ff14e6;
   border: 1px solid #39ff14bf;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 6px #39ff1473, 0 0 14px #39ff1459;
 }
 
 #carouselHome[data-tema="eletronica"] .botao-saiba-mais:after {
@@ -547,12 +551,13 @@
 }
 
 #carouselHome[data-tema="refrigeracao"] .botao-saiba-mais {
-  color: #fff;
+  color: #000;
   z-index: 1;
-  background-color: #78cffdb3;
+  background-color: #78cffde6;
   border: 1px solid #78cffdbf;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 6px #78cffd73, 0 0 14px #78cffd59;
 }
 
 #carouselHome[data-tema="refrigeracao"] .botao-saiba-mais:after {

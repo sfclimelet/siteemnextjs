@@ -22,6 +22,7 @@
 #carouselHome[data-tema=climatizacao] .icon-prev:hover,
 #carouselHome[data-tema=climatizacao] .icon-next:hover {
   box-shadow: 0 0 6px rgba(0, 231, 255, 0.55), 0 0 12px rgba(0, 231, 255, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=climatizacao] .icon-prev:hover::after,
 #carouselHome[data-tema=climatizacao] .icon-next:hover::after {
@@ -50,6 +51,7 @@
 #carouselHome[data-tema=eletrica] .icon-prev:hover,
 #carouselHome[data-tema=eletrica] .icon-next:hover {
   box-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=eletrica] .icon-prev:hover::after,
 #carouselHome[data-tema=eletrica] .icon-next:hover::after {
@@ -78,6 +80,7 @@
 #carouselHome[data-tema=eletronica] .icon-prev:hover,
 #carouselHome[data-tema=eletronica] .icon-next:hover {
   box-shadow: 0 0 6px rgba(57, 255, 20, 0.55), 0 0 12px rgba(57, 255, 20, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=eletronica] .icon-prev:hover::after,
 #carouselHome[data-tema=eletronica] .icon-next:hover::after {
@@ -106,6 +109,7 @@
 #carouselHome[data-tema=refrigeracao] .icon-prev:hover,
 #carouselHome[data-tema=refrigeracao] .icon-next:hover {
   box-shadow: 0 0 6px rgba(120, 207, 253, 0.55), 0 0 12px rgba(120, 207, 253, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=refrigeracao] .icon-prev:hover::after,
 #carouselHome[data-tema=refrigeracao] .icon-next:hover::after {
@@ -330,12 +334,13 @@
 
 /* ========= BOTÕES ========= */
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais {
-  background-color: rgba(0, 231, 255, 0.7);
+  background-color: rgba(0, 231, 255, 0.9);
   border: 1px solid rgba(0, 231, 255, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 231, 255, 0.45), 0 0 14px rgba(0, 231, 255, 0.35);
   animation: btnPulseSoft-climatizacao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais::after {
@@ -368,12 +373,13 @@
 }
 
 #carouselHome[data-tema=eletrica] .botao-saiba-mais {
-  background-color: rgba(255, 230, 3, 0.7);
+  background-color: rgba(255, 230, 3, 0.9);
   border: 1px solid rgba(255, 230, 3, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35);
   animation: btnPulseSoft-eletrica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletrica] .botao-saiba-mais::after {
@@ -406,12 +412,13 @@
 }
 
 #carouselHome[data-tema=eletronica] .botao-saiba-mais {
-  background-color: rgba(57, 255, 20, 0.7);
+  background-color: rgba(57, 255, 20, 0.9);
   border: 1px solid rgba(57, 255, 20, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(57, 255, 20, 0.45), 0 0 14px rgba(57, 255, 20, 0.35);
   animation: btnPulseSoft-eletronica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletronica] .botao-saiba-mais::after {
@@ -444,12 +451,13 @@
 }
 
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
-  background-color: rgba(120, 207, 253, 0.7);
+  background-color: rgba(120, 207, 253, 0.9);
   border: 1px solid rgba(120, 207, 253, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(120, 207, 253, 0.45), 0 0 14px rgba(120, 207, 253, 0.35);
   animation: btnPulseSoft-refrigeracao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais::after {

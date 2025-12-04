@@ -67,7 +67,6 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #fff;
 }
 .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
   width: 100%;
@@ -75,7 +74,6 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
-  color: #fff;
   opacity: 0.95;
 }
 .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
@@ -85,7 +83,6 @@
   font-weight: 600;
   font-size: 1.05rem;
   transition: all 0.25s ease;
-  color: #fff;
 }
 .CarrosselHome #carouselHome .carousel-control-prev, .CarrosselHome #carouselHome .carousel-control-next {
   background-color: none !important;
@@ -124,6 +121,7 @@
 #carouselHome[data-tema=climatizacao] .icon-prev:hover,
 #carouselHome[data-tema=climatizacao] .icon-next:hover {
   box-shadow: 0 0 6px rgba(0, 231, 255, 0.55), 0 0 12px rgba(0, 231, 255, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=climatizacao] .icon-prev:hover::after,
 #carouselHome[data-tema=climatizacao] .icon-next:hover::after {
@@ -152,6 +150,7 @@
 #carouselHome[data-tema=eletrica] .icon-prev:hover,
 #carouselHome[data-tema=eletrica] .icon-next:hover {
   box-shadow: 0 0 6px rgba(255, 230, 3, 0.55), 0 0 12px rgba(255, 230, 3, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=eletrica] .icon-prev:hover::after,
 #carouselHome[data-tema=eletrica] .icon-next:hover::after {
@@ -180,6 +179,7 @@
 #carouselHome[data-tema=eletronica] .icon-prev:hover,
 #carouselHome[data-tema=eletronica] .icon-next:hover {
   box-shadow: 0 0 6px rgba(57, 255, 20, 0.55), 0 0 12px rgba(57, 255, 20, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=eletronica] .icon-prev:hover::after,
 #carouselHome[data-tema=eletronica] .icon-next:hover::after {
@@ -208,6 +208,7 @@
 #carouselHome[data-tema=refrigeracao] .icon-prev:hover,
 #carouselHome[data-tema=refrigeracao] .icon-next:hover {
   box-shadow: 0 0 6px rgba(120, 207, 253, 0.55), 0 0 12px rgba(120, 207, 253, 0.45);
+  transform: scale(1.05);
 }
 #carouselHome[data-tema=refrigeracao] .icon-prev:hover::after,
 #carouselHome[data-tema=refrigeracao] .icon-next:hover::after {
@@ -432,12 +433,13 @@
 
 /* ========= BOTÕES ========= */
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais {
-  background-color: rgba(0, 231, 255, 0.7);
+  background-color: rgba(0, 231, 255, 0.9);
   border: 1px solid rgba(0, 231, 255, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 231, 255, 0.45), 0 0 14px rgba(0, 231, 255, 0.35);
   animation: btnPulseSoft-climatizacao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais::after {
@@ -470,12 +472,13 @@
 }
 
 #carouselHome[data-tema=eletrica] .botao-saiba-mais {
-  background-color: rgba(255, 230, 3, 0.7);
+  background-color: rgba(255, 230, 3, 0.9);
   border: 1px solid rgba(255, 230, 3, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35);
   animation: btnPulseSoft-eletrica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletrica] .botao-saiba-mais::after {
@@ -508,12 +511,13 @@
 }
 
 #carouselHome[data-tema=eletronica] .botao-saiba-mais {
-  background-color: rgba(57, 255, 20, 0.7);
+  background-color: rgba(57, 255, 20, 0.9);
   border: 1px solid rgba(57, 255, 20, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(57, 255, 20, 0.45), 0 0 14px rgba(57, 255, 20, 0.35);
   animation: btnPulseSoft-eletronica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletronica] .botao-saiba-mais::after {
@@ -546,12 +550,13 @@
 }
 
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
-  background-color: rgba(120, 207, 253, 0.7);
+  background-color: rgba(120, 207, 253, 0.9);
   border: 1px solid rgba(120, 207, 253, 0.75);
-  color: white;
+  color: #000;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 6px rgba(120, 207, 253, 0.45), 0 0 14px rgba(120, 207, 253, 0.35);
   animation: btnPulseSoft-refrigeracao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais::after {
@@ -706,12 +711,12 @@
     height: 12px;
   }
   .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
-    height: 280px !important;
+    height: 350px !important;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
     padding: 0 0.75rem;
-    margin-bottom: 1.2rem;
-    padding-bottom: 3rem !important;
+    margin-bottom: 1.2rem !important;
+    padding-bottom: 1rem !important;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
     width: 28px;
@@ -719,13 +724,13 @@
     margin-bottom: 8px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
-    font-size: 1.55rem;
+    font-size: 1.5rem !important;
     margin-bottom: 6px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 75%;
-    font-size: 1rem !important;
-    font-weight: 500;
+    width: 75% !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
     line-height: 1.35;
     margin-bottom: 0.85rem;
   }
@@ -759,8 +764,8 @@
     padding-bottom: 5rem;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
-    width: 28px;
-    height: 28px;
+    width: 40px !important;
+    height: 40px !important;
     margin-bottom: 8px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
@@ -768,8 +773,54 @@
     margin-bottom: 6px;
   }
   .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
-    width: 75%;
+    width: 70% !important;
     font-size: 0.9rem;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30% !important;
+    width: 40px;
+    height: 40px;
+  }
+}
+/* TABLETS */
+@media (max-width: 756px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    padding-bottom: 5rem !important;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 42px !important;
+    height: 42px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 70% !important;
+    font-size: 1.1rem !important;
+    font-weight: 500;
     line-height: 1.35;
     margin-bottom: 0.85rem;
   }
@@ -783,5 +834,104 @@
     height: 40px;
   }
 }
-/* TABLETS */
-/* DESKTOPS *//*# sourceMappingURL=CarrosselHome.css.map */
+@media (max-width: 991px) {
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 400px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    padding: 0 0.75rem;
+    padding-bottom: 6rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 42px !important;
+    height: 42px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 70% !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+/* DESKTOPS */
+@media (min-width: 992px) {
+  .CarrosselHome {
+    padding: 2rem 0;
+  }
+  .CarrosselHome #carouselHome {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators {
+    margin-bottom: 0.7rem;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+  }
+  .CarrosselHome #carouselHome .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner #IMGFUNDO {
+    height: 420px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    padding-bottom: 6rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .icone-slide {
+    width: 45px !important;
+    height: 45px !important;
+    margin-bottom: 8px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .Descricao {
+    width: 50% !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+  }
+  .CarrosselHome #carouselHome .carousel-inner .carousel-caption .botao-saiba-mais {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+  .CarrosselHome #carouselHome .carousel-control-prev .icon-prev, .CarrosselHome #carouselHome .carousel-control-prev .icon-next, .CarrosselHome #carouselHome .carousel-control-next .icon-prev, .CarrosselHome #carouselHome .carousel-control-next .icon-next {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=CarrosselHome.css.map */
