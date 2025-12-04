@@ -7,7 +7,7 @@ import { Wrench } from "lucide-react";
 import NavbarHome from "../components/navbar/Navbar-Home";
 import FooterHome from "../components/footer/Footer-Home";
 import CarrosselHome from "../components/carrossel/CarrosselHome";
-import SectionLojaSEF from "../components/home/SectionLojaSEF";
+import SectionLojaSEF from "../components/pages/SectionLojaSEF";
 
 {/* THEMES */}
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
