@@ -206,6 +206,9 @@
   .container-loja-card .card-top-area {
     flex: 1;
   }
+  .container-loja-card .card-top-area .card-top-icon {
+    margin-top: 10% !important;
+  }
   .container-loja-card .card-top-area .card-top-icon svg {
     width: 80px;
     height: 80px;
@@ -218,9 +221,9 @@
     z-index: 0;
   }
   .container-loja-card .card-bd {
-    flex: 1.2;
+    flex: 1.5;
     text-align: left;
-    align-items: flex-start;
+    align-items: center;
     z-index: 10;
   }
   .container-loja-card .card-bd .loja-title {
@@ -244,4 +247,58 @@
     height: 17px;
   }
 }
-/* Próximo max-width → 991px *//*# sourceMappingURL=SectionLojaSEF.css.map */
+@media (min-width: 757px) and (max-width: 991px) {
+  .container-loja-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    height: 350px;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .container-loja-card .card-top-area {
+    flex: 1;
+  }
+  .container-loja-card .card-top-area .card-top-icon {
+    margin-top: 10% !important;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 200%;
+    height: 600% !important;
+    top: -250%;
+    left: -0.5%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd {
+    flex: 1.2;
+    text-align: left;
+    align-items: center;
+    z-index: 10;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 1rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 0 1.2rem 0; /* agora alinhado à esquerda */
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 20px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}/*# sourceMappingURL=SectionLojaSEF.css.map */
