@@ -5,8 +5,6 @@
   margin: 2rem auto;
   border-radius: 22px;
   overflow: hidden;
-  background: #fff;
-  color: #000;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -27,10 +25,7 @@
 .container-loja-card .card-top-area .card-curve {
   position: absolute;
   bottom: -1px;
-  left: 0;
-  right: 0;
   height: 55px;
-  background: #fff;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   z-index: 2;
@@ -54,10 +49,72 @@
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  background: #525252;
-  color: #fff;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+
+.container-loja-card {
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 2.2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.container-loja-card .card-top-area .card-top-icon svg {
+  width: 44px;
+  height: 44px;
+  color: #2d7cff;
+  opacity: 0.9;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container-loja-card .card-top-area .card-curve {
+  content: "";
+  top: -70px;
+  left: -70px;
+  width: 230px;
+  height: 160px;
+  background: #4da3ff;
+  opacity: 0.3;
+  border-bottom-right-radius: 180px;
+  transform: rotate(-16deg);
+  z-index: 0;
+}
+.container-loja-card .loja-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 0.4rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.container-loja-card .loja-descricao {
+  font-size: 1rem;
+  color: #4b4b4b;
+  line-height: 1.55;
+  margin: 0 auto 1.6rem auto;
+  max-width: 90%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.container-loja-card .btn-loja {
+  background: #2d7cff;
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.35s ease, transform 0.25s ease;
 }/*# sourceMappingURL=SectionLojaSEF.css.map */

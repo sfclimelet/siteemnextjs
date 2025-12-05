@@ -1,0 +1,72 @@
+@use "./globals-lojaSEF" as *;
+
+@mixin DESIGN-LOJA-SEF(){
+    #{$c-Loja}{
+        background: $crd-cor-bg;
+        border-radius: 22px;
+        box-shadow: 0 8px 22px $crd-cor-sha;
+        border: 1px solid $crd-cor-brd;
+        padding: 2.2rem 2rem;
+        position: relative;
+        overflow: hidden;
+
+        #{$lj-top}{
+            #{$lj-top-icon} svg{
+                width: 44px;
+                height: 44px;
+                color: $crd-cor-icon;
+                opacity: 0.9;
+                z-index: 2;
+                position: relative;
+                margin-bottom: 1rem;
+            }
+            #{$lj-curve}{
+                content: "";
+                top: -70px;
+                left: -70px;
+                width: 230px;
+                height: 160px;
+                background: $crd-cor-curve;
+                opacity: 0.30;
+                border-bottom-right-radius: 180px;
+                transform: rotate(-16deg);
+                z-index: 0;
+            }
+        }
+        #{$lj-title}{
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: $crd-cor-title;
+            margin-bottom: 0.4rem;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        #{$lj-descri}{
+            font-size: 1rem;
+            color: $crd-cor-descri;
+            line-height: 1.55;
+            margin: 0 auto 1.6rem auto;
+            max-width: 90%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        #{$lj-btn}{
+            background: $crd-cor-btn-bg;
+            color: $crd-cor-btn-txt;
+            padding: 0.75rem 1.4rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.35s ease, transform 0.25s ease;
+        }
+    }
+}
+
+@include DESIGN-LOJA-SEF();
