@@ -1,57 +1,65 @@
 @use "./globals-lojaSEF" as *;
 
-@mixin Layout-Loja-SEF(){
-    /* ========= CONTAINER PRINCIPAL DO CARD ========= */
-    #{$c-Loja} {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+@mixin Layout-Loja-SEF() {
 
-        position: relative !important; 
-        width: 100%;
-        overflow: hidden;
-    }
+  /* ==== CONTAINER PRINCIPAL ==== */
+  #{$c-Loja} {
+    position: relative !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
 
-    /* ========= ÁREA SUPERIOR (onde fica o ícone + curva) ========= */
-    #{$lj-top} {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  /* ==== ÁREA SUPERIOR (ícone + curva) ==== */
+  #{$lj-top} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative !important;
+  }
 
-        position: relative !important;
-    }
+  #{$lj-top-icon} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3; // ícone sempre acima da curva
+  }
 
-    /* Ícone do topo */
-    #{$lj-top-icon} {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  #{$lj-curve} {
+    position: absolute !important;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 1;
+  }
 
-    /* Curva */
-    #{$lj-curve} {
-        position: absolute !important;
-        top: 0;
-        left: 50%;
-        pointer-events: none;
-    }
+  /* ==== ÁREA DE TEXTO ==== */
+  #{$lj-body} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    width: 100%;
+  }
 
-    /* ========= ÁREA DE TEXTO ========= */
-    #{$lj-title},
-    #{$lj-descri} {
-        text-align: center;
-        display: block;
-    }
+  #{$lj-title},
+  #{$lj-descri} {
+    text-align: center;
+    display: block;
+  }
 
-    /* ========= BOTÃO ========= */
-    #{$lj-btn} {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
+  /* ==== BOTÃO ==== */
+  #{$lj-btn} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 }
+
 @include Layout-Loja-SEF();

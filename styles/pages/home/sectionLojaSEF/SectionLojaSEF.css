@@ -1,48 +1,56 @@
 @charset "UTF-8";
-/* ========= CONTAINER PRINCIPAL DO CARD ========= */
+/* ==== CONTAINER PRINCIPAL ==== */
 .container-loja-card {
+  position: relative !important;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative !important;
-  width: 100%;
   overflow: hidden;
 }
 
-/* ========= ÁREA SUPERIOR (onde fica o ícone + curva) ========= */
+/* ==== ÁREA SUPERIOR (ícone + curva) ==== */
 .card-top-area {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative !important;
 }
 
-/* Ícone do topo */
 .card-top-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 3;
 }
 
-/* Curva */
 .card-curve {
   position: absolute !important;
   top: 0;
   left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
+  z-index: 1;
 }
 
-/* ========= ÁREA DE TEXTO ========= */
+/* ==== ÁREA DE TEXTO ==== */
+.card-bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+}
+
 .loja-title,
 .loja-descricao {
   text-align: center;
   display: block;
 }
 
-/* ========= BOTÃO ========= */
+/* ==== BOTÃO ==== */
 .btn-loja {
   display: inline-flex;
   align-items: center;
@@ -103,52 +111,13 @@
   transition: background 0.35s ease, transform 0.25s ease;
 }
 
-@media (max-width: 375px) {
-  .container-loja-card {
-    width: 92%;
-    height: 50%;
-    padding: 1.8rem 1.4rem;
-    margin: 1.6rem auto;
-  }
-  .container-loja-card .card-top-area {
-    margin-bottom: 1.2rem;
-  }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 50px;
-    height: 50px;
-  }
-  .container-loja-card .card-top-area .card-curve {
-    width: 100%;
-    height: 450% !important;
-    top: -325%;
-    left: -0.5%;
-    z-index: 0;
-  }
-  .container-loja-card .loja-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.8rem;
-  }
-  .container-loja-card .loja-descricao {
-    font-size: 0.9rem;
-    line-height: 1.35;
-    max-width: 270px;
-    margin: 0 auto 1.2rem auto;
-  }
-  .container-loja-card .btn-loja {
-    font-size: 0.9rem;
-    padding: 0.75rem 1.4rem;
-    border-radius: 10px;
-    gap: 0.4rem;
-  }
-  .container-loja-card .btn-loja svg {
-    width: 17px;
-    height: 17px;
-  }
-}
+/* ===========================
+    MEDIA QUERIES
+=========================== */
+/* 1 — Primeiro o MAIOR para não sobrescrever o menor */
 @media (max-width: 575px) {
   .container-loja-card {
     width: 92%;
-    height: 50%;
     padding: 1.8rem 1.4rem;
     margin: 1.6rem auto;
   }
@@ -166,24 +135,118 @@
     left: -0.4%;
     z-index: 0;
   }
-  .container-loja-card .loja-title {
+  .container-loja-card .card-bd .loja-title {
     font-size: 1.25rem;
     margin-bottom: 0.8rem;
   }
-  .container-loja-card .loja-descricao {
+  .container-loja-card .card-bd .loja-descricao {
     font-size: 0.9rem;
     line-height: 1.35;
     max-width: 270px;
     margin: 0 auto 1.2rem auto;
   }
-  .container-loja-card .btn-loja {
+  .container-loja-card .card-bd .btn-loja {
     font-size: 0.9rem;
     padding: 0.75rem 1.4rem;
     border-radius: 10px;
     gap: 0.4rem;
   }
-  .container-loja-card .btn-loja svg {
+  .container-loja-card .card-bd .btn-loja svg {
     width: 17px;
     height: 17px;
   }
-}/*# sourceMappingURL=SectionLojaSEF.css.map */
+}
+/* 2 — Depois o MENOR, para ter prioridade quando aplicável */
+@media (max-width: 375px) {
+  .container-loja-card {
+    width: 92%;
+    padding: 1.8rem 1.4rem;
+    margin: 1.6rem auto;
+  }
+  .container-loja-card .card-top-area {
+    margin-bottom: 1.2rem;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 100%;
+    height: 450% !important;
+    top: -325%;
+    left: -0.5%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 auto 1.2rem auto;
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 576px) and (max-width: 756px) {
+  .container-loja-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .container-loja-card .card-top-area {
+    flex: 1;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 100%;
+    height: 450% !important;
+    top: -325%;
+    left: -0.4%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd {
+    flex: 1.2;
+    text-align: left;
+    align-items: flex-start;
+    z-index: 10;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 0 1.2rem 0; /* agora alinhado à esquerda */
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+/* Próximo max-width → 991px *//*# sourceMappingURL=SectionLojaSEF.css.map */
