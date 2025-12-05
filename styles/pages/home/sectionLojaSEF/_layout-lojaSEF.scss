@@ -53,21 +53,5 @@
         justify-content: center;
         cursor: pointer;
     }
-
-    /* ========= RESPONSIVIDADE — BASE GERAL ========= */
-    @media (min-width: 768px) {
-        #{$c-Loja} {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        #{$lj-top},
-        #{$lj-title},
-        #{$lj-descri} {
-            text-align: left;
-            align-items: flex-start;
-        }
-    }
 }
 @include Layout-Loja-SEF();
