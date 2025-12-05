@@ -1,66 +1,73 @@
 @use "./globals-lojaSEF" as *;
 
 @mixin Layout-Loja-SEF(){
-    #{$c-Loja}{
-        width: 100%;
-        max-width: 600px;
-        margin: 2rem auto;
-        border-radius: 22px;
-        overflow: hidden;
+    /* ========= CONTAINER PRINCIPAL DO CARD ========= */
+    #{$c-Loja} {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative !important; 
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* ========= ÁREA SUPERIOR (onde fica o ícone + curva) ========= */
+    #{$lj-top} {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative !important;
+    }
+
+    /* Ícone do topo */
+    #{$lj-top-icon} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Curva */
+    #{$lj-curve} {
+        position: absolute !important;
+        top: 0;
+        left: 50%;
+        pointer-events: none;
+    }
+
+    /* ========= ÁREA DE TEXTO ========= */
+    #{$lj-title},
+    #{$lj-descri} {
         text-align: center;
-        padding-bottom: 1.8rem;
+        display: block;
+    }
 
-        #{$lj-top}{
-            position: relative;
-            width: 100%;
+    /* ========= BOTÃO ========= */
+    #{$lj-btn} {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 
-            /* Depois será estilizado */
-            height: 160px;
-
-            display: flex;
-            justify-content: center;
+    /* ========= RESPONSIVIDADE — BASE GERAL ========= */
+    @media (min-width: 768px) {
+        #{$c-Loja} {
+            flex-direction: row;
             align-items: center;
-
-            #{$lj-top-icon}{
-                z-index: 3;
-            }
-            #{$lj-curve}{
-                position: absolute;
-                bottom: -1px;
-                height: 55px;
-                border-bottom-left-radius: 40px;
-                border-bottom-right-radius: 40px;
-                z-index: 2;
-            }
-        }
-        #{$lj-title}{
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-top: 1.4rem;
-        }
-        #{$lj-descri}{
-            margin: 1rem auto;
-            width: 85%;
-            font-size: 0.95rem;
-            line-height: 1.45;
-        }
-        #{$lj-btn}{
-            margin: 1rem auto 0;
-            padding: 0.75rem 1.6rem;
-            border-radius: 10px;
-            border: none;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
+            justify-content: space-between;
         }
 
+        #{$lj-top},
+        #{$lj-title},
+        #{$lj-descri} {
+            text-align: left;
+            align-items: flex-start;
+        }
     }
 }
 @include Layout-Loja-SEF();
