@@ -1,27 +1,73 @@
 @use "./globals-lojaSEF" as *;
 
-@mixin Layout-LojaSEF(){
-    #{$c-Loja1}{
-        #{$c-Loja2}{
+@mixin Layout-Loja-SEF(){
+    #{$c-Loja}{
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+        border-radius: 22px;
+        overflow: hidden;
+        background: #fff;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.8rem;
+
+        #{$lj-top}{
+            position: relative;
             width: 100%;
-            padding: 2rem 0;
+
+            /* Depois será estilizado */
+            height: 160px;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2.5rem;
 
-            #{$lj-txt}{
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 1.2rem;
-
-                #{$lj-title}{
-                    font-size: 1rem;
-                    font-weight: 700;
-                }
+            #{$lj-top-icon}{
+                z-index: 3;
+            }
+            #{$lj-curve}{
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                height: 55px;
+                background: #fff;
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+                z-index: 2;
             }
         }
+        #{$lj-title}{
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 1.4rem;
+        }
+        #{$lj-descri}{
+            margin: 1rem auto;
+            width: 85%;
+            font-size: 0.95rem;
+            line-height: 1.45;
+        }
+        #{$lj-btn}{
+            margin: 1rem auto 0;
+            padding: 0.75rem 1.6rem;
+            border-radius: 10px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            background: #525252;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
     }
 }
-@include Layout-LojaSEF();
+@include Layout-Loja-SEF();
