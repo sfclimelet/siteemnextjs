@@ -1,0 +1,27 @@
+@use "./globals-lojaSEF" as *;
+
+@mixin Layout-LojaSEF(){
+    #{$c-Loja1}{
+        #{$c-Loja2}{
+            width: 100%;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+
+            #{$lj-txt}{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+
+                #{$lj-title}{
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@include Layout-LojaSEF();

@@ -1,2 +1,2 @@
-@use "./colors-lojaSEF" as *;
-@use "./vars-lojaSEF" as *;
+@forward "./vars-lojaSEF";
+@forward "./colors-lojaSEF";
