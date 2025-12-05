@@ -70,7 +70,7 @@
                 width: 100%;
                 height: 450% !important;
                 top: -325%;
-                left: -0.5%;
+                left: 50%;
                 z-index: 0;
             }
         }
@@ -103,16 +103,10 @@
     }
 }
 
-/* ===========================
-    MEDIA QUERIES
-=========================== */
-
-/* 1 — Primeiro o MAIOR para não sobrescrever o menor */
 @media (max-width: 575px) {
     @include LojaSEF-mobile-575PX();
 }
 
-/* 2 — Depois o MENOR, para ter prioridade quando aplicável */
 @media (max-width: 375px) {
     @include LojaSEF-mobile-375PX();
 }
