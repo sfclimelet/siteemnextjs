@@ -7,6 +7,7 @@ import logo from "../../public/logo-sef.png";
 
 import ClickAnimation from "./ClickAnimation";
 import { initHamburgerMenu } from "./buttonMenu";
+import { setupNavbarDropdowns } from "./navbarHome-Logic";
 
 import "../../styles/navbar/navbar-Home.scss";
 
@@ -15,46 +16,18 @@ import { IconsNavbarHome as I } from "../../Icons/Icons";
 
 export default function NavbarHome() {
 
-  // NAVBAR BEHAVIOR
   useEffect(() => {
-    const cleanupHamburger = initHamburgerMenu();
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined")return;
 
-    const dropdownParents = document.querySelectorAll(".nav-item.dropdown");
+    // Ativa o Menu hamburguer
+    const cleanupHamburguer = initHamburgerMenu();
 
-    dropdownParents.forEach((parent) => {
-      const toggleBtn = parent.querySelector("[data-bs-toggle='dropdown']");
-      const dropdownMenu = parent.querySelector(".dropdown-menu");
-      if (!toggleBtn || !dropdownMenu) return;
+    // 
+    const cleanupDropdowns = setupNavbarDropdowns();
 
-      const topIcon = document.createElement("div");
-      topIcon.classList.add("dropdown-top-icon");
-      dropdownMenu.prepend(topIcon);
-
-      const onShow = () => {
-        const icon = toggleBtn.querySelector("svg");
-        if (icon) {
-          const cloned = icon.cloneNode(true);
-          topIcon.innerHTML = "";
-          topIcon.appendChild(cloned);
-        }
-        toggleBtn.classList.add("is-active");
-        topIcon.classList.add("visible");
-      };
-
-      const onHide = () => {
-        toggleBtn.classList.remove("is-active");
-        topIcon.classList.remove("visible");
-      };
-
-      parent.addEventListener("show.bs.dropdown", onShow);
-      parent.addEventListener("hide.bs.dropdown", onHide);
-
-      topIcon.addEventListener("click", () => toggleBtn.click());
-    });
-
-    return () => {
-      cleanupHamburger && cleanupHamburger();
+    return ()=> {
+      cleanupHamburguer && cleanupHamburguer();
+      cleanupDropdowns && cleanupDropdowns();
     };
   }, []);
 
