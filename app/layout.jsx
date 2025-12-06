@@ -3,7 +3,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import Script from "next/script";
 
 {/* Styles */}
-import "../styles/layout.css";
+import "../styles/_layout.scss";
 import "../styles/_theme-globals.scss";
 
 export const metadata = {

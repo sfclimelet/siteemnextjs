@@ -1714,3 +1714,578 @@ styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
 
 
 [00:08:10.299] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:17.640] Server  LOG      ✓ Compiled in 4ms
+[00:13:43.829] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.865] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.907] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.908] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.909] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.910] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.912] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:43.938] Server  LOG      ✓ Compiled in 98ms
+[00:13:44.353] Browser ERROR   ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/layout.css'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/layout.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:57.049] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.050] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.051] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.051] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.052] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.053] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.353] Browser ERROR   ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:01.089] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.090] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.091] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.092] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.092] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.092] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:01.354] Browser ERROR   ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layo'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:03.398] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:03.399] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:03.400] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:03.401] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:03.401] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:03.401] Server  ERROR    ⨯ ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:04.354] Browser ERROR   ./app/layout.jsx:6:1
+Module not found: Can't resolve '../styles/_layout'
+  4 |
+  5 | {/* Styles */}
+> 6 | import "../styles/_layout";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "../styles/_theme-globals.scss";
+  8 |
+  9 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:06.589] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.590] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.590] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.632] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.632] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.632] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.789] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.789] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.789] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:14:06.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
