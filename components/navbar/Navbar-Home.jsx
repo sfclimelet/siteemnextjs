@@ -22,7 +22,6 @@ export default function NavbarHome() {
     // Ativa o Menu hamburguer
     const cleanupHamburguer = initHamburgerMenu();
 
-    // 
     const cleanupDropdowns = setupNavbarDropdowns();
 
     return ()=> {

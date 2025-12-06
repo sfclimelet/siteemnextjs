@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import "../../styles/carrossel/home/CarrosselHome.scss";
+import "../../styles/carrossel/CarrosselHome.scss";
 import "../aviso/aviso.scss";
 
 import { carrosselHomeData } from "./cardsCarrosselHomeData";
