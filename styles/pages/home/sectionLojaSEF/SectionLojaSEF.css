@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* ==== CONTAINER PRINCIPAL ==== */
+.container-loja-card {
+  position: relative !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ==== ÁREA SUPERIOR (ícone + curva) ==== */
+.card-top-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative !important;
+}
+
+.card-top-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.card-curve {
+  position: absolute !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==== ÁREA DE TEXTO ==== */
+.card-bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+}
+
+.loja-title,
+.loja-descricao {
+  text-align: center;
+  display: block;
+}
+
+/* ==== BOTÃO ==== */
+.btn-loja {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container-loja-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  padding: 2.2rem 1.5rem;
+  margin: 2rem auto;
+}
+.container-loja-card .card-top-area {
+  margin-bottom: 1.4rem;
+}
+.container-loja-card .card-top-area .card-top-icon svg {
+  font-size: 2.2rem;
+  color: #2d7cff;
+  margin-bottom: 1rem;
+}
+.container-loja-card .card-top-area .card-curve {
+  width: 180%;
+  height: 220px;
+  top: -120px;
+  content: "";
+  background: #4da3ff;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.container-loja-card .loja-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 0.4rem;
+  z-index: 2;
+}
+.container-loja-card .loja-descricao {
+  font-size: 1rem;
+  color: #4b4b4b;
+  line-height: 1.55;
+  margin: 0 auto 1.6rem auto;
+  z-index: 2;
+}
+.container-loja-card .btn-loja {
+  background: #2d7cff;
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  gap: 0.5rem;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.35s ease, transform 0.25s ease;
+}
+
+@media (max-width: 575px) {
+  .container-loja-card {
+    width: 92%;
+    padding: 1.8rem 1.4rem;
+    margin: 1.6rem auto;
+  }
+  .container-loja-card .card-top-area {
+    margin-bottom: 1.2rem;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 100%;
+    height: 450% !important;
+    top: -325%;
+    left: 50%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 auto 1.2rem auto;
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 375px) {
+  .container-loja-card {
+    width: 92%;
+    padding: 1.8rem 1.4rem;
+    margin: 1.6rem auto;
+  }
+  .container-loja-card .card-top-area {
+    margin-bottom: 1.2rem;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 100%;
+    height: 450% !important;
+    top: -325%;
+    left: 50%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 auto 1.2rem auto;
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 576px) and (max-width: 756px) {
+  .container-loja-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .container-loja-card .card-top-area {
+    flex: 1;
+  }
+  .container-loja-card .card-top-area .card-top-icon {
+    margin-top: 10% !important;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 200%;
+    height: 600% !important;
+    top: -250%;
+    left: -0.5%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd {
+    flex: 1.5;
+    text-align: left;
+    align-items: center;
+    z-index: 10;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 0 1.2rem 0; /* agora alinhado à esquerda */
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 757px) and (max-width: 991px) {
+  .container-loja-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    height: 350px;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .container-loja-card .card-top-area {
+    flex: 1;
+  }
+  .container-loja-card .card-top-area .card-top-icon {
+    margin-top: 10% !important;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 200%;
+    height: 600% !important;
+    top: -250%;
+    left: -0.5%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd {
+    flex: 1.2;
+    text-align: left;
+    align-items: center;
+    z-index: 10;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 1rem;
+    line-height: 1.35;
+    max-width: 270px;
+    margin: 0 0 1.2rem 0; /* agora alinhado à esquerda */
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 20px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 991px) {
+  .container-loja-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    height: 350px;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .container-loja-card .card-top-area {
+    flex: 1;
+  }
+  .container-loja-card .card-top-area .card-top-icon {
+    margin-top: 10% !important;
+  }
+  .container-loja-card .card-top-area .card-top-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+  .container-loja-card .card-top-area .card-curve {
+    width: 200%;
+    height: 600% !important;
+    top: -250%;
+    left: -0.5%;
+    z-index: 0;
+  }
+  .container-loja-card .card-bd {
+    flex: 1.4;
+    text-align: left;
+    align-items: center;
+    z-index: 10;
+  }
+  .container-loja-card .card-bd .loja-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .container-loja-card .card-bd .loja-descricao {
+    font-size: 1rem;
+    line-height: 1.35;
+    max-width: 420px;
+    margin: 0 0 1.2rem 0; /* agora alinhado à esquerda */
+  }
+  .container-loja-card .card-bd .btn-loja {
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 20px;
+    gap: 0.4rem;
+  }
+  .container-loja-card .card-bd .btn-loja svg {
+    width: 17px;
+    height: 17px;
+  }
+}/*# sourceMappingURL=SectionLojaSEF.css.map */
