@@ -1,0 +1,10 @@
+@use "./_globals-NavbarHome" as *;
+@use "./_layout-NavbarHome";
+@use "./_mixins-animations-NavbarHome";
+
+
+@use "./_mobile-resolutions-NavbarHome";
+
+@use "./_tablet-resolutions-NavbarHome";
+
+@use "./_desktops-resolutions-NavbarHome";

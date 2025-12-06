@@ -8,7 +8,7 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 @mixin NavHome($Nid){
   $bck-F: 14px;
   $brd-B: 1px;
-  $bx-n1: 0; $bx-n2: 4px; $bx-n3: 20px; 
+  $bx-n1: 0; $bx-n2: 4px; $bx-n3: 20px;
   #{$Nid} {
     margin-bottom: 30px;
     backdrop-filter: blur($bck-F);

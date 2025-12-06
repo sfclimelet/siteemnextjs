@@ -5,11 +5,10 @@ import Image from "next/image";
 import { useEffect } from "react";
 import logo from "../../public/logo-sef.png";
 
-import ClickAnimation from "./ClickAnimation";
 import { initHamburgerMenu } from "./buttonMenu";
 import { setupNavbarDropdowns } from "./navbarHome-Logic";
 
-import "../../styles/navbar/navbar-Home.scss";
+import "../../styles/navbar/navbarHOME.scss";
 
 // Importa todos os ícones organizados
 import { IconsNavbarHome as I } from "../../Icons/Icons";
@@ -32,7 +31,7 @@ export default function NavbarHome() {
 
   return (
     <>
-      <nav id="nbHome" className="navbar navbar-expand-sm sticky-top z-2">
+      <nav id="nbHome" className="navbar navbar-expand-sm sticky-top">
         <div id="nbHome2" className="container-fluid">
 
           {/* Logo */}
