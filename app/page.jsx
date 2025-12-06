@@ -3,13 +3,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Wrench } from "lucide-react";
 
-{/* Componentes */}
-import NavbarHome from "../components/navbar/Navbar-Home";
-import FooterHome from "../components/footer/Footer-Home";
+{/* ANIMATIONS */}
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
 import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../components/ThemeProvider";
+
+{/* Componentes */}
+import NavbarHome from "../components/navbar/Navbar-Home";
 import CarrosselHome from "../components/carrossel/CarrosselHome";
+import FooterHome from "../components/footer/Footer-Home";
+
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);

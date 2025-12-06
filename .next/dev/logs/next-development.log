@@ -2289,3 +2289,772 @@ styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
 
 
 [00:14:06.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:38.354] Browser ERROR   uncaughtError: ReferenceError: CarrosselHome is not defined
+[00:16:39.989] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:39.990] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:39.990] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:40.081] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:40.183] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:40.183] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:40.183] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:40.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:45.455] Server  LOG      ✓ Compiled in 6ms
+[00:16:49.782] Server  LOG      ✓ Compiled in 6ms
+[00:16:50.354] Browser ERROR   ./app/page.jsx:12:1
+Parsing ecmascript source code failed
+  10 |
+  11 | {//}
+> 12 | import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
+     | ^^^^^^
+  13 | import ThemeToggle from "../components/ThemeToggle";
+  14 | import { ThemeContext } from "../components/ThemeProvider";
+  15 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import traces:
+  Client Component Browser:
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[00:16:52.778] Server  LOG      ✓ Compiled in 6ms
+[00:16:52.791] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:52.792] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:16:52.792] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:39.273] Server  LOG      ✓ Compiled in 20ms
+[00:17:40.354] Browser ERROR   uncaughtError: ReferenceError: ThemeContext is not defined
+[00:17:41.792] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:17:41.800] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.800] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.800] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.833] Server  LOG      ✓ Compiled in 19ms
+[00:17:41.976] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.976] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.976] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:17:41.986] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:44.677] Server  LOG      ✓ Compiled in 4ms
+[00:18:55.849] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.851] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.853] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.854] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.856] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.857] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.858] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.860] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.861] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.862] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.863] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.864] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.865] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.866] Server  ERROR    ⨯ ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:55.881] Server  LOG      ✓ Compiled in 18ms
+[00:18:56.354] Browser ERROR   ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:01.354] Browser ERROR   ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:04.353] Browser ERROR   ./components/Background-Animated-Home.jsx:5:1
+Module not found: Can't resolve '../styles/conf-backgrounds-Light-Dark.scss'
+  3 | import React, { useEffect, useRef, useContext } from "react";
+  4 | import { ThemeContext } from "../components/ThemeProvider";
+> 5 | import "../styles/conf-backgrounds-Light-Dark.scss";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const ICONS = [
+  8 |   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },
+
+Import traces:
+  Client Component Browser:
+    ./components/Background-Animated-Home.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Background-Animated-Home.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:19:13.688] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 42, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:42:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+42 |   $anim-name: unquote("txtGlowSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 43:15   Glow-Pulse-Text()
+styles/carrossel/home/themes-CarrosselHome.scss 38:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:19:13.689] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 78, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:78:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+78 |   $anim-name: unquote("btnPulseSoft-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 79:15   Botao-Pulse-OTIMIZADO()
+styles/carrossel/home/themes-CarrosselHome.scss 60:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
+[00:19:13.689] Server  WARN     ⚠ ./styles/carrossel/home/CarrosselHome.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 95, column 14 of file:///home/edvandro/Documentos/Next%20Project%20site%20SEF/site/styles/carrossel/home/_mixins-animations.scss:95:14:
+Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+95 |   $anim-name: unquote("iconFloat-#{$tema}");
+
+
+styles/carrossel/home/_mixins-animations.scss 96:15   Icon-Glow()
+styles/carrossel/home/themes-CarrosselHome.scss 28:7  @use
+styles/carrossel/home/CarrosselHome.scss 11:1         root stylesheet
+
+
+
