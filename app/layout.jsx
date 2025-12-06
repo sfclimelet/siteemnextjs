@@ -1,7 +1,10 @@
-import "../styles/layout.css";
-import "../styles/theme-globals.scss"; 
+
 import { ThemeProvider } from "../components/ThemeProvider";
 import Script from "next/script";
+
+{/* Styles */}
+import "../styles/layout.css";
+import "../styles/_theme-globals.scss";
 
 export const metadata = {
   title: "Home",
