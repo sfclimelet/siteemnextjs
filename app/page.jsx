@@ -3,9 +3,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Wrench } from "lucide-react";
 
-<<<<<<< HEAD
-{/* ANIMATIONS */}
-=======
 {/* COMPONENTES */}
 import NavbarHome from "../components/navbar/Navbar-Home";
 import FooterHome from "../components/footer/Footer-Home";
@@ -13,19 +10,9 @@ import CarrosselHome from "../components/carrossel/CarrosselHome";
 import SectionLojaSEF from "../components/pages/SectionLojaSEF";
 
 {/* THEMES */}
->>>>>>> SectionLojaSef
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
 import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../components/ThemeProvider";
-
-<<<<<<< HEAD
-{/* Componentes */}
-import NavbarHome from "../components/navbar/Navbar-Home";
-import CarrosselHome from "../components/carrossel/CarrosselHome";
-import FooterHome from "../components/footer/Footer-Home";
-
-=======
->>>>>>> SectionLojaSef
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
