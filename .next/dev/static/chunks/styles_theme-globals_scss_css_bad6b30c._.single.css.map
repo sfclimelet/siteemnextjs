@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/styles/theme-globals.scss"],"sourcesContent":["/* Colors -  LIGHT */\n$bg-gradient-lhg1: #f6f9fc;\n$bg-gradient-lhg2: #e3f2ff;\n$txt-lhg: #1a1a1a;\n/* Colors - DARK */\n$bg-gradient-dkr1: #08192c;\n$bg-gradient-dkr2: #0b0b1a;\n$txt-dkr: #f0f0f0;\n\n@mixin ThemeGlobal($thm1, $thm2){\n  #{$thm1}{\n    background: linear-gradient(90deg, $bg-gradient-lhg1 0%, $bg-gradient-lhg2 100%);\n    color: $txt-lhg;\n  }\n  #{$thm2}{\n    background: linear-gradient(90deg, $bg-gradient-dkr1 0%, $bg-gradient-dkr2 100%);\n    color: $txt-dkr;\n  }\n  body, h1, h2{\n    transition: all 0.3s ease, color 0.3s ease, background-color 0.4s ease;\n  }\n}\n@include ThemeGlobal('.theme-light', '.theme-dark');"],"names":[],"mappings":"AAUI;;;;;AAIA;;;;;AAIF"}}]
-}

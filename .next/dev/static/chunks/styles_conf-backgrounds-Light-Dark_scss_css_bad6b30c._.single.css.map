@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/styles/conf-backgrounds-Light-Dark.scss"],"sourcesContent":[".animated-bg-canvas.light{\n    position: fixed;\n    inset: 0;\n    z-index: -1;\n    width: 100%;\n    height: 100%;\n    display: block;\n    pointer-events: none;\n    image-rendering: auto;\n    -webkit-font-smoothing: antialiased;\n    -mox-osx-font-smoothing: grayscale;\n}\n\n.animated-bg-canvas.dark{\n    position: fixed;\n    inset: 0;\n    z-index: -1;\n    width: 100%;\n    height: 100%;\n    display: block;\n    pointer-events: none;\n    image-rendering: auto;\n    -webkit-font-smoothing: antialiased;\n    -mox-osx-font-smoothing: grayscale;\n}\n\n\n"],"names":[],"mappings":"AAAA"}}]
-}
