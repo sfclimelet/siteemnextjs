@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useContext } from "react";
 import { ThemeContext } from "../components/ThemeProvider";
-import "../styles/conf-backgrounds-Light-Dark.scss";
+import "../styles/_conf-backgrounds-Light-Dark.scss";
 
 const ICONS = [
   { name: "lightning", url: "/iconsAnimations/lightning-fill.png", type: "electric" },

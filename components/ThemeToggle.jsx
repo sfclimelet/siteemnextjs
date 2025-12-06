@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
 
-import styles from "../styles/theme-btn-toggle.module.scss";
+import styles from "../styles/_theme-btn-toggle.module.scss";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeContext);
