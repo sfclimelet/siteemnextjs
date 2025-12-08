@@ -5,9 +5,9 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   /* Background da Navbar e Submenus */
-  background: rgba(0, 0, 0, 0.549) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.078);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.451);
+  background: rgba(0, 0, 0, 0.5490196078) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
   transition: all 0.35s ease;
 }
 
@@ -31,6 +31,7 @@
   }
 }
 
+/* ---------------- Parte acima foi feita ----------- */
 @media (max-width: 768px) {
   #navbarHome #Services {
     margin-left: 20px !important;

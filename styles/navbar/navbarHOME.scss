@@ -1,7 +1,7 @@
 @use "./_globals-NavbarHome" as *;
-@use "./_layout-NavbarHome";
+@use "./design-NavbarHome";
 @use "./_mixins-animations-NavbarHome";
-
+@use "./themes-NavbarHome";
 
 @use "./_mobile-resolutions-NavbarHome";
 

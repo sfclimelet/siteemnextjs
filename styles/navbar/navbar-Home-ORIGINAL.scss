@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-$nav-Home-bg: rgba(0, 0, 0, 0.549);
-$nav-Home-bb: rgba(255, 255, 255, 0.078);
-$nav-Home-bxs: rgba(0, 0, 0, 0.451);
+$nav-Home-bg: #0000008c;
+$nav-Home-bb: #ffffff14;
+$nav-Home-bxs: #00000073;
 
 /* NAVBAR - Configurações Gerais*/
 @mixin NavHome($Nid){
@@ -13,7 +13,6 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
     margin-bottom: 30px;
     backdrop-filter: blur($bck-F);
     -webkit-backdrop-filter: blur($bck-F);
-
     /* Background da Navbar e Submenus */
     background: $nav-Home-bg !important;
     border-bottom: $brd-B solid $nav-Home-bb;
@@ -43,6 +42,8 @@ $nav-Home-bxs: rgba(0, 0, 0, 0.451);
 
 }
 @include NavHome('#nbHome');
+
+/* ---------------- Parte acima foi feita ----------- */
 
 @mixin navbarIconsMobile($pai, $move, $filhos...){
   // Resoluções 

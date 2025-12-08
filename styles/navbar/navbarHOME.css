@@ -1,3 +1,41 @@
+@charset "UTF-8";
+/*Animação */
 /* Menus */
 /* Submenus */
-/* PARA LAYOUT *//*# sourceMappingURL=navbarHOME.css.map */
+/* PARA LAYOUT */
+/* Cor icones do Menu */
+/* Scrolled */
+#nbHome {
+  margin-bottom: 30px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
+  transition: all 0.35s ease;
+  background: rgba(0, 0, 0, 0.5490196078) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
+}
+#nbHome #nbHome2 #logoNavbar {
+  width: 70px !important;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#nbHome .scrolled {
+  background: rgba(0, 0, 0, 0.7490196078) !important;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
+  #nbHome #nbHome2 {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  #nbHome #nbHome2 #navbarHome, #nbHome #nbHome2 #MenuHamburger {
+    margin-left: 30px !important;
+  }
+  #nbHome #nbHome2 #logoNavbar {
+    margin-right: 40px;
+  }
+}/*# sourceMappingURL=navbarHOME.css.map */
