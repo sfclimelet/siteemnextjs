@@ -22,6 +22,22 @@
     }
 }
 
+/* MENU HAMBURGER */
+@mixin ANM-MN-HAMBURGER(){
+    &#{$M-Active}{
+        #{$M-Lines}:nth-child(1){
+            transform: translateY(9px) rotate(45deg);
+        }
+        #{$M-Lines}:nth-child(2){
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        #{$M-Lines}:nth-child(3){
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+}
+
 /* SEARCH */
 @mixin ANM-SEARCH-Input(){
     &::placeholder{

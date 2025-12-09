@@ -23,6 +23,9 @@
         background: #56adff;
         box-shadow: 0 0 6px #56adff;
     }
+    #{$M-Btn-Hamburger}{
+        @include ANM-MN-HAMBURGER();
+    }
 }
 #{$nb-LIGHT}{
     #{$c-NavHome2}{
