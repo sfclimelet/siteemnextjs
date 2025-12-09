@@ -345,6 +345,8 @@ $nav-Home-bxs: #00000073;
 }
 @include LogoNavbarHOME('#logoNavbar');
 
+/* -------------------- Parte de cima foi feita -------------------- */
+
 @mixin MenuHambuguer($ID-MenuHmaburger, $class-TogglerICON, $L-Hamburger, $class-ACTIVE) {
 
   /* ===== APENAS MOBILE ===== */

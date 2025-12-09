@@ -11,23 +11,23 @@
 /* Cor dos Icones do Menu - LIGHT */
 /* SEARCH */
 /* Scrolled */
+/* CONTEINER */
 #nbHome {
   margin-bottom: 30px;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
   transition: all 0.35s ease;
-  background: rgba(0, 0, 0, 0.5490196078) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
 }
 
-#nbHome2 #logoNavbar {
+/* LOGO */
+#nbHome #nbHome2 #logoNavbar {
   width: 70px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-#nbHome2 .dropdown-search-box {
+/* SEARCH */
+#nbHome #nbHome2 .dropdown-search-box {
   display: flex;
   align-items: center;
   width: 100%;
@@ -35,12 +35,12 @@
   padding: 16px;
   gap: 0;
 }
-#nbHome2 .search-input {
+#nbHome #nbHome2 .search-input {
   flex: 1;
   height: 40px;
   border-radius: 10px 0 0 10px;
 }
-#nbHome2 .search-btn {
+#nbHome #nbHome2 .search-btn {
   border: none;
   width: 50px;
   height: 44px;
@@ -51,32 +51,29 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
-#nbHome2 .search-btn svg {
+#nbHome #nbHome2 .search-btn svg {
   width: 22px;
   height: 22px;
 }
 
-#btnSearch svg {
+/* ICONS MENU */
+#nbHome #btnSearch svg {
   width: 18px;
   height: 18px;
 }
-
-#btnServicos svg {
+#nbHome #btnServicos svg {
   width: 18px;
   height: 18px;
 }
-
-#btnQmSms svg {
+#nbHome #btnQmSms svg {
   width: 18px;
   height: 18px;
 }
-
-#btnAjSu svg {
+#nbHome #btnAjSu svg {
   width: 18px;
   height: 18px;
 }
-
-#btnPortCert svg {
+#nbHome #btnPortCert svg {
   width: 18px;
   height: 18px;
 }
@@ -85,6 +82,13 @@
 /* SEARCH */
 /* ICONES DO MENU */
 /* SCROLLED */
+/* CONTAINER */
+#nbHome {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
+  background: rgba(0, 0, 0, 0.5490196078) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
+}
+
 /* LOGO */
 #nbHome #nbHome2 #logoNavbar {
   animation: breathe 4s ease-in-out infinite;

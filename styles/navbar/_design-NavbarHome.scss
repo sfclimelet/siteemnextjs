@@ -1,19 +1,15 @@
 @use "./_globals-NavbarHome" as *;
 
-@mixin Design-Nb-CONTEINER(){
-    #{$c-NavHome1}{
-        margin-bottom: 30px;
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        box-shadow: 0 4px 20px $nbH-cor-bxs;
-        transition: all 0.35s ease;
-        background: $nbH-cor-bg !important;
-        border-bottom: 1px solid $nbH-cor-border;
-    }
+/* CONTEINER */
+#{$c-NavHome1}{
+    margin-bottom: 30px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: all 0.35s ease;
 }
-@include Design-Nb-CONTEINER();
 
-@mixin Design-Nb-LOGO(){
+/* LOGO */
+#{$c-NavHome1}{
     #{$c-NavHome2}{
         #{$nb-Logo}{
             width: 70px;
@@ -22,9 +18,9 @@
         }
     }
 }
-@include Design-Nb-LOGO();
 
-@mixin Design-nb-SEARCH(){
+/* SEARCH */
+#{$c-NavHome1}{
     #{$c-NavHome2}{
         #{$S-Box}{
             display: flex;
@@ -53,14 +49,12 @@
                 width: 22px;
                 height: 22px;
             }
-
         }
     }
 }
-@include Design-nb-SEARCH();
 
-
-@mixin Design-Nb-ICONS-MN(){
+/* ICONS MENU */
+#{$c-NavHome1}{
     @each $id in $nav-icons-Mn{
         #{$id}{
             svg{
@@ -70,4 +64,3 @@
         }
     }
 }
-@include Design-Nb-ICONS-MN();

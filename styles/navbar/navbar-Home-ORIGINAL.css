@@ -378,6 +378,7 @@
   filter: drop-shadow(0 0 14px, #00bfff);
 }
 
+/* -------------------- Parte de cima foi feita -------------------- */
 /* ===== APENAS MOBILE ===== */
 @media (max-width: 992px) {
   #MenuHamburger {
