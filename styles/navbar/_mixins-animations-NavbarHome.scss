@@ -1,5 +1,41 @@
 @use "./_globals-NavbarHome" as *;
 
+
+/* ICONES DO MENU */
+@mixin ICONS-MENU(){
+    #{$c-NavHome1}{
+        @each $Anm in $nav-icons-Mn{
+            #{$Anm}{
+                svg{
+                    filter: drop-shadow(0 0 10px $nbH-cor-icon-Mn1);
+                    &:hover{
+                        stroke: $nbH-cor-icon-Mn2;
+                        filter: drop-shadow(0 0 16px $nbH-cor-icon-Mn2);
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+    }
+    #{$nb-LIGHT}{
+        @each $AnmLI in $nav-icons-Mn{
+            #{$AnmLI}{
+                svg{
+                    filter: drop-shadow(0 0 6px $nbH-cor-icon-LIGHT2) !important;
+                    transition: all 0.3s ease, filter 0.4s ease;
+                    &:hover{
+                        stroke: $nbH-cor-icon-LIGHT3 !important;
+                        filter: drop-shadow(0 0 10px $nbH-cor-icon-LIGHT4) !important;
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+    }
+}
+@include ICONS-MENU();
+
+
 @mixin Scrolled(){
     #{$nb-ScrollLed}{
         background: $N-bg-S !important;

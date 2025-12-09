@@ -72,11 +72,100 @@
   stroke: #00d4ff !important;
 }
 
+/* ICONES DO MENU */
+#nbHome #btnSearch svg {
+  filter: drop-shadow(0 0 10px #56adff);
+}
+#nbHome #btnSearch svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#nbHome #btnServicos svg {
+  filter: drop-shadow(0 0 10px #56adff);
+}
+#nbHome #btnServicos svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#nbHome #btnQmSms svg {
+  filter: drop-shadow(0 0 10px #56adff);
+}
+#nbHome #btnQmSms svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#nbHome #btnAjSu svg {
+  filter: drop-shadow(0 0 10px #56adff);
+}
+#nbHome #btnAjSu svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+#nbHome #btnPortCert svg {
+  filter: drop-shadow(0 0 10px #56adff);
+}
+#nbHome #btnPortCert svg:hover {
+  stroke: #0cbaff;
+  filter: drop-shadow(0 0 16px #0cbaff);
+  transform: scale(1.04);
+}
+
+.theme-light #btnSearch svg {
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #btnSearch svg:hover {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+  transform: scale(1.04);
+}
+.theme-light #btnServicos svg {
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #btnServicos svg:hover {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+  transform: scale(1.04);
+}
+.theme-light #btnQmSms svg {
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #btnQmSms svg:hover {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+  transform: scale(1.04);
+}
+.theme-light #btnAjSu svg {
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #btnAjSu svg:hover {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+  transform: scale(1.04);
+}
+.theme-light #btnPortCert svg {
+  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  transition: all 0.3s ease, filter 0.4s ease;
+}
+.theme-light #btnPortCert svg:hover {
+  stroke: #37e1ff !important;
+  filter: drop-shadow(0 0 10px #00f0ff) !important;
+  transform: scale(1.04);
+}
+
 .scrolled {
   background: rgba(0, 0, 0, 0.7490196078) !important;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }
 
+/* ICONES MENU */
 @media (min-width: 375px) and (max-width: 575px) {
   #nbHome #nbHome2 {
     display: flex !important;
