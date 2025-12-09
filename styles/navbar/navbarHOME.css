@@ -37,15 +37,7 @@
 #nbHome2 .search-input {
   flex: 1;
   height: 40px;
-  background: #0d1b27;
-  border: 1px solid #0aa8ff;
   border-radius: 10px 0 0 10px;
-}
-#nbHome2 .search-input::-moz-placeholder {
-  color: #9ac5ff;
-}
-#nbHome2 .search-input::placeholder {
-  color: #9ac5ff;
 }
 #nbHome2 .search-btn {
   border: none;
@@ -56,78 +48,66 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: linear-gradient(45deg, #00aaff, #006eff);
   transition: all 0.25s ease;
 }
 #nbHome2 .search-btn svg {
   width: 22px;
   height: 22px;
-  color: #fff;
 }
 
 #btnSearch svg {
   width: 18px;
   height: 18px;
-  stroke: #56adff;
 }
 
 #btnServicos svg {
   width: 18px;
   height: 18px;
-  stroke: #56adff;
 }
 
 #btnQmSms svg {
   width: 18px;
   height: 18px;
-  stroke: #56adff;
 }
 
 #btnAjSu svg {
   width: 18px;
   height: 18px;
-  stroke: #56adff;
 }
 
 #btnPortCert svg {
   width: 18px;
   height: 18px;
-  stroke: #56adff;
-}
-
-/* ICONES NO LIGHT */
-.theme-light #btnSearch svg {
-  stroke: #00d4ff !important;
-}
-.theme-light #btnServicos svg {
-  stroke: #00d4ff !important;
-}
-.theme-light #btnQmSms svg {
-  stroke: #00d4ff !important;
-}
-.theme-light #btnAjSu svg {
-  stroke: #00d4ff !important;
-}
-.theme-light #btnPortCert svg {
-  stroke: #00d4ff !important;
 }
 
 /* SEARCH */
 /* ICONES DO MENU */
+/* SCROLLED */
 /* SEARCH */
-#LI-search::-moz-placeholder {
+#LI-search .search-input {
+  background: #0d1b27;
+  border: 1px solid #0aa8ff;
+}
+#LI-search .search-input::-moz-placeholder {
   color: #9ac5ff;
 }
-#LI-search::placeholder {
+#LI-search .search-input::placeholder {
   color: #9ac5ff;
 }
-#LI-search:focus {
+#LI-search .search-input:focus {
   border-color: #21c7ff;
   box-shadow: #00caff;
+}
+#LI-search .search-btn {
+  background: linear-gradient(45deg, #00aaff, #006eff);
+}
+#LI-search .search-btn svg {
+  color: #fff;
 }
 
 /* ICONES MENU */
 #nbHome #btnSearch svg {
+  stroke: #56adff;
   filter: drop-shadow(0 0 10px #56adff);
 }
 #nbHome #btnSearch svg:hover {
@@ -136,6 +116,7 @@
   transform: scale(1.04);
 }
 #nbHome #btnServicos svg {
+  stroke: #56adff;
   filter: drop-shadow(0 0 10px #56adff);
 }
 #nbHome #btnServicos svg:hover {
@@ -144,6 +125,7 @@
   transform: scale(1.04);
 }
 #nbHome #btnQmSms svg {
+  stroke: #56adff;
   filter: drop-shadow(0 0 10px #56adff);
 }
 #nbHome #btnQmSms svg:hover {
@@ -152,6 +134,7 @@
   transform: scale(1.04);
 }
 #nbHome #btnAjSu svg {
+  stroke: #56adff;
   filter: drop-shadow(0 0 10px #56adff);
 }
 #nbHome #btnAjSu svg:hover {
@@ -160,6 +143,7 @@
   transform: scale(1.04);
 }
 #nbHome #btnPortCert svg {
+  stroke: #56adff;
   filter: drop-shadow(0 0 10px #56adff);
 }
 #nbHome #btnPortCert svg:hover {
@@ -169,7 +153,8 @@
 }
 
 .theme-light #btnSearch svg {
-  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 10px rgba(0, 220, 255, 0.7019607843)) !important;
   transition: all 0.3s ease, filter 0.4s ease;
 }
 .theme-light #btnSearch svg:hover {
@@ -178,7 +163,8 @@
   transform: scale(1.04);
 }
 .theme-light #btnServicos svg {
-  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 10px rgba(0, 220, 255, 0.7019607843)) !important;
   transition: all 0.3s ease, filter 0.4s ease;
 }
 .theme-light #btnServicos svg:hover {
@@ -187,7 +173,8 @@
   transform: scale(1.04);
 }
 .theme-light #btnQmSms svg {
-  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 10px rgba(0, 220, 255, 0.7019607843)) !important;
   transition: all 0.3s ease, filter 0.4s ease;
 }
 .theme-light #btnQmSms svg:hover {
@@ -196,7 +183,8 @@
   transform: scale(1.04);
 }
 .theme-light #btnAjSu svg {
-  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 10px rgba(0, 220, 255, 0.7019607843)) !important;
   transition: all 0.3s ease, filter 0.4s ease;
 }
 .theme-light #btnAjSu svg:hover {
@@ -205,7 +193,8 @@
   transform: scale(1.04);
 }
 .theme-light #btnPortCert svg {
-  filter: drop-shadow(0 0 6px rgba(0, 220, 255, 0.7019607843)) !important;
+  stroke: #00d4ff !important;
+  filter: drop-shadow(0 0 10px rgba(0, 220, 255, 0.7019607843)) !important;
   transition: all 0.3s ease, filter 0.4s ease;
 }
 .theme-light #btnPortCert svg:hover {

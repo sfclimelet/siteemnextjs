@@ -1,8 +1,7 @@
 @use "./_globals-NavbarHome" as *;
 
-
 /* SEARCH */
-@mixin ANM-SEARCH(){
+@mixin ANM-SEARCH-Input(){
     &::placeholder{
         color: $SS-cor-placehld;
     }
@@ -28,7 +27,7 @@
     }
 }
 
-
+/* SCROLLED */
 @mixin ANM-Scrolled(){
     #{$nb-ScrollLed}{
         background: $N-bg-S !important;
