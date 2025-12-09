@@ -306,4 +306,19 @@
   #nbHome #nbHome2 #logoNavbar {
     margin-right: 40px;
   }
+  #logoNavbar {
+    margin-right: 10px !important;
+  }
+}
+/* LOGO */
+@media (min-width: 576px) and (max-width: 992px) {
+  #logoNavbar {
+    margin-left: 30px;
+  }
+}
+/* LOGO */
+@media (min-width: 993px) and (max-width: 1300px) {
+  #logoNavbar {
+    margin-left: 50px !important;
+  }
 }/*# sourceMappingURL=navbarHOME.css.map */

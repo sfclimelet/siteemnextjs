@@ -1,1 +1,12 @@
+@use "./_globals-NavbarHome" as *;
 
+/* LOGO */
+@mixin LOGO-D(){
+    #{$nb-Logo}{
+        margin-left: 50px !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1300px){
+    @include LOGO-D();
+}
