@@ -1,6 +1,16 @@
 @use "./globals-NavbarHome" as *;
 @use "./mixins-animations-NavbarHome" as *;
 
+
+/* LOGO */
+#{$c-NavHome1}{
+    #{$c-NavHome2}{
+        #{$nb-Logo}{
+            @include ANM-LOGO();
+        }
+    }
+}
+
 /* SEARCH */
 #{$S-li-Search}{
     #{$S-Input}{

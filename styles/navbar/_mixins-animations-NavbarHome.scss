@@ -1,5 +1,27 @@
 @use "./_globals-NavbarHome" as *;
 
+/* LOGO */
+@mixin ANM-LOGO(){
+    animation: breathe 4s ease-in-out infinite;
+    &:hover{
+        filter: drop-shadow(0 0 14px #00bfff);
+    }
+    @keyframes breathe {
+        0%{
+            opacity: 0.75;
+            transform: scale(1);
+        }
+        50%{
+            opacity: 1;
+            transform: scale(1.04);
+        }
+        100%{
+            opacity: 0.75;
+            transform: scale(1);
+        }
+    }
+}
+
 /* SEARCH */
 @mixin ANM-SEARCH-Input(){
     &::placeholder{
