@@ -19,7 +19,7 @@
     }
 }
 
-/* DROPDOWNS */
+/* DROPDOWN */
 #{$c-NavHome1}{
     #{$nb-Hm-Dropd-Mn}{
         position: relative;
@@ -38,6 +38,18 @@
                 width: 18px;
                 height: 18px;
             }
+        }
+    }
+    #{$Drp-Top-Icon}{
+        background: #000000dd;
+        border: 3px solid $D-neon1;
+              box-shadow:
+                0 0 14px $D-neon1,
+                0 0 22px $D-neon1 inset;
+        opacity: 0;
+        transform: translate(-50%, -6px);
+        svg{
+            color: $D-neon1 !important;
         }
     }
 }

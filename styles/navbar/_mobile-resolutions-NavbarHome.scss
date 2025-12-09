@@ -41,7 +41,61 @@
         align-items: center;
 
         cursor: pointer;
-        
+    }
+}
+
+@mixin DROPDOWN-MENU(){
+    #{$nb-Hm-Dropd-Mn}{
+        min-width: 160px;
+        width: 85vw !important;
+        max-width: 200px !important;
+        margin-left: 50% !important;
+        transform: translateX(-50%) !important;
+        padding: 6px !important;
+        #{$nb-Hm-Dropd-Mn} > ul, #{$nb-Hm-Dropd-Mn}{
+            padding-top: 40px !important;
+        }
+        #{$nb-Dropd-Item}{
+            font-size: 0.88rem;
+            padding: 6px 10px !important;
+
+            svg{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+@mixin DROPDOWN-MENU-ICON-TOPO(){
+    #{$Drp-Top-Icon}{
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 99999;
+        transition: opacity 0.22s ease, transform 0.22s ease;
+        svg{
+            width: 18px;
+            height: 18px;
+            transition: all 0.22s ease;
+        }
+        #{$M-Visible}{
+            display: flex !important;
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        #{$nb-Hm-Link}.is-active{
+            opacity: 0 !important;
+            pointer-events: none !important;
+            transition: opacity 0.18s ease;
+        }
     }
 }
 
@@ -55,4 +109,6 @@
     @include MOBILE-RESOLUTION-PADRÃO();
     @include LOGO();
     @include M-BTN-HAMBURGER();
+    @include DROPDOWN-MENU();
+    @include DROPDOWN-MENU-ICON-TOPO();
 }

@@ -582,6 +582,7 @@
     color: #0cbaff !important;
   }
 }
+/* Para sumir esse icone no Topo quando passar de 575px */
 @media (min-width: 576px) {
   .dropdown-top-icon,
   .dropdown-top-icon.visible {

@@ -29,7 +29,7 @@
   transition: 0.3s ease;
 }
 
-/* DROPDOWNS */
+/* DROPDOWN */
 #nbHome .dropdown-menu {
   position: relative;
   border-radius: 12px;
@@ -48,6 +48,16 @@
   margin-right: 5px;
   width: 18px;
   height: 18px;
+}
+#nbHome .dropdown-top-icon {
+  background: rgba(0, 0, 0, 0.8666666667);
+  border: 3px solid #56adff;
+  box-shadow: 0 0 14px #56adff, 0 0 22px #56adff inset;
+  opacity: 0;
+  transform: translate(-50%, -6px);
+}
+#nbHome .dropdown-top-icon svg {
+  color: #56adff !important;
 }
 
 /* MENU HAMBURGER */
@@ -432,6 +442,54 @@
   }
   #MenuHamburger .navbar-toggler-icon {
     display: none !important;
+  }
+  .dropdown-menu {
+    min-width: 160px;
+    width: 85vw !important;
+    max-width: 200px !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 6px !important;
+  }
+  .dropdown-menu .dropdown-menu > ul, .dropdown-menu .dropdown-menu {
+    padding-top: 40px !important;
+  }
+  .dropdown-menu .dropdown-item {
+    font-size: 0.88rem;
+    padding: 6px 10px !important;
+  }
+  .dropdown-menu .dropdown-item svg {
+    font-size: 0.9rem;
+  }
+  .dropdown-top-icon {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+  }
+  .dropdown-top-icon svg {
+    width: 18px;
+    height: 18px;
+    transition: all 0.22s ease;
+  }
+  .dropdown-top-icon .visible {
+    display: flex !important;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .dropdown-top-icon .nav-link.is-active {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.18s ease;
   }
 }
 /* LOGO */
