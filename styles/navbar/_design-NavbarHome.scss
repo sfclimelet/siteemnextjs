@@ -15,18 +15,17 @@
                 cursor: pointer;
                 transition: 0.3s ease;
             }
-        }
-        #{$nb-Icon-Menu}{
-            width: 18px;
-            height: 18px;
-            stroke: $nbH-cor-icon-Mn1;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 12px $nbH-cor-icon-Mn1;
-            transition: all 0.4s ease, transform 0.4s ease, filter 0.4s ease;
-
-            #{$nb-LIGHT}{
-                stroke: $nbH-cor-icon-LIGHT1 !important;
+            /* Icones do Menu */
+            @each $id in $nav-icons-Mn{
+                #{$id}{
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                        stroke: $nbH-cor-icon-Mn1;
+                    }
+                }
             }
+
         }
     }
 }

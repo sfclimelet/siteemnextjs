@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*Animação */
 /* Menus */
+/* Botões dos Menus */
+/* Botões dos Menus para @each */
 /* Submenus */
 /* PARA LAYOUT */
 /* THEME LIGHT */
@@ -15,21 +17,38 @@
   background: rgba(0, 0, 0, 0.5490196078) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
 }
+#nbHome #nbHome2 {
+  /* Icones do Menu */
+}
 #nbHome #nbHome2 #logoNavbar {
   width: 70px !important;
   cursor: pointer;
   transition: 0.3s ease;
 }
-#nbHome .iconMn {
+#nbHome #nbHome2 #btnSearch svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 12px #56adff;
-  transition: all 0.4s ease, transform 0.4s ease, filter 0.4s ease;
 }
-#nbHome .iconMn .theme-light {
-  stroke: #00d4ff !important;
+#nbHome #nbHome2 #btnServicos svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+}
+#nbHome #nbHome2 #btnQmSms svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+}
+#nbHome #nbHome2 #btnAjSu svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+}
+#nbHome #nbHome2 #btnPortCert svg {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
 }
 
 .scrolled {

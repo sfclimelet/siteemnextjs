@@ -17,6 +17,22 @@ $nb-Hm-Item: ".nav-item";
 $nb-Hm-Link: ".nav-link";
 $Search-icon: ".nav-icon";
 
+/* Botões dos Menus */
+$bt-Search: "#btnSearch";
+$bt-Services: "#btnServicos";
+$bt-QmSm: "#btnQmSms";
+$bt-AjSup: "#btnAjSu";
+$bt-PortCert: "#btnPortCert";
+
+/* Botões dos Menus para @each */
+$nav-icons-Mn: (
+    $bt-Search,
+    $bt-Services,
+    $bt-QmSm,
+    $bt-AjSup,
+    $bt-PortCert
+);
+
 /* Submenus */
 $nb-Hm-Dropd-Mn: ".dropdown-menu";
 $nb-Dropd-Item: ".dropdown-item";

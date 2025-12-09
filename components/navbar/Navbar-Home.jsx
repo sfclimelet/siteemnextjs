@@ -60,7 +60,7 @@ export default function NavbarHome() {
 
               {/* Search */}
               <li className="nav-item dropdown">
-                <button className="nav-link nav-icon" data-bs-toggle="dropdown">
+                <button id="btnSearch" className="nav-link nav-icon" data-bs-toggle="dropdown">
                   <I.Search className="iconMn" />
                 </button>
 
@@ -78,7 +78,7 @@ export default function NavbarHome() {
 
               {/* Serviços */}
               <li className="nav-item dropdown">
-                <button className="nav-link" data-bs-toggle="dropdown">
+                <button id="btnServicos" className="nav-link" data-bs-toggle="dropdown">
                   <I.Layers className="iconMn" />
                 </button>
 
@@ -116,7 +116,7 @@ export default function NavbarHome() {
 
               {/* Quem somos */}
               <li className="nav-item dropdown">
-                <button className="nav-link" data-bs-toggle="dropdown">
+                <button id="btnQmSms" className="nav-link" data-bs-toggle="dropdown">
                   <I.Handshake className="iconMn" />
                 </button>
 
@@ -146,7 +146,7 @@ export default function NavbarHome() {
 
               {/* Ajuda e Suporte */}
               <li className="nav-item dropdown">
-                <button className="nav-link" data-bs-toggle="dropdown">
+                <button id="btnAjSu" className="nav-link" data-bs-toggle="dropdown">
                   <I.Send className="iconMn" />
                 </button>
 
@@ -181,7 +181,7 @@ export default function NavbarHome() {
 
               {/* Portfólio e Certificações */}
               <li className="nav-item dropdown">
-                <button className="nav-link" data-bs-toggle="dropdown">
+                <button id="btnPortCert" className="nav-link" data-bs-toggle="dropdown">
                   <I.Briefcase className="iconMn" />
                 </button>
 
