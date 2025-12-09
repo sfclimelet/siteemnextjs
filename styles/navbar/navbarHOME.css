@@ -3,6 +3,7 @@
 /* Menus */
 /* Submenus */
 /* PARA LAYOUT */
+/* THEME LIGHT */
 /* Cor icones do Menu */
 /* Scrolled */
 #nbHome {
@@ -19,8 +20,19 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
+#nbHome .iconMn {
+  width: 18px;
+  height: 18px;
+  stroke: #56adff;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px #56adff;
+  transition: all 0.4s ease, transform 0.4s ease, filter 0.4s ease;
+}
+#nbHome .iconMn .theme-light {
+  stroke: #00d4ff !important;
+}
 
-#nbHome .scrolled {
+.scrolled {
   background: rgba(0, 0, 0, 0.7490196078) !important;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }

@@ -1,7 +1,7 @@
 @use "./_globals-NavbarHome" as *;
 
 @mixin Scrolled(){
-    #{$c-NavHome1} #{$nb-ScrollLed}{
+    #{$nb-ScrollLed}{
         background: $N-bg-S !important;
         box-shadow: 0 6px 30px $N-bg-S-shd;
     }
