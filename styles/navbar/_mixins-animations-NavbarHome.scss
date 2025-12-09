@@ -52,6 +52,20 @@
         }
     }
 }
+@mixin ANM-DROPDOWN-BORDA(){
+    &:hover{
+        border-color: #00dcff;
+        box-shadow:
+            0 0 22px #00dcff99,
+            0 0 35px #00dcff99;
+    }
+}
+@mixin ANM-DROPDOWN-ITEM(){
+    &:hover{
+        background: #90f0f71a !important;
+        transform: translateX(4px);
+    }
+}
 
 /* SEARCH */
 @mixin ANM-SEARCH-Input(){

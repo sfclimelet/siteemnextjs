@@ -39,8 +39,34 @@
 /* DROPDOWNS */
 #{$c-NavHome1}{
     #{$nb-Hm-Dropd-Mn}{
+        background: radial-gradient(circle at top, #00111a, #000);
+        border: 2px solid #00b4ffb3;
+        box-shadow:
+            0 0 15px #00b4ffb3,
+            0 0 25px #00b4ff66;
+        backdrop-filter: blur(4px);
         @include ANM-DROPDOWN-MN();
-
+        #{$nb-Dropd-Item}{
+            color: #fff;
+            @include ANM-DROPDOWN-ITEM();
+            svg{
+                stroke: $D-sbmn1 !important;
+                text-shadow: 0 0 12px $D-sbmn2;
+            }
+        }
+        #{$M-Show}{
+            @include ANM-DROPDOWN-BORDA();
+        }
+    }
+}
+#{$nb-LIGHT}{
+    #{$nb-Hm-Dropd-Mn}{
+        border: 1px solid $D-borda-Light;
+        box-shadow:
+            0 0 20px $D-borda-Light,
+            0 0 35px $D-borda-Light,
+            inset 0 0 10px $D-borda-Light;
+            backdrop-filter: blur(6px);
     }
 }
 
