@@ -24,6 +24,47 @@
 }
 @include Design-Nb-LOGO();
 
+@mixin Design-nb-SEARCH(){
+    #{$c-NavHome2}{
+        #{$S-Box}{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            gap: 0;
+        }
+        #{$S-Input}{
+            flex: 1;
+            height: 40px;
+            background: $SS-cor-input;
+            border: 1px solid $SS-cor-border;
+            border-radius: 10px 0 0 10px;
+            &::placeholder{
+                color: $SS-cor-placehld;
+            }
+        }
+        #{$S-btn-Search}{
+            border: none;
+            width: 50px;
+            height: 44px;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: linear-gradient(45deg, #00aaff, #006eff);
+            transition: all 0.25s ease;
+            svg{
+                width: 22px;
+                height: 22px;
+                color: #fff;
+            }
+
+        }
+    }
+}
+@include Design-nb-SEARCH();
+
 
 @mixin Design-Nb-ICONS-MN(){
     @each $id in $nav-icons-Mn{

@@ -1,4 +1,35 @@
 @use "./globals-NavbarHome" as *;
 @use "./mixins-animations-NavbarHome" as *;
 
+/* SEARCH */
+#{$S-li-Search}{
+    @include ANM-SEARCH();
+}
+
 /* ICONES MENU */
+#{$c-NavHome1}{
+    @each $Anm in $nav-icons-Mn{
+        #{$Anm}{
+            svg{
+                filter: drop-shadow(0 0 10px $nbH-cor-icon-Mn1);
+                @include ANM-ICONS-MN();
+            }
+        }
+    }
+}
+#{$nb-LIGHT}{
+    @each $AnmLI in $nav-icons-Mn{
+        #{$AnmLI}{
+            svg{
+                filter: drop-shadow(0 0 6px $nbH-cor-icon-LIGHT2) !important;
+                transition: all 0.3s ease, filter 0.4s ease;
+                @include ANM-ICONS-MN-Light();
+            }
+        }
+    }
+}
+
+/* SCROLLED */
+#{$c-NavHome1}{
+    @include ANM-Scrolled();
+}

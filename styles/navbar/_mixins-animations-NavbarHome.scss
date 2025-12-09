@@ -1,45 +1,37 @@
 @use "./_globals-NavbarHome" as *;
 
 
-/* ICONES DO MENU */
-@mixin ICONS-MENU(){
-    #{$c-NavHome1}{
-        @each $Anm in $nav-icons-Mn{
-            #{$Anm}{
-                svg{
-                    filter: drop-shadow(0 0 10px $nbH-cor-icon-Mn1);
-                    &:hover{
-                        stroke: $nbH-cor-icon-Mn2;
-                        filter: drop-shadow(0 0 16px $nbH-cor-icon-Mn2);
-                        transform: scale(1.04);
-                    }
-                }
-            }
-        }
+/* SEARCH */
+@mixin ANM-SEARCH(){
+    &::placeholder{
+        color: $SS-cor-placehld;
     }
-    #{$nb-LIGHT}{
-        @each $AnmLI in $nav-icons-Mn{
-            #{$AnmLI}{
-                svg{
-                    filter: drop-shadow(0 0 6px $nbH-cor-icon-LIGHT2) !important;
-                    transition: all 0.3s ease, filter 0.4s ease;
-                    &:hover{
-                        stroke: $nbH-cor-icon-LIGHT3 !important;
-                        filter: drop-shadow(0 0 10px $nbH-cor-icon-LIGHT4) !important;
-                        transform: scale(1.04);
-                    }
-                }
-            }
-        }
+    &:focus{
+        border-color: $SS-cor-border-focus;
+        box-shadow: $SS-cor-bx-sha-focus;
     }
 }
-@include ICONS-MENU();
+
+/* ICONES DO MENU */
+@mixin ANM-ICONS-MN(){
+    &:hover{
+        stroke: $nbH-cor-icon-Mn2;
+        filter: drop-shadow(0 0 16px $nbH-cor-icon-Mn2);
+        transform: scale(1.04);
+    }
+}
+@mixin ANM-ICONS-MN-Light(){
+    &:hover{
+        stroke: $nbH-cor-icon-LIGHT3 !important;
+        filter: drop-shadow(0 0 10px $nbH-cor-icon-LIGHT4) !important;
+        transform: scale(1.04);
+    }
+}
 
 
-@mixin Scrolled(){
+@mixin ANM-Scrolled(){
     #{$nb-ScrollLed}{
         background: $N-bg-S !important;
         box-shadow: 0 6px 30px $N-bg-S-shd;
     }
 }
-@include Scrolled();

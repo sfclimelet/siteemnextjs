@@ -59,7 +59,7 @@ export default function NavbarHome() {
             <ul className="navbar-nav">
 
               {/* Search */}
-              <li className="nav-item dropdown">
+              <li id="LI-search" className="nav-item dropdown">
                 <button id="btnSearch" className="nav-link nav-icon" data-bs-toggle="dropdown">
                   <I.Search className="iconMn" />
                 </button>

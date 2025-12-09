@@ -128,6 +128,9 @@ $nav-Home-bxs: #00000073;
 }
 @include navbarIconsMobile('#navbarHome', 20px,'#Services' ,'#Qmsm' ,'#Ajsu' ,'#PortCert');
 
+/* ------------- Parte de cima foi feita ----------------- */
+
+
 @mixin SearchDropdown(
   $idBtnSearchICON,
   $SearchDROPW,
