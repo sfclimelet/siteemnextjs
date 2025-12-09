@@ -7,6 +7,7 @@
 /* PARA LAYOUT */
 /* THEME LIGHT */
 /* Cor icones do Menu */
+/* Cor dos Icones do Menu - LIGHT */
 /* Scrolled */
 #nbHome {
   margin-bottom: 30px;
@@ -17,38 +18,58 @@
   background: rgba(0, 0, 0, 0.5490196078) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
 }
-#nbHome #nbHome2 {
-  /* Icones do Menu */
-}
-#nbHome #nbHome2 #logoNavbar {
-  width: 70px !important;
+
+#nbHome2 #logoNavbar {
+  width: 70px;
   cursor: pointer;
   transition: 0.3s ease;
 }
-#nbHome #nbHome2 #btnSearch svg {
+
+#btnSearch svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
 }
-#nbHome #nbHome2 #btnServicos svg {
+
+#btnServicos svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
 }
-#nbHome #nbHome2 #btnQmSms svg {
+
+#btnQmSms svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
 }
-#nbHome #nbHome2 #btnAjSu svg {
+
+#btnAjSu svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
 }
-#nbHome #nbHome2 #btnPortCert svg {
+
+#btnPortCert svg {
   width: 18px;
   height: 18px;
   stroke: #56adff;
+}
+
+/* ICONES NO LIGHT */
+.theme-light #btnSearch svg {
+  stroke: #00d4ff !important;
+}
+.theme-light #btnServicos svg {
+  stroke: #00d4ff !important;
+}
+.theme-light #btnQmSms svg {
+  stroke: #00d4ff !important;
+}
+.theme-light #btnAjSu svg {
+  stroke: #00d4ff !important;
+}
+.theme-light #btnPortCert svg {
+  stroke: #00d4ff !important;
 }
 
 .scrolled {

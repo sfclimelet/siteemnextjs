@@ -1,6 +1,6 @@
 @use "./_globals-NavbarHome" as *;
 
-@mixin Design-NavbarHome(){
+@mixin Design-Nb-CONTEINER(){
     #{$c-NavHome1}{
         margin-bottom: 30px;
         backdrop-filter: blur(14px);
@@ -9,24 +9,39 @@
         transition: all 0.35s ease;
         background: $nbH-cor-bg !important;
         border-bottom: 1px solid $nbH-cor-border;
-        #{$c-NavHome2}{
-            #{$nb-Logo}{
-                width: 70px !important;
-                cursor: pointer;
-                transition: 0.3s ease;
-            }
-            /* Icones do Menu */
-            @each $id in $nav-icons-Mn{
-                #{$id}{
-                    svg{
-                        width: 18px;
-                        height: 18px;
-                        stroke: $nbH-cor-icon-Mn1;
-                    }
-                }
-            }
+    }
+}
+@include Design-Nb-CONTEINER();
 
+@mixin Design-Nb-LOGO(){
+    #{$c-NavHome2}{
+        #{$nb-Logo}{
+            width: 70px;
+            cursor: pointer;
+            transition: 0.3s ease;
         }
     }
 }
-@include Design-NavbarHome();
+@include Design-Nb-LOGO();
+
+
+@mixin Design-Nb-ICONS-MN(){
+    @each $id in $nav-icons-Mn{
+        #{$id}{
+            svg{
+                width: 18px;
+                height: 18px;
+                stroke: $nbH-cor-icon-Mn1;
+            }
+        }
+    }
+    /* ICONES NO LIGHT */
+    #{$nb-LIGHT}{
+        @each $bt in $nav-icons-Mn{
+            #{$bt} svg{
+                stroke: $nbH-cor-icon-LIGHT1 !important;
+            }
+        }
+    }
+}
+@include Design-Nb-ICONS-MN();
