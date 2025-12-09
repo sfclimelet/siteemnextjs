@@ -3,6 +3,7 @@
 /* Menus */
 /* Botões dos Menus */
 /* SEARCH  */
+/* MENU HAMBURGER */
 /* Botões dos Menus para @each */
 /* Submenus */
 /* PARA LAYOUT */
@@ -24,6 +25,17 @@
   width: 70px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+/* MENU HAMBURGER */
+#nbHome .line {
+  width: 26px;
+  height: 3px;
+  border-radius: 4px;
+  transition: 0.35s ease;
+}
+#nbHome .line + .line {
+  margin-top: 6px;
 }
 
 /* SEARCH */
@@ -109,6 +121,17 @@
     opacity: 0.75;
     transform: scale(1);
   }
+}
+
+/* MENU HAMBURGER */
+#nbHome .line {
+  background: #56adff;
+  box-shadow: 0 0 6px #56adff;
+}
+
+.theme-light #nbHome2 .line {
+  background: #0cbaff;
+  box-shadow: 0 0 6px #0cbaff;
 }
 
 /* SEARCH */
@@ -313,15 +336,41 @@
   #logoNavbar {
     margin-right: 10px !important;
   }
+  #MenuHamburger {
+    /* REMOVE ICONE PADRÃO DO BOOTSTRAP */
+    padding: 0 !important;
+    margin: 0;
+    margin-left: 20px;
+    width: 38px;
+    height: 32px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #MenuHamburger .navbar-toggler-icon {
+    display: none !important;
+  }
 }
 /* LOGO */
 @media (min-width: 576px) and (max-width: 992px) {
+  #MenuHamburger {
+    display: none !important;
+  }
   #logoNavbar {
     margin-left: 30px;
   }
 }
 /* LOGO */
 @media (min-width: 993px) and (max-width: 1300px) {
+  #MenuHamburger {
+    display: none !important;
+  }
   #logoNavbar {
     margin-left: 50px !important;
   }

@@ -8,5 +8,8 @@
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
+    #{$M-Btn-Hamburger}{
+        display: none !important;
+    }
     @include LOGO-T();
 }

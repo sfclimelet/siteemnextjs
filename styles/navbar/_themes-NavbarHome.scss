@@ -17,6 +17,22 @@
     }
 }
 
+/* MENU HAMBURGER */
+#{$c-NavHome1}{
+    #{$M-Lines}{
+        background: #56adff;
+        box-shadow: 0 0 6px #56adff;
+    }
+}
+#{$nb-LIGHT}{
+    #{$c-NavHome2}{
+        #{$M-Lines}{
+            background: #0cbaff;
+            box-shadow: 0 0 6px #0cbaff;
+        }
+    }
+}
+
 /* SEARCH */
 #{$S-li-Search}{
     #{$S-Input}{
