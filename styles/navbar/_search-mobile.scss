@@ -1,1 +1,23 @@
+@use "./_globals-NavbarHome" as *;
 
+@media (min-width: 375px) and (max-width: 575px){
+    #{$c-NavHome1}{
+        #{$S-li-Search}{
+            #{$S-Box}{
+                padding: 12px;
+                #{$S-Input}{
+                    height: 40px;
+                    font-size: 14px;
+                }
+                #{$S-btn-Search}{
+                    width: 44px;
+                    height: 40px;
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

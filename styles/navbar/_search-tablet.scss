@@ -1,1 +1,27 @@
+@use "./_globals-NavbarHome" as *;
 
+@media (min-width: 576px) and (max-width: 992px){
+    #{$c-NavHome1}{
+        #{$S-li-Search}{
+            #{$nb-Hm-Dropd-Mn}{
+                min-height: 90px;
+                width: 280px;
+                #{$S-Box}{
+                    padding: 14px;
+                    #{$S-Input}{
+                        height: 40px;
+                        font-size: 14px;
+                    }
+                    #{$S-btn-Search}{
+                        width: 48px;
+                        height: 44px;
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

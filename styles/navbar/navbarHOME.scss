@@ -3,6 +3,10 @@
 @use "./_mixins-animations-NavbarHome";
 @use "./_themes-NavbarHome";
 
+@use "./_search-mobile";
+@use "./_search-tablet";
+@use "./_search-desktops";
+
 @use "./_mobile-resolutions-NavbarHome";
 
 @use "./_tablet-resolutions-NavbarHome";
