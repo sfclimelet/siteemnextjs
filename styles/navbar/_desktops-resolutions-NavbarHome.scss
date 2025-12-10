@@ -11,5 +11,11 @@
     #{$M-Btn-Hamburger}{
         display: none !important;
     }
+    .dropdown-top-icon,
+    .dropdown-top-icon.visible {
+      display: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
     @include LOGO-D();
 }
