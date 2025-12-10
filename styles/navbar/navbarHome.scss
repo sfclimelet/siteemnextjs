@@ -1,15 +1,15 @@
-@use "./core/vars";
-@use "./core/layout";
-@use "./core/design";
-@use "./core/animations";
+@use "./core/_vars";
+@use "./core/_layout";
+@use "./core/_design";
+@use "./core/_animations";
 
-@use "./modules/menu";
-@use "./modules/dropdowns";
-@use "./modules/search";
-@use "./modules/hamburger";
-@use "./modules/icons";
+@use "./modules/_menu";
+@use "./modules/_dropdowns";
+@use "./modules/_search";
+@use "./modules/_hamburger";
+@use "./modules/_icons";
 
-@use "./breakpoints/mobile";
-@use "./breakpoints/tablet";
-@use "./breakpoints/desktop";
-@use "./breakpoints/xl";
+@use "./breakpoints/_mobile";
+@use "./breakpoints/_tablet";
+@use "./breakpoints/_desktop";
+@use "./breakpoints/_xl";
