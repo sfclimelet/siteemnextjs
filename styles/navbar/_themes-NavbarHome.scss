@@ -55,6 +55,19 @@
                 text-shadow: 0 0 12px $D-sbmn2;
             }
         }
+        #{$Drp-Top-Icon}{
+            background: #000000dd;
+            border: 3px solid $D-neon1;
+                box-shadow:
+                    0 0 14px $D-neon1,
+                    0 0 22px $D-neon1 inset;
+            opacity: 0;
+            transform: translate(-50%, -6px);
+            svg{
+                color: $D-neon1 !important;
+            }
+            @include ANM-DROPDOWN-ICON-TOPO();
+        }
 
         #{$M-Show}{
             @include ANM-DROPDOWN-BORDA();
@@ -69,6 +82,16 @@
             0 0 35px $D-borda-Light,
             inset 0 0 10px $D-borda-Light;
             backdrop-filter: blur(6px);
+    }
+    #{$Drp-Top-Icon}{
+        border-color: #0cbaff;
+        box-shadow:
+            0 0 14px #0cbaff,
+            0 0 22px #0cbaff inset;
+        svg{
+            stroke: #0cbaff !important;
+        }
+
     }
 }
 
