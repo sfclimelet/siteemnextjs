@@ -9,7 +9,7 @@
 @use "./modules/_hamburger";
 @use "./modules/_icons";
 
-@use "./breakpoints/_mobile";
-@use "./breakpoints/_tablet";
-@use "./breakpoints/_desktop";
-@use "./breakpoints/_xl";
+@use "./breakpoints/_mobiles.scss";
+@use "./breakpoints/_tablets.scss";
+@use "./breakpoints/_desktops.scss";
+@use "./breakpoints/_xls.scss";
