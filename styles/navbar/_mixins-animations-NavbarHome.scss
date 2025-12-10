@@ -67,6 +67,17 @@
     }
 }
 
+/* Falta Aplicar */
+@mixin ANM-DROPDOWN-ICON-TOPO(){
+    &:hover{
+        border-color: $D-neon2;
+        box-shadow:
+        0 0 18px $D-neon2,
+        0 0 28px $D-neon2 inset;
+        transform: translate(-50%, 0) scale(1.03);
+    }
+}
+
 /* SEARCH */
 @mixin ANM-SEARCH-Input(){
     &::placeholder{

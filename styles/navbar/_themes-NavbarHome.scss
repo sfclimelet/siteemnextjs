@@ -46,6 +46,7 @@
             0 0 25px #00b4ff66;
         backdrop-filter: blur(4px);
         @include ANM-DROPDOWN-MN();
+        
         #{$nb-Dropd-Item}{
             color: #fff;
             @include ANM-DROPDOWN-ITEM();
@@ -54,6 +55,7 @@
                 text-shadow: 0 0 12px $D-sbmn2;
             }
         }
+
         #{$M-Show}{
             @include ANM-DROPDOWN-BORDA();
         }
