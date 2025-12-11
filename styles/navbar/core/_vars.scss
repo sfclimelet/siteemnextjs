@@ -1,1 +1,87 @@
+/* ---------------------------------------------
+   Arquivo: _vars.scss
+---------------------------------------------- */
 
+
+/* ---------------------------------------------
+   ROOT IDS (container principal)
+---------------------------------------------- */
+$nb-root: (
+  home: "#nbHome",
+  inner: "#nbHome2",
+  collapse: ".navbar-collapse",
+  toggler: ".navbar-toggler",
+  logo: "#logoNavbar",
+  hamburgerBtn: "#MenuHamburger",
+);
+
+
+/* ---------------------------------------------
+   SEARCH IDS
+---------------------------------------------- */
+$nb-search: (
+  li: "#LI-search",
+  input: ".search-input",
+  box: ".dropdown-search-box",
+  btn: ".search-btn",
+);
+
+
+/* ---------------------------------------------
+   MENU BUTTON IDS (correspondentes ao JSX)
+---------------------------------------------- */
+$nb-menu-buttons: (
+  search: "#btnSearch",
+  services: "#btnServicos",
+  quemSomos: "#btnQmSms",
+  suporte: "#btnAjSu",
+  portCert: "#btnPortCert",
+);
+
+
+/* ---------------------------------------------
+   MENU LIST IDS (li wrappers)
+---------------------------------------------- */
+$nb-li-items: (
+  services: "#LI-Servicos",
+  quemSomos: "#LI-QuemSomos",
+  suporte: "#LI-AjudaeSuporte",
+  portCert: "#LI-PorteCerti",
+);
+
+
+/* ---------------------------------------------
+   DROPDOWN ELEMENTS
+---------------------------------------------- */
+$nb-dropdown: (
+  menu: ".dropdown-menu",
+  item: ".dropdown-item",
+  topIcon: ".dropdown-top-icon",
+);
+
+
+/* ---------------------------------------------
+   ICONS (classe global dos svgs)
+---------------------------------------------- */
+$nb-icons: (
+  main: ".iconMn",
+);
+
+
+/* ---------------------------------------------
+   HAMBURGER MENU
+---------------------------------------------- */
+$nb-hamburger: (
+  line: ".line",
+  active: ".active",
+);
+
+
+/* ---------------------------------------------
+   STATES (temas / estados)
+---------------------------------------------- */
+$nb-states: (
+  light: ".theme-light",
+  show: ".show",
+  visible: ".visible",
+);
