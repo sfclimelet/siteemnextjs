@@ -1,3 +1,41 @@
 @charset "UTF-8";
 /* Mapa de variáveis -ESCALÁVEL */
-/* Função para chamar variaveis *//*# sourceMappingURL=navbarHome.css.map */
+/* Função para chamar variaveis */
+/* ------------------------- LOGO ---------------------------- */
+#nbHome {
+  --logo-width: 70px;
+  --logo-max-width: 12vw;
+  --logo-height-auto: auto;
+}
+
+#logoNavbar {
+  width: var(--logo-width);
+  max-width: var(--logo-max-width);
+  height: var(--logo-height-auto);
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 576px) {
+  /* TABLET (ex.: >= 576px) - aumente */
+  #nbHome {
+    --logo-width: 84px;
+    --logo-max-width: 10vw;
+  }
+}
+@media (min-width: 992px) {
+  /* DESKTOP (ex.: >= 992px) - maior */
+  #nbHome {
+    --logo-width: 98px;
+    --logo-max-width: 8vw;
+  }
+}
+@media (min-width: 1400px) {
+  /* XL (>= 1400px) */
+  #nbHome {
+    --logo-width: 110px;
+    --logo-max-width: 7.5vw;
+  }
+}
+/* ------------------------- LOGO ---------------------------- *//*# sourceMappingURL=navbarHome.css.map */
