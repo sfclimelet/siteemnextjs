@@ -9,9 +9,9 @@ import { initHamburgerMenu } from "./buttonMenu";
 import { setupNavbarDropdowns } from "./navbarHome-Logic";
 
 import { menuData } from "./menuData";
-import MenuItem from "./MenuItem";
+import MenuItem from "./Menu-Item";
 
-import "../../styles/navbar/navbarHOME.scss";
+import "../../styles/navbar/navbarHome.scss";
 
 export default function NavbarHome() {
 
