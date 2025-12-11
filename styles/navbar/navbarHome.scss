@@ -1,7 +1,8 @@
-@use "./core/_vars";
+@use "./core/_vars.scss" as *;
 @use "./core/_layout";
 @use "./core/_design";
 @use "./core/_animations";
+@use "./core/_functions.scss";
 
 @use "./modules/_menu";
 @use "./modules/_dropdowns";

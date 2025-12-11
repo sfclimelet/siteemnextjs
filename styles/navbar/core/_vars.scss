@@ -1,87 +1,43 @@
-/* ---------------------------------------------
-   Arquivo: _vars.scss
----------------------------------------------- */
+/* Mapa de variáveis -ESCALÁVEL */
 
+$nb-vars: (
+  /* Containers */
+  c-NavHome1: "#nbHome",
+  c-NavHome2: "#nbHome2",
 
-/* ---------------------------------------------
-   ROOT IDS (container principal)
----------------------------------------------- */
-$nb-root: (
-  home: "#nbHome",
-  inner: "#nbHome2",
-  collapse: ".navbar-collapse",
-  toggler: ".navbar-toggler",
+  /* Logo */
   logo: "#logoNavbar",
-  hamburgerBtn: "#MenuHamburger",
+
+  /* Collapse */
+  collapse: ".navbar-collapse",
+
+  /* Items */
+  item: ".nav-item",
+  link: ".nav-link",
+
+  /* Hamburger */
+  hamburger: "#MenuHamburger",
+  hamburger-line: ".line",
+
+  /* Dropdown */
+  dropdown: ".dropdown-menu",
+  dropdown-item: ".dropdown-item",
+
+  /* Search */
+  search-li: "#LI-search",
+  search-box: ".dropdown-search-box",
+  search-input: ".search-input",
+  search-btn: ".search-btn",
+
+  /* Buttons */
+  btn-search: "#btnSearch",
+  btn-serv: "#btnServicos",
+  btn-qm: "#btnQmSms",
+  btn-aj: "#btnAjSu",
+  btn-port: "#btnPortCert",
 );
 
-
-/* ---------------------------------------------
-   SEARCH IDS
----------------------------------------------- */
-$nb-search: (
-  li: "#LI-search",
-  input: ".search-input",
-  box: ".dropdown-search-box",
-  btn: ".search-btn",
-);
-
-
-/* ---------------------------------------------
-   MENU BUTTON IDS (correspondentes ao JSX)
----------------------------------------------- */
-$nb-menu-buttons: (
-  search: "#btnSearch",
-  services: "#btnServicos",
-  quemSomos: "#btnQmSms",
-  suporte: "#btnAjSu",
-  portCert: "#btnPortCert",
-);
-
-
-/* ---------------------------------------------
-   MENU LIST IDS (li wrappers)
----------------------------------------------- */
-$nb-li-items: (
-  services: "#LI-Servicos",
-  quemSomos: "#LI-QuemSomos",
-  suporte: "#LI-AjudaeSuporte",
-  portCert: "#LI-PorteCerti",
-);
-
-
-/* ---------------------------------------------
-   DROPDOWN ELEMENTS
----------------------------------------------- */
-$nb-dropdown: (
-  menu: ".dropdown-menu",
-  item: ".dropdown-item",
-  topIcon: ".dropdown-top-icon",
-);
-
-
-/* ---------------------------------------------
-   ICONS (classe global dos svgs)
----------------------------------------------- */
-$nb-icons: (
-  main: ".iconMn",
-);
-
-
-/* ---------------------------------------------
-   HAMBURGER MENU
----------------------------------------------- */
-$nb-hamburger: (
-  line: ".line",
-  active: ".active",
-);
-
-
-/* ---------------------------------------------
-   STATES (temas / estados)
----------------------------------------------- */
-$nb-states: (
-  light: ".theme-light",
-  show: ".show",
-  visible: ".visible",
-);
+/* Função para chamar variaveis */
+@function nb($key){
+   @return map-get($nb-vars, $key);
+};
