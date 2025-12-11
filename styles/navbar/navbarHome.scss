@@ -1,14 +1,14 @@
 @use "./core/_vars.scss" as *;
-@use "./core/_layout";
-@use "./core/_design";
-@use "./core/_animations";
+@use "./core/_layout.scss";
+@use "./core/_design.scss";
+@use "./core/_animations.scss";
 @use "./core/_functions.scss";
 
-@use "./modules/_menu";
-@use "./modules/_dropdowns";
-@use "./modules/_search";
-@use "./modules/_hamburger";
-@use "./modules/_icons";
+@use "./modules/_menu.scss";
+@use "./modules/_dropdowns.scss";
+@use "./modules/_search.scss";
+@use "./modules/_hamburger.scss";
+@use "./modules/_icons.scss";
 
 @use "./breakpoints/_mobiles.scss";
 @use "./breakpoints/_tablets.scss";
