@@ -69,14 +69,33 @@
   background: #0cbaff;
 }
 
+/* Animação Scrooled */
+.scrolled {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
+}
+
 /* Container */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
 }
 
-/* Animação Scrooled */
-.scrolled {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
+/* Botão Hamburger */
+#MenuHamburger.active .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+#MenuHamburger.active .line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+#MenuHamburger.active .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+#MenuHamburger .line {
+  box-shadow: 0 0 6px #56adff;
+}
+
+.theme-light #MenuHamburger .line {
+  box-shadow: #0cbaff;
 }
 
 /* Botão Hamburger */

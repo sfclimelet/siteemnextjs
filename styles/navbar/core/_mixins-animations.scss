@@ -1,0 +1,17 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
+
+@mixin Animation-Hamburger($active-class, $line-selector){
+    &#{$active-class}{
+        #{$line-selector}:nth-child(1){
+            transform: translateY(9px) rotate(45deg);
+        }
+        #{$line-selector}:nth-child(2){
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        #{$line-selector}:nth-child(3){
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+}
