@@ -1,6 +1,7 @@
 @use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
 
+/* Animation Hamburger */
 @mixin Animation-Hamburger($active-class, $line-selector){
     &#{$active-class}{
         #{$line-selector}:nth-child(1){
@@ -12,6 +13,28 @@
         }
         #{$line-selector}:nth-child(3){
             transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+}
+
+/* Animation - Logo */
+@mixin Animation-Logo(){
+    &:hover{
+        filter: drop-shadow(0 0 14px $color-logo);
+    }
+    animation: breathe 4s ease-in-out infinite;
+    @keyframes breathe {
+        0%{
+            opacity: 0.75;
+            transform: scale(1);
+        }
+        50%{
+            opacity: 1;
+            transform: scale(1.04);
+        }
+        100%{
+            opacity: 0.75;
+            transform: scale(1);
         }
     }
 }

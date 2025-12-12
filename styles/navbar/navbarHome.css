@@ -21,6 +21,8 @@
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 @media (min-width: 576px) {
@@ -47,6 +49,7 @@
 /* ------------------------- LOGO ---------------------------- */
 /* Animação Scroolled */
 /* Botão Hamburger */
+/* Logo */
 /* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
@@ -69,6 +72,8 @@
   background: #0cbaff;
 }
 
+/* Animation Hamburger */
+/* Animation - Logo */
 /* Animação Scrooled */
 .scrolled {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
@@ -96,6 +101,28 @@
 
 .theme-light #MenuHamburger .line {
   box-shadow: #0cbaff;
+}
+
+/* Logo */
+#logoNavbar {
+  animation: breathe 4s ease-in-out infinite;
+}
+#logoNavbar:hover {
+  filter: drop-shadow(0 0 14px #00bfff);
+}
+@keyframes breathe {
+  0% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
 }
 
 /* Botão Hamburger */

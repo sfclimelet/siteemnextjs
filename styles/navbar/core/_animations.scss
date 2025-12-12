@@ -26,3 +26,8 @@
         }
     }
 }
+
+/* Logo */
+#{nb(logo)}{
+    @include Animation-Logo();
+}
