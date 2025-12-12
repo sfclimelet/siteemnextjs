@@ -141,7 +141,7 @@
   }
 }
 /* Botão Hamburger */
-@media (min-width: 575px) {
+@media (min-width: 576px) {
   /* Some o botão Hamburger de outras resoluções além de mobile */
   #MenuHamburger {
     display: none !important;
