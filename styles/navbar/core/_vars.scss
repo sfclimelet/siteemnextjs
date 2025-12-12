@@ -1,5 +1,3 @@
-/* Mapa de variáveis -ESCALÁVEL */
-
 $nb-vars: (
   /* Containers */
   c-NavHome1: "#nbHome",
@@ -38,9 +36,12 @@ $nb-vars: (
 
   /* Animações */
   animacao-scroolled: ".scrolled",
-  
+
   /* Others animations */
   active: ".active",
+
+  /* Themes - LIGHT  - Só estado */
+  light-theme: ".theme-light",
 );
 
 /* Função para chamar variaveis */

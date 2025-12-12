@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Mapa de variáveis -ESCALÁVEL */
 /* Função para chamar variaveis */
 /* ------------------------- CONTAINER ---------------------------- */
 #nbHome {
@@ -116,5 +115,12 @@
     flex-direction: row-reverse !important;
     justify-content: space-between !important;
     align-items: center !important;
+  }
+}
+/* Botão Hamburger */
+@media (min-width: 575px) {
+  /* Some o botão Hamburger de outras resoluções além de mobile */
+  #MenuHamburger {
+    display: none !important;
   }
 }/*# sourceMappingURL=navbarHome.css.map */
