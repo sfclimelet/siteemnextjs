@@ -38,4 +38,9 @@
     --logo-max-width: 7.5vw;
   }
 }
-/* ------------------------- LOGO ---------------------------- *//*# sourceMappingURL=navbarHome.css.map */
+/* ------------------------- LOGO ---------------------------- */
+#nbHome {
+  background: rgba(0, 0, 0, 0.5490196078);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}/*# sourceMappingURL=navbarHome.css.map */

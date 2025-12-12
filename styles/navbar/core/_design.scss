@@ -1,1 +1,9 @@
+@use "./_colors.scss" as *;
+@use "./_vars.scss" as *;
 
+#{nb(c-NavHome1)}{
+    background: $color-primary;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    
+}
