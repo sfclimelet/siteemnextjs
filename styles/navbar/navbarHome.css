@@ -46,6 +46,7 @@
   }
 }
 /* ------------------------- LOGO ---------------------------- */
+/* Animação Scroolled */
 /* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
@@ -54,7 +55,17 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
 }
 
+/* Animação Scrooled */
+.scrolled {
+  background: rgba(0, 0, 0, 0.7490196078) !important;
+}
+
 /* Container */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
+}
+
+/* Animação Scrooled */
+.scrolled {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }/*# sourceMappingURL=navbarHome.css.map */
