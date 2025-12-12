@@ -1,1 +1,9 @@
+@use "../core/_vars.scss" as *;
 
+$iconsMenu: (
+    bt-S: nb(btn-search),
+    bt-Srv: nb(btn-serv),
+    bt-QS: nb(btn-qm),
+    bt-AS: nb(btn-aj),
+    bt-PC: nb(btn-port),
+);
