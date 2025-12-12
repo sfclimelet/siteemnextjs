@@ -18,3 +18,8 @@
 #{nb(hamburger-line)}{
     background: $color-line;
 }
+#{nb(light-theme)}{
+    #{nb(hamburger-line)}{
+        background: $color-line-light;
+    }
+}

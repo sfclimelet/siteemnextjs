@@ -65,6 +65,10 @@
   background: #56adff;
 }
 
+.theme-light .line {
+  background: #0cbaff;
+}
+
 /* Container */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
