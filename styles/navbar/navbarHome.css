@@ -47,6 +47,7 @@
 }
 /* ------------------------- LOGO ---------------------------- */
 /* Animação Scroolled */
+/* Botão Hamburger */
 /* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
@@ -60,6 +61,11 @@
   background: rgba(0, 0, 0, 0.7490196078) !important;
 }
 
+/* Botão Hamburger */
+.line {
+  background: #56adff;
+}
+
 /* Container */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
@@ -70,6 +76,7 @@
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
 }
 
+/* Botão Hamburger */
 #MenuHamburger {
   /* Remove configurações padrões do bootstrap */
   padding: 0 !important;
@@ -89,6 +96,17 @@
 }
 #MenuHamburger .navbar-toggler-icon {
   display: none !important;
+}
+
+/* Linhas do Hamburger */
+#nbHome2 .line {
+  width: 26px;
+  height: 3px;
+  border-radius: 4px;
+  transition: 0.35s ease;
+}
+#nbHome2 .line + .line {
+  margin-top: 6px;
 }
 
 /* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */

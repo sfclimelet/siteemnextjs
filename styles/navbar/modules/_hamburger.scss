@@ -1,7 +1,7 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_colors.scss" as *;
 
-
+/* Botão Hamburger */
 #{nb(hamburger)}{
   /* Remove configurações padrões do bootstrap */
   .navbar-toggler-icon{
@@ -23,4 +23,17 @@
   align-items: center !important;
 
   cursor: pointer;
+}
+
+/* Linhas do Hamburger */
+#{nb(c-NavHome2)}{
+    #{nb(hamburger-line)}{
+        width: 26px;
+        height: 3px;
+        border-radius: 4px;
+        transition: 0.35s ease;
+    }
+    #{nb(hamburger-line)} + #{nb(hamburger-line)}{
+        margin-top: 6px;
+    }
 }
