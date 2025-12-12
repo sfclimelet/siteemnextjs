@@ -68,4 +68,14 @@
 /* Animação Scrooled */
 .scrolled {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
+}
+
+/* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
+@media (max-width: 575px) {
+  #nbHome #nbHome2 {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
 }/*# sourceMappingURL=navbarHome.css.map */

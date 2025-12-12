@@ -1,1 +1,13 @@
 @use "../core/_vars.scss" as *;
+
+/* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
+@media (max-width: 575px){
+    #{nb(c-NavHome1)}{
+        #{nb(c-NavHome2)}{
+            display: flex !important;
+            flex-direction: row-reverse !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+    }
+}
