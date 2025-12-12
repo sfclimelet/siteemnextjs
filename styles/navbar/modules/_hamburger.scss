@@ -1,3 +1,26 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_colors.scss" as *;
 
+
+#{nb(hamburger)}{
+  /* Remove configurações padrões do bootstrap */
+  .navbar-toggler-icon{
+    display: none !important;
+  }
+  padding: 0 !important;
+  margin: 0;
+  margin-left: 20px;
+  width: 38px;
+  height: 32px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  cursor: pointer;
+}
