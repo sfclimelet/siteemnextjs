@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* Mapa de variáveis -ESCALÁVEL */
 /* Função para chamar variaveis */
+/* ------------------------- CONTAINER ---------------------------- */
+#nbHome {
+  margin-bottom: 30px;
+  transition: all 0.35s ease;
+}
+
+/* ------------------------- CONTAINER ---------------------------- */
 /* ------------------------- LOGO ---------------------------- */
 #nbHome {
   --logo-width: 70px;
@@ -39,8 +46,15 @@
   }
 }
 /* ------------------------- LOGO ---------------------------- */
+/* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
+}
+
+/* Container */
+#nbHome {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
 }/*# sourceMappingURL=navbarHome.css.map */
