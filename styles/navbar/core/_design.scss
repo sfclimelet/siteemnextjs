@@ -44,12 +44,14 @@
 
 /* Icon Top Dropdown (Só para mobile) */
 #{nb(dropdown-icon-topo)}{
+    border: 3px solid $color-icon-topo1;
     svg{
         stroke: $color-icon-topo1;
     }
 }
 #{nb(light-theme)}{
     #{nb(dropdown-icon-topo)}{
+        border: 3px solid $color-icon-topo-light;
         svg{
             stroke: $color-icon-menu-light;
         }

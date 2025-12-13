@@ -112,16 +112,23 @@
 }
 
 /* Icon Top Dropdown (Só para mobile) */
+.dropdown-top-icon {
+  border: 3px solid #56adff;
+}
 .dropdown-top-icon svg {
   stroke: #56adff;
 }
 
+.theme-light .dropdown-top-icon {
+  border: 3px solid #00d4ff;
+}
 .theme-light .dropdown-top-icon svg {
   stroke: #00d4ff;
 }
 
 /* Animation Hamburger */
 /* Animation - Logo */
+/* Animation - Icon topo */
 /* Animação Scrooled */
 .scrolled {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
@@ -171,6 +178,15 @@
     opacity: 0.75;
     transform: scale(1);
   }
+}
+
+/* Icon Topo (Só mobile) */
+.dropdown-top-icon {
+  box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
+}
+
+.theme-light .dropdown-top-icon {
+  box-shadow: 0 0 14px #00d4ff, 0 0 16px #00d4ff inset;
 }
 
 /* Botão Hamburger */
@@ -243,6 +259,7 @@
   top: -24px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: none;

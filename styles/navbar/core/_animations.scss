@@ -31,3 +31,17 @@
 #{nb(logo)}{
     @include Animation-Logo();
 }
+
+/* Icon Topo (Só mobile) */
+#{nb(dropdown-icon-topo)}{
+    box-shadow:
+        0 0 14px $color-icon-topo1,
+        0 0 16px $color-icon-topo1 inset;
+}
+#{nb(light-theme)}{
+    #{nb(dropdown-icon-topo)}{
+        box-shadow:
+            0 0 14px $color-icon-topo-light,
+            0 0 16px $color-icon-topo-light inset;
+    }
+}
