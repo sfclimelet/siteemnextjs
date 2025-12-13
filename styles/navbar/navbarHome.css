@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/* Função para chamar variaveis */
+/* ================= FUNÇÃO BASE ================= */
+/* ================= ICONES DO MENU ================= */
+/* ================= SEARCH (EXCLUSIVO) ================= */
+/* ================= INDICADORES (LI) ================= */
 /* ------------------------- CONTAINER ---------------------------- */
 #nbHome {
   margin-bottom: 30px;
@@ -51,6 +54,8 @@
 /* Botão Hamburger */
 /* Logo */
 /* Icons Menu */
+/* Search  */
+/* Dropdowns */
 /* Icon topo (Só mobile) */
 /* Container */
 #nbHome {
