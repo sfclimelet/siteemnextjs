@@ -23,3 +23,21 @@
         background: $color-line-light;
     }
 }
+
+/* Icons Menu */
+@each $_, $btn in $iconsMenu{
+    #{$btn}{
+        #{nb(iconMenu)}{
+            stroke: $color-icon-menu;
+        }
+    }
+}
+#{nb(light-theme)}{
+    @each $_, $btn in $iconsMenu{
+        #{$btn}{
+            #{nb(iconMenu)}{
+                stroke: $color-icon-menu-light;
+            }
+        }
+    }
+}

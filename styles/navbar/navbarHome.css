@@ -73,6 +73,43 @@
   background: #0cbaff;
 }
 
+/* Icons Menu */
+#btnSearch .iconMn {
+  stroke: #56adff;
+}
+
+#btnServicos .iconMn {
+  stroke: #56adff;
+}
+
+#btnQmSms .iconMn {
+  stroke: #56adff;
+}
+
+#btnAjSu .iconMn {
+  stroke: #56adff;
+}
+
+#btnPortCert .iconMn {
+  stroke: #56adff;
+}
+
+.theme-light #btnSearch .iconMn {
+  stroke: #00d4ff;
+}
+.theme-light #btnServicos .iconMn {
+  stroke: #00d4ff;
+}
+.theme-light #btnQmSms .iconMn {
+  stroke: #00d4ff;
+}
+.theme-light #btnAjSu .iconMn {
+  stroke: #00d4ff;
+}
+.theme-light #btnPortCert .iconMn {
+  stroke: #00d4ff;
+}
+
 /* Animation Hamburger */
 /* Animation - Logo */
 /* Animação Scrooled */
@@ -157,6 +194,32 @@
 }
 #nbHome2 .line + .line {
   margin-top: 6px;
+}
+
+/* Icons Menu */
+#btnSearch .iconMn {
+  width: 20px;
+  height: 20px;
+}
+
+#btnServicos .iconMn {
+  width: 20px;
+  height: 20px;
+}
+
+#btnQmSms .iconMn {
+  width: 20px;
+  height: 20px;
+}
+
+#btnAjSu .iconMn {
+  width: 20px;
+  height: 20px;
+}
+
+#btnPortCert .iconMn {
+  width: 20px;
+  height: 20px;
 }
 
 /* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
