@@ -82,6 +82,6 @@ $nb-li: (
   l-PortCertific: "#LI-portCert",
 );
 
-@function Lindicador($key) {
+@function L-indicador($key) {
   @return map-get($nb-li, $key);
 }
