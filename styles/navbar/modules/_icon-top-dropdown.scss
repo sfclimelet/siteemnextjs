@@ -1,0 +1,53 @@
+@use "../core/_vars.scss" as *;
+
+/* Icon Top Dropdown (Só para mobile) */
+#{nb(dropdown-icon-topo)}{
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 99999;
+
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+
+    svg{
+        width: 18px;
+        height: 18px;
+        transition: all 0.22s ease;
+    }
+}
+
+
+#{nb(dropdown-icon-topo)}.visible {
+    /* Ícone topo visível */
+  display: flex !important;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+#{nb(dropdown-icon-topo)}.is-active {
+    /* Ícone topo oculto quando ativo */
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.18s ease;
+}
+#{nb(link)}.is-active {
+    /* Link original oculto quando ativo */
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.18s ease;
+}
+#{nb(dropdown-icon-topo)}:active {
+    /* Clique no ícone topo */
+  transform: translate(-50%, 0) scale(0.92);
+}

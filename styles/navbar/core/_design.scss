@@ -41,3 +41,17 @@
         }
     }
 }
+
+/* Icon Top Dropdown (Só para mobile) */
+#{nb(dropdown-icon-topo)}{
+    svg{
+        stroke: $color-icon-topo1;
+    }
+}
+#{nb(light-theme)}{
+    #{nb(dropdown-icon-topo)}{
+        svg{
+            stroke: $color-icon-menu-light;
+        }
+    }
+}

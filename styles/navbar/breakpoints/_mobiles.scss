@@ -20,7 +20,7 @@
     }
 }
 
-/* Icon Top - Icone no topo */
+/* Icon Top - Icone no topo - Removido ao passar de 576px */
 @media (min-width: 576px){
     #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-topo)}.visible{
         display: none !important;

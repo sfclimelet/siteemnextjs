@@ -51,6 +51,7 @@
 /* Botão Hamburger */
 /* Logo */
 /* Icons Menu */
+/* Icon topo (Só mobile) */
 /* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
@@ -107,6 +108,15 @@
   stroke: #00d4ff;
 }
 .theme-light #btnPortCert .iconMn {
+  stroke: #00d4ff;
+}
+
+/* Icon Top Dropdown (Só para mobile) */
+.dropdown-top-icon svg {
+  stroke: #56adff;
+}
+
+.theme-light .dropdown-top-icon svg {
   stroke: #00d4ff;
 }
 
@@ -227,6 +237,55 @@
   transition: all 0.3s ease;
 }
 
+/* Icon Top Dropdown (Só para mobile) */
+.dropdown-top-icon {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99999;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.dropdown-top-icon svg {
+  width: 18px;
+  height: 18px;
+  transition: all 0.22s ease;
+}
+
+.dropdown-top-icon.visible {
+  /* Ícone topo visível */
+  display: flex !important;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.dropdown-top-icon.is-active {
+  /* Ícone topo oculto quando ativo */
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.18s ease;
+}
+
+.nav-link.is-active {
+  /* Link original oculto quando ativo */
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.18s ease;
+}
+
+.dropdown-top-icon:active {
+  /* Clique no ícone topo */
+  transform: translate(-50%, 0) scale(0.92);
+}
+
 /* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
 @media (max-width: 575px) {
   #nbHome #nbHome2 {
@@ -243,7 +302,7 @@
     display: none !important;
   }
 }
-/* Icon Top - Icone no topo */
+/* Icon Top - Icone no topo - Removido ao passar de 576px */
 @media (min-width: 576px) {
   .dropdown-top-icon, .dropdown-top-icon.visible {
     display: none !important;
