@@ -19,3 +19,12 @@
         display: none !important;
     }
 }
+
+/* Icon Top - Icone no topo */
+@media (min-width: 576px){
+    #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-topo)}.visible{
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}

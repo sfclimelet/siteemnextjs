@@ -200,26 +200,31 @@
 #btnSearch .iconMn {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
 
 #btnServicos .iconMn {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
 
 #btnQmSms .iconMn {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
 
 #btnAjSu .iconMn {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
 
 #btnPortCert .iconMn {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
 
 /* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
@@ -236,5 +241,13 @@
   /* Some o botão Hamburger de outras resoluções além de mobile */
   #MenuHamburger {
     display: none !important;
+  }
+}
+/* Icon Top - Icone no topo */
+@media (min-width: 576px) {
+  .dropdown-top-icon, .dropdown-top-icon.visible {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 }/*# sourceMappingURL=navbarHome.css.map */
