@@ -322,12 +322,4 @@
   #MenuHamburger {
     display: none !important;
   }
-}
-/* Icon Top - Icone no topo - Removido ao passar de 576px */
-@media (min-width: 576px) {
-  .dropdown-top-icon, .dropdown-top-icon.visible {
-    display: none !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
 }/*# sourceMappingURL=navbarHome.css.map */
