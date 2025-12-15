@@ -11,3 +11,13 @@
         }
     }
 }
+
+/* Icon Button Search */
+#{L-indicador(l-search)}{
+    #{search(btn-search)}{
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

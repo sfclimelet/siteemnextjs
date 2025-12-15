@@ -57,3 +57,19 @@
         }
     }
 }
+
+/* Search */
+#{L-indicador(l-search)}{
+    #{nb(dropdown)}{
+        background: linear-gradient(145deg, $color-search-primary-bg, $color-search-secondary-bg);
+    }
+    #{search(inpt)}{
+        background: $color-search-input-primary;
+    }
+    #{search(btn-search)}{
+        background: linear-gradient(45deg, $color-search-button-primary, $color-search-button-secondary);
+        svg{
+            stroke: $color-search-button-icon;
+        }
+    }
+}

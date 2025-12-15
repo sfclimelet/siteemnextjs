@@ -1,1 +1,27 @@
 @use "../core/_vars.scss" as *;
+
+#{L-indicador(l-search)}{
+    #{search(boxx)}{
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+    }
+    #{search(inpt)}{
+        flex: 1;
+        border-radius: 10px 0 0 10px;
+        margin: 0;
+    }
+    #{search(btn-search)}{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 0 10px 10px 0;
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        cursor: pointer;
+
+    }
+}

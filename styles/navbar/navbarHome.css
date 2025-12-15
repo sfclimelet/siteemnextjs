@@ -131,6 +131,20 @@
   stroke: #00d4ff;
 }
 
+/* Search */
+#LI-search .dropdown-menu {
+  background: linear-gradient(145deg, #00111a, #000);
+}
+#LI-search .search-input {
+  background: #0d1b27;
+}
+#LI-search .search-btn {
+  background: linear-gradient(45deg, #00aaff, #006eff);
+}
+#LI-search .search-btn svg {
+  stroke: #fff;
+}
+
 /* Animation Hamburger */
 /* Animation - Logo */
 /* Animação Scrooled */
@@ -191,6 +205,49 @@
 
 .theme-light .dropdown-top-icon {
   box-shadow: 0 0 14px #00d4ff, 0 0 16px #00d4ff inset;
+}
+
+/* Search */
+#LI-search .dropdown-menu {
+  box-shadow: 0 0 8px #21c7ff;
+}
+#LI-search .search-input::-moz-placeholder {
+  color: #9ac5ff;
+}
+#LI-search .search-input::placeholder {
+  color: #9ac5ff;
+}
+#LI-search .search-input:focus {
+  border-color: #21c7ff;
+  box-shadow: 0 0 8px #00caff;
+}
+#LI-search .search-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #008cff;
+}
+#LI-search .search-btn:active {
+  transform: scale(0.96);
+}
+
+#LI-search .dropdown-search-box {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+#LI-search .search-input {
+  flex: 1;
+  border-radius: 10px 0 0 10px;
+  margin: 0;
+}
+#LI-search .search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
 /* Botão Hamburger */
@@ -255,6 +312,12 @@
   width: 20px;
   height: 20px;
   transition: all 0.3s ease;
+}
+
+/* Icon Button Search */
+#LI-search .search-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Icon Top Dropdown (Só para mobile) */
