@@ -137,6 +137,7 @@
 }
 #LI-search .search-input {
   background: #0d1b27;
+  color: #fff;
 }
 #LI-search .search-btn {
   background: linear-gradient(45deg, #00aaff, #006eff);
@@ -384,5 +385,39 @@
   /* Some o botão Hamburger de outras resoluções além de mobile */
   #MenuHamburger {
     display: none !important;
+  }
+}
+/* Icons Menu - Espacamento a esquerda */
+@media (max-width: 575px) {
+  #btnSearch .iconMn {
+    margin-left: 22px;
+  }
+  #btnServicos .iconMn {
+    margin-left: 22px;
+  }
+  #btnQmSms .iconMn {
+    margin-left: 22px;
+  }
+  #btnAjSu .iconMn {
+    margin-left: 22px;
+  }
+  #btnPortCert .iconMn {
+    margin-left: 22px;
+  }
+}
+/* Search */
+@media (max-width: 575px) {
+  #LI-search .dropdown-menu {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #LI-search .dropdown-search-box {
+    padding: 20px 20px;
+  }
+  #LI-search .search-btn {
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=navbarHome.css.map */

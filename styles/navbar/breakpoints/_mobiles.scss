@@ -19,3 +19,33 @@
         display: none !important;
     }
 }
+
+/* Icons Menu - Espacamento a esquerda */
+@media (max-width: 575px){
+    @each $key, $btn in $iconsMenu{
+        #{$btn}{
+            #{nb(iconMenu)}{
+                margin-left: 22px;
+            }
+        }
+    }
+}
+
+/* Search */
+@media (max-width: 575px){
+    #{L-indicador(l-search)}{
+        #{nb(dropdown)}{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #{search(boxx)}{
+            padding: 20px 20px;
+        }
+        #{search(btn-search)}{
+            padding: 0 14px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    }
+}

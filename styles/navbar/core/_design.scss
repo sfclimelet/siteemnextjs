@@ -65,6 +65,7 @@
     }
     #{search(inpt)}{
         background: $color-search-input-primary;
+        color: $color-search-input-text;
     }
     #{search(btn-search)}{
         background: linear-gradient(45deg, $color-search-button-primary, $color-search-button-secondary);
