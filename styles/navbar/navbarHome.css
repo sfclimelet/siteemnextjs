@@ -116,7 +116,7 @@
   stroke: #00d4ff;
 }
 
-/* Icon Top Dropdown (Só para mobile) */
+/* Icon Top Dropdown */
 .dropdown-top-icon {
   border: 3px solid #56adff;
 }
@@ -409,6 +409,38 @@
 @media (max-width: 575px) {
   #LI-search .dropdown-menu {
     width: 60%;
+    margin: 0 auto;
+  }
+  #LI-search .dropdown-search-box {
+    padding: 20px 20px;
+  }
+  #LI-search .search-btn {
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+/* Logo */
+@media (min-width: 576px) and (max-width: 991px) {
+  #logoNavbar {
+    margin-left: 20px;
+  }
+}
+/* Icons Menu - Espacamento a direita */
+@media (min-width: 576px) and (max-width: 991px) {
+  .navbar-collapse {
+    margin-right: 20px;
+  }
+}
+/* Search */
+@media (min-width: 576px) and (max-width: 991px) {
+  #LI-search .dropdown-top-icon {
+    top: -50%;
+  }
+  #LI-search .dropdown-menu {
+    margin-top: 50px !important;
+    width: 300px;
     margin: 0 auto;
   }
   #LI-search .dropdown-search-box {
