@@ -1,1 +1,48 @@
+@use "../core/_vars.scss" as *;
 
+/* Logo */
+@media (min-width: 1200px){
+    #{nb(logo)}{
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1400px){
+    #{nb(logo)}{
+        margin-left: 50px;
+    }
+}
+
+/* Icones */
+@media (min-width: 1200px){
+    #{nb(collapse)}{
+        margin-right: 50px;
+    }
+}
+@media (min-width: 1400px){
+    #{nb(collapse)}{
+        margin-right: 50px;
+    }
+}
+
+/* Search */
+@media (min-width: 1200px) and (max-width: 1400px){
+    #{L-indicador(l-search)}{
+        #{nb(dropdown-icon-topo)}{
+            top: -45%;
+        }
+        #{nb(dropdown)}{
+            margin-top: 10px !important;
+            width: 300px;
+            margin: 0 auto;
+        }
+        #{search(boxx)}{
+            padding: 100px 100px !important;
+        }
+        #{search(btn-search)}{
+            padding: 0 14px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    }
+}
