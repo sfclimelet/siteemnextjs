@@ -1,1 +1,11 @@
+@use "../core/_vars.scss" as *;
 
+@each $key, $li in $nb-li-no-search{
+    #{$li}{
+        #{nb(dropdown)}{
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+    }
+}

@@ -3,6 +3,7 @@
 /* ================= ICONES DO MENU ================= */
 /* ================= SEARCH (EXCLUSIVO) ================= */
 /* ================= INDICADORES (LI) ================= */
+/* Removendo tudo do search para aplicar códigos nos outros dropdowns separados */
 /* ------------------------- CONTAINER ---------------------------- */
 #nbHome {
   margin-bottom: 30px;
@@ -146,6 +147,47 @@
   stroke: #fff;
 }
 
+/* Dropdowns */
+#LI-services .dropdown-menu {
+  background: linear-gradient(145deg, #00111a, #000);
+}
+#LI-services .dropdown-item {
+  color: #ffffff;
+}
+#LI-services .dropdown-item svg {
+  stroke: #56adff;
+}
+
+#LI-quemSomos .dropdown-menu {
+  background: linear-gradient(145deg, #00111a, #000);
+}
+#LI-quemSomos .dropdown-item {
+  color: #ffffff;
+}
+#LI-quemSomos .dropdown-item svg {
+  stroke: #56adff;
+}
+
+#LI-suporte .dropdown-menu {
+  background: linear-gradient(145deg, #00111a, #000);
+}
+#LI-suporte .dropdown-item {
+  color: #ffffff;
+}
+#LI-suporte .dropdown-item svg {
+  stroke: #56adff;
+}
+
+#LI-portCert .dropdown-menu {
+  background: linear-gradient(145deg, #00111a, #000);
+}
+#LI-portCert .dropdown-item {
+  color: #ffffff;
+}
+#LI-portCert .dropdown-item svg {
+  stroke: #56adff;
+}
+
 /* Animation Hamburger */
 /* Animation - Logo */
 /* Animação Scrooled */
@@ -228,6 +270,30 @@
 }
 #LI-search .search-btn:active {
   transform: scale(0.96);
+}
+
+#LI-services .dropdown-menu {
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#LI-quemSomos .dropdown-menu {
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#LI-suporte .dropdown-menu {
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#LI-portCert .dropdown-menu {
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 #LI-search .dropdown-search-box {

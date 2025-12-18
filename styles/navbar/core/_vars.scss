@@ -85,3 +85,6 @@ $nb-li: (
 @function L-indicador($key) {
   @return map-get($nb-li, $key);
 }
+
+/* Removendo tudo do search para aplicar códigos nos outros dropdowns separados */
+$nb-li-no-search: map-remove($nb-li, l-search);

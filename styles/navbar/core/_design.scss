@@ -74,3 +74,18 @@
         }
     }
 }
+
+/* Dropdowns */
+@each $key, $li in $nb-li-no-search{
+    #{$li}{
+        #{nb(dropdown)}{
+            background: linear-gradient(145deg, $color-dropdowns-primary, $color-dropdowns-secundary);
+        }
+        #{nb(dropdown-item)}{
+            color: $color-dropdowns-link;
+            svg{
+                stroke: $color-dropdowns-icon;
+            }
+        }
+    }
+}
