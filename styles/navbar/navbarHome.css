@@ -510,6 +510,176 @@
   transition: transform 0.25s ease;
 }
 
+/* =========================================
+   DROPDOWNS — NÃO SEARCH
+   Apenas >= 576px
+========================================= */
+@media (min-width: 576px) {
+  #LI-services {
+    /* ===============================
+       CONTAINER DO DROPDOWN
+    =============================== */
+    /* ===============================
+       ÍCONE DO TOPO (DENTRO)
+    =============================== */
+    /* ===============================
+       LINKS (EMPURRADOS PRA BAIXO)
+    =============================== */
+  }
+  #LI-services .dropdown-menu {
+    border-top: none;
+    position: absolute;
+    top: calc(100% + 48px);
+    right: 24px;
+    left: auto;
+    min-width: 240px;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    transform: none !important;
+  }
+  #LI-services .dropdown-top-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  #LI-services .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 5px 10px;
+  }
+  #LI-quemSomos {
+    /* ===============================
+       CONTAINER DO DROPDOWN
+    =============================== */
+    /* ===============================
+       ÍCONE DO TOPO (DENTRO)
+    =============================== */
+    /* ===============================
+       LINKS (EMPURRADOS PRA BAIXO)
+    =============================== */
+  }
+  #LI-quemSomos .dropdown-menu {
+    border-top: none;
+    position: absolute;
+    top: calc(100% + 48px);
+    right: 24px;
+    left: auto;
+    min-width: 240px;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    transform: none !important;
+  }
+  #LI-quemSomos .dropdown-top-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  #LI-quemSomos .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 5px 10px;
+  }
+  #LI-suporte {
+    /* ===============================
+       CONTAINER DO DROPDOWN
+    =============================== */
+    /* ===============================
+       ÍCONE DO TOPO (DENTRO)
+    =============================== */
+    /* ===============================
+       LINKS (EMPURRADOS PRA BAIXO)
+    =============================== */
+  }
+  #LI-suporte .dropdown-menu {
+    border-top: none;
+    position: absolute;
+    top: calc(100% + 48px);
+    right: 24px;
+    left: auto;
+    min-width: 240px;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    transform: none !important;
+  }
+  #LI-suporte .dropdown-top-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  #LI-suporte .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 5px 10px;
+  }
+  #LI-portCert {
+    /* ===============================
+       CONTAINER DO DROPDOWN
+    =============================== */
+    /* ===============================
+       ÍCONE DO TOPO (DENTRO)
+    =============================== */
+    /* ===============================
+       LINKS (EMPURRADOS PRA BAIXO)
+    =============================== */
+  }
+  #LI-portCert .dropdown-menu {
+    border-top: none;
+    position: absolute;
+    top: calc(100% + 48px);
+    right: 24px;
+    left: auto;
+    min-width: 240px;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    transform: none !important;
+  }
+  #LI-portCert .dropdown-top-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  #LI-portCert .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 5px 10px;
+  }
+}
 #LI-services .dropdown-menu {
   width: 250px;
   margin: 0 auto;

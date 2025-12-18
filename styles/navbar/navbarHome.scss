@@ -4,6 +4,7 @@
 @use "./core/_animations.scss";
 @use "./core/_functions.scss";
 @use "./core/_mixins-animations.scss";
+@use "./core/_layout.dropdowns" as *;
 
 @use "./modules/_menu.scss";
 @use "./modules/_dropdowns.scss";

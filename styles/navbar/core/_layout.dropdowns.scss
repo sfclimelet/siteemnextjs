@@ -1,0 +1,62 @@
+@use "./_vars.scss" as *;
+
+/* =========================================
+   DROPDOWNS — NÃO SEARCH
+   Apenas >= 576px
+========================================= */
+@media (min-width: 576px) {
+
+  @each $key, $li in $nb-li-no-search {
+    #{$li} {
+
+      /* ===============================
+         CONTAINER DO DROPDOWN
+      =============================== */
+      #{nb(dropdown)} {
+        border-top: none;
+        position: absolute;
+        top: calc(100% + 48px); // afasta da navbar
+        right: 24px;
+        left: auto;
+
+        min-width: 240px;
+        padding-top: 60px; // espaço reservado pro ícone
+        padding-bottom: 16px;
+
+        transform: none !important;
+      }
+
+      /* ===============================
+         ÍCONE DO TOPO (DENTRO)
+      =============================== */
+      #{nb(dropdown-icon-topo)} {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+
+        pointer-events: auto;
+        cursor: pointer;
+      }
+
+      /* ===============================
+         LINKS (EMPURRADOS PRA BAIXO)
+      =============================== */
+      #{nb(dropdown-item)} {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        padding: 5px 10px;
+      }
+
+    }
+  }
+}

@@ -41,8 +41,8 @@ export default function NavbarHome() {
           <span className="line"></span>
         </button>
 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarHome">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarHome">
+          <ul className="navbar-nav ms-auto">
 
             {menuData.map((item) => (
               <MenuItem key={item.id} item={item} />
