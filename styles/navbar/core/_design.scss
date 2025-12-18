@@ -79,6 +79,7 @@
 @each $key, $li in $nb-li-no-search{
     #{$li}{
         #{nb(dropdown)}{
+            border-top: 4px solid $color-dropdowns-border-top;
             background: linear-gradient(145deg, $color-dropdowns-primary, $color-dropdowns-secundary);
         }
         #{nb(dropdown-item)}{
@@ -88,4 +89,18 @@
             }
         }
     }
+}
+#{nb(light-theme)}{
+    @each $key, $li in $nb-li-no-search{
+    #{$li}{
+        #{nb(dropdown)}{
+            border-top: 4px solid $color-dropdowns-border-top-light;
+        }
+        #{nb(dropdown-item)}{
+            svg{
+                stroke: $color-dropdowns-icon-light;
+            }
+        }
+    }
+}
 }

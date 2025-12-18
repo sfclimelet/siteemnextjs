@@ -149,6 +149,7 @@
 
 /* Dropdowns */
 #LI-services .dropdown-menu {
+  border-top: 4px solid #56adff;
   background: linear-gradient(145deg, #00111a, #000);
 }
 #LI-services .dropdown-item {
@@ -159,6 +160,7 @@
 }
 
 #LI-quemSomos .dropdown-menu {
+  border-top: 4px solid #56adff;
   background: linear-gradient(145deg, #00111a, #000);
 }
 #LI-quemSomos .dropdown-item {
@@ -169,6 +171,7 @@
 }
 
 #LI-suporte .dropdown-menu {
+  border-top: 4px solid #56adff;
   background: linear-gradient(145deg, #00111a, #000);
 }
 #LI-suporte .dropdown-item {
@@ -179,6 +182,7 @@
 }
 
 #LI-portCert .dropdown-menu {
+  border-top: 4px solid #56adff;
   background: linear-gradient(145deg, #00111a, #000);
 }
 #LI-portCert .dropdown-item {
@@ -186,6 +190,31 @@
 }
 #LI-portCert .dropdown-item svg {
   stroke: #56adff;
+}
+
+.theme-light #LI-services .dropdown-menu {
+  border-top: 4px solid #00d4ff;
+}
+.theme-light #LI-services .dropdown-item svg {
+  stroke: #00d4ff;
+}
+.theme-light #LI-quemSomos .dropdown-menu {
+  border-top: 4px solid #00d4ff;
+}
+.theme-light #LI-quemSomos .dropdown-item svg {
+  stroke: #00d4ff;
+}
+.theme-light #LI-suporte .dropdown-menu {
+  border-top: 4px solid #00d4ff;
+}
+.theme-light #LI-suporte .dropdown-item svg {
+  stroke: #00d4ff;
+}
+.theme-light #LI-portCert .dropdown-menu {
+  border-top: 4px solid #00d4ff;
+}
+.theme-light #LI-portCert .dropdown-item svg {
+  stroke: #00d4ff;
 }
 
 /* Animation Hamburger */
@@ -272,8 +301,38 @@
   transform: scale(0.96);
 }
 
+/* Dropdowns */
 #LI-services .dropdown-menu {
-  width: 200px;
+  box-shadow: 0 1px 12px #56adff;
+}
+
+#LI-quemSomos .dropdown-menu {
+  box-shadow: 0 1px 12px #56adff;
+}
+
+#LI-suporte .dropdown-menu {
+  box-shadow: 0 1px 12px #56adff;
+}
+
+#LI-portCert .dropdown-menu {
+  box-shadow: 0 1px 12px #56adff;
+}
+
+.theme-light #LI-services .dropdown-menu {
+  box-shadow: 0 1px 12px #00d4ff;
+}
+.theme-light #LI-quemSomos .dropdown-menu {
+  box-shadow: 0 1px 12px #00d4ff;
+}
+.theme-light #LI-suporte .dropdown-menu {
+  box-shadow: 0 1px 12px #00d4ff;
+}
+.theme-light #LI-portCert .dropdown-menu {
+  box-shadow: 0 1px 12px #00d4ff;
+}
+
+#LI-services .dropdown-menu {
+  width: 250px;
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -284,7 +343,7 @@
 }
 
 #LI-quemSomos .dropdown-menu {
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -295,7 +354,7 @@
 }
 
 #LI-suporte .dropdown-menu {
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -306,7 +365,7 @@
 }
 
 #LI-portCert .dropdown-menu {
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   border-radius: 20px;
 }
