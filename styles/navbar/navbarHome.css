@@ -58,6 +58,7 @@
 /* Search  */
 /* Dropdowns */
 /* Icon topo (Só mobile) */
+/* Barra Vertical */
 /* Container */
 #nbHome {
   background: rgba(0, 0, 0, 0.5490196078);
@@ -215,6 +216,15 @@
 }
 .theme-light #LI-portCert .dropdown-item svg {
   stroke: #00d4ff;
+}
+
+/* Barra Vertical */
+.nb-divider {
+  background: #fff;
+}
+
+.theme-light .nb-divider {
+  background: #00d4ff;
 }
 
 /* Animation Hamburger */
@@ -725,6 +735,15 @@
   transform: translate(-50%, 0) scale(0.92);
 }
 
+.nb-divider {
+  display: none;
+  width: 3px;
+  height: 26px;
+  align-self: center;
+  margin: 0 12px;
+  border-radius: 2px;
+}
+
 /* CONTAINER - Logo para direita e botão menu sanduiche para esquerda */
 @media (max-width: 575px) {
   #nbHome #nbHome2 {
@@ -833,6 +852,12 @@
   }
   #LI-search .dropdown-top-icon {
     margin-bottom: var(--search-top-icon-gap);
+  }
+}
+/* Barra lateral */
+@media (min-width: 576px) {
+  .nb-divider {
+    display: block;
   }
 }
 @media (min-width: 992px) {

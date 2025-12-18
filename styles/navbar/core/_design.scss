@@ -104,3 +104,13 @@
     }
 }
 }
+
+/* Barra Vertical */
+#{nb(divider)}{
+    background: $color-barra-primary;
+}
+#{nb(light-theme)}{
+    #{nb(divider)}{
+        background: $color-barra-secondary;
+    }
+}

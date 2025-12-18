@@ -70,3 +70,10 @@
     }
   }
 }
+
+/* Barra lateral */
+@media (min-width: 576px){
+  #{nb(divider)}{
+    display: block;
+  }
+}
