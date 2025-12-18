@@ -1,6 +1,9 @@
 @use "../core/_vars.scss" as *;
 
 #{L-indicador(l-search)}{
+    #{nb(dropdown)}{
+        border-radius: 20px;
+    }
     #{search(boxx)}{
         display: flex;
         align-items: stretch;

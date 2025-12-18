@@ -560,6 +560,9 @@
   background: transparent !important;
 }
 
+#LI-search .dropdown-menu {
+  border-radius: 20px;
+}
 #LI-search .dropdown-search-box {
   display: flex;
   align-items: stretch;
