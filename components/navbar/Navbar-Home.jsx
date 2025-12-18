@@ -7,6 +7,7 @@ import logo from "../../public/logo-sef.png";
 
 import { initHamburgerMenu } from "./buttonMenu";
 import { setupNavbarDropdowns } from "./navbarHome-Logic";
+import { navbarAnimated } from "./navbar-Animated";
 
 import { menuData } from "./menuData";
 import MenuItem from "./Menu-Item";

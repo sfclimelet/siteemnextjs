@@ -527,7 +527,7 @@
     =============================== */
   }
   #LI-services .dropdown-menu {
-    border-top: none;
+    border-top: none !important;
     position: absolute;
     top: calc(100% + 48px);
     right: 24px;
@@ -551,6 +551,7 @@
     cursor: pointer;
   }
   #LI-services .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -568,7 +569,7 @@
     =============================== */
   }
   #LI-quemSomos .dropdown-menu {
-    border-top: none;
+    border-top: none !important;
     position: absolute;
     top: calc(100% + 48px);
     right: 24px;
@@ -592,6 +593,7 @@
     cursor: pointer;
   }
   #LI-quemSomos .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -609,7 +611,7 @@
     =============================== */
   }
   #LI-suporte .dropdown-menu {
-    border-top: none;
+    border-top: none !important;
     position: absolute;
     top: calc(100% + 48px);
     right: 24px;
@@ -633,6 +635,7 @@
     cursor: pointer;
   }
   #LI-suporte .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -650,7 +653,7 @@
     =============================== */
   }
   #LI-portCert .dropdown-menu {
-    border-top: none;
+    border-top: none !important;
     position: absolute;
     top: calc(100% + 48px);
     right: 24px;
@@ -674,6 +677,7 @@
     cursor: pointer;
   }
   #LI-portCert .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 2px;

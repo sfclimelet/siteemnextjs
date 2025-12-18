@@ -13,7 +13,7 @@
          CONTAINER DO DROPDOWN
       =============================== */
       #{nb(dropdown)} {
-        border-top: none;
+        border-top: none !important;
         position: absolute;
         top: calc(100% + 48px); // afasta da navbar
         right: 24px;
@@ -50,6 +50,7 @@
          LINKS (EMPURRADOS PRA BAIXO)
       =============================== */
       #{nb(dropdown-item)} {
+        margin-left: 10px;
         display: flex;
         align-items: center;
         gap: 2px;
