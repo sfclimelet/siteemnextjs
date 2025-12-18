@@ -277,11 +277,21 @@
   margin: 0 auto;
   border-radius: 20px;
 }
+#LI-services .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 #LI-quemSomos .dropdown-menu {
   width: 200px;
   margin: 0 auto;
   border-radius: 20px;
+}
+#LI-quemSomos .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 #LI-suporte .dropdown-menu {
@@ -289,11 +299,21 @@
   margin: 0 auto;
   border-radius: 20px;
 }
+#LI-suporte .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 #LI-portCert .dropdown-menu {
   width: 200px;
   margin: 0 auto;
   border-radius: 20px;
+}
+#LI-portCert .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 #LI-search .dropdown-search-box {
@@ -385,6 +405,27 @@
 #LI-search .search-btn svg {
   width: 20px;
   height: 20px;
+}
+
+/* Icones Dropdowns - Links */
+#LI-services .dropdown-item svg {
+  width: 18px;
+  height: 18px;
+}
+
+#LI-quemSomos .dropdown-item svg {
+  width: 18px;
+  height: 18px;
+}
+
+#LI-suporte .dropdown-item svg {
+  width: 18px;
+  height: 18px;
+}
+
+#LI-portCert .dropdown-item svg {
+  width: 18px;
+  height: 18px;
 }
 
 /* Icon Top Dropdown (Só para mobile) */

@@ -21,3 +21,15 @@
         }
     }
 }
+
+/* Icones Dropdowns - Links */
+@each $key, $li in $nb-li-no-search{
+    #{$li}{
+        #{nb(dropdown-item)}{
+            svg{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

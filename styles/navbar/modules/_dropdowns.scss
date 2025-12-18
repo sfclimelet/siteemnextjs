@@ -7,5 +7,10 @@
             margin: 0 auto;
             border-radius: 20px;
         }
+        #{nb(dropdown-item)}{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
     }
 }
