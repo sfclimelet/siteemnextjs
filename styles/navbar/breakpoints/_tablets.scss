@@ -1,38 +1,72 @@
 @use "../core/_vars.scss" as *;
 
-/* Logo */
-@media (min-width: 576px) and (max-width: 991px){
-    #{nb(logo)}{
-        margin-left: 20px;
-    }
-}
+@media (min-width: 576px) and (max-width: 991px) {
 
-/* Icons Menu - Espacamento a direita */
-@media (min-width: 576px) and (max-width: 991px){
-    #{nb(collapse)}{
-        margin-right: 30px;
-    }
-}
+  /* ===========================
+     Variáveis Tablet - Navbar
+     =========================== */
+  #{nb(c-NavHome1)} {
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
 
-/* Search */
-@media (min-width: 576px) and (max-width: 991px){
-    #{L-indicador(l-search)}{
-        #{nb(dropdown-icon-topo)}{
-            top: -45%;
-        }
-        #{nb(dropdown)}{
-            margin-top: 10px !important;
-            width: 300px;
-            margin: 0 auto;
-        }
-        #{search(boxx)}{
-            padding: 20px 20px;
-        }
-        #{search(btn-search)}{
-            padding: 0 14px;
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-        }
+    /* Search */
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+    --search-top-icon-gap: 16px;
+  }
+
+  /* ===========================
+     Logo
+     =========================== */
+  #{nb(logo)} {
+    margin-left: var(--nb-logo-offset);
+  }
+
+  /* ===========================
+     Ícones / menu direito
+     =========================== */
+  #{nb(collapse)} {
+    margin-right: var(--nb-icons-offset);
+  }
+
+  /* ===========================
+     SEARCH (isolado por LI)
+     =========================== */
+  #{L-indicador(l-search)} {
+
+    /* Dropdown centralizado */
+    #{nb(dropdown)} {
+      position: fixed;
+      top: var(--search-dropdown-top);
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--search-dropdown-width);
+      max-width: var(--search-dropdown-width);
+      margin: 0;
     }
+
+    /* Box interno */
+    #{search(boxx)} {
+      padding: var(--search-padding-y) var(--search-padding-x);
+    }
+
+    /* Input */
+    #{search(inpt)} {
+      font-size: var(--search-font-size);
+    }
+
+    /* Botão */
+    #{search(btn-search)} {
+      padding: 0 var(--search-btn-padding-x);
+    }
+
+    /* Ícone topo */
+    #{nb(dropdown-icon-topo)} {
+      margin-bottom: var(--search-top-icon-gap);
+    }
+  }
 }

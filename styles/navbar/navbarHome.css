@@ -421,35 +421,164 @@
     flex-shrink: 0;
   }
 }
-/* Logo */
 @media (min-width: 576px) and (max-width: 991px) {
+  /* ===========================
+     Variáveis Tablet - Navbar
+     =========================== */
+  #nbHome {
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
+    /* Search */
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+    --search-top-icon-gap: 16px;
+  }
+  /* ===========================
+     Logo
+     =========================== */
   #logoNavbar {
-    margin-left: 20px;
+    margin-left: var(--nb-logo-offset);
   }
-}
-/* Icons Menu - Espacamento a direita */
-@media (min-width: 576px) and (max-width: 991px) {
+  /* ===========================
+     Ícones / menu direito
+     =========================== */
   .navbar-collapse {
-    margin-right: 20px;
+    margin-right: var(--nb-icons-offset);
   }
-}
-/* Search */
-@media (min-width: 576px) and (max-width: 991px) {
-  #LI-search .dropdown-top-icon {
-    top: -50%;
+  /* ===========================
+     SEARCH (isolado por LI)
+     =========================== */
+  #LI-search {
+    /* Dropdown centralizado */
+    /* Box interno */
+    /* Input */
+    /* Botão */
+    /* Ícone topo */
   }
   #LI-search .dropdown-menu {
-    margin-top: 50px !important;
-    width: 300px;
-    margin: 0 auto;
+    position: fixed;
+    top: var(--search-dropdown-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--search-dropdown-width);
+    max-width: var(--search-dropdown-width);
+    margin: 0;
   }
   #LI-search .dropdown-search-box {
-    padding: 20px 20px;
+    padding: var(--search-padding-y) var(--search-padding-x);
+  }
+  #LI-search .search-input {
+    font-size: var(--search-font-size);
   }
   #LI-search .search-btn {
-    padding: 0 14px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    padding: 0 var(--search-btn-padding-x);
+  }
+  #LI-search .dropdown-top-icon {
+    margin-bottom: var(--search-top-icon-gap);
+  }
+}
+@media (min-width: 992px) {
+  #nbHome {
+    --nb-logo-offset: 50px;
+    --nb-icons-offset: 50px;
+    /* Search */
+    --search-dropdown-top: 120px;
+    --search-dropdown-width: 600px;
+    --search-padding-y: 36px;
+    --search-padding-x: 48px;
+    --search-font-size: 18px;
+    --search-btn-padding-x: 20px;
+    --search-top-icon-gap: 20px;
+  }
+  /* ===========================
+     Logo
+     =========================== */
+  #logoNavbar {
+    margin-left: var(--nb-logo-offset);
+  }
+  /* ===========================
+     Ícones / menu direito
+     =========================== */
+  .navbar-collapse {
+    margin-right: var(--nb-icons-offset);
+  }
+  /* ===========================
+     SEARCH (isolado por LI)
+     =========================== */
+  #LI-search {
+    /* Dropdown centralizado */
+    /* Box interno */
+    /* Input */
+    /* Botão */
+    /* Ícone topo */
+  }
+  #LI-search .dropdown-menu {
+    position: fixed;
+    top: var(--search-dropdown-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--search-dropdown-width);
+    max-width: var(--search-dropdown-width);
+    margin: 0;
+  }
+  #LI-search .dropdown-search-box {
+    padding: var(--search-padding-y) var(--search-padding-x);
+  }
+  #LI-search .search-input {
+    font-size: var(--search-font-size);
+  }
+  #LI-search .search-btn {
+    padding: 0 var(--search-btn-padding-x);
+  }
+  #LI-search .dropdown-top-icon {
+    margin-bottom: var(--search-top-icon-gap);
+  }
+}
+@media (min-width: 1200px) {
+  #nbHome {
+    --nb-logo-offset: 50px;
+    --nb-icons-offset: 50px;
+  }
+  /* Logo */
+  #logoNavbar {
+    margin-left: var(--nb-logo-offset);
+  }
+  /* Ícones / menu direito */
+  .navbar-collapse {
+    margin-right: var(--nb-icons-offset);
+  }
+}
+@media (min-width: 1200px) {
+  #LI-search {
+    /* Dropdown centralizado na tela */
+    /* Espaçamento interno */
+    /* Input maior */
+    /* Botão do search mais largo */
+    /* Ícone do topo mais afastado */
+  }
+  #LI-search .dropdown-menu {
+    position: fixed;
+    top: 120px; /* desce o dropdown */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px; /* mais largo no desktop */
+    max-width: 600px;
+    margin: 0;
+  }
+  #LI-search .dropdown-search-box {
+    padding: 36px 48px;
+  }
+  #LI-search .search-input {
+    font-size: 18px;
+  }
+  #LI-search .search-btn {
+    padding: 0 20px;
+  }
+  #LI-search .dropdown-top-icon {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=navbarHome.css.map */

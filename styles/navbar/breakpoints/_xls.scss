@@ -1,48 +1,54 @@
 @use "../core/_vars.scss" as *;
 
-/* Logo */
-@media (min-width: 1200px){
-    #{nb(logo)}{
-        margin-left: 50px;
-    }
-}
-@media (min-width: 1400px){
-    #{nb(logo)}{
-        margin-left: 50px;
-    }
+@media (min-width: 1200px) {
+  #{nb(c-NavHome1)} {
+    --nb-logo-offset: 50px;
+    --nb-icons-offset: 50px;
+  }
+
+  /* Logo */
+  #{nb(logo)} {
+    margin-left: var(--nb-logo-offset);
+  }
+
+  /* Ícones / menu direito */
+  #{nb(collapse)} {
+    margin-right: var(--nb-icons-offset);
+  }
 }
 
-/* Icones */
-@media (min-width: 1200px){
-    #{nb(collapse)}{
-        margin-right: 50px;
-    }
-}
-@media (min-width: 1400px){
-    #{nb(collapse)}{
-        margin-right: 50px;
-    }
-}
+@media (min-width: 1200px) {
+  #{L-indicador(l-search)} {
 
-/* Search */
-@media (min-width: 1200px) and (max-width: 1400px){
-    #{L-indicador(l-search)}{
-        #{nb(dropdown-icon-topo)}{
-            top: -45%;
-        }
-        #{nb(dropdown)}{
-            margin-top: 10px !important;
-            width: 300px;
-            margin: 0 auto;
-        }
-        #{search(boxx)}{
-            padding: 100px 100px !important;
-        }
-        #{search(btn-search)}{
-            padding: 0 14px;
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-        }
+    /* Dropdown centralizado na tela */
+    #{nb(dropdown)} {
+      position: fixed;
+      top: 120px;          /* desce o dropdown */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;        /* mais largo no desktop */
+      max-width: 600px;
+      margin: 0;
     }
+
+    /* Espaçamento interno */
+    #{search(boxx)} {
+      padding: 36px 48px;
+    }
+
+    /* Input maior */
+    #{search(inpt)} {
+      font-size: 18px;
+    }
+
+    /* Botão do search mais largo */
+    #{search(btn-search)} {
+      padding: 0 20px;
+    }
+
+    /* Ícone do topo mais afastado */
+    #{nb(dropdown-icon-topo)} {
+      margin-bottom: 20px;
+    }
+  }
 }
