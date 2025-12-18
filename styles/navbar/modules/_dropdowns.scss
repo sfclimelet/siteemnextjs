@@ -8,9 +8,14 @@
             border-radius: 20px;
         }
         #{nb(dropdown-item)}{
+            background: transparent !important;
             display: flex;
             align-items: center;
             gap: 20px;
+
+            &:hover, &:focus, &:active{
+                background: transparent !important;
+            }
         }
     }
 }

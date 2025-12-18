@@ -219,6 +219,7 @@
 
 /* Animation Hamburger */
 /* Animation - Logo */
+/* Dropdowns */
 /* Animação Scrooled */
 .scrolled {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
@@ -305,30 +306,198 @@
 #LI-services .dropdown-menu {
   box-shadow: 0 1px 12px #56adff;
 }
+#LI-services .dropdown-item,
+#LI-services .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+#LI-services .dropdown-item:hover,
+#LI-services .nav-link:hover {
+  color: #56adff;
+  transform: scale(1.05);
+}
+#LI-services .dropdown-item:hover svg,
+#LI-services .nav-link:hover svg {
+  transform: scale(1.05);
+}
+#LI-services .dropdown-item svg,
+#LI-services .nav-link svg {
+  transition: transform 0.25s ease;
+}
 
 #LI-quemSomos .dropdown-menu {
   box-shadow: 0 1px 12px #56adff;
+}
+#LI-quemSomos .dropdown-item,
+#LI-quemSomos .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+#LI-quemSomos .dropdown-item:hover,
+#LI-quemSomos .nav-link:hover {
+  color: #56adff;
+  transform: scale(1.05);
+}
+#LI-quemSomos .dropdown-item:hover svg,
+#LI-quemSomos .nav-link:hover svg {
+  transform: scale(1.05);
+}
+#LI-quemSomos .dropdown-item svg,
+#LI-quemSomos .nav-link svg {
+  transition: transform 0.25s ease;
 }
 
 #LI-suporte .dropdown-menu {
   box-shadow: 0 1px 12px #56adff;
 }
+#LI-suporte .dropdown-item,
+#LI-suporte .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+#LI-suporte .dropdown-item:hover,
+#LI-suporte .nav-link:hover {
+  color: #56adff;
+  transform: scale(1.05);
+}
+#LI-suporte .dropdown-item:hover svg,
+#LI-suporte .nav-link:hover svg {
+  transform: scale(1.05);
+}
+#LI-suporte .dropdown-item svg,
+#LI-suporte .nav-link svg {
+  transition: transform 0.25s ease;
+}
 
 #LI-portCert .dropdown-menu {
   box-shadow: 0 1px 12px #56adff;
+}
+#LI-portCert .dropdown-item,
+#LI-portCert .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+#LI-portCert .dropdown-item:hover,
+#LI-portCert .nav-link:hover {
+  color: #56adff;
+  transform: scale(1.05);
+}
+#LI-portCert .dropdown-item:hover svg,
+#LI-portCert .nav-link:hover svg {
+  transform: scale(1.05);
+}
+#LI-portCert .dropdown-item svg,
+#LI-portCert .nav-link svg {
+  transition: transform 0.25s ease;
 }
 
 .theme-light #LI-services .dropdown-menu {
   box-shadow: 0 1px 12px #00d4ff;
 }
+.theme-light #LI-services .dropdown-item,
+.theme-light #LI-services .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+.theme-light #LI-services .dropdown-item:hover,
+.theme-light #LI-services .nav-link:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+.theme-light #LI-services .dropdown-item:hover svg,
+.theme-light #LI-services .nav-link:hover svg {
+  transform: scale(1.05);
+}
+.theme-light #LI-services .dropdown-item svg,
+.theme-light #LI-services .nav-link svg {
+  transition: transform 0.25s ease;
+}
 .theme-light #LI-quemSomos .dropdown-menu {
   box-shadow: 0 1px 12px #00d4ff;
+}
+.theme-light #LI-quemSomos .dropdown-item,
+.theme-light #LI-quemSomos .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+.theme-light #LI-quemSomos .dropdown-item:hover,
+.theme-light #LI-quemSomos .nav-link:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+.theme-light #LI-quemSomos .dropdown-item:hover svg,
+.theme-light #LI-quemSomos .nav-link:hover svg {
+  transform: scale(1.05);
+}
+.theme-light #LI-quemSomos .dropdown-item svg,
+.theme-light #LI-quemSomos .nav-link svg {
+  transition: transform 0.25s ease;
 }
 .theme-light #LI-suporte .dropdown-menu {
   box-shadow: 0 1px 12px #00d4ff;
 }
+.theme-light #LI-suporte .dropdown-item,
+.theme-light #LI-suporte .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+.theme-light #LI-suporte .dropdown-item:hover,
+.theme-light #LI-suporte .nav-link:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+.theme-light #LI-suporte .dropdown-item:hover svg,
+.theme-light #LI-suporte .nav-link:hover svg {
+  transform: scale(1.05);
+}
+.theme-light #LI-suporte .dropdown-item svg,
+.theme-light #LI-suporte .nav-link svg {
+  transition: transform 0.25s ease;
+}
 .theme-light #LI-portCert .dropdown-menu {
   box-shadow: 0 1px 12px #00d4ff;
+}
+.theme-light #LI-portCert .dropdown-item,
+.theme-light #LI-portCert .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, color;
+}
+.theme-light #LI-portCert .dropdown-item:hover,
+.theme-light #LI-portCert .nav-link:hover {
+  color: #00d4ff;
+  transform: scale(1.05);
+}
+.theme-light #LI-portCert .dropdown-item:hover svg,
+.theme-light #LI-portCert .nav-link:hover svg {
+  transform: scale(1.05);
+}
+.theme-light #LI-portCert .dropdown-item svg,
+.theme-light #LI-portCert .nav-link svg {
+  transition: transform 0.25s ease;
 }
 
 #LI-services .dropdown-menu {
@@ -337,9 +506,13 @@
   border-radius: 20px;
 }
 #LI-services .dropdown-item {
+  background: transparent !important;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+#LI-services .dropdown-item:hover, #LI-services .dropdown-item:focus, #LI-services .dropdown-item:active {
+  background: transparent !important;
 }
 
 #LI-quemSomos .dropdown-menu {
@@ -348,9 +521,13 @@
   border-radius: 20px;
 }
 #LI-quemSomos .dropdown-item {
+  background: transparent !important;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+#LI-quemSomos .dropdown-item:hover, #LI-quemSomos .dropdown-item:focus, #LI-quemSomos .dropdown-item:active {
+  background: transparent !important;
 }
 
 #LI-suporte .dropdown-menu {
@@ -359,9 +536,13 @@
   border-radius: 20px;
 }
 #LI-suporte .dropdown-item {
+  background: transparent !important;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+#LI-suporte .dropdown-item:hover, #LI-suporte .dropdown-item:focus, #LI-suporte .dropdown-item:active {
+  background: transparent !important;
 }
 
 #LI-portCert .dropdown-menu {
@@ -370,9 +551,13 @@
   border-radius: 20px;
 }
 #LI-portCert .dropdown-item {
+  background: transparent !important;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+#LI-portCert .dropdown-item:hover, #LI-portCert .dropdown-item:focus, #LI-portCert .dropdown-item:active {
+  background: transparent !important;
 }
 
 #LI-search .dropdown-search-box {

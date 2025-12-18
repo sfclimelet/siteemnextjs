@@ -38,3 +38,31 @@
         }
     }
 }
+
+/* Dropdowns */
+@mixin Animation-Dropdowns($color-hover, $x: 1.05, $duration: .25s) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  transition:
+    color $duration ease,
+    transform $duration ease,
+    background-color $duration ease,
+    filter $duration ease;
+
+  will-change: transform, color;
+
+  &:hover {
+    color: $color-hover;
+    transform: scale($x);
+
+    svg {
+      transform: scale(1.05);
+    }
+  }
+
+  svg {
+    transition: transform $duration ease;
+  }
+}
