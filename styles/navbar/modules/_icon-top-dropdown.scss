@@ -1,9 +1,8 @@
 @use "../core/_vars.scss" as *;
 
-
-#{nb(dropdown-icon-topo)} {
+#{nb(dropdown-icon-topo)},
+#{nb(dropdown-icon-search)} {
   position: absolute;
-  top: 12px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -17,7 +16,7 @@
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity .2s ease, transform .2s ease;
+  transition: opacity .22s ease, transform .22s ease;
 
   z-index: 2;
 
@@ -27,17 +26,64 @@
   }
 }
 
-/* Quando o dropdown estiver aberto */
-#{nb(dropdown)}.show {
+/* =====================================================
+   DROPDOWNS — NÃO SEARCH
+===================================================== */
+@media (min-width: 576px) {
 
-  #{nb(dropdown-icon-topo)} {
-    opacity: 1;
-    pointer-events: auto;
+  @each $key, $li in $nb-li-no-search {
+
+    #{$li} {
+      position: relative;
+
+      /* Dropdown aberto */
+      #{nb(dropdown)}.show {
+
+        #{nb(dropdown-icon-topo)} {
+          top: 12px;
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+
+    }
+
   }
 }
 
-/* Ícone original do botão some */
+/* =====================================================
+   DROPDOWN — SEARCH (EXCLUSIVO)
+===================================================== */
+@media (min-width: 576px) {
+
+  #{L-indicador(l-search)} {
+    position: relative;
+
+    #{nb(dropdown)}.show {
+
+      #{nb(dropdown-icon-search)} {
+        top: 18px;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 3;
+      }
+
+    }
+  }
+}
+
+/* =====================================================
+   ESCONDE ÍCONE ORIGINAL QUANDO DROPDOWN ABERTO
+===================================================== */
 #{nb(link)}.is-active {
   opacity: 0;
   pointer-events: none;
+}
+
+/* =====================================================
+   CLICK FEEDBACK (SEM ANIMAÇÃO VISUAL AINDA)
+===================================================== */
+#{nb(dropdown-icon-topo)}:active,
+#{nb(dropdown-icon-search)}:active {
+  transform: translateX(-50%) scale(0.94);
 }

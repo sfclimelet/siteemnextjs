@@ -1,30 +1,27 @@
-export function setupDropdownTopIcon() {
+import { cloneIcon } from "../../utils/cloneIcons";
+
+export function setupIcons() {
   if (typeof window === "undefined") return () => {};
 
-  const dropdownParents = Array.from(
+  const parents = Array.from(
     document.querySelectorAll<HTMLElement>(".nav-item.dropdown")
   );
 
   const removers: Array<() => void> = [];
 
-  dropdownParents.forEach((parent) => {
+  parents.forEach((parent) => {
+    // IGNORA SEARCH
+    if (parent.id === "LI-search") return;
 
-    const toggleBtn =
-      parent.querySelector<HTMLButtonElement>("[data-bs-toggle='dropdown']");
-    const dropdownMenu =
-      parent.querySelector<HTMLElement>(".dropdown-menu");
-    const topIcon =
-      parent.querySelector<HTMLElement>(".top-icon");
+    const toggleBtn = parent.querySelector<HTMLElement>(
+      "[data-bs-toggle='dropdown']"
+    );
+    const topIcon = parent.querySelector<HTMLElement>(".top-icon");
 
-    if (!toggleBtn || !dropdownMenu || !topIcon) return;
+    if (!toggleBtn || !topIcon) return;
 
     const onShow = () => {
-      const icon = toggleBtn.querySelector("svg, i");
-      if (icon) {
-        topIcon.innerHTML = "";
-        topIcon.appendChild(icon.cloneNode(true));
-      }
-
+      cloneIcon(toggleBtn, topIcon);
       toggleBtn.classList.add("is-active");
     };
 
@@ -32,11 +29,13 @@ export function setupDropdownTopIcon() {
       toggleBtn.classList.remove("is-active");
     };
 
+    const onTopIconClick = () => {
+      toggleBtn.click();
+    };
+
     parent.addEventListener("show.bs.dropdown", onShow as EventListener);
     parent.addEventListener("hide.bs.dropdown", onHide as EventListener);
-
-    // clique no top-icon fecha o dropdown
-    topIcon.addEventListener("click", () => toggleBtn.click());
+    topIcon.addEventListener("click", onTopIconClick);
 
     removers.push(() =>
       parent.removeEventListener("show.bs.dropdown", onShow as EventListener)
@@ -44,7 +43,16 @@ export function setupDropdownTopIcon() {
     removers.push(() =>
       parent.removeEventListener("hide.bs.dropdown", onHide as EventListener)
     );
+    removers.push(() =>
+      topIcon.removeEventListener("click", onTopIconClick)
+    );
   });
 
-  return () => removers.forEach(fn => fn());
+  return () => {
+    removers.forEach((fn) => {
+      try {
+        fn();
+      } catch {}
+    });
+  };
 }

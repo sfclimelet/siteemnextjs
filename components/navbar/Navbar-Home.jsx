@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import logo from "../../public/logo-sef.png";
 
 import { initHamburgerMenu } from "./buttonMenu";
-import { setupDropdownTopIcon } from "./topIcon";
+import { setupIcons } from "./topIcon";
+import { setupIconSearch } from "./topIcon-Search";
 
 import { menuData } from "./menuData";
 import MenuItem from "./Menu-Item";
@@ -19,11 +20,13 @@ export default function NavbarHome() {
     if (typeof window === "undefined") return;
 
     const cleanupHamburguer = initHamburgerMenu();
-    const cleanupTopIcon = setupDropdownTopIcon();
+    const cleanupIconsTop = setupIcons();
+    const cleanupIconTopSearch = setupIconSearch();
 
     return () => {
       cleanupHamburguer && cleanupHamburguer();
-      cleanupTopIcon && cleanupTopIcon();
+      cleanupIconsTop && cleanupIconsTop();
+      cleanupIconTopSearch && cleanupIconTopSearch();
     };
   }, []);
 

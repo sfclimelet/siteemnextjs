@@ -59,10 +59,5 @@
     #{search(btn-search)} {
       padding: 0 var(--search-btn-padding-x);
     }
-
-    /* Ícone topo */
-    #{nb(dropdown-icon-topo)} {
-      margin-bottom: var(--search-top-icon-gap);
-    }
   }
 }

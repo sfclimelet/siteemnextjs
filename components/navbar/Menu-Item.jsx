@@ -11,7 +11,7 @@ export default function MenuItem({ item }) {
             {item.icon}
           </button>
 
-          <div className="top-icon"></div>
+          <div className="top-icon-search"></div>
 
           <ul className="dropdown-menu">
             <li>

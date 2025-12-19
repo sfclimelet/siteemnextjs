@@ -1,10 +1,6 @@
 @use "../core/_vars.scss" as *;
 
 @media (min-width: 576px) and (max-width: 991px) {
-
-  /* ===========================
-     Variáveis Tablet - Navbar
-     =========================== */
   #{nb(c-NavHome1)} {
     --nb-logo-offset: 30px;
     --nb-icons-offset: 30px;

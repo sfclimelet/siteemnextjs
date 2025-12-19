@@ -19,20 +19,34 @@
         left: auto;
 
         min-width: 240px;
-        padding-top: 60px; // espaço reservado pro top-icon
+        padding-top: 60px; // espaço pro top-icon
         padding-bottom: 16px;
 
         z-index: 1050;
 
+        /* ⚠️ NÃO USAR DISPLAY */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition: opacity .2s ease, visibility .2s ease;
+
         transform: none !important;
       }
 
+      /* Bootstrap controla o estado */
+      #{nb(dropdown)}.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
       /* ===============================
-         TOP ICON (VISUAL)
+         TOP ICON
       =============================== */
       #{nb(dropdown-icon-topo)} {
         position: absolute;
-        top: 12px;
+        top: 10px;
         left: 50%;
         transform: translateX(-50%);
 
@@ -43,9 +57,7 @@
         align-items: center;
         justify-content: center;
 
-        pointer-events: auto;
         cursor: pointer;
-
         z-index: 2;
       }
 
@@ -53,10 +65,10 @@
          LINKS
       =============================== */
       #{nb(dropdown-item)} {
+        margin-left: 10px;
         display: flex;
         align-items: center;
         gap: 6px;
-
         padding: 6px 12px;
       }
     }

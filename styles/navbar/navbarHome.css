@@ -505,8 +505,9 @@
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
+    /* Bootstrap controla o estado */
     /* ===============================
-       TOP ICON (VISUAL)
+       TOP ICON
     =============================== */
     /* ===============================
        LINKS
@@ -522,11 +523,21 @@
     padding-top: 60px;
     padding-bottom: 16px;
     z-index: 1050;
+    /* ⚠️ NÃO USAR DISPLAY */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     transform: none !important;
+  }
+  #LI-services .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   #LI-services .top-icon {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
@@ -534,11 +545,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: auto;
     cursor: pointer;
     z-index: 2;
   }
   #LI-services .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -549,8 +560,9 @@
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
+    /* Bootstrap controla o estado */
     /* ===============================
-       TOP ICON (VISUAL)
+       TOP ICON
     =============================== */
     /* ===============================
        LINKS
@@ -566,11 +578,21 @@
     padding-top: 60px;
     padding-bottom: 16px;
     z-index: 1050;
+    /* ⚠️ NÃO USAR DISPLAY */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     transform: none !important;
+  }
+  #LI-quemSomos .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   #LI-quemSomos .top-icon {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
@@ -578,11 +600,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: auto;
     cursor: pointer;
     z-index: 2;
   }
   #LI-quemSomos .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -593,8 +615,9 @@
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
+    /* Bootstrap controla o estado */
     /* ===============================
-       TOP ICON (VISUAL)
+       TOP ICON
     =============================== */
     /* ===============================
        LINKS
@@ -610,11 +633,21 @@
     padding-top: 60px;
     padding-bottom: 16px;
     z-index: 1050;
+    /* ⚠️ NÃO USAR DISPLAY */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     transform: none !important;
+  }
+  #LI-suporte .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   #LI-suporte .top-icon {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
@@ -622,11 +655,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: auto;
     cursor: pointer;
     z-index: 2;
   }
   #LI-suporte .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -637,8 +670,9 @@
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
+    /* Bootstrap controla o estado */
     /* ===============================
-       TOP ICON (VISUAL)
+       TOP ICON
     =============================== */
     /* ===============================
        LINKS
@@ -654,11 +688,21 @@
     padding-top: 60px;
     padding-bottom: 16px;
     z-index: 1050;
+    /* ⚠️ NÃO USAR DISPLAY */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     transform: none !important;
+  }
+  #LI-portCert .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   #LI-portCert .top-icon {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
@@ -666,11 +710,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: auto;
     cursor: pointer;
     z-index: 2;
   }
   #LI-portCert .dropdown-item {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -852,9 +896,9 @@
   height: 18px;
 }
 
-.top-icon {
+.top-icon,
+.top-icon-search {
   position: absolute;
-  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
@@ -864,24 +908,84 @@
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.22s ease, transform 0.22s ease;
   z-index: 2;
 }
-.top-icon svg {
+.top-icon svg,
+.top-icon-search svg {
   width: 18px;
   height: 18px;
 }
 
-/* Quando o dropdown estiver aberto */
-.dropdown-menu.show .top-icon {
-  opacity: 1;
-  pointer-events: auto;
+/* =====================================================
+   DROPDOWNS — NÃO SEARCH
+===================================================== */
+@media (min-width: 576px) {
+  #LI-services {
+    position: relative;
+    /* Dropdown aberto */
+  }
+  #LI-services .dropdown-menu.show .top-icon {
+    top: 12px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #LI-quemSomos {
+    position: relative;
+    /* Dropdown aberto */
+  }
+  #LI-quemSomos .dropdown-menu.show .top-icon {
+    top: 12px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #LI-suporte {
+    position: relative;
+    /* Dropdown aberto */
+  }
+  #LI-suporte .dropdown-menu.show .top-icon {
+    top: 12px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #LI-portCert {
+    position: relative;
+    /* Dropdown aberto */
+  }
+  #LI-portCert .dropdown-menu.show .top-icon {
+    top: 12px;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
-
-/* Ícone original do botão some */
+/* =====================================================
+   DROPDOWN — SEARCH (EXCLUSIVO)
+===================================================== */
+@media (min-width: 576px) {
+  #LI-search {
+    position: relative;
+  }
+  #LI-search .dropdown-menu.show .top-icon-search {
+    top: 18px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+  }
+}
+/* =====================================================
+   ESCONDE ÍCONE ORIGINAL QUANDO DROPDOWN ABERTO
+===================================================== */
 .nav-link.is-active {
   opacity: 0;
   pointer-events: none;
+}
+
+/* =====================================================
+   CLICK FEEDBACK (SEM ANIMAÇÃO VISUAL AINDA)
+===================================================== */
+.top-icon:active,
+.top-icon-search:active {
+  transform: translateX(-50%) scale(0.94);
 }
 
 .nb-divider {
@@ -944,9 +1048,6 @@
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
-  /* ===========================
-     Variáveis Tablet - Navbar
-     =========================== */
   #nbHome {
     --nb-logo-offset: 30px;
     --nb-icons-offset: 30px;
@@ -1042,7 +1143,6 @@
     /* Box interno */
     /* Input */
     /* Botão */
-    /* Ícone topo */
   }
   #LI-search .dropdown-menu {
     position: fixed;
@@ -1061,9 +1161,6 @@
   }
   #LI-search .search-btn {
     padding: 0 var(--search-btn-padding-x);
-  }
-  #LI-search .top-icon {
-    margin-bottom: var(--search-top-icon-gap);
   }
 }
 @media (min-width: 1200px) {
