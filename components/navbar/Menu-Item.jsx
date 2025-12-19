@@ -11,7 +11,9 @@ export default function MenuItem({ item }) {
             {item.icon}
           </button>
 
-          <ul className="dropdown-menu dropdown-menu-end search-dropdown">
+          <div className="top-icon"></div>
+
+          <ul className="dropdown-menu search-dropdown">
             <li>
               <div className="dropdown-search-box">
                 <input className="form-control search-input" placeholder="Buscar..." />
@@ -31,8 +33,10 @@ export default function MenuItem({ item }) {
       <button id={item.buttonId} className="nav-link" data-bs-toggle="dropdown">
         {item.icon}
       </button>
+      
+      <div className="top-icon"></div>
 
-      <ul className="dropdown-menu dropdown-menu-end">
+      <ul className="dropdown-menu">
         {item.items.map((sub, i) => (
           <li key={i}>
             <Link className="dropdown-item" href={sub.href}>
