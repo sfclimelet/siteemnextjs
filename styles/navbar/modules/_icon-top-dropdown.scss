@@ -3,7 +3,7 @@
 #{nb(dropdown-icon-topo)},
 #{nb(dropdown-icon-search)} {
   position: absolute;
-  top: 12px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -11,7 +11,7 @@
   width: 40px;
   height: 40px;
 
-  display: none; // 🔥 JS liga/desliga
+  display: none;
   align-items: center;
   justify-content: center;
 

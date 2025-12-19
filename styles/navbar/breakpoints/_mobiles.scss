@@ -52,13 +52,30 @@
 
 /* Icon Topo */
 @media (max-width: 575px){
+    $--top-icon: 0px;
     #{nb(dropdown-icon-search)}{
-        top: -12px;
+        top: $--top-icon;
     }
     @each $key, $li in $nb-li-no-search{
         #{$li}{
             #{nb(dropdown-icon-topo)}{
-                top: -12px;
+                top: $--top-icon;
+            }
+        }
+    }
+}
+
+/* Dropdowns */
+@media (max-width: 575px){
+    #{L-indicador(l-search)}{
+        #{nb(dropdown)}{
+            margin-top: 12px;
+        }
+    }
+    @each $key, $li in $nb-li-no-search{
+        #{$li}{
+            #{nb(dropdown)}{
+                margin-top: 12px;
             }
         }
     }

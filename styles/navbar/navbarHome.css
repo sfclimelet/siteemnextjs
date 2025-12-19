@@ -899,7 +899,7 @@
 .top-icon,
 .top-icon-search {
   position: absolute;
-  top: 12px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -991,19 +991,37 @@
 /* Icon Topo */
 @media (max-width: 575px) {
   .top-icon-search {
-    top: -12px;
+    top: 0px;
   }
   #LI-services .top-icon {
-    top: -12px;
+    top: 0px;
   }
   #LI-quemSomos .top-icon {
-    top: -12px;
+    top: 0px;
   }
   #LI-suporte .top-icon {
-    top: -12px;
+    top: 0px;
   }
   #LI-portCert .top-icon {
-    top: -12px;
+    top: 0px;
+  }
+}
+/* Dropdowns */
+@media (max-width: 575px) {
+  #LI-search .dropdown-menu {
+    margin-top: 12px;
+  }
+  #LI-services .dropdown-menu {
+    margin-top: 12px;
+  }
+  #LI-quemSomos .dropdown-menu {
+    margin-top: 12px;
+  }
+  #LI-suporte .dropdown-menu {
+    margin-top: 12px;
+  }
+  #LI-portCert .dropdown-menu {
+    margin-top: 12px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
