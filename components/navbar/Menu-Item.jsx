@@ -11,9 +11,8 @@ export default function MenuItem({ item }) {
             {item.icon}
           </button>
 
-          <div className="top-icon-search" aria-hidden="true"></div>
-
           <ul className="dropdown-menu">
+                      <div className="top-icon-search" aria-hidden="true"></div>
             <li>
               <div className="dropdown-search-box">
                 <input className="form-control search-input" placeholder="Buscar..." />
@@ -34,9 +33,8 @@ export default function MenuItem({ item }) {
         {item.icon}
       </button>
 
-      <div className="top-icon" aria-hidden="true"></div>
-
       <ul className="dropdown-menu">
+        <div className="top-icon" aria-hidden="true"></div>
         {item.items.map((sub, i) => (
           <li key={i}>
             <Link className="dropdown-item" href={sub.href}>

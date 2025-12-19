@@ -1,6 +1,7 @@
 @use "../core/_vars.scss" as *;
 
 @media (min-width: 576px) and (max-width: 991px) {
+
   #{nb(c-NavHome1)} {
     --nb-logo-offset: 30px;
     --nb-icons-offset: 30px;
@@ -12,6 +13,9 @@
     --search-padding-x: 32px;
     --search-font-size: 16px;
     --search-btn-padding-x: 16px;
+
+    /* Ícone topo */
+    --search-top-icon-size: 40px;
     --search-top-icon-gap: 16px;
   }
 
@@ -30,9 +34,10 @@
   }
 
   /* ===========================
-     SEARCH (isolado por LI)
+     SEARCH
      =========================== */
   #{L-indicador(l-search)} {
+    position: relative;
 
     /* Dropdown centralizado */
     #{nb(dropdown)} {
@@ -43,6 +48,22 @@
       width: var(--search-dropdown-width);
       max-width: var(--search-dropdown-width);
       margin: 0;
+
+      /* 🔥 espaço pro ícone */
+      padding-top: calc(
+        var(--search-top-icon-size) + var(--search-top-icon-gap)
+      );
+    }
+
+    /* Ícone no topo, DENTRO do dropdown */
+    #{nb(dropdown-icon-search)} {
+      position: absolute;
+      top: var(--search-top-icon-gap);
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--search-top-icon-size);
+      height: var(--search-top-icon-size);
+      z-index: 3;
     }
 
     /* Box interno */
@@ -59,17 +80,14 @@
     #{search(btn-search)} {
       padding: 0 var(--search-btn-padding-x);
     }
-
-    /* Ícone topo */
-    #{nb(dropdown-icon-topo)} {
-      margin-bottom: var(--search-top-icon-gap);
-    }
   }
 }
 
-/* Barra lateral */
-@media (min-width: 576px){
-  #{nb(divider)}{
+/* ===========================
+   Barra lateral
+   =========================== */
+@media (min-width: 576px) {
+  #{nb(divider)} {
     display: block;
   }
 }
