@@ -270,12 +270,12 @@
   }
 }
 
-/* Icon Topo (Só mobile) */
-.top-icon {
+/* Icon Topo */
+.top-icon, .top-icon-search {
   box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
 }
 
-.theme-light .top-icon {
+.theme-light .top-icon, .theme-light .top-icon-search {
   box-shadow: 0 0 14px #00d4ff, 0 0 16px #00d4ff inset;
 }
 
