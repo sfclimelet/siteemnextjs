@@ -1,18 +1,22 @@
 @use "../core/_vars.scss" as *;
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1300px) {
+
   #{nb(c-NavHome1)} {
-    --nb-logo-offset: 50px;
-    --nb-icons-offset: 50px;
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
 
     /* Search */
-    --search-dropdown-top: 120px;
-    --search-dropdown-width: 600px;
-    --search-padding-y: 36px;
-    --search-padding-x: 48px;
-    --search-font-size: 18px;
-    --search-btn-padding-x: 20px;
-    --search-top-icon-gap: 20px;
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+
+    /* Ícone topo */
+    --search-top-icon-size: 40px;
+    --search-top-icon-gap: 16px;
   }
 
   /* ===========================
@@ -30,9 +34,10 @@
   }
 
   /* ===========================
-     SEARCH (isolado por LI)
+     SEARCH
      =========================== */
   #{L-indicador(l-search)} {
+    position: relative;
 
     /* Dropdown centralizado */
     #{nb(dropdown)} {
@@ -43,6 +48,22 @@
       width: var(--search-dropdown-width);
       max-width: var(--search-dropdown-width);
       margin: 0;
+
+      /* 🔥 espaço pro ícone */
+      padding-top: calc(
+        var(--search-top-icon-size) + var(--search-top-icon-gap)
+      );
+    }
+
+    /* Ícone no topo, DENTRO do dropdown */
+    #{nb(dropdown-icon-search)} {
+      position: absolute;
+      top: var(--search-top-icon-gap);
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--search-top-icon-size);
+      height: var(--search-top-icon-size);
+      z-index: 3;
     }
 
     /* Box interno */

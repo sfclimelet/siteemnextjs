@@ -1100,18 +1100,20 @@
     display: block;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1300px) {
   #nbHome {
-    --nb-logo-offset: 50px;
-    --nb-icons-offset: 50px;
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
     /* Search */
-    --search-dropdown-top: 120px;
-    --search-dropdown-width: 600px;
-    --search-padding-y: 36px;
-    --search-padding-x: 48px;
-    --search-font-size: 18px;
-    --search-btn-padding-x: 20px;
-    --search-top-icon-gap: 20px;
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+    /* Ícone topo */
+    --search-top-icon-size: 40px;
+    --search-top-icon-gap: 16px;
   }
   /* ===========================
      Logo
@@ -1126,10 +1128,12 @@
     margin-right: var(--nb-icons-offset);
   }
   /* ===========================
-     SEARCH (isolado por LI)
+     SEARCH
      =========================== */
   #LI-search {
+    position: relative;
     /* Dropdown centralizado */
+    /* Ícone no topo, DENTRO do dropdown */
     /* Box interno */
     /* Input */
     /* Botão */
@@ -1142,6 +1146,17 @@
     width: var(--search-dropdown-width);
     max-width: var(--search-dropdown-width);
     margin: 0;
+    /* 🔥 espaço pro ícone */
+    padding-top: calc(var(--search-top-icon-size) + var(--search-top-icon-gap));
+  }
+  #LI-search .top-icon-search {
+    position: absolute;
+    top: var(--search-top-icon-gap);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--search-top-icon-size);
+    height: var(--search-top-icon-size);
+    z-index: 3;
   }
   #LI-search .dropdown-search-box {
     padding: var(--search-padding-y) var(--search-padding-x);
@@ -1153,47 +1168,71 @@
     padding: 0 var(--search-btn-padding-x);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1301px) {
   #nbHome {
-    --nb-logo-offset: 50px;
-    --nb-icons-offset: 50px;
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
+    /* Search */
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+    /* Ícone topo */
+    --search-top-icon-size: 40px;
+    --search-top-icon-gap: 16px;
   }
-  /* Logo */
+  /* ===========================
+     Logo
+     =========================== */
   #logoNavbar {
     margin-left: var(--nb-logo-offset);
   }
-  /* Ícones / menu direito */
+  /* ===========================
+     Ícones / menu direito
+     =========================== */
   .navbar-collapse {
     margin-right: var(--nb-icons-offset);
   }
-}
-@media (min-width: 1200px) {
+  /* ===========================
+     SEARCH
+     =========================== */
   #LI-search {
-    /* Dropdown centralizado na tela */
-    /* Espaçamento interno */
-    /* Input maior */
-    /* Botão do search mais largo */
-    /* Ícone do topo mais afastado */
+    position: relative;
+    /* Dropdown centralizado */
+    /* Ícone no topo, DENTRO do dropdown */
+    /* Box interno */
+    /* Input */
+    /* Botão */
   }
   #LI-search .dropdown-menu {
     position: fixed;
-    top: 120px; /* desce o dropdown */
+    top: var(--search-dropdown-top);
     left: 50%;
     transform: translateX(-50%);
-    width: 600px; /* mais largo no desktop */
-    max-width: 600px;
+    width: var(--search-dropdown-width);
+    max-width: var(--search-dropdown-width);
     margin: 0;
+    /* 🔥 espaço pro ícone */
+    padding-top: calc(var(--search-top-icon-size) + var(--search-top-icon-gap));
+  }
+  #LI-search .top-icon-search {
+    position: absolute;
+    top: var(--search-top-icon-gap);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--search-top-icon-size);
+    height: var(--search-top-icon-size);
+    z-index: 3;
   }
   #LI-search .dropdown-search-box {
-    padding: 36px 48px;
+    padding: var(--search-padding-y) var(--search-padding-x);
   }
   #LI-search .search-input {
-    font-size: 18px;
+    font-size: var(--search-font-size);
   }
   #LI-search .search-btn {
-    padding: 0 20px;
-  }
-  #LI-search .top-icon {
-    margin-bottom: 20px;
+    padding: 0 var(--search-btn-padding-x);
   }
 }/*# sourceMappingURL=navbarHome.css.map */

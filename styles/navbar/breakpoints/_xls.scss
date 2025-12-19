@@ -1,54 +1,84 @@
 @use "../core/_vars.scss" as *;
 
-@media (min-width: 1200px) {
+@media (min-width: 1301px) {
+
   #{nb(c-NavHome1)} {
-    --nb-logo-offset: 50px;
-    --nb-icons-offset: 50px;
+    --nb-logo-offset: 30px;
+    --nb-icons-offset: 30px;
+
+    /* Search */
+    --search-dropdown-top: 100px;
+    --search-dropdown-width: 420px;
+    --search-padding-y: 28px;
+    --search-padding-x: 32px;
+    --search-font-size: 16px;
+    --search-btn-padding-x: 16px;
+
+    /* Ícone topo */
+    --search-top-icon-size: 40px;
+    --search-top-icon-gap: 16px;
   }
 
-  /* Logo */
+  /* ===========================
+     Logo
+     =========================== */
   #{nb(logo)} {
     margin-left: var(--nb-logo-offset);
   }
 
-  /* Ícones / menu direito */
+  /* ===========================
+     Ícones / menu direito
+     =========================== */
   #{nb(collapse)} {
     margin-right: var(--nb-icons-offset);
   }
-}
 
-@media (min-width: 1200px) {
+  /* ===========================
+     SEARCH
+     =========================== */
   #{L-indicador(l-search)} {
+    position: relative;
 
-    /* Dropdown centralizado na tela */
+    /* Dropdown centralizado */
     #{nb(dropdown)} {
       position: fixed;
-      top: 120px;          /* desce o dropdown */
+      top: var(--search-dropdown-top);
       left: 50%;
       transform: translateX(-50%);
-      width: 600px;        /* mais largo no desktop */
-      max-width: 600px;
+      width: var(--search-dropdown-width);
+      max-width: var(--search-dropdown-width);
       margin: 0;
+
+      /* 🔥 espaço pro ícone */
+      padding-top: calc(
+        var(--search-top-icon-size) + var(--search-top-icon-gap)
+      );
     }
 
-    /* Espaçamento interno */
+    /* Ícone no topo, DENTRO do dropdown */
+    #{nb(dropdown-icon-search)} {
+      position: absolute;
+      top: var(--search-top-icon-gap);
+      left: 50%;
+      transform: translateX(-50%);
+      width: var(--search-top-icon-size);
+      height: var(--search-top-icon-size);
+      z-index: 3;
+    }
+
+    /* Box interno */
     #{search(boxx)} {
-      padding: 36px 48px;
+      padding: var(--search-padding-y) var(--search-padding-x);
     }
 
-    /* Input maior */
+    /* Input */
     #{search(inpt)} {
-      font-size: 18px;
+      font-size: var(--search-font-size);
     }
 
-    /* Botão do search mais largo */
+    /* Botão */
     #{search(btn-search)} {
-      padding: 0 20px;
-    }
-
-    /* Ícone do topo mais afastado */
-    #{nb(dropdown-icon-topo)} {
-      margin-bottom: 20px;
+      padding: 0 var(--search-btn-padding-x);
     }
   }
 }
