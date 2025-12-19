@@ -919,26 +919,11 @@
   height: 18px;
 }
 
-/* =====================================================
-   APENAS >= 576px (DESKTOP / TABLET)
-===================================================== */
-@media (min-width: 576px) {
-  .top-icon,
-  .top-icon-search {
-    top: 12px;
-  }
-}
-/* =====================================================
-   ESCONDE ÍCONE ORIGINAL DO BOTÃO
-===================================================== */
 .nav-link.is-active {
   opacity: 0;
   pointer-events: none;
 }
 
-/* =====================================================
-   FEEDBACK DE CLIQUE
-===================================================== */
 .top-icon:active,
 .top-icon-search:active {
   transform: translateX(-50%) scale(0.94);
@@ -1001,6 +986,24 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
+  }
+}
+/* Icon Topo */
+@media (max-width: 575px) {
+  .top-icon-search {
+    top: -12px;
+  }
+  #LI-services .top-icon {
+    top: -12px;
+  }
+  #LI-quemSomos .top-icon {
+    top: -12px;
+  }
+  #LI-suporte .top-icon {
+    top: -12px;
+  }
+  #LI-portCert .top-icon {
+    top: -12px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {

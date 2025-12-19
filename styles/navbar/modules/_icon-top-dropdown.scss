@@ -1,6 +1,5 @@
 @use "../core/_vars.scss" as *;
 
-
 #{nb(dropdown-icon-topo)},
 #{nb(dropdown-icon-search)} {
   position: absolute;
@@ -28,27 +27,11 @@
   }
 }
 
-/* =====================================================
-   APENAS >= 576px (DESKTOP / TABLET)
-===================================================== */
-@media (min-width: 576px) {
-  #{nb(dropdown-icon-topo)},
-  #{nb(dropdown-icon-search)} {
-    top: 12px;
-  }
-}
-
-/* =====================================================
-   ESCONDE ÍCONE ORIGINAL DO BOTÃO
-===================================================== */
 #{nb(link)}.is-active {
   opacity: 0;
   pointer-events: none;
 }
 
-/* =====================================================
-   FEEDBACK DE CLIQUE
-===================================================== */
 #{nb(dropdown-icon-topo)}:active,
 #{nb(dropdown-icon-search)}:active {
   transform: translateX(-50%) scale(0.94);

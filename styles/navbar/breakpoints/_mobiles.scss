@@ -49,3 +49,17 @@
         }
     }
 }
+
+/* Icon Topo */
+@media (max-width: 575px){
+    #{nb(dropdown-icon-search)}{
+        top: -12px;
+    }
+    @each $key, $li in $nb-li-no-search{
+        #{$li}{
+            #{nb(dropdown-icon-topo)}{
+                top: -12px;
+            }
+        }
+    }
+}
