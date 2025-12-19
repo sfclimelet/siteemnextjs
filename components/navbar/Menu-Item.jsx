@@ -11,7 +11,7 @@ export default function MenuItem({ item }) {
             {item.icon}
           </button>
 
-          <div className="top-icon-search"></div>
+          <div className="top-icon-search" aria-hidden="true"></div>
 
           <ul className="dropdown-menu">
             <li>
@@ -34,7 +34,7 @@ export default function MenuItem({ item }) {
         {item.icon}
       </button>
 
-      <div className="top-icon"></div>
+      <div className="top-icon" aria-hidden="true"></div>
 
       <ul className="dropdown-menu">
         {item.items.map((sub, i) => (

@@ -3,16 +3,13 @@ import { cloneIcon } from "../../utils/cloneIcons";
 export function setupIcons() {
   if (typeof window === "undefined") return () => {};
 
-  const parents = Array.from(
-    document.querySelectorAll<HTMLElement>(".nav-item.dropdown")
+  const parents = document.querySelectorAll<HTMLElement>(
+    ".nav-item.dropdown:not(#LI-search)"
   );
 
   const removers: Array<() => void> = [];
 
   parents.forEach((parent) => {
-    // IGNORA SEARCH
-    if (parent.id === "LI-search") return;
-
     const toggleBtn = parent.querySelector<HTMLElement>(
       "[data-bs-toggle='dropdown']"
     );
@@ -22,37 +19,27 @@ export function setupIcons() {
 
     const onShow = () => {
       cloneIcon(toggleBtn, topIcon);
+      topIcon.style.display = "flex";
       toggleBtn.classList.add("is-active");
     };
 
     const onHide = () => {
+      topIcon.style.display = "none";
       toggleBtn.classList.remove("is-active");
     };
 
-    const onTopIconClick = () => {
-      toggleBtn.click();
-    };
+    const onClick = () => toggleBtn.click();
 
-    parent.addEventListener("show.bs.dropdown", onShow as EventListener);
-    parent.addEventListener("hide.bs.dropdown", onHide as EventListener);
-    topIcon.addEventListener("click", onTopIconClick);
+    parent.addEventListener("show.bs.dropdown", onShow);
+    parent.addEventListener("hide.bs.dropdown", onHide);
+    topIcon.addEventListener("click", onClick);
 
-    removers.push(() =>
-      parent.removeEventListener("show.bs.dropdown", onShow as EventListener)
-    );
-    removers.push(() =>
-      parent.removeEventListener("hide.bs.dropdown", onHide as EventListener)
-    );
-    removers.push(() =>
-      topIcon.removeEventListener("click", onTopIconClick)
-    );
+    removers.push(() => {
+      parent.removeEventListener("show.bs.dropdown", onShow);
+      parent.removeEventListener("hide.bs.dropdown", onHide);
+      topIcon.removeEventListener("click", onClick);
+    });
   });
 
-  return () => {
-    removers.forEach((fn) => {
-      try {
-        fn();
-      } catch {}
-    });
-  };
+  return () => removers.forEach((fn) => fn());
 }

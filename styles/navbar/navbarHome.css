@@ -899,17 +899,18 @@
 .top-icon,
 .top-icon-search {
   position: absolute;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
   height: 40px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.22s ease, transform 0.22s ease;
-  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+  cursor: pointer;
 }
 .top-icon svg,
 .top-icon-search svg {
@@ -918,62 +919,16 @@
 }
 
 /* =====================================================
-   DROPDOWNS — NÃO SEARCH
+   APENAS >= 576px (DESKTOP / TABLET)
 ===================================================== */
 @media (min-width: 576px) {
-  #LI-services {
-    position: relative;
-    /* Dropdown aberto */
-  }
-  #LI-services .dropdown-menu.show .top-icon {
+  .top-icon,
+  .top-icon-search {
     top: 12px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  #LI-quemSomos {
-    position: relative;
-    /* Dropdown aberto */
-  }
-  #LI-quemSomos .dropdown-menu.show .top-icon {
-    top: 12px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  #LI-suporte {
-    position: relative;
-    /* Dropdown aberto */
-  }
-  #LI-suporte .dropdown-menu.show .top-icon {
-    top: 12px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  #LI-portCert {
-    position: relative;
-    /* Dropdown aberto */
-  }
-  #LI-portCert .dropdown-menu.show .top-icon {
-    top: 12px;
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 /* =====================================================
-   DROPDOWN — SEARCH (EXCLUSIVO)
-===================================================== */
-@media (min-width: 576px) {
-  #LI-search {
-    position: relative;
-  }
-  #LI-search .dropdown-menu.show .top-icon-search {
-    top: 18px;
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 3;
-  }
-}
-/* =====================================================
-   ESCONDE ÍCONE ORIGINAL QUANDO DROPDOWN ABERTO
+   ESCONDE ÍCONE ORIGINAL DO BOTÃO
 ===================================================== */
 .nav-link.is-active {
   opacity: 0;
@@ -981,7 +936,7 @@
 }
 
 /* =====================================================
-   CLICK FEEDBACK (SEM ANIMAÇÃO VISUAL AINDA)
+   FEEDBACK DE CLIQUE
 ===================================================== */
 .top-icon:active,
 .top-icon-search:active {

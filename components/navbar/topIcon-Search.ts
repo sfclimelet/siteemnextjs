@@ -15,24 +15,24 @@ export function setupIconSearch() {
 
   const onShow = () => {
     cloneIcon(toggleBtn, topIcon);
+    topIcon.style.display = "flex";
     toggleBtn.classList.add("is-active");
   };
 
   const onHide = () => {
+    topIcon.style.display = "none";
     toggleBtn.classList.remove("is-active");
   };
 
-  const onTopIconClick = () => {
-    toggleBtn.click();
-  };
+  const onClick = () => toggleBtn.click();
 
-  parent.addEventListener("show.bs.dropdown", onShow as EventListener);
-  parent.addEventListener("hide.bs.dropdown", onHide as EventListener);
-  topIcon.addEventListener("click", onTopIconClick);
+  parent.addEventListener("show.bs.dropdown", onShow);
+  parent.addEventListener("hide.bs.dropdown", onHide);
+  topIcon.addEventListener("click", onClick);
 
   return () => {
-    parent.removeEventListener("show.bs.dropdown", onShow as EventListener);
-    parent.removeEventListener("hide.bs.dropdown", onHide as EventListener);
-    topIcon.removeEventListener("click", onTopIconClick);
+    parent.removeEventListener("show.bs.dropdown", onShow);
+    parent.removeEventListener("hide.bs.dropdown", onHide);
+    topIcon.removeEventListener("click", onClick);
   };
 }

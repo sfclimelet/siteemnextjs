@@ -1,24 +1,25 @@
 @use "../core/_vars.scss" as *;
 
+
 #{nb(dropdown-icon-topo)},
 #{nb(dropdown-icon-search)} {
   position: absolute;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
 
   width: 40px;
   height: 40px;
 
-  display: flex;
+  display: none; // 🔥 JS liga/desliga
   align-items: center;
   justify-content: center;
 
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1; // 🔥 nunca controlar visibilidade aqui
+  pointer-events: auto;
 
-  transition: opacity .22s ease, transform .22s ease;
-
-  z-index: 2;
+  z-index: 10;
+  cursor: pointer;
 
   svg {
     width: 18px;
@@ -27,53 +28,17 @@
 }
 
 /* =====================================================
-   DROPDOWNS — NÃO SEARCH
+   APENAS >= 576px (DESKTOP / TABLET)
 ===================================================== */
 @media (min-width: 576px) {
-
-  @each $key, $li in $nb-li-no-search {
-
-    #{$li} {
-      position: relative;
-
-      /* Dropdown aberto */
-      #{nb(dropdown)}.show {
-
-        #{nb(dropdown-icon-topo)} {
-          top: 12px;
-          opacity: 1;
-          pointer-events: auto;
-        }
-      }
-
-    }
-
+  #{nb(dropdown-icon-topo)},
+  #{nb(dropdown-icon-search)} {
+    top: 12px;
   }
 }
 
 /* =====================================================
-   DROPDOWN — SEARCH (EXCLUSIVO)
-===================================================== */
-@media (min-width: 576px) {
-
-  #{L-indicador(l-search)} {
-    position: relative;
-
-    #{nb(dropdown)}.show {
-
-      #{nb(dropdown-icon-search)} {
-        top: 18px;
-        opacity: 1;
-        pointer-events: auto;
-        z-index: 3;
-      }
-
-    }
-  }
-}
-
-/* =====================================================
-   ESCONDE ÍCONE ORIGINAL QUANDO DROPDOWN ABERTO
+   ESCONDE ÍCONE ORIGINAL DO BOTÃO
 ===================================================== */
 #{nb(link)}.is-active {
   opacity: 0;
@@ -81,7 +46,7 @@
 }
 
 /* =====================================================
-   CLICK FEEDBACK (SEM ANIMAÇÃO VISUAL AINDA)
+   FEEDBACK DE CLIQUE
 ===================================================== */
 #{nb(dropdown-icon-topo)}:active,
 #{nb(dropdown-icon-search)}:active {
