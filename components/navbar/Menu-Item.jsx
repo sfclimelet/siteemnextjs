@@ -12,7 +12,7 @@ export default function MenuItem({ item }) {
           </button>
 
           <ul className="dropdown-menu">
-                      <div className="top-icon-search" aria-hidden="true"></div>
+            <div className="top-icon-search" aria-hidden="true"></div>
             <li>
               <div className="dropdown-search-box">
                 <input className="form-control search-input" placeholder="Buscar..." />
