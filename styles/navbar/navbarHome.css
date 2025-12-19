@@ -113,17 +113,17 @@
 }
 
 /* Icon Top Dropdown */
-.top-icon {
+.top-icon, .top-icon-search {
   border: 3px solid #56adff;
 }
-.top-icon svg {
+.top-icon svg, .top-icon-search svg {
   stroke: #56adff;
 }
 
-.theme-light .top-icon {
+.theme-light .top-icon, .theme-light .top-icon-search {
   border: 3px solid #00d4ff;
 }
-.theme-light .top-icon svg {
+.theme-light .top-icon svg, .theme-light .top-icon-search svg {
   stroke: #00d4ff;
 }
 
@@ -902,6 +902,7 @@
   top: 12px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: none;

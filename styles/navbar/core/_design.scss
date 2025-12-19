@@ -38,14 +38,14 @@
 }
 
 /* Icon Top Dropdown */
-#{nb(dropdown-icon-topo)}{
+#{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)}{
     border: 3px solid $color-icon-topo1;
     svg{
         stroke: $color-icon-topo1;
     }
 }
 #{nb(light-theme)}{
-    #{nb(dropdown-icon-topo)}{
+    #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)}{
         border: 3px solid $color-icon-topo-light;
         svg{
             stroke: $color-icon-menu-light;
