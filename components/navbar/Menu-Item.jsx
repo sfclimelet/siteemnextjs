@@ -13,7 +13,7 @@ export default function MenuItem({ item }) {
 
           <div className="top-icon"></div>
 
-          <ul className="dropdown-menu search-dropdown">
+          <ul className="dropdown-menu">
             <li>
               <div className="dropdown-search-box">
                 <input className="form-control search-input" placeholder="Buscar..." />
@@ -33,7 +33,7 @@ export default function MenuItem({ item }) {
       <button id={item.buttonId} className="nav-link" data-bs-toggle="dropdown">
         {item.icon}
       </button>
-      
+
       <div className="top-icon"></div>
 
       <ul className="dropdown-menu">

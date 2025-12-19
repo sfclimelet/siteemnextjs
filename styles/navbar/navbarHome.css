@@ -113,17 +113,17 @@
 }
 
 /* Icon Top Dropdown */
-.dropdown-top-icon {
+.top-icon {
   border: 3px solid #56adff;
 }
-.dropdown-top-icon svg {
+.top-icon svg {
   stroke: #56adff;
 }
 
-.theme-light .dropdown-top-icon {
+.theme-light .top-icon {
   border: 3px solid #00d4ff;
 }
-.theme-light .dropdown-top-icon svg {
+.theme-light .top-icon svg {
   stroke: #00d4ff;
 }
 
@@ -271,11 +271,11 @@
 }
 
 /* Icon Topo (Só mobile) */
-.dropdown-top-icon {
+.top-icon {
   box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
 }
 
-.theme-light .dropdown-top-icon {
+.theme-light .top-icon {
   box-shadow: 0 0 14px #00d4ff, 0 0 16px #00d4ff inset;
 }
 
@@ -499,20 +499,17 @@
   transition: transform 0.25s ease;
 }
 
-/* =========================================
-   DROPDOWNS — NÃO SEARCH
-   Apenas >= 576px
-========================================= */
 @media (min-width: 576px) {
   #LI-services {
+    position: relative;
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
     /* ===============================
-       ÍCONE DO TOPO (DENTRO)
+       TOP ICON (VISUAL)
     =============================== */
     /* ===============================
-       LINKS (EMPURRADOS PRA BAIXO)
+       LINKS
     =============================== */
   }
   #LI-services .dropdown-menu {
@@ -524,37 +521,39 @@
     min-width: 240px;
     padding-top: 60px;
     padding-bottom: 16px;
+    z-index: 1050;
     transform: none !important;
   }
-  #LI-services .dropdown-top-icon {
+  #LI-services .top-icon {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     pointer-events: auto;
     cursor: pointer;
+    z-index: 2;
   }
   #LI-services .dropdown-item {
-    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 2px;
-    padding: 5px 10px;
+    gap: 6px;
+    padding: 6px 12px;
   }
   #LI-quemSomos {
+    position: relative;
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
     /* ===============================
-       ÍCONE DO TOPO (DENTRO)
+       TOP ICON (VISUAL)
     =============================== */
     /* ===============================
-       LINKS (EMPURRADOS PRA BAIXO)
+       LINKS
     =============================== */
   }
   #LI-quemSomos .dropdown-menu {
@@ -566,37 +565,39 @@
     min-width: 240px;
     padding-top: 60px;
     padding-bottom: 16px;
+    z-index: 1050;
     transform: none !important;
   }
-  #LI-quemSomos .dropdown-top-icon {
+  #LI-quemSomos .top-icon {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     pointer-events: auto;
     cursor: pointer;
+    z-index: 2;
   }
   #LI-quemSomos .dropdown-item {
-    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 2px;
-    padding: 5px 10px;
+    gap: 6px;
+    padding: 6px 12px;
   }
   #LI-suporte {
+    position: relative;
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
     /* ===============================
-       ÍCONE DO TOPO (DENTRO)
+       TOP ICON (VISUAL)
     =============================== */
     /* ===============================
-       LINKS (EMPURRADOS PRA BAIXO)
+       LINKS
     =============================== */
   }
   #LI-suporte .dropdown-menu {
@@ -608,37 +609,39 @@
     min-width: 240px;
     padding-top: 60px;
     padding-bottom: 16px;
+    z-index: 1050;
     transform: none !important;
   }
-  #LI-suporte .dropdown-top-icon {
+  #LI-suporte .top-icon {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     pointer-events: auto;
     cursor: pointer;
+    z-index: 2;
   }
   #LI-suporte .dropdown-item {
-    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 2px;
-    padding: 5px 10px;
+    gap: 6px;
+    padding: 6px 12px;
   }
   #LI-portCert {
+    position: relative;
     /* ===============================
        CONTAINER DO DROPDOWN
     =============================== */
     /* ===============================
-       ÍCONE DO TOPO (DENTRO)
+       TOP ICON (VISUAL)
     =============================== */
     /* ===============================
-       LINKS (EMPURRADOS PRA BAIXO)
+       LINKS
     =============================== */
   }
   #LI-portCert .dropdown-menu {
@@ -650,27 +653,28 @@
     min-width: 240px;
     padding-top: 60px;
     padding-bottom: 16px;
+    z-index: 1050;
     transform: none !important;
   }
-  #LI-portCert .dropdown-top-icon {
+  #LI-portCert .top-icon {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     pointer-events: auto;
     cursor: pointer;
+    z-index: 2;
   }
   #LI-portCert .dropdown-item {
-    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 2px;
-    padding: 5px 10px;
+    gap: 6px;
+    padding: 6px 12px;
   }
 }
 #LI-services .dropdown-menu {
@@ -848,54 +852,36 @@
   height: 18px;
 }
 
-/* Icon Top Dropdown (Só para mobile) */
-.dropdown-top-icon {
+.top-icon {
   position: absolute;
-  top: -24px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  z-index: 99999;
   opacity: 0;
-  transform: translate(-50%, 0);
-  transition: opacity 0.22s ease, transform 0.22s ease;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2;
 }
-.dropdown-top-icon svg {
+.top-icon svg {
   width: 18px;
   height: 18px;
-  transition: all 0.22s ease;
 }
 
-.dropdown-top-icon.visible {
-  /* Ícone topo visível */
-  display: flex !important;
+/* Quando o dropdown estiver aberto */
+.dropdown-menu.show .top-icon {
   opacity: 1;
-  transform: translate(-50%, 0);
+  pointer-events: auto;
 }
 
-.dropdown-top-icon.is-active {
-  /* Ícone topo oculto quando ativo */
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transition: opacity 0.18s ease;
-}
-
+/* Ícone original do botão some */
 .nav-link.is-active {
-  /* Link original oculto quando ativo */
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transition: opacity 0.18s ease;
-}
-
-.dropdown-top-icon:active {
-  /* Clique no ícone topo */
-  transform: translate(-50%, 0) scale(0.92);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .nb-divider {
@@ -1013,7 +999,7 @@
   #LI-search .search-btn {
     padding: 0 var(--search-btn-padding-x);
   }
-  #LI-search .dropdown-top-icon {
+  #LI-search .top-icon {
     margin-bottom: var(--search-top-icon-gap);
   }
 }
@@ -1076,7 +1062,7 @@
   #LI-search .search-btn {
     padding: 0 var(--search-btn-padding-x);
   }
-  #LI-search .dropdown-top-icon {
+  #LI-search .top-icon {
     margin-bottom: var(--search-top-icon-gap);
   }
 }
@@ -1120,7 +1106,7 @@
   #LI-search .search-btn {
     padding: 0 20px;
   }
-  #LI-search .dropdown-top-icon {
+  #LI-search .top-icon {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=navbarHome.css.map */

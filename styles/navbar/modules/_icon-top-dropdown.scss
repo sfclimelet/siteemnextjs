@@ -1,54 +1,43 @@
 @use "../core/_vars.scss" as *;
 
-/* Icon Top Dropdown (Só para mobile) */
-#{nb(dropdown-icon-topo)}{
-    position: absolute;
-    top: -24px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
 
-    width: 40px;
-    height: 40px;
+#{nb(dropdown-icon-topo)} {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    display: none;
-    align-items: center;
-    justify-content: center;
+  width: 40px;
+  height: 40px;
 
-    cursor: pointer;
-    z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    opacity: 0;
-    transform: translate(-50%, 0);
-    transition: opacity 0.22s ease, transform 0.22s ease;
+  opacity: 0;
+  pointer-events: none;
 
-    svg{
-        width: 18px;
-        height: 18px;
-        transition: all 0.22s ease;
-    }
+  transition: opacity .2s ease, transform .2s ease;
+
+  z-index: 2;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
+/* Quando o dropdown estiver aberto */
+#{nb(dropdown)}.show {
 
-#{nb(dropdown-icon-topo)}.visible {
-    /* Ícone topo visível */
-  display: flex !important;
-  opacity: 1;
-  transform: translate(-50%, 0);
+  #{nb(dropdown-icon-topo)} {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
-#{nb(dropdown-icon-topo)}.is-active {
-    /* Ícone topo oculto quando ativo */
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transition: opacity 0.18s ease;
-}
+
+/* Ícone original do botão some */
 #{nb(link)}.is-active {
-    /* Link original oculto quando ativo */
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transition: opacity 0.18s ease;
-}
-#{nb(dropdown-icon-topo)}:active {
-    /* Clique no ícone topo */
-  transform: translate(-50%, 0) scale(0.92);
+  opacity: 0;
+  pointer-events: none;
 }

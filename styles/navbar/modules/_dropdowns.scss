@@ -1,4 +1,5 @@
 @use "../core/_vars.scss" as *;
+// Dropdowns .
 
 @each $key, $li in $nb-li-no-search{
     #{$li}{
