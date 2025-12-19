@@ -51,7 +51,6 @@
   }
 }
 /* ------------------------- LOGO ---------------------------- */
-/* Animação Scroolled */
 /* Botão Hamburger */
 /* Logo */
 /* Icons Menu */
@@ -65,11 +64,6 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
-}
-
-/* Animação Scrooled */
-.scrolled {
-  background: rgba(0, 0, 0, 0.7490196078) !important;
 }
 
 /* Botão Hamburger */
@@ -230,11 +224,6 @@
 /* Animation Hamburger */
 /* Animation - Logo */
 /* Dropdowns */
-/* Animação Scrooled */
-.scrolled {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5490196078);
-}
-
 /* Container */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);

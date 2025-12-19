@@ -2,11 +2,6 @@
 @use "./_colors.scss" as *;
 @use "./_mixins-animations" as *;
 
-/* Animação Scrooled */
-#{nb(animacao-scroolled)}{
-    box-shadow: 0 6px 30px $color-Anm-Scrolled-Secundary;
-}
-
 /* Container */
 #{nb(c-NavHome1)}{
     box-shadow: 0 4px 20px $color-accent;
