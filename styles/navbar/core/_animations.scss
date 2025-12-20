@@ -27,11 +27,34 @@
     @include Animation-Logo();
 }
 
+/* Buttons Menu */
+#{L-indicador(l-search)}{
+    #{nb(btn-search)}{
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+}
+@each $key, $li in $nb-li-no-search{
+    #{$li}{
+        @each $key, $btn in $btn-no-search{
+            #{$btn}{
+              &:hover{
+                transform: scale(1.05);
+              }
+            }
+        }
+    }
+}
+
 /* Icon Topo */
 #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)} {
     box-shadow:
         0 0 14px $color-icon-topo1,
         0 0 16px $color-icon-topo1 inset;
+    &:hover{
+      transform: scale(1.05) !important;
+    }
 }
 #{nb(light-theme)}{
     #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)}{

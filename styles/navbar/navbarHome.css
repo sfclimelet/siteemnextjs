@@ -270,9 +270,69 @@
   }
 }
 
+/* Buttons Menu */
+#LI-search #btnSearch:hover {
+  transform: scale(1.05);
+}
+
+#LI-services #btnServicos:hover {
+  transform: scale(1.05);
+}
+#LI-services #btnQmSms:hover {
+  transform: scale(1.05);
+}
+#LI-services #btnAjSu:hover {
+  transform: scale(1.05);
+}
+#LI-services #btnPortCert:hover {
+  transform: scale(1.05);
+}
+
+#LI-quemSomos #btnServicos:hover {
+  transform: scale(1.05);
+}
+#LI-quemSomos #btnQmSms:hover {
+  transform: scale(1.05);
+}
+#LI-quemSomos #btnAjSu:hover {
+  transform: scale(1.05);
+}
+#LI-quemSomos #btnPortCert:hover {
+  transform: scale(1.05);
+}
+
+#LI-suporte #btnServicos:hover {
+  transform: scale(1.05);
+}
+#LI-suporte #btnQmSms:hover {
+  transform: scale(1.05);
+}
+#LI-suporte #btnAjSu:hover {
+  transform: scale(1.05);
+}
+#LI-suporte #btnPortCert:hover {
+  transform: scale(1.05);
+}
+
+#LI-portCert #btnServicos:hover {
+  transform: scale(1.05);
+}
+#LI-portCert #btnQmSms:hover {
+  transform: scale(1.05);
+}
+#LI-portCert #btnAjSu:hover {
+  transform: scale(1.05);
+}
+#LI-portCert #btnPortCert:hover {
+  transform: scale(1.05);
+}
+
 /* Icon Topo */
 .top-icon, .top-icon-search {
   box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
+}
+.top-icon:hover, .top-icon-search:hover {
+  transform: scale(1.05) !important;
 }
 
 .theme-light .top-icon, .theme-light .top-icon-search {
