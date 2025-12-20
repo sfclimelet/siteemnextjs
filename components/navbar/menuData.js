@@ -10,6 +10,7 @@ export const menuData = [
 
   {
     id: "services",
+    label: "Serviços",
     buttonId: "btnServicos",
     icon: <I.Layers className="iconMn" />,
     items: [
@@ -24,6 +25,7 @@ export const menuData = [
 
   {
     id: "quemSomos",
+    label: "Quem Somos",
     buttonId: "btnQmSms",
     icon: <I.Handshake className="iconMn" />,
     items: [
@@ -36,6 +38,7 @@ export const menuData = [
 
   {
     id: "suporte",
+    label: "Ajuda e Suporte",
     buttonId: "btnAjSu",
     icon: <I.Send className="iconMn" />,
     items: [
@@ -49,6 +52,7 @@ export const menuData = [
 
   {
     id: "portCert",
+    label: "Portifólio e Certificações",
     buttonId: "btnPortCert",
     icon: <I.Briefcase className="iconMn" />,
     items: [

@@ -7,7 +7,7 @@ export default function MenuItem({ item }) {
     return (
       <>
         <li id={`LI-${item.id}`} className="nav-item dropdown">
-          <button id={item.buttonId} className="nav-link nav-icon" data-bs-toggle="dropdown">
+          <button id={item.buttonId} aria-label="Buscar..." title="Buscar..." className="nav-link nav-icon" data-bs-toggle="dropdown">
             {item.icon}
           </button>
 
@@ -29,7 +29,7 @@ export default function MenuItem({ item }) {
 
   return (
     <li id={`LI-${item.id}`} className="nav-item dropdown">
-      <button id={item.buttonId} className="nav-link" data-bs-toggle="dropdown">
+      <button id={item.buttonId} title={item.label} aria-label={item.label} className="nav-link" data-bs-toggle="dropdown">
         {item.icon}
       </button>
 
