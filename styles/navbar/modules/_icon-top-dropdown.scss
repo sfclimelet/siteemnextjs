@@ -2,21 +2,18 @@
 
 #{nb(dropdown-icon-topo)},
 #{nb(dropdown-icon-search)} {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 50%;
 
   width: 40px;
   height: 40px;
 
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 
   opacity: 1; // 🔥 nunca controlar visibilidade aqui
   pointer-events: auto;
+
 
   z-index: 10;
   cursor: pointer;
@@ -25,14 +22,4 @@
     width: 18px;
     height: 18px;
   }
-}
-
-#{nb(link)}.is-active {
-  opacity: 0;
-  pointer-events: none;
-}
-
-#{nb(dropdown-icon-topo)}:active,
-#{nb(dropdown-icon-search)}:active {
-  transform: translateX(-50%) scale(0.94);
 }

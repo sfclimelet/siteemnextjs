@@ -39,9 +39,9 @@
     #{$li}{
         @each $key, $btn in $btn-no-search{
             #{$btn}{
-              &:hover{
-                transform: scale(1.05);
-              }
+                &:hover{
+                  transform: scale(1.05);
+                }
             }
         }
     }
@@ -53,7 +53,7 @@
         0 0 14px $color-icon-topo1,
         0 0 16px $color-icon-topo1 inset;
     &:hover{
-      transform: scale(1.05) !important;
+      transform: scale(1.05);
     }
 }
 #{nb(light-theme)}{

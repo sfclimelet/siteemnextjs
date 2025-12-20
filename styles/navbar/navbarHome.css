@@ -332,7 +332,7 @@
   box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
 }
 .top-icon:hover, .top-icon-search:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.05);
 }
 
 .theme-light .top-icon, .theme-light .top-icon-search {
@@ -1032,14 +1032,10 @@
 
 .top-icon,
 .top-icon-search {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   opacity: 1;
@@ -1051,16 +1047,6 @@
 .top-icon-search svg {
   width: 18px;
   height: 18px;
-}
-
-.nav-link.is-active {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.top-icon:active,
-.top-icon-search:active {
-  transform: translateX(-50%) scale(0.94);
 }
 
 .nb-divider {
