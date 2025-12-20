@@ -1049,6 +1049,11 @@
   height: 18px;
 }
 
+.nav-link.is-active {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .nb-divider {
   display: none;
   width: 3px;
