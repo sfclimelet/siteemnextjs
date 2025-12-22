@@ -2,127 +2,152 @@
 @use "./_colors.scss" as *;
 @use "./_mixins-animations" as *;
 
-/* Container */
-#{nb(c-NavHome1)}{
-    box-shadow: 0 4px 20px $color-accent;
+/* ===============================
+   Container
+=============================== */
+#{nb(c-NavHome1)} {
+  box-shadow: 0 4px 20px $color-accent;
 }
 
-/* Botão Hamburger */
-#{nb(hamburger)}{
-    @include Animation-Hamburger(nb(activ), nb(hamburger-line));
-    #{nb(hamburger-line)}{
-        box-shadow: 0 0 6px $color-line;
-    }
-}
-#{nb(light-theme)}{
-    #{nb(hamburger)}{
-        #{nb(hamburger-line)}{
-            box-shadow: $color-line-light;
-        }
-    }
+/* ===============================
+   Botão Hamburger
+=============================== */
+#{nb(hamburger)} {
+  @include Animation-Hamburger(nb(activ), nb(hamburger-line));
+
+  #{nb(hamburger-line)} {
+    filter: drop-shadow(0 0 6px $color-line);
+    will-change: transform, opacity;
+  }
 }
 
-/* Logo */
-#{nb(logo)}{
-    @include Animation-Logo();
+#{nb(light-theme)} {
+  #{nb(hamburger)} {
+    #{nb(hamburger-line)} {
+      filter: drop-shadow(0 0 6px $color-line-light);
+    }
+  }
 }
 
-/* Buttons Menu */
-#{L-indicador(l-search)}{
-    #{nb(btn-search)}{
-      &:hover{
-        transform: scale(1.05);
-      }
-    }
-}
-@each $key, $li in $nb-li-no-search{
-    #{$li}{
-        @each $key, $btn in $btn-no-search{
-            #{$btn}{
-                &:hover{
-                  transform: scale(1.05);
-                }
-            }
-        }
-    }
+/* ===============================
+   Logo
+=============================== */
+#{nb(logo)} {
+  @include Animation-Logo();
 }
 
-/* Icon Topo */
-#{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)} {
-    box-shadow:
-        0 0 14px $color-icon-topo1,
-        0 0 16px $color-icon-topo1 inset;
-    &:hover{
+/* ===============================
+   Buttons Menu
+=============================== */
+#{L-indicador(l-search)} {
+  #{nb(btn-search)} {
+    &:hover {
       transform: scale(1.05);
     }
-}
-#{nb(light-theme)}{
-    #{nb(dropdown-icon-topo)}, #{nb(dropdown-icon-search)}{
-        box-shadow:
-            0 0 14px $color-icon-topo-light,
-            0 0 16px $color-icon-topo-light inset;
-    }
+  }
 }
 
-/* Search */
-#{L-indicador(l-search)}{
-    #{nb(dropdown)}{
-        box-shadow: 0 0 8px $color-search-accent;
+@each $key, $li in $nb-li-no-search {
+  #{$li} {
+    @each $key, $btn in $btn-no-search {
+      #{$btn} {
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
     }
-    #{search(inpt)}{
-        &::placeholder{
-            color: $color-search-input-plchld-primary;
-        }
-        &:focus{
-            border-color: $color-search-accent;
-            box-shadow: 0 0 8px $color-search-input-accent;
-        }
-    }
-    #{search(btn-search)}{
-        &:hover{
-            transform: scale(1.05);
-            box-shadow: 0 0 10px $color-search-button-accent;
-        }
-        &:active{
-            transform: scale(0.96);
-        }
-    }
+  }
 }
 
-/* Dropdowns */
+/* ===============================
+   Ícones Topo (OTIMIZADO)
+=============================== */
+#{nb(dropdown-icon-topo)},
+#{nb(dropdown-icon-search)} {
+  filter:
+    drop-shadow(0 0 8px $color-icon-topo1)
+    drop-shadow(0 0 12px $color-icon-topo1);
+  transition: transform .2s ease, opacity .2s ease;
+  will-change: transform, opacity;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: .9;
+  }
+}
+
+#{nb(light-theme)} {
+  #{nb(dropdown-icon-topo)},
+  #{nb(dropdown-icon-search)} {
+    filter:
+      drop-shadow(0 0 8px $color-icon-topo-light)
+      drop-shadow(0 0 12px $color-icon-topo-light);
+  }
+}
+
+/* ===============================
+   Search
+=============================== */
+#{L-indicador(l-search)} {
+
+  #{nb(dropdown)} {
+    filter: drop-shadow(0 0 8px $color-search-accent);
+  }
+
+  #{search(inpt)} {
+    &::placeholder {
+      color: $color-search-input-plchld-primary;
+    }
+
+    &:focus {
+      border-color: $color-search-accent;
+      filter: drop-shadow(0 0 6px $color-search-input-accent);
+    }
+  }
+
+  #{search(btn-search)} {
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 8px $color-search-button-accent);
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+/* ===============================
+   Dropdowns (OTIMIZADO)
+=============================== */
 @each $key, $li in $nb-li-no-search {
   #{$li} {
 
     #{nb(dropdown)} {
-      box-shadow: 0 1px 12px $color-dropdowns-animation;
+      filter: drop-shadow(0 4px 10px $color-dropdowns-animation);
     }
 
     #{nb(dropdown-item)},
     #{nb(link)} {
-      @include Animation-Dropdowns(
-        $color-dropdowns-animation
-      );
+      @include Animation-Dropdowns($color-dropdowns-animation);
     }
 
   }
 }
-#{nb(light-theme)} {
 
+#{nb(light-theme)} {
   @each $key, $li in $nb-li-no-search {
     #{$li} {
 
       #{nb(dropdown)} {
-        box-shadow: 0 1px 12px $color-dropdowns-animation-light;
+        filter: drop-shadow(0 4px 10px $color-dropdowns-animation-light);
       }
 
       #{nb(dropdown-item)},
       #{nb(link)} {
-        @include Animation-Dropdowns(
-          $color-dropdowns-animation-light
-        );
+        @include Animation-Dropdowns($color-dropdowns-animation-light);
       }
 
     }
   }
-
 }

@@ -224,12 +224,16 @@
 /* Animation Hamburger */
 /* Animation - Logo */
 /* Dropdowns */
-/* Container */
+/* ===============================
+   Container
+=============================== */
 #nbHome {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4509803922);
 }
 
-/* Botão Hamburger */
+/* ===============================
+   Botão Hamburger
+=============================== */
 #MenuHamburger.active .line:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -241,14 +245,17 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 #MenuHamburger .line {
-  box-shadow: 0 0 6px #56adff;
+  filter: drop-shadow(0 0 6px #56adff);
+  will-change: transform, opacity;
 }
 
 .theme-light #MenuHamburger .line {
-  box-shadow: #00d4ff;
+  filter: drop-shadow(0 0 6px #00d4ff);
 }
 
-/* Logo */
+/* ===============================
+   Logo
+=============================== */
 #logoNavbar {
   animation: breathe 4s ease-in-out infinite;
 }
@@ -270,7 +277,9 @@
   }
 }
 
-/* Buttons Menu */
+/* ===============================
+   Buttons Menu
+=============================== */
 #LI-search #btnSearch:hover {
   transform: scale(1.05);
 }
@@ -327,21 +336,31 @@
   transform: scale(1.05);
 }
 
-/* Icon Topo */
-.top-icon, .top-icon-search {
-  box-shadow: 0 0 14px #56adff, 0 0 16px #56adff inset;
+/* ===============================
+   Ícones Topo (OTIMIZADO)
+=============================== */
+.top-icon,
+.top-icon-search {
+  filter: drop-shadow(0 0 8px #56adff) drop-shadow(0 0 12px #56adff);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  will-change: transform, opacity;
 }
-.top-icon:hover, .top-icon-search:hover {
+.top-icon:hover,
+.top-icon-search:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
 
-.theme-light .top-icon, .theme-light .top-icon-search {
-  box-shadow: 0 0 14px #00d4ff, 0 0 16px #00d4ff inset;
+.theme-light .top-icon,
+.theme-light .top-icon-search {
+  filter: drop-shadow(0 0 8px #00d4ff) drop-shadow(0 0 12px #00d4ff);
 }
 
-/* Search */
+/* ===============================
+   Search
+=============================== */
 #LI-search .dropdown-menu {
-  box-shadow: 0 0 8px #21c7ff;
+  filter: drop-shadow(0 0 8px #21c7ff);
 }
 #LI-search .search-input::-moz-placeholder {
   color: #9ac5ff;
@@ -351,19 +370,21 @@
 }
 #LI-search .search-input:focus {
   border-color: #21c7ff;
-  box-shadow: 0 0 8px #00caff;
+  filter: drop-shadow(0 0 6px #00caff);
 }
 #LI-search .search-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #008cff;
+  filter: drop-shadow(0 0 8px #008cff);
 }
 #LI-search .search-btn:active {
   transform: scale(0.96);
 }
 
-/* Dropdowns */
+/* ===============================
+   Dropdowns (OTIMIZADO)
+=============================== */
 #LI-services .dropdown-menu {
-  box-shadow: 0 1px 12px #56adff;
+  filter: drop-shadow(0 4px 10px #56adff);
 }
 #LI-services .dropdown-item,
 #LI-services .nav-link {
@@ -388,7 +409,7 @@
 }
 
 #LI-quemSomos .dropdown-menu {
-  box-shadow: 0 1px 12px #56adff;
+  filter: drop-shadow(0 4px 10px #56adff);
 }
 #LI-quemSomos .dropdown-item,
 #LI-quemSomos .nav-link {
@@ -413,7 +434,7 @@
 }
 
 #LI-suporte .dropdown-menu {
-  box-shadow: 0 1px 12px #56adff;
+  filter: drop-shadow(0 4px 10px #56adff);
 }
 #LI-suporte .dropdown-item,
 #LI-suporte .nav-link {
@@ -438,7 +459,7 @@
 }
 
 #LI-portCert .dropdown-menu {
-  box-shadow: 0 1px 12px #56adff;
+  filter: drop-shadow(0 4px 10px #56adff);
 }
 #LI-portCert .dropdown-item,
 #LI-portCert .nav-link {
@@ -463,7 +484,7 @@
 }
 
 .theme-light #LI-services .dropdown-menu {
-  box-shadow: 0 1px 12px #00d4ff;
+  filter: drop-shadow(0 4px 10px #00d4ff);
 }
 .theme-light #LI-services .dropdown-item,
 .theme-light #LI-services .nav-link {
@@ -487,7 +508,7 @@
   transition: transform 0.25s ease;
 }
 .theme-light #LI-quemSomos .dropdown-menu {
-  box-shadow: 0 1px 12px #00d4ff;
+  filter: drop-shadow(0 4px 10px #00d4ff);
 }
 .theme-light #LI-quemSomos .dropdown-item,
 .theme-light #LI-quemSomos .nav-link {
@@ -511,7 +532,7 @@
   transition: transform 0.25s ease;
 }
 .theme-light #LI-suporte .dropdown-menu {
-  box-shadow: 0 1px 12px #00d4ff;
+  filter: drop-shadow(0 4px 10px #00d4ff);
 }
 .theme-light #LI-suporte .dropdown-item,
 .theme-light #LI-suporte .nav-link {
@@ -535,7 +556,7 @@
   transition: transform 0.25s ease;
 }
 .theme-light #LI-portCert .dropdown-menu {
-  box-shadow: 0 1px 12px #00d4ff;
+  filter: drop-shadow(0 4px 10px #00d4ff);
 }
 .theme-light #LI-portCert .dropdown-item,
 .theme-light #LI-portCert .nav-link {
