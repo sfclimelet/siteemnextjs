@@ -1,46 +1,61 @@
 @use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
 
-/* Animation Hamburger */
-@mixin Animation-Hamburger($active-class, $line-selector){
-    &#{$active-class}{
-        #{$line-selector}:nth-child(1){
-            transform: translateY(9px) rotate(45deg);
-        }
-        #{$line-selector}:nth-child(2){
-            opacity: 0;
-            transform: scaleX(0);
-        }
-        #{$line-selector}:nth-child(3){
-            transform: translateY(-9px) rotate(-45deg);
-        }
+/* ===============================
+   Animation Hamburger (OK)
+=============================== */
+@mixin Animation-Hamburger($active-class, $line-selector) {
+  &#{$active-class} {
+    #{$line-selector}:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
     }
+    #{$line-selector}:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    #{$line-selector}:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
 }
 
-/* Animation - Logo */
-@mixin Animation-Logo(){
-    &:hover{
-        filter: drop-shadow(0 0 14px $color-logo);
+/* ===============================
+   Animation - Logo (OTIMIZADO)
+=============================== */
+@mixin Animation-Logo() {
+  will-change: transform, opacity;
+
+  /* glow só no hover (remove peso constante) */
+  &:hover {
+    filter: drop-shadow(0 0 14px $color-logo);
+  }
+
+  animation: logo-breathe 5s ease-in-out infinite;
+
+  @keyframes logo-breathe {
+    0% {
+      opacity: 0.75;
+      transform: scale(1);
     }
-    animation: breathe 4s ease-in-out infinite;
-    @keyframes breathe {
-        0%{
-            opacity: 0.75;
-            transform: scale(1);
-        }
-        50%{
-            opacity: 1;
-            transform: scale(1.04);
-        }
-        100%{
-            opacity: 0.75;
-            transform: scale(1);
-        }
+    50% {
+      opacity: 1;
+      transform: scale(1.035);
     }
+    100% {
+      opacity: 0.75;
+      transform: scale(1);
+    }
+  }
 }
 
-/* Dropdowns */
-@mixin Animation-Dropdowns($color-hover, $x: 1.05, $duration: .25s) {
+/* ===============================
+   Dropdowns (OTIMIZADO)
+=============================== */
+@mixin Animation-Dropdowns(
+  $color-hover,
+  $x: 1.05,
+  $duration: .22s
+) {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -48,21 +63,20 @@
   transition:
     color $duration ease,
     transform $duration ease,
-    background-color $duration ease,
-    filter $duration ease;
+    background-color $duration ease;
 
-  will-change: transform, color;
+  will-change: transform;
+
+  svg {
+    transition: transform $duration ease;
+  }
 
   &:hover {
     color: $color-hover;
     transform: scale($x);
 
     svg {
-      transform: scale(1.05);
+      transform: scale(1.06);
     }
-  }
-
-  svg {
-    transition: transform $duration ease;
   }
 }

@@ -221,9 +221,15 @@
   background: #fff;
 }
 
-/* Animation Hamburger */
-/* Animation - Logo */
-/* Dropdowns */
+/* ===============================
+   Animation Hamburger (OK)
+=============================== */
+/* ===============================
+   Animation - Logo (OTIMIZADO)
+=============================== */
+/* ===============================
+   Dropdowns (OTIMIZADO)
+=============================== */
 /* ===============================
    Container
 =============================== */
@@ -257,19 +263,21 @@
    Logo
 =============================== */
 #logoNavbar {
-  animation: breathe 4s ease-in-out infinite;
+  will-change: transform, opacity;
+  /* glow só no hover (remove peso constante) */
+  animation: logo-breathe 5s ease-in-out infinite;
 }
 #logoNavbar:hover {
   filter: drop-shadow(0 0 14px #00bfff);
 }
-@keyframes breathe {
+@keyframes logo-breathe {
   0% {
     opacity: 0.75;
     transform: scale(1);
   }
   50% {
     opacity: 1;
-    transform: scale(1.04);
+    transform: scale(1.035);
   }
   100% {
     opacity: 0.75;
@@ -391,8 +399,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+#LI-services .dropdown-item svg,
+#LI-services .nav-link svg {
+  transition: transform 0.22s ease;
 }
 #LI-services .dropdown-item:hover,
 #LI-services .nav-link:hover {
@@ -401,11 +413,7 @@
 }
 #LI-services .dropdown-item:hover svg,
 #LI-services .nav-link:hover svg {
-  transform: scale(1.05);
-}
-#LI-services .dropdown-item svg,
-#LI-services .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 
 #LI-quemSomos .dropdown-menu {
@@ -416,8 +424,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+#LI-quemSomos .dropdown-item svg,
+#LI-quemSomos .nav-link svg {
+  transition: transform 0.22s ease;
 }
 #LI-quemSomos .dropdown-item:hover,
 #LI-quemSomos .nav-link:hover {
@@ -426,11 +438,7 @@
 }
 #LI-quemSomos .dropdown-item:hover svg,
 #LI-quemSomos .nav-link:hover svg {
-  transform: scale(1.05);
-}
-#LI-quemSomos .dropdown-item svg,
-#LI-quemSomos .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 
 #LI-suporte .dropdown-menu {
@@ -441,8 +449,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+#LI-suporte .dropdown-item svg,
+#LI-suporte .nav-link svg {
+  transition: transform 0.22s ease;
 }
 #LI-suporte .dropdown-item:hover,
 #LI-suporte .nav-link:hover {
@@ -451,11 +463,7 @@
 }
 #LI-suporte .dropdown-item:hover svg,
 #LI-suporte .nav-link:hover svg {
-  transform: scale(1.05);
-}
-#LI-suporte .dropdown-item svg,
-#LI-suporte .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 
 #LI-portCert .dropdown-menu {
@@ -466,8 +474,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+#LI-portCert .dropdown-item svg,
+#LI-portCert .nav-link svg {
+  transition: transform 0.22s ease;
 }
 #LI-portCert .dropdown-item:hover,
 #LI-portCert .nav-link:hover {
@@ -476,11 +488,7 @@
 }
 #LI-portCert .dropdown-item:hover svg,
 #LI-portCert .nav-link:hover svg {
-  transform: scale(1.05);
-}
-#LI-portCert .dropdown-item svg,
-#LI-portCert .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 
 .theme-light #LI-services .dropdown-menu {
@@ -491,8 +499,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+.theme-light #LI-services .dropdown-item svg,
+.theme-light #LI-services .nav-link svg {
+  transition: transform 0.22s ease;
 }
 .theme-light #LI-services .dropdown-item:hover,
 .theme-light #LI-services .nav-link:hover {
@@ -501,11 +513,7 @@
 }
 .theme-light #LI-services .dropdown-item:hover svg,
 .theme-light #LI-services .nav-link:hover svg {
-  transform: scale(1.05);
-}
-.theme-light #LI-services .dropdown-item svg,
-.theme-light #LI-services .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 .theme-light #LI-quemSomos .dropdown-menu {
   filter: drop-shadow(0 4px 10px #00d4ff);
@@ -515,8 +523,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+.theme-light #LI-quemSomos .dropdown-item svg,
+.theme-light #LI-quemSomos .nav-link svg {
+  transition: transform 0.22s ease;
 }
 .theme-light #LI-quemSomos .dropdown-item:hover,
 .theme-light #LI-quemSomos .nav-link:hover {
@@ -525,11 +537,7 @@
 }
 .theme-light #LI-quemSomos .dropdown-item:hover svg,
 .theme-light #LI-quemSomos .nav-link:hover svg {
-  transform: scale(1.05);
-}
-.theme-light #LI-quemSomos .dropdown-item svg,
-.theme-light #LI-quemSomos .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 .theme-light #LI-suporte .dropdown-menu {
   filter: drop-shadow(0 4px 10px #00d4ff);
@@ -539,8 +547,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+.theme-light #LI-suporte .dropdown-item svg,
+.theme-light #LI-suporte .nav-link svg {
+  transition: transform 0.22s ease;
 }
 .theme-light #LI-suporte .dropdown-item:hover,
 .theme-light #LI-suporte .nav-link:hover {
@@ -549,11 +561,7 @@
 }
 .theme-light #LI-suporte .dropdown-item:hover svg,
 .theme-light #LI-suporte .nav-link:hover svg {
-  transform: scale(1.05);
-}
-.theme-light #LI-suporte .dropdown-item svg,
-.theme-light #LI-suporte .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 .theme-light #LI-portCert .dropdown-menu {
   filter: drop-shadow(0 4px 10px #00d4ff);
@@ -563,8 +571,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  transition: color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
-  will-change: transform, color;
+  transition: color 0.22s ease, transform 0.22s ease, background-color 0.22s ease;
+  will-change: transform;
+}
+.theme-light #LI-portCert .dropdown-item svg,
+.theme-light #LI-portCert .nav-link svg {
+  transition: transform 0.22s ease;
 }
 .theme-light #LI-portCert .dropdown-item:hover,
 .theme-light #LI-portCert .nav-link:hover {
@@ -573,11 +585,7 @@
 }
 .theme-light #LI-portCert .dropdown-item:hover svg,
 .theme-light #LI-portCert .nav-link:hover svg {
-  transform: scale(1.05);
-}
-.theme-light #LI-portCert .dropdown-item svg,
-.theme-light #LI-portCert .nav-link svg {
-  transition: transform 0.25s ease;
+  transform: scale(1.06);
 }
 
 @media (min-width: 576px) {
