@@ -48,6 +48,24 @@
   }
 }
 
+/* Buttons Menu */
+@mixin Animation-Button-mn(){
+    &::after{
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        background: radial-gradient(circle, $color-icon-menu 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity .2s ease;
+        pointer-events: none;
+
+    }
+    &:hover::after{
+        opacity: .6;
+    }
+}
+
 /* ===============================
    Dropdowns (OTIMIZADO)
 =============================== */

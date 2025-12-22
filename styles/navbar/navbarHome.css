@@ -227,6 +227,7 @@
 /* ===============================
    Animation - Logo (OTIMIZADO)
 =============================== */
+/* Buttons Menu */
 /* ===============================
    Dropdowns (OTIMIZADO)
 =============================== */
@@ -288,60 +289,397 @@
 /* ===============================
    Buttons Menu
 =============================== */
+#LI-search #btnSearch::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-search #btnSearch:hover::after {
+  opacity: 0.6;
+}
 #LI-search #btnSearch:hover {
   transform: scale(1.05);
 }
 
+#LI-services #btnServicos {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-services #btnServicos::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-services #btnServicos:hover::after {
+  opacity: 0.6;
+}
 #LI-services #btnServicos:hover {
   transform: scale(1.05);
+}
+#LI-services #btnQmSms {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-services #btnQmSms::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-services #btnQmSms:hover::after {
+  opacity: 0.6;
 }
 #LI-services #btnQmSms:hover {
   transform: scale(1.05);
 }
+#LI-services #btnAjSu {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-services #btnAjSu::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-services #btnAjSu:hover::after {
+  opacity: 0.6;
+}
 #LI-services #btnAjSu:hover {
   transform: scale(1.05);
+}
+#LI-services #btnPortCert {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-services #btnPortCert::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-services #btnPortCert:hover::after {
+  opacity: 0.6;
 }
 #LI-services #btnPortCert:hover {
   transform: scale(1.05);
 }
 
+#LI-quemSomos #btnServicos {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-quemSomos #btnServicos::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-quemSomos #btnServicos:hover::after {
+  opacity: 0.6;
+}
 #LI-quemSomos #btnServicos:hover {
   transform: scale(1.05);
+}
+#LI-quemSomos #btnQmSms {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-quemSomos #btnQmSms::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-quemSomos #btnQmSms:hover::after {
+  opacity: 0.6;
 }
 #LI-quemSomos #btnQmSms:hover {
   transform: scale(1.05);
 }
+#LI-quemSomos #btnAjSu {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-quemSomos #btnAjSu::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-quemSomos #btnAjSu:hover::after {
+  opacity: 0.6;
+}
 #LI-quemSomos #btnAjSu:hover {
   transform: scale(1.05);
+}
+#LI-quemSomos #btnPortCert {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-quemSomos #btnPortCert::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-quemSomos #btnPortCert:hover::after {
+  opacity: 0.6;
 }
 #LI-quemSomos #btnPortCert:hover {
   transform: scale(1.05);
 }
 
+#LI-suporte #btnServicos {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-suporte #btnServicos::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-suporte #btnServicos:hover::after {
+  opacity: 0.6;
+}
 #LI-suporte #btnServicos:hover {
   transform: scale(1.05);
+}
+#LI-suporte #btnQmSms {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-suporte #btnQmSms::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-suporte #btnQmSms:hover::after {
+  opacity: 0.6;
 }
 #LI-suporte #btnQmSms:hover {
   transform: scale(1.05);
 }
+#LI-suporte #btnAjSu {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-suporte #btnAjSu::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-suporte #btnAjSu:hover::after {
+  opacity: 0.6;
+}
 #LI-suporte #btnAjSu:hover {
   transform: scale(1.05);
+}
+#LI-suporte #btnPortCert {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-suporte #btnPortCert::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-suporte #btnPortCert:hover::after {
+  opacity: 0.6;
 }
 #LI-suporte #btnPortCert:hover {
   transform: scale(1.05);
 }
 
+#LI-portCert #btnServicos {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-portCert #btnServicos::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-portCert #btnServicos:hover::after {
+  opacity: 0.6;
+}
 #LI-portCert #btnServicos:hover {
   transform: scale(1.05);
+}
+#LI-portCert #btnQmSms {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-portCert #btnQmSms::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-portCert #btnQmSms:hover::after {
+  opacity: 0.6;
 }
 #LI-portCert #btnQmSms:hover {
   transform: scale(1.05);
 }
+#LI-portCert #btnAjSu {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-portCert #btnAjSu::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-portCert #btnAjSu:hover::after {
+  opacity: 0.6;
+}
 #LI-portCert #btnAjSu:hover {
   transform: scale(1.05);
 }
+#LI-portCert #btnPortCert {
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+#LI-portCert #btnPortCert::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #56adff 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+#LI-portCert #btnPortCert:hover::after {
+  opacity: 0.6;
+}
 #LI-portCert #btnPortCert:hover {
   transform: scale(1.05);
+}
+
+.theme-light #LI-search #btnSearch::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-services #btnServicos::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-services #btnQmSms::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-services #btnAjSu::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-services #btnPortCert::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-quemSomos #btnServicos::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-quemSomos #btnQmSms::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-quemSomos #btnAjSu::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-quemSomos #btnPortCert::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-suporte #btnServicos::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-suporte #btnQmSms::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-suporte #btnAjSu::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-suporte #btnPortCert::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-portCert #btnServicos::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-portCert #btnQmSms::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-portCert #btnAjSu::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+}
+.theme-light #LI-portCert #btnPortCert::after {
+  background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
 }
 
 /* ===============================

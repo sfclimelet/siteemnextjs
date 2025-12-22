@@ -41,18 +41,42 @@
 =============================== */
 #{L-indicador(l-search)} {
   #{nb(btn-search)} {
+    @include Animation-Button-mn();
     &:hover {
       transform: scale(1.05);
     }
   }
 }
-
 @each $key, $li in $nb-li-no-search {
   #{$li} {
     @each $key, $btn in $btn-no-search {
       #{$btn} {
+        transition: transform .2s ease;
+        will-change: transform;
+        @include Animation-Button-mn();
+
         &:hover {
           transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+#{nb(light-theme)}{
+  #{L-indicador(l-search)}{
+    #{nb(btn-search)}{
+      &::after{
+        background: radial-gradient(circle, $color-icon-menu-light 0%, transparent 70%);
+      }
+    }
+  }
+  @each $key, $li in $nb-li-no-search{
+    #{$li}{
+      @each $key, $btn in $btn-no-search{
+        #{$btn}{
+        &::after{
+          background: radial-gradient(circle, $color-icon-menu-light 0%, transparent 70%);
+      }
         }
       }
     }
