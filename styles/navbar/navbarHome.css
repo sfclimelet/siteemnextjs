@@ -1518,6 +1518,111 @@
     margin-top: 12px;
   }
 }
+/* Animação em mobile removida */
+@media (max-width: 575px) {
+  #LI-search #btnSearch::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-services #btnServicos::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-services #btnQmSms::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-services #btnAjSu::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-services #btnPortCert::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-quemSomos #btnServicos::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-quemSomos #btnQmSms::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-quemSomos #btnAjSu::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-quemSomos #btnPortCert::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-suporte #btnServicos::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-suporte #btnQmSms::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-suporte #btnAjSu::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-suporte #btnPortCert::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-portCert #btnServicos::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-portCert #btnQmSms::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-portCert #btnAjSu::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+  #LI-portCert #btnPortCert::after {
+    animation: none;
+    transition: none;
+    opacity: 0;
+    content: none;
+  }
+}
 @media (min-width: 576px) and (max-width: 991px) {
   #nbHome {
     --nb-logo-offset: 30px;

@@ -80,3 +80,31 @@
         }
     }
 }
+
+/* Animação em mobile removida */
+@media (max-width: 575px) {
+    #{L-indicador(l-search)}{
+        #{nb(btn-search)}{
+            &::after{
+                animation: none;
+                transition: none;
+                opacity: 0;
+                content: none;
+            }
+        }
+    }
+    @each $key, $li in $nb-li-no-search{
+    #{$li}{
+      @each $key, $btn in $btn-no-search{
+        #{$btn}{
+            &::after{
+                animation: none;
+                transition: none;
+                opacity: 0;
+                content: none;
+            }
+        }
+      }
+    }
+  }
+}
