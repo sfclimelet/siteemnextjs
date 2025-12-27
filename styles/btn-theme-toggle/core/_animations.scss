@@ -1,6 +1,8 @@
 @use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
 
 #{$btn-toggle}{
+    box-shadow: 0 0 10px $btn-theme-color-shadow;
     &:hover{
         transform: translateX(-2px);
     }

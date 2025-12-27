@@ -8,6 +8,7 @@
 
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    border: none;
 
     padding: 0.8rem 1.1rem;
     font-size: 0.9rem;
@@ -16,4 +17,11 @@
 
     transition: all 0.5s ease;
 
+}
+
+#{$btn-toggle}{
+    svg{
+        width: 18px;
+        height: 18px;
+    }
 }

@@ -5,7 +5,7 @@ import { ThemeContext } from "./ThemeProvider";
 
 import { IconsBtnToggle } from "../Icons/Icons";
 
-import styles from "../styles/btn-theme-toggle/Btn-toggle.scss";
+import styles from "../styles/btn-theme-toggle/Btn-toggle.module.scss";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeContext);
