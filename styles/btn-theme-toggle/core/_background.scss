@@ -1,0 +1,14 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
+
+/* Botão */
+#{$btn-toggle}{
+    background: linear-gradient(135deg, $btn-theme-color-primary 0%, $btn-theme-color-secondary 100%);
+}
+
+/* Icone */
+#{$btn-toggle}{
+    svg{
+        stroke: $btn-theme-color-icon;
+    }
+}

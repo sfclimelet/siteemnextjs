@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* BOTÃO TOGGLE */
+/* ESTADOS - LIGHT E DARK */
+/* BTN THEME */
+/* Botão */
+#BtnToggleTheme {
+  background: linear-gradient(135deg, #0078ff 0%, #00c6ff 100%);
+}
+
+/* Icone */
+#BtnToggleTheme svg {
+  stroke: #222;
+}
+
+#BtnToggleTheme {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  z-index: 9999 !important;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#BtnToggleTheme:hover {
+  transform: translateX(-2px);
+}/*# sourceMappingURL=Btn-toggle.css.map */

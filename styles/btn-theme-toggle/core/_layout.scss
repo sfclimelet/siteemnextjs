@@ -1,0 +1,19 @@
+@use "./_vars.scss" as *;
+
+#{$btn-toggle}{
+    position: fixed;
+    top: 150px;
+    right: 0;
+    z-index: 9999 !important;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+
+}

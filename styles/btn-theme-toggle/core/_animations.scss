@@ -1,0 +1,7 @@
+@use "./_vars.scss" as *;
+
+#{$btn-toggle}{
+    &:hover{
+        transform: translateX(-2px);
+    }
+}
