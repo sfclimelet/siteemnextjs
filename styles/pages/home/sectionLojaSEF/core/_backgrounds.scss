@@ -1,58 +1,28 @@
 @use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
 
-@mixin DESIGN-LOJA-SEF(){
-    #{$c-Loja}{
-        background: $crd-cor-bg;
-        border: 1px solid $crd-cor-brd;
-        box-shadow: 0 8px 22px $crd-cor-sha;
-        border-radius: 16px;
-        padding: 2.2rem 1.5rem;
-        margin: 2rem auto;
+/* Container */
+#{$Section-Lj}{
+    background: $s-color-loja-sef-primary;
+}
 
-        #{$lj-top}{
-            margin-bottom: 1.4rem;
-            #{$lj-top-icon} svg{
-                font-size: 2.2rem;
-                color: $crd-cor-icon;
-                margin-bottom: 1rem;
-            }
-            #{$lj-curve}{
-                width: 180%;
-                height: 220px;
-                top: -120px;
-                content: "";
-                background: $crd-cor-curve;
-                opacity: 0.30;
-                border-radius: 50%;
-            }
-        }
-        #{$lj-title}{
-            font-size: 1.7rem;
-            font-weight: 700;
-            color: $crd-cor-title;
-            margin-bottom: 0.4rem;
-            z-index: 2;
-        }
-        #{$lj-descri}{
-            font-size: 1rem;
-            color: $crd-cor-descri;
-            line-height: 1.55;
-            margin: 0 auto 1.6rem auto;
-            z-index: 2;
-        }
-        #{$lj-btn}{
-            background: $crd-cor-btn-bg;
-            color: $crd-cor-btn-txt;
-            padding: 0.75rem 1.4rem;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 1rem;
-            gap: 0.5rem;
-            border: none;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background 0.35s ease, transform 0.25s ease;
-        }
-    }
+/* Elemento */
+#{$lj-top-icon}{
+    color: $s-color-loja-sef-icon-top;
+}
+#{$lj-curve}{
+    background: $s-color-loja-sef-curve;
+}
+
+#{$lj-title}{
+    color: $s-color-loja-sef-title;
+}
+
+#{$lj-descri}{
+    color: $s-color-loja-sef-descri;
+}
+
+#{$lj-btn}{
+    background: $s-color-loja-sef-btn;
+    color: $s-color-loja-sef-btn-txt;
 }

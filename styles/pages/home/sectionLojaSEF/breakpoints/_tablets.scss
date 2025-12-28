@@ -1,7 +1,7 @@
 @use "../core/_vars.scss" as *;
 
 @mixin LojaSEF-tablets-576-756pxs() {
-    #{$c-Loja} {
+    #{$Section-Lj} {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -66,7 +66,7 @@
 }
 
 @mixin LojaSEF-tablets-756-991pxs() {
-    #{$c-Loja} {
+    #{$Section-Lj} {
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -1,7 +1,7 @@
 @use "../core/_vars.scss" as *;
 
 @mixin LojaSEF-mobile-575PX() {
-    #{$c-Loja} {
+    #{$Section-Lj} {
         width: 92%;
         padding: 1.8rem 1.4rem;
         margin: 1.6rem auto;
@@ -53,7 +53,7 @@
 
 
 @mixin LojaSEF-mobile-375PX() {
-    #{$c-Loja} {
+    #{$Section-Lj} {
         width: 92%;
         padding: 1.8rem 1.4rem;
         margin: 1.6rem auto;

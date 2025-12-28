@@ -1,2 +1,6 @@
 @use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
+
+#{$Section-Lj}{
+    box-shadow: 0 8px 22px $s-color-loja-sef-sha;
+}

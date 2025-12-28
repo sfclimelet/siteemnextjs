@@ -1,7 +1,7 @@
 @use "../core/_vars.scss" as *;
 
 @mixin LojaSEF-Desktops-991-fullpxs() {
-    #{$c-Loja} {
+    #{$Section-Lj} {
         display: flex;
         flex-direction: row;
         align-items: center;

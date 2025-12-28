@@ -8,6 +8,8 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding: 2.2rem 1.5rem;
+  margin: 2rem auto;
 }
 
 /* ==== ÁREA SUPERIOR (ícone + curva) ==== */
@@ -25,15 +27,6 @@
   justify-content: center;
   position: relative;
   z-index: 3; // ícone sempre acima da curva
-}
-
-#{$lj-curve} {
-  position: absolute !important;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* ==== ÁREA DE TEXTO ==== */

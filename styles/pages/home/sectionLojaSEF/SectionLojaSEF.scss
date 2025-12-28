@@ -5,6 +5,9 @@
 @use "./core/_mixins-animations.scss";
 @use "./core/_layout.scss";
 @use "./core/_backgrounds.scss";
+@use "./core/_design.scss";
+
+@use "./modules/_curve.scss";
 
 @use "./breakpoints/_mobile.scss";
 @use "./breakpoints/_tablets.scss";
