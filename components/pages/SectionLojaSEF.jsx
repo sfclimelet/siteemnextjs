@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Store, ShoppingBag } from "lucide-react";
+import { IconsLojaSEF } from "../../Icons/Icons";
 
 import "../../styles/pages/home/sectionLojaSEF/SectionLojaSEF.scss";
 
@@ -11,7 +11,7 @@ export default function SectionLojaSEF() {
                 {/* TOPO DO CARD */}
                 <div className="card-top-area">
                     <div className="card-top-icon">
-                        <Store />
+                        <IconsLojaSEF.Store />
                     </div>
 
                     {/* A CURVA BRANCA EMBAIXO DO DEGRADÊ */}
@@ -26,7 +26,7 @@ export default function SectionLojaSEF() {
                         Eficiência, design moderno e instalação profissional garantida.
                     </p>
                     <Link href="#" className="btn-loja" aria-label="Comprar Agora" title="Comprar Agora">
-                        Comprar Agora <ShoppingBag />
+                        Comprar Agora <IconsLojaSEF.ShoppingBag />
                     </Link>
                 </div>
             </div>

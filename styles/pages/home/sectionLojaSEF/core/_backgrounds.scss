@@ -1,4 +1,5 @@
-@use "./globals-lojaSEF" as *;
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
 
 @mixin DESIGN-LOJA-SEF(){
     #{$c-Loja}{
@@ -55,5 +56,3 @@
         }
     }
 }
-
-@include DESIGN-LOJA-SEF();

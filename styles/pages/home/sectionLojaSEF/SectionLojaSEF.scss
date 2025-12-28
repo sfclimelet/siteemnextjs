@@ -1,8 +1,11 @@
-@use "./vars-lojaSEF";
-@use "./layout-lojaSEF";
-@use "./colors-lojaSEF";
-@use "./mixins-animations-lojaSEF";
-@use "./design-lojaSEF";
-@use "./lojaSEF-mobiles";
-@use "./lojaSEF-tablets";
-@use "./lojaSEF-desktops";
+@use "./core/_vars.scss" as *;
+@use "./core/_colors.scss" as *;
+
+@use "./core/_animations.scss";
+@use "./core/_mixins-animations.scss";
+@use "./core/_layout.scss";
+@use "./core/_backgrounds.scss";
+
+@use "./breakpoints/_mobile.scss";
+@use "./breakpoints/_tablets.scss";
+@use "./breakpoints/_desktops.scss";

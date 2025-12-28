@@ -3,7 +3,7 @@ import {
   Handbag, NotebookPen, Code, RefreshCcw, MapPinned,
   NotepadText, Users, Sparkles, CircleCheck, BadgeInfo,
   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
-  MessageSquareQuote, Medal, Image as ImageIcon, Camera, Sun, Moon
+  MessageSquareQuote, Medal, Image as ImageIcon, Camera, Sun, Moon, Store, ShoppingBag
 } from "lucide-react";
 
 export const IconsNavbarHome = {
@@ -16,4 +16,8 @@ export const IconsNavbarHome = {
 
 export const IconsBtnToggle = {
   Sun, Moon
+}
+
+export const IconsLojaSEF = {
+  Store, ShoppingBag
 }

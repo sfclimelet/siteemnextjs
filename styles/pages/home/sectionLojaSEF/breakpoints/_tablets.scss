@@ -1,4 +1,4 @@
-@use "./globals-lojaSEF" as *;
+@use "../core/_vars.scss" as *;
 
 @mixin LojaSEF-tablets-576-756pxs() {
     #{$c-Loja} {
