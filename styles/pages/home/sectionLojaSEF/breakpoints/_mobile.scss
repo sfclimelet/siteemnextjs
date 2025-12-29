@@ -9,9 +9,9 @@
         #{$lj-top} {
             margin-bottom: 1.2rem;
 
-            #{$lj-top-icon} svg {
-                width: 50px;
-                height: 50px;
+            #{$lj-img-icon}{
+                width: 80px;
+                height: 80px;
             }
 
             #{$lj-curve} {
@@ -60,11 +60,6 @@
 
         #{$lj-top} {
             margin-bottom: 1.2rem;
-
-            #{$lj-top-icon} svg {
-                width: 50px;
-                height: 50px;
-            }
 
             #{$lj-curve} {
                 width: 100%;

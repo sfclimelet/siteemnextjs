@@ -15,11 +15,11 @@
             flex: 1;
 
             #{$lj-top-icon}{
-                margin-top: 10% !important;
+                margin-top: 12% !important;
 
-                svg{
-                    width: 80px;
-                    height: 80px;
+                #{$lj-img-icon}{
+                    width: 90px;
+                    height: 90px;
                 }
             }
 
@@ -83,9 +83,9 @@
             #{$lj-top-icon}{
                 margin-top: 10% !important;
 
-                svg{
-                    width: 80px;
-                    height: 80px;
+                #{$lj-img-icon}{
+                    width: 150px;
+                    height: 150px;
                 }
             }
 

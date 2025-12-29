@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* Container */
+/* Elemento de Animação */
+.container-loja-card {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1215686275);
+}
+
 /* ==== CONTAINER PRINCIPAL ==== */
 .container-loja-card {
   position: relative !important;
@@ -7,6 +13,8 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding: 2.2rem 1.5rem;
+  margin: 2rem auto;
 }
 
 /* ==== ÁREA SUPERIOR (ícone + curva) ==== */
@@ -26,13 +34,9 @@
   z-index: 3;
 }
 
-.card-curve {
-  position: absolute !important;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 1;
+.loja-img-icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* ==== ÁREA DE TEXTO ==== */
@@ -58,48 +62,58 @@
   cursor: pointer;
 }
 
+/* Container */
 .container-loja-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
-  border-radius: 16px;
-  padding: 2.2rem 1.5rem;
-  margin: 2rem auto;
+  background: #0F172A;
 }
-.container-loja-card .card-top-area {
+
+/* Elemento */
+.card-curve {
+  background: #38BDF8;
+}
+
+.loja-title {
+  color: #E5E7EB;
+}
+
+.loja-descricao {
+  color: #9CA3AF;
+}
+
+.btn-loja {
+  background: #2d7cff;
+  color: #ffffff;
+}
+
+.container-loja-card {
+  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+  border-radius: 16px;
+}
+
+.card-top-area {
   margin-bottom: 1.4rem;
 }
-.container-loja-card .card-top-area .card-top-icon svg {
+
+.card-top-icon svg {
   font-size: 2.2rem;
-  color: #2d7cff;
   margin-bottom: 1rem;
 }
-.container-loja-card .card-top-area .card-curve {
-  width: 180%;
-  height: 220px;
-  top: -120px;
-  content: "";
-  background: #4da3ff;
-  opacity: 0.3;
-  border-radius: 50%;
-}
-.container-loja-card .loja-title {
+
+.loja-title {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #2a2a2a;
   margin-bottom: 0.4rem;
   z-index: 2;
 }
-.container-loja-card .loja-descricao {
+
+.loja-descricao {
   font-size: 1rem;
-  color: #4b4b4b;
   line-height: 1.55;
   margin: 0 auto 1.6rem auto;
   z-index: 2;
 }
-.container-loja-card .btn-loja {
-  background: #2d7cff;
-  color: #ffffff;
+
+.btn-loja {
   padding: 0.75rem 1.4rem;
   border-radius: 12px;
   font-weight: 600;
@@ -111,6 +125,20 @@
   transition: background 0.35s ease, transform 0.25s ease;
 }
 
+.card-curve {
+  position: absolute !important;
+  width: 180%;
+  height: 220px;
+  top: -120px;
+  left: 50%;
+  content: "";
+  opacity: 0.3;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 @media (max-width: 575px) {
   .container-loja-card {
     width: 92%;
@@ -120,9 +148,9 @@
   .container-loja-card .card-top-area {
     margin-bottom: 1.2rem;
   }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 50px;
-    height: 50px;
+  .container-loja-card .card-top-area .loja-img-icon {
+    width: 80px;
+    height: 80px;
   }
   .container-loja-card .card-top-area .card-curve {
     width: 100%;
@@ -160,10 +188,6 @@
   }
   .container-loja-card .card-top-area {
     margin-bottom: 1.2rem;
-  }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 50px;
-    height: 50px;
   }
   .container-loja-card .card-top-area .card-curve {
     width: 100%;
@@ -207,11 +231,11 @@
     flex: 1;
   }
   .container-loja-card .card-top-area .card-top-icon {
-    margin-top: 10% !important;
+    margin-top: 12% !important;
   }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 80px;
-    height: 80px;
+  .container-loja-card .card-top-area .card-top-icon .loja-img-icon {
+    width: 90px;
+    height: 90px;
   }
   .container-loja-card .card-top-area .card-curve {
     width: 200%;
@@ -264,9 +288,9 @@
   .container-loja-card .card-top-area .card-top-icon {
     margin-top: 10% !important;
   }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 80px;
-    height: 80px;
+  .container-loja-card .card-top-area .card-top-icon .loja-img-icon {
+    width: 150px;
+    height: 150px;
   }
   .container-loja-card .card-top-area .card-curve {
     width: 200%;
@@ -308,7 +332,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 92%;
+    width: 70%;
     height: 350px;
     padding: 2rem 1.2rem;
     gap: 1.5rem;
@@ -319,9 +343,9 @@
   .container-loja-card .card-top-area .card-top-icon {
     margin-top: 10% !important;
   }
-  .container-loja-card .card-top-area .card-top-icon svg {
-    width: 80px;
-    height: 80px;
+  .container-loja-card .card-top-area .card-top-icon .loja-img-icon {
+    width: 170px;
+    height: 170px;
   }
   .container-loja-card .card-top-area .card-curve {
     width: 200%;
