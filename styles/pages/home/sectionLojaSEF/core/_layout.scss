@@ -29,6 +29,11 @@
   z-index: 3; // ícone sempre acima da curva
 }
 
+#{$lj-img-icon}{
+  width: 70px;
+  height: 70px;
+}
+
 /* ==== ÁREA DE TEXTO ==== */
 #{$lj-body} {
   display: flex;
