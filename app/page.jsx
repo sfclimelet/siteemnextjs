@@ -8,6 +8,7 @@ import NavbarHome from "../components/navbar/Navbar-Home";
 import FooterHome from "../components/footer/Footer-Home";
 import CarrosselHome from "../components/carrossel/CarrosselHome";
 import SectionLojaSEF from "../components/pages/SectionLojaSEF";
+import SectionQuemSomos from "../components/pages/SectionQmSms";
 
 {/* THEMES */}
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
@@ -51,6 +52,10 @@ export default function Home() {
 
             <section id="LojaSef">
               <SectionLojaSEF />
+            </section>
+
+            <section id="QmSomos">
+              <SectionQuemSomos />
             </section>
 
             <section id="teste" className="text-center">
