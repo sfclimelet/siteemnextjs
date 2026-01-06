@@ -1,6 +1,6 @@
 @use "../core/_vars.scss" as *;
 
-@mixin LojaSEF-tablets-576-756pxs() {
+@media (min-width: 576px) and (max-width: 756px) {
     #{$Section-Lj} {
         display: flex;
         flex-direction: row;
@@ -65,17 +65,17 @@
     }
 }
 
-@mixin LojaSEF-tablets-756-991pxs() {
-    #{$Section-Lj} {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+@media (min-width: 757px) and (max-width: 991px){
+        #{$Section-Lj} {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
 
-        width: 92%;
-        height: 350px;
-        padding: 2rem 1.2rem;
-        gap: 1.5rem;
+            width: 92%;
+            height: 350px;
+            padding: 2rem 1.2rem;
+            gap: 1.5rem;
 
         #{$lj-top} {
             flex: 1;
@@ -129,12 +129,4 @@
             }
         }
     }
-}
-
-@media (min-width: 576px) and (max-width: 756px) {
-    @include LojaSEF-tablets-576-756pxs();
-}
-
-@media (min-width: 757px) and (max-width: 991px){
-    @include LojaSEF-tablets-756-991pxs();
 }

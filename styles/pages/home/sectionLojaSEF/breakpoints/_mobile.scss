@@ -1,6 +1,7 @@
 @use "../core/_vars.scss" as *;
 
-@mixin LojaSEF-mobile-575PX() {
+
+@media (max-width: 575px) {
     #{$Section-Lj} {
         width: 92%;
         padding: 1.8rem 1.4rem;
@@ -51,8 +52,7 @@
     }
 }
 
-
-@mixin LojaSEF-mobile-375PX() {
+@media (max-width: 375px) {
     #{$Section-Lj} {
         width: 92%;
         padding: 1.8rem 1.4rem;
@@ -96,12 +96,4 @@
             }
         }
     }
-}
-
-@media (max-width: 575px) {
-    @include LojaSEF-mobile-575PX();
-}
-
-@media (max-width: 375px) {
-    @include LojaSEF-mobile-375PX();
 }

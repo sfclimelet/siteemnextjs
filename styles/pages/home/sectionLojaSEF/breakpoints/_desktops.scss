@@ -1,6 +1,6 @@
 @use "../core/_vars.scss" as *;
 
-@mixin LojaSEF-Desktops-991-fullpxs() {
+@media (min-width: 991px){
     #{$Section-Lj} {
         display: flex;
         flex-direction: row;
@@ -64,8 +64,4 @@
             }
         }
     }
-}
-
-@media (min-width: 991px){
-    @include LojaSEF-Desktops-991-fullpxs();
 }
