@@ -1,1 +1,55 @@
 @use "../core/_vars.scss" as *;
+
+@media (min-width: 992px) {
+  #{$Section-QmSms} {
+    width: 90%;
+    min-height: 420px;
+    padding: 4rem 0;
+    margin: 0 auto;
+
+    #{$qmsm-container} {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+    }
+
+    #{$qmsm-card} {
+      width: 520px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1.8rem;
+      margin-left: 20px;
+    }
+
+    #{$qmsm-title} {
+      font-size: 2rem;
+      justify-content: flex-start;
+    }
+
+    #{$qmsm-descricao} {
+      font-size: 1.05rem;
+      line-height: 1.8rem;
+      max-width: 560px;
+    }
+
+    #{$qmsm-social} {
+      justify-content: flex-start;
+      gap: 1.4rem;
+    }
+
+    #{$qmsm-image} {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 230px;
+        height: auto;
+      }
+    }
+  }
+}
