@@ -1,0 +1,8 @@
+@use "./_vars.scss" as *;
+
+#{$Section-QmSms}{
+    border-radius: 12px;
+    #{$qmsm-card}{
+        border: none;
+    }
+}

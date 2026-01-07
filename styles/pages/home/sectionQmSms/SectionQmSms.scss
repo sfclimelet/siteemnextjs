@@ -1,0 +1,10 @@
+@use "./core/_vars.scss";
+@use "./core/_colors.scss";
+@use "./core/_layout.scss";
+@use "./core/_animations.scss";
+@use "./core/_backgrounds.scss";
+@use "./core/_design.scss";
+
+@use "./breakpoints/_mobiles.scss";
+@use "./breakpoints/_tablets.scss";
+@use "./breakpoints/_desktops.scss";

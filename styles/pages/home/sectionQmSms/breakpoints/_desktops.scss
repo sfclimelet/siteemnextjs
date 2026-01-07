@@ -1,0 +1,20 @@
+@use "../core/_vars.scss" as *;
+
+@media (min-width: 992px) {
+  #{$Section-QmSms} {
+    #{$qmsm-container} {
+      flex-direction: row; // 🔥 desktop lado a lado
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    #{$qmsm-card} {
+      text-align: left;
+    }
+
+    #{$qmsm-social} {
+      justify-content: flex-start;
+    }
+  }
+}

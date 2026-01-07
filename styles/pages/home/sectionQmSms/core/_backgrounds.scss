@@ -1,1 +1,10 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
 
+#{$Section-QmSms}{
+    background: $qmsm-color-primary-bg;
+    #{$qmsm-card}{
+        background: transparent;
+        color: #fff;
+    }
+}

@@ -1,42 +1,53 @@
 "use client";
 
-import styles from "../../styles/pages/home/sectionQmSms/SectionQmSms.module.scss";
 import { SectionQmSmsData } from "../../config/pages/Home/sectionQmSms";
 import { IconsQmSms } from "../../Icons/Icons";
 
+import { Imgs } from "../../config/images";
 
-export default function SectionQuemSomos() {
+import "../../styles/pages/home/sectionQmSms/SectionQmSms.scss";
+
+export default function SectionQmSms() {
   return (
-    <>
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <div className={styles.card}>
-            <h2 className={styles.title}>
-              {SectionQmSmsData.title} <IconsQmSms.User/> </h2>
+    <div id="QuemSomos">
+      <div className="container">
+        
+        {/* LADO ESQUERDO – TEXTO */}
+        <div className="card">
+          <h2 className="title">
+            {SectionQmSmsData.title}
+            <IconsQmSms.User />
+          </h2>
 
-            <p className={styles.description}>
-              {SectionQmSmsData.description}
-            </p>
+          <p className="description">
+            {SectionQmSmsData.description}
+          </p>
 
-            <div className={styles.socials}>
-              {SectionQmSmsData.socials?.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <a
-                    key={item.name}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={item.name}
-                  >
-                    <Icon />
-                  </a>
-                );
-              })}
-            </div>
+          <div className="socials">
+            {SectionQmSmsData.socials?.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <a
+                  key={item.name}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.name}
+                >
+                  <Icon />
+                </a>
+              );
+            })}
           </div>
         </div>
-      </section>
-    </>
+
+        {/* LADO DIREITO – IMAGEM */}
+        <div className="image">
+          <img src={Imgs.SectionQmSms.qmsm.src ?? Imgs.SectionQmSms.qmsm} alt="SEF Climatização & Elétrica" />
+        </div>
+
+      </div>
+    </div>
   );
 }
