@@ -1,6 +1,6 @@
 @use "../core/_vars.scss" as *;
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px){
   #{$Section-QmSms} {
     width: 90%;
     min-height: 420px;
@@ -47,8 +47,47 @@
       align-items: center;
 
       img {
-        width: 230px;
+        width: 250px;
         height: auto;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  #{$Section-QmSms} {
+    width: 70%;
+    height: 380px;
+    padding: 4rem 0;
+
+    #{$qmsm-container} {
+      gap: 5rem;
+    }
+
+    #{$qmsm-card} {
+      width: 580px;
+      gap: 1.6rem;
+      margin-left: 40px;
+    }
+
+    #{$qmsm-title} {
+      font-size: 2.1rem;
+    }
+
+    #{$qmsm-descricao} {
+      font-size: 1.05rem;
+      line-height: 1.8rem;
+      max-width: 620px;
+    }
+
+    #{$qmsm-social} {
+      gap: 1.4rem;
+    }
+
+    #{$qmsm-image} {
+      img {
+        width: 240px;
       }
     }
   }
