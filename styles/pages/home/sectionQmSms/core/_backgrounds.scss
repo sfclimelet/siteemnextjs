@@ -2,9 +2,9 @@
 @use "./_colors.scss" as *;
 
 #{$Section-QmSms}{
-    background: $qmsm-color-primary-bg;
+    background: linear-gradient(90deg, $qmsm-color-primary-bg, $qmsm-color-secondary-bg);
     #{$qmsm-card}{
         background: transparent;
-        color: #fff;
+        color: $qmsm-color-text-card;
     }
 }
