@@ -1,72 +1,105 @@
 @use "../core/_vars.scss" as *;
 
-@media (max-width: 375px){
-    #{$Section-QmSms}{
-        width: 92%;
-        height: 500px;
-        padding: 1.5rem 1rem;
-        #{$qmsm-container}{
-            flex-direction: column;
-            justify-content: center;
-            gap: 2rem;
-        }
-        #{$qmsm-card}{
-            width: 100%;
-            text-align: center;
-            gap: 1rem;
-        }
-        #{$qmsm-title}{
-            font-size: 1.25rem;
-            justify-content: center;
-        }
-        #{$qmsm-descricao}{
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-        }
-        #{$qmsm-social}{
-            justify-content: center;
-        }
-        #{$qmsm-image}{
-            width: 100%;
-            img{
-                width: 120px;
-            }
-        }
+/* Mobile pequeno – até 375px */
+@media (max-width: 375px) {
+  #{$Section-QmSms} {
+    width: 92%;
+    min-height: 500px;
+    padding: 1.5rem 1rem;
+
+    #{$qmsm-container} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
+
+    #{$qmsm-card} {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    #{$qmsm-title} {
+      font-size: 1.25rem;
+      justify-content: center;
+    }
+
+    #{$qmsm-descricao} {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+
+    #{$qmsm-social} {
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    #{$qmsm-image} {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+  }
 }
 
-@media (min-width: 376px) and (max-width: 575px){
-    #{$Section-QmSms}{
-        width: 92%;
-        height: 500px;
-        padding: 2rem 1rem;
-        #{$qmsm-container}{
-            flex-direction: column;
-            justify-content: center;
-            gap: 2.5rem;
-        }
-        #{$qmsm-card}{
-            width: 100%;
-            text-align: center;
-            gap: 1.2rem;
-        }
-        #{$qmsm-title}{
-            font-size: 1.45rem;
-            justify-content: center;
-        }
-        #{$qmsm-descricao}{
-            font-size: 0.95rem;
-            line-height: 1.6rem;
-        }
-        #{$qmsm-social}{
-            justify-content: center;
-            gap: 1.2rem;
-        }
-        #{$qmsm-image}{
-            width: 100%;
-            img{
-                width: 150px;
-            }
-        }
+/* Mobile médio – 376px até 575px */
+@media (min-width: 376px) and (max-width: 575px) {
+  #{$Section-QmSms} {
+    width: 92%;
+    min-height: 500px;
+    padding: 2rem 1rem;
+
+    #{$qmsm-container} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
     }
+
+    #{$qmsm-card} {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.2rem;
+    }
+
+    #{$qmsm-title} {
+      font-size: 1.45rem;
+      justify-content: center;
+    }
+
+    #{$qmsm-descricao} {
+      font-size: 0.95rem;
+      line-height: 1.6rem;
+    }
+
+    #{$qmsm-social} {
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    #{$qmsm-image} {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  }
 }
