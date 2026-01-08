@@ -33,7 +33,7 @@ export default function FooterHome() {
         <div className="footer-socials">
           <h3>Redes Sociais</h3>
 
-          <div className="socials">
+          <div className="sociais">
             {FooterHomeData.socials.map((item) => {
               const Icon = item.icon;
 
