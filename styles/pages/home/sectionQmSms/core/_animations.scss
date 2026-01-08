@@ -6,7 +6,16 @@
         #{$qmsm-social} a[data-social="#{$name}"] {
             &:hover{
                 transform: scale(1.09);
+                filter: drop-shadow(0 0 6px rgba($color, 0.6));
             }
+        }
+    }
+
+    #{$qmsm-image} img{
+        filter: drop-shadow(0 0 20px $qmsm-color-sombra-img-primary);
+        &:hover{
+            transform: scale(1.01);
+            filter: drop-shadow(0 0 26px $qmsm-color-sombra-img-secondary);
         }
     }
 }
