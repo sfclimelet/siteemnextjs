@@ -3,7 +3,7 @@
 @media (max-width: 375px) {
   #{$Footer-Home} {
     padding: 2rem 1rem;
-    
+
     #{$fthome-container}{
         gap: 1rem;
         #{$fthome-brand} {
@@ -47,8 +47,74 @@
     }
 
     #{$fthome-copy} {
-        font-size: 0.85rem;
-        line-height: 1.4rem;
+        small{
+            font-size: 0.85rem;
+            line-height: 1.4rem;
+        }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #{$Footer-Home} {
+    padding: 2.5rem 1.2rem 1.5rem;
+    
+    #{$fthome-container}{
+        gap: 1rem;
+        #{$fthome-brand} {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+
+            img{
+                width: 180px;
+                height: 180px;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        #{$fthome-links} {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            ul{
+                gap: 0.5rem;
+            }
+        }
+
+        #{$fthome-socials} {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        #{$fthome-sociais} {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+
+    }
+    /* Divisor */
+    #{$fthome-divider} {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #{$fthome-copy} {
+        small{
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+            text-align: center;
+        }
     }
   }
 }

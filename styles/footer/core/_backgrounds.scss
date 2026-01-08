@@ -4,7 +4,35 @@
 #{$Footer-Home}{
     background: linear-gradient(145deg, $fthome-color-primary-bg, $fthome-color-secondary-bg);
 
+    #{$fthome-container}{
+        #{$fthome-brand}{
+            p{
+                color: $fthome-color-text;
+            }
+        }
+        #{$fthome-links}{
+            color: $fthome-color-text;
+            ul{
+                li{
+                    a{
+                        color: $fthome-color-text;
+                    }
+                }
+            }
+        }
+        #{$fthome-socials}{
+            color: $fthome-color-text;
+        }
+    }
+
+    /* Divisor */
     #{$fthome-divider}{
         background: $fthome-color-divider;
+    }
+
+    #{$fthome-copy}{
+        small{
+            color: $fthome-color-text;
+        }
     }
 }

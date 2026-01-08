@@ -5,6 +5,16 @@
         #{$fthome-brand} p{
             font-style: italic;
         }
+
+        #{$fthome-links}{
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
     #{$fthome-divider}{
         border-radius: 30px;

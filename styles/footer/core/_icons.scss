@@ -1,0 +1,12 @@
+@use "./_vars.scss" as *;
+
+#{$Footer-Home}{
+    #{$fthome-container}{
+        #{$fthome-socials}{
+            #{$fthome-sociais} svg{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
