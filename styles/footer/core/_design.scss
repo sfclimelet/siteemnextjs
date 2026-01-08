@@ -1,0 +1,12 @@
+@use "./_vars.scss" as *;
+
+#{$Footer-Home}{
+    #{$fthome-container}{
+        #{$fthome-brand} p{
+            font-style: italic;
+        }
+    }
+    #{$fthome-divider}{
+        border-radius: 30px;
+    }
+}
