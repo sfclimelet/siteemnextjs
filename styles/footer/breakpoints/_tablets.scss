@@ -1,1 +1,110 @@
+@use "../core/_vars.scss" as *;
 
+@media (max-width: 767px) {
+  #{$Footer-Home} {
+    padding: 3rem 2rem 2rem;
+    
+    #{$fthome-container}{
+        gap: 1rem;
+
+        #{$fthome-brand} {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        #{$fthome-links} {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            ul{
+                gap: 0.5rem;
+            }
+        }
+
+        #{$fthome-socials} {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        #{$fthome-sociais} {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+
+    }
+
+    /* Divisor */
+    #{$fthome-divider} {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #{$fthome-copy} {
+        small{
+            font-size: 1rem;
+            line-height: 1.4rem;
+            text-align: center;
+        }
+    }
+  }
+}
+
+@media (min-width: 768px){
+    #{$Footer-Home}{
+        padding: 3.5rem 2rem 2rem;
+
+        #{$fthome-container}{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: flex-start;
+            gap: 3rem;
+
+            #{$fthome-brand}{
+                p{
+                    max-width: 240px;
+                }
+            }
+
+            #{$fthome-links}{
+                text-align: center;
+                ul{
+                    gap: 0.6rem;
+                }
+            }
+
+            #{$fthome-socials}{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                #{$fthome-sociais}{
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.2rem;
+                }
+            }
+        }
+
+        #{$fthome-divider}{
+            height: 2px;
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #{$fthome-copy}{
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+    }
+}

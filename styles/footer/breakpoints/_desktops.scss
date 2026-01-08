@@ -1,1 +1,11 @@
+@use "../core/_vars.scss" as *;
 
+@media (min-width: 992px){
+    #{$Footer-Home}{
+        #{$fthome-copy}{
+            small{
+                font-size: 1rem;
+            }
+        }
+    }
+}
