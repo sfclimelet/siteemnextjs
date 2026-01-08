@@ -1,1 +1,12 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
 
+#{$Section-QmSms}{
+    @each $name, $color in $social-colors{
+        #{$qmsm-social} a[data-social="#{$name}"] {
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+    }
+}

@@ -34,6 +34,7 @@ export default function SectionQmSms() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
+                  data-social={item.name.toLowerCase()}
                 >
                   <Icon />
                 </a>

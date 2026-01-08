@@ -3,8 +3,18 @@
 
 #{$Section-QmSms}{
     background: linear-gradient(90deg, $qmsm-color-primary-bg, $qmsm-color-secondary-bg);
+
     #{$qmsm-card}{
         background: transparent;
         color: $qmsm-color-text-card;
+    }
+
+    /* Cor dos icones */
+    @each $name, $color in $social-colors{
+        #{$qmsm-social} a[data-social="#{$name}"] {
+            svg{
+                color: $color;
+            }
+        }
     }
 }
