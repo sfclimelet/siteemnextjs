@@ -6,7 +6,7 @@ import {
   MessageSquareQuote, Medal, Image as ImageIcon, Camera, Sun, Moon, ShoppingBag
 } from "lucide-react";
 
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp, FaGoogle } from "react-icons/fa";
 
 export const IconsNavbarHome = {
   Layers, Search, Handshake, Send, Briefcase,
@@ -29,4 +29,10 @@ export const IconsQmSms = {
   InstagramIcon: FaInstagram,
   WhatsAppIcon: FaWhatsapp,
   User
+}
+
+export const IconsFooterHome = {
+  facebk: FaFacebook,
+  insta: FaInstagram,
+  googl: FaGoogle,
 }

@@ -62,8 +62,9 @@ export default function Home() {
               <h2>Clique no Botão Abaixo: </h2>
               <a href="/about" className="btn btn-outline-primary mt-5 mx-auto" >About <i className="bi bi-box-arrow-in-right"></i> </a>
             </section>
+
+            <FooterHome />
         </main>
-      
     </>
   );
 }

@@ -1,106 +1,66 @@
-import Image from "next/image";
-import logo from "../../public/logo-sef.png";
-import "../../styles/footer/footer-Home.scss";
+"use client";
+
+import { FooterHomeData } from "./footer-HomeData";
+import "../../styles/footer/Footer-Home.scss";
 
 export default function FooterHome() {
-    return (
-        <>
-            <footer id="ftroda" className="bg-rodape">
-                <div className="container">
-                    <div className="row gy-5 align-items-center mx-auto">
+  return (
+    <footer id="footer-home">
+      <div className="footer-container">
 
-                        {/* Logo da Empresa */}
-                        <div className="col-md-4 text-center">
-                            <Image id="logoFt"
-                                src={logo}
-                                alt="Logo SEF"
-                                className="img-fluid"
-                                priority
-                            />
-                            <p className="fst-italic mt-3 small">
-                                Confiança e garantia em cada serviço
-                            </p>
-                        </div>
+        {/* LOGO */}
+        <div className="footer-brand">
+          <img
+            src={FooterHomeData.logo.src.src}
+            alt={FooterHomeData.logo.alt}
+          />
+          <p>{FooterHomeData.slogan}</p>
+        </div>
 
-                        {/* Links */}
-                        <div className="col-md-4 text-center">
-                            <h3 className="titulo-links">
-                                Links Rápidos <i className="bi bi-check"></i>
-                            </h3>
-                            <ul className="list-unstyled">
-                                <li>
-                                    <a className="footer-link" href="#">
-                                        Quem Somos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="footer-link" href="#">
-                                        Serviço
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="footer-link" href="#">
-                                        Desenvolvedor
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        {/* LINKS */}
+        <nav className="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            {FooterHomeData.links.map((link) => (
+              <li key={link.label}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-                        {/* Contato - Redes */}
-                        <div className="col-md-4 my-auto text-center">
-                            <h3 className="titulo-redes">
-                                Redes Sociais <i className="bi bi-person-fill"></i>
-                            </h3>
+        {/* SOCIAIS */}
+        <div className="footer-socials">
+          <h3>Redes Sociais</h3>
 
-                            <div className="social-icons-rdp mt-3">
-                                <a
-                                    className="social-icon social-icon-face"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href="#"
-                                    aria-label="Facebook"
-                                    title="Facebook"
-                                >
-                                    <i className="bi bi-facebook"></i>
-                                </a>
+          <div className="socials">
+            {FooterHomeData.socials.map((item) => {
+              const Icon = item.icon;
 
-                                <a
-                                    className="social-icon social-icon-insta"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    aria-label="Instagram"
-                                    title="Instagram"
-                                    href="#"
-                                >
-                                    <i className="bi bi-instagram"></i>
-                                </a>
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.name}
+                >
+                  <Icon />
+                </a>
+              );
+            })}
+          </div>
+        </div>
 
-                                <a
-                                    className="social-icon social-icon-google"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    aria-label="Google"
-                                    title="Google"
-                                    href="#"
-                                >
-                                    <i className="bi bi-google"></i>
-                                </a>
-                            </div>
-                        </div>
+      </div>
 
-                        {/* Rodapé */}
-                        <div className="border-top border-secondary text-center lead mt-4 pt-3 pb-3">
-                            <small>
-                                &copy; 2025{" "}
-                                <span className="text-gradiente fw-semibold">
-                                    SEF Climatização e Elétrica
-                                </span>
-                                . Todos os direitos reservados.
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </>
-    );
+      {/* COPYRIGHT */}
+      <div className="footer-copy">
+        <small>
+          © 2025 <strong>SEF Climatização e Elétrica</strong>.  
+          Todos os direitos reservados.
+        </small>
+      </div>
+    </footer>
+  );
 }

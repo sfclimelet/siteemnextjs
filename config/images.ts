@@ -6,5 +6,8 @@ export const Imgs = {
     },
     SectionQmSms: {
         qmsm: imagePaths.quemsomos.qmsomos,
+    },
+    FtHome: {
+        imgLogoTrans: imagePaths.footerHome.ftHome,
     }
 }
