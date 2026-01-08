@@ -1,6 +1,7 @@
 @use "./_vars.scss" as *;
 
 #{$Footer-Home}{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,6 +20,11 @@
         align-items: center;
         text-align: center;
         gap: 1rem;
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
     }
 
     #{$fthome-links}{
@@ -48,6 +54,11 @@
             align-items: center;
             gap: 1.2rem;
         }
+    }
+
+    #{$fthome-divider}{
+        width: 100%;
+        height: 1px;
     }
 
     #{$fthome-copy}{

@@ -54,6 +54,8 @@ export default function FooterHome() {
 
       </div>
 
+      <div className="footer-divider"></div>
+
       {/* COPYRIGHT */}
       <div className="footer-copy">
         <small>

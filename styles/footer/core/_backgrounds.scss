@@ -1,0 +1,10 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
+
+#{$Footer-Home}{
+    background: linear-gradient(145deg, $fthome-color-primary-bg, $fthome-color-secondary-bg);
+
+    #{$fthome-divider}{
+        background: $fthome-color-divider;
+    }
+}
