@@ -41,8 +41,9 @@ export default function FooterHome() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={item.name}
+                        data-social-footer={item.name.toLowerCase()}
                         >
-                        <Icon />
+                            <Icon />
                         </a>
                     );
                     })}
@@ -50,12 +51,13 @@ export default function FooterHome() {
             </div>
       </div>
 
+      {/* Divisor */}
       <div className="footer-divider"></div>
 
       {/* COPYRIGHT */}
       <div className="footer-copy">
         <small>
-          © 2025 <strong>SEF Climatização e Elétrica</strong>.  
+          © 2025 {" "} <span className="copy-brand text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-yellow-400">SEF Climatização e Elétrica</span>.  
           Todos os direitos reservados.
         </small>
       </div>

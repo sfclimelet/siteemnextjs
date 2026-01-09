@@ -19,4 +19,12 @@
     #{$fthome-divider}{
         border-radius: 30px;
     }
+    #{$fthome-copy}{
+       small{
+            span{
+                font-style: oblique;
+                font-weight: 600;
+            }
+       }
+    }
 }

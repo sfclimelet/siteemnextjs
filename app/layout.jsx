@@ -5,6 +5,7 @@ import Script from "next/script";
 {/* Styles */}
 import "../styles/_layout.scss";
 import "../styles/_theme-globals.scss";
+import "../styles/globals.css";
 
 export const metadata = {
   title: "Home",

@@ -22,17 +22,20 @@
         }
         #{$fthome-socials}{
             color: $fthome-color-text;
+            #{$fthome-sociais}{
+                @each $name, $color in $social-colors-footer{
+                    a[data-social-footer="#{$name}"]{
+                        svg{
+                            fill: $color;
+                        }
+                    }
+                }
+            }
         }
     }
 
     /* Divisor */
     #{$fthome-divider}{
         background: $fthome-color-divider;
-    }
-
-    #{$fthome-copy}{
-        small{
-            color: $fthome-color-text;
-        }
     }
 }
