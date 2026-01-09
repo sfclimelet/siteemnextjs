@@ -1,2 +1,21 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_colors.scss" as *;
+
+#{$Footer-Home}{
+    #{$fthome-container}{
+        #{$fthome-socials}{
+            #{$fthome-sociais}{
+                @each $name, $color in $social-colors-footer{
+                    a[data-social-footer="#{$name}"]{
+                        &:hover{
+                            svg{
+                                transform: scale(1.03);
+                                filter: drop-shadow(0 0 8px rgba($color, 0.45));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

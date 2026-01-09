@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useContext, useEffect, useState } from "react";
-import { Wrench } from "lucide-react";
 
 {/* COMPONENTES */}
 import NavbarHome from "../components/navbar/Navbar-Home";
@@ -43,7 +42,7 @@ export default function Home() {
       <NavbarHome />
         <main className={`home-page ${theme}`}>
             <div className="text-center">
-              <h1>Nossos Serviços <Wrench /></h1>
+              <h1>Nossos Serviços</h1>
             </div>
 
             <section id="Carrossel">

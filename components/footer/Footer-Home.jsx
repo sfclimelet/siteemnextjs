@@ -57,7 +57,7 @@ export default function FooterHome() {
       {/* COPYRIGHT */}
       <div className="footer-copy">
         <small>
-          © 2025 {" "} <span className="copy-brand text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-yellow-400">SEF Climatização e Elétrica</span>.  
+          © 2025 {" "} <span className="copy-brand text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-yellow-400">SEF Climatização e Elétrica</span>.
           Todos os direitos reservados.
         </small>
       </div>
