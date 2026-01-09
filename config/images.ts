@@ -1,6 +1,9 @@
 import { imagePaths } from "./imagePaths";
 
 export const Imgs = {
+    NbHome: {
+        imglogoTrans: imagePaths.navbarHome.nbHome,
+    },
     lojaSEF: {
         arCondicionado: imagePaths.lojaSef.arCondi,
     },

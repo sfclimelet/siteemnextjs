@@ -3,6 +3,9 @@ import imglogoqmsms from "../assets/images/SectionQmSms/img-logo.png";
 import imglogoTransparent from "../public/logo-sef.png";
 
 export const imagePaths = {
+    navbarHome: {
+        nbHome: imglogoTransparent,
+    },
     lojaSef: {
         arCondi: imgLjSEF,
     },
