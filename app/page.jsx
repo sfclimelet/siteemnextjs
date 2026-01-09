@@ -2,68 +2,69 @@
 
 import React, { useContext, useEffect, useState } from "react";
 
-{/* COMPONENTES */}
+/* COMPONENTES */
 import NavbarHome from "../components/navbar/Navbar-Home";
 import FooterHome from "../components/footer/Footer-Home";
 import CarrosselHome from "../components/carrossel/CarrosselHome";
 import SectionLojaSEF from "../components/pages/SectionLojaSEF";
 import SectionQuemSomos from "../components/pages/SectionQmSms";
 
-{/* THEMES */}
+/* THEMES */
 import AnimacaoBackgroundHome from "../components/Background-Animated-Home";
 import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../components/ThemeProvider";
 
 export default function Home() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const target = document.getElementById("Carrossel");
+    const target = document.getElementById("carrossel");
     if (!target) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowButton(entry.isIntersecting);
-      },
+      ([entry]) => setShowButton(entry.isIntersecting),
       { threshold: 0.3 }
     );
 
     observer.observe(target);
-
     return () => observer.disconnect();
   }, []);
 
   return (
     <>
       <AnimacaoBackgroundHome theme={theme} />
-      {showButton && <ThemeToggle onClick={toggleTheme} theme={theme} />}
+      {showButton && <ThemeToggle />}
 
       <NavbarHome />
         <main className={`home-page ${theme}`}>
-            <div className="text-center">
-              <h1>Nossos Serviços</h1>
-            </div>
+          <div className="text-center">
+            <h1>Nossos Serviços</h1>
+          </div>
 
-            <section id="Carrossel">
-              <CarrosselHome />
-            </section>
+          <section id="carrossel">
+            <CarrosselHome />
+          </section>
 
-            <section id="LojaSef">
-              <SectionLojaSEF />
-            </section>
+          <section id="loja-sef">
+            <SectionLojaSEF />
+          </section>
 
-            <section id="QmSomos">
-              <SectionQuemSomos />
-            </section>
+          <section id="quem-somos">
+            <SectionQuemSomos />
+          </section>
 
-            <section id="teste" className="text-center">
-              <h2>Clique no Botão Abaixo: </h2>
-              <a href="/about" className="btn btn-outline-primary mt-5 mx-auto" >About <i className="bi bi-box-arrow-in-right"></i> </a>
-            </section>
-
-            <FooterHome />
+          <section id="teste" className="text-center">
+            <h2>Clique no Botão Abaixo:</h2>
+            <a
+              href="/about"
+              className="btn btn-outline-primary mt-5 mx-auto"
+            >
+              About <i className="bi bi-box-arrow-in-right"></i>
+            </a>
+          </section>
         </main>
+      <FooterHome />
     </>
   );
 }
