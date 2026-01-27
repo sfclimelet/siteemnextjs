@@ -9,3 +9,6 @@
 @use "./breakpoints/_mobiles.scss";
 @use "./breakpoints/_tablets.scss";
 @use "./breakpoints/_desktops.scss";
+
+@use "./modules/_hamburger.scss";
+@use "./modules/_search.scss";

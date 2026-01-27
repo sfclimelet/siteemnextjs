@@ -1,1 +1,14 @@
+@use "./_vars.scss" as *;
+@use "./_colors.scss" as *;
 
+#{$Navbar-Home}{
+    background: linear-gradient(45deg, $nbhome-color-primary-bg, $nbhome-color-secondary-bg);
+    #{$nbhome-container}{
+        #{$nbhome-hamburger}{
+            #{$nbhome-hamburger-line}{
+                background-color: $nbhome-color-hamburger-line;
+            }
+        }
+    }
+
+}

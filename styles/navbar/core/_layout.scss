@@ -1,1 +1,19 @@
+@use "./_vars.scss" as *;
 
+#{$Navbar-Home} {
+    a{
+        text-decoration: none;
+    }
+    #{$nbhome-container}{
+        #{$nbhome-logo}{
+            position: relative;
+            width: 70px;
+            height: 70px;
+            display: block;
+            #{$nbhome-logo-image}{
+                object-fit: contain;
+            }
+        }
+    }
+
+}

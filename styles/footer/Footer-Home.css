@@ -1,3 +1,16 @@
+#footer-home .footer-container .footer-socials .sociais a[data-social-footer=facebook]:hover svg {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 8px rgba(24, 119, 242, 0.45));
+}
+#footer-home .footer-container .footer-socials .sociais a[data-social-footer=instagram]:hover svg {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 8px rgba(225, 48, 108, 0.45));
+}
+#footer-home .footer-container .footer-socials .sociais a[data-social-footer=google]:hover svg {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 8px rgba(234, 67, 53, 0.45));
+}
+
 #footer-home .footer-container .footer-brand p {
   font-style: italic;
 }
@@ -6,6 +19,11 @@
 }
 #footer-home .footer-divider {
   border-radius: 30px;
+}
+#footer-home .footer-copy small span {
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 #footer-home {

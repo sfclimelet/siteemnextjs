@@ -24,14 +24,12 @@ export default function NavbarHome() {
           href="/"
           className="navbar-logo"
           aria-label="Página inicial"
-          title="Página inicial"
-        >
-          <Image
-            src={Imgs.NbHome.imglogoTrans.src}
-            fill
-            alt="SEF Climatização e Elétrica"
-            priority
-          />
+          title="Página inicial" >
+            <Image className="logosef"
+              src={Imgs.NbHome.imglogoTrans.src}
+              fill
+              alt="SEF Climatização e Elétrica"
+              priority />
         </Link>
 
         {/* HAMBURGER */}
@@ -51,8 +49,8 @@ export default function NavbarHome() {
         {/* MENU */}
         <nav
           id="navbar-menu"
-          className={`navbar-menu ${open ? "open" : ""}`}
-        >
+          className={`navbar-menu ${open ? "open" : ""}`}>
+
           <ul className="navbar-list">
             {navbarHomeData.map((item) =>
               item.type === "dropdown" ? (

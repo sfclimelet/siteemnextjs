@@ -1,1 +1,37 @@
+/* Raiz */
+$Navbar-Home: "#navbar-home";
 
+/* Containers */
+$nbhome-container: ".navbar-container";
+$nbhome-logo: ".navbar-logo";
+$nbhome-logo-image: ".logosef";
+$nbhome-menu: ".navbar-menu";
+$nbhome-list: ".navbar-list";
+
+/* Hamburger */
+$nbhome-hamburger: ".navbar-hamburger";
+$nbhome-hamburger-line: "span";
+
+/* Itens */
+$nbhome-item: ".nb-item";
+$nbhome-link: ".nb-link";
+
+/* Dropdowns */
+$nbhome-dropdown: ".nb-dropdown";
+$nbhome-dropdown-link: ".nb-dropdown-link";
+
+/* Estados */
+$nbhome-open: ".open";
+$nbhome-active: ".active";
+
+/* -------  List para @each dinamico ----------------- */
+$nbhome-search: (
+    search: "#search"
+);
+
+$nbhome-menus: (
+    servico: "#services",
+    qmsomos: "#company",
+    ajsuport: "#support",
+    portcert: "#portfolio"
+);
