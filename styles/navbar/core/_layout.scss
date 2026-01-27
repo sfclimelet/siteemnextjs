@@ -1,19 +1,88 @@
 @use "./_vars.scss" as *;
 
 #{$Navbar-Home} {
-    a{
-        text-decoration: none;
-    }
-    #{$nbhome-container}{
-        #{$nbhome-logo}{
-            position: relative;
-            width: 70px;
-            height: 70px;
-            display: block;
-            #{$nbhome-logo-image}{
-                object-fit: contain;
-            }
-        }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  /* remove underline geral */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #{$nbhome-container} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+
+    /* ================= LOGO ================= */
+    #{$nbhome-logo} {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      display: block;
+
+      #{$nbhome-logo-image} {
+        object-fit: contain;
+      }
     }
 
+    /* ================= MENU ================= */
+    #{$nbhome-menu} {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 100vh;
+      padding-top: 90px;
+
+      transform: translateX(-100%);
+      transition: transform 0.35s ease;
+
+      /* menu aberto */
+      &#{$nbhome-open} {
+        transform: translateX(0);
+      }
+
+      #{$nbhome-list} {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0 1rem;
+
+        #{$nbhome-item} {
+          width: 100%;
+
+          #{$nbhome-link} {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.65rem 0.75rem;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: background 0.25s ease;
+          }
+        }
+
+        /* dropdown */
+        #{$nbhome-dropdown} {
+          display: none;
+          padding-left: 1.5rem;
+        }
+
+        /* dropdown aberto */
+        #{$nbhome-item}.open {
+          #{$nbhome-dropdown} {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+          }
+        }
+      }
+    }
+  }
 }

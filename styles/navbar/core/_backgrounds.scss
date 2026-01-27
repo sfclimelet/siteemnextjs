@@ -9,6 +9,12 @@
                 background-color: $nbhome-color-hamburger-line;
             }
         }
+        #{$nbhome-menu}{ 
+            #{$nbhome-divider}{
+                background: $nbhome-color-barra-divider;
+            }
+            
+        }
     }
 
 }
