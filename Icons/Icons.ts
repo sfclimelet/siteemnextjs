@@ -1,9 +1,10 @@
 import {
   Layers, Search, Handshake, Send, Briefcase,
   Handbag, NotebookPen, Code, RefreshCcw, MapPinned,
-  NotepadText, Users, User, Sparkles, CircleCheck, BadgeInfo,
+  Users, User, Sparkles, CircleCheck, BadgeInfo,
   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
-  MessageSquareQuote, Medal, Image as ImageIcon, Camera, Sun, Moon, ShoppingBag
+  MessageSquareQuote, MessageSquareText ,Medal, Image as ImageIcon, Camera, Sun, Moon, ShoppingBag,
+  Info, ReceiptText
 } from "lucide-react";
 
 import {
@@ -27,30 +28,32 @@ export const IconsNavbarHome = {
     maintenance: RefreshCcw,
     projects: NotebookPen,
     development: Code,
+    map: MapPinned,
+    info: ReceiptText,
   },
 
   Company: {
     about: Users,
     values: Sparkles,
     quality: CircleCheck,
-    info: BadgeInfo,
+    sobre: Info,
   },
 
-  UI: {
+  Suporte: {
     idea: Lightbulb,
     editUser: UserPen,
+    contato: User,
     rating: Star,
     help: BadgeQuestionMark,
     security: Shield,
     quote: MessageSquareQuote,
-    award: Medal,
   },
 
-  Media: {
+  PortifilioeCert: {
+    quotetxt: MessageSquareText,
+    award: Medal,
     image: ImageIcon,
     camera: Camera,
-    map: MapPinned,
-    notes: NotepadText,
   },
 };
 

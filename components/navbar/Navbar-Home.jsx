@@ -20,9 +20,15 @@ export default function NavbarHome() {
       <div className="navbar-container">
 
         {/* LOGO */}
-        <Link href="/" className="navbar-logo" aria-label="Página inicial">
+        <Link
+          href="/"
+          className="navbar-logo"
+          aria-label="Página inicial"
+          title="Página inicial"
+        >
           <Image
             src={Imgs.NbHome.imglogoTrans.src}
+            fill
             alt="SEF Climatização e Elétrica"
             priority
           />
@@ -30,10 +36,12 @@ export default function NavbarHome() {
 
         {/* HAMBURGER */}
         <button
+          type="button"
           className={`navbar-hamburger ${open ? "is-open" : ""}`}
           aria-label="Abrir menu"
           aria-expanded={open}
-          onClick={() => setOpen((prev) => !prev)}
+          aria-controls="navbar-menu"
+          onClick={() => setOpen(prev => !prev)}
         >
           <span />
           <span />
@@ -41,25 +49,18 @@ export default function NavbarHome() {
         </button>
 
         {/* MENU */}
-        <nav className={`navbar-item ${open ? "open" : ""}`}>
+        <nav
+          id="navbar-menu"
+          className={`navbar-menu ${open ? "open" : ""}`}
+        >
           <ul className="navbar-list">
-            {navbarHomeData.map((item) => {
-              if (item.type === "dropdown") {
-                return (
-                  <NavDropdown
-                    key={item.id}
-                    item={item}
-                  />
-                );
-              }
-
-              return (
-                <NavbarHomeItem
-                  key={item.id}
-                  item={item}
-                />
-              );
-            })}
+            {navbarHomeData.map((item) =>
+              item.type === "dropdown" ? (
+                <NavDropdown key={item.id} item={item} />
+              ) : (
+                <NavbarHomeItem key={item.id} item={item} />
+              )
+            )}
           </ul>
         </nav>
 

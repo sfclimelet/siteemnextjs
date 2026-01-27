@@ -8,15 +8,22 @@ export default function NavDropdown({ item }) {
   const Icon = item.icon;
 
   return (
-    <li className={`nb-item ${open ? "open" : ""}`}>
+    <li
+      className={`nb-item ${open ? "open" : ""}`}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+          setOpen(false);
+        }
+      }}
+    >
       <button
+        type="button"
         className="nb-link"
         aria-haspopup="true"
         aria-expanded={open}
-        onClick={() => setOpen(!open)}
-        onBlur={() => setOpen(false)}
+        onClick={() => setOpen(prev => !prev)}
       >
-        {Icon && <Icon size={18} />}
+        {Icon && <Icon />}
         <span>{item.label}</span>
       </button>
 
@@ -25,9 +32,9 @@ export default function NavDropdown({ item }) {
           const ChildIcon = child.icon;
 
           return (
-            <li key={child.id}>
+            <li key={`${item.id}-${child.href}`}>
               <Link href={child.href} className="nb-dropdown-link">
-                {ChildIcon && <ChildIcon size={16} />}
+                {ChildIcon && <ChildIcon />}
                 <span>{child.label}</span>
               </Link>
             </li>
