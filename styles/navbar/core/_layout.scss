@@ -7,82 +7,104 @@
   left: 0;
   z-index: 1000;
 
-  /* remove underline geral */
+  /* reset básico */
   a {
     text-decoration: none;
     color: inherit;
   }
 
+  /* ================= CONTAINER ================= */
   #{$nbhome-container} {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
 
-    /* ================= LOGO ================= */
-    #{$nbhome-logo} {
-      position: relative;
-      width: 70px;
-      height: 70px;
-      display: block;
+    height: 80px;
+    padding: 0 1rem;
+  }
 
-      #{$nbhome-logo-image} {
-        object-fit: contain;
-      }
+  /* ================= LOGO ================= */
+  #{$nbhome-logo} {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+
+    #{$nbhome-logo-image} {
+      object-fit: contain;
     }
+  }
 
-    /* ================= MENU ================= */
-    #{$nbhome-menu} {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 260px;
-      height: 100vh;
-      padding-top: 90px;
+  /* ================= MENU ================= */
+  #{$nbhome-menu} {
+    position: fixed;
+    top: 0;
+    left: 0;
 
-      transform: translateX(-100%);
-      transition: transform 0.35s ease;
+    width: 260px;
+    height: 100vh;
 
-      /* menu aberto */
-      &#{$nbhome-open} {
-        transform: translateX(0);
-      }
+    padding-top: 80px;
 
-      #{$nbhome-list} {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
 
-        #{$nbhome-item} {
-          width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
 
-          #{$nbhome-link} {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.65rem 0.75rem;
-            font-weight: 500;
-            border-radius: 6px;
-            transition: background 0.25s ease;
-          }
-        }
+    z-index: 999;
+  }
 
-        /* dropdown */
-        #{$nbhome-dropdown} {
-          display: none;
-          padding-left: 1.5rem;
-        }
+  /* ================= LISTA ================= */
+  #{$nbhome-list} {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
 
-        /* dropdown aberto */
-        #{$nbhome-item}.open {
-          #{$nbhome-dropdown} {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-          }
-        }
-      }
-    }
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+  }
+
+  /* ================= ITEM ================= */
+  #{$nbhome-item} {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* ================= LINK / BOTÃO ================= */
+  #{$nbhome-link} {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    min-height: 44px; /* acessibilidade */
+    padding: 0.5rem 0.75rem;
+
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  /* ================= ICONES ================= */
+  #{$nbhome-icons} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ================= DROPDOWN (BASE) ================= */
+  #{$nbhome-dropdown} {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    padding: 0.5rem 0;
   }
 }

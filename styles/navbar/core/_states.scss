@@ -1,0 +1,24 @@
+@use "./_vars.scss" as *;
+
+@use "./_vars.scss" as *;
+
+#{$Navbar-Home} {
+
+  /* MENU ABERTO */
+  #{$nbhome-menu}.open {
+    transform: translateX(0);
+  }
+
+  /* DROPDOWN ABERTO (mobile click) */
+  #{$nbhome-item}.open {
+    > #{$nbhome-dropdown} {
+      display: flex;
+    }
+  }
+
+  /* LINK ATIVO */
+  #{$nbhome-link}.active {
+    font-weight: 600;
+  }
+
+}

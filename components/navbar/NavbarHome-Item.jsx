@@ -7,7 +7,7 @@ export default function NavbarHomeItem({ item }) {
   // 👉 Se NÃO tiver href, vira botão
   if (!item.href) {
     return (
-      <li id={item.id} className="nb-item">
+      <li className="nb-item">
         <button
           type="button"
           className="nb-link"
@@ -22,7 +22,7 @@ export default function NavbarHomeItem({ item }) {
 
   // 👉 Se tiver href, vira Link
   return (
-    <li id={item.id} className="nb-item">
+    <li className="nb-item">
       <Link
         href={item.href}
         className="nb-link"

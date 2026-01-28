@@ -1,1 +1,79 @@
 @use "../core/_vars.scss" as *;
+
+@use "../core/_vars.scss" as *;
+
+@media (min-width: 576px) {
+  #{$Navbar-Home} {
+
+    #{$nbhome-container} {
+
+      /* HAMBURGER SOME */
+      #{$nbhome-hamburger} {
+        display: none !important;
+      }
+
+      /* MENU VIRA INLINE */
+      #{$nbhome-menu} {
+        position: static;
+        transform: none;
+
+        width: auto;
+        height: auto;
+        padding: 0;
+
+        flex-direction: row;
+        align-items: center;
+      }
+
+      /* LISTA EM LINHA */
+      #{$nbhome-list} {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      /* ITEM */
+      #{$nbhome-item} {
+        position: relative;
+      }
+
+      /* ESCONDE TEXTO (ÍCONES ONLY) */
+      @each $name, $selector in $nbhome-menus {
+        #{$selector} {
+          > #{$nbhome-link} {
+            > #{$nbhome-text} {
+              display: none;
+            }
+          }
+        }
+      }
+
+      /* DROPDOWN DESKTOP */
+      #{$nbhome-dropdown} {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: 0;
+
+        min-width: 220px;
+        padding: 0.75rem;
+
+        border-radius: 8px;
+        display: none;
+      }
+
+      /* HOVER DESKTOP */
+      #{$nbhome-item}:hover {
+        > #{$nbhome-dropdown} {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      /* DIVIDER */
+      #{$nbhome-divider} {
+        display: block !important;
+      }
+
+    }
+  }
+}

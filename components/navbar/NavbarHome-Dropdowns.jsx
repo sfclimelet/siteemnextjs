@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function NavDropdown({ item }) {
   if (item.type === "search") return null;
+  
   const [open, setOpen] = useState(false);
   const Icon = item.icon;
 

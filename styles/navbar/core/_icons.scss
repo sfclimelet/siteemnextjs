@@ -2,15 +2,25 @@
 
 #{$Navbar-Home}{
     #{$nbhome-container}{
-        #{$nbhome-menu}{
+        #{$nbhome-list}{
             #{$nbhome-search}{
                 #{$nbhome-search-form}{
-                    #{$nbhome-search-button}{
-                        #{$nbhome-search-icon}{
-                            svg{
-                                width: 20px;
-                                height: 20px;
-                            }
+                    button{
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+            @each $name, $selector in $nbhome-menus{
+                #{$selector}{
+                    button{
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;
                         }
                     }
                 }

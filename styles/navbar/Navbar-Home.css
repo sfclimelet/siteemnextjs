@@ -15,7 +15,15 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  /* remove underline geral */
+  /* reset básico */
+  /* ================= CONTAINER ================= */
+  /* ================= LOGO ================= */
+  /* ================= MENU ================= */
+  /* ================= LISTA ================= */
+  /* ================= ITEM ================= */
+  /* ================= LINK / BOTÃO ================= */
+  /* ================= ICONES ================= */
+  /* ================= DROPDOWN (BASE) ================= */
 }
 #navbar-home a {
   text-decoration: none;
@@ -25,62 +33,70 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1rem;
-  /* ================= LOGO ================= */
-  /* ================= MENU ================= */
+  height: 80px;
+  padding: 0 1rem;
 }
-#navbar-home .navbar-container .navbar-logo {
+#navbar-home .navbar-logo {
   position: relative;
   width: 70px;
   height: 70px;
-  display: block;
+  flex-shrink: 0;
 }
-#navbar-home .navbar-container .navbar-logo .logosef {
+#navbar-home .navbar-logo .logosef {
   -o-object-fit: contain;
      object-fit: contain;
 }
-#navbar-home .navbar-container .navbar-menu {
+#navbar-home .navbar-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 260px;
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
   transform: translateX(-100%);
   transition: transform 0.35s ease;
-  /* menu aberto */
+  z-index: 999;
 }
-#navbar-home .navbar-container .navbar-menu.open {
-  transform: translateX(0);
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list {
+#navbar-home .navbar-list {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 0;
   padding: 0 1rem;
-  /* dropdown */
-  /* dropdown aberto */
+  list-style: none;
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
-  width: 100%;
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-link {
+#navbar-home .nb-item {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.65rem 0.75rem;
+}
+#navbar-home .nb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px; /* acessibilidade */
+  padding: 0.5rem 0.75rem;
   font-weight: 500;
   border-radius: 6px;
-  transition: background 0.25s ease;
+  cursor: pointer;
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-dropdown {
-  display: none;
-  padding-left: 1.5rem;
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item.open .nb-dropdown {
+#navbar-home .nb-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar-home .nb-dropdown {
+  display: none;
   flex-direction: column;
   gap: 0.25rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  padding: 0.5rem 0;
 }
 
 #navbar-home {
@@ -109,66 +125,104 @@
   background: #fff;
 }
 
-#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-btn .nb-search-icon svg {
+#navbar-home .navbar-container .navbar-list #search .nb-search-form button svg {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
+}
+#navbar-home .navbar-container .navbar-list #services button svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+#navbar-home .navbar-container .navbar-list #company button svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+#navbar-home .navbar-container .navbar-list #support button svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+#navbar-home .navbar-container .navbar-list #portfolio button svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+#navbar-home {
+  /* MENU ABERTO */
+  /* DROPDOWN ABERTO (mobile click) */
+  /* LINK ATIVO */
+}
+#navbar-home .navbar-menu.open {
+  transform: translateX(0);
+}
+#navbar-home .nb-item.open > .nb-dropdown {
+  display: flex;
+}
+#navbar-home .nb-link.active {
+  font-weight: 600;
 }
 
 @media (min-width: 576px) {
+  #navbar-home .navbar-container {
+    /* HAMBURGER SOME */
+    /* MENU VIRA INLINE */
+    /* LISTA EM LINHA */
+    /* ITEM */
+    /* ESCONDE TEXTO (ÍCONES ONLY) */
+    /* DROPDOWN DESKTOP */
+    /* HOVER DESKTOP */
+    /* DIVIDER */
+  }
   #navbar-home .navbar-container .navbar-hamburger {
     display: none !important;
   }
   #navbar-home .navbar-container .navbar-menu {
     position: static;
     transform: none;
-    height: auto;
     width: auto;
+    height: auto;
     padding: 0;
-    background: transparent;
+    flex-direction: row;
+    align-items: center;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list {
-    display: flex;
+  #navbar-home .navbar-container .navbar-list {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #services {
+  #navbar-home .navbar-container .nb-item {
     position: relative;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #services > .nb-link > .nb-text {
+  #navbar-home .navbar-container #services > .nb-link > .nb-text {
     display: none;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #company {
-    position: relative;
-  }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #company > .nb-link > .nb-text {
+  #navbar-home .navbar-container #company > .nb-link > .nb-text {
     display: none;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #support {
-    position: relative;
-  }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #support > .nb-link > .nb-text {
+  #navbar-home .navbar-container #support > .nb-link > .nb-text {
     display: none;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #portfolio {
-    position: relative;
-  }
-  #navbar-home .navbar-container .navbar-menu .navbar-list #portfolio > .nb-link > .nb-text {
+  #navbar-home .navbar-container #portfolio > .nb-link > .nb-text {
     display: none;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-dropdown {
+  #navbar-home .navbar-container .nb-dropdown {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     left: 0;
+    min-width: 220px;
     padding: 0.75rem;
     border-radius: 8px;
-    min-width: 220px;
     display: none;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item:hover .nb-dropdown {
-    display: block;
+  #navbar-home .navbar-container .nb-item:hover > .nb-dropdown {
+    display: flex;
+    flex-direction: column;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list .nb-divider {
+  #navbar-home .navbar-container .nb-divider {
     display: block !important;
   }
 }
