@@ -1,1 +1,20 @@
+@use "./_vars.scss" as *;
 
+#{$Navbar-Home}{
+    #{$nbhome-container}{
+        #{$nbhome-menu}{
+            #{$nbhome-search}{
+                #{$nbhome-search-form}{
+                    #{$nbhome-search-button}{
+                        #{$nbhome-search-icon}{
+                            svg{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

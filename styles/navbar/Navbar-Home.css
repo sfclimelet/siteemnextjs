@@ -8,7 +8,7 @@
 /* Barra divisória */
 /* Dropdowns */
 /* Estados */
-/* -------  List para @each dinamico ----------------- */
+/* ----------------------- SEARCH --------------------- */
 #navbar-home {
   width: 100%;
   position: fixed;
@@ -89,8 +89,29 @@
 #navbar-home .navbar-container .navbar-hamburger span {
   background-color: #fff;
 }
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-input {
+  border: 1px solid #f1c40f;
+  color: #fff;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-input::-moz-placeholder {
+  color: #aaa;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-input::placeholder {
+  color: #aaa;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-btn {
+  border: 1px solid #fff;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-btn .nb-search-icon {
+  stroke: #fff;
+}
 #navbar-home .navbar-container .navbar-menu .nb-divider {
   background: #fff;
+}
+
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-btn .nb-search-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 576px) {
@@ -111,11 +132,28 @@
     align-items: center;
     gap: 1rem;
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
+  #navbar-home .navbar-container .navbar-menu .navbar-list #services {
     position: relative;
-    /* 🔥 AQUI É O FIX */
   }
-  #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item > .nb-link > .nb-text {
+  #navbar-home .navbar-container .navbar-menu .navbar-list #services > .nb-link > .nb-text {
+    display: none;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #company {
+    position: relative;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #company > .nb-link > .nb-text {
+    display: none;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #support {
+    position: relative;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #support > .nb-link > .nb-text {
+    display: none;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #portfolio {
+    position: relative;
+  }
+  #navbar-home .navbar-container .navbar-menu .navbar-list #portfolio > .nb-link > .nb-text {
     display: none;
   }
   #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-dropdown {
@@ -161,6 +199,53 @@
 }
 #navbar-home .navbar-container .navbar-hamburger.is-open span:nth-child(3) {
   transform: translateY(-14px) rotate(-45deg);
+}
+
+#navbar-home {
+  /* 🔥 REMOVE ÍCONE FANTASMA DO SEARCH */
+  /* ----------------------------------- */
+}
+#navbar-home #search::before, #navbar-home #search::after {
+  content: none !important;
+  display: none !important;
+}
+#navbar-home #search .nb-link::before, #navbar-home #search .nb-link::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+#navbar-home #search .nb-icon {
+  display: none !important;
+}
+#navbar-home .navbar-container .navbar-menu #search {
+  width: 100%;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-input {
+  flex: 1;
+  height: 42px;
+  padding: 0 12px;
+  border-right: none;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+}
+#navbar-home .navbar-container .navbar-menu #search .nb-search-form .nb-search-btn {
+  height: 42px;
+  width: 48px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #navbar-home .navbar-container .navbar-menu .navbar-list .nb-divider {

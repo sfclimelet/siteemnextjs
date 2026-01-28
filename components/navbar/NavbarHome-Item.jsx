@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 export default function NavbarHomeItem({ item }) {
+  if (item.type === "search") return null;
   const Icon = item.icon;
-
+  
   // 👉 Se NÃO tiver href, vira botão
   if (!item.href) {
     return (
-      <li className="nb-item">
+      <li id={item.id} className="nb-item">
         <button
           type="button"
           className="nb-link"
@@ -21,7 +22,7 @@ export default function NavbarHomeItem({ item }) {
 
   // 👉 Se tiver href, vira Link
   return (
-    <li className="nb-item">
+    <li id={item.id} className="nb-item">
       <Link
         href={item.href}
         className="nb-link"

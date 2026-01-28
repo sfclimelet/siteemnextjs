@@ -22,16 +22,18 @@
           align-items: center;
           gap: 1rem;
 
-          #{$nbhome-item} {
-            position: relative;
-
-            /* 🔥 AQUI É O FIX */
-            > #{$nbhome-link} {
-              > #{$nbhome-text} {
-                display: none;
+          @each $name, $selector in $nbhome-menus{
+            #{$selector}{
+              position: relative;
+              > #{$nbhome-link} {
+                  > #{$nbhome-text} {
+                      display: none;
+                  }
               }
             }
+          }
 
+          #{$nbhome-item} {
             #{$nbhome-dropdown} {
               position: absolute;
               top: 100%;
@@ -41,7 +43,6 @@
               min-width: 220px;
               display: none;
             }
-
             &:hover {
               #{$nbhome-dropdown} {
                 display: block;

@@ -32,14 +32,16 @@ $nbhome-dropdown-link: ".nb-dropdown-link";
 $nbhome-open: ".open";
 $nbhome-active: ".active";
 
-/* -------  List para @each dinamico ----------------- */
-$nbhome-search: (
-    search: "#search"
-);
-
 $nbhome-menus: (
     servico: "#services",
     qmsomos: "#company",
     ajsuport: "#support",
     portcert: "#portfolio"
 );
+
+/* ----------------------- SEARCH --------------------- */
+$nbhome-search: "#search";
+$nbhome-search-form: ".nb-search-form";
+$nbhome-search-input: ".nb-search-input";
+$nbhome-search-button: ".nb-search-btn";
+$nbhome-search-icon: ".nb-search-icon";

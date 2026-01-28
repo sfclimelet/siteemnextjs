@@ -1,5 +1,5 @@
-@use "./core/_vars.scss";
-@use "./core/_colors.scss";
+@use "./core/_vars.scss" as *;
+@use "./core/_colors.scss" as *;
 @use "./core/_animations.scss";
 @use "./core/_design.scss";
 @use "./core/_layout.scss";
@@ -9,6 +9,9 @@
 @use "./breakpoints/_mobiles.scss";
 @use "./breakpoints/_tablets.scss";
 @use "./breakpoints/_desktops.scss";
+@use "./breakpoints/_search-mobiles.scss";
+@use "./breakpoints/_search-tablets.scss";
+@use "./breakpoints/_search-desktops.scss";
 
 @use "./modules/_hamburger.scss";
 @use "./modules/_search.scss";

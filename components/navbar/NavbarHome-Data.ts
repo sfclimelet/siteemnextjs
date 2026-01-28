@@ -1,14 +1,16 @@
 import { IconsNavbarHome } from "../../Icons/Icons";
 import { ROUTES } from "./menuRoutes";
 
-export const navbarHomeData = [
+export const searchData = [
   {
     id: "search",
     type: "search",
     label: "Buscar",
     icon: IconsNavbarHome.Menu.search,
   },
+]
 
+export const navbarHomeData = [
   {
     id: "services",
     type: "dropdown",

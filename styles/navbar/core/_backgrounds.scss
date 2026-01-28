@@ -9,7 +9,24 @@
                 background-color: $nbhome-color-hamburger-line;
             }
         }
-        #{$nbhome-menu}{ 
+        #{$nbhome-menu}{
+            #{$nbhome-search}{
+                #{$nbhome-search-form}{
+                    #{$nbhome-search-input}{
+                        border: 1px solid $nbhome-color-search-input;
+                        color: $nbhome-color-search-primary;
+                        &::placeholder{
+                            color: #aaa;
+                        }
+                    }
+                    #{$nbhome-search-button}{
+                        border: 1px solid $nbhome-color-search-primary;
+                        #{$nbhome-search-icon}{
+                            stroke: $nbhome-color-search-primary;
+                        }
+                    }
+                }
+            }
             #{$nbhome-divider}{
                 background: $nbhome-color-barra-divider;
             }

@@ -7,21 +7,17 @@ import Image from "next/image";
 import { Imgs } from "../../config/images";
 
 import { navbarHomeData } from "./NavbarHome-Data";
+import { searchData } from "./NavbarHome-Data";
 import NavbarHomeItem from "./NavbarHome-Item";
 import NavDropdown from "./NavbarHome-Dropdowns";
+import NavSearch from "./Search-NavbarHome";
 
 import "../../styles/navbar/Navbar-Home.scss";
 
 export default function NavbarHome() {
   const [open, setOpen] = useState(false);
 
-  const searchItems = navbarHomeData.filter(
-    (item) => item.type === "search"
-  );
-
-  const menuItems = navbarHomeData.filter(
-    (item) => item.type !== "search"
-  );
+  const menuItems = navbarHomeData.filter((item) => item.type !== "search");
 
   return (
     <header id="navbar-home">
@@ -65,8 +61,8 @@ export default function NavbarHome() {
           <ul className="navbar-list">
 
             {/* SEARCH */}
-            {searchItems.map((item) => (
-              <NavbarHomeItem key={item.id} item={item} />
+            {searchData.map((item) => (
+              <NavSearch key={item.id} item={item} />
             ))}
 
             {/* BARRA DIVISÓRIA */}
