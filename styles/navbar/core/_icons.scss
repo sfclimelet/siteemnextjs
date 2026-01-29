@@ -8,6 +8,17 @@
 
       #{$nbhome-list} {
 
+        #{$nbhome-search}{
+          #{$nbhome-search-form}{
+            button{
+              #{$nbhome-search-icon}{
+                font-size: 1rem;
+                color: #fff;
+              }
+            }
+          }
+        }
+
         @each $name, $selector in $nbhome-menus {
 
           #{$selector} {
@@ -22,6 +33,7 @@
                 width: 20px;
                 height: 20px;
                 flex-shrink: 0;
+                color: #fff;
               }
 
             }
