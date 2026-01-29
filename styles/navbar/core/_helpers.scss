@@ -1,0 +1,9 @@
+@mixin centerXY(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition($time){
+    transition: all $time ease;
+}

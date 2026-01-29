@@ -3,6 +3,7 @@ $Navbar-Home: "#navbar-home";
 
 /* Containers */
 $nbhome-container: ".navbar-container";
+$nbhome-top: ".navbar-top";
 $nbhome-logo: ".navbar-logo";
 $nbhome-logo-image: ".logosef";
 $nbhome-menu: ".navbar-menu";
@@ -15,33 +16,31 @@ $nbhome-hamburger-line: "span";
 /* Itens */
 $nbhome-item: ".nb-item";
 $nbhome-link: ".nb-link";
-
-/* Icons */
 $nbhome-icons: ".nb-icon";
-/* Text de Icons */
 $nbhome-text: ".nb-text";
 
-/* Barra divisória */
-$nbhome-divider: ".nb-divider";
-
-/* Dropdowns */
+/* Dropdown */
 $nbhome-dropdown: ".nb-dropdown";
 $nbhome-dropdown-link: ".nb-dropdown-link";
+
+/* Search */
+$nbhome-search: ".nb-search";
+$nbhome-search-form: ".nb-search-form";
+$nbhome-search-input: ".nb-search-input";
+$nbhome-search-button: ".nb-search-btn";
+$nbhome-search-icon: ".nb-search-icon";
+
+/* Divider */
+$nbhome-divider: ".nb-divider";
 
 /* Estados */
 $nbhome-open: ".open";
 $nbhome-active: ".active";
 
+/* Menu específico (opcional, se precisar controlar via each) */
 $nbhome-menus: (
     servico: "#services",
     qmsomos: "#company",
     ajsuport: "#support",
     portcert: "#portfolio"
 );
-
-/* ----------------------- SEARCH --------------------- */
-$nbhome-search: "#search";
-$nbhome-search-form: ".nb-search-form";
-$nbhome-search-input: ".nb-search-input";
-$nbhome-search-button: ".nb-search-btn";
-$nbhome-search-icon: ".nb-search-icon";

@@ -5,9 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Imgs } from "../../config/images";
+import { navbarHomeData, searchData } from "./NavbarHome-Data";
 
-import { navbarHomeData } from "./NavbarHome-Data";
-import { searchData } from "./NavbarHome-Data";
 import NavbarHomeItem from "./NavbarHome-Item";
 import NavDropdown from "./NavbarHome-Dropdowns";
 import NavSearch from "./Search-NavbarHome";
@@ -15,61 +14,59 @@ import NavSearch from "./Search-NavbarHome";
 import "../../styles/navbar/Navbar-Home.scss";
 
 export default function NavbarHome() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const menuItems = navbarHomeData.filter((item) => item.type !== "search");
+  // separar menu e search
+  const menuItems = navbarHomeData.filter(item => item.type !== "search");
 
   return (
     <header id="navbar-home">
+      {/* ================= CONTAINER PRINCIPAL ================= */}
       <div className="navbar-container">
+        
+        {/* ================= LOGO + HAMBURGER ================= */}
+        <div className="navbar-top">
+          <Link
+            href="/"
+            className="navbar-logo"
+            aria-label="Página inicial"
+          >
+            <Image
+              className="logosef"
+              src={Imgs.NbHome.imglogoTrans.src}
+              fill
+              alt="SEF Climatização e Elétrica"
+              priority
+            />
+          </Link>
 
-        {/* LOGO */}
-        <Link
-          href="/"
-          className="navbar-logo"
-          aria-label="Página inicial"
-          title="Página inicial"
-        >
-          <Image
-            className="logosef"
-            src={Imgs.NbHome.imglogoTrans.src}
-            fill
-            alt="SEF Climatização e Elétrica"
-            priority
-          />
-        </Link>
+          <button
+            type="button"
+            className={`navbar-hamburger ${menuOpen ? "open" : ""}`}
+            aria-label="Abrir menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(prev => !prev)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
 
-        {/* HAMBURGER */}
-        <button
-          type="button"
-          className={`navbar-hamburger ${open ? "is-open" : ""}`}
-          aria-label="Abrir menu"
-          aria-expanded={open}
-          aria-controls="navbar-menu"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-
-        {/* MENU */}
-        <nav
-          id="navbar-menu"
-          className={`navbar-menu ${open ? "open" : ""}`}
-        >
+        {/* ================= MENU EXPANSÍVEL ================= */}
+        <nav className={`navbar-menu ${menuOpen ? "open" : ""}`}>
           <ul className="navbar-list">
 
             {/* SEARCH */}
-            {searchData.map((item) => (
+            {searchData.map(item => (
               <NavSearch key={item.id} item={item} />
             ))}
 
-            {/* BARRA DIVISÓRIA */}
+            {/* DIVIDER */}
             <li className="nb-divider" aria-hidden="true" />
 
-            {/* OUTROS MENUS */}
-            {menuItems.map((item) =>
+            {/* MENUS */}
+            {menuItems.map(item =>
               item.type === "dropdown" ? (
                 <NavDropdown key={item.id} item={item} />
               ) : (
@@ -79,7 +76,6 @@ export default function NavbarHome() {
 
           </ul>
         </nav>
-
       </div>
     </header>
   );
