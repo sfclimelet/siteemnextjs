@@ -1,40 +1,55 @@
 @use "../core/_vars.scss" as *;
 
-#{$Navbar-Home}{
-    #{$nbhome-container}{
-        #{$nbhome-menu}{
-            #{$nbhome-item}{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                #{$nbhome-link}{
-                    display: flex;
-                    align-items: center;
-                    gap: 0.75rem;
+#{$Navbar-Home} {
 
-                    width: 100%;
-                    min-height: 44px;
+  #{$nbhome-container} {
 
-                    padding: 0.75rem 0.75rem;
-                    border-radius: 6px;
+    #{$nbhome-menu} {
 
-                    cursor: pointer;
-                    user-select: none;
+      #{$nbhome-list} {
 
-                    transition: background 0.25s ease, color 0.25s ease;
-                    &:hover{
-                        background: #ffffff14;
-                    }
-                    #{$nbhome-active}{
-                        background: #ffffff26;
-                    }
-                    #{$nbhome-text}{
-                        font-size: 0.95rem;
-                        line-height: 1;
-                        white-space: nowrap;
-                    }
-                }
+        #{$nbhome-item} {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          #{$nbhome-link} {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+
+            width: 100%;
+            min-height: 44px;
+
+            padding: 0.75rem;
+            border-radius: 6px;
+
+            cursor: pointer;
+            user-select: none;
+
+            transition: background 0.25s ease, color 0.25s ease;
+
+            &:hover {
+              background: #ffffff14;
             }
+
+            &#{$nbhome-active} {
+              background: #ffffff26;
+            }
+
+            #{$nbhome-text} {
+              font-size: 0.95rem;
+              line-height: 1;
+              white-space: nowrap;
+            }
+          }
+
         }
+
+      }
+
     }
+
+  }
+
 }

@@ -1,7 +1,6 @@
 @use "./_vars.scss" as *;
 
-/* ================= STATES - GLOBAL ================= */
-
+/* ================= GLOBAL STATES ================= */
 #{$nbhome-active} {
   font-weight: 600;
 }
@@ -16,44 +15,79 @@
 }
 
 /* ================= NAVBAR STATES ================= */
+
 #{$Navbar-Home} {
 
-  /* ---------- MENU MOBILE ---------- */
-  #{$nbhome-menu} {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
+  /* ===== CONTAINER ===== */
+  #{$nbhome-container} {
 
-    transition: 
-      max-height 0.35s ease,
-      opacity 0.25s ease;
-  }
+    /* ===== TOP ===== */
+    #{$nbhome-top} {
 
-  #{$nbhome-menu}#{$nbhome-open} {
-    max-height: 600px; // valor seguro
-    opacity: 1;
-    pointer-events: auto;
-  }
+      /* --- HAMBURGER --- */
+      #{$nbhome-hamburger} {
+        cursor: pointer;
+      }
 
-  /* ---------- DROPDOWN ---------- */
-  #{$nbhome-dropdown} {
-    display: none;
-  }
+      #{$nbhome-hamburger}#{$nbhome-open} {
+        #{$nbhome-hamburger-line}:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
 
-  #{$nbhome-item}#{$nbhome-open} {
-    > #{$nbhome-dropdown} {
+        #{$nbhome-hamburger-line}:nth-child(2) {
+          opacity: 0;
+        }
+
+        #{$nbhome-hamburger-line}:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+
+    /* ===== MENU MOBILE ===== */
+    #{$nbhome-menu} {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
+
+      transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease;
+    }
+
+    #{$nbhome-menu}#{$nbhome-open} {
+      max-height: 600px; // seguro
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ===== LIST / ITEMS ===== */
+    #{$nbhome-list} {
+
+      #{$nbhome-item} {
+
+        /* --- DROPDOWN --- */
+        #{$nbhome-dropdown} {
+          display: none;
+        }
+
+        &#{$nbhome-open} {
+          > #{$nbhome-dropdown} {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    /* ===== SEARCH ===== */
+    #{$nbhome-search} {
+      display: none;
+    }
+
+    #{$nbhome-search}#{$nbhome-open} {
       display: flex;
     }
-  }
 
-  /* ---------- SEARCH ---------- */
-  #{$nbhome-search} {
-    display: none;
   }
-
-  #{$nbhome-search}#{$nbhome-open} {
-    display: flex;
-  }
-
 }

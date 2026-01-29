@@ -1,23 +1,39 @@
 @use "./_vars.scss" as *;
 
-#{$Navbar-Home}{
-    #{$nbhome-container}{
-        #{$nbhome-menu}{
-            @each $name, $selector in $nbhome-menus{
-                #{$selector}{
-                    #{$nbhome-link}{
-                        #{$nbhome-icons} svg{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+#{$Navbar-Home} {
 
-                            width: 20px;
-                            height: 20px;
-                            flex-shrink: 0;
-                        }
-                    }
-                }
+  #{$nbhome-container} {
+
+    #{$nbhome-menu} {
+
+      #{$nbhome-list} {
+
+        @each $name, $selector in $nbhome-menus {
+
+          #{$selector} {
+
+            #{$nbhome-link} {
+
+              #{$nbhome-icons} {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 20px;
+                height: 20px;
+                flex-shrink: 0;
+              }
+
             }
+
+          }
+
         }
+
+      }
+
     }
+
+  }
+
 }

@@ -1,1 +1,21 @@
 @use "../core/_vars.scss" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-container}{
+        #{$nbhome-menu}{
+            #{$nbhome-list}{
+                #{$nbhome-divider}{
+                    width: 100%;
+                    height: 1px;
+
+                    margin: 0.75rem 0;
+
+                    background: rgba(255, 255, 255, 0.15);
+
+                    list-style: none;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
