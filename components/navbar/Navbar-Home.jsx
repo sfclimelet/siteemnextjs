@@ -32,7 +32,7 @@ export default function NavbarHome() {
             aria-label="Página inicial"
           >
             <Image
-              className="logosef"
+              id="logosef"
               src={Imgs.NbHome.imglogoTrans.src}
               fill
               alt="SEF Climatização e Elétrica"

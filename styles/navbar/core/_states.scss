@@ -1,16 +1,59 @@
-.open{
-  display: block;
-}
+@use "./_vars.scss" as *;
 
-.active{
+/* ================= STATES - GLOBAL ================= */
+
+#{$nbhome-active} {
   font-weight: 600;
 }
 
-.disabled{
+.hidden {
+  display: none !important;
+}
+
+.disabled {
   pointer-events: none;
   opacity: 0.5;
 }
 
-.hidden{
-  display: none !important;
+/* ================= NAVBAR STATES ================= */
+#{$Navbar-Home} {
+
+  /* ---------- MENU MOBILE ---------- */
+  #{$nbhome-menu} {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    transition: 
+      max-height 0.35s ease,
+      opacity 0.25s ease;
+  }
+
+  #{$nbhome-menu}#{$nbhome-open} {
+    max-height: 600px; // valor seguro
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* ---------- DROPDOWN ---------- */
+  #{$nbhome-dropdown} {
+    display: none;
+  }
+
+  #{$nbhome-item}#{$nbhome-open} {
+    > #{$nbhome-dropdown} {
+      display: flex;
+    }
+  }
+
+  /* ---------- SEARCH ---------- */
+  #{$nbhome-search} {
+    display: none;
+  }
+
+  #{$nbhome-search}#{$nbhome-open} {
+    display: flex;
+  }
+
 }
