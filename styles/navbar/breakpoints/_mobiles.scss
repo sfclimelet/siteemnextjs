@@ -1,2 +1,65 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_breakpoints.scss" as *;
+
+@media (max-width: 575px) {
+
+  #{$Navbar-Home} {
+    /* ================= CONTAINER ================= */
+    #{$nbhome-container} {
+      flex-direction: column; /* empilha verticalmente no mobile */
+      align-items: stretch;
+    }
+
+    /* ================= MENU ================= */
+    #{$nbhome-menu} {
+      width: 100%;
+      max-height: 0; /* fechado por padrão */
+      overflow: hidden;
+      transition: max-height 0.35s ease, opacity 0.25s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Quando abrir o menu */
+    #{$nbhome-menu}#{$nbhome-open} {
+      height: auto; /* valor seguro, aumenta conforme o conteúdo */
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ================= LISTA ================= */
+    #{$nbhome-list} {
+        margin: 0 auto;
+        flex-direction: column; /* itens empilhados */
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    /* ================= ITEM ================= */
+    #{$nbhome-item} {
+      width: 70%;
+    }
+
+    /* ================= DROPDOWN ================= */
+    #{$nbhome-item}#{$nbhome-open} {
+      > #{$nbhome-dropdown} {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+    }
+
+    /* ================= SEARCH ================= */
+    #{$nbhome-search}#{$nbhome-open} {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+
+      #{$nbhome-search-input} {
+        width: 100%;
+      }
+    }
+
+  }
+
+}

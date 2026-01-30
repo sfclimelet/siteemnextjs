@@ -3,64 +3,59 @@
 #{$Navbar-Home} {
   #{$nbhome-container} {
     #{$nbhome-menu} {
+      #{$nbhome-list} {
 
-      #{$nbhome-search} {
-        width: 100%;
-        padding: 0.75rem 1rem;
-
-        display: flex;
-        align-items: center;
-
-        background: rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
-        margin-bottom: 0.75rem;
-
-        #{$nbhome-search-form} {
+        #{$nbhome-search} {
+          width: 100%;
           display: flex;
           align-items: center;
-          width: 100%;
-          gap: 0.5rem;
+          display: none;
 
-          #{$nbhome-search-input} {
-            flex: 1;
-            height: 44px;
-
-            padding: 0 0.75rem;
-            border-radius: 6px;
-            border: none;
-            outline: none;
-
-            background: rgba(255, 255, 255, 0.12);
-            color: #fff;
-            font-size: 0.95rem;
-
-            &::placeholder {
-              color: rgba(255, 255, 255, 0.6);
-            }
-          }
-
-          #{$nbhome-search-button} {
-            width: 44px;
-            height: 44px;
-
+          #{$nbhome-search-form} {
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 0.5rem;
 
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
+            width: 100%;
 
-            background: rgba(255, 255, 255, 0.2);
-            transition: background 0.25s ease;
+            #{$nbhome-search-input} {
+              flex: 1;
+              height: 44px;
 
-            &:hover {
-              background: rgba(255, 255, 255, 0.35);
+              padding: 0 0.75rem;
+              border-radius: 6px;
+
+              background: rgba(255, 255, 255, 0.08);
+              color: #fff;
+
+              border: none;
+              outline: none;
+            }
+
+            #{$nbhome-search-button} {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              width: 44px;
+              height: 44px;
+
+              border-radius: 6px;
+              border: none;
+              cursor: pointer;
+
+              background: rgba(255, 255, 255, 0.12);
+
+              transition: background 0.25s ease;
+
+              &:hover {
+                background: rgba(255, 255, 255, 0.2);
+              }
             }
           }
         }
-      }
 
+      }
     }
   }
 }

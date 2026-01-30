@@ -1,24 +1,20 @@
-import { useState } from "react";
 import Link from "next/link";
 
-export default function NavDropdown({ item }) {
-  const [open, setOpen] = useState(false);
+export default function NavDropdown({ item, openItem, handleToggle }) {
+  const isOpen = openItem === item.id;       // verifica se é o dropdown aberto
   const Icon = item.icon;
 
   return (
     <li
       id={item.id}
-      className={`nb-item ${open ? "open" : ""}`}
-      onBlur={e => {
-        if (!e.currentTarget.contains(e.relatedTarget)) setOpen(false);
-      }}
+      className={`nb-item ${isOpen ? "open" : ""}`}
     >
       <button
         type="button"
         className="nb-link"
         aria-haspopup="true"
-        aria-expanded={open}
-        onClick={() => setOpen(prev => !prev)}
+        aria-expanded={isOpen}
+        onClick={() => handleToggle(item.id)}   // abre/fecha dropdown via pai
       >
         {Icon && <Icon className="nb-icon" />}
         <span className="nb-text">{item.label}</span>

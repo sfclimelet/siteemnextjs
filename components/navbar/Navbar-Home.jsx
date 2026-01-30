@@ -14,32 +14,35 @@ import NavSearch from "./Search-NavbarHome";
 import "../../styles/navbar/Navbar-Home.scss";
 
 export default function NavbarHome() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);  // controla menu mobile
+  const [openItem, setOpenItem] = useState(null);   // controla dropdown único
 
-  // separar menu e search
+  // Separar itens que não são search
   const menuItems = navbarHomeData.filter(item => item.type !== "search");
 
+  // Função para abrir/fechar dropdown individual
+  const handleToggle = (id) => {
+    if (openItem === id) setOpenItem(null);  // fecha se já estiver aberto
+    else setOpenItem(id);                    // abre o clicado e fecha os outros
+  };
+
   return (
-    <header id="navbar-home">
-      {/* ================= CONTAINER PRINCIPAL ================= */}
+    <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
       <div className="navbar-container">
-        
-        {/* ================= LOGO + HAMBURGER ================= */}
+
+        {/* ================= TOPO ================= */}
         <div className="navbar-top">
-          <Link
-            href="/"
-            className="navbar-logo"
-            aria-label="Página inicial"
-          >
+          <Link href="/" className="navbar-logo" aria-label="Página inicial">
             <Image
-              id="logosef"
               src={Imgs.NbHome.imglogoTrans.src}
               fill
-              alt="SEF Climatização e Elétrica"
+              alt="Logo"
+              className="logosef"
               priority
             />
           </Link>
 
+          {/* HAMBURGER MOBILE */}
           <button
             type="button"
             className={`navbar-hamburger ${menuOpen ? "open" : ""}`}
@@ -65,17 +68,28 @@ export default function NavbarHome() {
             {/* DIVIDER */}
             <li className="nb-divider" aria-hidden="true" />
 
-            {/* MENUS */}
-            {menuItems.map(item =>
+            {/* ITENS / DROPDOWNS */}
+            {menuItems.map(item => (
               item.type === "dropdown" ? (
-                <NavDropdown key={item.id} item={item} />
+                <NavDropdown
+                  key={item.id}
+                  item={item}
+                  openItem={openItem}           // estado global do dropdown
+                  handleToggle={handleToggle}   // função para abrir/fechar
+                />
               ) : (
-                <NavbarHomeItem key={item.id} item={item} />
+                <NavbarHomeItem
+                  key={item.id}
+                  item={item}
+                  openItem={openItem}
+                  handleToggle={handleToggle}   // caso precise de toggle futuro
+                />
               )
-            )}
+            ))}
 
           </ul>
         </nav>
+
       </div>
     </header>
   );

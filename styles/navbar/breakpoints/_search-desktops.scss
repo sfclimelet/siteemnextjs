@@ -1,1 +1,16 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_breakpoints.scss" as *;
+
+@media (min-width: 576px){
+    #{$Navbar-Home} {
+        #{$nbhome-container} {
+            #{$nbhome-menu} {
+                #{$nbhome-search} {
+                    display: flex;
+                    width: auto;
+                    margin-left: auto; /* joga pro lado direito da navbar */
+                }
+            }
+    }
+  }
+}

@@ -1,1 +1,82 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_breakpoints.scss" as *;
+
+@media (min-width: 576px) {
+
+  #{$Navbar-Home} {
+
+    /* ================= CONTAINER ================= */
+    #{$nbhome-container} {
+      display: flex;
+      flex-direction: row;   // container horizontal
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 1rem;
+    }
+
+    /* ================= HAMBURGER ================= */
+    #{$nbhome-hamburger} {
+      display: none !important;  // escondido no desktop
+    }
+
+    /* ================= MENU ================= */
+    #{$nbhome-menu} {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      max-height: none;
+      opacity: 1;
+      pointer-events: auto;
+      overflow: visible;
+      background: transparent;
+    }
+
+    /* ================= LISTA ================= */
+    #{$nbhome-list} {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ================= ITEM ================= */
+    #{$nbhome-item} {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative; // necessário pro dropdown
+    }
+
+    /* ================= DROPDOWN ================= */
+    #{$nbhome-dropdown} {
+      display: none; // só abre no hover
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 0;
+
+      flex-direction: column;
+      min-width: 220px;
+      padding: 0.75rem;
+      background: #793030; // exemplo de cor
+      border-radius: 8px;
+      z-index: 100;
+    }
+
+    #{$nbhome-item}:hover > #{$nbhome-dropdown} {
+      display: flex !important;
+    }
+
+    /* ================= DIVIDER ================= */
+    #{$nbhome-divider} {
+      width: 1px;
+      height: 24px;
+      margin: 0 0.75rem;
+      background: rgba(255, 255, 255, 0.15);
+      flex-shrink: 0;
+    }
+  }
+}

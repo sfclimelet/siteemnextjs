@@ -18,6 +18,10 @@
 
 #{$Navbar-Home} {
 
+  &.open{
+    height: auto;
+  }
+
   /* ===== CONTAINER ===== */
   #{$nbhome-container} {
 
