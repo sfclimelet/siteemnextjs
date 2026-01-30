@@ -17,7 +17,6 @@
 @use "./core/_transitions.scss";
 @use "./core/_typography.scss";
 
-
 /* MÓDULES */
 @use "./modules/_divider.scss";
 @use "./modules/_dropdowns.scss";
@@ -34,4 +33,4 @@
 @use "./breakpoints/_search-tablets.scss";
 @use "./breakpoints/_search-desktops.scss";
 @use "./breakpoints/_hamburger.scss" as hamburgerBreakpoint;
-@use "./breakpoints/_divider.scss" as Dividerbreakpoint;
+@use "./breakpoints/_divider.scss" as DividerBreakpoint;

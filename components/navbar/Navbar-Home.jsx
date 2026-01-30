@@ -74,15 +74,15 @@ export default function NavbarHome() {
                 <NavDropdown
                   key={item.id}
                   item={item}
-                  openItem={openItem}           // estado global do dropdown
-                  handleToggle={handleToggle}   // função para abrir/fechar
+                  openItem={openItem}
+                  handleToggle={handleToggle}
                 />
               ) : (
                 <NavbarHomeItem
                   key={item.id}
                   item={item}
                   openItem={openItem}
-                  handleToggle={handleToggle}   // caso precise de toggle futuro
+                  handleToggle={handleToggle}
                 />
               )
             ))}

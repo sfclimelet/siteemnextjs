@@ -24,13 +24,17 @@
 
             /* ---------- LINKS ---------- */
             #{$nbhome-dropdown-link} {
+              width: 100%;
               display: flex;
               align-items: center;
+              gap: 0.75rem;
 
               min-height: 40px;
               padding: 0.5rem 0.75rem;
 
-              border-radius: 6px;
+              text-align: left;
+
+              border-radius: 8px;
               cursor: pointer;
               font-size: 0.9rem;
             }

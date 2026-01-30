@@ -8,3 +8,9 @@
     transform: translateY(-$distance);
     animation: slideDown $time ease forwards;
 }
+
+@mixin hoverFocus($color){
+    &:hover, :focus-visible {
+        background: $color;
+    }
+}

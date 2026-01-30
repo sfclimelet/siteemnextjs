@@ -7,29 +7,25 @@
 
     /* ================= CONTAINER ================= */
     #{$nbhome-container} {
-      display: flex;
-      flex-direction: row;   // container horizontal
-      align-items: center;
-      justify-content: space-between;
-      height: 80px;
-      padding: 0 1rem;
-    }
-
-    /* ================= HAMBURGER ================= */
-    #{$nbhome-hamburger} {
-      display: none !important;  // escondido no desktop
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
     }
 
     /* ================= MENU ================= */
     #{$nbhome-menu} {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
       gap: 1rem;
-      max-height: none;
+
+      max-height: unset;
+      height: auto;
       opacity: 1;
       pointer-events: auto;
       overflow: visible;
+
       background: transparent;
     }
 
@@ -39,44 +35,56 @@
       flex-direction: row;
       align-items: center;
       gap: 1rem;
+
       margin: 0;
       padding: 0;
     }
 
     /* ================= ITEM ================= */
     #{$nbhome-item} {
+      position: relative; // ancora o dropdown
       display: flex;
-      flex-direction: row;
       align-items: center;
-      position: relative; // necessário pro dropdown
     }
 
     /* ================= DROPDOWN ================= */
     #{$nbhome-dropdown} {
-      display: none; // só abre no hover
+      display: none;
       position: absolute;
       top: calc(100% + 0.5rem);
       left: 0;
 
       flex-direction: column;
-      min-width: 220px;
-      padding: 0.75rem;
-      background: #793030; // exemplo de cor
-      border-radius: 8px;
-      z-index: 100;
-    }
+      gap: 0.25rem;
 
-    #{$nbhome-item}:hover > #{$nbhome-dropdown} {
-      display: flex !important;
-    }
+      min-width: 200px;
+      max-width: 260px;
 
-    /* ================= DIVIDER ================= */
-    #{$nbhome-divider} {
-      width: 1px;
-      height: 24px;
-      margin: 0 0.75rem;
-      background: rgba(255, 255, 255, 0.15);
-      flex-shrink: 0;
+      padding: 0.5rem;
+      border-radius: 10px;
+
+      z-index: 1000;
+
+      /* ===== RESET TOTAL DO MOBILE ===== */
+      margin: 0;
+      transform: none;
+    }
+    /* ================= LINKS DO DROPDOWN ================= */
+    #{$nbhome-dropdown} {
+
+      .nb-dropdown-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        padding: 0.4rem 0.6rem;
+        border-radius: 6px;
+
+        font-size: 0.9rem;
+        line-height: 1.2;
+
+        white-space: nowrap;
+      }
     }
   }
 }

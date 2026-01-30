@@ -19,7 +19,6 @@
                 height: 18px;
                 flex-shrink: 0;
                 font-size: 1rem;
-                color: #fff;
               }
             }
           }
@@ -28,6 +27,20 @@
         @each $name, $selector in $nbhome-menus {
 
           #{$selector} {
+
+            #{$nbhome-dropdown}{
+              #{$nbhome-dropdown-link}{
+                #{$nbhome-icons}{
+                  width: 18px;
+                  height: 18px;
+                  flex-shrink: 0;
+                }
+                #{$nbhome-text}{
+                  line-height: 1.4;
+                  font-size: 0.95rem;
+                }
+              }
+            }
 
             #{$nbhome-link} {
 
@@ -39,7 +52,6 @@
                 width: 20px;
                 height: 20px;
                 flex-shrink: 0;
-                color: #fff;
               }
 
             }
