@@ -4,13 +4,14 @@
 @media (min-width: 576px) {
 
   #{$Navbar-Home} {
-
-    /* ================= CONTAINER ================= */
+    height: 11%;
     #{$nbhome-container} {
       display: flex !important;
       flex-direction: row !important;
-      align-items: center !important;
+      align-items: center;
       justify-content: space-between !important;
+      padding: 0 1rem;
+      height: 100%;
     }
 
     /* ================= MENU ================= */
@@ -20,36 +21,51 @@
       align-items: center !important;
       gap: 1rem;
 
-      max-height: unset;
-      height: auto;
-      opacity: 1;
-      pointer-events: auto;
-      overflow: visible;
+      /* RESET TOTAL DO MOBILE */
+      max-height: none !important;
+      height: auto !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      overflow: visible !important;
 
-      background: transparent;
+      background: transparent !important;
     }
 
     /* ================= LISTA ================= */
     #{$nbhome-list} {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
       gap: 1rem;
 
-      margin: 0;
-      padding: 0;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 100%;
     }
 
     /* ================= ITEM ================= */
     #{$nbhome-item} {
-      position: relative; // ancora o dropdown
-      display: flex;
+      opacity: 1;
+      position: relative;
+
+      height: 100%;
+      display: flex !important;
       align-items: center;
+
+      #{$nbhome-link}{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0 0.5rem;
+        #{$nbhome-text}{
+          display: none;
+        }
+      }
     }
 
     /* ================= DROPDOWN ================= */
     #{$nbhome-dropdown} {
-      display: none;
       position: absolute;
       top: calc(100% + 0.5rem);
       left: 0;
@@ -61,30 +77,13 @@
       max-width: 260px;
 
       padding: 0.5rem;
-      border-radius: 10px;
+      border-radius: 12px;
 
       z-index: 1000;
 
-      /* ===== RESET TOTAL DO MOBILE ===== */
+      /* RESET MOBILE */
       margin: 0;
       transform: none;
-    }
-    /* ================= LINKS DO DROPDOWN ================= */
-    #{$nbhome-dropdown} {
-
-      .nb-dropdown-link {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-
-        padding: 0.4rem 0.6rem;
-        border-radius: 6px;
-
-        font-size: 0.9rem;
-        line-height: 1.2;
-
-        white-space: nowrap;
-      }
     }
   }
 }
