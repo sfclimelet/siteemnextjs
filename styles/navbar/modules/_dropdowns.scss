@@ -12,15 +12,15 @@
 
           /* ================= DROPDOWN ================= */
           #{$nbhome-dropdown} {
-            display: flex;
             flex-direction: column;
             gap: 0.25rem;
 
-            width: 100%;
+            width: 85%;
             margin-top: 0.25rem;
+            margin: 0.75rem auto;
             padding-left: 1.75rem;
-
-            border-left: 2px solid rgba(255, 255, 255, 0.15);
+            max-width: 320px;
+            border-radius: 13px;
 
             /* ---------- LINKS ---------- */
             #{$nbhome-dropdown-link} {
@@ -33,14 +33,6 @@
               border-radius: 6px;
               cursor: pointer;
               font-size: 0.9rem;
-
-              transition:
-                background 0.35s ease,
-                color 0.25s ease;
-
-              &:hover {
-                background: rgba(255, 255, 255, 0.08);
-              }
             }
           }
 

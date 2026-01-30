@@ -11,13 +11,17 @@
 @use "./core/_layout.scss" as coreLayout;
 @use "./core/_states.scss";
 @use "./core/_states-navbar.scss";
+@use "./core/_states-hamburger.scss" as StatusHamburger;
+@use "./core/_states-search.scss";
+@use "./core/_states-dropdown.scss";
 @use "./core/_transitions.scss";
 @use "./core/_typography.scss";
+
 
 /* MÓDULES */
 @use "./modules/_divider.scss";
 @use "./modules/_dropdowns.scss";
-@use "./modules/_hamburger.scss";
+@use "./modules/_hamburger.scss" as moduloLayout;
 @use "./modules/_items.scss";
 @use "./modules/_layout.scss" as modulesLayout;
 @use "./modules/_search.scss";
@@ -29,3 +33,5 @@
 @use "./breakpoints/_search-mobiles.scss";
 @use "./breakpoints/_search-tablets.scss";
 @use "./breakpoints/_search-desktops.scss";
+@use "./breakpoints/_hamburger.scss" as hamburgerBreakpoint;
+@use "./breakpoints/_divider.scss" as Dividerbreakpoint;

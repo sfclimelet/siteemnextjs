@@ -1,0 +1,10 @@
+@use "./_vars.scss" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-search}{
+        display: none;
+    }
+    #{$nbhome-search}#{$nbhome-open}{
+        display: flex;
+    }
+}

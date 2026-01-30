@@ -6,9 +6,12 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #1f1e1e;
   display: flex;
   flex-direction: column;
+  
+  a{
+    text-decoration: none;
+  }
 
   #{$nbhome-container}{
     display: flex;
@@ -45,9 +48,6 @@
       width: 100%;
       overflow: hidden;
       max-height: 0;
-
-      background: blue;
-
       display: flex;
       flex-direction: column;
 
@@ -63,7 +63,7 @@
         #{$nbhome-item}{
           display: flex;
           align-items: center;
-
+          
           #{$nbhome-link}{
             display: flex;
             align-items: center;

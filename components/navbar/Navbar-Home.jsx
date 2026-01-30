@@ -22,8 +22,8 @@ export default function NavbarHome() {
 
   // Função para abrir/fechar dropdown individual
   const handleToggle = (id) => {
-    if (openItem === id) setOpenItem(null);  // fecha se já estiver aberto
-    else setOpenItem(id);                    // abre o clicado e fecha os outros
+    if (openItem === id) setOpenItem(null);
+    else setOpenItem(id);
   };
 
   return (

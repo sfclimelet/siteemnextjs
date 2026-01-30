@@ -29,10 +29,6 @@
 
             transition: background 0.25s ease, color 0.25s ease;
 
-            &:hover {
-              background: #ffffff14;
-            }
-
             &#{$nbhome-active} {
               background: #ffffff26;
             }

@@ -1,5 +1,15 @@
+@use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
 
-$nbhome-bg-default: $nbhome-color-bg;
-$nbhome-bg-hover: $nbhome-color-bg-hover;
-$nbhome-bg-dropdown: $nbhome-color-bg;
+#{$Navbar-Home}{
+    background: linear-gradient(to right, $nbhome-color-primary-bg, $nbhome-color-secondary-bg);
+    #{$nbhome-container}{
+        #{$nbhome-menu}{
+            #{$nbhome-list}{
+                #{$nbhome-dropdown}{
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

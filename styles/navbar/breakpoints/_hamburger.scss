@@ -1,0 +1,9 @@
+@use "../core/_vars.scss" as *;
+
+@media (min-width: 576px) {
+  #{$Navbar-Home} {
+    #{$nbhome-hamburger} {
+      display: none !important;
+    }
+  }
+}

@@ -1,1 +1,25 @@
+@use "./_vars.scss" as *;
 
+#{$Navbar-Home} {
+  #{$nbhome-menu} {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+  #{$nbhome-menu}#{$nbhome-open}{
+        max-height: 600px;
+        opacity: 1;
+        pointer-events: auto;
+  }
+
+  #{$nbhome-dropdown}{
+    display: none;
+  }
+
+  #{$nbhome-item}#{$nbhome-open} > #{$nbhome-dropdown} {
+        display: flex;
+    }
+}

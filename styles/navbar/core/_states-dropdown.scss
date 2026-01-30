@@ -1,0 +1,16 @@
+@use "./_vars.scss" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-container}{
+        #{$nbhome-item}{
+            #{$nbhome-dropdown}{
+                display: none;
+            }
+            &.open {
+                > #{$nbhome-dropdown}{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
