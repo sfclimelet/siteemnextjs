@@ -1,47 +1,22 @@
 @use "../core/_vars.scss" as *;
 
-#{$Navbar-Home} {
-  #{$nbhome-container} {
-    #{$nbhome-menu} {
-      #{$nbhome-list} {
+#{$nbhome-search}{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
-        #{$nbhome-search} {
-          width: 100%;
-          display: flex;
-          align-items: center;
+  #{$nbhome-search-toggle}{
+    display: none;
+  }
 
-          #{$nbhome-search-form} {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+  #{$nbhome-search-box}{
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+  }
 
-            width: 100%;
-
-            #{$nbhome-search-input} {
-              flex: 1;
-              height: 44px;
-              padding: 0 0.75rem;
-              border-radius: 6px;
-              border: none;
-              outline: none;
-            }
-
-            #{$nbhome-search-button} {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              width: 44px;
-              height: 44px;
-
-              border-radius: 6px;
-              border: none;
-              cursor: pointer;
-            }
-          }
-        }
-
-      }
-    }
+  #{$nbhome-search-input}{
+    flex: 1;
   }
 }

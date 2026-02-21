@@ -1,7 +1,7 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_breakpoints.scss" as *;
 
-@media (max-width: 575px) {
+@media (max-width: $breakpoint-sm) {
 
   #{$Navbar-Home} {
     /* ================= CONTAINER ================= */

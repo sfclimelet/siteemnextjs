@@ -1,9 +1,9 @@
 /* CORE */
-@use "./core/_vars.scss";
+@use "./core/_vars.scss" as *;
 @use "./core/_colors.scss";
 @use "./core/_animations.scss" as animations;
 @use "./core/_backgrounds.scss";
-@use "./core/_breakpoints.scss";
+@use "./core/_breakpoints.scss" as *;
 @use "./core/_design.scss";
 @use "./core/_helpers.scss";
 @use "./core/_icons.scss";

@@ -440,7 +440,6 @@
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 6px rgba(0, 231, 255, 0.45), 0 0 14px rgba(0, 231, 255, 0.35);
-  animation: btnPulseSoft-climatizacao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=climatizacao] .botao-saiba-mais::after {
   content: "";
@@ -451,6 +450,9 @@
   transform: scale(0.9);
   border-radius: inherit;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#carouselHome[data-tema=climatizacao] .botao-saiba-mais {
+  animation: btnPulseSoft-climatizacao 2.2s ease-in-out infinite;
 }
 @keyframes btnPulseSoft-climatizacao {
   0% {
@@ -479,7 +481,6 @@
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 6px rgba(255, 230, 3, 0.45), 0 0 14px rgba(255, 230, 3, 0.35);
-  animation: btnPulseSoft-eletrica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletrica] .botao-saiba-mais::after {
   content: "";
@@ -490,6 +491,9 @@
   transform: scale(0.9);
   border-radius: inherit;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#carouselHome[data-tema=eletrica] .botao-saiba-mais {
+  animation: btnPulseSoft-eletrica 2.2s ease-in-out infinite;
 }
 @keyframes btnPulseSoft-eletrica {
   0% {
@@ -518,7 +522,6 @@
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 6px rgba(57, 255, 20, 0.45), 0 0 14px rgba(57, 255, 20, 0.35);
-  animation: btnPulseSoft-eletronica 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=eletronica] .botao-saiba-mais::after {
   content: "";
@@ -529,6 +532,9 @@
   transform: scale(0.9);
   border-radius: inherit;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#carouselHome[data-tema=eletronica] .botao-saiba-mais {
+  animation: btnPulseSoft-eletronica 2.2s ease-in-out infinite;
 }
 @keyframes btnPulseSoft-eletronica {
   0% {
@@ -557,7 +563,6 @@
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 6px rgba(120, 207, 253, 0.45), 0 0 14px rgba(120, 207, 253, 0.35);
-  animation: btnPulseSoft-refrigeracao 2.2s ease-in-out infinite;
 }
 #carouselHome[data-tema=refrigeracao] .botao-saiba-mais::after {
   content: "";
@@ -568,6 +573,9 @@
   transform: scale(0.9);
   border-radius: inherit;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#carouselHome[data-tema=refrigeracao] .botao-saiba-mais {
+  animation: btnPulseSoft-refrigeracao 2.2s ease-in-out infinite;
 }
 @keyframes btnPulseSoft-refrigeracao {
   0% {
@@ -593,7 +601,6 @@
   background-color: rgba(0, 231, 255, 0.28) !important;
   border: 1px solid rgba(0, 231, 255, 0.45) !important;
   transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button:not(.active) {
   box-shadow: 0 0 4px rgba(0, 231, 255, 0.4);
@@ -602,11 +609,13 @@
   box-shadow: 0 0 10px rgba(0, 231, 255, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=climatizacao] .carousel-indicators button {
+  transition: all 0.3s ease;
+}
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
   background: #00E7FF !important;
   border-color: #00E7FF !important;
   transition: all 0.3s ease;
-  transform: scale(1.25);
 }
 #carouselHome[data-tema=climatizacao] .carousel-indicators button.active:not(.active) {
   box-shadow: 0 0 4px rgba(0, 231, 255, 0.4);
@@ -615,11 +624,13 @@
   box-shadow: 0 0 10px rgba(0, 231, 255, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=climatizacao] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
 
 #carouselHome[data-tema=eletrica] .carousel-indicators button {
   background-color: rgba(255, 230, 3, 0.28) !important;
   border: 1px solid rgba(255, 230, 3, 0.45) !important;
-  transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #carouselHome[data-tema=eletrica] .carousel-indicators button:not(.active) {
@@ -629,11 +640,13 @@
   box-shadow: 0 0 10px rgba(255, 230, 3, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=eletrica] .carousel-indicators button {
+  transition: all 0.3s ease;
+}
 #carouselHome[data-tema=eletrica] .carousel-indicators button.active {
   background: #ffe603 !important;
   border-color: #ffe603 !important;
   transition: all 0.3s ease;
-  transform: scale(1.25);
 }
 #carouselHome[data-tema=eletrica] .carousel-indicators button.active:not(.active) {
   box-shadow: 0 0 4px rgba(255, 230, 3, 0.4);
@@ -642,11 +655,13 @@
   box-shadow: 0 0 10px rgba(255, 230, 3, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=eletrica] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
 
 #carouselHome[data-tema=eletronica] .carousel-indicators button {
   background-color: rgba(57, 255, 20, 0.28) !important;
   border: 1px solid rgba(57, 255, 20, 0.45) !important;
-  transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #carouselHome[data-tema=eletronica] .carousel-indicators button:not(.active) {
@@ -656,11 +671,13 @@
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=eletronica] .carousel-indicators button {
+  transition: all 0.3s ease;
+}
 #carouselHome[data-tema=eletronica] .carousel-indicators button.active {
   background: #39FF14 !important;
   border-color: #39FF14 !important;
   transition: all 0.3s ease;
-  transform: scale(1.25);
 }
 #carouselHome[data-tema=eletronica] .carousel-indicators button.active:not(.active) {
   box-shadow: 0 0 4px rgba(57, 255, 20, 0.4);
@@ -669,11 +686,13 @@
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=eletronica] .carousel-indicators button.active {
+  transform: scale(1.25);
+}
 
 #carouselHome[data-tema=refrigeracao] .carousel-indicators button {
   background-color: rgba(120, 207, 253, 0.28) !important;
   border: 1px solid rgba(120, 207, 253, 0.45) !important;
-  transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #carouselHome[data-tema=refrigeracao] .carousel-indicators button:not(.active) {
@@ -683,11 +702,13 @@
   box-shadow: 0 0 10px rgba(120, 207, 253, 0.9);
   transform: scale(1.08);
 }
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button {
+  transition: all 0.3s ease;
+}
 #carouselHome[data-tema=refrigeracao] .carousel-indicators button.active {
   background: #78CFFD !important;
   border-color: #78CFFD !important;
   transition: all 0.3s ease;
-  transform: scale(1.25);
 }
 #carouselHome[data-tema=refrigeracao] .carousel-indicators button.active:not(.active) {
   box-shadow: 0 0 4px rgba(120, 207, 253, 0.4);
@@ -695,6 +716,9 @@
 #carouselHome[data-tema=refrigeracao] .carousel-indicators button.active.active {
   box-shadow: 0 0 10px rgba(120, 207, 253, 0.9);
   transform: scale(1.08);
+}
+#carouselHome[data-tema=refrigeracao] .carousel-indicators button.active {
+  transform: scale(1.25);
 }
 
 /* MOBILES */

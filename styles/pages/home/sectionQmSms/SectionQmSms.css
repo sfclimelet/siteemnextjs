@@ -72,11 +72,13 @@
 
 #QuemSomos {
   background: linear-gradient(90deg, #000, #00111a);
-  /* Cor dos icones */
 }
 #QuemSomos .card {
   background: transparent;
   color: #fff;
+}
+#QuemSomos {
+  /* Cor dos icones */
 }
 #QuemSomos .socials a[data-social=facebook] svg {
   color: #1877f2;

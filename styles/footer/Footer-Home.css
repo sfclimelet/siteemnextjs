@@ -31,7 +31,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* Divisor */
 }
 #footer-home .footer-container {
   width: 92%;
@@ -79,6 +78,9 @@
   align-items: center;
   gap: 1.2rem;
 }
+#footer-home {
+  /* Divisor */
+}
 #footer-home .footer-divider {
   width: 100%;
   height: 1px;
@@ -90,7 +92,6 @@
 
 #footer-home {
   background: linear-gradient(145deg, #00111a, #000);
-  /* Divisor */
 }
 #footer-home .footer-container .footer-brand p {
   color: #fff;
@@ -113,6 +114,9 @@
 #footer-home .footer-container .footer-socials .sociais a[data-social-footer=google] svg {
   fill: #ea4335;
 }
+#footer-home {
+  /* Divisor */
+}
 #footer-home .footer-divider {
   background: #666565;
 }
@@ -126,7 +130,6 @@
 @media (max-width: 375px) {
   #footer-home {
     padding: 2rem 1rem;
-    /* Divisor */
   }
   #footer-home .footer-container {
     gap: 1rem;
@@ -152,6 +155,9 @@
     justify-content: center;
     gap: 1rem;
   }
+  #footer-home {
+    /* Divisor */
+  }
   #footer-home .footer-divider {
     width: 50%;
     margin: 0 auto;
@@ -166,7 +172,6 @@
 @media (max-width: 575px) {
   #footer-home {
     padding: 2.5rem 1.2rem 1.5rem;
-    /* Divisor */
   }
   #footer-home .footer-container {
     gap: 1rem;
@@ -199,6 +204,9 @@
     justify-content: center;
     gap: 1rem;
   }
+  #footer-home {
+    /* Divisor */
+  }
   #footer-home .footer-divider {
     width: 60%;
     margin: 0 auto;
@@ -214,7 +222,6 @@
 @media (max-width: 767px) {
   #footer-home {
     padding: 3rem 2rem 2rem;
-    /* Divisor */
   }
   #footer-home .footer-container {
     gap: 1rem;
@@ -242,6 +249,9 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+  #footer-home {
+    /* Divisor */
   }
   #footer-home .footer-divider {
     width: 70%;
