@@ -126,6 +126,7 @@
 
 /* CORE */
 #navbar-home {
+  overflow: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -430,6 +431,17 @@
   }
 }
 /* CORE */
+@media (min-width: 576px) and (max-width: 768px) {
+  #navbar-home .navbar-container .nb-dropdown {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 420px;
+    padding: 1rem;
+  }
+}
 /* CORE */
 @media (min-width: 576px) {
   #navbar-home {
@@ -498,8 +510,9 @@
   }
   #navbar-home .nb-dropdown {
     position: absolute;
-    top: calc(100% + 0.5rem);
-    left: 0;
+    top: calc(100% + 2rem);
+    left: 50%;
+    transform: translateX(-50%);
     flex-direction: column;
     gap: 0.25rem;
     min-width: 200px;

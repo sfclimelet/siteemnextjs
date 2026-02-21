@@ -1,6 +1,7 @@
 @use "./_vars.scss" as *;
 
 #{$Navbar-Home}{
+  overflow: visible;
   position: fixed;
   top: 0;
   left: 0;

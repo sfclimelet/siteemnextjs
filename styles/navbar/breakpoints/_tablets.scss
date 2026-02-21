@@ -1,2 +1,18 @@
 @use "../core/_vars.scss" as *;
 
+@media (min-width: 576px) and (max-width: 768px) {
+    #{$Navbar-Home}{
+        #{$nbhome-container}{
+            #{$nbhome-dropdown}{
+                position: fixed;
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                max-width: 420px;
+                padding: 1rem;
+
+            }
+        }
+    }
+}
