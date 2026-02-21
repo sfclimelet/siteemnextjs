@@ -76,7 +76,7 @@ export default function NavbarHome() {
 
             {/* SEARCH */}
             {searchData.map(item => (
-              <NavSearch key={item.id} item={item} />
+              <NavSearch key={item.id} item={item} openItem={openItem} setOpenItem={setOpenItem} />
             ))}
 
             {/* DIVIDER */}

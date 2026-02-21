@@ -16,22 +16,18 @@
         }
 
         &.open{
-            #{$nbhome-search-toggle}{
-                opacity: 0;
-            }
             #{$nbhome-search-box}{
-                display: flex;
                 position: absolute;
                 margin: 0 auto;
 
-                top: calc(100% + 1.6rem);
+                top: calc(100% + 4rem);
                 left: 50%;
                 transform: translateX(-50%);
 
                 gap: 0.5rem;
                 padding: 0.75rem;
                 border-radius: 12px;
-                width: 300px;
+                width: 320px;
                 z-index: 2000;
             }
         }

@@ -1,44 +1,33 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
-export default function NavSearch({ item }) {
-  const [open, setOpen] = useState(false);
+export default function NavSearch({ item, openItem, setOpenItem }) {
   const searchRef = useRef(null);
   const inputRef = useRef(null);
 
-  // Fecha ao clicar fora
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (searchRef.current && !searchRef.current.contains(e.target)) {
-        setOpen(false);
-      }
-    };
+  const isOpen = openItem === item.id;
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  // Foco automático
+  // Foco automático quando abrir
   useEffect(() => {
-    if (open && inputRef.current) {
+    if (isOpen && inputRef.current) {
       inputRef.current.focus();
     }
-  }, [open]);
+  }, [isOpen]);
 
   return (
     <li
       ref={searchRef}
       id={item.id}
-      className={`nb-item nb-search ${open ? "open" : ""}`}
+      className={`nb-item nb-search ${isOpen ? "open" : ""}`}
     >
-      {/* ÍCONE (só aparece no desktop via CSS) */}
+      {/* ÍCONE (desktop via CSS) */}
       <button
         type="button"
         className="nb-search-toggle"
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={() =>
+          setOpenItem(isOpen ? null : item.id)
+        }
       >
         {item.icon && <item.icon className="nb-search-icon" />}
       </button>
