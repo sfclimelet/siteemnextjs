@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +16,7 @@ import "../../styles/navbar/Navbar-Home.scss";
 export default function NavbarHome() {
   const [menuOpen, setMenuOpen] = useState(false);  // controla menu mobile
   const [openItem, setOpenItem] = useState(null);   // controla dropdown único
+  const navbarRef = useRef(null);
 
   // Separar itens que não são search
   const menuItems = navbarHomeData.filter(item => item.type !== "search");
@@ -25,6 +26,19 @@ export default function NavbarHome() {
     if (openItem === id) setOpenItem(null);
     else setOpenItem(id);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current &&! navbarRef.current.contains(event.target)){
+        setOpenItem(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, []);
+
 
   return (
     <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
@@ -57,7 +71,7 @@ export default function NavbarHome() {
         </div>
 
         {/* ================= MENU EXPANSÍVEL ================= */}
-        <nav className={`navbar-menu ${menuOpen ? "open" : ""}`}>
+        <nav ref={navbarRef} className={`navbar-menu ${menuOpen ? "open" : ""}`}>
           <ul className="navbar-list">
 
             {/* SEARCH */}
