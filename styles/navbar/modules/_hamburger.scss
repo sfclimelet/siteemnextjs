@@ -1,28 +1,26 @@
 @use "../core/_vars.scss" as *;
 
 #{$Navbar-Home}{
-  #{$nbhome-container}{
-    #{$nbhome-top}{
-      #{$nbhome-hamburger}{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
+  #{$nbhome-top}{
+    #{$nbhome-hamburger}{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
 
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-        padding: 0;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: none;
+      padding: 0;
 
-        #{$nbhome-hamburger-line}{
-          width: 24px;
-          height: 2px;
+      #{$nbhome-hamburger-line}{
+        width: 24px;
+        height: 2px;
 
-          background: #fff;
-          display: block;
+        background: #fff;
+        display: block;
 
-        }
       }
     }
   }

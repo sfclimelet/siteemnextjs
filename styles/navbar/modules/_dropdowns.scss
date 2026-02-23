@@ -2,44 +2,31 @@
 
 #{$Navbar-Home} {
 
-  #{$nbhome-container} {
+  /* ================= DROPDOWN BASE ================= */
 
-    #{$nbhome-menu} {
+  #{$nbhome-dropdown} {
+    flex-direction: column;
+    gap: 0.25rem;
 
-      #{$nbhome-list} {
-
-        #{$nbhome-item} {
-
-          /* ================= DROPDOWN ================= */
-          #{$nbhome-dropdown} {
-            flex-direction: column;
-            gap: 0.25rem;
-
-            width: 85%;
-            margin-top: 0.25rem;
-            margin: 0.75rem auto;
-            padding-left: 1.75rem;
-            max-width: 320px;
-
-            /* ---------- LINKS ---------- */
-            #{$nbhome-dropdown-link} {
-              width: 100%;
-              display: flex;
-              align-items: center;
-              gap: 0.75rem;
-
-              min-height: 40px;
-              padding: 0.5rem 0.75rem;
-
-              text-align: left;
-
-              cursor: pointer;
-              font-size: 0.9rem;
-            }
-          }
-
-        }
-      }
-    }
+    width: 85%;
+    margin: 0.75rem auto;
+    padding-left: 1.75rem;
+    max-width: 320px;
   }
+
+  /* ================= LINKS DO DROPDOWN ================= */
+
+  #{$nbhome-dropdown-link} {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    min-height: 40px;
+    padding: 0.5rem 0.75rem;
+
+    text-align: left;
+    cursor: pointer;
+  }
+
 }

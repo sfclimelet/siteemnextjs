@@ -2,48 +2,41 @@
 
 #{$Navbar-Home} {
 
-  #{$nbhome-container} {
+  /* ================= ITEM ================= */
 
-    #{$nbhome-menu} {
+  #{$nbhome-item} {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-      #{$nbhome-list} {
+  /* ================= LINK ================= */
 
-        #{$nbhome-item} {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
+  #{$nbhome-link} {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 
-          #{$nbhome-link} {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+    width: 100%;
+    min-height: 44px;
 
-            width: 100%;
-            min-height: 44px;
+    padding: 0.75rem;
+    border-radius: 6px;
 
-            padding: 0.75rem;
-            border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
 
-            cursor: pointer;
-            user-select: none;
-
-            &#{$nbhome-active} {
-              background: #ffffff26;
-            }
-
-            #{$nbhome-text} {
-              font-size: 0.95rem;
-              line-height: 1;
-              white-space: nowrap;
-            }
-          }
-
-        }
-
-      }
-
+    &#{$nbhome-active} {
+      background: #ffffff26;
     }
+  }
 
+  /* ================= TEXTO ================= */
+
+  #{$nbhome-text} {
+    font-size: 0.95rem;
+    line-height: 1;
+    white-space: nowrap;
   }
 
 }

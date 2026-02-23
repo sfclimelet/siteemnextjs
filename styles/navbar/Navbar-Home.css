@@ -46,71 +46,44 @@
 
 /* CORE */
 /* CORE */
-/* ============================= */
-/* ÍCONE DO SEARCH */
-/* ============================= */
-#navbar-home .nb-search-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#navbar-home {
+  /* SEARCH */
+}
+#navbar-home .nb-search .nb-search-toggle .nb-search-icon {
   width: 18px;
   height: 18px;
-  flex-shrink: 0;
-  font-size: 1rem;
-}
-#navbar-home {
-  /* ============================= */
-  /* ÍCONES DOS LINKS PRINCIPAIS */
-  /* ============================= */
-}
-#navbar-home .nb-link .nb-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
   flex-shrink: 0;
 }
 #navbar-home {
-  /* ============================= */
-  /* DROPDOWNS (gerado por @each) */
-  /* ============================= */
+  /* MENUS */
 }
-#navbar-home #services .nb-dropdown .nb-dropdown-link .nb-icon {
+#navbar-home .nb-item .nb-link .nb-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
-#navbar-home #services .nb-dropdown .nb-dropdown-link .nb-text {
-  line-height: 1.4;
-  font-size: 0.95rem;
+#navbar-home {
+  /* ITENS DO MENU */
 }
-#navbar-home #company .nb-dropdown .nb-dropdown-link .nb-icon {
+#navbar-home #services .nb-dropdown .nb-dropdown-link {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
-#navbar-home #company .nb-dropdown .nb-dropdown-link .nb-text {
-  line-height: 1.4;
-  font-size: 0.95rem;
-}
-#navbar-home #support .nb-dropdown .nb-dropdown-link .nb-icon {
+#navbar-home #company .nb-dropdown .nb-dropdown-link {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
-#navbar-home #support .nb-dropdown .nb-dropdown-link .nb-text {
-  line-height: 1.4;
-  font-size: 0.95rem;
-}
-#navbar-home #portfolio .nb-dropdown .nb-dropdown-link .nb-icon {
+#navbar-home #support .nb-dropdown .nb-dropdown-link {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
-#navbar-home #portfolio .nb-dropdown .nb-dropdown-link .nb-text {
-  line-height: 1.4;
-  font-size: 0.95rem;
+#navbar-home #portfolio .nb-dropdown .nb-dropdown-link {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 /* CORE */
@@ -240,10 +213,10 @@
 }
 
 /* CORE */
-#navbar-home .navbar-container .nb-item .nb-dropdown {
+#navbar-home .nb-item .nb-dropdown {
   display: none;
 }
-#navbar-home .navbar-container .nb-item.open > .nb-dropdown {
+#navbar-home .nb-item.open > .nb-dropdown {
   display: flex;
 }
 
@@ -260,20 +233,21 @@
 }
 
 /* CORE */
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
-  /* ================= DROPDOWN ================= */
+#navbar-home {
+  /* ================= DROPDOWN BASE ================= */
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-dropdown {
+#navbar-home .nb-dropdown {
   flex-direction: column;
   gap: 0.25rem;
   width: 85%;
-  margin-top: 0.25rem;
   margin: 0.75rem auto;
   padding-left: 1.75rem;
   max-width: 320px;
-  /* ---------- LINKS ---------- */
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-dropdown .nb-dropdown-link {
+#navbar-home {
+  /* ================= LINKS DO DROPDOWN ================= */
+}
+#navbar-home .nb-dropdown-link {
   width: 100%;
   display: flex;
   align-items: center;
@@ -282,11 +256,10 @@
   padding: 0.5rem 0.75rem;
   text-align: left;
   cursor: pointer;
-  font-size: 0.9rem;
 }
 
 /* CORE */
-#navbar-home .navbar-container .navbar-top .navbar-hamburger {
+#navbar-home .navbar-top .navbar-hamburger {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,7 +270,7 @@
   border: none;
   padding: 0;
 }
-#navbar-home .navbar-container .navbar-top .navbar-hamburger span {
+#navbar-home .navbar-top .navbar-hamburger span {
   width: 24px;
   height: 2px;
   background: #fff;
@@ -305,12 +278,18 @@
 }
 
 /* CORE */
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
+#navbar-home {
+  /* ================= ITEM ================= */
+}
+#navbar-home .nb-item {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-link {
+#navbar-home {
+  /* ================= LINK ================= */
+}
+#navbar-home .nb-link {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -323,10 +302,13 @@
      -moz-user-select: none;
           user-select: none;
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-link.active {
+#navbar-home .nb-link.active {
   background: rgba(255, 255, 255, 0.1490196078);
 }
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-link .nb-text {
+#navbar-home {
+  /* ================= TEXTO ================= */
+}
+#navbar-home .nb-text {
   font-size: 0.95rem;
   line-height: 1;
   white-space: nowrap;

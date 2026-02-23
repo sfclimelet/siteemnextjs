@@ -1,69 +1,40 @@
 @use "./_vars.scss" as *;
 
-/* ============================= */
-/* ÍCONE DO SEARCH */
-/* ============================= */
+#{$Navbar-Home}{
 
-#{$Navbar-Home} {
-
-  #{$nbhome-search-icon} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    font-size: 1rem;
-  }
-
-  /* ============================= */
-  /* ÍCONES DOS LINKS PRINCIPAIS */
-  /* ============================= */
-
-  #{$nbhome-link} {
-
-    #{$nbhome-icons} {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
+    /* SEARCH */
+    #{$nbhome-search}{
+      #{$nbhome-search-toggle}{
+        #{$nbhome-search-icon}{
+          width: 18px;
+          height: 18px;
+          flex-shrink: 0;
+        }
+      }
+    }
+    
+    /* MENUS */
+    #{$nbhome-item}{
+      #{$nbhome-link}{
+        #{$nbhome-icons}{
+          width: 18px;
+          height: 18px;
+          flex-shrink: 0;
+        }
+      }
     }
 
-  }
-
-  /* ============================= */
-  /* DROPDOWNS (gerado por @each) */
-  /* ============================= */
-
-  @each $name, $selector in $nbhome-menus {
-
-    #{$selector} {
-
-      #{$nbhome-dropdown} {
-
-        #{$nbhome-dropdown-link} {
-
-          #{$nbhome-icons} {
+    /* ITENS DO MENU */
+    @each $name, $selector in $nbhome-menus{
+      #{$selector}{
+        #{$nbhome-dropdown}{
+          #{$nbhome-dropdown-link}{
             width: 18px;
             height: 18px;
             flex-shrink: 0;
           }
-
-          #{$nbhome-text} {
-            line-height: 1.4;
-            font-size: 0.95rem;
-          }
-
         }
-
       }
-
     }
-
-  }
 
 }
