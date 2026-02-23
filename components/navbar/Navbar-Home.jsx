@@ -15,6 +15,7 @@ import NavDropdown from "./NavbarHome-Dropdowns";
 // SEARCH
 import NavSearch from "./Search-NavbarHome";
 
+// SCSS
 import "../../styles/navbar/Navbar-Home.scss";
 
 export default function NavbarHome() {
