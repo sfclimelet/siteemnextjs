@@ -4,11 +4,15 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+// Imagens
 import { Imgs } from "../../config/images";
+// Dados
 import { navbarHomeData, searchData } from "./NavbarHome-Data";
 
 import NavbarHomeItem from "./NavbarHome-Item";
 import NavDropdown from "./NavbarHome-Dropdowns";
+
+// SEARCH
 import NavSearch from "./Search-NavbarHome";
 
 import "../../styles/navbar/Navbar-Home.scss";

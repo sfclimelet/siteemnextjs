@@ -8,10 +8,28 @@
                 top: 100px;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 90%;
+                width: 40% !important;
                 max-width: 420px;
                 padding: 1rem;
 
+            }
+        }
+    }
+}
+
+@media (min-width: 769.99px) and (max-width: 992px){
+    #{$Navbar-Home}{
+        #{$nbhome-container}{
+            #{$nbhome-dropdown}{
+                position: fixed;
+                top: 100px;
+                left: 70% !important;
+                transform: translateX(-50%);
+                z-index: 5000;
+
+                width: 30% !important;
+                width: max-content;
+                max-width: 480px;
             }
         }
     }
