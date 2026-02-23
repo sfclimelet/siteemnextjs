@@ -6,7 +6,7 @@
         #{$nbhome-dropdown} {
             position: fixed;
 
-            top: 100px;
+            top: 120px;
             left: 50%;
             transform: translateX(-50%);
 
@@ -37,6 +37,7 @@
             #{$nbhome-list}{
                 flex-direction: row !important;
                 align-items: center !important;
+                margin-left: auto !important;
                 #{$nbhome-text-menu}{
                     display: none;
                 }

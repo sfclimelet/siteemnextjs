@@ -1,61 +1,61 @@
 @use "./_vars.scss" as *;
 
+/* ============================= */
+/* ÍCONE DO SEARCH */
+/* ============================= */
+
 #{$Navbar-Home} {
 
-  #{$nbhome-container} {
+  #{$nbhome-search-icon} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    #{$nbhome-menu} {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    font-size: 1rem;
+  }
 
-      #{$nbhome-list} {
+  /* ============================= */
+  /* ÍCONES DOS LINKS PRINCIPAIS */
+  /* ============================= */
 
-        #{$nbhome-search}{
-          #{$nbhome-search-form}{
-            button{
-              #{$nbhome-search-icon}{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 18px;
-                height: 18px;
-                flex-shrink: 0;
-                font-size: 1rem;
-              }
-            }
+  #{$nbhome-link} {
+
+    #{$nbhome-icons} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+  }
+
+  /* ============================= */
+  /* DROPDOWNS (gerado por @each) */
+  /* ============================= */
+
+  @each $name, $selector in $nbhome-menus {
+
+    #{$selector} {
+
+      #{$nbhome-dropdown} {
+
+        #{$nbhome-dropdown-link} {
+
+          #{$nbhome-icons} {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
           }
-        }
 
-        @each $name, $selector in $nbhome-menus {
-
-          #{$selector} {
-
-            #{$nbhome-dropdown}{
-              #{$nbhome-dropdown-link}{
-                #{$nbhome-icons}{
-                  width: 18px;
-                  height: 18px;
-                  flex-shrink: 0;
-                }
-                #{$nbhome-text}{
-                  line-height: 1.4;
-                  font-size: 0.95rem;
-                }
-              }
-            }
-
-            #{$nbhome-link} {
-
-              #{$nbhome-icons} {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                width: 20px;
-                height: 20px;
-                flex-shrink: 0;
-              }
-
-            }
-
+          #{$nbhome-text} {
+            line-height: 1.4;
+            font-size: 0.95rem;
           }
 
         }
