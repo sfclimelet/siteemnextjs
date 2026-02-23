@@ -1,35 +1,45 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_breakpoints.scss" as *;
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
     #{$Navbar-Home}{
-        #{$nbhome-container}{
-            #{$nbhome-dropdown}{
-                position: fixed;
-                top: 100px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 40% !important;
-                max-width: 420px;
-                padding: 1rem;
+        #{$nbhome-dropdown} {
+            position: fixed;
 
-            }
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 90%;
+            max-width: 480px;
+
+            z-index: 5000;
         }
     }
+
 }
 
-@media (min-width: 769.99px) and (max-width: 992px){
+@media (min-width: 576px) {
     #{$Navbar-Home}{
         #{$nbhome-container}{
-            #{$nbhome-dropdown}{
-                position: fixed;
-                top: 100px;
-                left: 70% !important;
-                transform: translateX(-50%);
-                z-index: 5000;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
 
-                width: 30% !important;
-                width: max-content;
-                max-width: 480px;
+            #{$nbhome-menu}{
+                flex-direction: row;
+                max-height: none;
+                opacity: 1;
+                pointer-events: auto;
+                overflow: visible;
+            }
+
+            #{$nbhome-list}{
+                flex-direction: row !important;
+                align-items: center !important;
+                #{$nbhome-text-menu}{
+                    display: none;
+                }
             }
         }
     }

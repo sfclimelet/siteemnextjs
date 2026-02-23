@@ -126,24 +126,23 @@
 
 /* CORE */
 #navbar-home {
-  overflow: visible;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  overflow: visible;
   display: flex;
   flex-direction: column;
-  height: auto;
 }
 #navbar-home a {
   text-decoration: none;
 }
 #navbar-home .navbar-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   width: 100%;
   padding: 0 1rem;
 }
@@ -181,6 +180,7 @@
   list-style: none;
 }
 #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -282,7 +282,6 @@
   margin: 0.75rem auto;
   padding-left: 1.75rem;
   max-width: 320px;
-  border-radius: 13px;
   /* ---------- LINKS ---------- */
 }
 #navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-dropdown .nb-dropdown-link {
@@ -293,7 +292,6 @@
   min-height: 40px;
   padding: 0.5rem 0.75rem;
   text-align: left;
-  border-radius: 8px;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -367,102 +365,89 @@
 
 /* BREAKPOINTS */
 /* CORE */
-@media (max-width: 575px) {
-  #navbar-home {
-    /* ================= CONTAINER ================= */
-  }
+@media (min-width: 375px) and (max-width: 575.98px) {
   #navbar-home .navbar-container {
     flex-direction: column;
     align-items: stretch;
   }
   #navbar-home {
-    /* ================= MENU ================= */
+    /* MENU */
   }
   #navbar-home .navbar-menu {
-    width: 100%;
-    max-height: 0; /* fechado por padrão */
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease, opacity 0.25s ease;
     opacity: 0;
     pointer-events: none;
-  }
-  #navbar-home {
-    /* Quando abrir o menu */
+    transition: max-height 0.35s ease, opacity 0.25s ease;
   }
   #navbar-home .navbar-menu.open {
-    height: auto; /* valor seguro, aumenta conforme o conteúdo */
+    max-height: 500px;
     opacity: 1;
     pointer-events: auto;
   }
   #navbar-home {
-    /* ================= LISTA ================= */
+    /* LISTA */
   }
   #navbar-home .navbar-list {
-    margin: 0 auto;
-    flex-direction: column; /* itens empilhados */
+    flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
   }
   #navbar-home {
-    /* ================= ITEM ================= */
+    /* ITEM */
   }
   #navbar-home .nb-item {
     width: 70%;
+    margin: 0 auto;
   }
   #navbar-home {
-    /* ================= DROPDOWN ================= */
+    /* SEARCH (estrutura apenas) */
   }
-  #navbar-home .nb-item.open > .nb-dropdown {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  #navbar-home {
-    /* ================= SEARCH ================= */
-  }
-  #navbar-home .nb-search.open {
-    display: flex;
+  #navbar-home .nb-search {
     flex-direction: row;
     gap: 0.5rem;
   }
-  #navbar-home .nb-search.open .nb-search-input {
-    width: 100%;
-  }
 }
 /* CORE */
-@media (min-width: 576px) and (max-width: 768px) {
-  #navbar-home .navbar-container .nb-dropdown {
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-home .nb-dropdown {
     position: fixed;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 40% !important;
-    max-width: 420px;
-    padding: 1rem;
+    width: 90%;
+    max-width: 480px;
+    z-index: 5000;
   }
 }
-@media (min-width: 769.99px) and (max-width: 992px) {
-  #navbar-home .navbar-container .nb-dropdown {
-    position: fixed;
-    top: 100px;
-    left: 70% !important;
-    transform: translateX(-50%);
-    z-index: 5000;
-    width: 30% !important;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 480px;
+@media (min-width: 576px) {
+  #navbar-home .navbar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #navbar-home .navbar-container .navbar-menu {
+    flex-direction: row;
+    max-height: none;
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
+  }
+  #navbar-home .navbar-container .navbar-list {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+  #navbar-home .navbar-container .navbar-list .nb-text-menu {
+    display: none;
   }
 }
 /* CORE */
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   #navbar-home {
     height: 100px;
   }
   #navbar-home .navbar-container {
-    width: 100%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -470,41 +455,37 @@
     padding: 0 1rem;
   }
   #navbar-home {
-    /* ================= MENU ================= */
+    /* MENU */
   }
   #navbar-home .navbar-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    /* RESET TOTAL DO MOBILE */
-    max-height: none !important;
-    height: auto !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    overflow: visible !important;
-    background: transparent !important;
+    max-height: none;
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
   }
   #navbar-home {
-    /* ================= LISTA ================= */
+    /* LISTA */
   }
   #navbar-home .navbar-list {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 1rem;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
     height: 100%;
   }
   #navbar-home {
-    /* ================= ITEM ================= */
+    /* ITEM */
   }
   #navbar-home .nb-item {
-    opacity: 1;
     position: relative;
     height: 100%;
-    display: flex !important;
+    display: flex;
     align-items: center;
   }
   #navbar-home .nb-item .nb-link {
@@ -518,20 +499,17 @@
     display: none;
   }
   #navbar-home {
-    /* ================= DROPDOWN ================= */
+    /* DROPDOWN */
   }
   #navbar-home .nb-dropdown {
-    position: absolute !important;
-    top: calc(100% + 2rem);
-    left: 30% !important;
+    position: absolute;
+    top: 100%;
+    left: 50%;
     transform: translateX(-50%);
-    gap: 0.25rem;
-    z-index: 1000;
     min-width: 250px;
     max-width: 300px;
-    /* RESET MOBILE */
     margin: 0;
-    transform: none;
+    z-index: 3000;
   }
 }
 /* CORE */

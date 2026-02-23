@@ -17,7 +17,7 @@ export default function NavDropdown({ item, openItem, handleToggle }) {
         onClick={() => handleToggle(item.id)}   // abre/fecha dropdown via pai
       >
         {Icon && <Icon className="nb-icon" />}
-        <span className="nb-text">{item.label}</span>
+        <span className="nb-text-menu">{item.label}</span>
       </button>
 
       <ul className="nb-dropdown">
