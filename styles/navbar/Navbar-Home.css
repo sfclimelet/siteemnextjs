@@ -373,6 +373,8 @@
 /* Base primeiro breakpoint */
 /* ================= CORE ================= */
 /* Variáveis primeiro */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 576px) {
   /* ================= CONTAINER ================= */
   #navbar-home .navbar-container {
@@ -404,15 +406,36 @@
   /* ================= ITEM ================= */
   #navbar-home .nb-item {
     width: auto;
+    position: relative; /* âncora do dropdown */
   }
   /* ================= LINK ================= */
   #navbar-home .nb-link {
     width: auto;
     padding: 0.5rem 0.75rem;
   }
-  /* ================= TEXTO AUXILIAR ================= */
+  /* ================= ESCONDE TEXTO AUXILIAR ================= */
   #navbar-home .nb-text-menu {
     display: none;
+  }
+  /* ========================================================= */
+  /* ================= DROPDOWN DESKTOP ====================== */
+  /* ========================================================= */
+  #navbar-home .nb-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* fechado por padrão */
+    flex-direction: column;
+    min-width: 200px;
+    background: white;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+  /* Quando item estiver aberto */
+  #navbar-home .nb-item.open > .nb-dropdown {
+    display: flex;
   }
 }
 /* Depois os maiores */
