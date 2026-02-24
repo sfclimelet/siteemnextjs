@@ -1,6 +1,6 @@
 @use "./_vars.scss" as *;
 
-#{$Navbar-Home}{
+#{$Navbar-Home} {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,20 +11,24 @@
   display: flex;
   flex-direction: column;
 
-  a{
+  a {
     text-decoration: none;
   }
 
-  #{$nbhome-container}{
+  /* ================= CONTAINER ================= */
+  #{$nbhome-container} {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    /* 🔥 MOBILE CORRETO */
+    align-items: stretch;      // NÃO centraliza horizontal
+    justify-content: flex-start;
 
     width: 100%;
     padding: 0 1rem;
 
-    #{$nbhome-top}{
+    /* ================= TOPO ================= */
+    #{$nbhome-top} {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -33,43 +37,48 @@
       height: 80px;
       padding: 0 1rem;
 
-      #{$nbhome-logo}{
+      #{$nbhome-logo} {
         position: relative;
         width: 90px;
         height: 70px;
         flex-shrink: 0;
 
-        #{$nbhome-logo-image}{
+        #{$nbhome-logo-image} {
           object-fit: contain;
         }
       }
     }
 
-    #{$nbhome-menu}{
+    /* ================= MENU ================= */
+    #{$nbhome-menu} {
       width: 100%;
-      overflow: hidden; // mobile only
+
+      overflow: hidden;   // mobile only
       max-height: 0;
 
       display: flex;
       flex-direction: column;
 
-      #{$nbhome-list}{
+      #{$nbhome-list} {
         display: flex;
         flex-direction: column;
+
+        width: 100%;        // 🔥 garante largura total
         gap: 0.75rem;
 
         padding: 1rem;
         margin: 0;
         list-style: none;
 
-        #{$nbhome-item}{
-          position: relative; // IMPORTANTE
+        #{$nbhome-item} {
+          position: relative;
           display: flex;
-          align-items: center;
+          width: 100%;      // 🔥 importante
 
-          #{$nbhome-link}{
+          #{$nbhome-link} {
             display: flex;
             align-items: center;
+            justify-content: flex-start;  // 🔥 garante esquerda
             gap: 0.5rem;
 
             width: 100%;
