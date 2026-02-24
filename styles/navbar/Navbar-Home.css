@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 /* Raiz */
 /* Containers */
 /* Hamburger */
@@ -9,31 +10,175 @@
 /* Divider */
 /* Estados */
 /* Menu específico (opcional, se precisar controlar via each) */
+/* Estrutura base mobile */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* ================= ROOT ================= */
+#navbar-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar-home a {
+  text-decoration: none;
+}
+
+/* ================= CONTAINER ================= */
+#navbar-home .navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* ================= TOPO ================= */
+#navbar-home .navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 0 1rem;
+}
+
+#navbar-home .navbar-logo {
+  position: relative;
+  width: 90px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#navbar-home #logosef {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* ================= MENU ================= */
+#navbar-home .navbar-menu {
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= LISTA ================= */
+#navbar-home .navbar-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+/* ================= ITEM ================= */
+#navbar-home .nb-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+/* ================= LINK ================= */
+#navbar-home .nb-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+/* Estados */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+.active {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .navbar-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+#navbar-home .navbar-menu.open {
+  max-height: 600px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#navbar-home .nb-dropdown {
+  display: none;
+}
+#navbar-home .nb-item.open > .nb-dropdown {
+  display: flex;
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .navbar-hamburger {
+  cursor: pointer;
+}
+#navbar-home .navbar-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+#navbar-home .navbar-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+#navbar-home .navbar-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .nb-search.open .nb-search-toggle {
+  opacity: 0;
+}
+#navbar-home .nb-search.open .nb-search-box {
+  display: flex;
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .nb-item .nb-dropdown {
+  display: none;
+}
+#navbar-home .nb-item.open > .nb-dropdown {
+  display: flex;
+}
+
+/* Visual */
 /* Dropdown */
 /* Texto / links */
 /* Ícones */
 /* Borda / divider */
 /* Hamburger */
 /* Focus / Acessibilidade */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes slideDown {
-  from {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* Visual */
 #navbar-home {
   background: linear-gradient(to right, #00111a, #000);
 }
@@ -44,8 +189,11 @@
   color: #fff;
 }
 
-/* CORE */
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* Visual */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 #navbar-home {
   /* ICON -  SEARCH */
 }
@@ -86,208 +234,29 @@
   flex-shrink: 0;
 }
 
-/* CORE */
-#navbar-home {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-#navbar-home a {
-  text-decoration: none;
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-#navbar-home {
-  /* ================= CONTAINER ================= */
-}
-#navbar-home .navbar-container {
-  display: flex;
-  flex-direction: column;
-  /* 🔥 MOBILE CORRETO */
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0 1rem;
-  /* ================= TOPO ================= */
-}
-#navbar-home .navbar-container .navbar-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 80px;
-  padding: 0 1rem;
-}
-#navbar-home .navbar-container .navbar-top .navbar-logo {
-  position: relative;
-  width: 90px;
-  height: 70px;
-  flex-shrink: 0;
-}
-#navbar-home .navbar-container .navbar-top .navbar-logo #logosef {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#navbar-home .navbar-container {
-  /* ================= MENU ================= */
-}
-#navbar-home .navbar-container .navbar-menu {
-  width: 100%;
-  overflow: hidden;
-  max-height: 0;
-  display: flex;
-  flex-direction: column;
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 0.75rem;
-  padding: 1rem;
-  margin: 0;
-  list-style: none;
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item {
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-item .nb-link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  width: 100%;
-  min-height: 44px;
-  padding: 0.75rem;
-  border-radius: 6px;
-}
-
-/* CORE */
-.active {
-  font-weight: 600;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-/* CORE */
-#navbar-home .navbar-menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-  opacity: 0;
-  pointer-events: none;
-}
-#navbar-home .navbar-menu.open {
-  max-height: 600px;
-  opacity: 1;
-  pointer-events: auto;
-}
-#navbar-home .nb-dropdown {
-  display: none;
-}
-#navbar-home .nb-item.open > .nb-dropdown {
-  display: flex;
-}
-
-/* CORE */
-#navbar-home .navbar-hamburger {
-  cursor: pointer;
-}
-#navbar-home .navbar-hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-#navbar-home .navbar-hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-#navbar-home .navbar-hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* CORE */
-.nb-search.open .nb-search-toggle {
-  opacity: 0;
-}
-.nb-search.open .nb-search-box {
-  display: flex;
-}
-
-/* CORE */
-#navbar-home .nb-item .nb-dropdown {
-  display: none;
-}
-#navbar-home .nb-item.open > .nb-dropdown {
-  display: flex;
-}
-
-/* MÓDULES */
-/* CORE */
-#navbar-home .navbar-container .navbar-menu .navbar-list .nb-divider {
-  display: none;
-  width: 2px;
-  height: 24px;
-  margin: 0.75rem 0;
-  background: #fff;
-  border-radius: 1px;
-  flex-shrink: 0;
-}
-
-/* CORE */
-#navbar-home {
-  /* ================= DROPDOWN BASE ================= */
-}
-#navbar-home .nb-dropdown {
-  flex-direction: column;
-  gap: 0.25rem;
-  width: 85%;
-  margin: 0.75rem auto;
-  padding-left: 1.75rem;
-  max-width: 320px;
-}
-#navbar-home {
-  /* ================= LINKS DO DROPDOWN ================= */
-}
-#navbar-home .nb-dropdown-link {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  min-height: 40px;
-  padding: 0.5rem 0.75rem;
-  text-align: left;
-  cursor: pointer;
-}
-
-/* CORE */
-#navbar-home .navbar-top .navbar-hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-#navbar-home .navbar-top .navbar-hamburger span {
-  width: 24px;
-  height: 2px;
-  background: #fff;
-  display: block;
-}
-
-/* CORE */
+/* ================= MÓDULOS ================= */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 #navbar-home {
   /* ================= ITEM ================= */
 }
@@ -321,8 +290,35 @@
   white-space: nowrap;
 }
 
-/* CORE */
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home {
+  /* ================= DROPDOWN BASE ================= */
+}
+#navbar-home .nb-dropdown {
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 85%;
+  margin: 0.75rem auto;
+  padding-left: 1.75rem;
+  max-width: 320px;
+}
+#navbar-home {
+  /* ================= LINKS DO DROPDOWN ================= */
+}
+#navbar-home .nb-dropdown-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 40px;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 .nb-search {
   width: 100%;
   display: flex;
@@ -341,8 +337,87 @@
   flex: 1;
 }
 
-/* BREAKPOINTS */
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .nb-divider {
+  display: none;
+  width: 2px;
+  height: 24px;
+  margin: 0.75rem 0;
+  background: #fff;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+#navbar-home .navbar-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+#navbar-home .navbar-hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  display: block;
+}
+
+/* ================= BREAKPOINTS ================= */
+/* Base primeiro breakpoint */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+@media (min-width: 576px) {
+  /* ================= CONTAINER ================= */
+  #navbar-home .navbar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* ================= MENU ================= */
+  #navbar-home .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /* ================= LISTA ================= */
+  #navbar-home .navbar-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  /* ================= ITEM ================= */
+  #navbar-home .nb-item {
+    width: auto;
+  }
+  /* ================= LINK ================= */
+  #navbar-home .nb-link {
+    width: auto;
+    padding: 0.5rem 0.75rem;
+  }
+  /* ================= TEXTO AUXILIAR ================= */
+  #navbar-home .nb-text-menu {
+    display: none;
+  }
+}
+/* Depois os maiores */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 375px) and (max-width: 575.98px) {
   #navbar-home .navbar-container {
     flex-direction: column;
@@ -356,7 +431,6 @@
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: max-height 0.35s ease, opacity 0.25s ease;
   }
   #navbar-home .navbar-menu.open {
     max-height: 500px;
@@ -378,15 +452,9 @@
     width: 70%;
     margin: 0 auto;
   }
-  #navbar-home {
-    /* SEARCH (estrutura apenas) */
-  }
-  #navbar-home .nb-search {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
 }
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 576px) and (max-width: 991.98px) {
   #navbar-home .nb-dropdown {
     position: fixed;
@@ -398,102 +466,20 @@
     z-index: 5000;
   }
 }
-@media (min-width: 576px) {
-  #navbar-home .navbar-container {
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #navbar-home .nb-search {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #navbar-home .navbar-container .navbar-menu {
-    flex-direction: row;
-    max-height: none;
-    opacity: 1;
-    pointer-events: auto;
-    overflow: visible;
-  }
-  #navbar-home .navbar-container .navbar-list {
-    flex-direction: row !important;
-    align-items: center !important;
-    margin-left: auto !important;
-  }
-  #navbar-home .navbar-container .navbar-list .nb-text-menu {
-    display: none;
+    gap: 0.5rem;
   }
 }
-/* CORE */
-@media (min-width: 992px) {
-  #navbar-home {
-    height: 100px;
-  }
-  #navbar-home .navbar-container {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
-  #navbar-home {
-    /* MENU */
-  }
-  #navbar-home .navbar-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    max-height: none;
-    opacity: 1;
-    pointer-events: auto;
-    overflow: visible;
-  }
-  #navbar-home {
-    /* LISTA */
-  }
-  #navbar-home .navbar-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  #navbar-home {
-    /* ITEM */
-  }
-  #navbar-home .nb-item {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  #navbar-home .nb-item .nb-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 0.5rem;
-  }
-  #navbar-home .nb-item .nb-link .nb-text {
-    display: none;
-  }
-  #navbar-home {
-    /* DROPDOWN */
-  }
-  #navbar-home .nb-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 250px;
-    max-width: 300px;
-    margin: 0;
-    z-index: 3000;
-  }
-}
-/* CORE */
-/* CORE */
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 576px) {
   .nb-search {
     position: relative;
@@ -520,16 +506,17 @@
     z-index: 2000;
   }
 }
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 576px) {
   #navbar-home .navbar-hamburger {
     display: none !important;
   }
 }
-/* CORE */
+/* ================= CORE ================= */
+/* Variáveis primeiro */
 @media (min-width: 576px) {
   #navbar-home .navbar-container .nb-divider {
     display: block !important;
-    margin-left: 10px !important;
   }
 }/*# sourceMappingURL=Navbar-Home.css.map */

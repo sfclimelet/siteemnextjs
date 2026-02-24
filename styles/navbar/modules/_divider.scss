@@ -1,19 +1,13 @@
 @use "../core/_vars.scss" as *;
 
 #{$Navbar-Home}{
-    #{$nbhome-container}{
-        #{$nbhome-menu}{
-            #{$nbhome-list}{
-                #{$nbhome-divider}{
-                    display: none;
-                    width: 2px;
-                    height: 24px;
-                    margin: 0.75rem 0;
-                    background: #fff;
-                    border-radius: 1px;
-                    flex-shrink: 0;
-                }
-            }
-        }
+    #{$nbhome-divider}{
+        display: none;
+        width: 2px;
+        height: 24px;
+        margin: 0.75rem 0;
+        background: #fff;
+        border-radius: 1px;
+        flex-shrink: 0;
     }
 }

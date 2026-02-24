@@ -1,31 +1,44 @@
-/* CORE */
+/* ================= CORE ================= */
+
+/* Variáveis primeiro */
 @use "./core/_vars.scss" as *;
-@use "./core/_colors.scss";
-@use "./core/_animations.scss" as animations;
-@use "./core/_backgrounds.scss";
 @use "./core/_breakpoints.scss" as *;
-@use "./core/_design.scss";
-@use "./core/_helpers.scss";
-@use "./core/_icons.scss";
-@use "./core/_keyframes.scss";
+
+/* Estrutura base mobile */
 @use "./core/_layout.scss" as coreLayout;
+
+/* Estados */
 @use "./core/_states.scss";
 @use "./core/_states-navbar.scss";
 @use "./core/_states-hamburger.scss" as StatusHamburger;
 @use "./core/_states-search.scss";
 @use "./core/_states-dropdown.scss";
+
+/* Visual */
+@use "./core/_colors.scss";
+@use "./core/_backgrounds.scss";
+@use "./core/_design.scss";
+@use "./core/_helpers.scss";
+@use "./core/_icons.scss";
+@use "./core/_keyframes.scss";
 @use "./core/_transitions.scss";
 @use "./core/_typography.scss";
 
-/* MÓDULES */
-@use "./modules/_divider.scss";
-@use "./modules/_dropdowns.scss";
-@use "./modules/_hamburger.scss" as moduloLayout;
-@use "./modules/_items.scss";
-@use "./modules/_layout.scss" as modulesLayout;
-@use "./modules/_search.scss";
+/* ================= MÓDULOS ================= */
 
-/* BREAKPOINTS */
+@use "./modules/_layout.scss" as modulesLayout;
+@use "./modules/_items.scss";
+@use "./modules/_dropdowns.scss";
+@use "./modules/_search.scss";
+@use "./modules/_divider.scss";
+@use "./modules/_hamburger.scss" as moduloLayout;
+
+/* ================= BREAKPOINTS ================= */
+
+/* Base primeiro breakpoint */
+@use "./breakpoints/_base.scss";
+
+/* Depois os maiores */
 @use "./breakpoints/_mobiles.scss";
 @use "./breakpoints/_tablets.scss";
 @use "./breakpoints/_desktops.scss";

@@ -1,12 +1,14 @@
 @use "./_vars.scss" as *;
 
-#{$nbhome-search}{
-    &.open{
-        #{$nbhome-search-toggle}{
-            opacity: 0;
-        }
-        #{$nbhome-search-box}{
-            display: flex;
+#{$Navbar-Home}{
+    #{$nbhome-search}{
+        &.open{
+            #{$nbhome-search-toggle}{
+                opacity: 0;
+            }
+            #{$nbhome-search-box}{
+                display: flex;
+            }
         }
     }
 }

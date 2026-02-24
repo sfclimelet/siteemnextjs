@@ -18,30 +18,3 @@
     }
 
 }
-
-@media (min-width: 576px) {
-    #{$Navbar-Home}{
-        #{$nbhome-container}{
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            #{$nbhome-menu}{
-                flex-direction: row;
-                max-height: none;
-                opacity: 1;
-                pointer-events: auto;
-                overflow: visible;
-            }
-
-            #{$nbhome-list}{
-                flex-direction: row !important;
-                align-items: center !important;
-                margin-left: auto !important;
-                #{$nbhome-text-menu}{
-                    display: none;
-                }
-            }
-        }
-    }
-}

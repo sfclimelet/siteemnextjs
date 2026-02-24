@@ -1,7 +1,6 @@
 @use "../core/_vars.scss" as *;
 
 #{$Navbar-Home}{
-  #{$nbhome-top}{
     #{$nbhome-hamburger}{
       display: flex;
       flex-direction: column;
@@ -23,5 +22,4 @@
 
       }
     }
-  }
 }

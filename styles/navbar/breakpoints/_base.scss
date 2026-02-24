@@ -1,0 +1,53 @@
+@use "../core/_vars.scss" as *;
+
+@media (min-width: 576px) {
+
+  /* ================= CONTAINER ================= */
+  #{$Navbar-Home} #{$nbhome-container} {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* ================= MENU ================= */
+  #{$Navbar-Home} #{$nbhome-menu} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* ================= LISTA ================= */
+  #{$Navbar-Home} #{$nbhome-list} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: auto;
+    margin-left: auto;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  /* ================= ITEM ================= */
+  #{$Navbar-Home} #{$nbhome-item} {
+    width: auto;
+  }
+
+  /* ================= LINK ================= */
+  #{$Navbar-Home} #{$nbhome-link} {
+    width: auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* ================= TEXTO AUXILIAR ================= */
+  #{$Navbar-Home} #{$nbhome-text-menu} {
+    display: none;
+  }
+
+}

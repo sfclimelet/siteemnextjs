@@ -1,16 +1,1 @@
 @use "./_keyframes.scss" as *;
-
-@mixin fadeIn($time){
-    animation: fadeIn $time ease forwards;
-}
-
-@mixin slideDown($time: 0.3s, $distance){
-    transform: translateY(-$distance);
-    animation: slideDown $time ease forwards;
-}
-
-@mixin hoverFocus($color){
-    &:hover, :focus-visible {
-        background: $color;
-    }
-}

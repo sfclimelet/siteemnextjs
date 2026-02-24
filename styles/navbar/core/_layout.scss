@@ -1,94 +1,104 @@
 @use "./_vars.scss" as *;
 
+/* ================= ROOT ================= */
 #{$Navbar-Home} {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
   overflow: visible;
 
   display: flex;
   flex-direction: column;
+}
 
-  a {
-    text-decoration: none;
-  }
+#{$Navbar-Home} a {
+  text-decoration: none;
+}
 
-  /* ================= CONTAINER ================= */
-  #{$nbhome-container} {
-    display: flex;
-    flex-direction: column;
 
-    /* 🔥 MOBILE CORRETO */
-    align-items: stretch;      // NÃO centraliza horizontal
-    justify-content: flex-start;
+/* ================= CONTAINER ================= */
+#{$Navbar-Home} #{$nbhome-container} {
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    padding: 0 1rem;
+  align-items: stretch;
+  justify-content: flex-start;
 
-    /* ================= TOPO ================= */
-    #{$nbhome-top} {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+}
 
-      width: 100%;
-      height: 80px;
-      padding: 0 1rem;
 
-      #{$nbhome-logo} {
-        position: relative;
-        width: 90px;
-        height: 70px;
-        flex-shrink: 0;
+/* ================= TOPO ================= */
+#{$Navbar-Home} #{$nbhome-top} {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-        #{$nbhome-logo-image} {
-          object-fit: contain;
-        }
-      }
-    }
+  width: 100%;
+  height: 80px;
+  padding: 0 1rem;
+}
 
-    /* ================= MENU ================= */
-    #{$nbhome-menu} {
-      width: 100%;
+#{$Navbar-Home} #{$nbhome-logo} {
+  position: relative;
+  width: 90px;
+  height: 70px;
+  flex-shrink: 0;
+}
 
-      overflow: hidden;   // mobile only
-      max-height: 0;
+#{$Navbar-Home} #{$nbhome-logo-image} {
+  object-fit: contain;
+}
 
-      display: flex;
-      flex-direction: column;
 
-      #{$nbhome-list} {
-        display: flex;
-        flex-direction: column;
+/* ================= MENU ================= */
+#{$Navbar-Home} #{$nbhome-menu} {
+  width: 100%;
 
-        width: 100%;        // 🔥 garante largura total
-        gap: 0.75rem;
+  overflow: hidden;     // mobile only
+  max-height: 0;
 
-        padding: 1rem;
-        margin: 0;
-        list-style: none;
+  display: flex;
+  flex-direction: column;
+}
 
-        #{$nbhome-item} {
-          position: relative;
-          display: flex;
-          width: 100%;      // 🔥 importante
 
-          #{$nbhome-link} {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;  // 🔥 garante esquerda
-            gap: 0.5rem;
+/* ================= LISTA ================= */
+#{$Navbar-Home} #{$nbhome-list} {
+  display: flex;
+  flex-direction: column;
 
-            width: 100%;
-            min-height: 44px;
+  width: 100%;
+  gap: 0.75rem;
 
-            padding: 0.75rem;
-            border-radius: 6px;
-          }
-        }
-      }
-    }
-  }
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+
+/* ================= ITEM ================= */
+#{$Navbar-Home} #{$nbhome-item} {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+
+/* ================= LINK ================= */
+#{$Navbar-Home} #{$nbhome-link} {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 0.5rem;
+
+  width: 100%;
+  min-height: 44px;
+
+  padding: 0.75rem;
+  border-radius: 6px;
 }

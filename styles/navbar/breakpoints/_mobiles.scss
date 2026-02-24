@@ -16,7 +16,6 @@
       overflow: hidden;
       opacity: 0;
       pointer-events: none;
-      transition: max-height 0.35s ease, opacity 0.25s ease;
     }
 
     #{$nbhome-menu}#{$nbhome-open} {
@@ -36,12 +35,6 @@
     #{$nbhome-item} {
       width: 70%;
       margin: 0 auto;
-    }
-
-    /* SEARCH (estrutura apenas) */
-    #{$nbhome-search} {
-      flex-direction: row;
-      gap: 0.5rem;
     }
 
   }

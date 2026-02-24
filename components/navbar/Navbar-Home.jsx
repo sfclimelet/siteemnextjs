@@ -34,15 +34,18 @@ export default function NavbarHome() {
   };
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navbarRef.current &&! navbarRef.current.contains(event.target)){
+    const handleClickOutside = (e) =>{
+      if (!navbarRef.current) return;
+      if(!navbarRef.current.contains(e.target)){
         setOpenItem(null);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
+
+    document.addEventListener("click", handleClickOutside);
+
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, []);
 
 
