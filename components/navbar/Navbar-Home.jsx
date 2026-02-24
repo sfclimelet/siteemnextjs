@@ -9,6 +9,7 @@ import { Imgs } from "../../config/images";
 // Dados
 import { navbarHomeData, searchData } from "./NavbarHome-Data";
 
+// Componentes
 import NavbarHomeItem from "./NavbarHome-Item";
 import NavDropdown from "./NavbarHome-Dropdowns";
 

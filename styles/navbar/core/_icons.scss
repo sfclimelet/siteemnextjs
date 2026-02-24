@@ -2,7 +2,7 @@
 
 #{$Navbar-Home}{
 
-    /* SEARCH */
+    /* ICON -  SEARCH */
     #{$nbhome-search}{
       #{$nbhome-search-toggle}{
         #{$nbhome-search-icon}{
@@ -13,7 +13,7 @@
       }
     }
     
-    /* MENUS */
+    /* ICON - MENU */
     #{$nbhome-item}{
       #{$nbhome-link}{
         #{$nbhome-icons}{
@@ -24,14 +24,16 @@
       }
     }
 
-    /* ITENS DO MENU */
+    /* ICON - ITENS DO MENU */
     @each $name, $selector in $nbhome-menus{
       #{$selector}{
         #{$nbhome-dropdown}{
           #{$nbhome-dropdown-link}{
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
+            #{$nbhome-icons}{
+              width: 18px;
+              height: 18px;
+              flex-shrink: 0;
+            }
           }
         }
       }
