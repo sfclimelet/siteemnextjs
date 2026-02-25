@@ -15,22 +15,25 @@ export default function NavDropdown({ item, openItem, handleToggle }) {
         className={`nb-link ${isOpen ? "is-hidden" : ""}`}
         aria-haspopup="true"
         aria-expanded={isOpen}
-        onClick={() => handleToggle(item.id)}   // abre/fecha dropdown via pai
+        aria-label={`${isOpen ? "Fechar" : "Abrir"} menu ${item.label}`}
+        aria-controls={`dropdown-${item.id}`}
+        title={`${isOpen ? "Fechar" : "Abrir"} menu ${item.label}`}
+        onClick={() => handleToggle(item.id)}
       >
         {Icon && <Icon className="nb-icon" />}
         <span className="nb-text-menu">{item.label}</span>
       </button>
 
-      <ul className="nb-dropdown">
+      <ul id={`dropdown-${item.id}`} className="nb-dropdown" role="menu">
         {/* Dropdown Header */}
         {isOpen && (
-          <DropdownHeader Icon={Icon} onClose={() => handleToggle(item.id)} />
+          <DropdownHeader Icon={Icon} onClose={() => handleToggle(item.id)} label={item.label} />
         )}
         {item.children?.map(child => {
           const ChildIcon = child.icon;
           return (
             <li key={`${item.id}-${child.href}`}>
-              <Link href={child.href} className="nb-dropdown-link">
+              <Link href={child.href} className="nb-dropdown-link" role="menuitem">
                 {ChildIcon && <ChildIcon className="nb-icon" />}
                 <span className="nb-text">{child.label}</span>
               </Link>
