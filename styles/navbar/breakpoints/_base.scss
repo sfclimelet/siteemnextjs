@@ -1,7 +1,5 @@
 @use "../core/_vars.scss" as *;
 
-@use "../core/_vars.scss" as *;
-
 @media (min-width: 576px) {
 
   /* ================= CONTAINER ================= */
@@ -66,12 +64,6 @@
 
     flex-direction: column;
     min-width: 200px;
-
-    background: white;
-    border-radius: 8px;
-    padding: 0.5rem 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
     z-index: 50;
   }
 

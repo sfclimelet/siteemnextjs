@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DropdownHeader from "./NavbarHome-Dropwdown-Header";
 
 export default function NavDropdown({ item, openItem, handleToggle }) {
   const isOpen = openItem === item.id;       // verifica se é o dropdown aberto
@@ -11,7 +12,7 @@ export default function NavDropdown({ item, openItem, handleToggle }) {
     >
       <button
         type="button"
-        className="nb-link"
+        className={`nb-link ${isOpen ? "is-hidden" : ""}`}
         aria-haspopup="true"
         aria-expanded={isOpen}
         onClick={() => handleToggle(item.id)}   // abre/fecha dropdown via pai
@@ -21,6 +22,10 @@ export default function NavDropdown({ item, openItem, handleToggle }) {
       </button>
 
       <ul className="nb-dropdown">
+        {/* Dropdown Header */}
+        {isOpen && (
+          <DropdownHeader Icon={Icon} onClose={() => handleToggle(item.id)} />
+        )}
         {item.children?.map(child => {
           const ChildIcon = child.icon;
           return (

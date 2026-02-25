@@ -162,11 +162,24 @@
 
 /* ================= CORE ================= */
 /* Variáveis primeiro */
+#navbar-home .nb-item {
+  /* Dropdown fechado */
+}
 #navbar-home .nb-item .nb-dropdown {
   display: none;
 }
+#navbar-home .nb-item {
+  /* Quando estiver aberto */
+}
 #navbar-home .nb-item.open > .nb-dropdown {
   display: flex;
+}
+#navbar-home {
+  /* ================= BOTÃO ORIGINAL OCULTO ================= */
+}
+#navbar-home .nb-link.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Visual */
@@ -373,8 +386,6 @@
 /* Base primeiro breakpoint */
 /* ================= CORE ================= */
 /* Variáveis primeiro */
-/* ================= CORE ================= */
-/* Variáveis primeiro */
 @media (min-width: 576px) {
   /* ================= CONTAINER ================= */
   #navbar-home .navbar-container {
@@ -427,10 +438,6 @@
     display: none; /* fechado por padrão */
     flex-direction: column;
     min-width: 200px;
-    background: white;
-    border-radius: 8px;
-    padding: 0.5rem 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 50;
   }
   /* Quando item estiver aberto */
