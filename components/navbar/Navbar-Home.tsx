@@ -1,4 +1,3 @@
-// INÍCIO DO CÓDIGO
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -44,18 +43,32 @@ export default function NavbarHome() {
     else setOpenItem(id);
   };
 
-  // Fecha dropdown ao clicar fora
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (!navbarRef.current) return;
-      if (!navbarRef.current.contains(e.target as Node)) {
-        setOpenItem(null);
-      }
-    };
+    // Fecha dropdown ao clicar fora + ESC
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (!navbarRef.current) return;
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+            if (!navbarRef.current.contains(e.target as Node)) {
+            setOpenItem(null);
+            }
+        };
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+            setOpenItem(null);
+            setMenuOpen(false);
+            }
+        };
+
+        window.addEventListener("mousedown", handleClickOutside);
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("mousedown", handleClickOutside);
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+        
+    }, []);
 
   return (
     <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
