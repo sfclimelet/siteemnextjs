@@ -1,82 +1,51 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Imagens
 import { Imgs } from "../../config/images";
-// Dados
 import { navbarHomeData, searchData } from "./NavbarHome-Data";
 
-// Componentes
 import NavbarHomeItem from "./NavbarHome-Item";
 import NavDropdown from "./NavbarHome-Dropdowns";
-
-// SEARCH
 import NavSearch from "./Search-NavbarHome";
 
-// SCSS
+import { useNavbarAccessibility } from "../../hooks/useNavbarHomeAccessibilty";
+
 import "../../styles/navbar/Navbar-Home.scss";
 
-// ================= TYPES =================
-interface MenuItem {
-  id: string;
-  type: "dropdown" | "link" | "search";
-  label: string;
-  href?: string;
-  icon?: React.ComponentType<{ className?: string }>;
-  children?: MenuItem[];
-}
-
 export default function NavbarHome() {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);  // controla menu mobile
-  const [openItem, setOpenItem] = useState<string | null>(null);   // controla dropdown único
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [openItem, setOpenItem] = useState<string | null>(null);
+
   const navbarRef = useRef<HTMLElement | null>(null);
+  const menuItems = navbarHomeData.filter(
+    (item) => item.type !== "search"
+  );
 
-  // Separar itens que não são search
-  const menuItems = navbarHomeData.filter(item => item.type !== "search");
-
-  // Função para abrir/fechar dropdown individual
   const handleToggle = (id: string) => {
-    if (openItem === id) setOpenItem(null);
-    else setOpenItem(id);
+    setOpenItem((prev) => (prev === id ? null : id));
   };
 
-    // Fecha dropdown ao clicar fora + ESC
-    useEffect(() => {
-        const handleClickOutside = (e: MouseEvent) => {
-            if (!navbarRef.current) return;
-
-            if (!navbarRef.current.contains(e.target as Node)) {
-            setOpenItem(null);
-            }
-        };
-
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === "Escape") {
-            setOpenItem(null);
-            setMenuOpen(false);
-            }
-        };
-
-        window.addEventListener("mousedown", handleClickOutside);
-        window.addEventListener("keydown", handleKeyDown);
-
-        return () => {
-            window.removeEventListener("mousedown", handleClickOutside);
-            window.removeEventListener("keydown", handleKeyDown);
-        };
-        
-    }, []);
+  // 🔥 Hook de acessibilidade isolado
+  useNavbarAccessibility({
+    navbarRef,
+    openItem,
+    setOpenItem,
+    menuOpen,
+    setMenuOpen,
+  });
 
   return (
     <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
       <div className="navbar-container">
-
-        {/* ================= TOPO ================= */}
         <div className="navbar-top">
-          <Link href="/" className="navbar-logo" aria-label="Página inicial">
+          <Link
+            href="/"
+            className="navbar-logo"
+            aria-label="Página inicial"
+          >
             <Image
               src={Imgs.NbHome.imglogoTrans.src}
               fill
@@ -86,13 +55,12 @@ export default function NavbarHome() {
             />
           </Link>
 
-          {/* HAMBURGER MOBILE */}
           <button
             type="button"
             className={`navbar-hamburger ${menuOpen ? "open" : ""}`}
             aria-label="Abrir menu"
             aria-expanded={menuOpen}
-            onClick={() => setMenuOpen(prev => !prev)}
+            onClick={() => setMenuOpen((prev) => !prev)}
           >
             <span />
             <span />
@@ -100,12 +68,12 @@ export default function NavbarHome() {
           </button>
         </div>
 
-        {/* ================= MENU EXPANSÍVEL ================= */}
-        <nav ref={navbarRef} className={`navbar-menu ${menuOpen ? "open" : ""}`}>
+        <nav
+          ref={navbarRef}
+          className={`navbar-menu ${menuOpen ? "open" : ""}`}
+        >
           <ul className="navbar-list">
-
-            {/* SEARCH */}
-            {searchData.map(item => (
+            {searchData.map((item) => (
               <NavSearch
                 key={item.id}
                 item={item}
@@ -114,11 +82,9 @@ export default function NavbarHome() {
               />
             ))}
 
-            {/* DIVIDER */}
             <li className="nb-divider" aria-hidden="true" />
 
-            {/* ITENS / DROPDOWNS */}
-            {menuItems.map(item =>
+            {menuItems.map((item) =>
               item.type === "dropdown" ? (
                 <NavDropdown
                   key={item.id}
@@ -135,10 +101,8 @@ export default function NavbarHome() {
                 />
               )
             )}
-
           </ul>
         </nav>
-
       </div>
     </header>
   );

@@ -1,4 +1,5 @@
-// INÍCIO DO CÓDIGO
+import { useRef, useEffect } from "react";
+
 import Link from "next/link";
 import DropdownHeader from "./NavbarHome-Dropwdown-Header";
 import React from "react";
@@ -31,13 +32,20 @@ export default function NavDropdown({
 }: NavDropdownProps) {
   const isOpen: boolean = openItem === item.id;
   const Icon = item.icon;
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
+  useEffect(() => {
+    if (!isOpen && buttonRef.current){
+      buttonRef.current.focus();
+    }
+  }, [isOpen]);
   return (
     <li
       id={item.id}
       className={`nb-item ${isOpen ? "open" : ""}`}
     >
       <button
+      ref={buttonRef}
         type="button"
         className={`nb-link ${isOpen ? "is-hidden" : ""}`}
         aria-haspopup="true"
