@@ -1,8 +1,35 @@
+// INÍCIO DO CÓDIGO
 import Link from "next/link";
 import DropdownHeader from "./NavbarHome-Dropwdown-Header";
+import React from "react";
 
-export default function NavDropdown({ item, openItem, handleToggle }) {
-  const isOpen = openItem === item.id;       // verifica se é o dropdown aberto
+// ================= TYPES =================
+
+interface DropdownChild {
+  href: string;
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+}
+
+export interface DropdownItem {
+  id: string;
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  children?: DropdownChild[];
+}
+
+interface NavDropdownProps {
+  item: DropdownItem;
+  openItem: string | null;
+  handleToggle: (id: string) => void;
+}
+
+export default function NavDropdown({
+  item,
+  openItem,
+  handleToggle,
+}: NavDropdownProps) {
+  const isOpen: boolean = openItem === item.id;
   const Icon = item.icon;
 
   return (
@@ -24,16 +51,31 @@ export default function NavDropdown({ item, openItem, handleToggle }) {
         <span className="nb-text-menu">{item.label}</span>
       </button>
 
-      <ul id={`dropdown-${item.id}`} className="nb-dropdown" role="menu">
+      <ul
+        id={`dropdown-${item.id}`}
+        className="nb-dropdown"
+        role="menu"
+      >
         {/* Dropdown Header */}
         {isOpen && (
-          <DropdownHeader Icon={Icon} onClose={() => handleToggle(item.id)} label={item.label} />
+          <DropdownHeader
+            Icon={Icon}
+            onClose={() => handleToggle(item.id)}
+            label={item.label}
+          />
         )}
-        {item.children?.map(child => {
+
+        {item.children?.map((child) => {
           const ChildIcon = child.icon;
+
           return (
             <li key={`${item.id}-${child.href}`}>
-              <Link href={child.href} className="nb-dropdown-link" role="menuitem">
+              <Link
+                href={child.href}
+                className="nb-dropdown-link"
+                role="menuitem"
+                title={child.label}
+              >
                 {ChildIcon && <ChildIcon className="nb-icon" />}
                 <span className="nb-text">{child.label}</span>
               </Link>

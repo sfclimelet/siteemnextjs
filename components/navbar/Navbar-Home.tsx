@@ -1,3 +1,4 @@
+// INÍCIO DO CÓDIGO
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -19,35 +20,42 @@ import NavSearch from "./Search-NavbarHome";
 // SCSS
 import "../../styles/navbar/Navbar-Home.scss";
 
+// ================= TYPES =================
+interface MenuItem {
+  id: string;
+  type: "dropdown" | "link" | "search";
+  label: string;
+  href?: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  children?: MenuItem[];
+}
+
 export default function NavbarHome() {
-  const [menuOpen, setMenuOpen] = useState(false);  // controla menu mobile
-  const [openItem, setOpenItem] = useState(null);   // controla dropdown único
-  const navbarRef = useRef(null);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);  // controla menu mobile
+  const [openItem, setOpenItem] = useState<string | null>(null);   // controla dropdown único
+  const navbarRef = useRef<HTMLElement | null>(null);
 
   // Separar itens que não são search
   const menuItems = navbarHomeData.filter(item => item.type !== "search");
 
   // Função para abrir/fechar dropdown individual
-  const handleToggle = (id) => {
+  const handleToggle = (id: string) => {
     if (openItem === id) setOpenItem(null);
     else setOpenItem(id);
   };
 
+  // Fecha dropdown ao clicar fora
   useEffect(() => {
-    const handleClickOutside = (e) =>{
+    const handleClickOutside = (e: MouseEvent) => {
       if (!navbarRef.current) return;
-      if(!navbarRef.current.contains(e.target)){
+      if (!navbarRef.current.contains(e.target as Node)) {
         setOpenItem(null);
       }
-    }
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
@@ -85,14 +93,19 @@ export default function NavbarHome() {
 
             {/* SEARCH */}
             {searchData.map(item => (
-              <NavSearch key={item.id} item={item} openItem={openItem} setOpenItem={setOpenItem} />
+              <NavSearch
+                key={item.id}
+                item={item}
+                openItem={openItem}
+                setOpenItem={setOpenItem}
+              />
             ))}
 
             {/* DIVIDER */}
             <li className="nb-divider" aria-hidden="true" />
 
             {/* ITENS / DROPDOWNS */}
-            {menuItems.map(item => (
+            {menuItems.map(item =>
               item.type === "dropdown" ? (
                 <NavDropdown
                   key={item.id}
@@ -108,7 +121,7 @@ export default function NavbarHome() {
                   handleToggle={handleToggle}
                 />
               )
-            ))}
+            )}
 
           </ul>
         </nav>

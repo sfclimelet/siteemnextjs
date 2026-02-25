@@ -1,16 +1,41 @@
+import React from "react";
 import { IconsNavbarHome } from "../../Icons/Icons";
 import { ROUTES } from "./menuRoutes";
+import type { RoutePath } from "./menuRoutes";
 
-export const searchData = [
+/* ================= TYPES ================= */
+
+export type NavbarItemType = "dropdown" | "search";
+
+export interface NavbarChildItem {
+  id: string;
+  label: string;
+  href: RoutePath; // 🔥 AGORA SÓ ACEITA ROTAS VÁLIDAS
+  icon?: React.ComponentType<{ className?: string }>;
+}
+
+export interface NavbarItem {
+  id: string;
+  type: NavbarItemType;
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  children?: NavbarChildItem[];
+}
+
+/* ================= SEARCH ================= */
+
+export const searchData: NavbarItem[] = [
   {
     id: "search",
     type: "search",
     label: "Buscar",
     icon: IconsNavbarHome.Menu.search,
   },
-]
+];
 
-export const navbarHomeData = [
+/* ================= NAVBAR ================= */
+
+export const navbarHomeData: NavbarItem[] = [
   {
     id: "services",
     type: "dropdown",
@@ -98,31 +123,31 @@ export const navbarHomeData = [
       {
         id: "dicas",
         label: "Dicas",
-        href: ROUTES.AjudaeSuporte.dicas,
+        href: ROUTES.ajudaeSuporte.dicas,
         icon: IconsNavbarHome.Suporte.idea,
       },
       {
         id: "contato",
         label: "Contato",
-        href: ROUTES.AjudaeSuporte.contato,
+        href: ROUTES.ajudaeSuporte.contato,
         icon: IconsNavbarHome.Suporte.contato,
       },
       {
         id: "avaliacao",
         label: "Avalie",
-        href: ROUTES.AjudaeSuporte.avaliacao,
+        href: ROUTES.ajudaeSuporte.avaliacao,
         icon: IconsNavbarHome.Suporte.rating,
       },
       {
         id: "faq",
         label: "FAQ",
-        href: ROUTES.AjudaeSuporte.faq,
+        href: ROUTES.ajudaeSuporte.faq,
         icon: IconsNavbarHome.Suporte.quote,
       },
       {
         id: "privacidade",
         label: "Privacidade",
-        href: ROUTES.AjudaeSuporte.privacidade,
+        href: ROUTES.ajudaeSuporte.privacidade,
         icon: IconsNavbarHome.Suporte.security,
       },
     ],
@@ -137,25 +162,25 @@ export const navbarHomeData = [
       {
         id: "feedback",
         label: "Feedback",
-        href: ROUTES.PortfolioeCerti.feedback,
+        href: ROUTES.portfolioeCerti.feedback,
         icon: IconsNavbarHome.PortifilioeCert.quotetxt,
       },
       {
         id: "certificacoes",
         label: "Certificações",
-        href: ROUTES.PortfolioeCerti.certificacoes,
+        href: ROUTES.portfolioeCerti.certificacoes,
         icon: IconsNavbarHome.PortifilioeCert.award,
       },
       {
         id: "galeria",
         label: "Galeria",
-        href: ROUTES.PortfolioeCerti.galeria,
+        href: ROUTES.portfolioeCerti.galeria,
         icon: IconsNavbarHome.PortifilioeCert.image,
       },
       {
         id: "antesDepois",
         label: "Antes e Depois",
-        href: ROUTES.PortfolioeCerti.antesDepois,
+        href: ROUTES.portfolioeCerti.antesDepois,
         icon: IconsNavbarHome.PortifilioeCert.camera,
       },
     ],
