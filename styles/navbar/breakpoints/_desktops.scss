@@ -1,2 +1,21 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_breakpoints.scss" as *;
+
+@media (min-width: 991.99px){
+    #{$Navbar-Home}{
+        #{$nbhome-item}{
+            position: static;
+        }
+        #{$nbhome-dropdown}{
+            position: fixed;
+            top: 90px;
+            right: 8rem;
+            left: auto;
+            width: 320px;
+            max-width: 320px;
+            margin: 0;
+            padding: 1rem;
+            z-index: 99999;
+        }
+    }
+}
