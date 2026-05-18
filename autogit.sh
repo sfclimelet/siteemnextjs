@@ -10,9 +10,11 @@ do
 
     git commit -m "auto-save $(date '+%Y-%m-%d %H:%M:%S')"
 
-    git push origin main
+    CURRENT_BRANCH=$(git branch --show-current)
 
-    echo "Push enviado!"
+    git push origin $CURRENT_BRANCH
+
+    echo "Push enviado para $CURRENT_BRANCH!"
   fi
 
   sleep 30
