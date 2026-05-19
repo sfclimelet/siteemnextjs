@@ -27,6 +27,11 @@
       color: $nbhome-color-dropdown-text;
     }
   }
+  
+  /* ================= DIVIDER ================= */
+  #{$nbhome-divider}{
+    background: $nbhome-color-divider;
+  }
 
   /* ================= DROPDOWN HEADER ================= */
 
