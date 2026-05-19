@@ -4,8 +4,10 @@
     #{$nbhome-dropdown-header}{
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     #{$nbhome-dropdown-header-circle}{

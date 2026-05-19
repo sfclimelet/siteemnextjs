@@ -12,6 +12,15 @@
         }
       }
     }
+
+    /* ICON - DROPDOWN HEADER */
+    #{$nbhome-dropdown-header}{
+      #{$nbhome-icons}{
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+    }
     
     /* ICON - MENU */
     #{$nbhome-item}{
