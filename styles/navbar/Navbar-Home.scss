@@ -29,6 +29,7 @@
 @use "./modules/_layout.scss" as modulesLayout;
 @use "./modules/_items.scss";
 @use "./modules/_dropdowns.scss";
+@use "./modules/dropdown-header";
 @use "./modules/_search.scss";
 @use "./modules/_divider.scss";
 @use "./modules/_hamburger.scss" as moduloLayout;

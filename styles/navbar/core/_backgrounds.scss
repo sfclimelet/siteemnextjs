@@ -1,18 +1,37 @@
 @use "./_vars.scss" as *;
 @use "./_colors.scss" as *;
 
-#{$Navbar-Home}{
-    background: linear-gradient(to right, $nbhome-color-primary-bg, $nbhome-color-secondary-bg);
-    #{$nbhome-container}{
-        #{$nbhome-menu}{
-            #{$nbhome-list}{
-                #{$nbhome-dropdown}{
-                    background: linear-gradient(190deg, $nbhome-color-dropdown-bg-primary, $nbhome-color-dropdown-bg-secondary);
-                    #{$nbhome-dropdown-link}{
-                        color: $nbhome-color-dropdown-text;
-                    }
-                }
-            }
-        }
+#{$Navbar-Home} {
+
+  /* ================= NAVBAR ================= */
+
+  background: linear-gradient(
+    to right,
+    $nbhome-color-primary-bg,
+    $nbhome-color-secondary-bg
+  );
+
+  /* ================= DROPDOWN ================= */
+
+  #{$nbhome-dropdown} {
+
+    background: linear-gradient(
+      190deg,
+      $nbhome-color-dropdown-bg-primary,
+      $nbhome-color-dropdown-bg-secondary
+    );
+
+    /* LINKS */
+
+    #{$nbhome-dropdown-link} {
+      color: $nbhome-color-dropdown-text;
     }
+  }
+
+  /* ================= DROPDOWN HEADER ================= */
+
+  .nb-dropdown-circle {
+    background: $nbhome-color-dropdown-bg-primary;
+  }
+
 }
