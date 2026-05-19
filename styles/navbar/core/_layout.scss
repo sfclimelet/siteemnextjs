@@ -13,11 +13,6 @@
   flex-direction: column;
 }
 
-#{$Navbar-Home} a {
-  text-decoration: none;
-}
-
-
 /* ================= CONTAINER ================= */
 #{$Navbar-Home} #{$nbhome-container} {
   display: flex;
@@ -76,7 +71,6 @@
 
   padding: 1rem;
   margin: 0;
-  list-style: none;
 }
 
 
