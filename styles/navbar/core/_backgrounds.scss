@@ -11,23 +11,24 @@
     $nbhome-color-secondary-bg
   );
 
+  /* ================= SEARCH ================= */
+  #{$nbhome-search}{
+    #{$nbhome-search-submit}{
+      background: $nbhome-color-search-submit-button;
+    }
+  }
+
   /* ================= DROPDOWN ================= */
 
   #{$nbhome-dropdown} {
-
-    background: linear-gradient(
-      190deg,
-      $nbhome-color-dropdown-bg-primary,
-      $nbhome-color-dropdown-bg-secondary
-    );
+    background: $nbhome-color-dropdown;
 
     /* LINKS */
-
     #{$nbhome-dropdown-link} {
       color: $nbhome-color-dropdown-text;
     }
   }
-  
+
   /* ================= DIVIDER ================= */
   #{$nbhome-divider}{
     background: $nbhome-color-divider;
@@ -36,7 +37,7 @@
   /* ================= DROPDOWN HEADER ================= */
 
   .nb-dropdown-circle {
-    background: $nbhome-color-dropdown-bg-primary;
+    background: $nbhome-color-dropdown-header-circle;
   }
 
 }
