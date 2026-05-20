@@ -8,6 +8,7 @@ import React from "react";
 
 export interface SearchItem {
   id: string;
+  label: string;
   icon?: React.ComponentType<{ className?: string }>;
 }
 
@@ -51,6 +52,7 @@ export default function NavSearch({
         onClick={() => setOpenItem(isOpen ? null : item.id)}
       >
         {Icon && <Icon className="nb-search-icon" />}
+        <span className="nb-text-search">{item.label}</span>
       </button>
 
       {/* ================= INPUT ================= */}
@@ -69,7 +71,7 @@ export default function NavSearch({
           aria-label="Buscar"
           title="Buscar"
         >
-          Buscar
+          {item.label}
         </button>
       </div>
     </li>
