@@ -44,7 +44,7 @@ export default function NavSearch({
       {/* ================= ÍCONE ================= */}
       <button
         type="button"
-        className="nb-search-toggle"
+        className={`nb-search-toggle ${isOpen ? "is-hidden" : ""}`}
         aria-label={isOpen ? "Fechar busca" : "Abrir busca"}
         aria-expanded={isOpen}
         title={isOpen ? "Fechar busca" : "Abrir busca"}
