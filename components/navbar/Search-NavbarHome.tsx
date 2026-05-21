@@ -1,4 +1,3 @@
-// INÍCIO DO CÓDIGO
 "use client";
 
 import { useRef, useEffect } from "react";
