@@ -16,8 +16,6 @@
         &.open{
             #{$nbhome-search-box}{
                 display: flex;
-                align-items: center;
-                z-index: 2000;
             }
         }
     }
