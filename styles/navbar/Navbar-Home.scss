@@ -25,10 +25,10 @@
 @use "./core/_typography.scss";
 @use "./core/_reset.scss";
 @use "./core/_tokens.scss";
+@use "./core/_placeholders.scss";
 
 /* ================= MÓDULOS ================= */
 
-@use "./modules/_layout.scss" as modulesLayout;
 @use "./modules/_items.scss";
 @use "./modules/_dropdowns.scss";
 @use "./modules/dropdown-header";

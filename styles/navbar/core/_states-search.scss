@@ -1,17 +1,10 @@
 @use "./_vars.scss" as *;
+@use "./_placeholders.scss" as *;
 
 #{$Navbar-Home}{
     #{$nbhome-search}{
         #{$nbhome-search-toggle}.is-hidden{
-            opacity: 0;
-            visibility: hidden;
-            height: 0;
-            min-height: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            margin: 0;
-            overflow: hidden;
-            pointer-events: none;
+            @extend %nbhome-hidden-collapse;
         }
         &.open{
             #{$nbhome-search-box}{
