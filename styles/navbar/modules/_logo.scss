@@ -1,2 +1,8 @@
 @use "../core/_vars.scss" as *;
 
+#{$Navbar-Home}{
+    #{$nbhome-logo}{
+        width: 90px;
+        height: 70px;
+    }
+}
