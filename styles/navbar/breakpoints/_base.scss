@@ -1,19 +1,20 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_mixins.scss" as *;
 
 @media (min-width: 576px) {
 
   /* ================= CONTAINER ================= */
+
   #{$Navbar-Home} #{$nbhome-container} {
-    flex-direction: row;
-    align-items: center;
+    @include nbhome-flex-row-center;
+
     justify-content: space-between;
   }
 
   /* ================= MENU ================= */
+
   #{$Navbar-Home} #{$nbhome-menu} {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include nbhome-flex-row-center;
 
     width: auto;
     max-height: none;
@@ -23,10 +24,9 @@
   }
 
   /* ================= LISTA ================= */
+
   #{$Navbar-Home} #{$nbhome-list} {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include nbhome-flex-row-center;
 
     width: auto;
     margin-left: auto;
@@ -35,39 +35,42 @@
   }
 
   /* ================= ITEM ================= */
+
   #{$Navbar-Home} #{$nbhome-item} {
     width: auto;
-    position: relative; /* âncora do dropdown */
+    position: relative;
   }
 
   /* ================= LINK ================= */
+
   #{$Navbar-Home} #{$nbhome-link} {
     width: auto;
     padding: 0.5rem 0.75rem;
   }
 
   /* ================= ESCONDE TEXTO AUXILIAR ================= */
+
   #{$Navbar-Home} #{$nbhome-text-menu} {
     display: none;
   }
 
-  /* ========================================================= */
-  /* ================= DROPDOWN DESKTOP ====================== */
-  /* ========================================================= */
+  /* ================= DROPDOWN DESKTOP ================= */
 
   #{$Navbar-Home} #{$nbhome-dropdown} {
     position: absolute;
     top: 100%;
     left: 0;
 
-    display: none; /* fechado por padrão */
+    display: none;
 
     flex-direction: column;
+
     min-width: 200px;
     z-index: 50;
   }
 
-  /* Quando item estiver aberto */
+  /* ================= DROPDOWN OPEN ================= */
+
   #{$Navbar-Home} #{$nbhome-item}.open > #{$nbhome-dropdown} {
     display: flex;
   }

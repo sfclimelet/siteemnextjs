@@ -1,0 +1,24 @@
+/* ================= FLEX ================= */
+@mixin nbhome-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin nbhome-flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin nbhome-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin nbhome-flex-column-stretch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

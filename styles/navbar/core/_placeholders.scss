@@ -58,6 +58,13 @@
     align-items: stretch;
 }
 
+/* Flex Row Center */
+%nbhome-flex-row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Vertical Scroll */
 %nbhome-scroll-y{
     overflow-y: auto;
