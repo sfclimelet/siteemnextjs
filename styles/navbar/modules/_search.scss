@@ -1,5 +1,6 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_tokens.scss" as *;
+@use "../core/_placeholders.scss" as *;
 
 #{$Navbar-Home}{
   #{$nbhome-search}{
@@ -11,8 +12,7 @@
     gap: $nbhome-spacing-gap;
 
     #{$nbhome-search-toggle}{
-      display: flex;
-      align-items: center;
+      @extend %nbhome-flex-center;
       justify-content: flex-start;
 
       gap: $nbhome-spacing-gap;

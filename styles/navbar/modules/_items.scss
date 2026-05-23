@@ -1,5 +1,6 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_tokens.scss" as *;
+@use "../core/_placeholders.scss" as *;
 
 #{$Navbar-Home} {
 
@@ -14,8 +15,7 @@
   /* ================= LINK ================= */
 
   #{$nbhome-link} {
-    display: flex;
-    align-items: center;
+    @extend %nbhome-flex-center;
     gap: $nbhome-spacing-gap;
 
     width: 100%;

@@ -1,31 +1,27 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_tokens.scss" as *;
+@use "../core/_placeholders.scss" as *;
 
 #{$Navbar-Home} {
 
   /* ================= DROPDOWN BASE ================= */
 
   #{$nbhome-dropdown} {
+    @extend %nbhome-scroll-y;
     display: none;
     flex-direction: column;
-
     width: 100%;
     max-width: $nbhome-dropdown-width;
     max-height: 65vh;
-    overflow-y: auto;
-    
     gap: 0.25rem;
     margin: 0.75rem auto;
   }
   /* ================= LINKS DO DROPDOWN ================= */
 
   #{$nbhome-dropdown-link} {
-    display: flex;
-    align-items: center;
+    @extend %nbhome-flex-center;
     width: 100%;
-
     gap: 0.75rem;
-
     min-height: 40px;
     padding: 0.5rem 0.75rem 0.5rem 1.75rem;
     text-align: left;

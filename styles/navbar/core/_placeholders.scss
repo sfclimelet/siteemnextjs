@@ -1,4 +1,4 @@
-/* Hiden Collapse */
+/* Hidden Collapse */
 %nbhome-hidden-collapse{
     opacity: 0;
     visibility: hidden;
@@ -9,4 +9,36 @@
     margin: 0;
     overflow: hidden;
     pointer-events: none;
+}
+
+/* Flex Center */
+%nbhome-flex-center{
+    display: flex;
+    align-items: center;
+}
+
+/* Flex Between */
+%nbhome-flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Vertical Scroll */
+%nbhome-scroll-y{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Flex Column */
+%nbhome-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex Column Stretch */
+%nbhome-flex-column-stretch{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
