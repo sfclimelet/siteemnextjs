@@ -1,19 +1,16 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_placeholders.scss" as *;
 
 #{$Navbar-Home}{
     #{$nbhome-dropdown-header}{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %nbhome-flex-center-full;
         width: 100%;
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
 
     #{$nbhome-dropdown-header-circle}{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %nbhome-flex-center-full;
         width: 56px;
         height: 56px;
         border-radius: 50%;

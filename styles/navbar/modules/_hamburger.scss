@@ -1,10 +1,9 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_placeholders.scss" as *;
 
 #{$Navbar-Home}{
     #{$nbhome-hamburger}{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @extend %nbhome-flex-column-center;
       gap: 5px;
 
       width: 40px;

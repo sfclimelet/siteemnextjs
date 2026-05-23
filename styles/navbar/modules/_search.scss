@@ -4,11 +4,9 @@
 
 #{$Navbar-Home}{
   #{$nbhome-search}{
+    @extend %nbhome-flex-column-start;
     position: relative;
     width: $nbhome-search-width;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: $nbhome-spacing-gap;
 
     #{$nbhome-search-toggle}{

@@ -1,5 +1,6 @@
 @use "./_vars.scss" as *;
 @use "./_placeholders.scss" as *;
+@use "./_zindex.scss" as *;
 
 /* ================= ROOT ================= */
 #{$Navbar-Home} {
@@ -8,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: $z-navbar;
   overflow: visible;
 }
 

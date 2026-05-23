@@ -17,17 +17,18 @@
     align-items: center;
 }
 
+/* Flex Center Full */
+%nbhome-flex-center-full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Flex Between */
 %nbhome-flex-between{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-/* Vertical Scroll */
-%nbhome-scroll-y{
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 /* Flex Column */
@@ -36,9 +37,29 @@
     flex-direction: column;
 }
 
+/* Flex Column Center */
+%nbhome-flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Flex Column Start */
+%nbhome-flex-column-start{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Flex Column Stretch */
 %nbhome-flex-column-stretch{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+/* Vertical Scroll */
+%nbhome-scroll-y{
+    overflow-y: auto;
+    overflow-x: hidden;
 }
