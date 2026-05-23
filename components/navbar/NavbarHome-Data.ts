@@ -19,6 +19,7 @@ export interface NavbarItem {
   type: NavbarItemType;
   label: string;
   icon?: React.ComponentType<{ className?: string }>;
+  backIcon?: React.ComponentType<{ className?: string }>;
   children?: NavbarChildItem[];
 }
 
@@ -30,6 +31,7 @@ export const searchData: NavbarItem[] = [
     type: "search",
     label: "Buscar",
     icon: IconsNavbarHome.Menu.search,
+    backIcon: IconsNavbarHome.Menu.back
   },
 ];
 

@@ -9,6 +9,7 @@ export interface SearchItem {
   id: string;
   label: string;
   icon?: React.ComponentType<{ className?: string }>;
+  backIcon?: React.ComponentType<{ className?: string }>;
 }
 
 interface NavSearchProps {
@@ -27,6 +28,7 @@ export default function NavSearch({
 
   const isOpen: boolean = openItem === item.id;
   const Icon = item.icon;
+  const BackIcon = item.backIcon;
 
   // ================= AUTO FOCUS =================
   useEffect(() => {
@@ -54,24 +56,42 @@ export default function NavSearch({
         <span className="nb-text-search">{item.label}</span>
       </button>
 
-      {/* ================= INPUT ================= */}
+      {/* ================= BOX ================= */}
       <div className="nb-search-box" role="search">
-        <input
-          ref={inputRef}
-          type="text"
-          placeholder="Search..."
-          className="nb-search-input"
-          aria-label="Campo de busca"
-        />
 
-        <button
-          type="button"
-          className="nb-search-submit"
-          aria-label="Buscar"
-          title="Buscar"
-        >
-          {item.label}
-        </button>
+        {/* ================= FECHAR BUSCA ================= */}
+        <div className="nb-search-header">
+
+          <button type="button"
+          className="nb-search-close"
+          aria-label="Fechar busca"
+          title="Fechar busca"
+          onClick={() => setOpenItem(null)}>
+            {BackIcon && (
+              <BackIcon className="nb-search-close-icon" />
+            )}
+          </button>
+
+        </div>
+
+        {/* ================= FORM ================= */}
+        <div className="nb-search-form">
+          <input
+            ref={inputRef}
+            type="text"
+            placeholder="Search..."
+            className="nb-search-input"
+            aria-label="Campo de busca"
+          />
+          <button
+            type="button"
+            className="nb-search-submit"
+            aria-label="Buscar"
+            title="Buscar"
+          >
+            {item.label}
+          </button>
+        </div>
       </div>
     </li>
   );

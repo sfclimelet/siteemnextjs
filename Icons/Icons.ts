@@ -3,7 +3,7 @@ import {
   Handbag, NotebookPen, Code, RefreshCcw, MapPinned,
   Users, User, Sparkles, CircleCheck, BadgeInfo,
   Lightbulb, UserPen, Star, BadgeQuestionMark, Shield,
-  MessageSquareQuote, MessageSquareText ,Medal, Image as ImageIcon, Camera, Sun, Moon, ShoppingBag,
+  MessageSquareQuote, MessageSquareText ,Medal, Image as ImageIcon, Camera, Sun, Moon, ShoppingBag, ArrowLeft,
   Info, ReceiptText
 } from "lucide-react";
 
@@ -17,6 +17,7 @@ import {
 export const IconsNavbarHome = {
   Menu: {
     search: Search,
+    back: ArrowLeft,
     services: Layers,
     company: Handshake,
     contact: Send,
