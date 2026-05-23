@@ -1,25 +1,14 @@
 @use "./_vars.scss" as *;
 @use "./_placeholders.scss" as *;
 
+/* ================= DROPDOWN OPEN ================= */
 #{$Navbar-Home} {
 
-  #{$nbhome-item} {
-
-    /* Dropdown fechado */
-    #{$nbhome-dropdown} {
-      display: none;
-    }
-
-    /* Quando estiver aberto */
-    &.open {
-      > #{$nbhome-dropdown} {
-        display: flex;
-      }
-    }
+  #{$nbhome-item}.open > #{$nbhome-dropdown} {
+    display: flex;
   }
 
-  /* ================= BOTÃO ORIGINAL OCULTO ================= */
-
+  /* ================= HIDDEN TOGGLE ================= */
   #{$nbhome-link}.is-hidden {
     @extend %nbhome-hidden-collapse;
   }
