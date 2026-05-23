@@ -1,20 +1,26 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_tokens.scss" as *;
+@use "../core/_zindex.scss" as *;
 @use "../core/_breakpoints.scss" as *;
 
 @media (min-width: 576px) and (max-width: 991.98px) {
-    #{$Navbar-Home}{
-        #{$nbhome-dropdown} {
-            position: fixed;
 
-            top: 120px;
-            left: 50%;
-            transform: translateX(-50%);
+  #{$Navbar-Home} {
 
-            width: 90%;
-            max-width: 480px;
+    #{$nbhome-dropdown} {
+      position: fixed;
 
-            z-index: 5000;
-        }
+      top: $nbhome-tablet-dropdown-top;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: $nbhome-tablet-dropdown-width;
+      max-width: $nbhome-tablet-dropdown-max-width;
+
+      z-index: $z-dropdown-tablet;
     }
+
+  }
 
 }

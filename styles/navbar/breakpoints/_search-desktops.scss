@@ -1,42 +1,54 @@
 @use "../core/_vars.scss" as *;
+@use "../core/_tokens.scss" as *;
+@use "../core/_mixins.scss" as *;
 @use "../core/_breakpoints.scss" as *;
+@use "../core/_zindex.scss" as *;
 
 @media (min-width: 576px){
-    #{$Navbar-Home}{
-        #{$nbhome-search}{
-            position: relative;
-            width: auto;
 
-            #{$nbhome-search-text}{
-                display: none;
-            }
+  #{$Navbar-Home}{
 
-            #{$nbhome-search-toggle}{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #{$nbhome-search-box}{
-                display: none;
-            }
+    #{$nbhome-search}{
+      position: relative;
+      width: auto;
 
-            &.open{
-                #{$nbhome-search-box}{
-                    display: flex;
-                    position: absolute;
-                    margin: 0 auto;
+      #{$nbhome-search-text}{
+        display: none;
+      }
 
-                    top: calc(100% + 4rem);
-                    left: 50%;
-                    transform: translateX(-50%);
+      #{$nbhome-search-toggle}{
+        @include nbhome-flex-center;
+      }
 
-                    gap: 0.5rem;
-                    padding: 0.75rem;
-                    border-radius: 12px;
-                    width: clamp(220px, 40vw, 380px);
-                    z-index: 2000;
-                }
-            }
+      #{$nbhome-search-box}{
+        display: none;
+      }
+
+      &.open{
+
+        #{$nbhome-search-box}{
+          display: flex;
+          position: absolute;
+
+          top: calc(100% + #{$nbhome-search-desktop-offset});
+          left: 50%;
+
+          transform: translateX(-50%);
+
+          gap: 0.5rem;
+
+          width: clamp(220px, 40vw, 380px);
+
+          padding: $nbhome-search-padding;
+          border-radius: $nbhome-search-radius;
+
+          z-index: $z-search-desktops;
         }
+
+      }
+
     }
+
+  }
+
 }

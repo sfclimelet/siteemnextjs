@@ -1,21 +1,30 @@
 @use "../core/_vars.scss" as *;
 @use "../core/_breakpoints.scss" as *;
+@use "../core/_tokens.scss" as *;
 
 @media (min-width: 991.99px){
-    #{$Navbar-Home}{
-        #{$nbhome-item}{
-            position: static;
-        }
-        #{$nbhome-dropdown}{
-            position: fixed;
-            top: 90px;
-            right: 8rem;
-            left: auto;
-            width: 320px;
-            max-width: 320px;
-            margin: 0;
-            padding: 1rem;
-            z-index: 99999;
-        }
+
+  #{$Navbar-Home}{
+
+    #{$nbhome-item}{
+      position: static;
     }
+
+    #{$nbhome-dropdown}{
+      position: fixed;
+
+      top: $nbhome-dropdown-desktop-top;
+      right: $nbhome-dropdown-desktop-right;
+      left: auto;
+
+      width: $nbhome-dropdown-desktop-width;
+
+      margin: 0;
+      padding: $nbhome-dropdown-desktop-padding;
+
+      z-index: 99999;
+    }
+
+  }
+
 }

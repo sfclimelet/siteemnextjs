@@ -2,19 +2,30 @@
 $nbhome-spacing-gap: 0.75rem;
 $nbhome-spacing-left: 0.20rem;
 $nbhome-desktop-gap: 1.5rem;
+$nbhome-dropdown-desktop-padding: 1rem;
+$nbhome-search-padding: 0.75rem;
+
+/* Top */
+$nbhome-tablet-dropdown-top: 120px;
+$nbhome-dropdown-desktop-top: 90px;
+$nbhome-search-desktop-offset: 4rem;
 
 /* Height */
 $nbhome-link-height: 44px;
 $nbhome-search-height: 44px;
+$nbhome-topbar-height: 80px;
 
 /* Width */
+$nbhome-tablet-dropdown-width: 90%;
 $nbhome-dropdown-desktop-width: 320px;
 $nbhome-dropdown-width: 200px;
 $nbhome-search-width: 100%;
+$nbhome-tablet-dropdown-max-width: 480px;
+
+/* Right */
+$nbhome-dropdown-desktop-right: 8rem;
 
 /* Radius */
 $nbhome-radius-sm: 6px;
 $nbhome-radius-md: 12px;
-
-/* TopBar */
-$nbhome-topbar-height: 80px;
+$nbhome-search-radius: 12px;
