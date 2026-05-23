@@ -1,11 +1,18 @@
 /* Spacing */
-$nbhome-spacing-inline: 0.75rem;
 $nbhome-spacing-gap: 0.75rem;
 $nbhome-spacing-left: 0.20rem;
+
+/* Height */
+$nbhome-link-height: 44px;
+$nbhome-search-height: 44px;
+
+/* Width */
+$nbhome-dropdown-width: 320px;
+$nbhome-search-width: 100%;
 
 /* Radius */
 $nbhome-radius-sm: 6px;
 $nbhome-radius-md: 12px;
 
-/* Height */
-$nbhome-link-height: 44px;
+/* TopBar */
+$nbhome-topbar-height: 80px;
