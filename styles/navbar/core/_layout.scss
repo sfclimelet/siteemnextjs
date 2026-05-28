@@ -28,16 +28,6 @@
   padding: 0 1rem;
 }
 
-#{$Navbar-Home} #{$nbhome-logo} {
-  position: relative;
-  flex-shrink: 0;
-}
-
-#{$Navbar-Home} #{$nbhome-logo-image} {
-  object-fit: contain;
-}
-
-
 /* ================= MENU ================= */
 #{$Navbar-Home} #{$nbhome-menu} {
   @extend %nbhome-flex-column;
