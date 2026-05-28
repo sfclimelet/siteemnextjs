@@ -11,7 +11,7 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    max-width: $nbhome-dropdown-width;
+    max-width: min(92vw, $nbhome-dropdown-width);
     max-height: 65vh;
     gap: 0.25rem;
     margin: 0.75rem auto;
