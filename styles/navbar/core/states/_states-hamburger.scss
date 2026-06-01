@@ -1,0 +1,16 @@
+@use "../foundation/_vars.scss" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-hamburger} {
+        cursor: pointer;
+    }
+    #{$nbhome-hamburger}#{$nbhome-open} span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    #{$nbhome-hamburger}#{$nbhome-open} span:nth-child(2) {
+        opacity: 0;
+    }
+    #{$nbhome-hamburger}#{$nbhome-open} span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}

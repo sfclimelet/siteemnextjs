@@ -1,0 +1,10 @@
+@use "../foundation/_vars.scss" as *;
+
+#{$Navbar-Home} {
+
+  #{$nbhome-menu}.open{
+        max-height: 620px;
+        opacity: 1;
+        pointer-events: auto;
+  }
+}

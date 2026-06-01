@@ -1,0 +1,61 @@
+@use "../../core/foundation/_vars.scss" as *;
+@use "../../core/foundation/_tokens.scss" as *;
+@use "../../core/utilities/_placeholders.scss" as *;
+
+#{$Navbar-Home}{
+  #{$nbhome-search}{
+    @extend %nbhome-flex-column-start;
+    position: relative;
+    width: $nbhome-search-width;
+    gap: $nbhome-spacing-gap;
+
+    #{$nbhome-search-toggle}{
+      @extend %nbhome-flex-center;
+      justify-content: flex-start;
+
+      gap: $nbhome-spacing-gap;
+      padding: $nbhome-spacing-left;
+    }
+
+    #{$nbhome-search-box}{
+      display: none;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      gap: $nbhome-spacing-gap;
+    }
+
+    #{$nbhome-search-header}{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    #{$nbhome-search-form}{
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      gap: 0.5rem;
+    }
+
+    #{$nbhome-search-input}{
+      flex: 1;
+      min-height: $nbhome-search-height;
+    }
+
+    #{$nbhome-search-close}{
+      @extend %nbhome-flex-center-full;
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+
+      svg{
+        color: #fff;
+      }
+    }
+  }
+}

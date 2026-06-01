@@ -1,54 +1,80 @@
 /* ================= CORE ================= */
 
-/* Variáveis primeiro */
-@use "./core/_vars.scss" as *;
-@use "./core/_breakpoints.scss" as *;
-
-/* Estrutura base mobile */
-@use "./core/_layout.scss" as coreLayout;
-
-/* Estados */
-@use "./core/_states.scss";
-@use "./core/_states-navbar.scss";
-@use "./core/_states-hamburger.scss" as StatusHamburger;
-@use "./core/_states-search.scss";
-@use "./core/_states-dropdown.scss";
-
-/* Visual */
-@use "./core/_colors.scss";
 @use "./core/_backgrounds.scss";
 @use "./core/_design.scss";
-@use "./core/_helpers.scss";
 @use "./core/_icons.scss";
-@use "./core/_keyframes.scss";
-@use "./core/_transitions.scss";
-@use "./core/_typography.scss";
-@use "./core/_reset.scss";
-@use "./core/_tokens.scss";
-@use "./core/_placeholders.scss";
-@use "./core/_zindex.scss";
+
+/* Effects */
+@use "./core/effects/_animations.scss";
+@use "./core/effects/_keyframes.scss";
+@use "./core/effects/_transitions.scss";
+
+/* Foundation */
+@use "./core/foundation/_colors.scss";
+@use "./core/foundation/_tokens.scss";
+@use "./core/foundation/_typography.scss";
+@use "./core/foundation/_vars.scss" as *;
+@use "./core/foundation/_zindex.scss";
+
+/* Layout */
+@use "./core/layout/_breakpoints.scss" as *;
+@use "./core/layout/_layout.scss" as coreLayout;
+@use "./core/layout/_reset.scss";
+
+/* States */
+@use "./core/states/_states.scss";
+@use "./core/states/_states-navbar.scss";
+@use "./core/states/_states-hamburger.scss" as StatusHamburger;
+@use "./core/states/_states-search.scss";
+@use "./core/states/_states-dropdown.scss";
+
+/* Utilities */
+@use "./core/utilities/_helpers.scss";
+@use "./core/utilities/_mixins.scss";
+@use "./core/utilities/_placeholders.scss";
+
 
 /* ================= MÓDULOS ================= */
 
-@use "./modules/_items.scss";
-@use "./modules/_dropdowns.scss";
-@use "./modules/dropdown-header";
-@use "./modules/_search.scss";
-@use "./modules/_divider.scss";
-@use "./modules/_hamburger.scss" as moduloLayout;
-@use "./modules/_logo.scss";
+/* Dropdown */
+@use "./modules/dropdown/_dropdowns.scss";
+@use "./modules/dropdown/dropdown-header";
+
+/* Hamburger */
+@use "./modules/hamburger/_hamburger.scss" as moduloLayout;
+
+/* Logo */
+@use "./modules/logo/_logo.scss";
+
+/* Navbar */
+@use "./modules/navbar/_divider.scss";
+@use "./modules/navbar/_items.scss";
+
+/* Search */
+@use "./modules/search/_search.scss";
 
 /* ================= BREAKPOINTS ================= */
 
-/* Base primeiro breakpoint */
 @use "./breakpoints/_base.scss";
 
-/* Depois os maiores */
-@use "./breakpoints/_mobiles.scss";
-@use "./breakpoints/_tablets.scss";
-@use "./breakpoints/_desktops.scss";
-@use "./breakpoints/_search-mobiles.scss";
-@use "./breakpoints/_search-tablets.scss";
-@use "./breakpoints/_search-desktops.scss";
-@use "./breakpoints/_hamburger.scss" as hamburgerBreakpoint;
-@use "./breakpoints/_divider.scss" as DividerBreakpoint;
+/* Divider */
+@use "./breakpoints/divider/_divider.scss" as DividerBreakpoint;
+
+/* Dropdown */
+@use "./breakpoints/dropdown/_dropdown.scss";
+
+/* Hamburger */
+@use "./breakpoints/hamburger/_hamburger.scss" as hamburgerBreakpoint;
+
+/* Logo */
+@use "./breakpoints/logo/_logo-responsive.scss";
+
+/* Navbar */
+@use "./breakpoints/navbar/_desktops.scss";
+@use "./breakpoints/navbar/_mobiles.scss";
+@use "./breakpoints/navbar/_tablets.scss";
+
+/* Search */
+@use "./breakpoints/search/_search-desktops.scss";
+@use "./breakpoints/search/_search-mobiles.scss";
+@use "./breakpoints/search/_search-tablets.scss";

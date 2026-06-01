@@ -1,0 +1,36 @@
+@use "../../core/foundation/_vars.scss" as *;
+@use "../../core/foundation/_tokens.scss" as *;
+@use "../../core/utilities/_placeholders.scss" as *;
+
+#{$Navbar-Home} {
+
+  /* ================= ITEM ================= */
+
+  #{$nbhome-item} {
+    @extend %nbhome-flex-column;
+    width: 100%;
+  }
+
+  /* ================= LINK ================= */
+
+  #{$nbhome-link} {
+    @extend %nbhome-flex-center;
+    gap: $nbhome-spacing-gap;
+
+    width: 100%;
+    min-height: $nbhome-link-height;
+    padding: $nbhome-spacing-left;
+
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* ================= TEXTO ================= */
+
+  #{$nbhome-text} {
+    font-size: 0.95rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+}
