@@ -6,6 +6,10 @@
 
   #{$Navbar-Home}{
 
+    #{$nbhome-container}{
+      min-height: 120px;
+    }
+
     #{$nbhome-item}{
       position: static;
     }

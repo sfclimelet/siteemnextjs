@@ -6,6 +6,10 @@
 @media (min-width: 576px) and (max-width: 991.98px) {
 
   #{$Navbar-Home} {
+    
+    #{$nbhome-container}{
+      min-height: 95px;
+    }
 
     #{$nbhome-dropdown} {
       position: fixed;
