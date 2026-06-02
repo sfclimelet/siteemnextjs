@@ -1,1 +1,21 @@
+@use "../../core/foundation/_vars.scss" as *;
 
+/* Tablet */
+@media (min-width: 576px){
+    #{$Navbar-Home}{
+        #{$nbhome-logo}{
+            width: 100px;
+            height: 85px;
+        }
+    }
+}
+
+/* Desktop */
+@media(min-width: 992px){
+    #{$Navbar-Home}{
+        #{$nbhome-logo}{
+            width: 120px;
+            height: 100px;
+        }
+    }
+}
