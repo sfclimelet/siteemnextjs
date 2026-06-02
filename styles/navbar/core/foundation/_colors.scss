@@ -1,15 +1,25 @@
+/* ================= NAVBAR ================= */
+
 $nbhome-color-primary-bg: #00111a;
-$nbhome-color-secondary-bg: #000;
+$nbhome-color-secondary-bg: #051923;
 
-/* Dropdown */
-$nbhome-color-dropdown: #8a8f5a;
-$nbhome-color-dropdown-text: #fff;
+/* ================= TEXT ================= */
 
-/* Dropdown - Header */
+$nbhome-color-text: #f8fafc;
+
+/* ================= DROPDOWN ================= */
+
+$nbhome-color-dropdown-bg: #0a2533;
+$nbhome-color-dropdown-text: #f8fafc;
+
+/* ================= DROPDOWN HEADER ================= */
+
 $nbhome-color-dropdown-header-circle: #2167d0;
 
-/* Search */
+/* ================= SEARCH ================= */
+
 $nbhome-color-search-submit-button: #0ec5f3;
 
-/* Borda / divider */
-$nbhome-color-divider: #fff;
+/* ================= DIVIDER ================= */
+
+$nbhome-color-divider: rgba(255, 255, 255, 0.15);

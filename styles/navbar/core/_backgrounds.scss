@@ -12,8 +12,9 @@
   );
 
   /* ================= SEARCH ================= */
-  #{$nbhome-search}{
-    #{$nbhome-search-submit}{
+
+  #{$nbhome-search} {
+    #{$nbhome-search-submit} {
       background: $nbhome-color-search-submit-button;
     }
   }
@@ -21,16 +22,18 @@
   /* ================= DROPDOWN ================= */
 
   #{$nbhome-dropdown} {
-    background: $nbhome-color-dropdown;
+    background: $nbhome-color-dropdown-bg;
 
     /* LINKS */
+
     #{$nbhome-dropdown-link} {
       color: $nbhome-color-dropdown-text;
     }
   }
 
   /* ================= DIVIDER ================= */
-  #{$nbhome-divider}{
+
+  #{$nbhome-divider} {
     background: $nbhome-color-divider;
   }
 
@@ -39,5 +42,4 @@
   .nb-dropdown-circle {
     background: $nbhome-color-dropdown-header-circle;
   }
-
 }
