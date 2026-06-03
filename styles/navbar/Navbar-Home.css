@@ -10,13 +10,15 @@
 /* Divider */
 /* Estados */
 /* Menu específico (opcional, se precisar controlar via each) */
-/* Dropdown */
-/* Dropdown - Header */
-/* Search */
-/* Borda / divider */
+/* ================= NAVBAR ================= */
+/* ================= TEXT ================= */
+/* ================= DROPDOWN ================= */
+/* ================= DROPDOWN HEADER ================= */
+/* ================= SEARCH ================= */
+/* ================= DIVIDER ================= */
 #navbar-home {
   /* ================= NAVBAR ================= */
-  background: linear-gradient(to right, #00111a, #000);
+  background: linear-gradient(to left, #00111a, #051923);
   /* ================= SEARCH ================= */
 }
 #navbar-home .nb-search .nb-search-submit {
@@ -26,17 +28,17 @@
   /* ================= DROPDOWN ================= */
 }
 #navbar-home .nb-dropdown {
-  background: #8a8f5a;
+  background: #0a2533;
   /* LINKS */
 }
 #navbar-home .nb-dropdown .nb-dropdown-link {
-  color: #fff;
+  color: #f8fafc;
 }
 #navbar-home {
   /* ================= DIVIDER ================= */
 }
 #navbar-home .nb-divider {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.15);
 }
 #navbar-home {
   /* ================= DROPDOWN HEADER ================= */
@@ -249,7 +251,7 @@
 }
 
 #navbar-home .navbar-menu.open {
-  max-height: 620px;
+  max-height: 800px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -339,10 +341,10 @@
 #navbar-home .navbar-logo {
   position: relative;
   flex-shrink: 0;
-  width: 80px;
-  height: 70px;
+  width: 90px;
+  height: 80px;
 }
-#navbar-home #logosef {
+#navbar-home .logosef {
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -505,10 +507,27 @@
   }
 }
 /* Logo */
+/* Tablet */
+@media (min-width: 576px) {
+  #navbar-home .navbar-logo {
+    width: 100px;
+    height: 85px;
+  }
+}
+/* Desktop */
+@media (min-width: 992px) {
+  #navbar-home .navbar-logo {
+    width: 120px;
+    height: 100px;
+  }
+}
 /* Navbar */
 /* Layout */
 /* Foundation */
 @media (min-width: 991.99px) {
+  #navbar-home .navbar-container {
+    min-height: 120px;
+  }
   #navbar-home .nb-item {
     position: static;
   }
@@ -527,6 +546,9 @@
 /* Foundation */
 /* Layout */
 @media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-home .navbar-container {
+    min-height: 95px;
+  }
   #navbar-home .nb-dropdown {
     position: fixed;
     top: 120px;

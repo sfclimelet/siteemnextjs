@@ -6,7 +6,7 @@
   /* ================= NAVBAR ================= */
 
   background: linear-gradient(
-    to right,
+    to top,
     $nbhome-color-primary-bg,
     $nbhome-color-secondary-bg
   );
@@ -20,7 +20,6 @@
   }
 
   /* ================= DROPDOWN ================= */
-
   #{$nbhome-dropdown} {
     background: $nbhome-color-dropdown-bg;
 
