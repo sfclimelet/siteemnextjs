@@ -1,0 +1,57 @@
+@use "./foundation/_vars.scss" as *;
+@use "./foundation/_colors" as *;
+
+#{$Navbar-Home}{
+    /* ================= ICONS ================= */
+    /* Search */
+    #{$nbhome-search}{
+        #{$nbhome-search-toggle}{
+            #{$nbhome-search-icon}{
+                color: $nbhome-color-icon-search;
+            }
+        }
+        #{$nbhome-search-close}{
+            #{$nbhome-search-close-icon}{
+                color: $nbhome-color-icon-search-close;
+            }
+        }
+    }
+    /* Menu */
+    @each $menu, $selector in $nbhome-menus{
+        #{$selector}{
+            #{$nbhome-link}{
+                #{$nbhome-icons}{
+                    color: $nbhome-color-icon-menu;
+                }
+            }
+        }
+    }
+    /* Dropdown Header */
+    #{$nbhome-dropdown-header}{
+        #{$nbhome-dropdown-header-circle}{
+            #{$nbhome-icons}{
+                color: $nbhome-color-icon-dropdown-header;
+            }
+        }
+    }
+    /* Dropdown links */
+    #{$nbhome-dropdown}{
+        #{$nbhome-dropdown-link}{
+            #{$nbhome-icons}{
+                color: $nbhome-color-icon-dropdowns-links;
+            }
+        }
+    }
+
+    /* ================= HAMBURGER ================= */
+    #{$nbhome-hamburger}{
+        #{$nbhome-hamburger-line}{
+            background: $nbhome-color-hamburger;
+        }
+        &#{$nbhome-open}{
+            #{$nbhome-hamburger-line}{
+                background: $nbhome-color-hamburger-open;
+            }
+        }
+    }
+}
