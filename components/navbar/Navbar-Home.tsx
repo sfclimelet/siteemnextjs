@@ -19,7 +19,7 @@ export default function NavbarHome() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [openItem, setOpenItem] = useState<string | null>(null);
 
-  const navbarRef = useRef<HTMLElement | null>(null);
+  const navbarRef = useRef<HTMLDivElement| null>(null);
   const menuItems = navbarHomeData.filter(
     (item) => item.type !== "search"
   );
@@ -39,7 +39,7 @@ export default function NavbarHome() {
 
   return (
     <header id="navbar-home" className={`${menuOpen ? "open" : ""}`}>
-      <div className="navbar-container">
+      <div ref={navbarRef} className="navbar-container">
         <div className="navbar-top">
           <Link
             href="/"
@@ -69,7 +69,7 @@ export default function NavbarHome() {
         </div>
 
         <nav
-          ref={navbarRef}
+          
           className={`navbar-menu ${menuOpen ? "open" : ""}`}
         >
           <ul className="navbar-list">

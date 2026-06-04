@@ -1,9 +1,7 @@
-// INÍCIO DO CÓDIGO
-
 import { useEffect, RefObject } from "react";
 
 interface UseNavbarAccessibilityProps {
-  navbarRef: RefObject<HTMLElement>;
+  navbarRef: RefObject<HTMLDivElement | null>;
   openItem: string | null;
   setOpenItem: React.Dispatch<React.SetStateAction<string | null>>;
   menuOpen: boolean;
@@ -23,6 +21,7 @@ export function useNavbarAccessibility({
 
       if (!navbarRef.current.contains(e.target as Node)) {
         setOpenItem(null);
+        setMenuOpen(false);
       }
     };
 
