@@ -14,6 +14,9 @@
   /* ================= SEARCH ================= */
 
   #{$nbhome-search} {
+    #{$nbhome-search-box}{
+      background: $nbhome-color-search-box;
+    }
     #{$nbhome-search-submit} {
       background: $nbhome-color-search-submit-button;
     }
