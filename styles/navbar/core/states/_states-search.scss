@@ -5,6 +5,7 @@
 
   #{$nbhome-search-toggle}.is-hidden {
     @extend %nbhome-hidden-collapse;
+    display: none;
   }
 
   #{$nbhome-search}.open #{$nbhome-search-box} {
