@@ -1,6 +1,7 @@
 @use "../foundation/_vars.scss" as *;
 @use "../utilities/_placeholders.scss" as *;
 @use "../foundation/colors" as *;
+@use "../effects/transitions" as *;
 
 #{$Navbar-Home} {
 
@@ -15,14 +16,29 @@
 
   #{$nbhome-search}{
     #{$nbhome-search-submit}{
+       transition: background-color $nbhome-transition-fast ease,
+       color $nbhome-transition-fast ease;
+       &:hover{
+        background-color: color-mix(in srgb, $nbhome-color-search-submit-button, 85% black);
+       }
+       &:active{
+        background-color: color-mix(in srgb, $nbhome-color-search-submit-button, 75% black);
+       }
       &:focus-visible{
         outline: 2px solid currentColor;
         outline-offset: 2px;
       }
     }
+    /* ========== INPUT =========== */
     #{$nbhome-search-input}{
+      transition: border-color $nbhome-transition-fast ease,
+      box-shadow $nbhome-transition-fast ease;
       &:focus{
         outline: none;
+      }
+      &:focus-visible{
+        outline: 1px solid currentColor;
+        outline-offset: 2px;
       }
       &::placeholder{
         color: $nbhome-color-search-input;
