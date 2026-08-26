@@ -47,6 +47,8 @@
       #{$nbhome-search-submit}{
         flex: 0 0 auto;
         min-height: $nbhome-search-height;
+        box-sizing: border-box;
+        border-radius: 10px;
       }
     }
 
@@ -54,6 +56,9 @@
       flex: 1;
       min-width: 0;
       min-height: $nbhome-search-height;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 10px;    
     }
 
     #{$nbhome-search-close}{
