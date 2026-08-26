@@ -1,5 +1,6 @@
 @use "../foundation/_vars.scss" as *;
 @use "../utilities/_placeholders.scss" as *;
+@use "../foundation/colors" as *;
 
 #{$Navbar-Home} {
 
@@ -10,6 +11,24 @@
 
   #{$nbhome-search}.open #{$nbhome-search-box} {
     display: flex;
+  }
+
+  #{$nbhome-search}{
+    #{$nbhome-search-submit}{
+      &:focus-visible{
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+    }
+    #{$nbhome-search-input}{
+      &:focus{
+        outline: none;
+      }
+      &::placeholder{
+        color: $nbhome-color-search-input;
+        opacity: 1;
+      }
+    }
   }
 
 }
