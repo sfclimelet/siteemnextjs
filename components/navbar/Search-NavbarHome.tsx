@@ -1,5 +1,6 @@
 "use client";
 
+import { SearchIcon } from "lucide-react";
 import { useRef, useEffect } from "react";
 import React from "react";
 
@@ -89,7 +90,7 @@ export default function NavSearch({
             aria-label="Buscar"
             title="Buscar"
           >
-            {item.label}
+            <SearchIcon />
           </button>
         </div>
       </div>
