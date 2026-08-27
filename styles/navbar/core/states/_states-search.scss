@@ -20,10 +20,12 @@
        transition: background-color $nbhome-transition-fast ease,
        color $nbhome-transition-fast ease;
        &:hover{
-        background-color: color-mix(in srgb, $nbhome-color-search-submit-button, 85% black);
+        background-color:
+          color-mix(in srgb, $nbhome-color-search-submit-button, 90% black);
        }
        &:active{
-        background-color: color-mix(in srgb, $nbhome-color-search-submit-button, 75% black);
+        background-color:
+          color-mix(in srgb, $nbhome-color-search-submit-button, 80% black);
        }
       &:focus-visible{
         outline: 2px solid currentColor;
@@ -38,7 +40,7 @@
         outline: none;
       }
       &:focus-visible{
-        outline: 1px solid currentColor;
+        outline: 1px solid $nbhome-color-icon-search;
         outline-offset: 2px;
       }
       &::placeholder{
