@@ -1,0 +1,14 @@
+@use "../foundation/vars" as *;
+@use "../effects/transitions" as *;
+@use "../foundation/colors" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-dropdown-link}{
+        transition: transform $nbhome-transition-fast;
+        &:hover{
+            transform: translateX(6px);
+            color: 
+                color-mix(in srgb, $nbhome-color-text, 70% black);
+        }
+    }
+}
