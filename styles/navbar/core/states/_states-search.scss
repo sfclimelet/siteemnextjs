@@ -15,6 +15,7 @@
   }
 
   #{$nbhome-search}{
+    /* ========== SUBMIT =========== */
     #{$nbhome-search-submit}{
        transition: background-color $nbhome-transition-fast ease,
        color $nbhome-transition-fast ease;
