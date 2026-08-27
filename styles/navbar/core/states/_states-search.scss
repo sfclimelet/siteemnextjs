@@ -4,10 +4,30 @@
 @use "../effects/transitions" as *;
 
 #{$Navbar-Home} {
-
-  #{$nbhome-search-toggle}.is-hidden {
-    @extend %nbhome-hidden-collapse;
-    display: none;
+  #{$nbhome-search}{
+    #{$nbhome-search-toggle}.is-hidden {
+      @extend %nbhome-hidden-collapse;
+      display: none;
+    }
+    #{$nbhome-search-toggle}{
+      transition: translate $nbhome-transition-fast,
+      color $nbhome-transition-fast;
+      &:hover{
+        transform: translateX(5px);
+      }
+      #{$nbhome-search-icon}{
+        &:hover{
+          color: color-mix(in srgb, $nbhome-color-icon-menu, 80% #000);
+        }
+      }
+      #{$nbhome-search-text}{
+        transition: translate $nbhome-transition-fast,
+        color $nbhome-transition-fast;
+        &:hover{
+          color: color-mix(in srgb, $nbhome-color-text, 70% #000);
+        }
+      }
+    }
   }
 
   #{$nbhome-search}.open #{$nbhome-search-box} {
