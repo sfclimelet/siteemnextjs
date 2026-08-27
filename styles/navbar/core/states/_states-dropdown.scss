@@ -9,15 +9,11 @@
   @each $name, $selector in $nbhome-menus{
     #{$selector}{
       #{$nbhome-link}{
-        transition: translate,color $nbhome-transition-fast;
+        transition: translate, color $nbhome-transition-fast;
         &:hover{
           color:
             color-mix(in srgb, $nbhome-color-text, 80% #000);
             transform: translateX(4px);
-        }
-        &:active{
-          color:
-            color-mix(in srgb, $nbhome-color-text, 70% #000);
         }
         &:focus-visible{
           outline: 2px solid $nbhome-color-text;
