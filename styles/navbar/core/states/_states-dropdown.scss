@@ -1,9 +1,38 @@
+@use "sass:map";
 @use "../foundation/_vars.scss" as *;
+@use "../foundation/_colors" as *;
 @use "../utilities/_placeholders.scss" as *;
+@use "../effects/_transitions" as *;
 
-/* ================= DROPDOWN OPEN ================= */
+
 #{$Navbar-Home} {
-
+  @each $name, $selector in $nbhome-menus{
+    #{$selector}{
+      #{$nbhome-link}{
+        transition: translate,color $nbhome-transition-fast;
+        &:hover{
+          color:
+            color-mix(in srgb, $nbhome-color-text, 80% #000);
+            transform: translateX(4px);
+        }
+        &:active{
+          color:
+            color-mix(in srgb, $nbhome-color-text, 70% #000);
+        }
+        &:focus-visible{
+          outline: 2px solid $nbhome-color-text;
+          outline-offset: 2px;
+        }
+        #{$nbhome-icons}{
+          &:hover{
+            color:
+              color-mix(in srgb, $nbhome-color-text, 80% #000);
+          }
+        }
+      }
+    }
+  }
+  /* ================= DROPDOWN OPEN ================= */
   #{$nbhome-item}.open > #{$nbhome-dropdown} {
     display: flex;
   }
