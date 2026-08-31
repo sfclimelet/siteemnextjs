@@ -1,4 +1,3 @@
-// INÍCIO DO CÓDIGO
 import React from "react";
 
 // ================= TYPES =================

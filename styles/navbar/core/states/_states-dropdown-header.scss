@@ -1,0 +1,17 @@
+@use "../foundation/_vars.scss" as *;
+@use "../foundation/_colors.scss" as *;
+@use "../effects/_transitions.scss" as *;
+
+#{$Navbar-Home}{
+    #{$nbhome-dropdown-header-circle}{
+        transition: background-color $nbhome-transition-fast;
+        &:hover{
+            background-color: 
+                color-mix(in srgb, $nbhome-color-dropdown-header-circle, 85% #000);
+        }
+        &:focus-visible{
+            outline: 2px solid $nbhome-color-dropdown-header-circle;
+            outline-offset: 3px;
+        }
+    }
+}
