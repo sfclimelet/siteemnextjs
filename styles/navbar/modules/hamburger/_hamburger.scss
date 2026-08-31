@@ -1,8 +1,10 @@
 @use "../../core/foundation/_vars.scss" as *;
 @use "../../core/utilities/_placeholders.scss" as *;
+@use "../../core/effects/_transitions.scss" as *;
 
 #{$Navbar-Home}{
     #{$nbhome-hamburger}{
+      cursor: pointer;
       @extend %nbhome-flex-column-center;
       gap: 5px;
 
@@ -16,6 +18,9 @@
         width: 24px;
         height: 2px;
         display: block;
+
+        transition: transform $nbhome-transition-fast,
+        opacity $nbhome-transition-fast;
 
       }
     }
