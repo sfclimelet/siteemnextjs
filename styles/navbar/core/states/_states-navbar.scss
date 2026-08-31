@@ -1,6 +1,18 @@
 @use "../foundation/_vars.scss" as *;
+@use "../effects/_transitions.scss" as *;
+@use "../foundation/_colors.scss" as *;
 
 #{$Navbar-Home} {
+
+  #{$nbhome-logo}{
+    &:hover{
+      opacity: 0.85;
+    }
+    &:focus-visible{
+      outline: 2px solid $nbhome-color-logo;
+      outline-offset: 4px;
+    }
+  }
 
   #{$nbhome-menu}.open{
         max-height: 800px;

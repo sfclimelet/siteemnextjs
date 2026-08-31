@@ -3,7 +3,7 @@
 @use "../../core/foundation/_zindex.scss" as *;
 @use "../../core/utilities/_mixins.scss" as *;
 @use "../../core/layout/_breakpoints.scss" as *;
-@use "../../core/foundation/colors" as *;
+@use "../../core/foundation/_colors.scss" as *;
 
 @media (min-width: 576px){
 
@@ -27,6 +27,7 @@
 
       #{$nbhome-search-box}{
         background: $nbhome-color-search-box;
+        box-shadow: $nbhome-shadow-search;
         display: none;
       }
 

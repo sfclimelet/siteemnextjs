@@ -1,6 +1,7 @@
 @use "../../core/foundation/_vars.scss" as *;
 @use "../../core/foundation/_tokens.scss" as *;
 @use "../../core/utilities/_placeholders.scss" as *;
+@use "../../core/foundation/_tokens.scss" as *;
 
 #{$Navbar-Home} {
 
@@ -16,6 +17,7 @@
     gap: 0.25rem;
     margin: 0.75rem auto;
     border-radius: 23px;
+    box-shadow: $nbhome-shadow-dropdown;
   }
   /* ================= LINKS DO DROPDOWN ================= */
 
