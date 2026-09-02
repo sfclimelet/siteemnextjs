@@ -1,7 +1,7 @@
 @use "../foundation/_vars.scss" as *;
 @use "../utilities/_placeholders.scss" as *;
-@use "../foundation/colors" as *;
-@use "../effects/transitions" as *;
+@use "../foundation/_colors.scss" as *;
+@use "../effects/_transitions.scss" as *;
 
 #{$Navbar-Home} {
   #{$nbhome-search}{

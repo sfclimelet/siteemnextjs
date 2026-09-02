@@ -4,8 +4,6 @@ import { SearchIcon } from "lucide-react";
 import { useRef, useEffect } from "react";
 import React from "react";
 
-// ================= TYPES =================
-
 export interface SearchItem {
   id: string;
   label: string;
@@ -31,8 +29,8 @@ export default function NavSearch({
   const Icon = item.icon;
   const BackIcon = item.backIcon;
 
-  // ================= AUTO FOCUS =================
   useEffect(() => {
+    // ================= AUTO FOCUS =================
     if (isOpen && inputRef.current) {
       inputRef.current.focus();
     }
